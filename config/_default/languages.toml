@@ -1,0 +1,8 @@
+[fr]
+  languageName = "Français"
+  weight = 1
+  [fr.params]
+    dateFormat = "02/01/2006"
+    description = "Site de la communauté francophone de darktable"
+    keywords = "darktable, photo, raw"
+
