@@ -26,7 +26,7 @@ _Désolé par avance pour certains traductions approximatives..._
 - Rawspeed: NikonDecoder: stoppe les entrées d'appareil génériques. Correction d'une multitude de problèmes de chargement de raw Nikon.
 - OpenCL: correction de la gestion des bordures dans le module recadrer & pivoter
 - Hotpixels iop: il fonctionne maintenant pour X-Trans
-- Clipping IOP: longueur d’échelle du recadrement gris avec le niveau de zoom
+- Clipping IOP: longueur d'échelle du recadrement gris avec le niveau de zoom
 - Une correction de plus pour la lecture des noms d'objectifs Canon depuis l'exif
 - Correction du pattern Bayer pour l'Olympus SP570UZ
 - Correction des erreurs internes de compilation: concerne Perl's @INC contains '.'

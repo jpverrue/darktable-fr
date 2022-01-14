@@ -1,0 +1,11 @@
+---
+title: "darktable tuto N°5 : Masques dessinés et paramétriques en mode exclusif"
+date: "2018-05-01"
+categories: 
+  - "tutoriels"
+tags: 
+  - "jc-tutos"
+  - "tutoriel"
+---
+
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) explore l'utilisation des masques dessinés et paramétriques en mode exclusif (et nous monte comment ce serait fait avec Gimp) : https://youtu.be/MWDUyvNcQ30 Bon visionnage.

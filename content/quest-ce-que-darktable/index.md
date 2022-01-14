@@ -8,7 +8,7 @@ author = "Aurélien Pierre"
   weight = 1
 +++
 
-## Qu’est-ce qu’est darktable et qu’est-ce qu’il n’est pas ?
+## Qu'est-ce qu'est darktable et qu'est-ce qu'il n'est pas ?
 
 Vous êtes nombreux à arriver ici, déçus par les changements de la politique de Lightroom, attirés par la récente arrivée de darktable sur Windows, ou les deux. On vous accueille à bras ouverts mais certains sujets reviennent souvent, et c'est lassant de répéter. Petit tour d'horizon...
 
@@ -18,7 +18,7 @@ darktable n'est pas gratuit, il est libre. Libre, ça veut dire librement modifi
 
 ### darktable, une communauté.
 
-Corollaire du point précédent, darktable fonctionne sur un mode communautaire d'entraide et de partage de connaissances et de compétences. Vous n'êtes pas client, personne ne vous doit rien, mais ça n'empêche pas des gens sympas de prendre le temps de vous aider. Avant de demander de l'aide ou des fonctionnalités, essayez aussi de vous demandez ce que vous pouvez apporter à a communauté. Ça ne veut pas dire qu'on ne vous aidera pas si vous ne donnez rien en échange, ça veut juste dire que les comportements de consommateur ou d’enfant gâté seront (très) mal accueillis.
+Corollaire du point précédent, darktable fonctionne sur un mode communautaire d'entraide et de partage de connaissances et de compétences. Vous n'êtes pas client, personne ne vous doit rien, mais ça n'empêche pas des gens sympas de prendre le temps de vous aider. Avant de demander de l'aide ou des fonctionnalités, essayez aussi de vous demandez ce que vous pouvez apporter à a communauté. Ça ne veut pas dire qu'on ne vous aidera pas si vous ne donnez rien en échange, ça veut juste dire que les comportements de consommateur ou d'enfant gâté seront (très) mal accueillis.
 
 ### darktable n'est pas Lightroom.
 
@@ -42,7 +42,7 @@ Pour migrer sous darktable, il va falloir un peu de courage et de temps. Et il v
 
 ### darktable n'est pas pour les professionnels ?
 
-Le nouvel engouement pour ce logiciel, développé depuis 2009, conduit bon nombre de « pontes » de la blogosphère à l'essayer et à conclure, après 2 heures d'utilisation, que darktable n'est pas mûr pour un usage professionnel. En ce moment, les experts du web ne se donnent même plus la peine d'être compétents avant de faire des tutoriels, ils font des tutoriels en fonction de la demande, de la mode ou de l’orientation du vent. Moi j'avais 5 ou 6 ans d'expérience avec darktable quand j'ai sorti mon premier tutoriel, mais chacun son éthique de travail. Et puis vous savez qu'il y a deux sortes de photographes : ceux qui sont derrière leur appareil photo, et ceux qui sont sur Internet (à bon entendeur...).
+Le nouvel engouement pour ce logiciel, développé depuis 2009, conduit bon nombre de « pontes » de la blogosphère à l'essayer et à conclure, après 2 heures d'utilisation, que darktable n'est pas mûr pour un usage professionnel. En ce moment, les experts du web ne se donnent même plus la peine d'être compétents avant de faire des tutoriels, ils font des tutoriels en fonction de la demande, de la mode ou de l'orientation du vent. Moi j'avais 5 ou 6 ans d'expérience avec darktable quand j'ai sorti mon premier tutoriel, mais chacun son éthique de travail. Et puis vous savez qu'il y a deux sortes de photographes : ceux qui sont derrière leur appareil photo, et ceux qui sont sur Internet (à bon entendeur...).
 
 Le fait est que la valeur perçue d'un logiciel « gratuit » (voir plus haut) est faible. De plus, l'interface graphique de darktable est moins léchée que ses équivalents cosmétiques propriétaires. Ça ne veut pas dire que darktable n'est pas prêt pour un usage professionnel. Voir le travail du [Luc Viatour](https://lucnix.be/) ou [le mien](https://photo.aurelienpierre.com/).
 
@@ -62,7 +62,7 @@ darktable est un projet vivant et actif. Vous pouvez :
 4. [envoyer des échantillons de RAW si votre boîtier n'est pas reconnu ,](https://raw.pixls.us/)
 5. poser des questions (sur le forum).
 
-Ça veut dire que vous pouvez l'améliorer, suggérer des changements, participer, tester les futures versions, etc. Vous tirerez profit de ce logiciel seulement si vous ne restez pas un consommateur passif dans l'attente que d'autres règlent vos problèmes. Ça n'est pas le même fonctionnement qu'un logiciel commercial. Aussi, si vous avez besoin d'une assistance réactive et d'un vrai service client, restez avec des logiciels commerciaux (encore que le SAV d’Adobe ne soit pas nécessairement plus réactif).
+Ça veut dire que vous pouvez l'améliorer, suggérer des changements, participer, tester les futures versions, etc. Vous tirerez profit de ce logiciel seulement si vous ne restez pas un consommateur passif dans l'attente que d'autres règlent vos problèmes. Ça n'est pas le même fonctionnement qu'un logiciel commercial. Aussi, si vous avez besoin d'une assistance réactive et d'un vrai service client, restez avec des logiciels commerciaux (encore que le SAV d'Adobe ne soit pas nécessairement plus réactif).
 
 Oui, darktable est (parfois) moins intuitif que Lightroom, mais il ne fait rien dans votre dos.
 
@@ -80,7 +80,7 @@ Pensez aux données brutes comme à un négatif numérique, et pensez à darktab
 
 darktable peut aussi corriger des images qui sont déjà dans des formats lisible par l'humain (jpg, tif, png, etc.). Seuls les modules liés au dématriçage des capteurs disparaissent alors.
 
-darktable est aussi un catalogueur, et vous permet de maintenir vos collections d'images en utilisant des mots-clés hiérarchiques (ex : animaux | cheval, animaux | otarie, otarie et cheval sont des sous-catégories de animaux), et de faire des recherches conditionnelles (ex : chercher les fichier RAW pris le 3 décembre, non retouchés, dont la focale est 50 mm et l'ISO inférieur à 1600 et ne contiennent pas le mot-clé "soleil"). Il permet de déplacer et supprimer des images (et on déconseille formellement les suppressions, renommage, déplacement d'images en passant par le navigateur de fichiers du système d'exploitation, car ces images sont inscrites dans la base de données de darktable, et le système d’exploitation ne peut pas l’informer des modifications effectuées).
+darktable est aussi un catalogueur, et vous permet de maintenir vos collections d'images en utilisant des mots-clés hiérarchiques (ex : animaux | cheval, animaux | otarie, otarie et cheval sont des sous-catégories de animaux), et de faire des recherches conditionnelles (ex : chercher les fichier RAW pris le 3 décembre, non retouchés, dont la focale est 50 mm et l'ISO inférieur à 1600 et ne contiennent pas le mot-clé "soleil"). Il permet de déplacer et supprimer des images (et on déconseille formellement les suppressions, renommage, déplacement d'images en passant par le navigateur de fichiers du système d'exploitation, car ces images sont inscrites dans la base de données de darktable, et le système d'exploitation ne peut pas l'informer des modifications effectuées).
 
 ### Ce que darktable ne fait pas
 

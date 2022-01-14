@@ -1,0 +1,13 @@
+---
+title: "Réduction de bruit avec darktable : approche détaillée"
+date: "2018-01-20"
+categories: 
+  - "tutoriels"
+tags: 
+  - "rawfiner"
+  - "tutoriel"
+---
+
+Nouvelle vidéo de rawfiner qui nous présente une approche détaillée de la réduction de bruit. Bon visionnage !
+
+https://www.youtube.com/watch?v=9kf0JEcw9HM

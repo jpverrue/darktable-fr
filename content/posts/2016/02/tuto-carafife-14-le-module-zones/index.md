@@ -10,6 +10,6 @@ tags:
   - "tutoriel"
 ---
 
-Avec le module Zones, il est possible d’éclaircir les tons foncé ou d'assombrir les tons clairs, démonstration avec Carafife. Bon visionnage !
+Avec le module Zones, il est possible d'éclaircir les tons foncé ou d'assombrir les tons clairs, démonstration avec Carafife. Bon visionnage !
 
 {{< youtube dpHF6MswUyQ >}}

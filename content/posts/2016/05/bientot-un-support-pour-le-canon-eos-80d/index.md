@@ -7,7 +7,7 @@ tags:
   - "news"
 ---
 
-Parfois certaines personnes s’inquiètent des logiciels libres du manque possible de support. **Il ne faut pas oublier que ce sont des développeurs bénévoles et volontaires qui sont derrière darktable**. Cela ne veut absolument pas dire que notre logiciel peut disparaître du jour au lendemain, bien au contraire, darktable est même parfois à la pointe !
+Parfois certaines personnes s'inquiètent des logiciels libres du manque possible de support. **Il ne faut pas oublier que ce sont des développeurs bénévoles et volontaires qui sont derrière darktable**. Cela ne veut absolument pas dire que notre logiciel peut disparaître du jour au lendemain, bien au contraire, darktable est même parfois à la pointe !
 
 Canon a récemment sorti un nouveau modèle dans sa gamme de DSLR EOS à deux chiffres, en effet, le 80D est disponible depuis 2 mois.
 

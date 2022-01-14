@@ -8,7 +8,7 @@ readingTime = false
   parent = "documentation"
 +++
 
-\[su\_note note\_color="#e6eaec"\]darktable est disponible uniquement pour les systèmes Linux, BSD, Mac et, depuis peu, pour Windows.. Voici quelques procédures d’installation selon différents systèmes d’exploitation :\[/su\_note\]
+\[su\_note note\_color="#e6eaec"\]darktable est disponible uniquement pour les systèmes Linux, BSD, Mac et, depuis peu, pour Windows.. Voici quelques procédures d'installation selon différents systèmes d'exploitation :\[/su\_note\]
 
 \[su\_service title="Version GNU/Linux et BSD" icon="icon: linux"\]Cliquez ci-dessous sur l'onglet correspondant à votre distribution GNU/Linux ou BSD pour connaître la procédure d'installation.\[/su\_service\]
 

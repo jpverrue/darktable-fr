@@ -10,13 +10,13 @@ Tout juste avant la nouvelle année, l'équipe de développement de darktable es
 ## Nouvelles fonctionnalités:
 
 - Montre une fenêtre de dialogue pour indiquer quand le verrouillage de la base de donnée/bibliothèque a échoué.
-- Demande avant d’effacer l'historique de la table lumineuse.
+- Demande avant d'effacer l'historique de la table lumineuse.
 - préférences: rend les fonctionnalités qui ne sont pas disponibles visuellement plus évidentes
 
 ## Corrections de bug:
 
 - Toujours nettoyer la liste de retour en arrière avant d'entrer en vue chambre noire. Corrige un crash quand on utilise le retour en arrière après être ré-entrer dans la chambre noire
-- Chambre noire: efface proprement les instance de module. Corrige de rares crashes après l’effacement de seconde instance de module.
+- Chambre noire: efface proprement les instance de module. Corrige de rares crashes après l'effacement de seconde instance de module.
 - Modules niveaux et courbe de tonalité maintenant utilisent aussi 256 bins.
 - Module Rawoverexposed: correction de la visualisation quand un préréglage personnalisé de balance des blancs est utilisé
 

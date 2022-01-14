@@ -15,7 +15,7 @@ Le site reste assez actif avec a**u moins une centaine de visites par jour**.
 
 Les statistiques sont disponibles [ici](https://stats.tuxfamily.org/darktable-fr.tuxfamily.org) pour les curieux. On peut dire sans prétention que le site a atteint sa vitesse de croisière.
 
-Comme vous avez pu le remarquer depuis quelques jours, le site arbore un nouveau thème plus claire, plus simple, c'est le thème 2016 de base de Wordpress. En fait, beaucoup se sont plaints de lenteurs lors de l'accès au site. La thème actuel est plus léger, de plus, certains plugins ont été supprimés. Bref, la rapidité d'accès au site a été optimisée au mieux. Bien sûr, toute aide dans la gestion de l’hébergement de darktable FR est la bienvenue.
+Comme vous avez pu le remarquer depuis quelques jours, le site arbore un nouveau thème plus claire, plus simple, c'est le thème 2016 de base de Wordpress. En fait, beaucoup se sont plaints de lenteurs lors de l'accès au site. La thème actuel est plus léger, de plus, certains plugins ont été supprimés. Bref, la rapidité d'accès au site a été optimisée au mieux. Bien sûr, toute aide dans la gestion de l'hébergement de darktable FR est la bienvenue.
 
 Conformément à l'arrivé de [https avec notre hébergeur](https://tuxfamily.org/fr/news/2016040201), darktable Fr utilise désormais cette technologie plus sécurisée. L'adresse en http est redirigée automatiquement vers celle en https.
 
