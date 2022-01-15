@@ -4,13 +4,6 @@
   weight = 10
   pre = '<i class="fas fa-fw fa-chevron-circle-down"></i>'
 [[main]]
-  name = "Articles"
-  identifier = "articles"
-  parent = "blog"
-  url = "/posts"
-  pre = '<i class="fas fa-newspaper fa-fw"></i>'
-  weight = 1   
-[[main]]
   name = "Forum"
   identifier = "forum"
   url = "https://forums.darktable.fr"
