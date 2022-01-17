@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  darktablefr:
+    image: ghcr.io/darktable-fr/darktable-fr:main
+    restart: always
+    container_name: darktablefr
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=web
+      - traefik.http.routers.darktablefr.middlewares=darktablefr
+      - traefik.http.routers.darktablefr.tls.certresolver=myresolver
+      - traefik.http.routers.darktablefr.rule=Host(`next.darktable.fr`)
+      - traefik.http.middlewares.darktablefr.headers.stsSeconds=155520011
+      - traefik.http.middlewares.darktablefr.headers.stsIncludeSubdomains=true
+      - traefik.http.middlewares.darktablefr.headers.stsPreload=true
+      - traefik.http.middlewares.darktablefr.headers.customFrameOptionsValue=SAMEORIGIN
+    networks:
+      - web
+      - default
+networks:
+  web:
+    external: true
