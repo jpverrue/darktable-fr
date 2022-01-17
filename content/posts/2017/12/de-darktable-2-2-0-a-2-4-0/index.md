@@ -9,4 +9,4 @@ tags:
 
 Voici une petit vidéo pour vous monter en image l'historique du développement entre les deux versions 2.2.0 et 2.4.0 :-)
 
-https://www.youtube.com/watch?v=VNdFenRQWtw
+{{< youtube VNdFenRQWtw >}}

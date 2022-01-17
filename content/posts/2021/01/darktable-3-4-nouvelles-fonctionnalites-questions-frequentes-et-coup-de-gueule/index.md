@@ -5,7 +5,7 @@ categories:
   - "tutoriels"
 ---
 
-https://www.youtube.com/watch?v=vVoIx3eMxwA
+{{< youtube vVoIx3eMxwA >}}
 
 Dans cette vidéo en anglais, je présente les options de masquage relatif à la scène et je réponds à des questions fréquentes, notamment sur l'intérêt du mixeur de canaux dans la retouche de couleur. La fin contient une réponse aux pleurnicheuses qui pensent que darktable devrait obligatoirement s'adresser aux débutants. Le sommaire horodaté est disponible sur la page Youtube.
 

@@ -10,4 +10,4 @@ tags:
 
 Voici la dernière vidéo d'[AXIOM Graph](https://www.youtube.com/channel/UC7VJcWHbJXZXghUXoHEp9aQ) sur comment améliorer les couleurs d'une photo avec la courbe de base. Bon visionnage.
 
-https://www.youtube.com/watch?v=RQXbmC\_v2d4
+{{< youtube RQXbmC_v2d4 >}}

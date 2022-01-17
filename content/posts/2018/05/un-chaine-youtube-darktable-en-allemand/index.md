@@ -7,4 +7,8 @@ tags:
   - "tutoriels-en-allemand"
 ---
 
-Youtube me signale différentes vidéos et je viens de regarder une chaîne en allemand (certains titres sont en anglais) : [darktable Tutorials](https://www.youtube.com/playlist?list=PLtO5kAK5wcRYio14-ECeo-C_wmmClKIrH) voilà une des dernières vidéos (titrage automatique en français disponible) : https://www.youtube.com/watch?v=BlN0-ZbNKLI&t=18s&list=PLtO5kAK5wcRYio14-ECeo-C\_wmmClKIrH&index=1 Bonne découverte.
+Youtube me signale différentes vidéos et je viens de regarder une chaîne en allemand (certains titres sont en anglais) : [darktable Tutorials](https://www.youtube.com/playlist?list=PLtO5kAK5wcRYio14-ECeo-C_wmmClKIrH) voilà une des dernières vidéos (titrage automatique en français disponible) : 
+
+{{< youtube BlN0-ZbNKLI >}}
+
+Bonne découverte.

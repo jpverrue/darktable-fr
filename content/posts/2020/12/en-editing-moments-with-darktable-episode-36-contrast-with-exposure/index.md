@@ -8,6 +8,6 @@ tags:
   - "tutoriel"
 ---
 
-https://www.youtube.com/watch?v=QMsf4z8A58M&fbclid=IwAR0IboZnoQp\_5Oyet2d6sUGrUYuG-4o8wRy4mLycadQ\_CP3C\_YJys28osDc
+{{< youtube QMsf4z8A58M >}}
 
-[Boris Hajdukovic](https://www.youtube.com/channel/UCMbDlOwmmQnkRmcb2_5WERg)  a publié cette vidéo muette de ce traitement. Bonne visualisation.
+[Boris Hajdukovic](https://www.youtube.com/channel/UCMbDlOwmmQnkRmcb2_5WERg)  a publié cette vidéo muette de ce traitement. Bonne visualisation.

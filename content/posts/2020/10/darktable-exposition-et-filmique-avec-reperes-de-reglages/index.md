@@ -8,8 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-https://www.youtube.com/watch?v=063VRg7NkwA&feature=youtu.be&fbclid=IwAR22qc21\_0afswfhls1PYa3mXp\_reUNRWlpvU3JRg0eHunfZ2hPCnCnOsiw
+{{< youtube 063VRg7NkwA >}}
 
-[Delétrée Phlippe](https://www.youtube.com/channel/UCib5VzKfizWKt_f7YGnhqQQ)  partage une méthode de réglage de l'exposition et de filmique pour ceux qui débutent.
+[Delétrée Phlippe](https://www.youtube.com/channel/UCib5VzKfizWKt_f7YGnhqQQ)  partage une méthode de réglage de l'exposition et de filmique pour ceux qui débutent.
 
 Bon visionnage.

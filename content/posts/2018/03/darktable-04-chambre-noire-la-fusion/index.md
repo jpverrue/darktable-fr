@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[Laurent Tuto](https://www.youtube.com/channel/UC_cUwX_8lPpve50jaOPt9VQ) nous permet de voir sa quatrième vidéo qui permet d'appréhender la fusion dans la chambre : une description brève de la fusion uniforme (qu'il veut aborder dans un prochain chapitre) ; les masques dessinées et les masques paramétriques : \[embedyt\] https://www.youtube.com/watch?v=25VX3HMFxt0\[/embedyt\] Bon visionnage.
+[Laurent Tuto](https://www.youtube.com/channel/UC_cUwX_8lPpve50jaOPt9VQ) nous permet de voir sa quatrième vidéo qui permet d'appréhender la fusion dans la chambre : une description brève de la fusion uniforme (qu'il veut aborder dans un prochain chapitre) ; les masques dessinées et les masques paramétriques : 
+
+{{< youtube 25VX3HMFxt0 >}}
+
+Bon visionnage.

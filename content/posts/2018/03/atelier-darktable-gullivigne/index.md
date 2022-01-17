@@ -9,7 +9,7 @@ tags:
 
 Un membre du forum vient de nous signaler que demain, samedi 3 mars, aurait lieu un atelier darktable par Gullivigne, le Groupe d'Utilisateurs de Logiciels Libres et Falab du Vignoble Nantais.
 
- 
+ 
 
 > Dominique Brisard, photographe de renom sur Clisson, aura le plaisir de venir nous faire découvrir "Darktable", ce logiciel libre de gestion de photos RAW.
 > 

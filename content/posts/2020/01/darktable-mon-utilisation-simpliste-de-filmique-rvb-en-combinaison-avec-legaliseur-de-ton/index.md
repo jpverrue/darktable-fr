@@ -8,7 +8,7 @@ tags:
   - "tutoriel"
 ---
 
-[Luc Viatour](https://www.youtube.com/channel/UCNLc97wHCBhgENfkIDiOUPQ) partage son flux de travail  : filmique RVB en combinaison avec l'égaliseur de ton (avec un passage sur un HDR sur 5 prises à différentes valeurs d'exposition).
+[Luc Viatour](https://www.youtube.com/channel/UCNLc97wHCBhgENfkIDiOUPQ) partage son flux de travail  : filmique RVB en combinaison avec l'égaliseur de ton (avec un passage sur un HDR sur 5 prises à différentes valeurs d'exposition).
 
 https://youtu.be/\_rcfkA-J14M
 

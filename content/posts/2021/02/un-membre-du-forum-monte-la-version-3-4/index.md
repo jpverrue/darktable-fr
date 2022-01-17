@@ -8,7 +8,7 @@ tags:
   - "tutoriel"
 ---
 
-\[embedyt\] https://www.youtube.com/watch?v=U6490XjxdQA\[/embedyt\]
+{{< youtube U6490XjxdQA >}}
 
 [philippus 68](https://www.youtube.com/channel/UCLpuK7KugtsX8nglfDi5uCA) a publié 7 vidéos faites pour présenter l'utilisation de la nouvelle version 3.4 :
 

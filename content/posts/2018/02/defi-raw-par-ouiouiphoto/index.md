@@ -11,4 +11,4 @@ OuiOui a proposé un défi de retouche d'un fichier RAW [sur le forum](https://d
 
 Voici son analyse en vidéo, bon visionnage:
 
-https://www.youtube.com/watch?v=KbbZPybFTx8
+{{< youtube KbbZPybFTx8 >}}

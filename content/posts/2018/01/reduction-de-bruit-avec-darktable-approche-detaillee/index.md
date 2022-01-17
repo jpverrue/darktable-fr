@@ -10,4 +10,4 @@ tags:
 
 Nouvelle vidéo de rawfiner qui nous présente une approche détaillée de la réduction de bruit. Bon visionnage !
 
-https://www.youtube.com/watch?v=9kf0JEcw9HM
+{{< youtube 9kf0JEcw9HM >}}

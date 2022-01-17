@@ -8,11 +8,11 @@ tags:
   - "tutoriel"
 ---
 
-Dans ce tuto, Harry Durgin vous présente l'utilisation du plugin d'Holger pour utiliser enfuse sous darktable. Ce plugin permet de gagner du temps pour faire du HDR ou du focus stacking. C'est un script lua qui permet l'utilisation d'align\_image\_stack et enfuse. Bon visionnage !
+Dans ce tuto, Harry Durgin vous présente l'utilisation du plugin d'Holger pour utiliser enfuse sous darktable. Ce plugin permet de gagner du temps pour faire du HDR ou du focus stacking. C'est un script lua qui permet l'utilisation d'align\_image\_stack et enfuse. Bon visionnage !
 
-https://www.youtube.com/watch?v=H3q\_LqVp00Q
+{{< youtube H3q_LqVp00Q >}}
 
-Source: [http://weeklyedit.com/holgers-lua-plugin-enfuse/](http://weeklyedit.com/holgers-lua-plugin-enfuse/)
+Source: [http://weeklyedit.com/holgers-lua-plugin-enfuse/](http://weeklyedit.com/holgers-lua-plugin-enfuse/)
 
 ### Procédure d'installation du plugin tirée du README
 
@@ -24,15 +24,15 @@ Sous ubuntu, il faudra installer des paquets nécessaires pour l'utilisation de 
 
 > sudo apt-get update sudo apt-get install liblua5.2-0 liblua5.2-dev lua5.2 lua5.2-doc
 
-Le programme align\_image\_stack (contenu dans hugin-tools), enfuse et exiftool seront utiles pour générer les images HDR et DFF (Focus Stacking)
+Le programme align\_image\_stack (contenu dans hugin-tools), enfuse et exiftool seront utiles pour générer les images HDR et DFF (Focus Stacking)
 
 > sudo apt-get install hugin-tools enfuse libimage-exiftool-perl
 
-Harry conseille aussi l'utilisation d'enfuse dans sa version récente,  la 4.2
+Harry conseille aussi l'utilisation d'enfuse dans sa version récente,  la 4.2
 
 > sudo add-apt-repository ppa:hugin/hugin-builds sudo apt-get update sudo apt-get upgrade
 
-Si non présents, créer les dossiers suivants:
+Si non présents, créer les dossiers suivants:
 
 > ~/.config/darktable/lua/contrib ~/.config/darktable/lua/en\_DE/LC\_MESSAGES
 

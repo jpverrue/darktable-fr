@@ -8,7 +8,7 @@ tags:
   - "tutoriel"
 ---
 
-https://www.youtube.com/watch?v=6y3-ESiyUpM
+{{< youtube 6y3-ESiyUpM >}}
 
 Dans cette vidéo, Harry vous donne des astuces pour animer vos photos de nuit avec un script. Plus d'infos (et fichiers disponibles) directement ici:
 

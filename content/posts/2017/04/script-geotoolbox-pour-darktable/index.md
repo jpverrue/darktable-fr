@@ -25,10 +25,10 @@ Avec les boutons 3 et 4, vous pouvez copier les informations GPS d'une image à 
 
 Le bouton 5 ouvre l'application Gnome Maps pour montrer la position directement avec ce logiciel.
 
-Le bouton reverse geocode permet d'utiliser le service web [Mapbox](https://www.openstreetmap.org/) pour récupérer les informations depuis [OpenStreetMap](http://openstreetmap/) sur le lieu de la photo sélectionnée et montrer le tout dans une fenêtre.
+Le bouton reverse geocode permet d'utiliser le service web [Mapbox](https://www.openstreetmap.org/) pour récupérer les informations depuis [OpenStreetMap](http://openstreetmap/) sur le lieu de la photo sélectionnée et montrer le tout dans une fenêtre.
 
-Le bouton export altitude CSV file permet d'exporter les informations, vers un fichier CSV, des images sélectionnées avec l'altitude en mètre dans une colonne et la distance entre les images ajoutées entre elles en kilomètre dans une seconde colonne. Par exemple avec LibreOffice Calc vous pouvez avoir un diagramme comme ceci:
+Le bouton export altitude CSV file permet d'exporter les informations, vers un fichier CSV, des images sélectionnées avec l'altitude en mètre dans une colonne et la distance entre les images ajoutées entre elles en kilomètre dans une seconde colonne. Par exemple avec LibreOffice Calc vous pouvez avoir un diagramme comme ceci:
 
 [![](images/geoToolbox_altitude_export-300x154.png)](http://darktable.fr/wp-content/uploads/2017/04/geoToolbox_altitude_export.png)
 
-Source: [https://dablogter.blogspot.fr/2017/04/darktable-geotoolbox-script.html](https://dablogter.blogspot.fr/2017/04/darktable-geotoolbox-script.html)
+Source: [https://dablogter.blogspot.fr/2017/04/darktable-geotoolbox-script.html](https://dablogter.blogspot.fr/2017/04/darktable-geotoolbox-script.html)

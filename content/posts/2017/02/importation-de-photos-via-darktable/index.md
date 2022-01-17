@@ -9,4 +9,4 @@ tags:
 
 Voici une vidéo de Pixels Libres qui explique comment importer ces photos via darktable. Bon visionnage :-)
 
-https://www.youtube.com/watch?v=DIjK1ckX-ys
+{{< youtube DIjK1ckX-ys >}}

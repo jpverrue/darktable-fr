@@ -12,4 +12,4 @@ Et voici le 38ème tutoriel vidéo de notre ami Carafife. Le tuto est consacré 
 
 Bon visionnage !
 
-https://www.youtube.com/watch?v=4mNHOTrdcKQ
+{{< youtube 4mNHOTrdcKQ >}}

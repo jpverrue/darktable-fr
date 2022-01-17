@@ -10,4 +10,4 @@ tags:
 
 La suite du passage de Lightroom à darktable par OuiOui. Cette fois, en présentant les autres fonctions possibles avec darktable. Bon visionnage !
 
-https://www.youtube.com/watch?v=YylWXe6nL50
+{{< youtube YylWXe6nL50 >}}

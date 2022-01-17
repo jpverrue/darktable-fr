@@ -27,4 +27,4 @@ Voici le lien si vous voulez essayer:
 
 Pensez à rapporter les bugs [ici](https://redmine.darktable.org/projects/darktable/issues/new) et en mettant **Windows** comme "system".
 
-Source: [https://discuss.pixls.us/t/darktable-for-windows/4966?u=patdavid](https://discuss.pixls.us/t/darktable-for-windows/4966?u=patdavid)
+Source: [https://discuss.pixls.us/t/darktable-for-windows/4966?u=patdavid](https://discuss.pixls.us/t/darktable-for-windows/4966?u=patdavid)

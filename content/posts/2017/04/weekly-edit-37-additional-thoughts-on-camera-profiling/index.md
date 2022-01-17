@@ -8,6 +8,6 @@ tags:
   - "tutoriel"
 ---
 
-Dans sa vidéo de cette semaine, Harry Durgin continue à parler du profilage d'appareil photo avec darktable. Il profite aussi pour présenter une nouvelle fonctionnalité présente avec le module de courbe de base dans la version de développement de darktable. Bon visionnage !
+Dans sa vidéo de cette semaine, Harry Durgin continue à parler du profilage d'appareil photo avec darktable. Il profite aussi pour présenter une nouvelle fonctionnalité présente avec le module de courbe de base dans la version de développement de darktable. Bon visionnage !
 
-https://www.youtube.com/watch?v=U8Wt9cHmX8Q
+{{< youtube U8Wt9cHmX8Q >}}

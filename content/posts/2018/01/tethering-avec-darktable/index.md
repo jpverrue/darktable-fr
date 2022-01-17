@@ -18,4 +18,4 @@ C'est techniquement accessible [mais en anglais](https://darktable.fr/forum/show
 
 Bon visionnage
 
-https://www.youtube.com/watch?v=w5\_-DzKP9Z4
+{{< youtube w5_-DzKP9Z4 >}}

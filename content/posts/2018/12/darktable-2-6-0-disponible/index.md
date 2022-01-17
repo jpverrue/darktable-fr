@@ -20,7 +20,7 @@ La version 2.4 laisse donc la place à la 2.6 qui comporte plus de 1600 modifica
 - nouveau module filmic qui remplace celui pour la courbe de base et celui pour les ombres et hautes lumières
 - nouveau modules pour gérer les copies dans la chambre noire avec possibilité d'ajouter des titres, créer des copies standard ou vierges, effacer des copier ou comparer rapidement avec une copie
 - nouvelles commandes logarithmiques pour la courbe de tonalité
--  nouveau mode pour le module profilé incassable
+-  nouveau mode pour le module profilé incassable
 - rajoute d'un aperçu du masque pour ajuster la taille et la dureté avant de les placer
 - rendre possible de changer la surface recadrée dans le module de correction de perspective
 - le flou du masque a été complété par un filtre guidé pour l'affiner (cela fonctionne sur les espaces couleurs RVB et Lab).
@@ -88,61 +88,61 @@ La version 2.4 laisse donc la place à la 2.6 qui comporte plus de 1600 modifica
 
 ### Support de base
 
-- Canon EOS 1500D
-- Canon EOS 2000D
-- Canon EOS Rebel T7
-- Canon EOS 3000D
-- Canon EOS 4000D
-- Canon EOS Rebel T100
-- Canon EOS 5D Mark IV (sRaw1, sRaw2)
-- Canon EOS 5DS (sRaw1, sRaw2)
-- Canon EOS 5DS R (sRaw1, sRaw2)
+- Canon EOS 1500D
+- Canon EOS 2000D
+- Canon EOS Rebel T7
+- Canon EOS 3000D
+- Canon EOS 4000D
+- Canon EOS Rebel T100
+- Canon EOS 5D Mark IV (sRaw1, sRaw2)
+- Canon EOS 5DS (sRaw1, sRaw2)
+- Canon EOS 5DS R (sRaw1, sRaw2)
 - Canon PowerShot G1 X Mark III
-- Fujifilm X-A5
-- Fujifilm X-H1 (compressed)
-- Fujifilm X-T100
-- Fujifilm X-T3 (compressed)
-- GoPro FUSION (dng)
-- GoPro HERO5 Black (dng)
-- GoPro HERO6 Black (dng)
-- GoPro HERO7 Black (dng)
+- Fujifilm X-A5
+- Fujifilm X-H1 (compressed)
+- Fujifilm X-T100
+- Fujifilm X-T3 (compressed)
+- GoPro FUSION (dng)
+- GoPro HERO5 Black (dng)
+- GoPro HERO6 Black (dng)
+- GoPro HERO7 Black (dng)
 - Hasselblad CFV\-50
 - Hasselblad H5D\-40
 - Hasselblad H5D\-50c
-- Kodak DCS Pro 14nx
+- Kodak DCS Pro 14nx
 - Kodak DCS520C
 - Kodak DCS760C
-- Kodak EOS DCS 3
-- Nikon COOLPIX P1000 (12bit-uncompressed)
-- Nikon D2Xs (12bit-compressed, 12bit-uncompressed)
-- Nikon D3500 (12bit-compressed)
-- Nikon Z 6 (except uncompressed raws)
-- Nikon Z 7 (except 14-bit uncompressed raw)
+- Kodak EOS DCS 3
+- Nikon COOLPIX P1000 (12bit-uncompressed)
+- Nikon D2Xs (12bit-compressed, 12bit-uncompressed)
+- Nikon D3500 (12bit-compressed)
+- Nikon Z 6 (except uncompressed raws)
+- Nikon Z 7 (except 14-bit uncompressed raw)
 - Olympus E-PL8
 - Olympus E-PL9
 - Olympus SH\-2
-- Panasonic DC\-FZ80 (4:3)
-- Panasonic DC\-G9 (4:3)
-- Panasonic DC\-GF9 (4:3)
-- Panasonic DC\-GX800 (4:3)
-- Panasonic DC\-GX850 (4:3)
-- Panasonic DC\-GH5S (4:3, 3:2, 16:9, 1:1)
-- Panasonic DC\-GX9 (4:3)
-- Panasonic DC\-LX100M2 (4:3, 1:1, 16:9, 3:2)
-- Panasonic DC\-TZ200 (3:2)
-- Panasonic DC\-TZ202 (3:2)
-- Panasonic DMC\-FZ2000 (3:2)
-- Panasonic DMC\-FZ2500 (3:2)
-- Panasonic DMC\-FZ35 (3:2, 16:9)
-- Panasonic DMC\-FZ38 (3:2, 16:9)
-- Panasonic DMC\-GX7MK2 (4:3)
-- Panasonic DMC\-ZS100 (3:2)
-- Paralenz Dive Camera (chdk)
-- Pentax 645Z
+- Panasonic DC\-FZ80 (4:3)
+- Panasonic DC\-G9 (4:3)
+- Panasonic DC\-GF9 (4:3)
+- Panasonic DC\-GX800 (4:3)
+- Panasonic DC\-GX850 (4:3)
+- Panasonic DC\-GH5S (4:3, 3:2, 16:9, 1:1)
+- Panasonic DC\-GX9 (4:3)
+- Panasonic DC\-LX100M2 (4:3, 1:1, 16:9, 3:2)
+- Panasonic DC\-TZ200 (3:2)
+- Panasonic DC\-TZ202 (3:2)
+- Panasonic DMC\-FZ2000 (3:2)
+- Panasonic DMC\-FZ2500 (3:2)
+- Panasonic DMC\-FZ35 (3:2, 16:9)
+- Panasonic DMC\-FZ38 (3:2, 16:9)
+- Panasonic DMC\-GX7MK2 (4:3)
+- Panasonic DMC\-ZS100 (3:2)
+- Paralenz Dive Camera (chdk)
+- Pentax 645Z
 - Pentax K-1 Mark II
 - Pentax KP
-- Phase One P65+
-- Sjcam SJ6 LEGEND (chdk-b, chdk-c)
+- Phase One P65+
+- Sjcam SJ6 LEGEND (chdk-b, chdk-c)
 - Sony DSC\-HX99
 - Sony DSC\-RX0
 - Sony DSC\-RX100M5A
@@ -152,16 +152,16 @@ La version 2.4 laisse donc la place à la 2.6 qui comporte plus de 1600 modifica
 
 ### Profils Balance des blancs
 
-- Canon EOS M100
-- Fujifilm X-T3
-- Leaf Credo 40
-- Nikon D3400
-- Nikon D5600
-- Nikon D7500
-- Nikon D850
-- Nikon Z 6
+- Canon EOS M100
+- Fujifilm X-T3
+- Leaf Credo 40
+- Nikon D3400
+- Nikon D5600
+- Nikon D7500
+- Nikon D850
+- Nikon Z 6
 - Olympus E-M10 Mark III
-- Olympus E-M1MarkII
+- Olympus E-M1MarkII
 - Panasonic DC\-G9
 - Panasonic DC\-GX9
 - Panasonic DMC\-FZ300
@@ -177,35 +177,35 @@ La version 2.4 laisse donc la place à la 2.6 qui comporte plus de 1600 modifica
 
 ### Profils de bruit
 
-- Canon EOS 200D
-- Canon EOS Kiss X9
+- Canon EOS 200D
+- Canon EOS Kiss X9
 - Canon EOS Rebel SL2
-- Canon EOS 750D
-- Canon EOS Kiss X8i
-- Canon EOS Rebel T6i
-- Canon EOS 760D
-- Canon EOS 8000D
-- Canon EOS Rebel T6s
-- Canon EOS 77D
-- Canon EOS 9000D
-- Canon EOS 800D
-- Canon EOS Kiss X9i
-- Canon EOS Rebel T7i
-- Canon EOS M100
-- Canon EOS M6
+- Canon EOS 750D
+- Canon EOS Kiss X8i
+- Canon EOS Rebel T6i
+- Canon EOS 760D
+- Canon EOS 8000D
+- Canon EOS Rebel T6s
+- Canon EOS 77D
+- Canon EOS 9000D
+- Canon EOS 800D
+- Canon EOS Kiss X9i
+- Canon EOS Rebel T7i
+- Canon EOS M100
+- Canon EOS M6
 - Canon PowerShot G1 X Mark II
 - Canon PowerShot G1 X Mark III
-- Canon PowerShot G9 X
-- Fujifilm X-A5
-- Fujifilm X-E3
-- Fujifilm X-T3
+- Canon PowerShot G9 X
+- Fujifilm X-A5
+- Fujifilm X-E3
+- Fujifilm X-T3
 - Fujifilm X100F
 - Nikon 1 AW1
-- Nikon 1 J3
-- Nikon COOLPIX B700
-- Nikon D5600
-- Nikon D7500
-- Nikon D850
+- Nikon 1 J3
+- Nikon COOLPIX B700
+- Nikon D5600
+- Nikon D7500
+- Nikon D850
 - Olympus E-M10 Mark III
 - Olympus TG\-5
 - Panasonic DC\-G9
@@ -219,7 +219,7 @@ La version 2.4 laisse donc la place à la 2.6 qui comporte plus de 1600 modifica
 - Panasonic DMC\-TZ70
 - Panasonic DMC\-TZ71
 - Panasonic DMC\-ZS50
-- Pentax K-01
+- Pentax K-01
 - Pentax KP
 - Samsung NX1
 - Sony DSC\-RX100M4
@@ -235,7 +235,7 @@ La version 2.4 laisse donc la place à la 2.6 qui comporte plus de 1600 modifica
 - German
 - Hungarian
 - Japanese
-- Norwegian Bokmål
+- Norwegian Bokmål
 - Portuguese
 - Russian
 - Slovenian

@@ -13,7 +13,7 @@ Voici l'adresse exacte:
 
 [La Spirale Chaussée de Namur 22, 5360 Natoye, Belgique](https://maps.google.com/maps?q=Chauss%C3%A9e%20de%20Namur%2022%2C%205360%20Natoye%2C%20Belgique)
 
- 
+ 
 
 **Entrée 5€ (pour l'ASBL) avec une boisson au bar**
 

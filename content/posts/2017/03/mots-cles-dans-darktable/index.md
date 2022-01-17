@@ -13,4 +13,4 @@ Pixels Libres nous publie sa 4ième vidéo qui, cette fois, aborde la thématiqu
 
 Bon visionnage !
 
-https://www.youtube.com/watch?v=wZcxbBznn5g
+{{< youtube wZcxbBznn5g >}}

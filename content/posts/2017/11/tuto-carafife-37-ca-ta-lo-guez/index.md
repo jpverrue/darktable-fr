@@ -10,4 +10,4 @@ tags:
 
 La fonction catalogage était d'actualité sur le [forum](https://darktable.fr/forum/showthread.php?tid=1937). Carafife en a profité pour faire un tuto de manière à revisiter en profondeur cette fonction de darktable. Bon visionnage !
 
-https://www.youtube.com/watch?v=cjrghsU1AEA
+{{< youtube cjrghsU1AEA >}}

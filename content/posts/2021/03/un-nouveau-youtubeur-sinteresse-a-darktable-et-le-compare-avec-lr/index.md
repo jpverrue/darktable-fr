@@ -5,7 +5,7 @@ categories:
   - "tutoriels"
 ---
 
-\[embedyt\] https://www.youtube.com/watch?v=OSkhoPeq8zo\[/embedyt\]
+{{< youtube OSkhoPeq8zo >}}
 
 " [Carte Postale de](https://www.youtube.com/channel/UCGil9-K90bDUcVwtEMcXA3A)" présente avec 5 vidéos ce qu'il peut faire en comparant avec des traitements et présets qu'il utilise avec LR.
 

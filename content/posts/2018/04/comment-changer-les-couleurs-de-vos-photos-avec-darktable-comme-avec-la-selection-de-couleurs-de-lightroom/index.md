@@ -10,4 +10,4 @@ tags:
 
 Voici une autre vidéo d'[AXIOM Graph](http://darktable.fr/2018/04/darktable-express-panneaux-et-decalage-photo/) en anglais mais toutefois claire et simple pour changer les couleurs de vos photos avec darktable. Bon visionnage !
 
-https://www.youtube.com/watch?v=93DxNqbUxVI
+{{< youtube 93DxNqbUxVI >}}

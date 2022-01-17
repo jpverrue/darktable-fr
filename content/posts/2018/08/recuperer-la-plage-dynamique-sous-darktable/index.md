@@ -39,7 +39,7 @@ darktable dispose d'un module ombres et hautes lumières qui permet de faire cec
 
 En paysage, où vous avez des zones bien séparées (ciel, mer, terrain), ça marche bien. C'est alors l'équivalent d'un dodge & burn à la Ansel Adams :
 
-https://www.youtube.com/watch?v=e9v18cQ0f2E
+{{< youtube e9v18cQ0f2E >}}
 
 En portrait, vous le voyez dans l'exemple ci-dessus, le résultat a tendance à avaler du contraste local et donc à aplatir le modelé du visage et du corps. En effet, on n'a pas, sur un visage, des démarcations aussi franches qu'en paysage entre les zones claires et les zones sombres. Par contre, ce module fait des merveilles, bien réglé, pour supprimer des zones brillantes sur un visage (arrête du nez, front huileux), précisément parce que, dans ce cas là, vous voulez retirer du contraste.
 
@@ -55,7 +55,7 @@ Le nez est aplati dans le visage, la peau est jaune trop saturée (même pour un
 
 On applique une courbe de base spéciale, tirée du [profil Tassinflat](http://photographio.com/nikon-flat-picture-control-videography-photographios-cineflat/) créé pour enregistrer des vidéos sans perte de détail, pour faciliter le post-traitement. Ces profils neutres et plats (N-log, S-log, etc.) sont très populaires chez les vidéastes qui filment au réflex car les encodages et compressions vidéos appliquées évacuent complètement les zones sans détails. Il est donc important, à l'enregistrement, d'avoir un profil très neutre, peu contrasté, pour avoir un enregistrement complet qui permettent ensuite, en post-production, de jouer avec une image entière (la vidéo sur réflex n'est pas en raw). Ici, c'est un autre objectif que nous visons : il s'agit de récupérer les détails le plus bas possible dans la pile des modules (le module courbe de base est l'un des premiers à s'appliquer, juste après l'exposition).
 
- 
+ 
 
 [![](images/courbes-de-base.png)](http://darktable.fr/wp-content/uploads/2018/08/courbes-de-base.png)On voit que cette courbe va atténuer les hautes lumières et éclaircir dramatiquement les ombres, sans toucher aux extrêmes.
 
@@ -110,7 +110,7 @@ La photo date de 2011, et la retouche porte la trace de son époque : un goût p
 
 \[caption id="attachment\_5961" align="aligncenter" width="684"\][![](images/DSC_0012-retouche-perso.jpg)](http://darktable.fr/wp-content/uploads/2018/08/DSC_0012-retouche-perso.jpg) Retouche Aurélien Pierre/darktable\[/caption\]
 
-Vous remarquez que, dans ma version, la  modèle est blonde des racines au pointes, alors que la version de Jared, au contraste renforcé, donne un rendu « fausse blonde » avec des racines foncées. La teinte de peau est aussi plus naturelle à mon avis. Je trouve mon image globalement moins dure.
+Vous remarquez que, dans ma version, la  modèle est blonde des racines au pointes, alors que la version de Jared, au contraste renforcé, donne un rendu « fausse blonde » avec des racines foncées. La teinte de peau est aussi plus naturelle à mon avis. Je trouve mon image globalement moins dure.
 
 ## Conclusion et commentaires
 

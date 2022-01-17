@@ -11,8 +11,6 @@ Il faut croire que darktable a le vent en poupe sur Youtube en ce moment (un rap
 
 Bon visionnage !14
 
-https://www.youtube.com/watch?v=ppe6kvCIr6I&
-
-https://www.youtube.com/watch?v=fU4ohoSdY1Q&
-
-https://www.youtube.com/watch?v=x3lZIGep30k&
+{{< youtube ppe6kvCIr6I >}}
+{{< youtube fU4ohoSdY1Q >}}
+{{< youtube x3lZIGep30k >}}

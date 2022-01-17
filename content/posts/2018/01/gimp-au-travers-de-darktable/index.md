@@ -9,4 +9,4 @@ tags:
 
 Encore une vidéo de blur.bz avec un traitement d'un RAW avec darktable avec un passage par Gimp. Vidéo en anglais. Bon visionnage !
 
-https://www.youtube.com/watch?v=1IqXIjj4erk
+{{< youtube 1IqXIjj4erk >}}

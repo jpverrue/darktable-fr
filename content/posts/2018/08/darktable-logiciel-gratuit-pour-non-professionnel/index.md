@@ -56,7 +56,7 @@ J'ai repris ce [concours RAW](https://froknowsphoto.com/raw-edit-of-the-week-25/
 
 Observez ce détail de la robe à 100 % et dites-moi si on a perdu des détails dans la texture. En fait, j'ai fait exprès d'atténuer les hautes lumières pour augmenter les détails dans la texture et le drapé. Donc darktable « sait » récupérer les hautes lumières, sous réserve que l'utilisateur sache le faire fonctionner.
 
-\[caption id="attachment\_5921" align="aligncenter" width="1905"\][![](images/aurelien-jared-2.png)](http://darktable.fr/wp-content/uploads/2018/08/aurelien-jared-2.png) Gauche : retouche Aurélien/darktable | Droite : retouche Jared/Lightroom\[/caption\]
+\[caption id="attachment\_5921" align="aligncenter" width="1905"\][![](images/aurelien-jared-2.png)](http://darktable.fr/wp-content/uploads/2018/08/aurelien-jared-2.png) Gauche : retouche Aurélien/darktable | Droite : retouche Jared/Lightroom\[/caption\]
 
 Donc, est-ce le logiciel qui est en cause, ou la maîtrise de celui qui prétend le tester ? Je vous laisse juge.
 
@@ -82,11 +82,11 @@ Je suis désolé, mais on ne peut pas faire des opérations avancées avec des o
 
 darktable compte 4 modules différents de débruitage, chacun spécialisés dans un type de bruit particulier, qui offrent des compromis bruit/netteté différents. Il compte aussi 4 modules différents d'accentuation de la netteté, chacun avec des effets de bords différents et un rendu particulier.
 
-Ce qu'il faut comprendre, c'est que chaque module est l'équivalent d'un calque de réglage, qu'on peut masquer, dupliquer, empiler, et qui ne réalise qu'une opération à la fois. La logique de darktable, c'est d'empiler les modules pour empiler les algorithmes. Pas de proposer une interface unifiée avec des réglages communs où l'on ne sait pas trop ce qui se passe en-dessous. La possibilité de relier chaque module avec un algorithme équivaut à la possibilité  de se renseigner sur les limites et les faiblesses de l'algorithme pour comprendre dans quel cas utiliser le module en question. Et pour les développeurs, c'est aussi un moyen propre de compartimenter le code de façon à encourager les contributions et simplifier la maintenance. Chaque module est autonome.
+Ce qu'il faut comprendre, c'est que chaque module est l'équivalent d'un calque de réglage, qu'on peut masquer, dupliquer, empiler, et qui ne réalise qu'une opération à la fois. La logique de darktable, c'est d'empiler les modules pour empiler les algorithmes. Pas de proposer une interface unifiée avec des réglages communs où l'on ne sait pas trop ce qui se passe en-dessous. La possibilité de relier chaque module avec un algorithme équivaut à la possibilité  de se renseigner sur les limites et les faiblesses de l'algorithme pour comprendre dans quel cas utiliser le module en question. Et pour les développeurs, c'est aussi un moyen propre de compartimenter le code de façon à encourager les contributions et simplifier la maintenance. Chaque module est autonome.
 
 Vous voulez avoir le choix ou pas ? La vraie question est la suivante : **pourquoi ça devrait marcher tout de suite, sans effort ?** Je signale qu'il n'y a pas si longtemps, la retouche se faisait dans la chambre noire, au pinceau, avec des masques découpés dans du carton, et c'était une autre histoire :
 
-https://www.youtube.com/watch?v=\_2mQsUIc97E
+{{< youtube _2mQsUIc97E >}}
 
 Et, malgré toute cette complexité, les gens se mettaient au travail, sans pleurnicher. Mais ça c'était avant.
 

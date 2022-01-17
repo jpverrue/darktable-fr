@@ -11,9 +11,9 @@ La première release candidate de la prochaine version stable stable 2.4.0 de da
 
 Depuis la version 2.2.0, le projet darktable a récupéré sous sa coupe le projet RawSpeed dont plus de 2000 modifications ont été apportées. 244 modifications et plus de 320 corrections ont été réalisées sur darktable .
 
- 
+ 
 
-Liste complète ici: [https://github.com/darktable-org/darktable/releases/tag/release-2.4.0rc0](https://github.com/darktable-org/darktable/releases/tag/release-2.4.0rc0)
+Liste complète ici: [https://github.com/darktable-org/darktable/releases/tag/release-2.4.0rc0](https://github.com/darktable-org/darktable/releases/tag/release-2.4.0rc0)
 
 De plus, il y a désormais une version windows:
 

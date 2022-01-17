@@ -12,6 +12,6 @@ Dans ce dernier épisode de Weekky Edit, Harry Durgin montre étape par étape c
 
 Bon visionnage ;-)
 
-https://www.youtube.com/watch?v=LufwQZx01gk
+{{< youtube LufwQZx01gk >}}
 
-Retrouvez davantage d'infos (script, image sample) sur [http://weeklyedit.com/basecurves/](http://weeklyedit.com/basecurves/)
+Retrouvez davantage d'infos (script, image sample) sur [http://weeklyedit.com/basecurves/](http://weeklyedit.com/basecurves/)

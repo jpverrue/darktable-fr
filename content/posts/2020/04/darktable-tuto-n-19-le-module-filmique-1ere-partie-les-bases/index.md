@@ -8,7 +8,7 @@ tags:
   - "tutoriel"
 ---
 
-https://www.youtube.com/watch?v=slKKDAtexsg
+{{< youtube slKKDAtexsg >}}
 
 [JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) aborde le module filmique et l'explique avec Gimp.
 

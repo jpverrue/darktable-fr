@@ -8,6 +8,6 @@ tags:
   - "tutoriel"
 ---
 
-Nouvelle vidéo de [MyGimpTutorialChannel](https://www.youtube.com/channel/UCPHIhisbs90ks4-4EsdXtpQ) sur le traitement de photo de portrait, en particulier, la retouche au niveau de la peau des modèles. Bon visionnage !
+Nouvelle vidéo de [MyGimpTutorialChannel](https://www.youtube.com/channel/UCPHIhisbs90ks4-4EsdXtpQ) sur le traitement de photo de portrait, en particulier, la retouche au niveau de la peau des modèles. Bon visionnage !
 
-https://www.youtube.com/watch?v=EH9YlTsVLx0&feature=youtu.be
+{{< youtube EH9YlTsVLx0 >}}

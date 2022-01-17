@@ -11,7 +11,7 @@ tags:
 
 Mettez la vidéo vers 3:25 pour gagner du temps ;-)
 
-https://www.youtube.com/watch?v=NjjwVCp6e74
+{{< youtube NjjwVCp6e74 >}}
 
 On considérera cela comme un petit moment de gloire. On espère, d'ailleurs, que la communauté fotoloco réussira à convaincre Blaise d'utiliser darktable.
 

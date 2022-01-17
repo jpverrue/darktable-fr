@@ -10,6 +10,6 @@ tags:
 
 Voici le tuto d'Harry Durgin de cette semaine, bon visionnage :-)
 
-https://www.youtube.com/watch?v=dfy57vynOQU
+{{< youtube dfy57vynOQU >}}
 
-Source: [http://weeklyedit.com/stacking-by-hand/](http://weeklyedit.com/stacking-by-hand/)
+Source: [http://weeklyedit.com/stacking-by-hand/](http://weeklyedit.com/stacking-by-hand/)

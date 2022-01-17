@@ -14,4 +14,4 @@ Fichiers disponibles sur weeklyedit:
 
 [http://weeklyedit.com/now-quicker-edits/](http://weeklyedit.com/now-quicker-edits/)
 
-https://www.youtube.com/watch?v=Ox6uPIqCVzU
+{{< youtube Ox6uPIqCVzU >}}

@@ -10,4 +10,4 @@ tags:
 
 Suite au défi de OuiOuiPhoto du billet précédent, rawfiner a réalisé une vidéo pour expliquer comment il a fait pour reproduire l'effet obtenu. Bon visionnage. Il était normal de vous faire partager cette vidéo :-)
 
-https://www.youtube.com/watch?v=29Ds5732pIU
+{{< youtube 29Ds5732pIU >}}

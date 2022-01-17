@@ -1,5 +1,5 @@
 ---
-title: "darktable 3.8, nouveau module : diffusion ou netteté"
+title: "darktable 3.8, nouveau module : diffusion ou netteté"
 date: "2021-11-14"
 categories: 
   - "tutoriels"
@@ -9,6 +9,6 @@ La diffusion est un procédé physique par lequel des particules se répandent d
 
 La démonstration (en anglais) :
 
-https://www.youtube.com/watch?v=DREdq7guNz4
+{{< youtube DREdq7guNz4 >}}
 
 [La documentation](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/diffuse/) (en anglais).

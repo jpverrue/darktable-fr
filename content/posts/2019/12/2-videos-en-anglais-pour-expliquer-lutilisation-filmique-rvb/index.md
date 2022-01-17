@@ -12,6 +12,6 @@ Après la première vidéo, [Aurélien PIERRE Photo](https://www.youtube.com/cha
 
 https://youtu.be/zbPj\_TqTF88
 
-https://www.youtube.com/watch?v=9awBFYcPgGU&t=18s
+{{< youtube 9awBFYcPgGU >}}
 
 Bonne visualisation.

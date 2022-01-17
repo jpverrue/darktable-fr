@@ -8,6 +8,6 @@ tags:
   - "tutoriel"
 ---
 
-\[embedyt\] https://www.youtube.com/watch?v=oeNE-1I4KSM\[/embedyt\]
+{{< youtube oeNE-1I4KSM >}}
 
-[Luc Viatour](https://www.youtube.com/channel/UCNLc97wHCBhgENfkIDiOUPQ) vient de finir un Live pour présenter darktable 3.4  et les nouveautés  de cette nouvelle verrsion et la façon dont il les utilisent comme professionnel. Bonne découverte.
+[Luc Viatour](https://www.youtube.com/channel/UCNLc97wHCBhgENfkIDiOUPQ) vient de finir un Live pour présenter darktable 3.4  et les nouveautés  de cette nouvelle verrsion et la façon dont il les utilisent comme professionnel. Bonne découverte.

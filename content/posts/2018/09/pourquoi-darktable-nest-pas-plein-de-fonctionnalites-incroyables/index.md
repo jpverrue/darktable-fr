@@ -11,7 +11,7 @@ Pourquoi darktable n'est ni Lightroom, ni Capture One ?
 
 ## Les profils couleur
 
-Votre capteur d'appareil photo mesure l'intensité lumineuse reçue sur 3 canaux (rouge, vert, bleu : on est dans un espace RGB). Comme n'importe quel capteur, il se plante : il commet une erreur, autrement dit les valeurs RGB qu'il mesure sont plus ou moins fausses par rapport à la réalité. L'erreur se calcule en mesurant des valeurs RGB de mires d'étalonnages  dont on connaît la valeur théorique. erreur² = (théorie - mesure)².
+Votre capteur d'appareil photo mesure l'intensité lumineuse reçue sur 3 canaux (rouge, vert, bleu : on est dans un espace RGB). Comme n'importe quel capteur, il se plante : il commet une erreur, autrement dit les valeurs RGB qu'il mesure sont plus ou moins fausses par rapport à la réalité. L'erreur se calcule en mesurant des valeurs RGB de mires d'étalonnages  dont on connaît la valeur théorique. erreur² = (théorie - mesure)².
 
 \[caption id="" align="aligncenter" width="1600"\][![](images/IT8_color_target_by_EGM_Laboratories.jpg)](https://upload.wikimedia.org/wikipedia/commons/c/c0/IT8_color_target_by_EGM_Laboratories.jpg) Une mire IT8 standard - CC Wikimedia / Hugo Rodriguez\[/caption\]
 

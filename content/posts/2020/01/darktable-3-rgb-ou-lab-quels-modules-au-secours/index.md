@@ -73,7 +73,7 @@ Cependant, toutes les opérations optiques qui sont réalisées lors de la prise
 
 \[gallery columns="2" link="file" size="medium" ids="6858,6859"\]
 
-\[caption id="" align="aligncenter" width="2048"\]![](https://images.unsplash.com/photo-1496307307731-a75e2e6b0959?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2048&q=80) Photo d'origine : [Hanny Naibaho](https://unsplash.com/@hannynaibaho?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge "Download free do whatever you want high-resolution photos from Hanny Naibaho")\[/caption\]
+\[caption id="" align="aligncenter" width="2048"\]![](https://images.unsplash.com/photo-1496307307731-a75e2e6b0959?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2048&q=80) Photo d'origine : [Hanny Naibaho](https://unsplash.com/@hannynaibaho?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge "Download free do whatever you want high-resolution photos from Hanny Naibaho")\[/caption\]
 
 Observez notamment comment les personnages sombres (en bas à gauche) fusionnent dans l'arrière-plan clair, ou le contraste des pentagones du diaphragme formés sur les points lumineux. Un autre exemple, avec un simple flou sur des surfaces lisses : lequel de ces dégradés vous semble le plus progressif ?
 

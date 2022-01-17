@@ -53,7 +53,7 @@ Pour finir, j'ai codé des versions OpenCL de ces deux modules pour que ça soit
 
 ## 4\. Limites
 
-La balance des couleurs  a toujours ces affreux curseurs RGB, quand la totalité des logiciels qui implémentent cette approche utilisent des roues chromatiques, beaucoup plus simples à contrôler. Le code pour les roues chromatiques est inclus, mais commenté, dans le code source du module, il semble qu'on ne soit pas très loin de le faire marcher, mais je n'ai pas eu de nouvelles du développeur précédent.
+La balance des couleurs  a toujours ces affreux curseurs RGB, quand la totalité des logiciels qui implémentent cette approche utilisent des roues chromatiques, beaucoup plus simples à contrôler. Le code pour les roues chromatiques est inclus, mais commenté, dans le code source du module, il semble qu'on ne soit pas très loin de le faire marcher, mais je n'ai pas eu de nouvelles du développeur précédent.
 
 ## 5\. Et maintentant ?
 

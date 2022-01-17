@@ -7,11 +7,11 @@ categories:
 
 Jean-Pierre Verrue vient de publier un document recensant tous les fichiers et dossiers utilisés par darktable pour sa configuration et son fonctionnement.
 
-Chaque dossier ou fichier est décrit :  son rôle, sa structure et son emplacement selon l'OS.
+Chaque dossier ou fichier est décrit :  son rôle, sa structure et son emplacement selon l'OS.
 
-Vous pouvez consulter son document [ICI](http://darktable.fr/les-fichiers-de-configuration/) dans l'onglet "les fichiers de configuration de darktable"
+Vous pouvez consulter son document [ICI](http://darktable.fr/les-fichiers-de-configuration/) dans l'onglet "les fichiers de configuration de darktable"
 
-Il s'agit de la première version de ce document. Il contient peut être encore des erreurs, lacunes ou approximations. N'hésitez pas à les relever et à les mentionner en commentaires de cet article, afin que ce document devienne une vraie référence pour tous ! D'ors et déjà,  Il reste deux définitions incomplètes surlignées dans le texte. À vos claviers !
+Il s'agit de la première version de ce document. Il contient peut être encore des erreurs, lacunes ou approximations. N'hésitez pas à les relever et à les mentionner en commentaires de cet article, afin que ce document devienne une vraie référence pour tous ! D'ors et déjà,  Il reste deux définitions incomplètes surlignées dans le texte. À vos claviers !
 
 * * *
 

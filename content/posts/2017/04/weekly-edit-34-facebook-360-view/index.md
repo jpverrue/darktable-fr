@@ -12,7 +12,7 @@ La vidéo de Weekly Edit de cette semaine traite d'un script qui permettra à Fa
 
 Bon visionnage !
 
-https://www.youtube.com/watch?v=cLf\_\_wx2-ms
+{{< youtube cLf__wx2-ms >}}
 
 Le script:
 
@@ -61,4 +61,4 @@ for f in "${@}"; do
         "$f"
 done
 
-Source: [http://weeklyedit.com/facebook-360-view/](http://weeklyedit.com/facebook-360-view/)
+Source: [http://weeklyedit.com/facebook-360-view/](http://weeklyedit.com/facebook-360-view/)

@@ -13,7 +13,7 @@ La configuration de l'espace de couleur, sur le boîtier de l'appareil photo, n'
 
 Oui mais alors, dans quel espace de couleur sont enregistrés les raws ?
 
-Dans l'espace du capteur. Un espace RGB bien à lui, qui dépend de la transmittance  des filtres colorés à la surface de la [matrice de Bayer](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=2ahUKEwim1vbDvqvgAhXhzVkKHa9DBxkQFjADegQIDBAB&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FMatrice_de_Bayer&usg=AOvVaw2FZIqJFJ2hJlvVg4-C9Oji) et de l'électronique qui traite les données ensuite. C'est la raison pour laquelle darktable embarque une « matrice » différente pour chaque capteur. La matrice, c'est juste le profil de couleur le plus simple qui existe : un tableau de coefficients 3 × 3. Configurez le boîtier en sRGB, Adobe RGB ou ce que vous voulez,  ça n'impacte pas le raw.
+Dans l'espace du capteur. Un espace RGB bien à lui, qui dépend de la transmittance  des filtres colorés à la surface de la [matrice de Bayer](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=2ahUKEwim1vbDvqvgAhXhzVkKHa9DBxkQFjADegQIDBAB&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FMatrice_de_Bayer&usg=AOvVaw2FZIqJFJ2hJlvVg4-C9Oji) et de l'électronique qui traite les données ensuite. C'est la raison pour laquelle darktable embarque une « matrice » différente pour chaque capteur. La matrice, c'est juste le profil de couleur le plus simple qui existe : un tableau de coefficients 3 × 3. Configurez le boîtier en sRGB, Adobe RGB ou ce que vous voulez,  ça n'impacte pas le raw.
 
 ## 2\. Faire la balance des blancs sur l'appareil permet d'avoir de meilleures couleurs dans le raw
 

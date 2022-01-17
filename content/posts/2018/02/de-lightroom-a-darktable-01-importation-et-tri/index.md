@@ -12,4 +12,4 @@ OuiOuiPhoto poursuit son test pour passer de Lightroom à darktable. Voici sa pr
 
 Bon visionnage !
 
-https://www.youtube.com/watch?v=95jkerA\_r2E
+{{< youtube 95jkerA_r2E >}}

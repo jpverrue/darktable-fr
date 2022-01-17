@@ -17,6 +17,6 @@ Quatre manipulations pour l'installation :
 3. Créer un fichier texte portant mention : require "include\_all"
 4. Activer lua5.2 dans synaptic ou en console puis voir dans Darktable l'activation des scripts.
 
-https://www.youtube.com/watch?v=fi-VHbvNrUc
+{{< youtube fi-VHbvNrUc >}}
 
 Bon visionnage !

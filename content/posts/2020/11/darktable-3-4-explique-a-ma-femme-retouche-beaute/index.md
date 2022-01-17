@@ -7,7 +7,7 @@ tags:
   - "aurelien-pierre"
 ---
 
-https://www.youtube.com/watch?v=gH1gRQ3Und0
+{{< youtube gH1gRQ3Und0 >}}
 
 On présente ici quelques nouveautés de [darktable](https://www.youtube.com/results?search_query=%23darktable) 3.4 qui sortira le 24 décembre 2020, à travers une retouche beauté, de, par et avec ma femme, qui sait quel résultat elle vise sans forcément savoir comment y arriver.
 

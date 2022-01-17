@@ -8,6 +8,6 @@ tags:
   - "tutoriel-anglais"
 ---
 
-https://www.youtube.com/watch?v=On3BqhXYJM0
+{{< youtube On3BqhXYJM0 >}}
 
 [Bruce Williams Photography](https://www.youtube.com/channel/UCkqe4BYsllmcxo2dsF-rFQw) présente "négadocteur" en anglais (traduction en ligne compréhensible). Bonne découverte.

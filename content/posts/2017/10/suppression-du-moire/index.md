@@ -10,7 +10,7 @@ tags:
 
 JPV s'est remis aux tutos vidéos !
 
-Voici donc sa nouvelle vidéo qui traite de la suppression du moiré avec darktable avec, au passage, une utilisation avancée des masques dessinés.
+Voici donc sa nouvelle vidéo qui traite de la suppression du moiré avec darktable avec, au passage, une utilisation avancée des masques dessinés.
 
 Bon visionnage !
 

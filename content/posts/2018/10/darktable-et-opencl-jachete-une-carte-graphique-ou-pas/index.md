@@ -30,7 +30,7 @@ Pour faire simple, OpenCL fonctionne de la façon suivante :
 4. l'image est copiée de la RAM vers la mémoire vive de la carte graphique (vRAM)
 5. la carte graphique calcule le contenu des modules
 6. l'image est recopiée de la vRAM vers la RAM
-7. le processeur enregistre  l'image sur le disque dur.
+7. le processeur enregistre  l'image sur le disque dur.
 
 Ça, c'est quand toute la pile de modules utilisés fonctionne en OpenCL : l'image reste sur la vRAM pendant toute la chaîne de calcul, et n'est renvoyée à la RAM qu'à la toute fin.
 

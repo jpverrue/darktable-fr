@@ -8,7 +8,7 @@ tags:
   - "tutoriel"
 ---
 
-https://www.youtube.com/watch?v=XIill9yRogY
+{{< youtube XIill9yRogY >}}
 
 Pour faire suite à mon [précédent article](http://darktable.fr/2018/09/recuperer-la-plage-dynamique-prise-2/), une première présentation de 2 nouveaux modules que j'ai développé et de la refonte de l'interface que je propose pour darktable.
 

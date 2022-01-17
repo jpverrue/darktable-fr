@@ -21,7 +21,7 @@ Si vous êtes en Belgique durant le mois de janvier alors notez bien sur votre a
 
 Vous pouvez venir avec votre ordinateur Linux ou Mac (venez avec une prise multiple).
 
-**Contacter LViatour pour prévenir de votre venue (le nombre de places pourrait être limité): L.Viatour @ gmail . com  (sans les espaces)**
+**Contacter LViatour pour prévenir de votre venue (le nombre de places pourrait être limité): L.Viatour @ gmail . com  (sans les espaces)**
 
 ## Programme:
 

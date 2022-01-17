@@ -5,6 +5,6 @@ categories:
   - "tutoriels"
 ---
 
-https://www.youtube.com/watch?v=0AkRL84WPm0
+{{< youtube 0AkRL84WPm0 >}}
 
 Le strict minimum pour commencer la retouche dans darktable 3.6 : modules essentiels et chaîne de travail minimaliste, pour vous en tirer dans 80 % des cas.

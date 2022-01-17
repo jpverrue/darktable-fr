@@ -9,4 +9,4 @@ tags:
 
 Une version pre-alpha de darktable est disponible depuis quelques jours (vous pouvez la télécharger [ici](http://darktable.fr/2017/08/version-windows-pre-alpha/)). Shane Milton a testé cette version et vient de publier une vidéo en anglais. Bon visionnage ;-)
 
-https://www.youtube.com/watch?v=gxKXI\_UCuPo
+{{< youtube gxKXI_UCuPo >}}

@@ -8,4 +8,4 @@ tags:
   - "tutoriel"
 ---
 
-[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) continue à présenter l'utilisation des masques dessinés avec l'outil  chemin en mode polygonal : https://youtu.be/dKog-Zu\_oK4 Bon visionnage.
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) continue à présenter l'utilisation des masques dessinés avec l'outil  chemin en mode polygonal : https://youtu.be/dKog-Zu\_oK4 Bon visionnage.

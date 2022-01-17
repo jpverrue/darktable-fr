@@ -9,4 +9,4 @@ tags:
 
 Shane Milton vient de réaliser une vidéo sur la dernière version de darktable. Bon visionnage !
 
-https://www.youtube.com/watch?v=pdiDTDXTLLc
+{{< youtube pdiDTDXTLLc >}}

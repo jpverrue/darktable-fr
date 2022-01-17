@@ -8,7 +8,7 @@ tags:
   - "tutoriel"
 ---
 
-[Aurélien PIERRE Photo](https://www.youtube.com/channel/UCmsSn3fujI81EKEr4NLxrcg)  a suivi avec son Live.
+[Aurélien PIERRE Photo](https://www.youtube.com/channel/UCmsSn3fujI81EKEr4NLxrcg)  a suivi avec son Live.
 
 https://youtu.be/8v5JDfHAwhQ
 

@@ -12,4 +12,4 @@ Voici une vidéo de [**Laurent Tuto**](https://www.youtube.com/channel/UC_cUwX_8
 
 Cette première vidéo est consacrée à la présentation de darktable (et au passage de darktable FR, merci Laurent) et à l'installation du logiciel sur la distribution Linux Mint. Bon visionnage !
 
-https://www.youtube.com/watch?v=FKOZwOSk0cg
+{{< youtube FKOZwOSk0cg >}}

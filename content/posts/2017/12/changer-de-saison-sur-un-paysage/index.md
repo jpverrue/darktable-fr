@@ -7,6 +7,6 @@ tags:
   - "julienpons"
 ---
 
-Nouveau tuto vidéo de Julien Pons qui nous montre comment utiliser la table de correspondance de couleur dans darktable, pour changer facilement l'apparence d'un paysage. Bon visionnage !
+Nouveau tuto vidéo de Julien Pons qui nous montre comment utiliser la table de correspondance de couleur dans darktable, pour changer facilement l'apparence d'un paysage. Bon visionnage !
 
-https://www.youtube.com/watch?v=yZH-Cqk8L9s
+{{< youtube yZH-Cqk8L9s >}}

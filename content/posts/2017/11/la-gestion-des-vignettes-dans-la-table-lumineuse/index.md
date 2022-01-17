@@ -12,4 +12,4 @@ Julien Pons vient de sortir une nouvelle vidéo concernant la gestion des vignet
 
 Bon visionnage ;-)
 
-https://www.youtube.com/watch?v=NEZeHPvinL0
+{{< youtube NEZeHPvinL0 >}}

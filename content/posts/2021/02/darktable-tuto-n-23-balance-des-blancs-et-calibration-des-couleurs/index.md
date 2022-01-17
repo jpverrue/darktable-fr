@@ -8,7 +8,7 @@ tags:
   - "tutoriel"
 ---
 
-https://www.youtube.com/watch?v=tK2Bjn8FZfQ
+{{< youtube tK2Bjn8FZfQ >}}
 
 [JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) présente comment utiliser "balance des blancs" et le nouveau module "calibration des couleurs".
 

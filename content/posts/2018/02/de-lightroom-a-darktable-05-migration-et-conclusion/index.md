@@ -10,4 +10,4 @@ tags:
 
 OuiOui termine sa migration de Lightroom vers darktable dans cette dernière vidéo et vous donne ses conclusions. Bon visionnage !
 
-https://www.youtube.com/watch?v=8SH-WJfiXfE
+{{< youtube 8SH-WJfiXfE >}}

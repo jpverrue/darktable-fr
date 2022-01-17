@@ -11,4 +11,4 @@ Nous avons de la chance en ce moment Pixels Libres vient de publier à nouveau u
 
 Bon visionnage ! (et on espère avoir encore de nouveaux tutos vidéo en français).
 
-https://www.youtube.com/watch?v=dEQ01Wmo-qw
+{{< youtube dEQ01Wmo-qw >}}

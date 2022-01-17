@@ -8,6 +8,6 @@ tags:
   - "tutoriel"
 ---
 
-https://www.youtube.com/watch?v=e0E0WlkwCfA
+{{< youtube e0E0WlkwCfA >}}
 
 [Luc Viatour](https://www.youtube.com/channel/UCNLc97wHCBhgENfkIDiOUPQ) a organisé hier après-midi un Live vidéo pour expliquer les différentes possibilités de darktable pour faire du N/B. Il aborde les différents masques et la possiblité d'utiliser les instances multiples. Bonne visualisation.

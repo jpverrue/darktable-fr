@@ -8,4 +8,4 @@ tags:
   - "tutoriel"
 ---
 
-[Aurélien PIERRE Photo](https://www.youtube.com/channel/UCmsSn3fujI81EKEr4NLxrcg) présente comment appréhender darktable et partage sa façon d'organiser son travail avec : https://youtu.be/g4BfM7JmUbs Aurélien a aussi  [son site InterNet](https://photo.aurelienpierre.com/) où il partage ces photos et ses réflexions sur la photo. Bonne découverte et visualisation.
+[Aurélien PIERRE Photo](https://www.youtube.com/channel/UCmsSn3fujI81EKEr4NLxrcg) présente comment appréhender darktable et partage sa façon d'organiser son travail avec : https://youtu.be/g4BfM7JmUbs Aurélien a aussi  [son site InterNet](https://photo.aurelienpierre.com/) où il partage ces photos et ses réflexions sur la photo. Bonne découverte et visualisation.

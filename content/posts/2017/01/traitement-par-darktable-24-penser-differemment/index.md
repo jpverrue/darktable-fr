@@ -12,6 +12,6 @@ Voici la vidéo d'Harry Durgin de cette semaine. Au programme, le traitement de 
 
 Bon visionnage !
 
-Détails et fichiers disponibles sur WeeklyEdit: [http://weeklyedit.com/thinking-differently/](http://weeklyedit.com/thinking-differently/)
+Détails et fichiers disponibles sur WeeklyEdit: [http://weeklyedit.com/thinking-differently/](http://weeklyedit.com/thinking-differently/)
 
-https://www.youtube.com/watch?v=9zgTvU-kscw
+{{< youtube 9zgTvU-kscw >}}

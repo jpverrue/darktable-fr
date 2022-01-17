@@ -20,11 +20,11 @@ Cependant, il manquait encore une façon plus précise et plus localisée d'agir
 
 Les tireurs qui opéraient en chambre noire avaient inventé une technique, le dodging & burning, qui consistait à sur- ou sous-exposer certaines zones de l'image sélectivement en utilisant des masques découpés dans du carton, de façon à assombrir les zones très claires et éclaircir les zones très sombres (ou l'inverse) pour récupérer des détails. J'ai réutilisé le même principe dans l'égaliseur de ton, qui n'est donc qu'une simple correction d'exposition ajustable zone par zone. L'égaliseur se substitue donc aux modules courbes des tonalités, lumière d'arrière-plan, zones et ombres/hautes lumières.
 
-https://www.youtube.com/watch?v=\_2mQsUIc97E&t=263s
+{{< youtube _2mQsUIc97E >}}
 
 Mais l'égaliseur de ton va plus loin, en introduisant une nouvelle interaction, directement depuis l'image et sans passer par les curseurs. Je vous laisse découvrir tout ça dans la vidéo tutoriel que j'ai réalisée aujourd'hui, qui détaille l'utilisation jointe de ces 2 modules, en combinaison avec la balance couleur. Elle est, par contre, en anglais puisque destinée en priorité aux béta-testeurs à ce stade :
 
-https://www.youtube.com/watch?v=UuB9khJIrDI&feature=youtu.be
+{{< youtube UuB9khJIrDI >}}
 
 Souvenez-vous, il y a exactement 13 mois, [je publiais ici un article expliquant comment gérer le HDR](https://darktable.fr/2018/08/recuperer-la-plage-dynamique-sous-darktable/) sous darktable 2.4, avec un style fourni fastidieux et des manipulations laborieuses à base de courbes et de plusieurs modules visant essentiellement à corriger les erreurs du précédent avec le suivant. Il suffit aujourd'hui des modules exposition, filmique et égaliseur de tons pour gérer le contraste, balance des blancs, balance couleur et zones de couleurs pour gérer les couleurs, puis finalement contraste local et égaliseur pour gérer la netteté. Et c'est tout.
 

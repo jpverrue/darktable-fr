@@ -9,9 +9,9 @@ tags:
 
 Nouvelle release du pack de style t3mujinpack avec quelques améliorations:
 
-- Mise à jour de Fuji Pro 400H et 800Z.
+- Mise à jour de Fuji Pro 400H et 800Z.
 - Mise à jour de Fuji Provia 100F.
-- Mise à jour de Kodak Kodachrome 64 et Kodak Kodachrome 200.
+- Mise à jour de Kodak Kodachrome 64 et Kodak Kodachrome 200.
 - Mise à jour de Kodak Ektar 100.
 - Correction dans le script de désinstallation.
 

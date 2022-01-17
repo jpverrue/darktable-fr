@@ -8,7 +8,7 @@ tags:
   - "tutoriel"
 ---
 
-https://www.youtube.com/watch?v=ZGloKX0KxpI&t=40s
+{{< youtube ZGloKX0KxpI >}}
 
 [Aurélien PIERRE Photo](https://www.youtube.com/channel/UCmsSn3fujI81EKEr4NLxrcg) a partagé le traitement d'une photo avec darktable et Krita (la traduction en ligne automatique est accessible).
 

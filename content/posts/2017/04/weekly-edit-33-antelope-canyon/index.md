@@ -10,6 +10,6 @@ tags:
 
 Désolé pour retard, voici la vidéo de Weekly Edit de la semaine dernière sur un traitement rapide d'une photo du Canyon Entelope.
 
-Fichiers dispo sur le site: [http://weeklyedit.com/antelope-canyon/](http://weeklyedit.com/antelope-canyon/)
+Fichiers dispo sur le site: [http://weeklyedit.com/antelope-canyon/](http://weeklyedit.com/antelope-canyon/)
 
-https://www.youtube.com/watch?v=t82H3YIgVPs
+{{< youtube t82H3YIgVPs >}}

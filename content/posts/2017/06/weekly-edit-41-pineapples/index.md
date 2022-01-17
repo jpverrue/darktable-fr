@@ -8,8 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-https://www.youtube.com/watch?v=w7a35lQYAyo
+{{< youtube w7a35lQYAyo >}}
 
 Dans cet épisode, Harry présente deux stratégies possible de traitement avec darktable et GIMP.
 
-Source: [http://weeklyedit.com/pineapples/](http://weeklyedit.com/pineapples/)
+Source: [http://weeklyedit.com/pineapples/](http://weeklyedit.com/pineapples/)

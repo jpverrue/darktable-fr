@@ -7,7 +7,7 @@ tags:
   - "aurelien-pierre"
 ---
 
-https://www.youtube.com/watch?v=U4CEN0JPcoM
+{{< youtube U4CEN0JPcoM >}}
 
 Dans cette vidéo en anglais, je vous montre l'intérêt et le mode d'emploi du module _calibration des couleurs_, réécriture du mixeur de canaux compatible avec le traitement relatif à la scène, avec une adaptation chromatique (balance des blancs et balance de toutes les autres couleurs) moderne (2016) et un mappage de gamut intégré en entrée de pipeline. De quoi rattraper la plupart des soucis colorimétriques sans empiler 14 modules.
 

@@ -10,6 +10,6 @@ tags:
 
 Nouvelle vidéo de Weekly Edit. Ici Harry Durgin fait un traitement rapide sur une photo d'un pont en pierre avec un paysage de couleurs d'automne. Bon visionnage !
 
-https://www.youtube.com/watch?v=\_nCWcwezLNc
+{{< youtube _nCWcwezLNc >}}
 
-Source: [http://weeklyedit.com/freshford/](http://weeklyedit.com/freshford/)
+Source: [http://weeklyedit.com/freshford/](http://weeklyedit.com/freshford/)

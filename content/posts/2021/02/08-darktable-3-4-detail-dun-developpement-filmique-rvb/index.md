@@ -8,7 +8,7 @@ tags:
   - "tutoriel"
 ---
 
-\[embedyt\] https://www.youtube.com/watch?v=HEiFetsxWbk\[/embedyt\]
+{{< youtube HEiFetsxWbk >}}
 
 [philippus 68](https://www.youtube.com/channel/UCLpuK7KugtsX8nglfDi5uCA) présente dans ce 8ème épisode comment utiliser filmique RVB.
 

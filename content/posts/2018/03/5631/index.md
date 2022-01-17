@@ -12,6 +12,6 @@ Un nouveau tuto de Philippe vous explique comment utiliser les styles pour darkt
 
 Darktable. Utiliser des styles préfabriqués. (Linux, Mac, Windows) Dans cette vidéo vous apprendrez à charger des styles dans Darktable et les utiliser sur une image.
 
-\[embedyt\] https://www.youtube.com/watch?v=UGRrDHDUHgU\[/embedyt\]
+{{< youtube UGRrDHDUHgU >}}
 
 Bonne découverte !

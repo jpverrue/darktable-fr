@@ -15,7 +15,7 @@ coverImage: "liberapay.jpg"
 
 ## 2021
 
-Nous arrivons aux termes des réserves qui avait été faites lors de [la dernière récolte de dons](https://forums.darktable.fr/showthread.php?tid=3222&pid=29885#pid29885). Je relance donc la campagne pour refaire une réserve pour 3 ans hébergements, soit :
+Nous arrivons aux termes des réserves qui avait été faites lors de [la dernière récolte de dons](https://forums.darktable.fr/showthread.php?tid=3222&pid=29885#pid29885). Je relance donc la campagne pour refaire une réserve pour 3 ans hébergements, soit :
 
 - 3 x 8.5 € pour le nom de domaine
 - 3 x ~120€ pour l'hébergement
@@ -45,4 +45,4 @@ Mais avant ça, darktable.fr en chiffre, ça donne quoi?
 
 En choisissant de nous faire un don via l'une de ces 4 plateformes vous contribuez à la pérennité du site, du forum et au développement de darktable
 
-Liberapay   Tipeee   Patreon   Paypal
+Liberapay   Tipeee   Patreon   Paypal

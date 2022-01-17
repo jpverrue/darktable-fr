@@ -10,4 +10,4 @@ tags:
 
 Une autre vidéo d'[AXIOM Graph](https://www.youtube.com/channel/UC7VJcWHbJXZXghUXoHEp9aQ) sur l'utilisation du module de contraste local pour améliorer vos photos. Bon visionnage !
 
-https://www.youtube.com/watch?v=hr9l9pF\_vpo
+{{< youtube hr9l9pF_vpo >}}

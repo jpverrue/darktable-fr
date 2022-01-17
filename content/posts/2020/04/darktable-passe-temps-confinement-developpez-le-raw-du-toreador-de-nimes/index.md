@@ -8,8 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-https://www.youtube.com/watch?v=gIIACOc0iGw&t=4s
+{{< youtube gIIACOc0iGw >}}
 
-[Philippe Delétrée](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) vous propose un des ses RAW  et défile son traitement.
+[Philippe Delétrée](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) vous propose un des ses RAW  et défile son traitement.
 
 Bonne découverte.

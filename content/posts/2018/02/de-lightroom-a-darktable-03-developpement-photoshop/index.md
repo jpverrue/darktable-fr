@@ -10,4 +10,4 @@ tags:
 
 Et si darktable pouvait aussi remplacer Photoshop en plus de Lightroom ? OuiOui se pose justement la question dans cette vidéo. Bon visionnage !
 
-https://www.youtube.com/watch?v=4M4iTzyQ9\_8
+{{< youtube 4M4iTzyQ9_8 >}}

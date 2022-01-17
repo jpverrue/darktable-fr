@@ -10,6 +10,6 @@ tags:
 
 Cette fois, Harry Durgin traite une photo du Lac d'Advancetown avec au menu, ruse avec la balance des blancs, un canal L personalisé, filtre passe-bas...etc. Bon visionnage :-)
 
-Fichiers RAW disponibles ici: [http://weeklyedit.com/advancetown-lake/](http://weeklyedit.com/advancetown-lake/)
+Fichiers RAW disponibles ici: [http://weeklyedit.com/advancetown-lake/](http://weeklyedit.com/advancetown-lake/)
 
-https://www.youtube.com/watch?v=oj58IGnQhVg
+{{< youtube oj58IGnQhVg >}}

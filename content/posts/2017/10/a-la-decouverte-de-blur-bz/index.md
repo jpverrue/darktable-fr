@@ -11,8 +11,8 @@ J'ai récemment découvert une nouvelle chaîne Youtube avec quelques vidéos su
 
 Voici quelques vidéos (en anglais) qui pourront en intéresser certains. Bon visionnage :-)
 
-https://www.youtube.com/watch?v=GWGNuHBi8ME&t=2679s
+{{< youtube GWGNuHBi8ME >}}
 
-https://www.youtube.com/watch?v=rpKakcBVqz4&t=5s
+{{< youtube rpKakcBVqz4 >}}
 
-https://www.youtube.com/watch?v=Cdr2z5ITNb8
+{{< youtube Cdr2z5ITNb8 >}}

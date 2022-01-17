@@ -6,7 +6,7 @@ categories:
 coverImage: "lua-scripts-installer.png"
 ---
 
-**Annonce, darktable-release 3.4**  _(Traduction faite avec DeepL et corrigée par Aurélien, JMM40, jpg54, Jipivy, olliwa, vithom et 2 auteurs anonymes)_
+**Annonce, darktable-release 3.4**  _(Traduction faite avec DeepL et corrigée par Aurélien, JMM40, jpg54, Jipivy, olliwa, vithom et 2 auteurs anonymes)_
 
 Joyeuses fêtes à toutes et tous - c'est l'heure de votre cadeau de Noël préféré. C'est la deuxième grande version de 2020 du projet darktable après la sortie anticipée de darktable 3.2 en août. Année très riche ! Entre les dépôts darktable, rawspeed et dtdocs, il y a eu plus de 5500 commits en 2020 !
 
@@ -81,7 +81,7 @@ Un nouveau flux de traitement "moderne", désactivé par défaut, permet d'utili
 
 La documentation complète du nouveau module est disponible ici : [https://www.darktable.org/usermanual/en/module-reference/processing-modules/color-calibration/](https://www.darktable.org/usermanual/en/module-reference/processing-modules/color-calibration/)
 
-Voir aussi la notification d'annonce sur  [discuss.pixls.us](https://discuss.pixls.us/t/introducing-color-calibration-module-formerly-known-as-channel-mixer-rgb/21227 .)
+Voir aussi la notification d'annonce sur  [discuss.pixls.us](https://discuss.pixls.us/t/introducing-color-calibration-module-formerly-known-as-channel-mixer-rgb/21227 .)
 
 ## Filmique RVB
 
@@ -111,11 +111,11 @@ Vous trouverez une description détaillée des algorithmes de lissage dans la do
 
 Actuellement, la plupart des modes de fusion écrêtent les valeurs des pixels à 100 %, ce qui les rend inadaptés au flux de travail relatif à la scène. Rappelons qu'un pipeline relatif à l'affichage force les valeurs des pixels entre 0 et 100 %, par rapport à la luminance du blanc du medium d'affichage. C'est une limitation pour l'imagerie HDR car elle doit être forcée de façon non linéaire dans cette plage au début du pipeline, ce qui fait perdre la cohérence des couleurs en cours de route. Le pipeline relatif à la scène maintient les intensités de pixels sans écrêtage aussi longtemps que possible et reporte le mappage non-linéaire de la plage à la dernière étape du pipeline, ce qui permet une composition alpha correcte ainsi que des simulations de filtres optiques à l'intérieur du pipeline, quelle que soit la plage dynamique de la scène.
 
-De plus, le masquage paramétrique RVB utilise un modèle de couleur HSL, dans lequel les pixels supérieurs à 100 % produisent une saturation négative. Ainsi, même avec des modes de fusion  sans écrêtage, cela ne fonctionne toujours pas en mode relatif à la scène.
+De plus, le masquage paramétrique RVB utilise un modèle de couleur HSL, dans lequel les pixels supérieurs à 100 % produisent une saturation négative. Ainsi, même avec des modes de fusion  sans écrêtage, cela ne fonctionne toujours pas en mode relatif à la scène.
 
 [![](images/Screenshot_20201223_034629.png)](https://darktable.fr/wp-content/uploads/2020/12/Screenshot_20201223_034629.png)
 
- 
+ 
 
 C'est pourquoi un nouveau mode de fusion et de masquage a été introduit. Il n'utilise que des opérateurs de fusion sans écrêtage et introduit un facteur de renforcement qui permet de masquer les pixels jusqu'à 18 EV au-dessus du blanc de l'affichage (fixé à 100 % par convention, soit 0 EV). Pour un masquage robuste et cohérent, il introduit _JzCzhz_, un espace colorimétrique perceptuel découplant _luma/chroma/teinte_ avec la même logique que Lch (issu de CIE Lab 1976), mais conçu pour le HDR et montrant une linéarité de teinte presque parfaite, calculée à partir de l'espace _JzAzBz_ publié en 2017.
 
@@ -143,7 +143,7 @@ darktable 3.4 remplace l'aperçu de la surexposition par une nouvelle "_alerte d
 
 [![](images/Screenshot_20201223_035045.png)](https://darktable.fr/wp-content/uploads/2020/12/Screenshot_20201223_035045.png)
 
- 
+ 
 
 Veuillez consulter : [https://www.darktable.org/usermanual/en/module-reference/utility-modules/darkroom/clipping/](https://www.darktable.org/usermanual/en/module-reference/utility-modules/darkroom/clipping/) pour une documentation complète sur ce nouveau mode. Notez que l'avertissement de gamut est toujours disponible pour le moment mais est largement remplacé par la nouvelle fonctionnalité.
 
@@ -168,7 +168,7 @@ Une bonne nouvelle pour les amateurs de géolocalisation ! Les images qui sont p
 
 Un nouveau module de localisation a été ajouté, permettant de créer des zones ou des lieux et de les organiser à l'aide de balises hiérarchiques.
 
-Voir :  [https://www.darktable.org/usermanual/en/module-reference/utility-modules/map/locations](https://www.darktable.org/usermanual/en/module-reference/utility-modules/map/locations)
+Voir :  [https://www.darktable.org/usermanual/en/module-reference/utility-modules/map/locations](https://www.darktable.org/usermanual/en/module-reference/utility-modules/map/locations)
 
 ## Préférences
 
@@ -241,4 +241,4 @@ De nombreux modules existants ont fait l'objet d'une mise à jour de leur interf
 
 En choisissant de nous faire un don via l'une de ces 4 plateformes vous contribuez à la pérennité du site, du forum et au développement de darktable
 
-Liberapay   Tipeee   Patreon   Paypal
+Liberapay   Tipeee   Patreon   Paypal

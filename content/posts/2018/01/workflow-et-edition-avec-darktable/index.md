@@ -11,4 +11,4 @@ Comme c'est toujours intéressant de voir comment font les autres, voici une vid
 
 Vidéo en anglais, bon visionnage !
 
-https://www.youtube.com/watch?v=LMhdhzHx9Y8
+{{< youtube LMhdhzHx9Y8 >}}

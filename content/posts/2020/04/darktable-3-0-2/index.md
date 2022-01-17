@@ -11,9 +11,9 @@ coverImage: "darktable3.jpg"
 
 Nous sommes fiers d'annoncer la nouvelle version des fonctionnalités de darktable, 3.0.2 ! Les liens de téléchargement sont en bas le lien github ci-dessous. Pour les distribution Linux, il faut attendre la sortie des paquets pour les différentes distributions.
 
-La version github est ici: [https://github.com/darktable-org/darktable/releases/tag/release-3.0.2 5](https://github.com/darktable-org/darktable/releases/tag/release-3.0.2)  .
+La version github est ici: [https://github.com/darktable-org/darktable/releases/tag/release-3.0.2 5](https://github.com/darktable-org/darktable/releases/tag/release-3.0.2)  .
 
-Comme toujours, veuillez ne pas utiliser l'archive tar générée automatiquement par github, mais uniquement notre tar.xz. les sommes de contrôle sont:
+Comme toujours, veuillez ne pas utiliser l'archive tar générée automatiquement par github, mais uniquement notre tar.xz. les sommes de contrôle sont:
 
 $ sha256sum darktable-3.0.2.tar.xz
 6abaf661fe9414e92bdb33b58b98ef024ccf6132b7876abaf0751ec2109f36fb darktable-3.0.2.tar.xz

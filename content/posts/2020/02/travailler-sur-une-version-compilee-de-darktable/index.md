@@ -39,19 +39,19 @@ Enfin, simplement par curiosité si vous voulez « jouer » sur les derniers mod
 
 # Prérequis de sécurité
 
-Afin de pouvoir travailler sur différentes versions de darktable sur une même machine, il est nécessaire de respecter quelques points très importants :
+Afin de pouvoir travailler sur différentes versions de darktable sur une même machine, il est nécessaire de respecter quelques points très importants :
 
 - **n'utilisez pas les mêmes dossiers de photos pour plusieurs versions**, en effet, les fichiers `.xmp` liés aux traitements des photos ne sont pas toujours compatibles entre les versions de développement (3.1.x) et stables (3.0.x actuellement), vous risquerez donc de perdre définitivement vos traitements.
 
-> _**solution :** lorsque je travaille sur différentes versions de darktable, chaque version a son propre dossier de photos afin d'éviter de mélanger les fichiers_ `xmp`_. Ma version de production utilise mon dossier principal de photos et les versions parallèles (pour tester les nouvelles fonctionnalités) utilisent un dossier où est présent un échantillon un peu représentatif de photos pour pouvoir tester différents modules dessus : forte plage dynamique, haut ISO, paysage, portrait, etc._
+> _**solution :** lorsque je travaille sur différentes versions de darktable, chaque version a son propre dossier de photos afin d'éviter de mélanger les fichiers_ `xmp`_. Ma version de production utilise mon dossier principal de photos et les versions parallèles (pour tester les nouvelles fonctionnalités) utilisent un dossier où est présent un échantillon un peu représentatif de photos pour pouvoir tester différents modules dessus : forte plage dynamique, haut ISO, paysage, portrait, etc._
 
 - **utilisez des dossiers de configuration du logiciel différents pour chaque version**, cela vous évitera de bousiller votre version de production (stable ou non) en utilisant le même dossier de configuration avec celle d'une version instable.
 
-> _**solution :** sur mon ordinateur, j'ai un dossier_ `~/.config/darktable_master/` _pour ma version de production (où sont toutes mes photos) et des dossiers_ `~/.config/darktable_<nom>/` _pour les versions de développement : par exemple_ `~/.config/darktable_pascal/` _pour une version du code de Pascal Aubry,_ `~/.config/darktable_aurelien/` _pour une version d'Aurélien Pierre, etc. Cela permet de m'y retrouver plus facilement dans mes dossiers si un jour je devais avoir plusieurs versions installées. Nous verrons plus loin comment spécifier à darktable quel dossier de configuration utiliser lors de son lancement._
+> _**solution :** sur mon ordinateur, j'ai un dossier_ `~/.config/darktable_master/` _pour ma version de production (où sont toutes mes photos) et des dossiers_ `~/.config/darktable_<nom>/` _pour les versions de développement : par exemple_ `~/.config/darktable_pascal/` _pour une version du code de Pascal Aubry,_ `~/.config/darktable_aurelien/` _pour une version d'Aurélien Pierre, etc. Cela permet de m'y retrouver plus facilement dans mes dossiers si un jour je devais avoir plusieurs versions installées. Nous verrons plus loin comment spécifier à darktable quel dossier de configuration utiliser lors de son lancement._
 
 - **faites des sauvegardes**, toujours, tout le temps, partout, plein de fois… On ne le dira jamais assez, mais faites des sauvegardes. :-)
 
-> _**solution :** lorsque je compile une version instable ou des gros ajouts de code dans la version master, je fais des sauvegardes de mon dossier_ `~/.config/darktable_master/` _qui contient les base de données de ma table lumineuse_. Cela me permet de faire machine arrière en cas de gros problème.__
+> _**solution :** lorsque je compile une version instable ou des gros ajouts de code dans la version master, je fais des sauvegardes de mon dossier_ `~/.config/darktable_master/` _qui contient les base de données de ma table lumineuse_. Cela me permet de faire machine arrière en cas de gros problème.__
 
 # Installation des dépendances
 
@@ -79,7 +79,7 @@ $ cd .darktable\_master/
 
 ## Compilation de la version master
 
-Pour initier la compilation voilà les commandes à faire :
+Pour initier la compilation voilà les commandes à faire :
 
 $ git submodule init
 $ git submodule update
@@ -98,7 +98,7 @@ Notez que celle-ci se fait _via_ le compte root (sauf si le préfixe d'installat
 
 ## Lancement de la version compilée
 
-Désormais, vous avez la version compilée de darktable 3.1 (développement), pour la lancer il faut taper la commande suivante :
+Désormais, vous avez la version compilée de darktable 3.1 (développement), pour la lancer il faut taper la commande suivante :
 
 $ /opt/darktable\_master/bin/darktable --configdir /home/nicolas/.config/darktable\_master/
 
@@ -127,7 +127,7 @@ Le téléchargement se fait de la même façon que précédemment :
 $ cd /home/nicolas/
 $ git clone https://github.com/darktable-org/darktable.git .darktable\_stable/ $ cd .darktable\_stable/
 
-Une fois dans le dossier du code source, il est possible de voir toutes les versions stables disponibles par la commande suivante :
+Une fois dans le dossier du code source, il est possible de voir toutes les versions stables disponibles par la commande suivante :
 
 $ git tag
 
@@ -181,11 +181,11 @@ release0.4
 
 > _Note : la liste étant très longue, j'ai retiré volontairement toutes les versions inférieures à la 2.0.0, celles-ci n'étant pas particulièrement utiles pour la quasi-totalité des gens._
 
-Le choix de la dernière version stable à compiler se fait alors par la commande suivante :
+Le choix de la dernière version stable à compiler se fait alors par la commande suivante :
 
 $ git checkout release-3.0.0
 
-La suite est la même que pour la version master, en veillant bien à vérifier les noms de dossiers :
+La suite est la même que pour la version master, en veillant bien à vérifier les noms de dossiers :
 
 $ git submodule init
 $ git submodule update
@@ -204,7 +204,7 @@ $ ./build.sh --prefix /opt/darktable\_master/ --build-type Release
 
 Avant la compilation il peut être fortement recommandé de supprimer le dossier `build/` et le dossier correspondant dans `/opt/` (ici `/opt/darktable_master/`) pour être certain de partir sur une compilation fraiche.
 
-Il suffit alors de relancer votre logiciel pour tourner sur la dernière version. :-)
+Il suffit alors de relancer votre logiciel pour tourner sur la dernière version. :-)
 
 Il est possible qu'au lancement, darktable vous prévienne que la base de données a été mise à jour et vous propose de faire une sauvegarde de celle-ci avant de l'ouvrir. À vous de choisir, depuis que j'utilise la version master en production je sauvegarde mon dossier dans `~/.config/` au cas où, même si la plupart du temps cela se passe bien.
 
@@ -240,4 +240,4 @@ La documentation pour installer Neo est disponible _via_ ce lien : [https://gith
 
 Merci aux développeurs pour votre travail formidable et votre aide sur Framateam pour m'avoir permis de compiler chez moi le logiciel et merci à Rawfiner pour la relecture et les quelques corrections.
 
- Si vous avez des remarques ou des questions, n'hésitez pas à en faire part en commentaire, je ne suis pas vraiment expert de Github, mais j'essayerai de faire de mon mieux pour répondre à vos questions. J'espère que des développeurs pourront me venir en aide en cas de problèmes trop techniques pour moi.
+ Si vous avez des remarques ou des questions, n'hésitez pas à en faire part en commentaire, je ne suis pas vraiment expert de Github, mais j'essayerai de faire de mon mieux pour répondre à vos questions. J'espère que des développeurs pourront me venir en aide en cas de problèmes trop techniques pour moi.

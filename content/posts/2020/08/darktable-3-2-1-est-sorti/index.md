@@ -19,4 +19,4 @@ Vous trouverez les articles de présentation, en anglais sur [darktable.org](htt
 
 En choisissant de nous faire un don via l'une de ces 4 plateformes vous contribuez à la pérennité du site, du forum et au développement de darktable
 
-Liberapay   Tipeee   Patreon   Paypal
+Liberapay   Tipeee   Patreon   Paypal

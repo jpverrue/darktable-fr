@@ -8,7 +8,7 @@ tags:
   - "tutoriel"
 ---
 
-https://www.youtube.com/watch?v=RRLq\_qsJGA4
+{{< youtube RRLq_qsJGA4 >}}
 
 [JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) explique filmique et fait une démonstration et explication de son fonctionnement à partir de Gimp.
 

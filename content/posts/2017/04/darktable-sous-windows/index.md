@@ -7,4 +7,4 @@ categories:
 
 Nouvelle vidéo, cette fois par Shane Milton, sur darktable pouvant touné sur Windows via le bash d'Ubuntu. Bon visionnage !
 
-https://www.youtube.com/watch?v=R-rQuhL3pUY
+{{< youtube R-rQuhL3pUY >}}

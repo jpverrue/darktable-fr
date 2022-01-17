@@ -11,4 +11,4 @@ Blur.bz a posté une vidéo il y a 3 jours montrant une technique dans darktable
 
 Bon visionnage, vidéo en anglais.
 
-https://www.youtube.com/watch?v=r-nYkDAkVmU
+{{< youtube r-nYkDAkVmU >}}

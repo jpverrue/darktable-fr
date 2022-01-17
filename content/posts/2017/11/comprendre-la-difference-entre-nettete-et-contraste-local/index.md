@@ -14,10 +14,10 @@ Voici la nouvelle vidéo d'Aurélien Pierre pour comprendre (avec explications t
 
 Bon visionnage !
 
-https://www.youtube.com/watch?v=wIG-hzmeyt0
+{{< youtube wIG-hzmeyt0 >}}
 
-Son code de déconvolution: [https://github.com/aurelienpierre/Image-Cases-Studie](https://github.com/aurelienpierre/Image-Cases-Studie)s
+Son code de déconvolution: [https://github.com/aurelienpierre/Image-Cases-Studie](https://github.com/aurelienpierre/Image-Cases-Studie)s
 
-Le sujet sur le forum: [https://darktable.fr/forum/showthread.php?tid=1892](https://darktable.fr/forum/showthread.php?tid=1892)
+Le sujet sur le forum: [https://darktable.fr/forum/showthread.php?tid=1892](https://darktable.fr/forum/showthread.php?tid=1892)
 
-Le sujet de Pixl.us: [https://discuss.pixls.us/t/possibly-a-new-deconvolution-module-for-darktable/5581/11](https://discuss.pixls.us/t/possibly-a-new-deconvolution-module-for-darktable/5581/11)
+Le sujet de Pixl.us: [https://discuss.pixls.us/t/possibly-a-new-deconvolution-module-for-darktable/5581/11](https://discuss.pixls.us/t/possibly-a-new-deconvolution-module-for-darktable/5581/11)

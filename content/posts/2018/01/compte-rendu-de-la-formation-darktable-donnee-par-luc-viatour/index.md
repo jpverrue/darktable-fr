@@ -12,7 +12,7 @@ tags:
 coverImage: "DSF6159.jpg"
 ---
 
-Petit compte rendu de la formation darktable organisé par [Luc Viatour](https://lucnix.be/)  au centre culturel [La Spirale de Natoye.](https://laspirale.be/)
+Petit compte rendu de la formation darktable organisé par [Luc Viatour](https://lucnix.be/)  au centre culturel [La Spirale de Natoye.](https://laspirale.be/)
 
 Comme nous le présentions, la sortie de la version Windows a eu de répercutions sur le nombre de participant. Nous étions une bonne trentaine et nous aurions été beaucoup plus si le beau temps ne s'était pas invité au menu de dimanche dernier.
 

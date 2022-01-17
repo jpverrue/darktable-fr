@@ -24,7 +24,7 @@ Les paquets pour distributions Linux seront publiés prochainement par les maint
 
 **L'équipe de darktable.fr vous souhaite une bonne lecture et de très belles fêtes !**
 
-_En complément d'information à l'article LinuxFR, et pour ceux qui le souhaitent, vous pouvez voir ci-dessous les corrections de bugs principales et nouveaux appareils photos supportés ou dont le support a été étendu  (la liste complète est visible en anglais sur le lien Github ci-dessus) :_
+_En complément d'information à l'article LinuxFR, et pour ceux qui le souhaitent, vous pouvez voir ci-dessous les corrections de bugs principales et nouveaux appareils photos supportés ou dont le support a été étendu  (la liste complète est visible en anglais sur le lien Github ci-dessus) :_
 
 ### Corrections de bogues
 

@@ -10,10 +10,10 @@ tags:
 
 Voici un tutoriel de Philippe Delétrée concernant un traitement simple d'une image en contre-jour en trois temps:
 
-1.  Neutraliser l'image (Redresser les murs, sur/sous exposition, gamut, etc...)
+1. Neutraliser l'image (Redresser les murs, sur/sous exposition, gamut, etc...)
 2. Harmoniser les couleurs en fonction de l'ambiance générale de l'image.
 3. Régler la netteté pour qu'elle soit acceptable.
 
-https://www.youtube.com/watch?v=\_ACugN8rgtU
+{{< youtube _ACugN8rgtU >}}
 
 Bon visionnage !

@@ -25,7 +25,7 @@ L'article est très complet et explique bien le processus. Il fait parfois réf�
 
 La vidéo "Argyllcms Linux tutorial" (en anglais) est proposée par Shane Milton.
 
-\[embedyt\] https://www.youtube.com/watch?v=F5diGIqan9E\[/embedyt\]
+{{< youtube F5diGIqan9E >}}
 
 Après avoir résumé la situation (voir le fil de discussion sur pixl.us cité plus haut), l'auteur explique point par point le processus. Il décrit les quelques commandes nécessaires parmi toutes celles de la suite Argyll, avec juste les options à utiliser ; le tout accompagné d'exemples. Il est un peu plus synthétique que l'article de Rawtherapee, mais le résultat final est le même.
 

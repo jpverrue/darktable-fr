@@ -10,6 +10,6 @@ tags:
 
 Ici, Harry Durgin traite une photo d'étoiles via darktable mais aussi avec l'aide de Gimp. Bon visionnage ;-)
 
-Fichiers RAW disponibles ici: [http://weeklyedit.com/lucky-shot/](http://weeklyedit.com/lucky-shot/)
+Fichiers RAW disponibles ici: [http://weeklyedit.com/lucky-shot/](http://weeklyedit.com/lucky-shot/)
 
-https://www.youtube.com/watch?v=7KRS9IRlkUg
+{{< youtube 7KRS9IRlkUg >}}

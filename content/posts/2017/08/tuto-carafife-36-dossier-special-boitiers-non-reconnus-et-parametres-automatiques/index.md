@@ -10,4 +10,4 @@ tags:
 
 Tuto numéro 36 de Carafife qui devrait faire plaisir aux possesseurs de boîtiers non reconnus par darktable. Bon visionnage !
 
-https://www.youtube.com/watch?v=Mq\_5iWM10PU
+{{< youtube Mq_5iWM10PU >}}

@@ -11,11 +11,11 @@ Ce texte a été publié initialement sur le [forum](https://forums.darktable.fr
 
 Bonjour à tous
 
-Ce post vise tout d'abord à expliquer les nouveaux paramètres de la réduction de bruit de profil introduits par mes changements qui ont eu lieu depuis janvier. J'expliquerai en deuxième partie de post mon cheminement au long de ces 9 mois pour ceux que ça intéresserait. Je finirai par détailler qques idées pour la suite ![Wink](images/wink.png "Wink")  
+Ce post vise tout d'abord à expliquer les nouveaux paramètres de la réduction de bruit de profil introduits par mes changements qui ont eu lieu depuis janvier. J'expliquerai en deuxième partie de post mon cheminement au long de ces 9 mois pour ceux que ça intéresserait. Je finirai par détailler qques idées pour la suite ![Wink](images/wink.png "Wink")  
 
 **Un peu de contexte pour comprendre la suite - la réduction de bruit de profil, comment ça marche ?**
 
-Le profil qu'est ce que c'est ? C'est simplement quelques paramètres (2 par canaux et par valeur ISO en l'occurrence) qui décrivent la manière dont la variance du bruit évolue en fonction de la luminosité. La variance est une mesure de la dispersion des valeurs autour de la moyenne, donc dans notre cas elle donne une information sur à quel point les valeurs des pixels bruités peuvent être éloignés des valeurs qu'ils devraient avoir s'il n'y avait pas de bruit. Le profil permet d'exprimer la variance en fonction de la moyenne.
+Le profil qu'est ce que c'est ? C'est simplement quelques paramètres (2 par canaux et par valeur ISO en l'occurrence) qui décrivent la manière dont la variance du bruit évolue en fonction de la luminosité. La variance est une mesure de la dispersion des valeurs autour de la moyenne, donc dans notre cas elle donne une information sur à quel point les valeurs des pixels bruités peuvent être éloignés des valeurs qu'ils devraient avoir s'il n'y avait pas de bruit. Le profil permet d'exprimer la variance en fonction de la moyenne.
 
 À quoi ça sert d'avoir ce profil ? Eh bien, les algorithmes de débruitage n'aiment pas gérer des données où la variance du bruit change partout. Du coup, le profil permet de définir une transformation sur l'image, appelée transformation de stabilisation de variance, qui permet d'obtenir une image où la variance du bruit devient constante : le bruit dans les zones sombres et les zones claires a alors les même caractéristiques, et l'algorithme de débruitage peut faire son boulot bien plus facilement.
 

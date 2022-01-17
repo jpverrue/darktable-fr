@@ -12,6 +12,6 @@ Dans son dernier tuto vidéo, Harry vous explique comment faire des mini-planèt
 
 Bon visionnage !
 
-https://www.youtube.com/watch?v=lJPjp0SmVaA
+{{< youtube lJPjp0SmVaA >}}
 
-Source: [http://weeklyedit.com/tiny-planet](http://weeklyedit.com/tiny-planet)
+Source: [http://weeklyedit.com/tiny-planet](http://weeklyedit.com/tiny-planet)

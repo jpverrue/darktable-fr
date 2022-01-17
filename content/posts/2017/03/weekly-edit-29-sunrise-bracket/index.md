@@ -10,6 +10,6 @@ tags:
 
 Voici la vidéo de Weekly Edit de cette semaine sur le traitement d'une photo HDR d'un lever de soleil. Bon visionnage ;-)
 
-https://www.youtube.com/watch?v=5EfFZ-2YddU
+{{< youtube 5EfFZ-2YddU >}}
 
-Source: [http://weeklyedit.com/sunrise-bracket/](http://weeklyedit.com/sunrise-bracket/)
+Source: [http://weeklyedit.com/sunrise-bracket/](http://weeklyedit.com/sunrise-bracket/)

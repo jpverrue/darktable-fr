@@ -8,6 +8,6 @@ tags:
   - "pack-de-styles"
 ---
 
-https://www.youtube.com/watch?fbclid=IwAR2k3hx-VeBdQGt6lhZ2JohybGUz96yHBbBPP6ix66pF3J2lsCe7GujvrB8&v=xeLA8RMYj3U&feature=youtu.be
+{{< youtube xeLA8RMYj3U >}}
 
-Je viens de découvrir cette chaîne : [AXIOM GRAPH](super contrast darktable preset free download) sur [darktable (unOfficial)](https://www.facebook.com/groups/darktable) qui propose 4 dtStyles gratuits. Bonne découverte.
+Je viens de découvrir cette chaîne : [AXIOM GRAPH](super contrast darktable preset free download) sur [darktable (unOfficial)](https://www.facebook.com/groups/darktable) qui propose 4 dtStyles gratuits. Bonne découverte.
