@@ -19,7 +19,7 @@ Voici un style pour darktable proposé par @leinadfr. Le style Peinture donne un
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/Peinture.dtstyle)**
+**[Télécharger](/download/Styles/Peinture.dtstyle)**
 
  
 

@@ -31,7 +31,7 @@ Voici un style pour darktable pouvant être adapté aux photos de mariage.
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/Wedding%20Day.dtstyle)**
+**[Télécharger](/download/Styles/Wedding%20Day.dtstyle)**
 
  
 

@@ -19,7 +19,7 @@ La version du preset Lomo's Effect de mattk pour Lightroom a désormais sa varia
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/Lomo%27s%20Effect.dtstyle)**
+**[Télécharger](/download/Styles/Lomo%27s%20Effect.dtstyle)**
 
 **![installation-style](images/installation-style.jpeg)Comment Installer un style dans darktable ?**
 

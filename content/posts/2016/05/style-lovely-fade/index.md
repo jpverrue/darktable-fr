@@ -15,7 +15,7 @@ tags:
 
 \[/twentytwenty\]
 
-**[Télécharger](https://darktable.fr/download/Styles/Lovely%20Fade.dtstyle)**
+**[Télécharger](/download/Styles/Lovely%20Fade.dtstyle)**
 
 **![installation-style](images/installation-style.jpeg)Comment Installer un style dans darktable ?**
 

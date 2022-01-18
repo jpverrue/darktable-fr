@@ -19,7 +19,7 @@ L'équivalent du [preset Lightroom 1895](http://presetlove.com/presets/1895/) po
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/1895.dtstyle)**
+**[Télécharger](/download/Styles/1895.dtstyle)**
 
 **![installation-style](images/installation-style.jpeg)Comment Installer un style dans darktable ?**
 

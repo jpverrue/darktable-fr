@@ -21,7 +21,7 @@ Style pour darktable pour donner un look vintage à vos photos !
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/Vintage%20New%20York%20-%20Light.dtstyle)**
+**[Télécharger](/download/Styles/Vintage%20New%20York%20-%20Light.dtstyle)**
 
 ## Version Medium
 
@@ -35,7 +35,7 @@ Style pour darktable pour donner un look vintage à vos photos !
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/Vintage%20New%20York%20-%20Medium.dtstyle)**
+**[Télécharger](/download/Styles/Vintage%20New%20York%20-%20Medium.dtstyle)**
 
 ## Version Dark
 
@@ -49,7 +49,7 @@ Style pour darktable pour donner un look vintage à vos photos !
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/Vintage%20New%20York%20-%20Dark.dtstyle)**
+**[Télécharger](/download/Styles/Vintage%20New%20York%20-%20Dark.dtstyle)**
 
  
 

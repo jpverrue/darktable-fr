@@ -19,7 +19,7 @@ Comme vous avez pu le remarquer depuis quelques jours, le site arbore un nouveau
 
 Conformément à l'arrivé de [https avec notre hébergeur](https://tuxfamily.org/fr/news/2016040201), darktable Fr utilise désormais cette technologie plus sécurisée. L'adresse en http est redirigée automatiquement vers celle en https.
 
-Petit bonus, le site héberge maintenant [un dépôt de styles pour darktable](https://darktable.fr/download/Styles/index.html).
+Petit bonus, le site héberge maintenant [un dépôt de styles pour darktable](/download/Styles/index.html).
 
 [![depot_styles_darktablefr](images/depot_styles_darktablefr-300x208.jpeg)](https://darktable.fr/wp-content/uploads/2016/05/depot_styles_darktablefr.jpeg)
 

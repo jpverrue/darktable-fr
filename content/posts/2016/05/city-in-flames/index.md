@@ -19,7 +19,7 @@ Un style pour darktable en cas de Zombie Walk :)
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/City%20in%20Flames.dtstyle)**
+**[Télécharger](/download/Styles/City%20in%20Flames.dtstyle)**
 
 **![installation-style](images/installation-style.jpeg)Comment Installer un style dans darktable ?**
 

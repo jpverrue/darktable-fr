@@ -15,7 +15,7 @@ tags:
 
 \[/twentytwenty\]
 
-[Télécharger](https://darktable.fr/download/Styles/Harsh%20Black%20and%20White%20and%20Red.dtstyle)
+[Télécharger](/download/Styles/Harsh%20Black%20and%20White%20and%20Red.dtstyle)
 
 **![installation-style](images/installation-style.jpeg)Comment Installer un style dans darktable ?**
 

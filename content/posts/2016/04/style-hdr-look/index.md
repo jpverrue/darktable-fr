@@ -21,7 +21,7 @@ Style pour darktable pour donner un look HDR à vos photos !
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/HDR%20Look%20-%20Light.dtstyle)**
+**[Télécharger](/download/Styles/HDR%20Look%20-%20Light.dtstyle)**
 
 ## Version Medium
 
@@ -35,7 +35,7 @@ Style pour darktable pour donner un look HDR à vos photos !
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/HDR%20Look%20-%20Light.dtstyle)**
+**[Télécharger](/download/Styles/HDR%20Look%20-%20Light.dtstyle)**
 
 ## Version Strong
 
@@ -49,7 +49,7 @@ Style pour darktable pour donner un look HDR à vos photos !
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/HDR%20Look%20-%20Light.dtstyle)**
+**[Télécharger](/download/Styles/HDR%20Look%20-%20Light.dtstyle)**
 
  
 

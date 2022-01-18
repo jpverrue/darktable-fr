@@ -17,7 +17,7 @@ Voici un tout nouveau style trouvé sur dtstyle.net qui corrige dans certains ca
 
 \[/twentytwenty\]
 
-**[Télécharger](https://darktable.fr/download/Styles/LighterFix.dtstyle)**
+**[Télécharger](/download/Styles/LighterFix.dtstyle)**
 
 **![installation-style](images/installation-style.jpeg)Comment Installer un style dans darktable ?**
 

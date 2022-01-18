@@ -31,6 +31,6 @@ Vous y retrouverez, plus précisément, le mode de simulation de film :
 - MONOCHROME, MONOCHROME +Ye, MONOCHROME +R et MONOCHROME +G
 - SEPIA
 
-Nous les avons rassemblés dans un Zip que vous pourrez télécharger en cliquant [**ICI**](https://darktable.fr/download/Fuji_XTrans_III_dtstyles.zip)
+Nous les avons rassemblés dans un Zip que vous pourrez télécharger en cliquant [**ICI**](/download/Fuji_XTrans_III_dtstyles.zip)
 
 Comme pour n'importe quel autre style, il vous suffira de l'importer depuis le module "styles" de la table lumineuse

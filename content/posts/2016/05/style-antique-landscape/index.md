@@ -17,7 +17,7 @@ tags:
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/Antique_Landscape.dtstyle)**
+**[Télécharger](/download/Styles/Antique_Landscape.dtstyle)**
 
 **![installation-style](images/installation-style.jpeg)Comment Installer un style dans darktable ?**
 

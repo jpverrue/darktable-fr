@@ -21,7 +21,7 @@ Donnez un look similaire à celui du [film 300](https://cdn.shopify.com/s/files/
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/The%20300%20Look%20-%20Soft.dtstyle)**
+**[Télécharger](/download/Styles/The%20300%20Look%20-%20Soft.dtstyle)**
 
 ## Version Strong
 
@@ -35,7 +35,7 @@ Donnez un look similaire à celui du [film 300](https://cdn.shopify.com/s/files/
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/The%20300%20Look%20-%20Strong.dtstyle)**
+**[Télécharger](/download/Styles/The%20300%20Look%20-%20Strong.dtstyle)**
 
  
 

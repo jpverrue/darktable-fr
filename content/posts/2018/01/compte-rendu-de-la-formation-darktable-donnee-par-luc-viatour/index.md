@@ -32,4 +32,4 @@ Vivement la prochaine
 
 \[gallery size="medium" columns="2" ids="5384,5385,5386,5387,5383"\]
 
-Ps: J'ai appliqué sur les photos [le style Fujifilm Acros](https://darktable.fr/2018/01/tous-les-modes-de-simulation-de-film-fujifilm-sont-disponibles-sur-darktable/) que vous pouvez télécharger [ici](https://darktable.fr/download/Fuji_XTrans_III_dtstyles.zip)
+Ps: J'ai appliqué sur les photos [le style Fujifilm Acros](https://darktable.fr/2018/01/tous-les-modes-de-simulation-de-film-fujifilm-sont-disponibles-sur-darktable/) que vous pouvez télécharger [ici](/download/Fuji_XTrans_III_dtstyles.zip)

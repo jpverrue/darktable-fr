@@ -19,7 +19,7 @@ Voici la variante pour darktable du [preset Chocolate Shadows pour Lightroom](ht
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/Chocolate_Shadows.dtstyle)**
+**[Télécharger](/download/Styles/Chocolate_Shadows.dtstyle)**
 
 **![installation-style](images/installation-style.jpeg)Comment Installer un style dans darktable ?**
 

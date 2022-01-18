@@ -21,7 +21,7 @@ Deux styles pour darktable dans les tons de couleur du film _Sin City_.
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/Sin%20City%20Dark%20Red.dtstyle)**
+**[Télécharger](/download/Styles/Sin%20City%20Dark%20Red.dtstyle)**
 
 ## Version Light Red
 
@@ -35,7 +35,7 @@ Deux styles pour darktable dans les tons de couleur du film _Sin City_.
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/Sin%20City%20Light%20Red.dtstyle)**
+**[Télécharger](/download/Styles/Sin%20City%20Light%20Red.dtstyle)**
 
 **![installation-style](images/installation-style.jpeg)Comment Installer un style dans darktable ?**
 

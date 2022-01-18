@@ -21,7 +21,7 @@ Style pour darktable pour donner un look HDR Noir & Blanc à vos photos !
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/HDR%20Black%26White%20-%20Light.dtstyle)**
+**[Télécharger](/download/Styles/HDR%20Black%26White%20-%20Light.dtstyle)**
 
 ## Version Strong
 
@@ -35,7 +35,7 @@ Style pour darktable pour donner un look HDR Noir & Blanc à vos photos !
 
  
 
-**[Télécharger](https://darktable.fr/download/Styles/HDR%20Black%26White%20-%20Strong.dtstyle)**
+**[Télécharger](/download/Styles/HDR%20Black%26White%20-%20Strong.dtstyle)**
 
  
 
