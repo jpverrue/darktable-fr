@@ -11,30 +11,21 @@ Voici un style pour darktable pouvant être adapté aux photos de mariage.
 
 ## Exemple 1
 
-\[twentytwenty\]
-
 ![](images/original.jpeg)
 
 ![](images/wedding_day.jpeg)
 
-\[/twentytwenty\]
-
 ## Exemple 2
-
-\[twentytwenty\]
 
 ![](images/indy_girl.jpeg)
 
 ![](images/wedding_day2.jpeg)
 
-\[/twentytwenty\]
+[Télécharger](/download/Styles/Wedding%20Day.dtstyle)
 
  
 
-**[Télécharger](/download/Styles/Wedding%20Day.dtstyle)**
-
- 
-
-**![installation-style](images/installation-style.jpeg)Comment Installer un style dans darktable ?**
+### Comment Installer un style dans darktable ?
+![installation-style](images/installation-style.jpeg)
 
 Après avoir téléchargé le fichier .dtstyle, démarrez le logiciel darktable, allez dans table lumineuse, sur la droite vous avez un module **_Styles_** où sont listés tout les styles importés, il ne vous reste plus qu'à cliquer sur le _**bouton importer**_ et puis de sélectionner le fichier .dstyle précédemment téléchargé. Et voilà le style est importé dans votre installation de darktable et vous pouvez dès maintenant l'utiliser :-)
