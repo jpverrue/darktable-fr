@@ -8,28 +8,75 @@ readingTime = false
   parent = "documentation"
 +++
 
-\[su\_note note\_color="#e6eaec"\]darktable est disponible uniquement pour les systèmes Linux, BSD, Mac et, depuis peu, pour Windows.. Voici quelques procédures d'installation selon différents systèmes d'exploitation :\[/su\_note\]
+> darktable est disponible uniquement pour les systèmes Linux, BSD, Mac et, depuis peu, pour Windows.. Voici quelques procédures d'installation selon différents systèmes d'exploitation :
 
-\[su\_service title="Version GNU/Linux et BSD" icon="icon: linux"\]Cliquez ci-dessous sur l'onglet correspondant à votre distribution GNU/Linux ou BSD pour connaître la procédure d'installation.\[/su\_service\]
+## Version GNU/Linux et BSD
 
-\[su\_tabs vertical="yes"\] \[su\_tab title="Ubuntu / Linux Mint / elementary OS"\] `sudo apt-get install darktable`
+### Ubuntu et systèmes dérivés
+L’installation de la version correspondante à votre version installée d’Ubuntu ou d’un de ses dérivés, se fait avec la commande :
 
-Il existe aussi un dépôt tiers [ici](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable)\[/su\_tab\] \[su\_tab title="Debian"\] `sudo apt-get install darktable` Une version plus récente est peut être présente sur les backports ou sur ce dépôt tiers [ici](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable)\[/su\_tab\] \[su\_tab title="Fedora / Centos"\] `dnf install darktable`
+`sudo apt-get install darktable`
 
-Il existe aussi un dépôt tiers [ici](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable)\[/su\_tab\] \[su\_tab title="openSUSE"\] Dépôt pour OpenSUSE [ici](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable)\[/su\_tab\] \[su\_tab title="Arch Linux / Manjaro / Frugalware"\] `pacman -S darktable` \[/su\_tab\] \[su\_tab title="Solus"\] `sudo eopkg install darktable` \[/su\_tab\] \[su\_tab title="Gentoo / Funtoo"\] `emerge darktable` \[/su\_tab\] \[su\_tab title="BSD"\] `pkg_add -r darktable` \[/su\_tab\] \[su\_tab title="Paquet Snap"\] `sudo snap install darktabl` \[/su\_tab\] \[su\_tab title="Paquet Flatpak"\] `flatpak install --from https://flathub.org/repo/appstream/org.darktable.Darktable.flatpakref` \[/su\_tab\] \[su\_tab title="À partir des sources"\] Sous linux, si vous voulez une version récente, il vous faut créer darktable à partir des sources.
+Cependant, darktable évoluant beaucoup plus vite que les versions d’OS, particulièrement si vous utilisez une version “LTS” du système, Vous souhaiterez peut-être obtenir la dernière version de darktable.
+Pour cela, tournez-vous vers le dépôt [OBS](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable).
 
-Pour commencer, il faut aller télécharger le tarball (l'archive) des sources [ici !](https://github.com/darktable-org/darktable/releases/) (veillez à bien prendre le fichier darktable-2.0.1.tar.xz) et vérifier que vous avez toutes les dépendances nécessairesau fonctionnement du programme.
+### Debian
 
-`libsqlite3, libjpeg, libpng, gtk+-2, cairo, lcms2, exiv2, tiff, curl, gphoto2, dbus-glib, gnome-keyring, fop, openexr, libsoup2.4`
+L’installation de la version correspondante à votre version installée de Debian, se fait avec la commande :
 
-Ensuite ouvrez un terminal et mettez-vous à l'endroit où vous avez mis le tarball (généralement dans téléchargement).
+`sudo apt-get install darktable`
 
-Puis entrez les commandes suivantes (remplacer X.X.X par la version actuelle) : `tar xvf darktable-X.X.X.tar.xz && cd darktable-X.X.X su (votre mot de passe root va vous être demandé) ./build.sh ln -s /opt/darktable/share/applications/darktable.desktop /usr/share/applications/darktable.desktop`
+Cependant, darktable évoluant beaucoup plus vite que les versions d’OS, Vous souhaiterez peut-être obtenir la dernière version de darktable.
+Deux solutions s’offrent à vous :
 
-Plus d'informations sur la compilation de darktable sur le [wiki](http://redmine.darktable.org/projects/darktable/wiki/Building_darktable_20) et sur le forum !
+* Une version plus récente est probablement présente sur les backports.
+* La version la plus récente de darktable pour Debian est systématiquement disponible sur [OBS](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable).
 
-Si vous utilisez Ubuntu ou l'une des variantes (ou une distribution basée sur Ubuntu comme Linux Mint ou elementary OS), vous pouvez consulter [le fichier de PDF de jpg](https://docs.google.com/document/d/1CjnyPGp9uD5ETUER6w129hUplmejRpkrjZXf_xeND80/edit?usp=sharing) qui explique pas à pas comment compiler la version git de darktable. \[/su\_tab\] \[/su\_tabs\]
+### Fedora et systèmes dérivés
 
-D'autres procédures plus détaillées d'installation sont disponibles sur [la page du site officiel de Darktable](http://www.darktable.org/install/).
+L’installation de la version correspondante à votre version installée de Fedora ou d’un de ses dérivés, se fait avec la commande :
 
-\[su\_button url="http://darktable.fr/apprendre/" icon="icon: graduation-cap"\]Débuter maintenant votre apprentissage de darktable\[/su\_button\]
+`dnf install darktable`
+
+Cependant, darktable évoluant beaucoup plus vite que les versions d’OS, particulièrement si vous utilisez une version “LTS” du système, Vous souhaiterez peut-être obtenir la dernière version de darktable. Pour cela utilisez le dépôt tiers [OBS](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable).
+
+### openSUSE
+Le dépôt pour les sysèmes OpenSUSE Leap ou Tumbleweed est [ICI](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable)
+
+### Arch Linux et systèmes dérivés
+L’installation de la version correspondante à votre version installée de Arch Linux ou d’un de ses dérivés, se fait avec la commande :
+
+`pacman -S darktable`
+
+### Solus
+L’installation de la version correspondante à votre version installée de Solus, se fait avec la commande :
+`sudo eopkg install darktable`
+
+### Gentoo et systèmes dérivés
+L’installation de la version correspondante à votre version installée de Gentoo ou d’un de ses dérivés, se fait avec la commande :
+
+`emerge darktable`
+
+### BSD
+L’installation de la version correspondante à votre version installée de BSD, se fait avec la commande :
+
+`pkg_add -r darktable`
+
+### Paquet Snap
+L’utilisation des paquets SNAP est vivement déconseillée ! Néanmoins, si vous y tenez vraiment, utilisez la commande :
+
+`sudo snap install darktable`
+
+### Paquet Flatpak
+L’utilisation des paquets Flatpack est vivement déconseillée ! Néanmoins, si vous y tenez vraiment, utilisez la commande :
+
+`flatpak install --from https://flathub.org/repo/appstream/org.darktable.Darktable.flatpakref`
+
+### Nightly builds
+Les paquets d’installation de la version de développement de darktable, sont générés automatiquement toutes les nuits pour les OS : Ubuntu et dérivés, Debian et dérivés et Opensuse. Ils sont disponibles sur [OBS](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable).
+
+### À partir des sources
+Enfin, il vous est possible de créer vous-même darktable à partir des sources. Pour cela suivez les instructions disponibles sur [Github](https://github.com/darktable-org/darktable#building).
+
+
+[ Débutez maintenant votre apprentissage de darktable](/apprendre)
