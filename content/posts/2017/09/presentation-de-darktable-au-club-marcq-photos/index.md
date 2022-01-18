@@ -21,7 +21,7 @@ Jeudi 05 octobre 2017 - 18H00 : stage débutant
 
 (18H Studio réservé à Franck pour travail sur modèle)
 
-Mardi 17 Octobre 2017 -18H00 : Images projetées - Apportez vous images du thème bimestriel : L’œuf dans tous ses états. (1 à 3 images maximum)
+Mardi 17 Octobre 2017 -18H00 : Images projetées - Apportez vous images du thème bimestriel : L'œuf dans tous ses états. (1 à 3 images maximum)
 
 Le club Marcq Photos se trouve à cette adresse: **Espace Brueghel, 64 Rue Albert Bailly, 59700 Marcq-en-Barœul**.
 

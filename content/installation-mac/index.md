@@ -19,6 +19,8 @@ Localiser darktable dans le dossier Applications (ou où vous l'avez installé) 
 
 Utiliser "ouvrir" dans le menu contextuel. Une nouvelle fenêtre de dialogue vous permettra de lancer l'application.
 
-darktable peut aussi être installé via les macPorts: `sudo port install darktable +quartz`
+### Version macPorts
+darktable peut aussi être installé via les macPorts : 
+`sudo port install darktable +quartz`
 
 [Débuter maintenant votre apprentissage de darktable](/apprendre)

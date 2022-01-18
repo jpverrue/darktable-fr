@@ -15,7 +15,7 @@ Cet atelier est organisé par l'**EPN des Rancy** (située au 249 rue vendôme, 
 
 Le thème de l'atelier sera:
 
-> Darktable est un logiciel de traitement de photo. Au cours de cette séance vous transporterez des photos d'aujourd’hui vers la fin du XIXème siècle, vers les années 50 ou les années 70 grâce à des effets intégrer à ce logiciel qui fera le bonheur des photographes exigeants ou débutants.
+> Darktable est un logiciel de traitement de photo. Au cours de cette séance vous transporterez des photos d'aujourd'hui vers la fin du XIXème siècle, vers les années 50 ou les années 70 grâce à des effets intégrer à ce logiciel qui fera le bonheur des photographes exigeants ou débutants.
 
 Plus d'infos sur ce lien: [http://epn.salledesrancy.com/les-jeudis-du-numeriques/jeudis-de-la-photo](http://epn.salledesrancy.com/les-jeudis-du-numeriques/jeudis-de-la-photo)
 
