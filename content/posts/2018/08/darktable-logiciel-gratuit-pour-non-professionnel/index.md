@@ -52,11 +52,11 @@ J'ai repris ce [concours RAW](https://froknowsphoto.com/raw-edit-of-the-week-25/
 
 [![](images/historique.png)](http://darktable.fr/wp-content/uploads/2018/08/historique.png)Une des critiques habituelles de darktable est la moins bonne conservation des détails en haute lumière.
 
-\[caption id="attachment\_5922" align="aligncenter" width="1907"\][![](images/aurelien-jared.png)](http://darktable.fr/wp-content/uploads/2018/08/aurelien-jared.png) Gauche : retouche Aurélien/darktable | Droite : retouche Jared/Lightroom\[/caption\]
+[![](images/aurelien-jared.png)](http://darktable.fr/wp-content/uploads/2018/08/aurelien-jared.png) Gauche : retouche Aurélien/darktable | Droite : retouche Jared/Lightroom
 
 Observez ce détail de la robe à 100 % et dites-moi si on a perdu des détails dans la texture. En fait, j'ai fait exprès d'atténuer les hautes lumières pour augmenter les détails dans la texture et le drapé. Donc darktable « sait » récupérer les hautes lumières, sous réserve que l'utilisateur sache le faire fonctionner.
 
-\[caption id="attachment\_5921" align="aligncenter" width="1905"\][![](images/aurelien-jared-2.png)](http://darktable.fr/wp-content/uploads/2018/08/aurelien-jared-2.png) Gauche : retouche Aurélien/darktable | Droite : retouche Jared/Lightroom\[/caption\]
+[![](images/aurelien-jared-2.png)](http://darktable.fr/wp-content/uploads/2018/08/aurelien-jared-2.png) Gauche : retouche Aurélien/darktable | Droite : retouche Jared/Lightroom
 
 Donc, est-ce le logiciel qui est en cause, ou la maîtrise de celui qui prétend le tester ? Je vous laisse juge.
 
@@ -76,7 +76,7 @@ Le véhicule de gauche requiert 30 h de formation pratique. Le véhicule de droi
 
 Dans un registre plus proche de l'image, vous avez entendu parler du modeleur/animateur 3D [Blender](https://www.blender.org/) ?
 
-\[caption id="" align="aligncenter" width="1920"\][![](images/06.jpg)](https://www.blender.org/wp-content/uploads/2013/05/06.jpg) Tracker VFX de Blender\[/caption\]
+![](images/06.jpg)](https://www.blender.org/wp-content/uploads/2013/05/06.jpg) Tracker VFX de Blender
 
 Je suis désolé, mais on ne peut pas faire des opérations avancées avec des outils simples. À un moment donné, tout se paie. On ne peut pas avoir un logiciel puissant, riche, qui laisse une totale liberté d'action à l'utilisateur, et qui soit en même temps simple, intuitif, rapide à prendre en main. Tout ce qui est intuitif cache des chose à l'utilisateur. La facilité va se payer plus tard, en terme de limites dans les fonctionnalités.
 
@@ -124,8 +124,8 @@ Reste que beaucoup de chose sont perfectibles. Mais beaucoup de choses fonctionn
 
 De grâce, restez stupide et paresseux, continuez à utiliser Lightroom, et arrêtez de croire qu'on cherche à vous convertir : on se portait très bien avant que darktable ne s'ouvre à Windows. Vous voulez apprendre : on veut bien vous aider. Vous avez la flemme : restez dans votre indigence crasse, shootez en JPEG, on n'a pas besoin de vous. Au fond, c'est simple.
 
-\[caption id="" align="aligncenter" width="2048"\][![](images/Autoportraits-0038-_DSC0208-WEB.jpg)](https://d1ehq6mh87pjr.cloudfront.net/wp-content/uploads/sites/3/2018/01/Autoportraits-0038-_DSC0208-WEB.jpg) moi par moi, retouche 100 % darktable.\[/caption\]
+[![](images/Autoportraits-0038-_DSC0208-WEB.jpg)](https://d1ehq6mh87pjr.cloudfront.net/wp-content/uploads/sites/3/2018/01/Autoportraits-0038-_DSC0208-WEB.jpg) moi par moi, retouche 100 % darktable.
 
-\[caption id="" align="aligncenter" width="1365"\][![](images/Shoot-Fredau-0051-_DSC0096-Majest%C3%A9-WEB.jpg)](https://photo.aurelienpierre.com/wp-content/uploads/sites/3/2017/04/Shoot-Fredau-0051-_DSC0096-Majest%C3%A9-WEB.jpg) Fredau. retouche 100 % darktable.\[/caption\]
+![](images/Shoot-Fredau-0051-_DSC0096-Majest%C3%A9-WEB.jpg)](https://photo.aurelienpierre.com/wp-content/uploads/sites/3/2017/04/Shoot-Fredau-0051-_DSC0096-Majest%C3%A9-WEB.jpg) Fredau. retouche 100 % darktable.
 
-\[caption id="" align="aligncenter" width="1463"\][![](images/Minh-Ly-intime-0029-_DSC0063-En-attendant-l%C3%A9t%C3%A9-WEB.jpg)](https://d1ehq6mh87pjr.cloudfront.net/wp-content/uploads/sites/3/2018/03/Minh-Ly-intime-0029-_DSC0063-En-attendant-l%C3%A9t%C3%A9-WEB.jpg) Minh-Ly. retouche 100 % darktable.\[/caption\]
+[![](images/Minh-Ly-intime-0029-_DSC0063-En-attendant-l%C3%A9t%C3%A9-WEB.jpg)](https://d1ehq6mh87pjr.cloudfront.net/wp-content/uploads/sites/3/2018/03/Minh-Ly-intime-0029-_DSC0063-En-attendant-l%C3%A9t%C3%A9-WEB.jpg) Minh-Ly. retouche 100 % darktable.

@@ -31,11 +31,11 @@ La difficulté est d'assombrir les hautes lumières, d'éclaircir les basses lum
 
 darktable dispose d'un module ombres et hautes lumières qui permet de faire ceci facilement. Mais voilà, ce que fait ce module est une correction spatiale : il identifie des zones sombres et des zones claires, et corrige les pixels suivant qu'ils appartiennent ou non à une zone claire ou sombre, et pas en fonction de leur luminanc individuelle. C'est un fait un filtre passe-bas dont le contraste est inversé et fusionné en incrustation dans l'image :
 
-\[caption id="attachment\_5942" align="aligncenter" width="684"\][![](images/DSC_0012-original.jpg)](http://darktable.fr/wp-content/uploads/2018/08/DSC_0012-original.jpg) Original\[/caption\]
+[![](images/DSC_0012-original.jpg)](http://darktable.fr/wp-content/uploads/2018/08/DSC_0012-original.jpg) Original
 
-\[caption id="attachment\_5940" align="aligncenter" width="1292"\][![](images/passe-bas.png)](http://darktable.fr/wp-content/uploads/2018/08/passe-bas.png) Carte de luminance inversée utilisée pour corriger le contraste par le module ombres et hautes lumières (simulée avec le module passe-bas).\[/caption\]
+][![](images/passe-bas.png)](http://darktable.fr/wp-content/uploads/2018/08/passe-bas.png) Carte de luminance inversée utilisée pour corriger le contraste par le module ombres et hautes lumières (simulée avec le module passe-bas).
 
-\[caption id="attachment\_5941" align="aligncenter" width="684"\][![](images/DSC_0012-basses-frequences.jpg)](http://darktable.fr/wp-content/uploads/2018/08/DSC_0012-basses-frequences.jpg) Contraste inversé avec le module passe-bas en appliquant la carte de luminance ci-dessus en fusion incrustation — notez que le module ombres et hautes lumières donne un meilleur résultat puisqu'il offre des contrôles plus précis.\[/caption\]
+[![](images/DSC_0012-basses-frequences.jpg)](http://darktable.fr/wp-content/uploads/2018/08/DSC_0012-basses-frequences.jpg) Contraste inversé avec le module passe-bas en appliquant la carte de luminance ci-dessus en fusion incrustation — notez que le module ombres et hautes lumières donne un meilleur résultat puisqu'il offre des contrôles plus précis.
 
 En paysage, où vous avez des zones bien séparées (ciel, mer, terrain), ça marche bien. C'est alors l'équivalent d'un dodge & burn à la Ansel Adams :
 
@@ -49,7 +49,7 @@ _Note : j'ai créé un style contenant l'essentiel des modules utilisés dans la
 
 Si j'ouvre une photo prise en plein soleil, avec les courbe de base par défaut (ici, similaire Nikon), voici ce qu'on obtient :
 
-\[caption id="attachment\_5944" align="aligncenter" width="684"\][![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-base.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-base.jpg) À l'ouverture de la photo, exposition et balance des blancs ajustées\[/caption\]
+[![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-base.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-base.jpg) À l'ouverture de la photo, exposition et balance des blancs ajustées
 
 Le nez est aplati dans le visage, la peau est jaune trop saturée (même pour une asiatique), les ombres sont très marquées : on ne voit pas grand chose. Première chose à faire : changer la courbe de base.
 
@@ -63,7 +63,7 @@ On ajoute ensuite la correction du profil d'entrée, avec le gamma à 0.45 (ce q
 
 [![](images/profil-entrée.png)](http://darktable.fr/wp-content/uploads/2018/08/profil-entrée.png)On a alors ce résultat :
 
-\[caption id="attachment\_5947" align="aligncenter" width="684"\][![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-neutre.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-neutre.jpg) Application du profil neutre\[/caption\]
+[![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-neutre.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-neutre.jpg) Application du profil neutre
 
 C'est déjà beaucoup plus lisible. On a donc une base saine, il va falloir ensuite ajuster l'exposition de façon à caler l'histogramme bien à droite mais sans avoir de zone brûlée. Ici, c'est l'arrête du nez qui nous fournit la référence d'exposition. On s'arrête juste avant de perdre la texture de peau.
 
@@ -76,7 +76,7 @@ La première méthode donne de bons résultat en contre-jour, quand le sujet ne 
 
 [![](images/courbe-fusion.png)](http://darktable.fr/wp-content/uploads/2018/08/courbe-fusion.png)Le résultat est alors :
 
-\[caption id="attachment\_5950" align="aligncenter" width="684"\][![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-HDR.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-HDR.jpg) Avec fusion d'exposition\[/caption\]
+[![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-HDR.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-HDR.jpg) Avec fusion d'exposition
 
 Tout ceci est très fade, mais c'était le but : récupérer la plage dynamique. À présent, on va rajouter du contraste en passant par la courbe des tonalités en mode manuel. Il s'agit de remettre une très légère courbe en S en luminance.
 
@@ -84,13 +84,13 @@ Tout ceci est très fade, mais c'était le but : récupérer la plage dynamique.
 
 [![](images/tonalites-a.png)](http://darktable.fr/wp-content/uploads/2018/08/tonalites-a.png)
 
-\[caption id="attachment\_5954" align="aligncenter" width="684"\][![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-contraste.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-contraste.jpg) Après ajout de contraste\[/caption\]
+[![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-contraste.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-contraste.jpg) Après ajout de contraste
 
 Dernière étape : on se rend compte que les hautes lumières sont étrangement saturées, ce qui arrive très souvent quand on manipule trop les valeurs RGB. En effet, la charte de couleurs utilisée pour réaliser de profil de couleur d'entrée a une plage dynamique de 8 EV environ, on a donc dilaté ce profil et ajouté des erreurs. Pour compenser cette dérive, on va désaturer sélectivement les hautes lumières avec le module zones de couleurs.
 
 [![](images/zones-de-couleurs.png)](http://darktable.fr/wp-content/uploads/2018/08/zones-de-couleurs.png)
 
-\[caption id="attachment\_5956" align="aligncenter" width="684"\][![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-saturation.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-saturation.jpg) Après la correction de saturation des hautes lumières.\[/caption\]
+[![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-saturation.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-saturation.jpg) Après la correction de saturation des hautes lumières.
 
 Restent alors les petits détails, suivant votre goût personnel : j'ai retiré 0.5 EV sur le visage en utilisant le module exposition et un masque dessiné oval, ajouté 0.33 EV d'exposition sur les fleurs avec un masque dessiné pinceau et une légère vignette.
 
@@ -98,17 +98,17 @@ Optionnellement, le modules zones permet, en utilisant le [_zone system_ d'Ansel
 
 [![](images/zones.png)](http://darktable.fr/wp-content/uploads/2018/08/zones.png)Le résultat n'est pas la photo du siècle (l'expression de la modèle, la lumière, etc. laissent à désirer), mais un exemple assez parlant de ce type de retouche. Notez que l'augmentation du constraste local sur la robe se fait au détriment du modelé des jambes, qui sont dans la 3e zone, qui est du coup réduite. C'est le défaut principal de ce module, où l'on est obligé de déshabiller Paul pour habiller Jean…
 
-\[caption id="attachment\_5959" align="aligncenter" width="684"\][![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-zones.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-zones.jpg) Final\[/caption\]
+[![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-zones.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-zones.jpg) Final
 
 ## Autre exemple
 
 Je vais reprendre la photo du début, issue d'un [concours RAW de Jared Polin](https://froknowsphoto.com/raw-edit-of-the-week-25/) dont j'ai déjà parlé dans mon [précédent article](http://darktable.fr/2018/08/darktable-logiciel-gratuit-pour-non-professionnel/).
 
-\[caption id="attachment\_5919" align="aligncenter" width="681"\][![](images/5707034020_151dd759be_b.jpg)](http://darktable.fr/wp-content/uploads/2018/08/5707034020_151dd759be_b.jpg) Retouche Jared Polin - Lightroom\[/caption\]
+![](images/5707034020_151dd759be_b.jpg)](http://darktable.fr/wp-content/uploads/2018/08/5707034020_151dd759be_b.jpg) Retouche Jared Polin - Lightroom
 
 La photo date de 2011, et la retouche porte la trace de son époque : un goût prononcé pour les couleurs saturées et les contrastes marqués, alors même que les appareils photos de l'époque affichaient à peine plus de 10 EV de plage dynamique à 100 ISO, donc contrastaient naturellement plus. Ce style est passé de mode depuis quelques années, avec le renouveau de la pellicule couleur et un engouement pour les styles qui émulent ce rendu plus doux, plus pastel, et finalement plus poétique. Voici donc ma retouche personnelle, faite avec la méthode présentée ici :
 
-\[caption id="attachment\_5961" align="aligncenter" width="684"\][![](images/DSC_0012-retouche-perso.jpg)](http://darktable.fr/wp-content/uploads/2018/08/DSC_0012-retouche-perso.jpg) Retouche Aurélien Pierre/darktable\[/caption\]
+[![](images/DSC_0012-retouche-perso.jpg)](http://darktable.fr/wp-content/uploads/2018/08/DSC_0012-retouche-perso.jpg) Retouche Aurélien Pierre/darktable
 
 Vous remarquez que, dans ma version, la  modèle est blonde des racines au pointes, alors que la version de Jared, au contraste renforcé, donne un rendu « fausse blonde » avec des racines foncées. La teinte de peau est aussi plus naturelle à mon avis. Je trouve mon image globalement moins dure.
 

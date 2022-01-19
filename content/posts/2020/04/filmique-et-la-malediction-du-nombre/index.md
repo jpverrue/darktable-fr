@@ -25,7 +25,7 @@ Dans filmique, on cherche à projeter une plage dynamique (le contraste maximal 
 
 Filmique opère une projection de plage dynamique, d'une entrée inconnue vers une sortie connue, donc. Il utilise pour ce faire une projection à 3 points : noir pur, gris moyen et blanc pur. Le gris moyen permet d'ancrer l'exposition générale, le noir et le blanc permettent d'enrouler toute la plage dynamique en conséquence autour du gris, de façon à comprimer le contraste pour rentrer dans les clous en évitant l'écrêtage pur et simple.
 
-\[caption id="attachment\_7111" align="aligncenter" width="1872"\][![](images/mappage-filmique.png)](https://darktable.fr/wp-content/uploads/2020/04/mappage-filmique.png) Mappage filmique\[/caption\]
+[![](images/mappage-filmique.png)](https://darktable.fr/wp-content/uploads/2020/04/mappage-filmique.png) Mappage filmique
 
 Sur le schéma ci-dessus, on voit le principe général de la fabrication d'image, de la scène à l'écran. La caméra a une certaine plage dynamique, imposée par ses propriétés physiques et électroniques. La scène a, le plus souvent mais pas toujours, une plage dynamique plus grande. Le réglage de l'exposition (\*), sur le boîtier, via l'ouverture, la vitesse et la sensibilité, fait glisser la fenêtre de plage dynamique de gauche à droite, sur l'axe des luminances, de façon à choisir à quelle**s** valeur**s** de luminance on écrête (à la fois à gauche et à droite). Le transfert de luminance scène vers capteur est linéaire (matérialisé par les flèches verticales).
 

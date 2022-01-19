@@ -26,7 +26,7 @@ L'œil est fait de 2 types de capteurs, qui sont des cellules spécialisées con
 
 Cependant, ce que le cerveau analyse, ce n'est pas de la lumière, mais des contrastes, c'est à dire des écarts relatifs de luminance. Du coup, en l'absence de contraste suffisant, on ne « voit » rien, ou plus exactement on voit sans discerner.
 
-\[caption id="attachment\_6051" align="aligncenter" width="567"\][![](images/46768376.jpg)](http://darktable.fr/wp-content/uploads/2018/09/46768376.jpg) L'homme invisible (Le père Noël est une ordure)\[/caption\]
+[![](images/46768376.jpg)](http://darktable.fr/wp-content/uploads/2018/09/46768376.jpg) L'homme invisible (Le père Noël est une ordure)
 
 Une photo bien exposée doit tenir compte de ce paramètre, et présenter un contraste suffisant pour qu'on puisse, physiologiquement, discerner ce qui s'y passe.
 
@@ -67,7 +67,7 @@ Ceci dit, en réalité, comme les signaux RGB qui arrivent à l'écran sont gén
 
 On a dit plus haut que l'œil et le cerveau cassent le contraste de façon logarithmique, c'est à dire rapprochent la luminosité des tons sombres de celle des tons clairs (le vrai contraste). Qualitativement, ça veut dire que pour voir un gris deux fois plus foncé qu'un gris de référence, on ne peut pas simplement multiplier la concentration de pigments noir par deux, il faut réaliser une [correction du gamma](https://en.wikipedia.org/wiki/Gamma_correction) avant, et probablement multiplier la concentration par 4. Le problème, c'est que cette correction gamma, si elle fait gagner en lisibilité (puisqu'elle renforce le contraste), fait perdre en plage dynamique. Jugez vous-même :
 
-\[caption id="" align="aligncenter" width="320"\][![](images/320px-GammaCorrection_demo.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/GammaCorrection_demo.jpg/320px-GammaCorrection_demo.jpg) https://en.wikipedia.org/wiki/Gamma\_correction#/media/File:GammaCorrection\_demo.jpg\[/caption\]
+[![](images/320px-GammaCorrection_demo.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/GammaCorrection_demo.jpg/320px-GammaCorrection_demo.jpg) https://en.wikipedia.org/wiki/Gamma\_correction#/media/File:GammaCorrection\_demo.jpg
 
 Plus on casse le contraste, plus on fait apparaître de détails, mais plus on perd en clarté. Plus on rajoute de contraste, plus on gagne en clarté, mais plus on bouche les ombres.
 

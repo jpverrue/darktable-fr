@@ -13,7 +13,7 @@ Pourquoi darktable n'est ni Lightroom, ni Capture One ?
 
 Votre capteur d'appareil photo mesure l'intensité lumineuse reçue sur 3 canaux (rouge, vert, bleu : on est dans un espace RGB). Comme n'importe quel capteur, il se plante : il commet une erreur, autrement dit les valeurs RGB qu'il mesure sont plus ou moins fausses par rapport à la réalité. L'erreur se calcule en mesurant des valeurs RGB de mires d'étalonnages  dont on connaît la valeur théorique. erreur² = (théorie - mesure)².
 
-\[caption id="" align="aligncenter" width="1600"\][![](images/IT8_color_target_by_EGM_Laboratories.jpg)](https://upload.wikimedia.org/wikipedia/commons/c/c0/IT8_color_target_by_EGM_Laboratories.jpg) Une mire IT8 standard - CC Wikimedia / Hugo Rodriguez\[/caption\]
+[![](images/IT8_color_target_by_EGM_Laboratories.jpg)](https://upload.wikimedia.org/wikipedia/commons/c/c0/IT8_color_target_by_EGM_Laboratories.jpg) Une mire IT8 standard - CC Wikimedia / Hugo Rodriguez
 
 Vous me direz : il suffit d'ajouter (ou de retrancher) l'erreur ainsi enregistrée par dessus la mesure pour retomber sur la valeur attendue. Oui, ça marche exactement pour toutes les couleurs qui sont sur la mire d'étalonnage. C'est même le principe d'un profil ICC : caractériser l'erreur pour un jeu de couleur défini, et la corriger mathématiquement après mesure. Mais pour les couleurs qui ne sont pas sur la mire ? On interpole, c'est à dire qu'on vise entre les 2, 3, 4… couleurs voisines les plus proches. Et devinez quoi… L'erreur de mesure d'un capteur ainsi étalonné n'est toujours pas nulle. Le calcul numérique est une plaie, on n'est jamais exact.
 

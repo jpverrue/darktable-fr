@@ -65,14 +65,14 @@ Mais tous les tests et les retours sont les bienvenus.
 
 ## Mise à jour : j'ai commencé à rééditer des photos de cet été avec ces modules
 
-\[caption id="attachment\_6038" align="aligncenter" width="800"\][![](images/Shoot-Ivona-0120-_DSC0926-PHOTOSHOP-WEB.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Ivona-0120-_DSC0926-PHOTOSHOP-WEB.jpg) Sortie de darktable (ancienne version ) + retouche Photoshop\[/caption\]
+[![](images/Shoot-Ivona-0120-_DSC0926-PHOTOSHOP-WEB.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Ivona-0120-_DSC0926-PHOTOSHOP-WEB.jpg) Sortie de darktable (ancienne version ) + retouche Photoshop
 
-\[caption id="attachment\_6041" align="aligncenter" width="801"\][![](images/Shoot-Ivona-0120-_DSC0926-WEB_04.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Ivona-0120-_DSC0926-WEB_04.jpg) Sortie directe de darktable (nouvelle version avec nouveaux modules)\[/caption\]
+[![](images/Shoot-Ivona-0120-_DSC0926-WEB_04.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Ivona-0120-_DSC0926-WEB_04.jpg) Sortie directe de darktable (nouvelle version avec nouveaux modules)
 
-\[caption id="attachment\_6043" align="aligncenter" width="721"\][![](images/Shoot-Des-0073-_DSC0762-WEB.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Des-0073-_DSC0762-WEB.jpg) sortie de darktable (ancienne version)\[/caption\]
+[![](images/Shoot-Des-0073-_DSC0762-WEB.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Des-0073-_DSC0762-WEB.jpg) sortie de darktable (ancienne version)
 
-\[caption id="attachment\_6044" align="aligncenter" width="721"\][![](images/Shoot-Des-0073-_DSC0762-WEB_02.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Des-0073-_DSC0762-WEB_02.jpg) sortie de darktable (nouvelle version avec nouveaux modules)\[/caption\]
+[![](images/Shoot-Des-0073-_DSC0762-WEB_02.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Des-0073-_DSC0762-WEB_02.jpg) sortie de darktable (nouvelle version avec nouveaux modules)
 
-\[caption id="attachment\_6046" align="aligncenter" width="2048"\][![](images/Shoot-Des-0100-_DSC0793-WEB.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Des-0100-_DSC0793-WEB.jpg) sortie de darktable (version précédente)\[/caption\]
+][![](images/Shoot-Des-0100-_DSC0793-WEB.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Des-0100-_DSC0793-WEB.jpg) sortie de darktable (version précédente)
 
-\[caption id="attachment\_6047" align="aligncenter" width="2048"\][![](images/Shoot-Des-0100-_DSC0793-WEB_02.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Des-0100-_DSC0793-WEB_02.jpg) sortie de darktable (nouvelle version avec nouveaux modules)\[/caption\]
+][![](images/Shoot-Des-0100-_DSC0793-WEB_02.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Des-0100-_DSC0793-WEB_02.jpg) sortie de darktable (nouvelle version avec nouveaux modules)

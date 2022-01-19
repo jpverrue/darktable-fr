@@ -99,7 +99,7 @@ Un exemple de ce que la calibration des couleurs peut faire pour vous : à gauch
 
 Le module [_censurer_](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/censorize/) vous permet de flouter et de pixéliser rapidement des parties de l'image, d'une façon esthétique, pour des fins d'anonymisation et pour respecter les conditions d'utilisation des réseaux sociaux relatives à l'anatomie. Il applique un flou gaussien et un bruit gaussien physiquement réalistes en RGB linéaire. En tant que tel, il peut aussi être utilisé pour différents effets créatifs, tels que l'effet Orton (_bloom_).
 
-\[caption id="attachment\_7613" align="aligncenter" width="2048"\][![](images/Shoot-Minh-Ly-La-Guyonniere-0198-DSC_0653.jpg)](https://darktable.fr/wp-content/uploads/2021/06/Shoot-Minh-Ly-La-Guyonniere-0198-DSC_0653.jpg) © Aurélien Pierre\[/caption\]
+[![](images/Shoot-Minh-Ly-La-Guyonniere-0198-DSC_0653.jpg)](https://darktable.fr/wp-content/uploads/2021/06/Shoot-Minh-Ly-La-Guyonniere-0198-DSC_0653.jpg) © Aurélien Pierre
 
 Notez que le module _censurer_ n'empêche pas une reconstruction scientifique des parties censurées (en utilisant l'apprentissage machine et l'intelligence artificielle, notamment). Pour une réelle anonymisation, résistante à la reconstruction scientifique, vous devez peindre une couleur solide par dessus les parties sensibles de l'image.
 
@@ -149,7 +149,7 @@ Le module _aberrations chromatiques_ existant a été renommé [_aberratons chro
 
 Un nouveau module [_aberrations chromatiques_](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/chromatic-aberrations/) a été ajouté. Il opère en RGB après le dématriçage et est donc disponible pour toute image et tout type de capteur. Il amène une nouvelle technique de filtrage (inspirée par les [manifolds adaptatifs](https://www.inf.ufrgs.br/~eslgastal/AdaptiveManifolds/), publiés en 2012) qui permet de guider, de façon plus ou moins proche, deux des canaux RGB avec le troisième, pour assurer que les gradients des 3 canaux soient corrélés.
 
-\[caption id="attachment\_7654" align="aligncenter" width="1920"\][![](images/aberrations-chromatiques.jpg)](https://darktable.fr/wp-content/uploads/2021/07/aberrations-chromatiques.jpg) © Rawfiner – Correction des aberrations chromatiques avec le nouveau module\[/caption\]
+[![](images/aberrations-chromatiques.jpg)](https://darktable.fr/wp-content/uploads/2021/07/aberrations-chromatiques.jpg) © Rawfiner – Correction des aberrations chromatiques avec le nouveau module
 
 Notez que les aberrations chromatiques se produisent soit lorsque les gradients des 3 canaux sont légèrement décalés dans le plan, les uns par rapport aux autres, soit parce que les gradients sont plus flous sur un canal que sur les autres. Le rayon du voisinage utilisé pour corriger les gradients et la force de la correction sont définis par l'utilisateur. Ceci fonctionne beaucoup mieux pour les aberrations chromatiques larges (au dessus de f/2.8) que l'ancien module et régularise une partie du bruit par effet secondaire. Il peut aussi être utilisé sur plusieurs instances en utilisant différentes stratégies de guidage pour venir à bout des cas les plus difficiles sans produire de franges grises sur les contours.
 
