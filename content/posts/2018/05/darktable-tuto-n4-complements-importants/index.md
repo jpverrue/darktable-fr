@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) revient sur son tutoriel N° 4 après un commentaire sur le comportement de la fusion des masques paramétriques d'entrée et de sortie, je vous laisse découvrir : https://youtu.be/2ZnfexLEEL4 Bonne découverte.
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) revient sur son tutoriel N° 4 après un commentaire sur le comportement de la fusion des masques paramétriques d'entrée et de sortie, je vous laisse découvrir : 
+
+{{< youtube 2ZnfexLEEL4 >}}
+
+Bonne découverte.

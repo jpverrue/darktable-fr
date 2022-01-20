@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) continue l'exploration des masques paramétriques : https://youtu.be/CGUfkwkssqA Bonne découverte.
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) continue l'exploration des masques paramétriques : 
+
+{{< youtube CGUfkwkssqA >}}
+
+Bonne découverte.

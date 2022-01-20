@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) continue d'explorer la fonction trapézoïdale des masques paramétriques : https://youtu.be/HA9iBfJmzW0 Bon visionnage.
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) continue d'explorer la fonction trapézoïdale des masques paramétriques : 
+
+{{< youtube HA9iBfJmzW0 >}}
+
+Bon visionnage.

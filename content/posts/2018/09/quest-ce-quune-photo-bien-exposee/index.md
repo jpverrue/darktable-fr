@@ -67,7 +67,7 @@ Ceci dit, en réalité, comme les signaux RGB qui arrivent à l'écran sont gén
 
 On a dit plus haut que l'œil et le cerveau cassent le contraste de façon logarithmique, c'est à dire rapprochent la luminosité des tons sombres de celle des tons clairs (le vrai contraste). Qualitativement, ça veut dire que pour voir un gris deux fois plus foncé qu'un gris de référence, on ne peut pas simplement multiplier la concentration de pigments noir par deux, il faut réaliser une [correction du gamma](https://en.wikipedia.org/wiki/Gamma_correction) avant, et probablement multiplier la concentration par 4. Le problème, c'est que cette correction gamma, si elle fait gagner en lisibilité (puisqu'elle renforce le contraste), fait perdre en plage dynamique. Jugez vous-même :
 
-[![](images/320px-GammaCorrection_demo.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/GammaCorrection_demo.jpg/320px-GammaCorrection_demo.jpg) https://en.wikipedia.org/wiki/Gamma\_correction#/media/File:GammaCorrection\_demo.jpg
+[![](images/320px-GammaCorrection_demo.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/GammaCorrection_demo.jpg/320px-GammaCorrection_demo.jpg) https://en.wikipedia.org/wiki/Gamma_correction#/media/File:GammaCorrection_demo.jpg
 
 Plus on casse le contraste, plus on fait apparaître de détails, mais plus on perd en clarté. Plus on rajoute de contraste, plus on gagne en clarté, mais plus on bouche les ombres.
 

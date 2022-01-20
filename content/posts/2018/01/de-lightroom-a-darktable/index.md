@@ -12,7 +12,7 @@ Il y a peu de temps OuiOuiPhoto s'était inscris sur le forum pour signaler qu'i
 
 Il a posté aujourd'hui sa première vidéo, une introduction sur le passage de Lightroom à darktable.
 
-https://youtu.be/v9r8mQjdo\_I
+{{< youtube v9r8mQjdo_I >}}
 
 OuiOuiPhoto va donc procéder à une série de tests avec 10 photos et en conclusion, il verra s'il passe définitivement à darktable.
 

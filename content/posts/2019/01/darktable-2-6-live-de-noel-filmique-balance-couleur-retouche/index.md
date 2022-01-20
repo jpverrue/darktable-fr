@@ -10,6 +10,5 @@ tags:
 
 L'ami [Aurélien Pierre Photos](https://www.youtube.com/channel/UCmsSn3fujI81EKEr4NLxrcg) a organisé le 27 décembre un Live qui est maintenant complet et disponible sur YouTube :
 
-https://youtu.be/\_p3AdQ9wJ4E
-
+{{< youtube _p3AdQ9wJ4E >}}
 Un grand merci. Bon visionnage.

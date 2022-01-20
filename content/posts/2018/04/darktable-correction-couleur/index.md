@@ -8,4 +8,8 @@ tags:
   - "tutoriel-anglais"
 ---
 
-[Francisco Cribari](https://www.youtube.com/channel/UCxpnIv8WtJ3O-cIvriPeXnQ) explore les différentes possibilités de correction des couleur (en anglais): https://youtu.be/NHylVDh0kgY Bonne découverte.
+[Francisco Cribari](https://www.youtube.com/channel/UCxpnIv8WtJ3O-cIvriPeXnQ) explore les différentes possibilités de correction des couleur (en anglais): 
+
+{{< youtube NHylVDh0kgY >}}
+
+Bonne découverte.

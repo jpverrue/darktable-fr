@@ -20,7 +20,7 @@ Nous arrivons aux termes des réserves qui avait été faites lors de [la derni�
 - 3 x 8.5 € pour le nom de domaine
 - 3 x ~120€ pour l'hébergement
 
-\[wp\_progress\_bar text="Récolte de fonds 2021" pc="100" background="#60d6d2" progress\_color="#35aca8" text\_color="#fff"\]
+\[wp_progress_bar text="Récolte de fonds 2021" pc="100" background="#60d6d2" progress_color="#35aca8" text_color="#fff"\]
 
 En date du 08/01 nous avons récolté 100% des fonds nécessaires à l'hébergement de darktable.fr jusqu'au 31 décembre 2024. Les prochains dons qui seront récoltés seront attribués à Aurélien Pierre qui travail à temps plein en recherche et développement sur le traitement d'image pour darktable.
 
@@ -39,7 +39,7 @@ Mais avant ça, darktable.fr en chiffre, ça donne quoi?
 - C'est au moins 3 développeurs actifs, une dizaine de testeurs acharnés, une poignée de modérateurs et 2 animateurs de communauté
 - C'est deux bases de données, un hébergement et un nom de domaine à maintenir
 
-\[wp\_progress\_bar text="Récolte de fonds 2018" pc="100" background="#60d6d2" progress\_color="#35aca8" text\_color="#fff"\]
+\[wp_progress_bar text="Récolte de fonds 2018" pc="100" background="#60d6d2" progress_color="#35aca8" text_color="#fff"\]
 
 ## Soutenez-nous
 

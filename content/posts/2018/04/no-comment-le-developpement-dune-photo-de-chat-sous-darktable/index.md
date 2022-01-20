@@ -8,4 +8,8 @@ tags:
   - "tutoriel-muet"
 ---
 
-[Juste une mise au point](https://www.youtube.com/channel/UCSXBAkUFaqTZyWYW2BCa-FA) vous présente un post-traitement d'un Raw Alpha 7 II d'un chat en muet avec darktable français : https://youtu.be/L4oUSodAA-M Bonne visualisation.
+[Juste une mise au point](https://www.youtube.com/channel/UCSXBAkUFaqTZyWYW2BCa-FA) vous présente un post-traitement d'un Raw Alpha 7 II d'un chat en muet avec darktable français : 
+
+{{< youtube L4oUSodAA-M >}}
+
+Bonne visualisation.

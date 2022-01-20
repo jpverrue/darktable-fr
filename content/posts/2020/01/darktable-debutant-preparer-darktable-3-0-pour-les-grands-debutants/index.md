@@ -10,6 +10,6 @@ tags:
 
 [Philippe Delétrée](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) nous propose de simplifier le nombre de modules activés pour aborder le nouveau workflow basé sur filmique rvb.
 
-https://youtu.be/RtppEQkL9CM
+{{< youtube RtppEQkL9CM >}}
 
 Bonne découverte.

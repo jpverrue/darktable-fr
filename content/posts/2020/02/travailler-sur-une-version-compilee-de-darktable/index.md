@@ -74,8 +74,8 @@ La version master de darktable correspond à la version en cours de développeme
 Maintenant que tout est bien installé, il faut aller chercher le code source de darktable sur [Github](https://github.com/darktable-org/darktable). Dans mon cas, j'ai opté de télécharger le code dans `~/.darktable_master/`. Vous pouvez choisir de les placer ailleurs ceci dit.
 
 $ cd /home/nicolas/
-$ git clone https://github.com/darktable-org/darktable.git .darktable\_master/
-$ cd .darktable\_master/
+$ git clone https://github.com/darktable-org/darktable.git .darktable_master/
+$ cd .darktable_master/
 
 ## Compilation de la version master
 
@@ -88,11 +88,11 @@ En ouvrant le fichier `build.sh` présent dans le dossier téléchargé, on voit
 
 La compilation se fait donc par cette commande :
 
-$ ./build.sh --prefix /opt/darktable\_master/ --build-type Release
+$ ./build.sh --prefix /opt/darktable_master/ --build-type Release
 
 Selon votre machine, la compilation devrait durer plus ou moins longtemps, environ une minute. Une fois terminée, elle devrait vous proposer la commande suivante à taper :
 
-\# cmake --build "/home/nicolas/.darktable\_master/build" --target install -- -j12
+\# cmake --build "/home/nicolas/.darktable_master/build" --target install -- -j12
 
 Notez que celle-ci se fait _via_ le compte root (sauf si le préfixe d'installation passé en paramètre de build.sh est un préfixe correspondant à un dossier qui ne nécessite pas d'accès root).
 
@@ -100,7 +100,7 @@ Notez que celle-ci se fait _via_ le compte root (sauf si le préfixe d'installat
 
 Désormais, vous avez la version compilée de darktable 3.1 (développement), pour la lancer il faut taper la commande suivante :
 
-$ /opt/darktable\_master/bin/darktable --configdir /home/nicolas/.config/darktable\_master/
+$ /opt/darktable_master/bin/darktable --configdir /home/nicolas/.config/darktable_master/
 
 **Attention** Ici il est très important de bien définir un `--configdir` ici, et ce **à chaque démarrage**, sinon le logiciel utilisera par défaut le dossier `~/.config/darktable/` et possiblement remplacer la base de données d'une autre version déjà installée et tout casser, ce qui pourrait être problématique.
 
@@ -114,9 +114,9 @@ La démarche est quasiment la même que pour la version de développement, à qu
 
 Avant de compiler la version, choisissez des dossiers correspondant comme ce qui a été fait pour la version master, par exemple :
 
-/home/nicolas/.darktable\_stable/
-/home/nicolas/.config/darktable\_stable/
-/opt/darktable\_stable/
+/home/nicolas/.darktable_stable/
+/home/nicolas/.config/darktable_stable/
+/opt/darktable_stable/
 
 Évitez de donner des numéros de versions dans ces dossiers, ceux-ci conservant le même nom tout le temps ils ne correspondront rapidement plus aux versions qu'ils contiennent vraiment.
 
@@ -125,7 +125,7 @@ Avant de compiler la version, choisissez des dossiers correspondant comme ce qui
 Le téléchargement se fait de la même façon que précédemment :
 
 $ cd /home/nicolas/
-$ git clone https://github.com/darktable-org/darktable.git .darktable\_stable/ $ cd .darktable\_stable/
+$ git clone https://github.com/darktable-org/darktable.git .darktable_stable/ $ cd .darktable_stable/
 
 Une fois dans le dossier du code source, il est possible de voir toutes les versions stables disponibles par la commande suivante :
 
@@ -189,18 +189,18 @@ La suite est la même que pour la version master, en veillant bien à vérifier 
 
 $ git submodule init
 $ git submodule update
-$ ./build.sh --prefix /opt/darktable\_stable/ --build-type Release
-# cmake --build "/home/nicolas/.darktable\_stable/build" --target install -- -j12
+$ ./build.sh --prefix /opt/darktable_stable/ --build-type Release
+# cmake --build "/home/nicolas/.darktable_stable/build" --target install -- -j12
 
 # Mises à jour des versions compilées
 
 Dans les deux cas de figure, la méthode à suivre pour mettre à jour une version compilée est la même, voilà les commandes pour la version master :
 
-$ cd /home/nicolas/.darktable\_master/
+$ cd /home/nicolas/.darktable_master/
 $ git pull
 $ git submodule update
-$ ./build.sh --prefix /opt/darktable\_master/ --build-type Release
-# cmake --build "/home/nicolas/.darktable\_master/build" --target install -- -j12
+$ ./build.sh --prefix /opt/darktable_master/ --build-type Release
+# cmake --build "/home/nicolas/.darktable_master/build" --target install -- -j12
 
 Avant la compilation il peut être fortement recommandé de supprimer le dossier `build/` et le dossier correspondant dans `/opt/` (ici `/opt/darktable_master/`) pour être certain de partir sur une compilation fraiche.
 
@@ -232,11 +232,11 @@ Une fois `intel-opencl` installé, il vous suffit de recompiler darktable pour q
 
 Pour plus de détails, je vous invite à voir les wikis de darktable sur sa compilation :
 
-- darktable 2.0 : [https://redmine.darktable.org/projects/darktable/wiki/Building\_darktable\_20](https://redmine.darktable.org/projects/darktable/wiki/Building_darktable_20).
-- darktable 2.2 : [https://redmine.darktable.org/projects/darktable/wiki/Building\_darktable\_22](https://redmine.darktable.org/projects/darktable/wiki/Building_darktable_22).
-- darktable 2.6 : [https://redmine.darktable.org/projects/darktable/wiki/Building\_darktable\_26](https://redmine.darktable.org/projects/darktable/wiki/Building_darktable_26).
+- darktable 2.0 : [https://redmine.darktable.org/projects/darktable/wiki/Building_darktable_20](https://redmine.darktable.org/projects/darktable/wiki/Building_darktable_20).
+- darktable 2.2 : [https://redmine.darktable.org/projects/darktable/wiki/Building_darktable_22](https://redmine.darktable.org/projects/darktable/wiki/Building_darktable_22).
+- darktable 2.6 : [https://redmine.darktable.org/projects/darktable/wiki/Building_darktable_26](https://redmine.darktable.org/projects/darktable/wiki/Building_darktable_26).
 
-La documentation pour installer Neo est disponible _via_ ce lien : [https://github.com/intel/compute-runtime/blob/master/documentation/Neo\_in\_distributions.md](https://github.com/intel/compute-runtime/blob/master/documentation/Neo_in_distributions.md)
+La documentation pour installer Neo est disponible _via_ ce lien : [https://github.com/intel/compute-runtime/blob/master/documentation/Neo_in_distributions.md](https://github.com/intel/compute-runtime/blob/master/documentation/Neo_in_distributions.md)
 
 Merci aux développeurs pour votre travail formidable et votre aide sur Framateam pour m'avoir permis de compiler chez moi le logiciel et merci à Rawfiner pour la relecture et les quelques corrections.
 

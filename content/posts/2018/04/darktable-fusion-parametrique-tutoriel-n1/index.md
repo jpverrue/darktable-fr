@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[JC Tutos](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) est un nouveau YouTubeur que nous fait partager ses premiers tutos : https://youtu.be/vHhJzN\_hcH4 Bonne découverte.
+[JC Tutos](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) est un nouveau YouTubeur que nous fait partager ses premiers tutos : 
+
+{{< youtube vHhJzN_hcH4 >}}
+
+Bonne découverte.

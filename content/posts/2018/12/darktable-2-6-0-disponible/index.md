@@ -71,7 +71,7 @@ La version 2.4 laisse donc la place à la 2.6 qui comporte plus de 1600 modifica
 - CMake 3.4 est maintenant requis
 - Pour compiler darktable, vous avez maintenant besoin d'au moins gcc-5.0+/clang-3.9+.
 - La version Minimal Clang est passée de 3.4+ à 3.9+.
-- Il est conseillé aux empaqueteurs de passer -DRAWSPEED\_ENABLE\_LTO=ON à CMake pour activer la LTO partielle.
+- Il est conseillé aux empaqueteurs de passer -DRAWSPEED_ENABLE_LTO=ON à CMake pour activer la LTO partielle.
 
 ## Changements dans RawSpeed
 

@@ -10,6 +10,6 @@ tags:
 
 [Philippe Delétrée](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) partage le traitement de la cathédrale de Reims. Il vous permet de télécharger le RAW.
 
-https://youtu.be/kDNmR8EgARA
+{{< youtube kDNmR8EgARA >}}
 
 Bon traitement.

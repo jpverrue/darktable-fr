@@ -10,6 +10,6 @@ tags:
 
 [Aurélien PIERRE Photo](https://www.youtube.com/channel/UCmsSn3fujI81EKEr4NLxrcg) aborde dans cet vidéo le module égaliseur de ton en partant de comment les tireurs argentiques harmonisaient les tirages en partant d'un exemple avec les valeurs de corrections et leur emplacement sur un tirage de base et présente son utilisation sur 4 photos. Plusieurs utilisateurs se sont attelés à la traduction des sous-titres, merci à eux.
 
-https://youtu.be/kzACn3l49HM
+{{< youtube kzACn3l49HM >}}
 
 Bonne visualisation.

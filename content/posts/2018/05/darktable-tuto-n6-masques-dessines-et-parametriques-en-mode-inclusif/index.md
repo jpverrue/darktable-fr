@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) continue d'explorer les possibilités des masques dessinés et paramétriques : https://youtu.be/4KXZvmqj-Qw Bon visionnage.
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) continue d'explorer les possibilités des masques dessinés et paramétriques : 
+
+{{< youtube 4KXZvmqj-Qw >}}
+
+Bon visionnage.

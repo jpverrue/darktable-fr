@@ -12,4 +12,4 @@ tags:
 
 Si comme moi, vous avez loupé le live streaming d'Aurélien PIERRE sur la retouche de portrait en noir et blanc, vous pouvez maintenant regarder la vidéo à volonté... et en français
 
-https://youtu.be/nccKdUZsqvs
+{{< youtube nccKdUZsqvs >}}

@@ -15,4 +15,4 @@ tags:
 
 Bon visionnage
 
-https://youtu.be/KrOI6TllGig
+{{< youtube KrOI6TllGig >}}

@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[L'ami Philippe](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) a fait ce tuto pour ceux qui utilise darktable sous Windows : https://youtu.be/vaL9uWS6smg Bonne visualisation.
+[L'ami Philippe](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) a fait ce tuto pour ceux qui utilise darktable sous Windows : 
+
+{{< youtube vaL9uWS6smg >}}
+
+Bonne visualisation.

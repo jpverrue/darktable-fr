@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) aborde les masques dessinés : https://youtu.be/qFXIxdBaejo Bonne découverte.
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) aborde les masques dessinés : 
+
+{{< youtube qFXIxdBaejo >}}
+
+Bonne découverte.

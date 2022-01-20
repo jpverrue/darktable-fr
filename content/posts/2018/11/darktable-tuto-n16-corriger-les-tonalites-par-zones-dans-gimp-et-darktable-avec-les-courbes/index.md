@@ -10,6 +10,6 @@ tags:
 
 [JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) aborde la correction de tonalités par zones en comparant dans Gimp et la courbes de tonalité de darktable :
 
-https://youtu.be/NQLQmN6K-8o
+{{< youtube NQLQmN6K-8o >}}
 
 Bonne visualisation.

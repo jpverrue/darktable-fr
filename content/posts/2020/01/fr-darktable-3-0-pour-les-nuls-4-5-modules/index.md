@@ -10,6 +10,6 @@ tags:
 
 [Aurélien PIERRE Photo](https://www.youtube.com/channel/UCmsSn3fujI81EKEr4NLxrcg) présente une méthode simple en 3 modules pour traiter une photo largement sous exposée en contre-jour, il aborde aussi l'égaliseur de ton.
 
-https://youtu.be/BEEZ8V3OS2U
+{{< youtube BEEZ8V3OS2U >}}
 
 Bonne découverte avec le développeur principal de ce nouveau flux de travail.

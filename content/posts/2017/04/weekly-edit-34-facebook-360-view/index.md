@@ -38,22 +38,22 @@ for f in "${@}"; do
     height="$(exiftool -T -ImageHeight "${f}")"
     ratio=$((width/height))
 
-    if \[\[ ratio -lt 2 \]\]; then
+    if [[ ratio -lt 2 ]]; then
         printf '%sn' "Image must have a ratio of at least 2:1." "Skipping."
         continue
     fi
 
-    width\_full=$((360\*width/hfov))
-    height\_full=$((180\*width\_full/hfov))
-    height\_full=$((width\_full/2))
-    left\_crop=$(((width\_full-width)/2))
-    top\_crop=$(((height\_full-height)/2))
+    width_full=$((360*width/hfov))
+    height_full=$((180*width_full/hfov))
+    height_full=$((width_full/2))
+    left_crop=$(((width_full-width)/2))
+    top_crop=$(((height_full-height)/2))
 
     exiftool 
-        -FullPanoWidthPixels="$width\_full" 
-        -FullPanoHeightPixels="$height\_full" 
-        -CroppedAreaLeftPixels="$left\_crop" 
-        -CroppedAreaTopPixels="$top\_crop" 
+        -FullPanoWidthPixels="$width_full" 
+        -FullPanoHeightPixels="$height_full" 
+        -CroppedAreaLeftPixels="$left_crop" 
+        -CroppedAreaTopPixels="$top_crop" 
         -CroppedAreaImageWidthPixels="$width" 
         -CroppedAreaImageHeightPixels="$height" 
         -ProjectionType=equirectangular 

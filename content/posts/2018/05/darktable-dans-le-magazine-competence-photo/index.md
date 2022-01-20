@@ -15,4 +15,4 @@ C'est avec un grand plaisir que nous vous annonçons qu'un dossier, écrit par P
 
 ![](images/21921310-24792055.jpg)
 
-Source: [https://www.competencephoto.com/Competence-Photo-Numero-64-en-kiosque-le-2-mai-2018\_a2990.html](https://www.competencephoto.com/Competence-Photo-Numero-64-en-kiosque-le-2-mai-2018_a2990.html)
+Source: [https://www.competencephoto.com/Competence-Photo-Numero-64-en-kiosque-le-2-mai-2018_a2990.html](https://www.competencephoto.com/Competence-Photo-Numero-64-en-kiosque-le-2-mai-2018_a2990.html)

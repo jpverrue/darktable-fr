@@ -45,6 +45,6 @@ Après-midi (14h-18h)
 
 > Il y aura une pause déjeuner / pique-nique de 13h à 14h. Accès libre aux adhérents de Gullivigne. Une contribution de 5€ sera demandée aux autres visiteurs !
 
-Lieu: [http://umap.openstreetmap.fr/fr/map/salle-aquatrium\_122245#19/47.09397/-1.28931](http://umap.openstreetmap.fr/fr/map/salle-aquatrium_122245#19/47.09397/-1.28931)
+Lieu: [http://umap.openstreetmap.fr/fr/map/salle-aquatrium_122245#19/47.09397/-1.28931](http://umap.openstreetmap.fr/fr/map/salle-aquatrium_122245#19/47.09397/-1.28931)
 
 Plus d'infos ici: [https://gullivigne.org/index.php/2018/02/26/le-samedi-3-mars-gestion-des-photos-raw-avec-darktable/](https://gullivigne.org/index.php/2018/02/26/le-samedi-3-mars-gestion-des-photos-raw-avec-darktable/)

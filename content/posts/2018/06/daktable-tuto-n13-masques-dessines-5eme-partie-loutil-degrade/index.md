@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-Comme il l'a promis [JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) continue d'expliquer les masques paramétriques avec le dégradé en combinaison : https://youtu.be/Ts6-qbRYYj0 Bon visionnage.
+Comme il l'a promis [JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) continue d'expliquer les masques paramétriques avec le dégradé en combinaison : 
+
+{{< youtube Ts6-qbRYYj0 >}}
+
+Bon visionnage.

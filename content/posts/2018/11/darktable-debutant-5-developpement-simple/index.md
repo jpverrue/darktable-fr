@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[L'ami Philippe](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) nous fait montre comment il développe une photo : https://youtu.be/UXK9jGSSGwI Bon visionnage.
+[L'ami Philippe](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) nous fait montre comment il développe une photo : 
+
+{{< youtube UXK9jGSSGwI >}}
+
+Bon visionnage.

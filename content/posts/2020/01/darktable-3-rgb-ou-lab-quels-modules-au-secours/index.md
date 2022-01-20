@@ -289,11 +289,11 @@ Vous pouvez pratiquement réduire au moins 80 % de votre retouche à 4 modules :
 
 S'ils sont si puissants, c'est qu'ils sont en réalité extrêmement simples, quand vous regardez leurs équations :
 
-- **Exposition** : RGB\_sortie = exposition × RGB\_entrée + niveau de noir
+- **Exposition** : RGB_sortie = exposition × RGB_entrée + niveau de noir
 - **Balance couleur** :
-    - CDL : RGB\_sortie = (slope × RGB\_entrée + offset)^power
-    - contraste : RGB\_sortie = (RGB\_entrée / pivot)^contraste × pivot
-- **Balance des blancs** : RGB\_sortie = coefficients × RGB\_entrée
+    - CDL : RGB_sortie = (slope × RGB_entrée + offset)^power
+    - contraste : RGB_sortie = (RGB_entrée / pivot)^contraste × pivot
+- **Balance des blancs** : RGB_sortie = coefficients × RGB_entrée
 - **Filmique** est un poil plus complexe, mais ça reste des maths de niveau lycée.
 
 Avec ces 4 modules, vous avez tout ce qu'il faut pour produire une image regardable, corriger les soucis de colorimétrie, le contraste et ajouter une intention artistique. Pensez à désactiver la courbe de base si vous passez par filmique. Ensuite, suivant les besoins, complétez avec les modules suivants :

@@ -8,4 +8,8 @@ tags:
   - "tutoriel-anglais"
 ---
 
-[Shane Milton](https://www.youtube.com/channel/UC9Xdl6CglNwxCZqvwKuE9TA) utilise la balance des blancs sur 2 de ses photos : https://youtu.be/5g1jCEwD6T0 (la traduction automatique des sous-titres est disponible) Bonne découverte.
+[Shane Milton](https://www.youtube.com/channel/UC9Xdl6CglNwxCZqvwKuE9TA) utilise la balance des blancs sur 2 de ses photos : 
+
+{{< youtube 5g1jCEwD6T0 >}}
+
+(la traduction automatique des sous-titres est disponible) Bonne découverte.

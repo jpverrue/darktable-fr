@@ -10,6 +10,6 @@ tags:
 
 [Philippe Delétrée](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) continue sa série destinée aux débutants en utilisant 2 méthodes de développement d'une photo.
 
-https://youtu.be/bqShc\_3BSrY
+{{< youtube bqShc_3BSrY >}}
 
 Bonne visualisation.

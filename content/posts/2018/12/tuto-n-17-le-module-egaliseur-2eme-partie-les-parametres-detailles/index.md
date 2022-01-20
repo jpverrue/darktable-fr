@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) poursuit la maîtrise du module "égaliseur" avec le concept d'ondelettes : https://youtu.be/fv1-tKfyAJw Bonne visualisation.
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) poursuit la maîtrise du module "égaliseur" avec le concept d'ondelettes : 
+
+{{< youtube fv1-tKfyAJw >}}
+
+Bonne visualisation.

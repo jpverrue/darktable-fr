@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[L'ami Philippe](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) nous propose sa méthode pour importer ses photos : https://youtu.be/78D7D7RNlU4 Bon découverte.
+[L'ami Philippe](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) nous propose sa méthode pour importer ses photos : 
+
+{{< youtube 78D7D7RNlU4 >}}
+
+Bonne découverte.

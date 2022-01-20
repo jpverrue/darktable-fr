@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) termine l'exploration de l'utilisation du module "égaliseur" : https://youtu.be/zIUep5V74o8 Bonne découverte.
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) termine l'exploration de l'utilisation du module "égaliseur" : 
+
+{{< youtube zIUep5V74o8 >}}
+
+Bonne découverte.

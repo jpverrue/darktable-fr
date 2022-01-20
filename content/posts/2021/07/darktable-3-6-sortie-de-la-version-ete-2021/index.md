@@ -197,7 +197,7 @@ Les modules suivant ont été dépréciés parce qu'ils comportent des erreurs d
 - Suppression des taches (c'est un sous-ensemble des fonctionnalités déjà fournies par le module _retouche_),
 - Vibrance (intégré dans la _balance couleur RGB_),
 - Ajustements de base (remplacé par le _panneau d'accès rapide_),
-- Suppression des franges (remplacé par le nouveau module \_aberrations chromatiques).
+- Suppression des franges (remplacé par le nouveau module _aberrations chromatiques_).
 
 Ces modules sont conservés pour assurer la compatibilité des anciens traitements mais ne sont plus disponibles pour des nouvelles retouches.
 

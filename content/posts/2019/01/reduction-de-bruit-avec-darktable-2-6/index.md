@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-L'ami [@RawFiner](https://www.youtube.com/channel/UCEz-0EYZTx03UdQszbL8xDA) nous présente comment traiter le bruit avec les nouvautés du module "réduction du bruit (profil)" et il présente sa méthode pour le modèle "réduction du bruit (bilatéral)" : https://youtu.be/bYG2qDEAm1M Bonne visualisation.
+L'ami [@RawFiner](https://www.youtube.com/channel/UCEz-0EYZTx03UdQszbL8xDA) nous présente comment traiter le bruit avec les nouveautés du module "réduction du bruit (profil)" et il présente sa méthode pour le modèle "réduction du bruit (bilatéral)" : 
+
+{{< youtube bYG2qDEAm1M >}}
+
+Bonne visualisation.

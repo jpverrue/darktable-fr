@@ -10,6 +10,6 @@ tags:
 
 Nous avons eu droit à 2 Lives cet après-midi, pour commencer celui de [Luc Viatour](http://darktable 3.01 au quotidien questions réponses)
 
-https://youtu.be/vNcSPmSPiQs
+{{< youtube vNcSPmSPiQs >}}
 
 Bonne visualisation.

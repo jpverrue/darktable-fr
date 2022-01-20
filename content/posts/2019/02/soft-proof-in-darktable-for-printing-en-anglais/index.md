@@ -8,4 +8,8 @@ tags:
   - "tutoriel-anglais"
 ---
 
-[Shane Milton](https://www.youtube.com/channel/UC9Xdl6CglNwxCZqvwKuE9TA) explique comment éprouver des images avec darktable lors de la planification de l'impression (sous-titrage français disponible) : https://youtu.be/HCMI3awSmy4 Bonne découverte.
+[Shane Milton](https://www.youtube.com/channel/UC9Xdl6CglNwxCZqvwKuE9TA) explique comment éprouver des images avec darktable lors de la planification de l'impression (sous-titrage français disponible) : 
+
+{{< youtube HCMI3awSmy4 >}}
+
+Bonne découverte.

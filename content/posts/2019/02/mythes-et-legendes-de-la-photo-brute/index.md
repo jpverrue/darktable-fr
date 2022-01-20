@@ -27,17 +27,17 @@ Ce lien ne fonctionne que si le corps est « parfait », c'est à dire qu'il ém
 
 Le soleil est assez proche d'un corps noir, puisqu'il émet toutes les longueurs d'onde :
 
-[![](images/Spectre-de-la-lumiere-naturelle-en-milieu-de-journee.png)](https://darktable.fr/wp-content/uploads/2019/02/Spectre-de-la-lumiere-naturelle-en-milieu-de-journee.png) Spectre de la lumière naturelle en mi-journée (6500 K). © Erik Peper - https://www.researchgate.net/publication/305082857\_Are\_LED\_screens\_causing\_harm\_to\_the\_vision\_of\_computer\_users
+[![](images/Spectre-de-la-lumiere-naturelle-en-milieu-de-journee.png)](https://darktable.fr/wp-content/uploads/2019/02/Spectre-de-la-lumiere-naturelle-en-milieu-de-journee.png) Spectre de la lumière naturelle en mi-journée (6500 K). © Erik Peper - https://www.researchgate.net/publication/305082857_Are_LED_screens_causing_harm_to_the_vision_of_computer_users
 
 Même si le spectre est complet, on voit que les intensités sont réparties inégalement, mais globablement assez lisses. Qu'en est-il en fin de journée ?
 
-[![](images/Spectre-de-la-lumiere-naturelle-au-coucher-du-soleil.png)](https://darktable.fr/wp-content/uploads/2019/02/Spectre-de-la-lumiere-naturelle-au-coucher-du-soleil.png) Spectre de la lumière naturelle en fin de journée (4500 K). © Erik Peper - https://www.researchgate.net/publication/305082857\_Are\_LED\_screens\_causing\_harm\_to\_the\_vision\_of\_computer\_users
+[![](images/Spectre-de-la-lumiere-naturelle-au-coucher-du-soleil.png)](https://darktable.fr/wp-content/uploads/2019/02/Spectre-de-la-lumiere-naturelle-au-coucher-du-soleil.png) Spectre de la lumière naturelle en fin de journée (4500 K). © Erik Peper - https://www.researchgate.net/publication/305082857_Are_LED_screens_causing_harm_to_the_vision_of_computer_users
 
 On voit donc un maximum dans le rouge en fin de journée (à 4500 K), et un maximum dans le bleu en milieu de journée (6500 K). Comme ces deux distributions suivent (à peu près) la même loi physique, il est possible de passer de l'une à l'autre par une simple correction mathématique.
 
 Là où ça se gâte, c'est pour les éclairages artificiels :
 
-[![](images/Spectre-lumineux-dune-lampe-fluo-compacte.png)](https://darktable.fr/wp-content/uploads/2019/02/Spectre-lumineux-dune-lampe-fluo-compacte.png) Spectre d'une lampe fluo-compacte. © Erik Peper - https://www.researchgate.net/publication/305082857\_Are\_LED\_screens\_causing\_harm\_to\_the\_vision\_of\_computer\_users
+[![](images/Spectre-lumineux-dune-lampe-fluo-compacte.png)](https://darktable.fr/wp-content/uploads/2019/02/Spectre-lumineux-dune-lampe-fluo-compacte.png) Spectre d'une lampe fluo-compacte. © Erik Peper - https://www.researchgate.net/publication/305082857_Are_LED_screens_causing_harm_to_the_vision_of_computer_users
 
 Ici, on a un pic dans le bleu, dans le vert, et dans le orange, et presque rien au milieu. Un tel éclairage est impossible à compenser mathématiquement, parce que sa physique est erratique et qu'il n'est pas assimilable à un corps noir. Pour cette raison, on dispose d'un curseur de teinte, en plus de la température, afin d'appliquer une correction additionnelle, mais n'attendez pas de miracle. C'est ici qu'il est important de savoir sur quelle hypothèse se basent les algorithmes de correction de la balance des blancs : ils sont conçus avant tout pour la lumière blanche. Si l'hypothèse n'est pas valide dans votre photo, alors l'algorithme échoue, et c'est tout à fait normal.
 

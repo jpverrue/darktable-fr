@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[Philippe Delétrée](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) nous présente les nouveautés de la 2.6.0 ainsi que les retours des participants à la présentation dans son club : https://youtu.be/ZvAV0dp1fbo Bon visionnage.
+[Philippe Delétrée](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) nous présente les nouveautés de la 2.6.0 ainsi que les retours des participants à la présentation dans son club : 
+
+{{< youtube ZvAV0dp1fbo >}}
+
+Bon visionnage.

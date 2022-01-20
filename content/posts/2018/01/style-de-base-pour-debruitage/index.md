@@ -21,6 +21,6 @@ Notre ami, Aurélien Pierre, a présenté sur le forum, un style (ou preset pour
 
 Vous pouvez réagir directement sur le forum: [https://darktable.fr/forum/showthread.php?tid=2151](https://darktable.fr/forum/showthread.php?tid=2151)
 
-Le style se trouve sur ce lien: [https://framadrop.org/r/\_ZawvGQUCU#Y1MObm6SdHZcIHrJNEsFnVkjTeyzZ03KPUtVPFDIK2M=](https://framadrop.org/r/_ZawvGQUCU#Y1MObm6SdHZcIHrJNEsFnVkjTeyzZ03KPUtVPFDIK2M=)
+Le style se trouve sur ce lien: [https://framadrop.org/r/_ZawvGQUCU#Y1MObm6SdHZcIHrJNEsFnVkjTeyzZ03KPUtVPFDIK2M=](https://framadrop.org/r/_ZawvGQUCU#Y1MObm6SdHZcIHrJNEsFnVkjTeyzZ03KPUtVPFDIK2M=)
 
 Si ce style vous plaît, on le rajoutera au pack darktable-FR ;-)

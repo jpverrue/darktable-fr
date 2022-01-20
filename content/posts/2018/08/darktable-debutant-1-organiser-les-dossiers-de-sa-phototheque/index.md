@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[L'ami Philippe](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) partage sa méthode d'organiser les dossiers de sa photothèque avec les outils mis à disposition par darktable : https://youtu.be/7YFdW3vCc40 Bon visionnage.
+[L'ami Philippe](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) partage sa méthode d'organiser les dossiers de sa photothèque avec les outils mis à disposition par darktable : 
+
+{{< youtube 7YFdW3vCc40 >}}
+
+Bon visionnage.

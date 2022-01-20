@@ -8,4 +8,8 @@ tags:
   - "tutoriel-muet"
 ---
 
-[Luc Viatour](https://darktable.fr/2019/09/darktable-debutant-videoraw-01/) nous fait partager avec cette vidéo muette de retouche : https://youtu.be/7jqTUpMUddU Bonne visualisation
+[Luc Viatour](https://darktable.fr/2019/09/darktable-debutant-videoraw-01/) nous fait partager avec cette vidéo muette de retouche : 
+
+{{< youtube 7jqTUpMUddU >}}
+
+Bonne visualisation

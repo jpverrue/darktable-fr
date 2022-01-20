@@ -10,6 +10,6 @@ tags:
 
 [Luc Viatour](https://www.youtube.com/channel/UCNLc97wHCBhgENfkIDiOUPQ) partage cette vidéo.
 
-https://youtu.be/DaUl-d\_zrQQ
+{{< youtube DaUl-d_zrQQ >}}
 
 Bonne visualisation.

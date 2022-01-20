@@ -10,6 +10,6 @@ tags:
 
 [Philippe Delétrée](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) nous propose un nouveau RAW à traiter :
 
-https://youtu.be/DoEg1NxpNqA
+{{< youtube DoEg1NxpNqA >}}
 
 Bon visualisation.

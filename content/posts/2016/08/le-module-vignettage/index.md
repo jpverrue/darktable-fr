@@ -12,4 +12,4 @@ tags:
 
 Carafife vient de sortir une nouvelle vidéo. Cette fois vous serez tout sur le module Vignettage de darktable. Bon visionnage !
 
-https://youtu.be/64pODV9V3uQ
+{{< youtube 64pODV9V3uQ >}}

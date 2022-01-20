@@ -8,4 +8,8 @@ tags:
   - "tutoriel-anglais"
 ---
 
-[Shane Milton](https://www.youtube.com/channel/UC9Xdl6CglNwxCZqvwKuE9TA) nous fait découvrir (en anglais) les nouveautés de la version master 2.7.x : filmique RVB et égaliseur de tons : https://youtu.be/5DdWrVU4V9M Bonne découverte !
+[Shane Milton](https://www.youtube.com/channel/UC9Xdl6CglNwxCZqvwKuE9TA) nous fait découvrir (en anglais) les nouveautés de la version master 2.7.x : filmique RVB et égaliseur de tons : 
+
+{{< youtube 5DdWrVU4V9M >}}
+
+Bonne découverte !

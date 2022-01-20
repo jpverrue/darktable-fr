@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[L'ami Philippe Delétrée](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) continue sa série en développant un RAW en utilisant les masques : https://youtu.be/oHA2EDeOiQo Bonne visualisation.
+[L'ami Philippe Delétrée](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) continue sa série en développant un RAW en utilisant les masques : 
+
+{{< youtube oHA2EDeOiQo >}}
+
+Bonne visualisation.

@@ -10,6 +10,6 @@ tags:
 
 [Aurélien PIERRE Photo](https://www.youtube.com/channel/UCmsSn3fujI81EKEr4NLxrcg) complète son premier article ( [https://darktable.fr/2019/11/traitement-dimage-et-filtres-de-pixels-dans-darktable-3-0-anglais/](https://darktable.fr/2019/11/traitement-dimage-et-filtres-de-pixels-dans-darktable-3-0-anglais/) ) pour comprendre comment utiliser filmique RVB (ce tuto est en anglais, la traduction française automatique est accessible) :
 
-https://youtu.be/zbPj\_TqTF88
+{{< youtube zbPj_TqTF88 >}}
 
 Bonne visualisation.

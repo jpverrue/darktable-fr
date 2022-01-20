@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[L'ami Philippe](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) aborde masque colorimétrie dans ce deuxième volet du développement : https://youtu.be/iVcjXe\_GyXE Il y montre l'utilisation de la géolocalisation. Bonne visualisation.
+[L'ami Philippe](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) aborde masque colorimétrie dans ce deuxième volet du développement : 
+
+{{< youtube iVcjXe_GyXE >}}
+
+Il y montre l'utilisation de la géolocalisation. Bonne visualisation.

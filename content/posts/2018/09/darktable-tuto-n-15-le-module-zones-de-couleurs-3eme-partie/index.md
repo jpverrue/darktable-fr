@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) poursuit et termine sa série sur le module "zone de couleur" : https://youtu.be/fZik7COZWXw Bonne visualisation.
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) poursuit et termine sa série sur le module "zone de couleur" : 
+
+{{< youtube fZik7COZWXw >}}
+
+Bonne visualisation.

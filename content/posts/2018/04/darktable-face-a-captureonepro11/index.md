@@ -8,4 +8,8 @@ tags:
   - "tutoriel-anglais"
 ---
 
-[Shane Milton](https://www.youtube.com/channel/UC9Xdl6CglNwxCZqvwKuE9TA) compare les 2 logiciels en développant le même RAW (en anglais) : https://youtu.be/nibX9liRDTk Bonne découverte.
+[Shane Milton](https://www.youtube.com/channel/UC9Xdl6CglNwxCZqvwKuE9TA) compare les 2 logiciels en développant le même RAW (en anglais) : 
+
+{{< youtube nibX9liRDTk >}}
+
+Bonne découverte.

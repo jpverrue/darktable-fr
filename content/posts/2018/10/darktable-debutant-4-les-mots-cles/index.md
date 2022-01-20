@@ -10,6 +10,6 @@ tags:
 
 [L'ami Philippe](https://www.youtube.com/channel/UCyuC63yBPP5vteLZ-l7T8OA) montre comment créer et utiliser les mots clés :
 
-https://youtu.be/vdphMZ-S\_P8
+{{< youtube vdphMZ-S_P8 >}}
 
 Bonne visualisation.

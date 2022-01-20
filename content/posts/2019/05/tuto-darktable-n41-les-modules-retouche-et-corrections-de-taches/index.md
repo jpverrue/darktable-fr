@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[L'ami @CaraFife](https://www.youtube.com/channel/UCXqw9EmSynpR-Tbl5qH5jDA) nous propose d'utiliser le module correction de taches puis la même chose ou il monte l'évolution apportée par le module retouche pour ensuite aborder la décomposition en ondelettes et les différents traitements possibles avec cette option : https://youtu.be/AzbsYeRz2Uw Bonne visualisation.
+[L'ami @CaraFife](https://www.youtube.com/channel/UCXqw9EmSynpR-Tbl5qH5jDA) nous propose d'utiliser le module correction de taches puis la même chose ou il monte l'évolution apportée par le module retouche pour ensuite aborder la décomposition en ondelettes et les différents traitements possibles avec cette option : 
+
+{{< youtube AzbsYeRz2Uw >}}
+
+Bonne visualisation.

@@ -10,6 +10,6 @@ tags:
 
 En cette période de confinement, [Luc Viatour](https://www.youtube.com/channel/UCNLc97wHCBhgENfkIDiOUPQ) profite de cette inactivité pour nous faire généreusement ce live ou il traite les photos qui lui sont proposées.
 
-https://youtu.be/uyNtqvOb2fw
+{{< youtube uyNtqvOb2fw >}}
 
 Bonne visualisation.

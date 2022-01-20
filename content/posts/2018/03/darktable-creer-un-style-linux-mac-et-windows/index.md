@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-L'ami Philippe nous montre comment faire un style Sépia pour darktable : https://youtu.be/m\_u5Xae6yf0 Bon visionnage.
+L'ami Philippe nous montre comment faire un style Sépia pour darktable : 
+
+{{< youtube m_u5Xae6yf0 >}}
+
+Bon visionnage.

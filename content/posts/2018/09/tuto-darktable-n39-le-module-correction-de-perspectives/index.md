@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-L'ami [CaraFife](https://www.youtube.com/channel/UCXqw9EmSynpR-Tbl5qH5jDA) nous présente l'utilisation le module de correction de perspectives : https://youtu.be/NJ7\_R7As9kU Bonne découverte.
+L'ami [CaraFife](https://www.youtube.com/channel/UCXqw9EmSynpR-Tbl5qH5jDA) nous présente l'utilisation le module de correction de perspectives : 
+
+{{< youtube NJ7_R7As9kU >}}
+
+Bonne découverte.

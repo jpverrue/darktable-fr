@@ -8,6 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-Olivier Masse en est au 4ème tuto sur darktable et présente le module "retouche" en le comparant avec la séparation de fréquences de Gimp : https://youtu.be/2mKfmpQg1Zg
+Olivier Masse en est au 4ème tuto sur darktable et présente le module "retouche" en le comparant avec la séparation de fréquences de Gimp : 
+
+{{< youtube 2mKfmpQg1Zg >}}
 
 Bonne découverte.

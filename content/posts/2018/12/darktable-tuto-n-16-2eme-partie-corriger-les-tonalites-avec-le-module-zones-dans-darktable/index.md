@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) propose la 2ème partie de son tuto sur la correction des tonalités avec le module zones : https://youtu.be/TheHYZPY6JU Bon visionnage.
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) propose la 2ème partie de son tuto sur la correction des tonalités avec le module zones : 
+
+{{< youtube TheHYZPY6JU >}}
+
+Bon visionnage.

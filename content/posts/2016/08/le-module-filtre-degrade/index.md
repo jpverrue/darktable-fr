@@ -12,4 +12,4 @@ tags:
 
 Nouvelle vidéo de Carafife qui explore pour vous les possibilités du filtre dégradé. Bon visionnage !
 
-https://youtu.be/fnUge9BnzK0
+{{< youtube fnUge9BnzK0 >}}

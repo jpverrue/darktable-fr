@@ -10,7 +10,7 @@ tags:
 
 Après la première vidéo, [Aurélien PIERRE Photo](https://www.youtube.com/channel/UCmsSn3fujI81EKEr4NLxrcg) continue à expliquer l'utilisation de filmique rvb. Ces 2 vidéos en anglais ont été traduites par un groupe d'utilisateurs du forum. La dernière vidéo s'adresse aux utilisateurs est destinée aux utilisateurs de filmique de la version 2.6 et explique les différences en les 2 versions : filmique et filmique rvb.
 
-https://youtu.be/zbPj\_TqTF88
+{{< youtube zbPj_TqTF88 >}}
 
 {{< youtube 9awBFYcPgGU >}}
 

@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) explique la notion d'ondelettes avec Gimp et comment l'utiliser dans le module "égaliseur" : https://youtu.be/eUki8DAoTYg Bonne découverte;
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) explique la notion d'ondelettes avec Gimp et comment l'utiliser dans le module "égaliseur" : 
+
+{{< youtube eUki8DAoTYg >}}
+
+Bonne découverte;

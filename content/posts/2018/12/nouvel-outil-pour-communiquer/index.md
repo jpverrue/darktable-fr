@@ -18,7 +18,7 @@ En fait, Framateam c'est l'application Mattermost qui est hébergé sur les serv
 
 Comme une vidéo est plus efficace qu'un long discourt...
 
-https://youtu.be/FuDvrkrqRzg
+{{< youtube FuDvrkrqRzg >}}
 
 ## Comment nous rejoindre?
 

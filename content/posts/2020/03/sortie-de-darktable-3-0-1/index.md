@@ -64,7 +64,7 @@ Vous le trouverez à cette adresse : [http://www.poll-maker.com/QSDGDNJ](http://
 - Ajoute la possibilité de **ré-appliquer le dernier mot clé** sur une image via un raccourci (par défaut : Alt+T),
 - Ajout des **espaces de couleur HDR à large gamut** P3 et Rec2020 munis des courbes de mappage des tonalités HLG et PQ,
 - Ajout de **bordures personnalisés** dans le module bordures,
-- Ajout du support des **variables standard** (masques $EXIF\_xxx notamment) dans le module filigrane,
+- Ajout du support des **variables standard** (masques $EXIF_xxx notamment) dans le module filigrane,
 - Permission à différents modules d'**utiliser les mêmes raccourcis clavier**, suivant la vue. Ceci permet notamment à la bande de film d'utiliser les même raccourcis d'attribution d'étoiles que dans la table lumineuse,
 - Ajoute une **mise à l'échelle logarithmique pour les curseurs L, R, V, B, C, g des modes de fusion paramétriques**. Ceci donne un meilleur contrôle des faibles valeurs RGB,
 - Définition de nombreux raccourcis clavier pour les curseurs des modules, pour donner plus de contrôle au clavier,

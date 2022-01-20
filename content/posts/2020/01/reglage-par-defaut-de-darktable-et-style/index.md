@@ -10,6 +10,6 @@ tags:
 
 [Luc Viatour](https://www.youtube.com/channel/UCNLc97wHCBhgENfkIDiOUPQ) nous montre comment simplifier l'utilisation de darktable en utilisant l'activation par défaut de modules et la création de styles.
 
-https://youtu.be/PTG93iYTUZw
+{{< youtube PTG93iYTUZw >}}
 
 Bon visionnage.

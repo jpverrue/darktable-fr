@@ -8,4 +8,8 @@ tags:
   - "tutoriel"
 ---
 
-[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) explique les paramètres de l'outil pinceau : https://youtu.be/o9L8w3QfpQU Bonne visualisation.
+[JC TUTOS](https://www.youtube.com/channel/UChkmJoz4r375C6F2eym99YQ) explique les paramètres de l'outil pinceau : 
+
+{{< youtube o9L8w3QfpQU >}}
+
+Bonne visualisation.
