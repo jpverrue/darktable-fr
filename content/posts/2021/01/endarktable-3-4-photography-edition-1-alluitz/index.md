@@ -1,5 +1,5 @@
 ---
-title: "[EN]darktable 3.4 Photography Edition 1: \"Alluitz\""
+title: "[EN]darktable 3.4 Photography Edition 1: 'Alluitz'"
 date: "2021-01-05"
 categories: 
   - "tutoriels"

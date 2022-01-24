@@ -1,5 +1,5 @@
 ---
-title: "Quand les \"youtubers influents\" parlent de darktable..."
+title: "Quand les 'youtubers influents' parlent de darktable..."
 date: "2017-11-30"
 categories: 
   - "actualites"

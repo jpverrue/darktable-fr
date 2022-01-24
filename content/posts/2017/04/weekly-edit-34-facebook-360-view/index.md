@@ -15,19 +15,19 @@ Bon visionnage !
 {{< youtube cLf__wx2-ms >}}
 
 Le script:
-
+```bash
 #!/usr/bin/env bash
 # Adds metadata to images so that Facebook displays them as panoramas.
 # https://discuss.pixls.us/t/panorama-mode-in-facebook/3585
 # By Harry Durgin and Morgan Hardwood
 
-if \[\[ ! -f ${1} \]\]; then
+if [[ ! -f ${1} ]]; then
     printf '%sn' "No input file specified or file not found." "Aborting."
     exit 1
 fi
 
 hfov=0
-while \[\[ hfov -lt 100 || hfov -gt 360 \]\]; do
+while [[ hfov -lt 100 || hfov -gt 360 ]]; do
     read -r -p "Enter horizontal field of view (100-360): " hfov
 done
 
@@ -60,5 +60,5 @@ for f in "${@}"; do
         -UsePanoramaViewer=True 
         "$f"
 done
-
+```
 Source: [http://weeklyedit.com/facebook-360-view/](http://weeklyedit.com/facebook-360-view/)

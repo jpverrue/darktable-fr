@@ -5,7 +5,8 @@ categories:
   - "actualites"
 tags: 
   - "news"
-coverImage: "darktable-logo-name-1520w-1.png"
+images:
+  - "images/darktable-logo-name-1520w-1.png"
 ---
 
 La version 2.6.1 de darktable est disponible !
@@ -51,9 +52,3 @@ Bien sûr à cela s'ajoute **des corrections de bugs** et l'ajout du support de 
 Et **plusieurs traductions** ont été mises à jour.
 
 Plus d'infos ici: [https://github.com/darktable-org/darktable/releases/tag/release-2.6.1](https://github.com/darktable-org/darktable/releases/tag/release-2.6.1)
-
-## Soutenez-nous
-
-En choisissant de nous faire un don via l'une de ces 3 plateformes vous contribuez à la pérennité du site, du forum et au développement de darktable
-
-Liberapay Tipeee Patreon

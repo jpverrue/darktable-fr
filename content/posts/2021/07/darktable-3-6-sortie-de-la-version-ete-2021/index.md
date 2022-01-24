@@ -4,7 +4,8 @@ date: "2021-07-03"
 categories: 
   - "actualites"
   - "featured"
-coverImage: "trona-pinacles-ir.jpg"
+images:
+  - "images/trona-pinacles-ir.jpg"
 ---
 
 Article original : [anglais](https://www.darktable.org/2021/07/darktable-3-6/). Traductions : [allemand](https://www.bilddateien.de/blog/d2021-07-03-darktable-3-6-weiteres-update.html)
@@ -47,7 +48,7 @@ Le compromis est que cette méthode donne un contraste atténué proche du blanc
 
 ### Balance couleur RGB
 
-\[gallery size="medium" link="file" ids="7601,7602,7603"\]
+[gallery size="medium" link="file" ids="7601,7602,7603"]
 
 La [_balance couleur RGB_](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/color-balance-rgb/) apporte plusieurs innovations uniques pour aider les coloristes à développer des images de façon cinématographique et avec un niveau de contrôle raffiné, dans un flux de travail relatif à la scène et prêt pour le HDR.
 
@@ -63,15 +64,15 @@ Les réglages de vibrance et de contraste ont été portés d'autres modules pou
 
 Le module balance couleur RGB est fourni avec un kernel OpenCL pour externaliser le calcul sur la carte graphique, 6× à 22× plus rapide que l'implémentation pour processeur standard, selon le matériel. Quelques exemples de ce que la balance couleur peut faire pour vous (avant/après) :
 
-\[gallery columns="2" size="large" link="file" ids="7607,7614"\]
+[gallery columns="2" size="large" link="file" ids="7607,7614"]
 
-\[gallery columns="2" size="medium" link="file" ids="7609,7608"\]
+[gallery columns="2" size="medium" link="file" ids="7609,7608"]
 
-\[gallery size="medium" columns="2" link="file" ids="7611,7610"\]
+[gallery size="medium" columns="2" link="file" ids="7611,7610"]
 
-\[gallery link="file" columns="2" size="medium" ids="7632,7631"\]
+[gallery link="file" columns="2" size="medium" ids="7632,7631"]
 
-\[gallery link="file" columns="2" size="medium" ids="7634,7635"\]
+[gallery link="file" columns="2" size="medium" ids="7634,7635"]
 
 ### Calibration des couleurs : ajout du support pour color checker
 
@@ -93,7 +94,7 @@ darktable 3.6 également introduit un kernel OpenCL pour la calibration des coul
 
 Un exemple de ce que la calibration des couleurs peut faire pour vous : à gauche, on se contente de faire la balance des blancs sur la rampe de gris (delta E moyen de 2,23), à droite on fait une calibration complète (delta E moyen de 1,60). On voit que les bleus apparaissent délavés sur la version non calibrée.
 
-\[gallery size="full" columns="2" link="file" ids="7620,7621"\]
+[gallery size="full" columns="2" link="file" ids="7620,7621"]
 
 ## Module censurer
 
@@ -123,7 +124,7 @@ Pour tirer parti des avantages de différentes méthodes de dématriçage, de no
 
 ### Amélioration du masque basé sur les détails
 
-\[gallery columns="2" link="file" size="medium" ids="7626,7627"\]
+[gallery columns="2" link="file" size="medium" ids="7626,7627"]
 
 Une nouvelle option de masquage paramétrique a été ajoutée pour vous permettre d'inclure ou d'exclure les contours nets et les détails des masques paramétriques. Ceci est spécialement utile pour appliquer des flous et des améliorations de netteté qui ignorent les régions hors focus (bokeh), ou au contraire ne s'appliquent que sur les régions hors focus, pour éviter de sur-accentuer les détails déjà nets. Cette option n'est disponible que pour les fichiers RAW, car elle dépend des détails calculés à l'étape du dématriçage.
 
@@ -159,7 +160,7 @@ La correction des aberrations chromatique du module _correction des objectifs_ p
 
 ## Vectorscope
 
-\[gallery columns="2" link="file" size="large" ids="7637,7638"\]
+[gallery columns="2" link="file" size="large" ids="7637,7638"]
 
 Une vue [vectorscope](https://darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/histogram/#vectorscope) a été ajoutée en complément de l'histogramme et de la forme d'onde. Le vectorscope est un diagramme teinte/chroma qui montre la [chromaticité](https://fr.wikipedia.org/wiki/Diagramme_de_chromaticit%C3%A9) isolée des informations de luminosité ou de spatialité.
 
@@ -256,7 +257,7 @@ La prochaine version est déjà prévue pour décembre. Voici quelques élément
 - D'avantages d'améliorations de la gestion de la couleur à l'intérieur du pipeline de pixels,
 - Un nouvel algorithme de dématriçage LMMSE, particulièrement adapté aux images à haut ISO.
 
-\[gallery size="medium" columns="2" link="file" ids="7657,7658"\]
+[gallery size="medium" columns="2" link="file" ids="7657,7658"]
 
 _Traduit depuis l'article original en anglais. Images © leurs auteurs respectifs, réutilisation non permise sans autorisation expresse. Image d'en-tête sous licence CC-BY-NC 4.0 par Mica._
 

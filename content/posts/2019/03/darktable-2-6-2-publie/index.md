@@ -3,7 +3,8 @@ title: "darktable 2.6.2 publié"
 date: "2019-03-20"
 categories: 
   - "actualites"
-coverImage: "Screenshot_20190320_111516.png"
+images:
+  - "images/Screenshot_20190320_111516.png"
 ---
 
 ## Nouvelles fonctionnalités
@@ -12,7 +13,7 @@ coverImage: "Screenshot_20190320_111516.png"
 
 ## Corrections de bugs
 
-- Correction d'un bug SSE dans le film introduit dans [\# 2025](https://github.com/darktable-org/darktable/pull/2025)
+- Correction d'un bug SSE dans le film introduit dans [#2025](https://github.com/darktable-org/darktable/pull/2025)
 - Résolution du problème lors de la recherche d'un profil de couleur d'entrée (compatibilité avec les versions antérieures)
 - Ajouter le fichier de traduction tchèque manquant
 - Correction d'un problème de halo possible dans le module de contraste local.
@@ -60,9 +61,3 @@ Aucun.
 Pascal Obry vient de la mettre en ligne : https://github.com/darktable-org/darktable/releases/tag/release-2.6.2
 
 Pour les versions WinDows et Mac, elles seront mises en ligne sur cette adresse sitôt qu'elles seront disponibles, pour celles Linux, attendre que le "paquageur" l'ai intégré à votre distribution.
-
-## Soutenez-nous
-
-En choisissant de nous faire un don via l'une de ces 3 plateformes vous contribuez à la pérennité du site, du forum et au développement de darktable
-
-Liberapay Tipeee Patreon

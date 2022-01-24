@@ -20,7 +20,7 @@ Dernière version de son script compositing utilisé dans la vidéo:
 ```bash
 #!/bin/zsh
 
-ls -t .config/darktable/watermarks/tmp\* |grep -v svg |head -n1 |read file
+ls -t .config/darktable/watermarks/tmp* |grep -v svg |head -n1 |read file
 inkscape -f "$file" -l '.config/darktable/watermarks/tmp.svg'
 ls -l '.config/darktable/watermarks/tmp.svg' |cut -d' ' -f5 |read size_n
 ls -lh '.config/darktable/watermarks/tmp.svg' |cut -d' ' -f5 |read size_h

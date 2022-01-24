@@ -69,11 +69,11 @@ Quelque chose qui m'embête plus, c'est que les moyennes non locales prennent pa
 
 Ensuite, comme il y a des images sur lesquelles les profils marchent mal, j'aimerais créer un module de débruitage aveugle, c'est à dire un module qui créé son propre profil en fonction de l'image qu'il a à débruiter. J'ai repéré une approche qui permettrait de faire l'estimation de la variance du bruit, qui marche bien sur les raws d'après la publication. Du coup, l'idée serait de combiner ça avec le débruitage par filtre bilatéral récursif et voir ce que ça donne.
 
-Bref, en résumé : \- j'ai encore de quoi m'occuper \- il y a encore de la marge de progrès pour le débruitage dans darktable, même si je trouve que cette année a été l'occasion d'un joli bond en avant !
+Bref, en résumé : "j'ai encore de quoi m'occuper" il y a encore de la marge de progrès pour le débruitage dans darktable, même si je trouve que cette année a été l'occasion d'un joli bond en avant !
 
 Voilà, n'hésitez pas si vous avez des questions ou si vous voulez plus de détails ![Smile](images/smile.png "Smile") 
 
-* * *
+***
 
 Une mini démo sur la biche de @mimi85, en une seule instance, sans autre module de débruitage, en ajustant les paramètres en mode auto :
 

@@ -1,5 +1,5 @@
 ---
-title: "Style \"The20s\""
+title: "Style 'The20s'"
 date: "2016-03-14"
 categories: 
   - "styles"

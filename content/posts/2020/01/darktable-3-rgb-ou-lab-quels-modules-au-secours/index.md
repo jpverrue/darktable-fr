@@ -26,7 +26,7 @@ Et concernant le domaine de validité, si XYZ fonctionne plutôt pas mal à peu 
 
 Les gros inconvénients du Lab sont :
 
-- il ne fonctionne pas bien pour les très forts contrastes (> 7 EV), et particulièrement en dehors de la plage \[1 ; 100\] Cd/m²
+- il ne fonctionne pas bien pour les très forts contrastes (> 7 EV), et particulièrement en dehors de la plage [1 ; 100] Cd/m²
 - il n'est pas linéaire en teinte, c'est à dire que si je fixe les composantes de chromaticité a et b d'un pixel en changeant sa composante de luminosité L, on attendrait la même teinte à une luminosité différente (c'est dans le cahier des charges de l'espace), or on observe un léger virage de teinte parasite, plus ou moins marqué suivant la couleur d'origine du pixel,
 - une partie de l'espace Lab sont des couleurs imaginaires, qui sortent du domaine visible.
 
@@ -61,7 +61,7 @@ On passe alors du XYZ au Lab en appliquant un « genre de correction gamma » su
 
 ## Les limites des espaces non-linéaires en traitement d'image
 
-**D'abord, linéaire, ça veut dire quoi ?** Si _y_ est linéaire par rapport à _x_, ça veut dire qu'il existe une relation entre _x_ et _y_ de la forme _y_ = **a** \* _x_ + **b**, avec **a** et **b** des constantes réelles. **Linéaire, ça veut dire proportionnel à une constante près**.
+**D'abord, linéaire, ça veut dire quoi ?** Si _y_ est linéaire par rapport à _x_, ça veut dire qu'il existe une relation entre _x_ et _y_ de la forme _y_ = **a** * _x_ + **b**, avec **a** et **b** des constantes réelles. **Linéaire, ça veut dire proportionnel à une constante près**.
 
 Quand on parle d'espace RGB linéaire, on entend que les valeurs RGB sont proportionnelles à quelque chose. **Mais proportionnelles à quoi ?**
 
@@ -71,7 +71,7 @@ Du point de vue de la perception humaine, ces intensités proportionnelles au ni
 
 Cependant, toutes les opérations optiques qui sont réalisées lors de la prise d'image, comme le flou d'objectif, la création de bruit, ou l'effet d'un filtre coloré ajouté sur l'objectif, sont appliquées directement sur les photons. Par conséquent, pour retirer le flou d'objectif, ou pour le simuler, nous avons besoin de travailler sur les informations RGB linéaires qui sont l'information la plus proche du photon dont on dispose. Voyez vous-même, lequel de ces deux bokeh générés par ordinateur (original en bas) vous semble le plus naturel ? (Voir aussi un [exemple plus spectaculaire chez Chris Bejon](https://chrisbrejon.com/cg-cinematography/chapter-9-compositing/#exposure-control-by-dof))
 
-\[gallery columns="2" link="file" size="medium" ids="6858,6859"\]
+[gallery columns="2" link="file" size="medium" ids="6858,6859"]
 
 ![](https://images.unsplash.com/photo-1496307307731-a75e2e6b0959?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2048&q=80) Photo d'origine : [Hanny Naibaho](https://unsplash.com/@hannynaibaho?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge "Download free do whatever you want high-resolution photos from Hanny Naibaho")
 
@@ -83,13 +83,13 @@ Ces deux exemples ont été générés avec Krita, qui permet de travailler auss
 
 Mais ce type de problème va se poser de la même manière dans darktable, dès que vous allez utiliser des modules d'**accentuation de la netteté,** **passe-haut,** **passe-bas**, et des **fusions/adoucissement de masques** dessinés et/ou paramétriques (qui sont des flous).
 
-> Un floutage, un défloutage, ou n'importe quoi de connecté à l'optique doit travailler en RGB linéaire. Il n'y a aucun modèle mathématique\* qui permette d'avoir des dégradés corrects en RGB encodé pour l'affichage (avec un « gamma ») ou en Lab, du fait de la non-proportionnalité à l'énergie lumineuse.
+> Un floutage, un défloutage, ou n’importe quoi de connecté à l’optique doit travailler en RGB linéaire. Il n’y a aucun modèle mathématique* qui permette d’avoir des dégradés corrects en RGB encodé pour l’affichage (avec un « gamma ») ou en Lab, du fait de la non-proportionnalité à l’énergie lumineuse.
 
 C'est aussi le problème qui survient avec le module **zones de couleurs** au niveau de la fusion des zones (même si un bricolage, introduit sous le mode « flou » permet de cacher un peu mieux la misère), et qui produit des transitions granuleuses et nettes.
 
 Le seul module de darktable qui travaille en Lab pour faire un flou, et où ça marche quand même, c'est le mode **laplacien local** du **contraste local.** La raison est qu'on passe par des courbes de tonalités appliquées sur une séparation de fréquence multi-échelle, _blabla, mots compliqués, blabla_… en bref le prix à payer pour que ça marche, c'est que c'est hyper lourd en calculs et la théorie est rock'n roll. Et… même si le flou est stable, il s'accompagne d'une désaturation peu gracieuse avec virage vers le gris-bleu boueux quand on pousse les curseurs un peu fort.
 
-\* : et ce n'est pas parce que les problèmes ne sont pas visibles tout le temps qu'ils n'existent pas tout le temps. On peut, jusqu'à un certain point, réussir les cacher avec des artifices mathématiques (seuils, opacité, etc.), mais ils finiront toujours par ressortir au plus mauvais moment. Faites moi confiance, je sais exactement où appuyer pour que ça casse.
+(*) : et ce n'est pas parce que les problèmes ne sont pas visibles tout le temps qu'ils n'existent pas tout le temps. On peut, jusqu'à un certain point, réussir les cacher avec des artifices mathématiques (seuils, opacité, etc.), mais ils finiront toujours par ressortir au plus mauvais moment. Faites moi confiance, je sais exactement où appuyer pour que ça casse.
 
 ## Les bénéfices du traitement RGB linéaire
 

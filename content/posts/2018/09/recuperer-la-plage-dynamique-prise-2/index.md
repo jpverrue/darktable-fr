@@ -11,7 +11,7 @@ De l'eau a coulé depuis mon précédent [article sur la plage dynamique](http:/
 
 Depuis 2 semaines, j'ai appris à programmer en C, incluant l'OpenCL et les instructions SSE2. J'ai travaillé à temps plein pour comprendre comment darktable marchait, à l'intérieur, et vous/me/nous développer deux nouveaux modes pour des modules déjà existants, qui vont grandement simplifier la retouche et donner de meilleurs résultats. Le nouveau tutoriel aura passablement moins d'étapes.
 
-## 1\. Récupérer le contraste
+## 1. Récupérer le contraste
 
 Vous vous souvenez comme on a superposé les modules « correction du profil d'entrée », « courbes de base » et l'exposition ? Oubliez tout ça.
 
@@ -27,7 +27,7 @@ Ensuite, il faut régler l'intensité du noir (output black exposure), en indice
 
 [![](images/Capture-du-2018-09-24-23-30-56.png)](http://darktable.fr/wp-content/uploads/2018/09/Capture-du-2018-09-24-23-30-56.png)Là, vous allez me dire « c'est fade et désaturé ». Oui, mais c'est une base de travail. Et c'est là qu'entre en jeu mon deuxième module.
 
-## 2\. La couleur
+## 2. La couleur
 
 La balance couleur a un nouveau mode, « slope - offset - power ». Ce mode est standard et respecte [la norme](https://en.wikipedia.org/wiki/ASC_CDL) de l'Association Américaine des Cinéastes. Comme tout standard, son objectif est de pouvoir échanger des réglages et des paramètres d'un logiciel à l'autre. Blender et la plupart des logiciels d'édition vidéo en sont déjà munis. Ce mode s'ajoute au « lift - gamma - gain » qui travaille dans un espace sRGB corrigé en gamma, ce qui pose plein de problèmes et de limites sur lesquelles je ne vais pas m'étendre. Je n'ai jamais eu de bon résultat avec ce module. Ici, on travaille dans l'espace Prophoto RGB linéaire.
 
@@ -43,7 +43,9 @@ Attention, les niveaux doivent se régler dans un ordre précis pour avoir un bo
 
 [![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-ASCCDL_02.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Minh-Ly-Toronto-0043-_DSC0251-ASCCDL_02.jpg)Pour comparaison, la version avec la méthode précédente :
 
-## [![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-zones.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-zones.jpg)3\. Bénéfices :
+## 3. Bénéfices :
+
+[![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-zones.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-zones.jpg)
 
 Premièrement, en terme de _workflow_, c'est très rapide, tout est automatisé au maximum avec des pipettes qui mesurent ce que vous avez besoin sans avoir à gratter les curseurs pendant des heures. C'est rapide, à condition de suivre la méthode dans laquelle ça a été pensé. Le module de correction du profil d'entrée se voit ajouter les modes de fusion classiques des autres modules, ce qui permet aussi d'utiliser la fusion paramétrique pour plus de souplesse.
 
@@ -51,13 +53,13 @@ Ensuite, le résultat est largement meilleur, en terme de luminosité, de rendu 
 
 Pour finir, j'ai codé des versions OpenCL de ces deux modules pour que ça soit rapide. Le code C de base est optimisé aussi, le tout est assez performant en terme de calcul.
 
-## 4\. Limites
+## 4. Limites
 
-La balance des couleurs  a toujours ces affreux curseurs RGB, quand la totalité des logiciels qui implémentent cette approche utilisent des roues chromatiques, beaucoup plus simples à contrôler. Le code pour les roues chromatiques est inclus, mais commenté, dans le code source du module, il semble qu'on ne soit pas très loin de le faire marcher, mais je n'ai pas eu de nouvelles du développeur précédent.
+La balance des couleurs a toujours ces affreux curseurs RGB, quand la totalité des logiciels qui implémentent cette approche utilisent des roues chromatiques, beaucoup plus simples à contrôler. Le code pour les roues chromatiques est inclus, mais commenté, dans le code source du module, il semble qu'on ne soit pas très loin de le faire marcher, mais je n'ai pas eu de nouvelles du développeur précédent.
 
-## 5\. Et maintentant ?
+## 5. Et maintenant ?
 
-Les fonctionnalités ont été soumises aux développeurs, et sont en attente de révision. Un d'entre eux s'est déjà montré hostile au profil logarithmique dans ce module précisément (pas en général). Rien ne garantit que ça soit un jour intégré au code source, mais si vous vouler les tester, [vous pouvez compiler ma branche](https://github.com/aurelienpierre/darktable).
+Les fonctionnalités ont été soumises aux développeurs et sont en attente de révision. Un d'entre eux s'est déjà montré hostile au profil logarithmique dans ce module précisément (pas en général). Rien ne garantit que ça soit un jour intégré au code source, mais si vous vouler les tester, [vous pouvez compiler ma branche](https://github.com/aurelienpierre/darktable).
 
 Attention, il se peut que le code change dans un futur proche, et que vos retouches soient alors invalides. Sauvegardez vos bases de données et travaillez sur des copies virtuelles de vos photos.
 

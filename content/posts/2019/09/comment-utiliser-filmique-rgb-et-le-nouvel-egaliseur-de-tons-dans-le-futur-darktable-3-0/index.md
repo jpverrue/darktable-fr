@@ -32,4 +32,4 @@ Souvenez-vous, il y a exactement 13 mois, [je publiais ici un article expliquant
 
 Et voici les résultats :
 
-\[gallery columns="2" link="file" size="medium" ids="5923,6695"\]
+[gallery columns="2" link="file" size="medium" ids="5923,6695"]

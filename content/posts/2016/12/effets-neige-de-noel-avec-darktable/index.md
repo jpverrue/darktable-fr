@@ -13,11 +13,11 @@ Voici un tutoriel de Benja1972 présenté sur le forum PIXLS.US (lien en fin d'a
 
 Voici la procédure en trois étapes:
 
-## 1\. Mixeur de canaux
+## 1. Mixeur de canaux
 
 [![](images/e5fb263dbeb1ab913e9c8251713ec0e4038a8f1d.jpg)](https://darktable.fr/wp-content/uploads/2016/12/e5fb263dbeb1ab913e9c8251713ec0e4038a8f1d.jpg)
 
-## 2\. Zones de couleurs
+## 2. Zones de couleurs
 
 C'est un peu astucieux car ici on change les tons VERTS sur la photo alors qu'en réalité c'est les tons BLEUS.
 
@@ -29,7 +29,7 @@ b)
 
 [![](images/a4baa0d5daf9f2337b432a6a73dc14ff5f378296.jpg)](https://darktable.fr/wp-content/uploads/2016/12/a4baa0d5daf9f2337b432a6a73dc14ff5f378296.jpg)
 
-## 3\. Balance des couleurs
+## 3. Balance des couleurs
 
 Là c'est pour rendre la peau du modèle plus naturelle, selon les goûts.
 

@@ -14,7 +14,9 @@ Tuto vidéo d'Harry Durgin qui montre comment il est possible avec une seule pho
 
 La commande utilisée avec enfuse est:
 
-> enfuse-mp -o hdr.tiff –exposure-weight=1 –entropy-weight=0 –saturation-weight=0 \*
+```bash
+enfuse-mp -o hdr.tiff –exposure-weight=1 –entropy-weight=0 –saturation-weight=0 *
+```
 
 Les RAW utilisés dans cette vidéo sont disponibles ici:
 

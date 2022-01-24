@@ -20,9 +20,9 @@ Nouvelle version :
 J'ai tenu compte de vos remarques et complété le document en conséquence.
 
 - J'ai complété la description des chemin en particulier en précisant le rôle des variables.
-- J'ai supprimé l'option pour un autre chemin \[S\] sous Linux
+- J'ai supprimé l'option pour un autre chemin [S] sous Linux
 - J'ai ajouté les fichiers de verrouillage de la BdD
-- j'ai précisé le contenu du dossier \[U\] styles
-- J'ai précisé le contenu du dossier \[S\] kernels
-- J'ai ajouté la description du dossier \[S\] style
+- j'ai précisé le contenu du dossier [U] styles
+- J'ai précisé le contenu du dossier [S] kernels
+- J'ai ajouté la description du dossier [S] style
 - J'ai parlé des fichiers de caractérisation d'objectifs

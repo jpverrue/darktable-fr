@@ -12,7 +12,7 @@ La nouvelle version majeure stable de darktable, la 2.4.0 est maintenant disponi
 ## Les gros changements depuis la version précédentes (2.2.0):
 
 - Un nouveau module: Suppression de la brume
-- Nouveau mode « filtre laplacien local » (local laplacian filter) dans « contraste local »
+- Nouveau mode « filtre laplacien local » (local laplacian filter) dans « contraste local »
 - Une version pour Windows ([lien](https://github.com/darktable-org/darktable/releases/download/release-2.4.0/darktable-2.4.0-win64.exe))
 - Support des fichiers RAF compressés de Fujifilm
 - Support basique pour l'importation des paramètres de Lightroom 7

@@ -7,7 +7,8 @@ tags:
   - "darktable"
   - "featured"
   - "news"
-coverImage: "darktable3.jpg"
+images:
+  - "images/darktable3.jpg"
 ---
 
 Chaque année, l'équipe darktable nous offre une nouvelle version comme cadeau de Noël. Cette année, l'équipe s'est surpassée et nous offre une version plus que majeure.
@@ -99,9 +100,3 @@ Leica Q2 Nikon D3 Nikon D3500 Nikon Z 6 Nikon Z 7 Olympus E-PL8 Olympus E-PL9 Pa
 #### Langues supportées par darktable 3.0
 
 Catalan Tchèque Danois Allemand Espagnol européen Français Hébreu Hongrois Italien Japonais Bokmål norvégien Néerlandais Polonais Russe Slovène
-
-## Soutenez-nous
-
-En choisissant de nous faire un don via l'une de ces 3 plateformes vous contribuez à la pérennité du site, du forum et au développement de darktable
-
-Liberapay Tipeee Patreon

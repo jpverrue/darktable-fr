@@ -17,7 +17,7 @@ En ce qui me concerne, j'assure une permanence le samedi, de midi à environ 22h
 
 ## Pourquoi Framateam, c'est plus ce que c'était ?
 
-Framateam est un service gratuit de l'association [Framasoft](https://framasoft.org/fr/) qui met à disposition un serveur hébergeant une instance de [Mattermost](https://mattermost.org/), un genre de clone libre de Slack. Ça permet de créer une « équipe » qui va discuter sur des canaux publics, privés ou en messages privés, mais ça pose deux problèmes :
+Framateam est un service gratuit de l'association [Framasoft](https://framasoft.org/fr/) qui met à disposition un serveur hébergeant une instance de [Mattermost](https://mattermost.org/), un genre de clone libre de Slack. Ça permet de créer une « équipe » qui va discuter sur des canaux publics, privés ou en messages privés, mais ça pose deux problèmes :
 
 1. Framateam limite le nombre de membres d'une équipe à 175, et on l'a atteint,
 2. Framasoft est [graduellement en train de déframatiser internet](https://framablog.org/2019/09/24/deframasoftisons-internet/), et va progressivement fermer Framateam à partir de 2021 _(si l'humanité n'a pas été anéantie par le virus du chikungunya aviaire respiratoire aigu d'ici là)_.

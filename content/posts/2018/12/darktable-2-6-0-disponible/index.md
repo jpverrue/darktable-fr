@@ -5,7 +5,8 @@ categories:
   - "non-classe"
 tags: 
   - "news"
-coverImage: "darktable26.jpeg"
+images:
+  - "images/darktable26.jpeg"
 ---
 
 À la veille de Noël, nous somme heureux de vous annoncer que la nouvelle version majeure de darktable est enfin disponible.
@@ -106,9 +107,9 @@ La version 2.4 laisse donc la place à la 2.6 qui comporte plus de 1600 modifica
 - GoPro HERO5 Black (dng)
 - GoPro HERO6 Black (dng)
 - GoPro HERO7 Black (dng)
-- Hasselblad CFV\-50
-- Hasselblad H5D\-40
-- Hasselblad H5D\-50c
+- Hasselblad CFV-50
+- Hasselblad H5D-40
+- Hasselblad H5D-50c
 - Kodak DCS Pro 14nx
 - Kodak DCS520C
 - Kodak DCS760C
@@ -120,35 +121,35 @@ La version 2.4 laisse donc la place à la 2.6 qui comporte plus de 1600 modifica
 - Nikon Z 7 (except 14-bit uncompressed raw)
 - Olympus E-PL8
 - Olympus E-PL9
-- Olympus SH\-2
-- Panasonic DC\-FZ80 (4:3)
-- Panasonic DC\-G9 (4:3)
-- Panasonic DC\-GF9 (4:3)
-- Panasonic DC\-GX800 (4:3)
-- Panasonic DC\-GX850 (4:3)
-- Panasonic DC\-GH5S (4:3, 3:2, 16:9, 1:1)
-- Panasonic DC\-GX9 (4:3)
-- Panasonic DC\-LX100M2 (4:3, 1:1, 16:9, 3:2)
-- Panasonic DC\-TZ200 (3:2)
-- Panasonic DC\-TZ202 (3:2)
-- Panasonic DMC\-FZ2000 (3:2)
-- Panasonic DMC\-FZ2500 (3:2)
-- Panasonic DMC\-FZ35 (3:2, 16:9)
-- Panasonic DMC\-FZ38 (3:2, 16:9)
-- Panasonic DMC\-GX7MK2 (4:3)
-- Panasonic DMC\-ZS100 (3:2)
+- Olympus SH-2
+- Panasonic DC-FZ80 (4:3)
+- Panasonic DC-G9 (4:3)
+- Panasonic DC-GF9 (4:3)
+- Panasonic DC-GX800 (4:3)
+- Panasonic DC-GX850 (4:3)
+- Panasonic DC-GH5S (4:3, 3:2, 16:9, 1:1)
+- Panasonic DC-GX9 (4:3)
+- Panasonic DC-LX100M2 (4:3, 1:1, 16:9, 3:2)
+- Panasonic DC-TZ200 (3:2)
+- Panasonic DC-TZ202 (3:2)
+- Panasonic DMC-FZ2000 (3:2)
+- Panasonic DMC-FZ2500 (3:2)
+- Panasonic DMC-FZ35 (3:2, 16:9)
+- Panasonic DMC-FZ38 (3:2, 16:9)
+- Panasonic DMC-GX7MK2 (4:3)
+- Panasonic DMC-ZS100 (3:2)
 - Paralenz Dive Camera (chdk)
 - Pentax 645Z
 - Pentax K-1 Mark II
 - Pentax KP
 - Phase One P65+
 - Sjcam SJ6 LEGEND (chdk-b, chdk-c)
-- Sony DSC\-HX99
-- Sony DSC\-RX0
-- Sony DSC\-RX100M5A
-- Sony DSC\-RX10M4
-- Sony DSC\-RX1RM2
-- Sony ILCE\-7M3
+- Sony DSC-HX99
+- Sony DSC-RX0
+- Sony DSC-RX100M5A
+- Sony DSC-RX10M4
+- Sony DSC-RX1RM2
+- Sony ILCE-7M3
 
 ### Profils Balance des blancs
 
@@ -162,18 +163,18 @@ La version 2.4 laisse donc la place à la 2.6 qui comporte plus de 1600 modifica
 - Nikon Z 6
 - Olympus E-M10 Mark III
 - Olympus E-M1MarkII
-- Panasonic DC\-G9
-- Panasonic DC\-GX9
-- Panasonic DMC\-FZ300
-- Sony DSC\-RX0
-- Sony DSC\-RX100M5
-- Sony DSC\-RX100M5A
-- Sony DSC\-RX10M3
-- Sony DSC\-RX10M4
-- Sony DSC\-RX1RM2
-- Sony ILCE\-6500
-- Sony ILCE\-7M3
-- Sony ILCE\-7RM3
+- Panasonic DC-G9
+- Panasonic DC-GX9
+- Panasonic DMC-FZ300
+- Sony DSC-RX0
+- Sony DSC-RX100M5
+- Sony DSC-RX100M5A
+- Sony DSC-RX10M3
+- Sony DSC-RX10M4
+- Sony DSC-RX1RM2
+- Sony ILCE-6500
+- Sony ILCE-7M3
+- Sony ILCE-7RM3
 
 ### Profils de bruit
 
@@ -207,24 +208,24 @@ La version 2.4 laisse donc la place à la 2.6 qui comporte plus de 1600 modifica
 - Nikon D7500
 - Nikon D850
 - Olympus E-M10 Mark III
-- Olympus TG\-5
-- Panasonic DC\-G9
-- Panasonic DC\-GX9
-- Panasonic DMC\-FZ35
-- Panasonic DMC\-FZ38
-- Panasonic DMC\-GF6
-- Panasonic DMC\-LX10
-- Panasonic DMC\-LX15
-- Panasonic DMC\-LX9
-- Panasonic DMC\-TZ70
-- Panasonic DMC\-TZ71
-- Panasonic DMC\-ZS50
+- Olympus TG-5
+- Panasonic DC-G9
+- Panasonic DC-GX9
+- Panasonic DMC-FZ35
+- Panasonic DMC-FZ38
+- Panasonic DMC-GF6
+- Panasonic DMC-LX10
+- Panasonic DMC-LX15
+- Panasonic DMC-LX9
+- Panasonic DMC-TZ70
+- Panasonic DMC-TZ71
+- Panasonic DMC-ZS50
 - Pentax K-01
 - Pentax KP
 - Samsung NX1
-- Sony DSC\-RX100M4
-- Sony DSC\-RX10M3
-- Sony ILCE\-7M3
+- Sony DSC-RX100M4
+- Sony DSC-RX10M3
+- Sony ILCE-7M3
 
 ## Traductions
 
@@ -241,9 +242,3 @@ La version 2.4 laisse donc la place à la 2.6 qui comporte plus de 1600 modifica
 - Slovenian
 
 Source: [https://github.com/darktable-org/darktable/releases/tag/release-2.6.0](https://github.com/darktable-org/darktable/releases/tag/release-2.6.0)
-
-## Soutenez-nous
-
-En choisissant de nous faire un don via l'une de ces 3 plateformes vous contribuez à la pérennité du site, du forum et au développement de darktable
-
-Liberapay Tipeee Patreon

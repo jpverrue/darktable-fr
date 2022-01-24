@@ -136,7 +136,7 @@ Même s'il ne faut pas le prendre comme une vérité absolue, c'est l'histogramm
 
 [![](images/Capture-du-2018-09-29-16-26-38.png)](http://darktable.fr/wp-content/uploads/2018/09/Capture-du-2018-09-29-16-26-38.png)Évidemment, si vous faites du [low-key](https://www.lesnumeriques.com/photo/realiser-une-photo-low-key-pu101061.html) ou [high-key](https://www.lesnumeriques.com/photo/la-photographie-high-key-avec-les-moyens-du-bord-pu101051.html), ça ne s'applique plus. Mais, ça peut encore vous alerter que quelque-chose va mal si vous voyez des pics aux bords :
 
-\[gallery size="medium" columns="2" link="file" ids="6057,6056"\]
+[gallery size="medium" columns="2" link="file" ids="6057,6056"]
 
 ### De l'importance de l'étalonnage
 

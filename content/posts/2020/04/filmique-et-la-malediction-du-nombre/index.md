@@ -3,7 +3,8 @@ title: "Filmique et la malédiction du nombre"
 date: "2020-04-30"
 categories: 
   - "tutoriels"
-coverImage: "mappage-filmique.png"
+images:
+  - "images/mappage-filmique.png"
 ---
 
 ## Introduction
@@ -23,11 +24,11 @@ Dans filmique, on cherche à projeter une plage dynamique (le contraste maximal 
 3. des propriétés du capteur et de son électronique de conditionnement, et de leurs corrections/ajustement apportés par la librairie de décodage de photos brutes (Rawspeed),
 4. des réglages effectués au début du pipeline de darktable, car filmique arrive à la fin et hérite de toutes les modifications effectuées par les modules précédents (exposition, niveaux, balance des couleurs, etc.).
 
-Filmique opère une projection de plage dynamique, d'une entrée inconnue vers une sortie connue, donc. Il utilise pour ce faire une projection à 3 points : noir pur, gris moyen et blanc pur. Le gris moyen permet d'ancrer l'exposition générale, le noir et le blanc permettent d'enrouler toute la plage dynamique en conséquence autour du gris, de façon à comprimer le contraste pour rentrer dans les clous en évitant l'écrêtage pur et simple.
+Filmique opère une projection de plage dynamique, d'une entrée inconnue vers une sortie connue, donc. Il utilise pour ce faire une projection à 3 points : noir pur, gris moyen et blanc pur. Le gris moyen permet d'ancrer l'exposition générale, le noir et le blanc permettent d'enrouler toute la plage dynamique en conséquence autour du gris, de façon à comprimer le contraste pour rentrer dans les clous en évitant l'écrêtage pur et simple.
 
 [![](images/mappage-filmique.png)](https://darktable.fr/wp-content/uploads/2020/04/mappage-filmique.png) Mappage filmique
 
-Sur le schéma ci-dessus, on voit le principe général de la fabrication d'image, de la scène à l'écran. La caméra a une certaine plage dynamique, imposée par ses propriétés physiques et électroniques. La scène a, le plus souvent mais pas toujours, une plage dynamique plus grande. Le réglage de l'exposition (\*), sur le boîtier, via l'ouverture, la vitesse et la sensibilité, fait glisser la fenêtre de plage dynamique de gauche à droite, sur l'axe des luminances, de façon à choisir à quelle**s** valeur**s** de luminance on écrête (à la fois à gauche et à droite). Le transfert de luminance scène vers capteur est linéaire (matérialisé par les flèches verticales).
+Sur le schéma ci-dessus, on voit le principe général de la fabrication d'image, de la scène à l'écran. La caméra a une certaine plage dynamique, imposée par ses propriétés physiques et électroniques. La scène a, le plus souvent mais pas toujours, une plage dynamique plus grande. Le réglage de l'exposition (*), sur le boîtier, via l'ouverture, la vitesse et la sensibilité, fait glisser la fenêtre de plage dynamique de gauche à droite, sur l'axe des luminances, de façon à choisir à quelle**s** valeur**s** de luminance on écrête (à la fois à gauche et à droite). Le transfert de luminance scène vers capteur est linéaire (matérialisé par les flèches verticales).
 
 Le principe du mappage filmique (hautement non-linéaire) est mis en évidence par le fait que les flèches représentant le transfert sont clairement non verticales. Le mappage à 3 points permet d'avoir 2 règles de compression/dilation indépendants : une règle pour la zone noir-gris, et une autre pour la zone gris-blanc. On peut donc choisir de dilater ou de comprimer l'un ou l'autre ou les deux. En règle générale, on comprime la zone gris-blanc et on dilate la zone noir-gris, mais rien n'y oblige.
 
@@ -35,13 +36,13 @@ Notez que j'ai représenté les incréments d'EV (ou IL) perceptuels sur une éc
 
 Étant donné que le positionnement de la plage dynamique capteur par rapport à la plage dynamique de la scène est arbitraire, via les réglages du triangle d'exposition sur le boîtier, il est impossible de prédire si le 18 % capteur encode un gris moyen sur la scène, ou autre chose. De même, on n'a aucune idée si le 100 % capteur est une surface semi-réfléchissante blanche (donc coïncide avec le blanc du papier, sur le tirage), ou une source de lumière incidente (donc un « blanc spéculaire HDR »), par exemple.
 
-* * *
+***
 
-(\*) Le problème de l'exposition, c'est qu'elle n'a pas le même effet sur la plage dynamique, dans l'appareil photo ou dans le logiciel.
+(*) Le problème de l'exposition, c'est qu'elle n'a pas le même effet sur la plage dynamique, dans l'appareil photo ou dans le logiciel.
 
 Si vous considérez son influence sur une valeur de luminance isolée, ajoutez un stop sur l'appareil photo ou multipliez la valeur par 2 dans le logiciel, c'est la même chose : vous venez d'ajouter 1 EV ou IL à cette valeur.
 
-La plage dynamique s'étend sur une plage de luminances, physiques, entre une certaine valeur non-nulle et une autre valeur non-nulle. Ces valeurs ne peuvent être nulles car la lumière étant une forme d'énergie, une énergie nulle n'est pas possible sur Terre, et suppose d'être au zéro absolu (− 273°C). Si je multiplie toute la plage dynamique par une valeur, je décale toute la plage dynamique vers la gauche ou vers la droite, sans affecter son amplitude. 12 EV de plage dynamique muliplié par 2 (+1 EV) donne une plage dynamique de 12 EV décalée d'un EV vers la droite.
+La plage dynamique s'étend sur une plage de luminances, physiques, entre une certaine valeur non-nulle et une autre valeur non-nulle. Ces valeurs ne peuvent être nulles car la lumière étant une forme d'énergie, une énergie nulle n'est pas possible sur Terre, et suppose d'être au zéro absolu (− 273°C). Si je multiplie toute la plage dynamique par une valeur, je décale toute la plage dynamique vers la gauche ou vers la droite, sans affecter son amplitude. 12 EV de plage dynamique muliplié par 2 (+1 EV) donne une plage dynamique de 12 EV décalée d'un EV vers la droite.
 
 Mais…
 
@@ -101,13 +102,13 @@ Mais après la mise à l'échelle logarithmique, vient la courbe en S, qui est u
 
 Si le gris de la scène utilisé par filmique est loin de 18 %, la courbe est décentrée sur le graphe, déséquilibrée vers la droite. Le contraste disponible se réduit, la courbe est moins souple à contrôler car la plage dynamique est moins symétrique, et les noirs sont moins denses.
 
-Les deux sets de réglages ci-dessous donnent les mêmes résultats pour les tons moyens et les hautes lumières, mais la variante gris 18 % donne des noirs un peu plus denses, car le pied de la courbe est un peu plus bas (et ce, même en réduisant la latitude pour éviter l'écrêtage en bas). À 18 %, la plage dynamique est presque symétrique (blanc ≃ − noir), ce qui est désirable pour des raison purement ergonomiques de contrôle de la courbe (sans lien avec le traitement d'image à proprement parler).
+Les deux sets de réglages ci-dessous donnent les mêmes résultats pour les tons moyens et les hautes lumières, mais la variante gris 18 % donne des noirs un peu plus denses, car le pied de la courbe est un peu plus bas (et ce, même en réduisant la latitude pour éviter l'écrêtage en bas). À 18 %, la plage dynamique est presque symétrique (blanc ≃ − noir), ce qui est désirable pour des raison purement ergonomiques de contrôle de la courbe (sans lien avec le traitement d'image à proprement parler).
 
-\[gallery size="medium" columns="2" link="file" ids="7119,7120"\]
+[gallery size="medium" columns="2" link="file" ids="7119,7120"]
 
 Autre argument en faveur de l'ajustement de l'exposition le plus tôt possible dans le pipeline : le profil de couleur d'entrée. Les matrices utilisées comme profil de couleur d'entrée ne sont pas parfaitement précises sur toute la plage dynamique, et la méthode de profilage par matrice 3×3 est en elle-même relativement grossière. Les matrices sont donc optimisées pour donner une meilleure précision en priorité pour les tons moyens autour des teintes de peau (caucasienne…). Le module exposition, dans darktable, est appliqué par défaut avant le profil d'entrée et permet donc de pousser les tons moyens dans la zone de confort de la matrice, bénéficiant d'un petit supplément de précision à l'application du profil.
 
-Alors pourquoi définir le gris de la scène dans filmique, par défaut à 9 % ? **Par faiblesse**. Las d'être harcelé par les grands Prêtres de la Sainte Église de l'UX intuitive, qui prêchent pour une image conforme au JPEG boîtier en 2 clics®, j'ai cuisiné, pour les faire taire, un réglage par défaut de filmique qui cale le gris à une valeur proche de ce que font la plupart des JPEG de plusieurs constructeurs, et qui donne un résultat médiocrement regardable dès l'activation du module. Là !
+Alors pourquoi définir le gris de la scène dans filmique, par défaut à 9 % ? **Par faiblesse**. Las d'être harcelé par les grands Prêtres de la Sainte Église de l'UX intuitive, qui prêchent pour une image conforme au JPEG boîtier en 2 clics®, j'ai cuisiné, pour les faire taire, un réglage par défaut de filmique qui cale le gris à une valeur proche de ce que font la plupart des JPEG de plusieurs constructeurs, et qui donne un résultat médiocrement regardable dès l'activation du module. Là !
 
 Mais on ne m'y reprendra plus, et ça va dégager dans [filmique v4, qui est déjà terminé et en phase de test](https://github.com/darktable-org/darktable/pull/4800). À partir de maintenant, si intuitif n'est pas réconciliable avec rationnel, ça ne sera plus mon problème, parce que rien, mais vraiment rien, en traitement d'image, n'est intuitif de toute façon. Faire une retouche en un minimum d'opérations est un objectif de workflow louable, tant qu'il se soucie de faire la bonne opération au bon endroit du pipeline. Quand ça n'est pas possible, c'est la cohérence des couleurs et du pipeline qui doit primer.
 

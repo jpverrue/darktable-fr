@@ -34,7 +34,7 @@ TZ='HST' date +%s |read seconds
 wget -T6 --random-wait -O /tmp/image.jpg "$url"
 
 # PROCESS WITH DARKTABLE
-rm /tmp/image_dt\*
+rm /tmp/image_dt*
 /opt/darktable/bin/darktable-cli /tmp/image.jpg "$xmp" --width 1920 --height 1080 --upscale true /tmp/image_dt.jpg
 
 # ARCHIVE WITH DATE STAMP
@@ -73,9 +73,9 @@ typeset -Z6 c
 
 # CREATE FRAMES
 seq 1 $num_frames |while read c; do
-  convert \`head -n $frame_window frames\` -average final/$c.jpg
+  convert `head -n $frame_window frames` -average final/$c.jpg
   sed -i '1d' frames
-  echo -ne "e\[0Kr$c / $num_frames"
+  echo -ne "e[0Kr$c / $num_frames"
 done
 
 # MAKE MOVIE

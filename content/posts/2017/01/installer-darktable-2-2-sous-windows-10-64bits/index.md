@@ -17,7 +17,7 @@ Rappel de la procédure:
 > 
 > Prérequis :
 > 
-> \- avoir une version de Windows 10 64bits en version 14393 mini - activer le mode développeur - activier la fonctionnalité sous système Linux
+> - avoir une version de Windows 10 64bits en version 14393 mini - activer le mode développeur - activier la fonctionnalité sous système Linux
 > 
 > En ligne de commande Windows taper :
 > 

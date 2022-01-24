@@ -11,8 +11,6 @@ tags:
 
 Plongée au cœur d'une journée de formation particulière …
 
-\--- oOo ---
-
 Un contexte favorable pour former des cadres …
 
 Au milieu des remous causés par l'évolution de la politique de commercialisation de Lightroom, Luc Penin (Président de la Commission Régionale des Hauts de France « Photo-Vidéo Sous-Marine ») mène actuellement une réflexion sur les alternatives, parmi lesquelles darktable a particulièrement retenu son attention. Pour nourrir sa réflexion, Luc Penin a invité Jean-Pierre Verrue et Bernard Ceurstemont, pour animer une journée de formation spécifique ciblant des formateurs de « photographes-plongeurs ».

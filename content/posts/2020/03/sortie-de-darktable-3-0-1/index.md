@@ -7,12 +7,13 @@ tags:
   - "darktable"
   - "featured"
   - "news"
-coverImage: "darktable3.jpg"
+images:
+  - "images/darktable3.jpg"
 ---
 
 La première mise à jour de maintenance de darktable 3.0, numérotée 3.0.1 a été publiée aujourd'hui par Pascal Obry. [Lire les notes de version officielles (en anglais)](https://github.com/darktable-org/darktable/releases/tag/release-3.0.1).
 
-En deux mois et demi, depuis la parution de darktable 3.0.0 à Noël, 680 commits ont été versés par 28 contributeurs, soit 23 311 fichiers édités, 23 311 lignes de code ajoutées, et 12 027 lignes de code retirées. (Bande de furieux)
+En deux mois et demi, depuis la parution de darktable 3.0.0 à Noël, 680 commits ont été versés par 28 contributeurs, soit 23 311 fichiers édités, 23 311 lignes de code ajoutées, et 12 027 lignes de code retirées. (Bande de furieux)
 
 ## Télécharger la mise à jour
 

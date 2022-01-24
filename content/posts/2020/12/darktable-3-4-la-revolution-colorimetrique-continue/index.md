@@ -3,7 +3,8 @@ title: "darktable 3.4 : la révolution colorimétrique continue"
 date: "2020-12-24"
 categories: 
   - "actualites"
-coverImage: "lua-scripts-installer.png"
+images:
+  - "images/lua-scripts-installer.png"
 ---
 
 **Annonce, darktable-release 3.4**  _(Traduction faite avec DeepL et corrigée par Aurélien, JMM40, jpg54, Jipivy, olliwa, vithom et 2 auteurs anonymes)_
@@ -236,9 +237,3 @@ De nombreux modules existants ont fait l'objet d'une mise à jour de leur interf
 - Le support des TIFF 16 bits a été ajouté.
 - Le support des niveaux de gris a été ajouté pour le format AVIF.
 - Un nouveau préréglage a été ajouté au module "_réduction du bruit (profil)_" pour supprimer uniquement le bruit de chrominance en utilisant le mode ondelettes.
-
-## Soutenez-nous
-
-En choisissant de nous faire un don via l'une de ces 4 plateformes vous contribuez à la pérennité du site, du forum et au développement de darktable
-
-Liberapay   Tipeee   Patreon   Paypal

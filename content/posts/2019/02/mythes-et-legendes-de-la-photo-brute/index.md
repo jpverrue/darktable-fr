@@ -7,7 +7,7 @@ categories:
 
 La photo brute (RAW), c'est un enregistrement direct et sans traitement de ce que le capteur de l'appareil photo a « vu ». Il y a beaucoup trop de croyances qui circulent sur les propriétés supposées de cette « image latente », je vous propose de casser du mythe à la pioche.
 
-## 1\. J'ai configuré mon boîtier en Adobe RGB, donc j'utilise un profil d'entrée Adobe RGB.
+## 1. J'ai configuré mon boîtier en Adobe RGB, donc j'utilise un profil d'entrée Adobe RGB.
 
 La configuration de l'espace de couleur, sur le boîtier de l'appareil photo, n'impacte **que** les JPEG produits par le boîtier. En général, vous avez deux options : sRGB et Adobe RGB.
 
@@ -15,7 +15,7 @@ Oui mais alors, dans quel espace de couleur sont enregistrés les raws ?
 
 Dans l'espace du capteur. Un espace RGB bien à lui, qui dépend de la transmittance  des filtres colorés à la surface de la [matrice de Bayer](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=2ahUKEwim1vbDvqvgAhXhzVkKHa9DBxkQFjADegQIDBAB&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FMatrice_de_Bayer&usg=AOvVaw2FZIqJFJ2hJlvVg4-C9Oji) et de l'électronique qui traite les données ensuite. C'est la raison pour laquelle darktable embarque une « matrice » différente pour chaque capteur. La matrice, c'est juste le profil de couleur le plus simple qui existe : un tableau de coefficients 3 × 3. Configurez le boîtier en sRGB, Adobe RGB ou ce que vous voulez,  ça n'impacte pas le raw.
 
-## 2\. Faire la balance des blancs sur l'appareil permet d'avoir de meilleures couleurs dans le raw
+## 2. Faire la balance des blancs sur l'appareil permet d'avoir de meilleures couleurs dans le raw
 
 La balance des blancs, c'est une compensation des couleurs qui suppose une lumière blanche, et qui se base sur de la physique un peu velue pour faire une correction spectrale qui va simuler un changement de température.
 
@@ -45,7 +45,7 @@ Du coup, la balance des blancs : dans le boîtier ou dans le logiciel ?
 
 Souvenons-nous que le raw est… brut. Non corrigé. Directement du capteur au fichier. La balance des blancs n'est donc qu'une simple méta-donnée enregistrée dans le fichier brut. Encore une fois, l'appareil va corriger son JPEG, mais c'est tout. Si la balance des blancs est « juste » sur le boîtier, ça veut dire que la correction effectuée par darktable (qui extrait cette méta-donnée et l'utilise comme réglage par défaut) va avoir le bon paramètre dès le départ. Rien de plus. La balance des blancs du boîtier n'impacte pas les couleurs du fichier raw. Sinon, encore une fois, ça ne serait plus un fichier brut…
 
-### 3\. Mon profil d'entrée maison est meilleur que celui par défaut (pris à Adobe)
+### 3. Mon profil d'entrée maison est meilleur que celui par défaut (pris à Adobe)
 
 Si, comme moi, vous êtes un geek, vous vous êtes acheté une mire d'étalonnage type IT8 ou Color Checker, et vous avez fait votre propre profil de couleur, pour être sûr que votre appareil soit parfaitement réglé (soit un profil ICC, soit une table de correspondance).
 
@@ -62,11 +62,11 @@ Un profil réalisé dans des conditions non-standard peut être utile pour corri
 
 Dans darktable, il existe des matrices standards (qui sont des matrices Adobe) et des matrices « améliorées », qui ont été fournies par des contributeurs individuels. À chaque fois que vous utilisez ces matrices, vous faites aveuglément confiance à quelqu'un d'autre, qui a problablement travaillé n'importe comment (en tout cas, on ne peut pas vérifier). Méfiance…
 
-## 4\. L'histogramme du boîtier n'est pas le même que celui de mon logiciel
+## 4. L'histogramme du boîtier n'est pas le même que celui de mon logiciel
 
 L'histogramme affiché sur le boîtier est celui du JPEG produit par le boîtier, et intégré en miniature dans le raw. Ce JPEG a reçu une [correction gamma](https://fr.wikipedia.org/wiki/Correction_gamma) et ne ressemble plus au fichier brut. Idem avec l'alerte surexposition du boîtier : c'est la surexposition du JPEG. Pour avoir une idée de l'apparence du raw, il faut diminuer la luminosité dans les préréglages de l'appareil, de façon à inverser la correction gamma. Mais la netteté des photos risque alors de devenir difficile à évaluer à l'écran. Tout se paie…
 
-## 5\. Je peux retoucher le raw comme je veux
+## 5. Je peux retoucher le raw comme je veux
 
 On peut globalement découper la retouche d'un raw en deux grandes étapes :
 

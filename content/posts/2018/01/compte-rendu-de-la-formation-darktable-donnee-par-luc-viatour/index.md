@@ -9,7 +9,8 @@ tags:
   - "feedback"
   - "formation"
   - "luc-viatour"
-coverImage: "DSF6159.jpg"
+images:
+  - "images/DSF6159.jpg"
 ---
 
 Petit compte rendu de la formation darktable organisé par [Luc Viatour](https://lucnix.be/)  au centre culturel [La Spirale de Natoye.](https://laspirale.be/)
@@ -30,6 +31,6 @@ Pour conclure, [Luc](https://lucnix.be/) nous a fait faire le tour du propriéta
 
 Vivement la prochaine
 
-\[gallery size="medium" columns="2" ids="5384,5385,5386,5387,5383"\]
+[gallery size="medium" columns="2" ids="5384,5385,5386,5387,5383"]
 
 Ps: J'ai appliqué sur les photos [le style Fujifilm Acros](https://darktable.fr/2018/01/tous-les-modes-de-simulation-de-film-fujifilm-sont-disponibles-sur-darktable/) que vous pouvez télécharger [ici](/download/Fuji_XTrans_III_dtstyles.zip)

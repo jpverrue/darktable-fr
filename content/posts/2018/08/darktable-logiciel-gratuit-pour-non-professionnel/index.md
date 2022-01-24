@@ -17,11 +17,11 @@ Ensuite, le caractère libre du logiciel est systématiquement résumé à sa gr
 
 Donc il est temps de rectifier :
 
-1\. Et si Lightroom n'était en fait qu'un darktable payant et moins bien ? Oui, parce que des masques paramétriques ET dessinés, un module fluidité/liquéfier, la possibilité de dupliquer des instances pour faire, notamment, du débruitage en plusieurs passes, cherchez bien dans Lightroom : ça n'existe pas. En outre, darktable vous permet de réaliser et d'utiliser vos propres profils de correction des objectifs (via la librairie Lensfun), et vos propres profils de correction des couleurs (via ArgyllCMS ou l'outil darktable-chart). Ça veut dire que vous n'êtes pas dépendant des développeurs pour intégrer le support de votre appareil, vous êtes autonome.
+1. Et si Lightroom n'était en fait qu'un darktable payant et moins bien ? Oui, parce que des masques paramétriques ET dessinés, un module fluidité/liquéfier, la possibilité de dupliquer des instances pour faire, notamment, du débruitage en plusieurs passes, cherchez bien dans Lightroom : ça n'existe pas. En outre, darktable vous permet de réaliser et d'utiliser vos propres profils de correction des objectifs (via la librairie Lensfun), et vos propres profils de correction des couleurs (via ArgyllCMS ou l'outil darktable-chart). Ça veut dire que vous n'êtes pas dépendant des développeurs pour intégrer le support de votre appareil, vous êtes autonome.
 
-2\. darktable est libre, sans guillemets, et pas gratuit. Ça veut dire que des développeurs collaborent, partagent leur code source, que n'importe qui peut le modifier et collaborer, apporter ses idées ou le réviser pour s'assurer qu'il ne contienne pas de code malicieux. Ensuite, ils partagent leur outil, rédigent et traduisent des documentation, créent des tutoriaux, corrigent les bugs remontés par les utilisateurs, et les assistent dans leur problèmes. Ça veut dire que des chercheurs et étudiants peuvent y pousser le résultat de leurs recherches et favoriser le transfert de technologie au profit de la communauté. Tout ça sans rien demander en retour. darktable n'est pas gratuit, il est **offert** par ses développeurs à la communauté. En arrière, c'est un boulot constant depuis 2010.
+2. darktable est libre, sans guillemets, et pas gratuit. Ça veut dire que des développeurs collaborent, partagent leur code source, que n'importe qui peut le modifier et collaborer, apporter ses idées ou le réviser pour s'assurer qu'il ne contienne pas de code malicieux. Ensuite, ils partagent leur outil, rédigent et traduisent des documentation, créent des tutoriaux, corrigent les bugs remontés par les utilisateurs, et les assistent dans leur problèmes. Ça veut dire que des chercheurs et étudiants peuvent y pousser le résultat de leurs recherches et favoriser le transfert de technologie au profit de la communauté. Tout ça sans rien demander en retour. darktable n'est pas gratuit, il est **offert** par ses développeurs à la communauté. En arrière, c'est un boulot constant depuis 2010.
 
-3\. darktable n'est pas un concurrent de Lightroom non plus, parce que votre usage de darktable n'enrichit personne, et que le logiciel que vous avez choisi d'utiliser ne change rien pour ses développeurs.
+3. darktable n'est pas un concurrent de Lightroom non plus, parce que votre usage de darktable n'enrichit personne, et que le logiciel que vous avez choisi d'utiliser ne change rien pour ses développeurs.
 
 Ça énerve parce que, dès qu'on écrit « gratuit » quelque part, on rameute la république des radins, toujours à l'affût d'une bonne affaire sans rien donner en échange. Des mecs qui se mettent les pieds sur table et crachent dans la soupe quand ça ne va pas comme ils veulent. Le même genre d'individus qui marchandent tout et ne repartent satisfaits que lorsqu'ils ont l'impression d'avoir volé le vendeur. Drôle de satisfaction.
 
@@ -46,7 +46,7 @@ Quand quelque chose se passe mal, on peut, soit blâmer l'outil, soit blâmer l'
 
 Pour se rendre compte des possibilités d'un logiciel, la première chose serait peut-être de voir ce que les utilisateurs expérimentés sont capables d'en faire, non ?
 
-\[gallery size="medium" columns="2" link="file" ids="5923,5919"\]
+[gallery size="medium" columns="2" link="file" ids="5923,5919"]
 
 J'ai repris ce [concours RAW](https://froknowsphoto.com/raw-edit-of-the-week-25/) par Jared Polin, daté de 2011, qui avait déjà fait l'objet d'un [test comparatif](http://www.tutorialgeek.net/2011/07/lightroom-vs-darktable-raw-photo.html) avec darktable. J'y ai passé 25 min, essentiellement parce que l'appareil photo n'a pas de profil dans darktable : j'ai donc dû ajuster les couleurs à l'œil, par rapport à l'image de référence, et ça prend pas mal d'aller-retours. Ce qui est intéressant ici, c'est que l'appareil photo utilisé est un vieux Nikon D100, avec une plage dynamique franchement en-dessous de ce qu'on fait aujourd'hui, donc le traitement fait beaucoup dans la récupération du contraste et des détails. Voici l'historique :
 
@@ -68,7 +68,7 @@ Souvent, les critiques qui reviennent sont :
 
 Moi j'ai envie de vous dire :
 
-\[gallery size="medium" columns="2" link="file" ids="5928,5927"\]
+[gallery size="medium" columns="2" link="file" ids="5928,5927"]
 
 Le véhicule de gauche se déplace en 2D sur route balisée à vitesse inférieure à 295 km/h. En cas d'urgence, le pilote met un coup de frein et s'arrête au bord de la route. Le véhicule de droite se déplace en 3D sur itinéraire non balisé à une vitesse maximale de 1020 km/h et à une altitude maximale de 13 100 m. En cas d'urgence, le pilote ne peut pas s'arrêter car c'est sa vitesse qui fait voler l'avion (portance, décrochage, etc.).
 

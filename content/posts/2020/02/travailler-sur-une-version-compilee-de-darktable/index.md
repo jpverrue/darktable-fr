@@ -21,11 +21,11 @@ Faute d'avoir de bonnes connaissances techniques sur le fonctionnement de Github
 
 Ce présent article est donc une synthèse sur la façon dont on compile et installe ses propres versions de darktable sur sa machine Linux (désolé, n'utilisant pas Windows, je ne peux pas expliquer la méthodologie sur ce système d'exploitation), ainsi que les différentes mesures de sécurité que j'ai mises en place afin d'éviter de mélanger les versions et perdre des traitements de photos ou casser ma version de production.
 
-**/!\\ Attention /!\\**
+/!\ Attention /!\
 
 **Installer plusieurs versions de darktable sur un même ordinateur et travailler sur des versions en cours de développement peut comporter certains risques. Même si je présente ici une méthode permettant de travailler en toute sécurité, faites bien attention à ce que vous faite au risque de perdre des données.**
 
-# Pourquoi utiliser des versions compilées ?
+# Pourquoi utiliser des versions compilées ?
 
 Avant même de commencer à compiler darktable sur son ordinateur, il est intéressant de se demander pourquoi. Avec du recul, j'y vois plusieurs avantages.
 
@@ -59,11 +59,14 @@ Avant de télécharger et compiler darktable, il faut tout d'abord s'assurer à 
 
 - Sur Fedora (et CentOS) la liste des packages à installer est la suivante :
 
-\# dnf install git make cmake gcc-c++ intltool gtk3-devel libxml2-devel lensfun-devel librsvg2-devel sqlite-devel libcurl-devel libjpeg-turbo-devel libtiff-devel lcms2-devel json-glib-devel exiv2-devel pugixml-devel libxslt osm-gps-map-devel libsoup-devel libgphoto2-devel OpenEXR-devel libwebp-devel flickcurl-devel openjpeg-devel libsecret-devel GraphicsMagick-devel osm-gps-map-devel colord-devel colord-gtk-devel cups-devel SDL-devel lua-devel
+```bash
+dnf install git make cmake gcc-c++ intltool gtk3-devel libxml2-devel lensfun-devel librsvg2-devel sqlite-devel libcurl-devel libjpeg-turbo-devel libtiff-devel lcms2-devel json-glib-devel exiv2-devel pugixml-devel libxslt osm-gps-map-devel libsoup-devel libgphoto2-devel OpenEXR-devel libwebp-devel flickcurl-devel openjpeg-devel libsecret-devel GraphicsMagick-devel osm-gps-map-devel colord-devel colord-gtk-devel cups-devel SDL-devel lua-devel
+```
 
 - Sur Debian (et Linux Mint et Ubuntu), la liste est la suivante :
-
-\# apt-get install gcc g++ git cmake intltool xsltproc libgtk-3-dev libxml2-utils libxml2-dev liblensfun-dev librsvg2-dev libsqlite3-dev libcurl4-gnutls-dev libjpeg-dev libtiff5-dev liblcms2-dev libjson-glib-dev libexiv2-dev libpugixml-dev libcolord-dev libcolord-gtk-dev libcups2-dev libgphoto2-dev libsoup2.4-dev libopenexr-dev libwebp-dev libosmgpsmap-1.0-dev libflickcurl-dev libsecret-1-dev libgraphicsmagick1-dev llvm clang liblua5.3-dev
+```bash
+apt-get install gcc g++ git cmake intltool xsltproc libgtk-3-dev libxml2-utils libxml2-dev liblensfun-dev librsvg2-dev libsqlite3-dev libcurl4-gnutls-dev libjpeg-dev libtiff5-dev liblcms2-dev libjson-glib-dev libexiv2-dev libpugixml-dev libcolord-dev libcolord-gtk-dev libcups2-dev libgphoto2-dev libsoup2.4-dev libopenexr-dev libwebp-dev libosmgpsmap-1.0-dev libflickcurl-dev libsecret-1-dev libgraphicsmagick1-dev llvm clang liblua5.3-dev
+```
 
 # Installation de la version master (version 3.1.0 de développement)
 
@@ -92,7 +95,9 @@ $ ./build.sh --prefix /opt/darktable_master/ --build-type Release
 
 Selon votre machine, la compilation devrait durer plus ou moins longtemps, environ une minute. Une fois terminée, elle devrait vous proposer la commande suivante à taper :
 
-\# cmake --build "/home/nicolas/.darktable_master/build" --target install -- -j12
+```bash
+cmake --build "/home/nicolas/.darktable_master/build" --target install -- -j12
+```
 
 Notez que celle-ci se fait _via_ le compte root (sauf si le préfixe d'installation passé en paramètre de build.sh est un préfixe correspondant à un dossier qui ne nécessite pas d'accès root).
 
@@ -214,15 +219,19 @@ Si votre ordinateur a une carte graphique Intel, vous pouvez profiter de OpenCL 
 
 Les commandes à taper pour Fedora sont les suivantes :
 
-\# dnf install dnf-plugins-core
-# dnf copr enable jdanecki/intel-opencl
-# dnf install intel-opencl
+```bash
+dnf install dnf-plugins-core
+dnf copr enable jdanecki/intel-opencl
+dnf install intel-opencl
+```
 
 Et dans le cas d'une distribution Ubuntu :
 
-\# add-apt-repository ppa:intel-opencl/intel-opencl
-# apt-get update
-# apt-get install intel-opencl-icd
+```bash
+add-apt-repository ppa:intel-opencl/intel-opencl
+apt-get update
+apt-get install intel-opencl-icd
+```
 
 Une fois `intel-opencl` installé, il vous suffit de recompiler darktable pour que le support OpenCL soit intégré. Pour l'activer, rendez-vous dans les paramètres de darktable et dans l'onglet Fonctionnement pour cocher la case du support OpenCL.
 
