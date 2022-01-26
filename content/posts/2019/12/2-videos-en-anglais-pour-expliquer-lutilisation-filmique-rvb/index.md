@@ -1,10 +1,12 @@
 ---
 title: "2 vidéos (sous titrée en français) pour expliquer l'utilisation de filmique rvb"
 date: "2019-12-20"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

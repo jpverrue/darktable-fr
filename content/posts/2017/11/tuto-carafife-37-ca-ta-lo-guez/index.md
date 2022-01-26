@@ -1,6 +1,8 @@
 ---
 title: "Tuto Carafife 37: Ca-ta-lo-guez!!!"
 date: "2017-11-13"
+series:
+  - "Tutoriels de carafife"
 categories: 
   - "tutoriels"
 tags: 

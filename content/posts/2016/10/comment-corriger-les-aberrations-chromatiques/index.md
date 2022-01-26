@@ -1,10 +1,12 @@
 ---
 title: "Comment corriger les aberrations chromatiques"
 date: "2016-10-05"
+series:
+  - "Tutoriels de Riley Brandt"
 categories: 
   - "tutoriels"
 tags: 
-  - "riley"
+  - "Riley Brandt"
   - "tutoriel"
 ---
 

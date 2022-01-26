@@ -1,10 +1,12 @@
 ---
 title: "Pas de couleurs? Utilisez les formes et les contrastes"
 date: "2016-10-31"
+series:
+  - "Tutoriels de Frédéric de Thezy"
 categories: 
   - "tutoriels"
 tags: 
-  - "frederic"
+  - "Frédéric de Thezy"
   - "tutoriel"
 ---
 

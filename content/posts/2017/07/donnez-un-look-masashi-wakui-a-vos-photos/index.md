@@ -1,10 +1,12 @@
 ---
 title: "Donnez un look Masashi Wakui à vos photos"
 date: "2017-07-09"
+series:
+  - "Tutoriels de MyGimpTutorialChannel"
 categories: 
   - "tutoriels"
 tags: 
-  - "mygimptutorialchannel"
+  - "MyGimpTutorialChannel"
   - "tutoriel"
 ---
 

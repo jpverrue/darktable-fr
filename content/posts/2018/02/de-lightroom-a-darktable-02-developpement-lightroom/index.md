@@ -1,10 +1,12 @@
 ---
 title: "De Lightroom à darktable 02 – Développement lightroom"
 date: "2018-02-15"
+series:
+  - "Tutoriels de OuiOuiPhoto"
 categories: 
   - "tutoriels"
 tags: 
-  - "ouiouiphoto"
+  - "OuiOuiPhoto"
   - "tutoriel"
 ---
 

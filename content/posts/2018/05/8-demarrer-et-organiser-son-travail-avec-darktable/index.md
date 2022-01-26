@@ -1,10 +1,12 @@
 ---
 title: "8 - Démarrer et organiser son travail avec darktable"
 date: "2018-05-10"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

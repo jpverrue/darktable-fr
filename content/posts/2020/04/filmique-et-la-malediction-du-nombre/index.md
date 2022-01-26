@@ -1,8 +1,13 @@
 ---
 title: "Filmique et la malédiction du nombre"
 date: "2020-04-30"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
+tags:
+  - "Aurélien Pierre"
+  - "tutoriel"
 images:
   - "images/mappage-filmique.png"
 ---

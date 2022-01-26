@@ -3,8 +3,6 @@ title: "Tuto Carafife 10: Le virage partiel"
 date: "2016-02-21"
 series:
   - "Tutoriels de carafife"
-series:
-  - "Tutoriels de carafife"
 categories: 
   - "tutoriels"
 tags: 

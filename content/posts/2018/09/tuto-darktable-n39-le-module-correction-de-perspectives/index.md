@@ -1,6 +1,8 @@
 ---
 title: "Tuto Darktable N°39: Le module correction de perspectives"
 date: "2018-09-02"
+series:
+  - "Tutoriels de carafife"
 categories: 
   - "tutoriels"
 tags: 

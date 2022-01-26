@@ -1,10 +1,12 @@
 ---
 title: "darktable 3.5 git nouvel affichage d'accès rapide"
 date: "2021-02-21"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "luc-viatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

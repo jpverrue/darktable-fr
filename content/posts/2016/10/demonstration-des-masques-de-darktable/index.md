@@ -1,10 +1,12 @@
 ---
 title: "Démonstration des Masques de darktable"
 date: "2016-10-14"
+series:
+  - "Tutoriels de Riley Brandt"
 categories: 
   - "tutoriels"
 tags: 
-  - "riley"
+  - "Riley Brandt"
   - "tutoriel"
 ---
 

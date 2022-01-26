@@ -1,10 +1,12 @@
 ---
 title: "Récupérer la plage dynamique sous darktable"
 date: "2018-08-26"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "style"
   - "tutoriel"
 ---

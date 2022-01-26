@@ -1,10 +1,12 @@
 ---
 title: "dartktable Tuto n°2 : réaliser un masque de fusion paramétrique"
 date: "2018-04-19"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

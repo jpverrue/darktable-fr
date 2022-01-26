@@ -1,10 +1,12 @@
 ---
 title: "darktable - 06 - chambre noire - pré réglage"
 date: "2018-04-06"
+series:
+  - "Tutoriels de Laurent Tuto"
 categories: 
   - "tutoriels"
 tags: 
-  - "laurenttuto"
+  - "Laurent Tuto"
   - "tutoriel"
 ---
 

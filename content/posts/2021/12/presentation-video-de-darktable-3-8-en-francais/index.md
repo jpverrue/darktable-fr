@@ -1,11 +1,13 @@
 ---
 title: "Présentation vidéo de darktable 3.8 (en français)"
 date: "2021-12-26"
+series:
+  - "Tutoriels de A dabble in photography"
 categories: 
-  - "actualites"
   - "tutoriels"
 tags: 
-  - "a-dabble-in-photography"
+  - "A dabble in photography"
+  - "tutoriel"
 ---
 
 {{< youtube qu7FaticgWk >}}

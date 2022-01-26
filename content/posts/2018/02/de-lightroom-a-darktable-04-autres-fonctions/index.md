@@ -1,10 +1,12 @@
 ---
 title: "De Lightroom à darktable 04 - Autres fonctions"
 date: "2018-02-17"
+series:
+  - "Tutoriels de OuiOuiPhoto"
 categories: 
   - "tutoriels"
 tags: 
-  - "ouiouiphoto"
+  - "OuiOuiPhoto"
   - "tutoriel"
 ---
 

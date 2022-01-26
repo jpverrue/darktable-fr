@@ -1,6 +1,8 @@
 ---
 title: "Tuto Carafife 38: Supprimez les yeux rouges!"
 date: "2017-12-02"
+series:
+  - "Tutoriels de carafife"
 categories: 
   - "tutoriels"
 tags: 

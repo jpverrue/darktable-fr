@@ -1,10 +1,12 @@
 ---
 title: "Les réglages de darktable"
 date: "2016-03-16"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

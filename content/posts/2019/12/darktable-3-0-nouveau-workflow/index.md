@@ -1,10 +1,12 @@
 ---
 title: "darktable 3.0 nouveau workflow"
 date: "2019-12-30"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "luc-viatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

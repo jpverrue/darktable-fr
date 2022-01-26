@@ -1,8 +1,13 @@
 ---
 title: "darktable 3.6 : la poésie de la couleur avec balance couleur RGB"
 date: "2021-04-21"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
+tags:
+  - "tutoriel"
+  - "Aurélien Pierre"
 ---
 
 {{< youtube qRLH5hMschs >}}

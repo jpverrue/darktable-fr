@@ -1,10 +1,12 @@
 ---
 title: "Module réduction de bruit bilatéral"
 date: "2018-01-08"
+series:
+  - "Tutoriels de Rawfiner"
 categories: 
   - "tutoriels"
 tags: 
-  - "rawfiner"
+  - "Rawfiner"
   - "tutoriel"
 ---
 

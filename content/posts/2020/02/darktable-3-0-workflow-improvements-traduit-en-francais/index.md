@@ -1,10 +1,12 @@
 ---
 title: "darktable 3.0 : workflow improvements traduit en français"
 date: "2020-02-17"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

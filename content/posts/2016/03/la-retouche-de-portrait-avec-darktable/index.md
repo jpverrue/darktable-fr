@@ -1,10 +1,12 @@
 ---
 title: "La retouche de portrait avec darktable"
 date: "2016-03-21"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

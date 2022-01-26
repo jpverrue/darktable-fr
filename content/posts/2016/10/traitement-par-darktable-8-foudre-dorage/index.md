@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 8: Foudre d'Orage"
 date: "2016-10-15"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

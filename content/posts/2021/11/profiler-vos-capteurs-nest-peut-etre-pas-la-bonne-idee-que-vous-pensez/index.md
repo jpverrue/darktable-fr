@@ -1,8 +1,13 @@
 ---
 title: "Profiler vos capteurs n'est peut-être pas la bonne idée que vous pensez"
 date: "2021-11-15"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
+tags:
+  - "tutoriel"
+  - "Aurélien Pierre"
 ---
 
 Profiler un capteur (souvent improprement appelé « calibrer », mais soyons exacts) consiste à prendre en photo une mire d'étalonnage puis à établir, au moyen d'un logiciel de gestion des couleurs (principalement ArgyllCMS), une correction colorimétrique qui permet de compenser sa déviation.

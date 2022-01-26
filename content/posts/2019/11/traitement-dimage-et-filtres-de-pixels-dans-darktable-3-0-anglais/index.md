@@ -1,10 +1,12 @@
 ---
 title: "Traitement d'image et filtres de pixels dans darktable 3.0 (anglais)"
 date: "2019-11-24"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

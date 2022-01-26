@@ -4,11 +4,11 @@ date: "2018-10-22"
 categories: 
   - "non-classe"
 tags: 
-  - "audio2u"
-  - "tutoriel-anglais"
+  - "Bruce Williams"
+  - "tutoriel"
 ---
 
-[audio2u](https://www.youtube.com/channel/UCkqe4BYsllmcxo2dsF-rFQw) montre  une l'efficacité du module de reconstruction des hautes lumières : 
+[Bruce Williams](https://www.youtube.com/channel/UCkqe4BYsllmcxo2dsF-rFQw) montre  une l'efficacité du module de reconstruction des hautes lumières : 
 
 {{< youtube aTOQ981oI9c >}}
 

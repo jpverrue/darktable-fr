@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 22: Photo de l'année 2016"
 date: "2017-01-07"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

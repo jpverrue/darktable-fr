@@ -1,10 +1,12 @@
 ---
 title: "Comprendre la différence entre netteté et contraste local"
 date: "2017-11-24"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

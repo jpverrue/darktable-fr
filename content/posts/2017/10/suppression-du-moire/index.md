@@ -1,10 +1,12 @@
 ---
 title: "Suppression du moiré"
 date: "2017-10-04"
+series:
+  - "Tutoriels de Jean-Pierre Verrue"
 categories: 
   - "tutoriels"
 tags: 
-  - "jpv"
+  - "Jean-Pierre Verrue"
   - "tutoriel"
 ---
 

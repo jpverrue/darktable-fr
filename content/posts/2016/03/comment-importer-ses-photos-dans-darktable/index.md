@@ -1,6 +1,8 @@
 ---
 title: "Comment importer ses photos dans darktable"
 date: "2016-03-24"
+series:
+  - "Tutoriels de Riley Brandt"
 categories: 
   - "tutoriels"
 tags: 

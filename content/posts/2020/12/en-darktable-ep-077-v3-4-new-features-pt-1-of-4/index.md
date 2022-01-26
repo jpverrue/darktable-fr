@@ -1,10 +1,12 @@
 ---
 title: "[EN] darktable ep 077 - v3.4 New Features (pt 1 of 4)"
 date: "2020-12-29"
+series:
+  - "Tutoriels de Bruce Williams"
 categories: 
   - "tutoriels"
 tags: 
-  - "bruce-williams-photography"
+  - "Bruce Williams"
   - "tutoriel"
 ---
 

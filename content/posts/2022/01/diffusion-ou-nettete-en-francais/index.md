@@ -1,10 +1,12 @@
 ---
 title: "diffusion ou netteté (en français)"
 date: "2022-01-15"
+series:
+  - "Tutoriels de A dabble in photography"
 categories: 
   - "tutoriels"
 tags: 
-  - "a-dabble-in-photography"
+  - "A dabble in photography"
   - "tutoriel"
 ---
 

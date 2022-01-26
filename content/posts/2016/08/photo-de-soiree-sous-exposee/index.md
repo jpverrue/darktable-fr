@@ -1,6 +1,8 @@
 ---
 title: "Photo de soirée sous-exposée"
 date: "2016-08-24"
+series:
+  - "Tutoriels de Chez Jau"
 categories: 
   - "tutoriels"
 tags: 

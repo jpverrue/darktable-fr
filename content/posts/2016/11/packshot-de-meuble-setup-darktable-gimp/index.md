@@ -1,10 +1,12 @@
 ---
 title: "Packshot de meuble: Setup, darktable & Gimp"
 date: "2016-11-30"
+series:
+  - "Tutoriels de Frédéric de Thezy"
 categories: 
   - "tutoriels"
 tags: 
-  - "frederic"
+  - "Frédéric de Thezy"
   - "tutoriel"
 ---
 

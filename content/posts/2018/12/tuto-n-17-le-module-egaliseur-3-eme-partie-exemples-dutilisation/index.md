@@ -1,10 +1,12 @@
 ---
 title: "Tuto n° 17 : Le module EGALISEUR. 3 ème partie : exemples d'utilisation"
 date: "2018-12-23"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

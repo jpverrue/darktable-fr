@@ -1,13 +1,13 @@
 ---
 title: "darktable 3.8 est sortie"
 date: "2021-12-26"
+featured: true
 pinned: true
 categories: 
   - "actualites"
   - "featured"
 tags: 
   - "darktable"
-  - "featured"
   - "jpg"
   - "note-de-version"
 images:

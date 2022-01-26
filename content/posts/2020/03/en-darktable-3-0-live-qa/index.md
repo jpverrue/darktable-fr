@@ -1,10 +1,12 @@
 ---
 title: "[EN] darktable 3.0 live Q&A"
 date: "2020-03-19"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 23: Stacking manuel"
 date: "2017-01-13"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

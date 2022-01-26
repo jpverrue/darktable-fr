@@ -1,6 +1,8 @@
 ---
 title: "Éditer des photos glamour avec darktable"
 date: "2016-05-12"
+series:
+  - "Tutoriels de Shane Milton"
 categories: 
   - "tutoriels"
 tags: 

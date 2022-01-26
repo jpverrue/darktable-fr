@@ -1,10 +1,13 @@
 ---
 title: "Récupérer la plage dynamique, prise 2"
 date: "2018-09-25"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
   - "tutoriel"
+  - "Aurélien Pierre"
 ---
 
 De l'eau a coulé depuis mon précédent [article sur la plage dynamique](http://darktable.fr/2018/08/recuperer-la-plage-dynamique-sous-darktable/).

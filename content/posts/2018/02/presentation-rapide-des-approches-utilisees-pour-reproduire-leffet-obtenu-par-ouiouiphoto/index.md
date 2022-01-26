@@ -1,10 +1,12 @@
 ---
 title: "Présentation rapide des approches utilisées pour reproduire l'effet obtenu par ouiouiphoto"
 date: "2018-02-28"
+series:
+  - "Tutoriels de Rawfiner"
 categories: 
   - "tutoriels"
 tags: 
-  - "rawfiner"
+  - "Rawfiner"
   - "tutoriel"
 ---
 

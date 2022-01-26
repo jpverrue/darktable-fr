@@ -1,10 +1,12 @@
 ---
 title: "Lightroom darktable Express 01"
 date: "2018-03-19"
+series:
+  - "Tutoriels de OuiOuiPhoto"
 categories: 
   - "tutoriels"
 tags: 
-  - "ouiouiphoto"
+  - "OuiOuiPhoto"
   - "tutoriel"
 ---
 

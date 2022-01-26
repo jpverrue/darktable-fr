@@ -1,10 +1,12 @@
 ---
 title: "De Lightroom à darktable 01 – Importation et tri"
 date: "2018-02-01"
+series:
+  - "Tutoriels de OuiOuiPhoto"
 categories: 
   - "tutoriels"
 tags: 
-  - "ouiouiphoto"
+  - "OuiOuiPhoto"
   - "tutoriel"
 ---
 

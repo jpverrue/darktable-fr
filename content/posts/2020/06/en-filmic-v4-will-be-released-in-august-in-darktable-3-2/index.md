@@ -1,10 +1,12 @@
 ---
 title: "[EN] filmic v4 will be released in August in darktable 3.2 !"
 date: "2020-06-17"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

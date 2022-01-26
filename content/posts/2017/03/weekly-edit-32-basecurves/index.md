@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 33: Basecurves"
 date: "2017-03-28"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

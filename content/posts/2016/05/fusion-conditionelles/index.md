@@ -1,13 +1,15 @@
 ---
-title: "Fusion conditionelles"
+title: "Fusion conditionnelle"
 date: "2016-05-05"
+series:
+  - "Tutoriels de Jean-Pierre Verrue"
 categories: 
   - "tutoriels"
 tags: 
-  - "jpv"
+  - "Jean-Pierre Verrue"
   - "tutoriel"
 ---
 
 Comment faire des corrections locales avec Darktable
 
-https://vimeo.com/61809490
+{{< vimeo 61809490 >}}

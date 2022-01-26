@@ -1,10 +1,12 @@
 ---
 title: "darktable - 07 - chambre noire - exposition"
 date: "2018-04-17"
+series:
+  - "Tutoriels de Laurent Tuto"
 categories: 
   - "tutoriels"
 tags: 
-  - "laurenttuto"
+  - "Laurent Tuto"
   - "tutoriel"
 ---
 

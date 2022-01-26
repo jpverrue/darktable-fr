@@ -1,6 +1,8 @@
 ---
 title: "Tuto Carafife 34: Le module Liquéfier"
 date: "2017-01-02"
+series:
+  - "Tutoriels de carafife"
 categories: 
   - "tutoriels"
 tags: 

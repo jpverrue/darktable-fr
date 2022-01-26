@@ -1,6 +1,8 @@
 ---
 title: "Traitement Portrait (retouche peau)"
 date: "2017-01-16"
+series:
+  - "Tutoriels de MyGimpTutorialChannel"
 categories: 
   - "tutoriels"
 tags: 

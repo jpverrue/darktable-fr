@@ -4,7 +4,7 @@ date: "2018-01-25"
 categories: 
   - "actualites"
 tags: 
-  - "ouiouiphoto"
+  - "OuiOuiPhoto"
   - "tutoriel"
 ---
 

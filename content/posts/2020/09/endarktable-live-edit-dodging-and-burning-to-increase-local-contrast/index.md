@@ -1,10 +1,12 @@
 ---
 title: "[EN]darktable live edit : dodging and burning to increase local contrast"
 date: "2020-09-18"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

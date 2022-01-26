@@ -4,7 +4,7 @@ date: "2018-06-21"
 categories: 
   - "actualites"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

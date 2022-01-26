@@ -1,10 +1,12 @@
 ---
 title: "Réduction de bruit avec darktable"
 date: "2017-12-01"
+series:
+  - "Tutoriels de Rawfiner"
 categories: 
   - "tutoriels"
 tags: 
-  - "rawfiner"
+  - "Rawfiner"
   - "tutoriel"
 ---
 

@@ -1,10 +1,13 @@
 ---
 title: "Prise en main de darktable 3.2.1 pour débutants (en direct)"
 date: "2020-09-15"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
+  - "tutoriel"
 ---
 
 {{< youtube lTouVMvqN4Y >}}

@@ -1,6 +1,8 @@
 ---
 title: "Tuto Carafife 35: Le module Table de correspondance des couleurs et notions de colorimétrie"
 date: "2017-08-20"
+series:
+  - "Tutoriels de carafife"
 categories: 
   - "tutoriels"
 tags: 

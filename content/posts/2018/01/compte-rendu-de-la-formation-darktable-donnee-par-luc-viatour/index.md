@@ -5,10 +5,10 @@ categories:
   - "actualites"
 tags: 
   - "andy-costanza"
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "feedback"
   - "formation"
-  - "luc-viatour"
+  - "Luc Viatour"
 images:
   - "images/DSF6159.jpg"
 ---

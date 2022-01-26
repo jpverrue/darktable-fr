@@ -1,10 +1,12 @@
 ---
 title: "Tuto n° 18 : le module RETOUCHE. 1ère partie : étude des outils de retouche"
 date: "2019-01-13"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

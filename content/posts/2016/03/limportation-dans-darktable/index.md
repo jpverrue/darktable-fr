@@ -1,6 +1,8 @@
 ---
 title: "L'importation dans darktable"
 date: "2016-03-07"
+series:
+- "Tutoriels de Pixels Libres"
 categories: 
   - "tutoriels"
 tags: 

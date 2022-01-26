@@ -1,10 +1,12 @@
 ---
 title: "darktable tuto N°6 : Masques dessinés et paramétriques en mode inclusif"
 date: "2018-05-11"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

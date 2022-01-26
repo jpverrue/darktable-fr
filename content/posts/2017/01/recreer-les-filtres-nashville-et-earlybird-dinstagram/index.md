@@ -1,6 +1,8 @@
 ---
 title: "Recréer les filtres Nashville et Earlybird d'Instagram"
 date: "2017-01-15"
+series:
+  - "Tutoriels de MyGimpTutorialChannel"
 categories: 
   - "tutoriels"
 tags: 

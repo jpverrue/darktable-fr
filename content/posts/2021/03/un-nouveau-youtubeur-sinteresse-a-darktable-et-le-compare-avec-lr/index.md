@@ -1,8 +1,13 @@
 ---
 title: "Un nouveau Youtubeur s'intéresse à darktable et le compare avec LR"
 date: "2021-03-11"
+series:
+  - "Tutoriels de Carte Postale de"
 categories: 
   - "tutoriels"
+tags:
+  - "Carte Postale de"
+  - "tutoriel"
 ---
 
 {{< youtube OSkhoPeq8zo >}}

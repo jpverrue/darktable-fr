@@ -1,6 +1,8 @@
 ---
 title: "Zones top sombres ou trop lumineuses"
 date: "2016-09-22"
+series:
+  - "Tutoriels de Chez Jau"
 categories: 
   - "tutoriels"
 tags: 

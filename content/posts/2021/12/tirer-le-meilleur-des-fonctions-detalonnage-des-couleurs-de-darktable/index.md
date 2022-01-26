@@ -1,8 +1,13 @@
 ---
 title: "Tirer le meilleur des fonctions d'étalonnage des couleurs de darktable"
 date: "2021-12-14"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
+tags:
+  - "tutoriel"
+  - "Aurélien Pierre"
 ---
 
 {{< youtube k-ZBFdWuh3o >}}

@@ -1,6 +1,8 @@
 ---
 title: "Classer et Renommer ses photos sous Linux"
 date: "2016-03-09"
+series:
+  - "Tutoriels de Riley Brandt"
 categories: 
   - "tutoriels"
 tags: 

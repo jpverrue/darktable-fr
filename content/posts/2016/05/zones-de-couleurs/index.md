@@ -1,10 +1,12 @@
 ---
 title: "Zones de couleurs"
 date: "2016-05-03"
+series:
+  - "Tutoriels de Jean-Pierre Verrue"
 categories: 
   - "tutoriels"
 tags: 
-  - "jpv"
+  - "Jean-Pierre Verrue"
   - "tutoriel"
 ---
 

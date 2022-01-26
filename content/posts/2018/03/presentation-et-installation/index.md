@@ -1,10 +1,12 @@
 ---
 title: "Présentation et Installation"
 date: "2018-03-18"
+series:
+  - "Tutoriels de Laurent Tuto"
 categories: 
   - "tutoriels"
 tags: 
-  - "laurenttuto"
+  - "Laurent Tuto"
   - "tutoriel"
 ---
 

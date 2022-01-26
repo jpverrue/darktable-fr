@@ -1,6 +1,8 @@
 ---
 title: "Tuto darktable N°41: Les modules Retouche et Corrections de taches"
 date: "2019-05-06"
+series:
+  - "Tutoriels de carafife"
 categories: 
   - "tutoriels"
 tags: 

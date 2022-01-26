@@ -1,6 +1,8 @@
 ---
 title: "Les tutos Carafife sur Peertube !"
 date: "2018-04-01"
+series:
+  - "Tutoriels de carafife"
 categories: 
   - "actualites"
   - "tutoriels"

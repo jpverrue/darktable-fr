@@ -1,6 +1,8 @@
 ---
 title: "Comment travailler des photos de la Lune avec darktable"
 date: "2016-11-29"
+series:
+  - "Tutoriels de Leander Hutton"
 categories: 
   - "tutoriels"
 tags: 

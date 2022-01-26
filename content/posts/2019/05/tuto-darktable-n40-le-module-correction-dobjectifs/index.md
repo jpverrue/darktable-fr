@@ -1,6 +1,8 @@
 ---
 title: "Tuto darktable N°40 : Le module correction d'objectifs"
 date: "2019-05-02"
+series:
+  - "Tutoriels de carafife"
 categories: 
   - "tutoriels"
 tags: 

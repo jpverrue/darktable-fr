@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 26: Tir chanceux"
 date: "2017-02-10"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

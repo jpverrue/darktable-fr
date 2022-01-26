@@ -1,8 +1,13 @@
 ---
 title: "Mythes et légendes de la photo brute"
 date: "2019-02-08"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
+tags:
+  - "Aurélien Pierre"
+  - "tutoriel"
 ---
 
 La photo brute (RAW), c'est un enregistrement direct et sans traitement de ce que le capteur de l'appareil photo a « vu ». Il y a beaucoup trop de croyances qui circulent sur les propriétés supposées de cette « image latente », je vous propose de casser du mythe à la pioche.

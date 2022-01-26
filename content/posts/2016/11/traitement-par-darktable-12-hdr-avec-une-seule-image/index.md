@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 12: HDR avec une seule image"
 date: "2016-11-13"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

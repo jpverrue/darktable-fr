@@ -1,10 +1,12 @@
 ---
 title: "darktable Tuto n° 16 2ème partie : Corriger les tonalités avec le module Zones dans darktable."
 date: "2018-12-06"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

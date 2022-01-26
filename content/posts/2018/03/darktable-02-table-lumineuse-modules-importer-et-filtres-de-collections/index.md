@@ -1,10 +1,12 @@
 ---
 title: "darktable 2 : table lumineuse - module de gauche"
 date: "2018-03-20"
+series:
+  - "Tutoriels de Laurent Tuto"
 categories: 
   - "tutoriels"
 tags: 
-  - "laurenttuto"
+  - "Laurent Tuto"
   - "tutoriel"
 ---
 

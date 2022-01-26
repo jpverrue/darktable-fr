@@ -1,12 +1,12 @@
 ---
 title: "darktable TUTO N° 19 4ème partie : FILMIQUE à X% ou 18% ?..."
 date: "2020-05-03"
-categories: 
-  - "non-classe"
-  - "styles"
+series:
+  - "Tutoriels de JC Tutos"
+categories:
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

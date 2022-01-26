@@ -1,10 +1,12 @@
 ---
 title: "Dodge and Burn : éclaircir et assombrir : comment utiliser l'égalisateur de ton expliqué en français"
 date: "2020-02-15"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: "Filtres de couleurs et Masques"
 date: "2016-03-05"
+series:
+  - "Tutoriels de Chez Jau"
 categories: 
   - "tutoriels"
 tags: 

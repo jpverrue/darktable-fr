@@ -1,10 +1,12 @@
 ---
 title: "De Lightroom à darktable 05 - Migration et conclusion"
 date: "2018-02-19"
+series:
+  - "Tutoriels de OuiOuiPhoto"
 categories: 
   - "tutoriels"
 tags: 
-  - "ouiouiphoto"
+  - "OuiOuiPhoto"
   - "tutoriel"
 ---
 

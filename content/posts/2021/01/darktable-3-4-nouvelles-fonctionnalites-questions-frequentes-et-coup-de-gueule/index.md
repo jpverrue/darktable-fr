@@ -1,8 +1,13 @@
 ---
 title: "darktable 3.4 : nouvelles fonctionnalités, questions fréquentes et coup de gueule"
 date: "2021-01-23"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
+tags:
+  - "Aurélien Pierre"
+  - "tutoriel"
 ---
 
 {{< youtube vVoIx3eMxwA >}}

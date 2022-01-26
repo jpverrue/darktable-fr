@@ -1,10 +1,12 @@
 ---
 title: "[EN] Editing moments with darktable. Episode 36: contrast with exposure"
 date: "2020-12-07"
+series:
+  - "Tutoriels de Boris Hajdukovic"
 categories: 
   - "tutoriels"
 tags: 
-  - "boris-hajdukovic"
+  - "Boris Hajdukovic"
   - "tutoriel"
 ---
 

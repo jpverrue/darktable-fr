@@ -1,10 +1,12 @@
 ---
 title: "Retoucher une photo de paysage brumeux avec darktable"
 date: "2016-03-28"
+series:
+  - "Tutoriels de Frederic"
 categories: 
   - "tutoriels"
 tags: 
-  - "frederic"
+  - "Frédéric de Thezy"
   - "tutoriel"
 ---
 

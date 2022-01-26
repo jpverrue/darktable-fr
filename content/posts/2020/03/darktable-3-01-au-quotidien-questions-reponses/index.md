@@ -1,10 +1,12 @@
 ---
 title: "darktable 3.0.1 au quotidien questions réponses"
 date: "2020-03-14"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "luc-viatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

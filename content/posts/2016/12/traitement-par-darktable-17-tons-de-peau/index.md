@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 17: Tons de peau"
 date: "2016-12-06"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

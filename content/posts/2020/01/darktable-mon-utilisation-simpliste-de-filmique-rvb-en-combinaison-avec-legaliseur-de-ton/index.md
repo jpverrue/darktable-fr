@@ -1,10 +1,12 @@
 ---
 title: "darktable mon utilisation simpliste de Filmique RVB en combinaison avec l'égaliseur de ton"
 date: "2020-01-22"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "luc-viatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

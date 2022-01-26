@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 18: Script bash pour un timelapse"
 date: "2016-12-09"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

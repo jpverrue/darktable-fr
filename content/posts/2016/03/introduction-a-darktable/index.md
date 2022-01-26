@@ -1,6 +1,8 @@
 ---
 title: "Introduction à darktable"
 date: "2016-03-11"
+series:
+  - "Tutoriels de Riley Brandt"
 categories: 
   - "tutoriels"
 tags: 

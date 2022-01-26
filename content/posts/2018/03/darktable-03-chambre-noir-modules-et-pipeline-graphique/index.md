@@ -1,10 +1,12 @@
 ---
 title: "darktable - 03 - chambre noire - modules et pipeline graphique"
 date: "2018-03-21"
+series:
+  - "Tutoriels de Laurent Tuto"
 categories: 
   - "tutoriels"
 tags: 
-  - "laurenttuto"
+  - "Laurent Tuto"
   - "tutoriel"
 ---
 

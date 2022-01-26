@@ -1,10 +1,12 @@
 ---
 title: "Luc Viatour montre comment configurer avec la 3.8.0 (français)"
 date: "2022-01-12"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "luc-viatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

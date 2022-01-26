@@ -1,10 +1,12 @@
 ---
 title: "[EN]darktable ep 082 - Color Calibration module (pt 1 of 2 - channel mixer)"
 date: "2021-01-21"
+series:
+  - "Tutoriels de Bruce Williams"
 categories: 
   - "tutoriels"
 tags: 
-  - "bruce-williams-photography"
+  - "Bruce Williams"
   - "tutoriel"
 ---
 

@@ -1,8 +1,13 @@
 ---
 title: "Qu'est-ce qu'une photo bien exposée ?"
 date: "2018-09-29"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
+tags:
+  - "Aurélien Pierre"
+  - "tutoriel"
 ---
 
 La question a été posée aujourd'hui [sur le forum](https://darktable.fr/forum/showthread.php?tid=2864&pid=25720#pid25720), et elle est légitime, car on endend tout et son contraire. Et la réponse n'est pas simple.

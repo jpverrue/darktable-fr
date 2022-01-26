@@ -1,10 +1,12 @@
 ---
 title: "Filmic RGB: remap any dynamic range in darktable 3.0 (anglais)"
 date: "2019-12-01"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

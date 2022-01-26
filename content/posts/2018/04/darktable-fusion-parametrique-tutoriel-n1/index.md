@@ -1,10 +1,12 @@
 ---
 title: "darktable : fusion paramétrique. Tutoriel n°1"
 date: "2018-04-16"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

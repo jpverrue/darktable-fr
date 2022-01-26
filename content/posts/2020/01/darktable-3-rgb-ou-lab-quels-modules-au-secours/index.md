@@ -1,10 +1,12 @@
 ---
 title: "darktable 3 : RGB ou Lab ? Quels modules ? Au secours !"
 date: "2020-01-08"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "couleur"
   - "hdr"
   - "tutoriel"

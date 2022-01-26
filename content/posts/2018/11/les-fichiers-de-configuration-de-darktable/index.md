@@ -1,12 +1,15 @@
 ---
 title: "Les fichiers de configuration de darktable"
 date: "2018-11-30"
+series:
+  - "Tutoriels de Jean-Pierre Verrue"
 categories: 
   - "actualites"
   - "tutoriels"
 tags: 
   - "fichiers-de-configuration"
-  - "jpv"
+  - "Jean-Pierre Verrue"
+  - "tutoriel"
 ---
 
 Bonjour à tous,

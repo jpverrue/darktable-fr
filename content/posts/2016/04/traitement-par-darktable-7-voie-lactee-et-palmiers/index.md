@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 7: Voie lactée et Palmiers"
 date: "2016-04-21"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

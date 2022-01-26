@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 24: Penser différemment"
 date: "2017-01-21"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

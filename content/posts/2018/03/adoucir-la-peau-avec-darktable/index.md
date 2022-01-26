@@ -1,10 +1,12 @@
 ---
 title: "Adoucir la peau avec darktable"
 date: "2018-03-02"
+series:
+  - "Tutoriels de Julien Pons"
 categories: 
   - "tutoriels"
 tags: 
-  - "julienpons"
+  - "Julien Pons"
   - "tutoriel"
 ---
 

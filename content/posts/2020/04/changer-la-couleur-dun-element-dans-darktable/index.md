@@ -1,10 +1,12 @@
 ---
 title: "Changer la couleur d'un élément dans darktable"
 date: "2020-04-01"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "luc-viatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

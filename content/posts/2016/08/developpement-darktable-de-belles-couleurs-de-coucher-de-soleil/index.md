@@ -1,10 +1,12 @@
 ---
 title: "Développement Darktable: De belles couleurs de coucher de soleil"
 date: "2016-08-31"
+series:
+  - "Tutoriels de Frédéric de Thezy"
 categories: 
   - "tutoriels"
 tags: 
-  - "frederic"
+  - "Frédéric de Thezy"
   - "tutoriel"
 ---
 

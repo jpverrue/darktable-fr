@@ -1,10 +1,12 @@
 ---
 title: "La retouche de photo de rue avec darktable"
 date: "2016-03-26"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

@@ -4,7 +4,7 @@ date: "2018-06-13"
 categories: 
   - "styles"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

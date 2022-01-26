@@ -1,10 +1,12 @@
 ---
 title: "darktable Tuto n°4 : la fonction trapézoïdale de sortie."
 date: "2018-04-22"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

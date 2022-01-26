@@ -1,10 +1,12 @@
 ---
 title: "Comment corriger les artefacts de couleur"
 date: "2016-09-28"
+series:
+  - "Tutoriels de Riley Brandt"
 categories: 
   - "tutoriels"
 tags: 
-  - "riley"
+  - "Riley Brandt"
   - "tutoriel"
 ---
 

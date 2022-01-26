@@ -1,10 +1,11 @@
 ---
 title: "La Géolocalisation dans Darktable"
 date: "2016-03-08"
+series:
+  - "Tutoriels de Pixels Libres"
 categories: 
   - "tutoriels"
-tags: 
-  - "tu"
+tags:
   - "tutoriel"
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: "darktable Tuto n°19 : Le module FILMIQUE 2éme partie. Une simulation avec Gimp"
 date: "2020-04-16"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

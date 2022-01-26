@@ -1,10 +1,12 @@
 ---
 title: "Comment éditer rapidement une photo avec darktable"
 date: "2016-12-19"
+series:
+  - "Tutoriels de Riley Brandt"
 categories: 
   - "tutoriels"
 tags: 
-  - "riley"
+  - "Riley Brandt"
   - "tutoriel"
 ---
 

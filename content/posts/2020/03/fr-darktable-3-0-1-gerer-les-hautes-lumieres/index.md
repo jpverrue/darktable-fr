@@ -1,10 +1,12 @@
 ---
 title: "[FR] darktable 3.0.1 - gérer les hautes lumières"
 date: "2020-03-21"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: "Comment utiliser le module CLUT ?"
 date: "2016-07-26"
+series:
+  - "Tutoriels de Dutch_Wolf"
 categories: 
   - "tutoriels"
 tags: 

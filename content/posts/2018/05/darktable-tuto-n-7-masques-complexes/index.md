@@ -1,10 +1,12 @@
 ---
 title: "darktable tuto N° 7 : Masques complexes"
 date: "2018-05-12"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

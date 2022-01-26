@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 34: Antelope Canyon"
 date: "2017-04-08"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: "Y a-t-t'il un ordre canonique dans la retouche photo ?"
 date: "2019-01-09"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

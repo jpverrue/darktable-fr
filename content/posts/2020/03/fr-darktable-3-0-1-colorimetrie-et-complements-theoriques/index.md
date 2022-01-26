@@ -1,10 +1,12 @@
 ---
 title: "[FR] darktable 3.0.1 - colorimétrie et compléments théoriques"
 date: "2020-03-14"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

@@ -1,8 +1,13 @@
 ---
 title: "Réduction des aberrations chromatiques avec darktable 3.6"
 date: "2021-08-07"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
+tags:
+  - "tutoriel"
+  - "Aurélien Pierre"
 ---
 
 {{< youtube LqKzE-ut13o >}}

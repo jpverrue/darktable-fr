@@ -1,10 +1,12 @@
 ---
 title: "darktable Tuto n° 13 : Masques dessinés 6ème partie, l' outil Pinceau"
 date: "2018-06-27"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

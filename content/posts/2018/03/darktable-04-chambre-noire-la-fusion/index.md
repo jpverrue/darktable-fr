@@ -1,10 +1,12 @@
 ---
 title: "darktable - 04 - chambre noire - la fusion"
 date: "2018-03-27"
+series:
+  - "Tutoriels de Laurent Tuto"
 categories: 
   - "tutoriels"
 tags: 
-  - "laurenttuto"
+  - "Laurent Tuto"
   - "tutoriel"
 ---
 

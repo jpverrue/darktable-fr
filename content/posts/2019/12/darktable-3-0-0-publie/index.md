@@ -3,9 +3,9 @@ title: "darktable 3.0.0 publié"
 date: "2019-12-24"
 categories: 
   - "actualites"
+  - "featured"
 tags: 
   - "darktable"
-  - "featured"
   - "news"
 images:
   - "images/darktable3.jpg"

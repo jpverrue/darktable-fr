@@ -1,11 +1,13 @@
 ---
 title: "[EN]darktable ep 068 - Negadoctor"
 date: "2020-09-18"
+series:
+  - "Tutoriels de Bruce Williams"
 categories: 
   - "tutoriels"
 tags: 
-  - "bruce-williams-photography"
-  - "tutoriel-anglais"
+  - "Bruce Williams"
+  - "tutoriel"
 ---
 
 {{< youtube On3BqhXYJM0 >}}

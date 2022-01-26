@@ -3,8 +3,8 @@ title: "darktable 3.2.1 est sorti"
 date: "2020-08-10"
 categories: 
   - "actualites"
-tags: 
   - "featured"
+tags: 
   - "utiliser-darktable"
 images:
   - "images/lighttable-mode6-fr.jpg"

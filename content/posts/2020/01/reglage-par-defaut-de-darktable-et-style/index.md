@@ -1,10 +1,12 @@
 ---
 title: "Réglage par défaut de darktable et style"
 date: "2020-01-17"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "luc-viatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

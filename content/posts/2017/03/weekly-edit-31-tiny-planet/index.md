@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 32: Tiny Planet"
 date: "2017-03-17"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

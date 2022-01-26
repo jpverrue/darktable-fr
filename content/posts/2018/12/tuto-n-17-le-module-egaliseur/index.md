@@ -1,10 +1,12 @@
 ---
 title: "Tuto n° 17 : Le module EGALISEUR"
 date: "2018-12-13"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

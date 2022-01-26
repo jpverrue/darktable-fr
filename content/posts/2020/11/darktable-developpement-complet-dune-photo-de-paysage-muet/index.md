@@ -1,10 +1,12 @@
 ---
 title: "darktable: Développement complet d'une photo de paysage (muet)"
 date: "2020-11-23"
+series:
+  - "Tutoriels de Nicolas Mareau"
 categories: 
   - "tutoriels"
 tags: 
-  - "nicolas-mareau-photographie"
+  - "Nicolas Mareau"
   - "tutoriel"
 ---
 

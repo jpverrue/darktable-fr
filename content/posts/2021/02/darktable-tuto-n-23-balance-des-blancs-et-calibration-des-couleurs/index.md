@@ -1,10 +1,12 @@
 ---
 title: "darktable TUTO N° 23 : Balance des blancs et Calibration des couleurs"
 date: "2021-02-28"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

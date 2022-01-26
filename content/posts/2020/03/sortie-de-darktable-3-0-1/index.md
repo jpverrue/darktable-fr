@@ -3,9 +3,9 @@ title: "Sortie de darktable 3.0.1"
 date: "2020-03-09"
 categories: 
   - "actualites"
+  - "featured"
 tags: 
   - "darktable"
-  - "featured"
   - "news"
 images:
   - "images/darktable3.jpg"

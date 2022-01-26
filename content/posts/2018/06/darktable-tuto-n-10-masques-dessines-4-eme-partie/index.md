@@ -1,10 +1,12 @@
 ---
 title: "darktable Tuto N° 11 : masques dessinés 4 ème partie"
 date: "2018-06-19"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

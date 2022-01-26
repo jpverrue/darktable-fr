@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 21: Story Telling avec Panoramas"
 date: "2016-12-29"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

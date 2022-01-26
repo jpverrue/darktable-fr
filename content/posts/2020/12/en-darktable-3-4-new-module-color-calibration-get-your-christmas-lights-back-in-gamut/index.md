@@ -1,10 +1,13 @@
 ---
 title: "[EN] darktable 3.4 new module : color calibration, get your Christmas lights back in gamut !"
 date: "2020-12-09"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
+  - "tutoriel"
 ---
 
 {{< youtube U4CEN0JPcoM >}}

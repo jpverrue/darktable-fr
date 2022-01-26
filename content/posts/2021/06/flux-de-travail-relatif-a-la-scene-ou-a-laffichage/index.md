@@ -1,8 +1,13 @@
 ---
 title: "Flux de travail relatif à la scène ou à l'affichage ?"
 date: "2021-06-16"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
+tags:
+  - "tutoriel"
+  - "Aurélien Pierre"
 ---
 
 {{< youtube t4pghirdXuk >}}

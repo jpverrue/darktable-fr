@@ -1,10 +1,13 @@
 ---
 title: "Weekly Edit 16: Superlune avec darktable"
 date: "2016-11-25"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
+  - "tutoriel"
 ---
 
 Nouvelle vidéo d'Harry Durgin, cette fois un HDR de la superlune qui a eu lieu il y a peu de temps. Bon visionnage !

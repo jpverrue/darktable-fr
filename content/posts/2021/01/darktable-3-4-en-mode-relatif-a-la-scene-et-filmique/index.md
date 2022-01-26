@@ -1,10 +1,12 @@
 ---
 title: "darktable 3.4 en mode relatif à la scène et filmique"
 date: "2021-01-03"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "luc-viatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

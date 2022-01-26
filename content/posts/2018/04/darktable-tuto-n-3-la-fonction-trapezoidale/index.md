@@ -1,10 +1,12 @@
 ---
 title: "darktable tuto N° 3 : la fonction trapézoïdale."
 date: "2018-04-19"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

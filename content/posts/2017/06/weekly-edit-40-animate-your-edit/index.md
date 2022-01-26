@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 40: Animate your edit"
 date: "2017-06-14"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

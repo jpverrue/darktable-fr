@@ -1,10 +1,12 @@
 ---
 title: "Suppression des taches"
 date: "2018-01-02"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "lviatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

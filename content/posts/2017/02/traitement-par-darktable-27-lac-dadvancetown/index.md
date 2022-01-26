@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 27: Lac d'Advancetown"
 date: "2017-02-11"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

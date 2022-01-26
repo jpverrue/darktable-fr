@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 13: Intégrer un fichier externe"
 date: "2016-11-14"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

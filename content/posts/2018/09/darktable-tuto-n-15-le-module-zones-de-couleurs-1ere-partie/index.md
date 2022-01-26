@@ -1,10 +1,12 @@
 ---
 title: "darktable tuto n° 15 : le module Zones de Couleurs 1ère partie."
 date: "2018-09-19"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

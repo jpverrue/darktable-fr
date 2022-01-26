@@ -1,10 +1,12 @@
 ---
 title: "Adoucir la peau"
 date: "2017-12-30"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "lviatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

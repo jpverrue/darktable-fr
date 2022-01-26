@@ -1,10 +1,12 @@
 ---
 title: "darktable TUTO n° 19 : FILMIQUE 3ème partie : créer des préréglages et les utiliser"
 date: "2020-04-23"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

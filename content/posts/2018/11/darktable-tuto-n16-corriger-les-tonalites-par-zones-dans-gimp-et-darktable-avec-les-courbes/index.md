@@ -1,10 +1,12 @@
 ---
 title: "darktable Tuto N°16 : Corriger les tonalités par zones dans Gimp et darktable avec les courbes."
 date: "2018-11-05"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: "Portrait Crémeux"
 date: "2017-01-22"
+series:
+  - "Tutoriels de MyGimpTutorialChannel"
 categories: 
   - "tutoriels"
 tags: 

@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 31: Plugin darktable Holger pour Enfuse"
 date: "2017-03-11"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

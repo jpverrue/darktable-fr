@@ -1,10 +1,12 @@
 ---
 title: "[EN]darktable 3.4 Photography Edition 1: 'Alluitz'"
 date: "2021-01-05"
+series:
+  - "Tutoriels de Leanndruss Photography"
 categories: 
   - "tutoriels"
 tags: 
-  - "leanndruss-photography"
+  - "Leanndruss Photography"
   - "tutoriel"
 ---
 

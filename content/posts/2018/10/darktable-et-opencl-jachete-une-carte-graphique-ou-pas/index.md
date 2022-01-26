@@ -1,11 +1,15 @@
 ---
 title: "darktable et OpenCL : j'achète une carte graphique ou pas ?"
 date: "2018-10-19"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
   - "opencl"
   - "performance"
+  - "tutoriel"
+  - "Aurélien Pierre"
 ---
 
 Une des questions les plus posées, et à juste titre : est-ce que ça vaut la peine d'investir dans une carte graphique pour utiliser darktable ? Cela fait 1 mois que je programme, teste (et fait crasher) OpenCL, voici donc mes observations, de l'intérieur du code.

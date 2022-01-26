@@ -1,10 +1,12 @@
 ---
 title: "darktable tuto N°5 : Masques dessinés et paramétriques en mode exclusif"
 date: "2018-05-01"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

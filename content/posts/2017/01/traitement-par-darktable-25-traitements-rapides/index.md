@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 25: traitements rapides"
 date: "2017-01-29"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

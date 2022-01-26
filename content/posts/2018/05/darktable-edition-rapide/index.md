@@ -1,11 +1,13 @@
 ---
 title: "darktable : édition rapide"
 date: "2018-05-05"
+series:
+  - "Tutoriels de Shane Milton"
 categories: 
   - "tutoriels"
 tags: 
-  - "shane-milton"
-  - "tutoriel-anglais"
+  - "Shane Milton"
+  - "tutoriel"
 ---
 
 [Shane Milton](https://www.youtube.com/channel/UC9Xdl6CglNwxCZqvwKuE9TA) partage le traitement d'une photo : 

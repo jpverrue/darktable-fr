@@ -1,10 +1,12 @@
 ---
 title: "Suivre les tutoriels Lightroom avec darktable"
 date: "2016-04-17"
+series:
+  - "Tutoriels de Frédéric de Thezy"
 categories: 
   - "tutoriels"
 tags: 
-  - "frederic"
+  - "Frédéric de Thezy"
   - "tutoriel"
 ---
 

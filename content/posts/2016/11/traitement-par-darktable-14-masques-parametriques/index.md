@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 14: Masques paramétriques"
 date: "2016-11-15"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

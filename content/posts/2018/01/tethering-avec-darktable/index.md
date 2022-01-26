@@ -1,12 +1,13 @@
 ---
 title: "Tethering avec darktable"
 date: "2018-01-16"
+series:
+  - "Tutoriels de Keifer Hunniford"
 categories: 
   - "tutoriels"
 tags: 
-  - "blur-bz"
-  - "darktable"
-  - "keith-hunniford"
+  - "tutoriel"
+  - "Keifer Hunniford"
   - "tethering"
 ---
 

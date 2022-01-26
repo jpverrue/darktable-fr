@@ -1,8 +1,13 @@
 ---
 title: "Comment l'informatique change la photographie"
 date: "2019-06-28"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
+tags:
+  - "Aurélien Pierre"
+  - "tutoriel"
 ---
 
 [Gérard Berry](https://fr.wikipedia.org/wiki/G%C3%A9rard_Berry) est chercheur en informatique fondamentale et professeur au Collège de France. Il est notamment connu pour avoir inventé un langage de programmation permettant de prouver formellement le bon déroulement d'un programme. Il est aussi un excellent photographe de rue et un très bon vulgarisateur, et c'est ce qui nous intéresse ici.

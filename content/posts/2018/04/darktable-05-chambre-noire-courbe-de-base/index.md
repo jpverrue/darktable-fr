@@ -1,10 +1,12 @@
 ---
 title: "darktable - 05 - chambre noire - courbe de base"
 date: "2018-04-03"
+series:
+  - "Tutoriels de Laurent Tuto"
 categories: 
   - "tutoriels"
 tags: 
-  - "laurenttuto"
+  - "Laurent Tuto"
   - "tutoriel"
 ---
 

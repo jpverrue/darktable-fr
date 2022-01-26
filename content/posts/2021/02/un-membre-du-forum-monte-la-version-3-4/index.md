@@ -1,6 +1,8 @@
 ---
 title: "Un membre du forum monte la version 3.4"
 date: "2021-02-03"
+series:
+  - "Tutoriels de philippus"
 categories: 
   - "tutoriels"
 tags: 

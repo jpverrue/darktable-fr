@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 15: Tout sur la couleur"
 date: "2016-11-19"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

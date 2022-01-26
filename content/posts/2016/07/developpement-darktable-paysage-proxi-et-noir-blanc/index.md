@@ -1,10 +1,12 @@
 ---
 title: "Développement Darktable: Paysage, Proxi et Noir & blanc"
 date: "2016-07-21"
+series:
+  - "Tutoriels de Frédéric de Thezy"
 categories: 
   - "tutoriels"
 tags: 
-  - "frederic"
+  - "Frédéric de Thezy"
   - "tutoriel"
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: "Présentation de darktable par Aurélien Pierre"
 date: "2016-03-15"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

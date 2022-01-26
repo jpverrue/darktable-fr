@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 20: Rajoutons du grain"
 date: "2016-12-22"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

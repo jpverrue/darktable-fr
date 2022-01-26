@@ -1,10 +1,12 @@
 ---
 title: "[FR] darktable 3.0 pour les nuls (4-5 modules)"
 date: "2020-01-28"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

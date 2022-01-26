@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 38: Boiling Pots"
 date: "2017-05-07"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

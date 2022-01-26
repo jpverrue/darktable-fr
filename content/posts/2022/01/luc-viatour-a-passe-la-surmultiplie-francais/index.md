@@ -1,10 +1,12 @@
 ---
 title: "Luc Viatour a passé la surmultipliée ! (français)"
 date: "2022-01-13"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "luc-viatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

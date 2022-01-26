@@ -1,10 +1,12 @@
 ---
 title: "Prise en main de la chambre noire avec darktable 2.6.2"
 date: "2019-04-10"
+series:
+  - "Tutoriels de Rawfiner"
 categories: 
   - "tutoriels"
 tags: 
-  - "rawfiner"
+  - "Rawfiner"
   - "tutoriel"
 ---
 

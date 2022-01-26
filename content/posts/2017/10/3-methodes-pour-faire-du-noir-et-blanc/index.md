@@ -1,10 +1,12 @@
 ---
 title: "3 Methodes pour faire du Noir et Blanc"
 date: "2017-10-18"
+series:
+  - "Tutoriels de Julien Pons"
 categories: 
   - "tutoriels"
 tags: 
-  - "julienpons"
+  - "Julien Pons"
   - "tutoriel"
 ---
 

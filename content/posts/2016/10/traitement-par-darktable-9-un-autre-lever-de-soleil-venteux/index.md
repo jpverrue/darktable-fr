@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 9: Un autre lever de soleil venteux"
 date: "2016-10-16"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

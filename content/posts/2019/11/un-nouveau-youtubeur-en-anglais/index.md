@@ -1,10 +1,12 @@
 ---
 title: "Un nouveau youtubeur en anglais"
 date: "2019-11-12"
+series:
+  - "Tutoriels de Pixovert"
 categories: 
   - "tutoriels"
 tags: 
-  - "pixovert"
+  - "Pixovert"
   - "tutoriel"
 ---
 

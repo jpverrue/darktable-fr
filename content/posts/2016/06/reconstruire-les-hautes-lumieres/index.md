@@ -1,10 +1,12 @@
 ---
 title: "Reconstruire les hautes lumières"
 date: "2016-06-21"
+series:
+  - "Tutoriels de Jean-Pierre Verrue"
 categories: 
   - "tutoriels"
 tags: 
-  - "jpv"
+  - "Jean-Pierre Verrue"
   - "tutoriel"
 ---
 

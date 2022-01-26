@@ -1,10 +1,12 @@
 ---
 title: "darktable 2.6 : nouvelles du développement et avant-premières"
 date: "2018-10-10"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

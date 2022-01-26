@@ -1,10 +1,12 @@
 ---
 title: "darktable Gimp - tuto PCB N°4 - Retouche de portrait"
 date: "2019-05-18"
+series:
+  - "Tutoriels d'Olivier Masse"
 categories: 
   - "tutoriels"
 tags: 
-  - "olivier-masse"
+  - "Olivier Masse"
   - "tutoriel"
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: "Darktable (2.2.5) : maîtriser les bases, module table lumineuse et chambre noire"
 date: "2017-10-05"
+series:
+  - "Tutoriels de Julien Pons"
 categories: 
   - "tutoriels"
 tags: 
-  - "julienpons"
+  - "Julien Pons"
   - "tutoriel"
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: "Tuto Carafife 36: Dossier spécial boitiers non reconnus et paramètres automatiques"
 date: "2017-08-31"
+series:
+  - "Tutoriels de carafife"
 categories: 
   - "tutoriels"
 tags: 

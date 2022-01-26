@@ -1,10 +1,12 @@
 ---
 title: "darktable Tuto N°4 : compléments importants"
 date: "2018-05-16"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

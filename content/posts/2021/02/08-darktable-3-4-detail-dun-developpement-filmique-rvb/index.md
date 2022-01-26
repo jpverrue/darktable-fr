@@ -1,6 +1,8 @@
 ---
 title: "08 - Darktable 3.4 - Détail d'un développement - Filmique RVB"
 date: "2021-02-04"
+series:
+  - "Tutoriels de philippus"
 categories: 
   - "tutoriels"
 tags: 

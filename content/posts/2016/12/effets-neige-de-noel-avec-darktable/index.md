@@ -1,6 +1,8 @@
 ---
 title: "Effets neige de noel avec darktable"
 date: "2016-12-21"
+series:
+  - "Tutoriels de Benja1972"
 categories: 
   - "tutoriels"
 tags: 

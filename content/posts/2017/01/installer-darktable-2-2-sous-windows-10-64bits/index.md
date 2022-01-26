@@ -1,8 +1,13 @@
 ---
 title: "Installer Darktable 2.2 sous Windows 10 64bits"
 date: "2017-01-26"
+series:
+  - "Tutoriels de Julien Pons"
 categories: 
   - "tutoriels"
+tags:
+  - "Julien Pons"
+  - "tutoriel"
 ---
 
 Voici une vidéo que l'un de nos membres [nous a fait découvrir sur le forum](https://darktable.fr/forum/showthread.php?tid=1592). Dans cette vidéo Julien Pons montre qu'il est possible d'installer la dernière version stable de darktable sous Windows 10 64bits grâce à un sous-système Ubuntu 16.04. Nous avons ici peut être une bonne possibilité à ceux qui ne veulent pas migrer sur Linux ou Mac de pouvoir utiliser darktable.

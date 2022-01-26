@@ -1,10 +1,12 @@
 ---
 title: "darktable 3.0.2 simplifié pour débutants"
 date: "2020-06-01"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "luc-viatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: "La chaîne YouTube d'un membre du forum"
 date: "2018-09-17"
+series:
+  - "Tutoriels de Juste une mise au point"
 categories: 
   - "tutoriels"
 tags: 
-  - "juste-une-mise-au-point"
+  - "Juste une mise au point"
   - "tutoriel"
 ---
 

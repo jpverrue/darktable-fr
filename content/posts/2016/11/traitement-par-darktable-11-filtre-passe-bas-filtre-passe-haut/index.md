@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 11: filtre passe-bas, filtre passe-haut..."
 date: "2016-11-12"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

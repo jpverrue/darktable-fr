@@ -3,9 +3,9 @@ title: "darktable 3.0.2"
 date: "2020-04-17"
 categories: 
   - "actualites"
+  - "featured"
 tags: 
   - "darktable"
-  - "featured"
 images: 
   - "images/darktable3.jpg"
 ---

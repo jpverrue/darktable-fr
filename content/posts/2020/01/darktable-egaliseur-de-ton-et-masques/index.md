@@ -1,10 +1,12 @@
 ---
 title: "darktable égaliseur de ton et masques"
 date: "2020-01-04"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "luc-viatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

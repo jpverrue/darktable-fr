@@ -1,10 +1,12 @@
 ---
 title: "La retouche de paysage de darktable"
 date: "2016-12-08"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
   - "tutoriel"
 ---
 

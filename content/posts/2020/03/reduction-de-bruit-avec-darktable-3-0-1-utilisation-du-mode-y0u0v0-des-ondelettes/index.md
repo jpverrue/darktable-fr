@@ -1,10 +1,12 @@
 ---
 title: "Réduction de bruit avec darktable 3.0.1 : utilisation du mode Y0U0V0 des ondelettes"
 date: "2020-03-23"
+series:
+  - "Tutoriels de Rawfiner"
 categories: 
   - "tutoriels"
 tags: 
-  - "rawfiner"
+  - "Rawfiner"
   - "tutoriel"
 ---
 

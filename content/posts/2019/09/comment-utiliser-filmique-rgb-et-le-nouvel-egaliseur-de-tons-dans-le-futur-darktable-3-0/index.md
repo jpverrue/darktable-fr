@@ -1,11 +1,13 @@
 ---
 title: "Comment utiliser filmique RGB et le nouvel égaliseur de tons dans le futur darktable 3.0 ?"
 date: "2019-09-25"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
-  - "tutoriel-anglais"
+  - "Aurélien Pierre"
+  - "tutoriel"
 ---
 
 Poursuivant mon travail sur la gestion des hautes (et moins hautes) plages dynamiques qui rendaient la couleur particulièrement difficile à gérer sous darktable dans les situations de fort contraste, mon module égaliseur de tons a été fusionné dans la version de développement de daktable dimanche, et filmique v3 aujourd'hui.

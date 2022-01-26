@@ -1,11 +1,13 @@
 ---
 title: "Présentation du forum de darktable.fr"
 date: "2018-09-06"
+series:
+  - "Tutoriels de Rawfiner"
 categories: 
   - "tutoriels"
 tags: 
   - "presentation-du-blog-et-du-forum"
-  - "rawfiner"
+  - "Rawfiner"
   - "tutoriel"
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: "De Lightroom à darktable 03 – Développement Photoshop"
 date: "2018-02-16"
+series:
+  - "Tutoriels de OuiOuiPhoto"
 categories: 
   - "tutoriels"
 tags: 
-  - "ouiouiphoto"
+  - "OuiOuiPhoto"
   - "tutoriel"
 ---
 

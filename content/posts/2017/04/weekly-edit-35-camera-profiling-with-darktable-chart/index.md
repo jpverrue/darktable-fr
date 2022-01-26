@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 36: Camera Profiling with Darktable-chart"
 date: "2017-04-23"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 19: Gestionnaire de masques"
 date: "2016-12-17"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

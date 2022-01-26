@@ -1,10 +1,12 @@
 ---
 title: "darktable Tuto N° 14 : Masques dessinés 7éme partie, Recopie de masques"
 date: "2018-07-06"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

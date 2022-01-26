@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 29: Freshford"
 date: "2017-03-05"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

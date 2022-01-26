@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 10: Couleurs riches"
 date: "2016-11-11"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: "Weekly Edit 39: Senja Peninsula"
 date: "2017-05-27"
+series:
+  - "Tutoriels de Harry Durgin"
 categories: 
   - "tutoriels"
 tags: 
-  - "durgin"
+  - "Harry Durgin"
   - "tutoriel"
 ---
 

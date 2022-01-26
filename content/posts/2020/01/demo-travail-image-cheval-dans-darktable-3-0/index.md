@@ -1,10 +1,12 @@
 ---
 title: "demo travail image cheval dans darktable 3.0"
 date: "2020-01-19"
+series:
+  - "Tutoriels de Luc Viatour"
 categories: 
   - "tutoriels"
 tags: 
-  - "luc-viatour"
+  - "Luc Viatour"
   - "tutoriel"
 ---
 

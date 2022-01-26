@@ -1,10 +1,12 @@
 ---
 title: "darktable Tuto N° 9 : Masques dessinés 2ème partie"
 date: "2018-06-06"
+series:
+  - "Tutoriels de JC Tutos"
 categories: 
   - "tutoriels"
 tags: 
-  - "jc-tutos"
+  - "JC Tutos"
   - "tutoriel"
 ---
 

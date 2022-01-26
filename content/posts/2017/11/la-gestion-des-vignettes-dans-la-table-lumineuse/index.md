@@ -1,10 +1,12 @@
 ---
 title: "La gestion des vignettes dans la Table Lumineuse"
 date: "2017-11-22"
+series:
+  - "Tutoriels de Julien Pons"
 categories: 
   - "tutoriels"
 tags: 
-  - "julienpons"
+  - "Julien Pons"
   - "tutoriel"
 ---
 

@@ -1,10 +1,13 @@
 ---
 title: "darktable 3.4 expliqué à ma femme : retouche beauté"
 date: "2020-11-28"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
-  - "aurelien-pierre"
+  - "Aurélien Pierre"
+  - "tutoriel"
 ---
 
 {{< youtube gH1gRQ3Und0 >}}

@@ -1,10 +1,13 @@
 ---
 title: "Faut-il étalonner son écran photo ? (Et autres problèmes colorimétriques)"
 date: "2019-12-08"
+series:
+  - "Tutoriels d'Aurélien Pierre"
 categories: 
   - "tutoriels"
 tags: 
   - "tutoriel"
+  - "Aurélien Pierre"
 ---
 
 Question habituelle qui perturbe bon nombre de photographes, qui se retrouvent alors promenés de terme technique en concept barbare. Et qui en soulève plein d'autres…
