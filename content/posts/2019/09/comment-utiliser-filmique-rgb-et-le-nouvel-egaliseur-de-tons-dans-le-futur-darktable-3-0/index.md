@@ -30,8 +30,8 @@ Mais l'égaliseur de ton va plus loin, en introduisant une nouvelle interaction,
 
 Souvenez-vous, il y a exactement 13 mois, [je publiais ici un article expliquant comment gérer le HDR](https://darktable.fr/2018/08/recuperer-la-plage-dynamique-sous-darktable/) sous darktable 2.4, avec un style fourni fastidieux et des manipulations laborieuses à base de courbes et de plusieurs modules visant essentiellement à corriger les erreurs du précédent avec le suivant. Il suffit aujourd'hui des modules exposition, filmique et égaliseur de tons pour gérer le contraste, balance des blancs, balance couleur et zones de couleurs pour gérer les couleurs, puis finalement contraste local et égaliseur pour gérer la netteté. Et c'est tout.
 
-[![](images/Screenshot_20190925_012934.jpg)](https://darktable.fr/wp-content/uploads/2019/09/Screenshot_20190925_012934.jpg)
+![](images/Screenshot_20190925_012934.jpg)
 
 Et voici les résultats :
 
-[gallery columns="2" link="file" size="medium" ids="5923,6695"]
+{{< gallery images="DSC_0012-aurelien-WEB-1.jpg,DSC_0012_02.jpg" >}}

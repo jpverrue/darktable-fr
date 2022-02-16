@@ -73,13 +73,15 @@ Du point de vue de la perception humaine, ces intensités proportionnelles au ni
 
 Cependant, toutes les opérations optiques qui sont réalisées lors de la prise d'image, comme le flou d'objectif, la création de bruit, ou l'effet d'un filtre coloré ajouté sur l'objectif, sont appliquées directement sur les photons. Par conséquent, pour retirer le flou d'objectif, ou pour le simuler, nous avons besoin de travailler sur les informations RGB linéaires qui sont l'information la plus proche du photon dont on dispose. Voyez vous-même, lequel de ces deux bokeh générés par ordinateur (original en bas) vous semble le plus naturel ? (Voir aussi un [exemple plus spectaculaire chez Chris Bejon](https://chrisbrejon.com/cg-cinematography/chapter-9-compositing/#exposure-control-by-dof))
 
-[gallery columns="2" link="file" size="medium" ids="6858,6859"]
+{{< gallery images="hanny-naibaho-oTP4xd9SAkc-unsplash-bad-blur-scaled.jpg,hanny-naibaho-oTP4xd9SAkc-unsplash-correct-blur-1-scaled.jpg" >}}
 
 ![](https://images.unsplash.com/photo-1496307307731-a75e2e6b0959?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2048&q=80) Photo d'origine : [Hanny Naibaho](https://unsplash.com/@hannynaibaho?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge "Download free do whatever you want high-resolution photos from Hanny Naibaho")
 
 Observez notamment comment les personnages sombres (en bas à gauche) fusionnent dans l'arrière-plan clair, ou le contraste des pentagones du diaphragme formés sur les points lumineux. Un autre exemple, avec un simple flou sur des surfaces lisses : lequel de ces dégradés vous semble le plus progressif ?
 
-[![](images/blur.jpg)](https://darktable.fr/wp-content/uploads/2020/01/blur.jpg) Gauche : floutage en RGB linéaire puis encodage en sRGB | Droite : encodage en sRGB puis floutage
+![](images/blur.jpg)
+
+Gauche : floutage en RGB linéaire puis encodage en sRGB | Droite : encodage en sRGB puis floutage
 
 Ces deux exemples ont été générés avec Krita, qui permet de travailler aussi bien en RGB linéaire et non-linéaire, et possède des calques de réglages dont un flou d'objectif physiquement réaliste.
 
@@ -315,7 +317,7 @@ Certains de ces modules sont d'une puissance méconnue, et largement sous-exploi
 
 Enfin, pour n'afficher dans l'interface qu'une sélection minimale et raisonnable de modules, à droite de « **Plus de modules** », ouvrez la liste des presets et choisissez « **Atelier - générique** ».
 
-[![](images/Capture-décran-du-2020-01-08-00-54-57.jpg)](https://darktable.fr/wp-content/uploads/2020/01/Capture-d'écran-du-2020-01-08-00-54-57.jpg)
+![](images/Capture-décran-du-2020-01-08-00-54-57.jpg)
 
 darktable est quand même franchement plus simple quand vous avez compris que vous n'aviez pas à utiliser tous ses 77 modules en même temps…
 

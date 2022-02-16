@@ -19,14 +19,18 @@ Pour avoir ce module, il suffit de compiler darktable en utilisant [le dépôt g
 
 ## Résultats
 
-![Le module HaldCLUT en action](images/module-Haldclut0-300x183.png)](https://darktable.fr/wp-content/uploads/2016/07/module-Haldclut0.png) Le module HaldCLUT en action
+![Le module HaldCLUT en action](images/module-Haldclut0-300x183.png) Le module HaldCLUT en action
 
 Dans ce nouveau module, il vous suffira d'indiquer le chemin de l'image d'entrée, pourquoi pas une incluse dans le pack de Pat David. Le module dispose bien sûr des modes de fusion.
 
 Notre ami, JPG, l'a même testé pour nous:
 
-[![Avant](images/module-Haldclut-300x169.png)](https://darktable.fr/wp-content/uploads/2016/07/module-Haldclut.png) Avant
+Avant
 
-[![Après (avec l'image d'entrée Lomography Redscale 100 )](images/module-Haldclut2-300x169.png)](https://darktable.fr/wp-content/uploads/2016/07/module-Haldclut2.png) Après (avec l'image d'entrée Lomography Redscale 100 )
+![Avant](images/module-Haldclut-300x169.png) 
+
+Après (avec l'image d'entrée Lomography Redscale 100 )
+
+![Après (avec l'image d'entrée Lomography Redscale 100 )](images/module-Haldclut2-300x169.png) 
 
 Comme vous pouvez le constater, ce module est particulièrement intéressant mais n'est pas officiel. Il est toujours possible que l'équipe de développement puisse être suffisamment intéressée pour l'inclure dans une future version de darktable, qui sait...

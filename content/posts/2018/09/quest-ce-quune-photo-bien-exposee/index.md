@@ -31,7 +31,9 @@ L'œil est fait de 2 types de capteurs, qui sont des cellules spécialisées con
 
 Cependant, ce que le cerveau analyse, ce n'est pas de la lumière, mais des contrastes, c'est à dire des écarts relatifs de luminance. Du coup, en l'absence de contraste suffisant, on ne « voit » rien, ou plus exactement on voit sans discerner.
 
-[![](images/46768376.jpg)](http://darktable.fr/wp-content/uploads/2018/09/46768376.jpg) L'homme invisible (Le père Noël est une ordure)
+![](images/46768376.jpg)
+
+L'homme invisible (Le père Noël est une ordure)
 
 Une photo bien exposée doit tenir compte de ce paramètre, et présenter un contraste suffisant pour qu'on puisse, physiologiquement, discerner ce qui s'y passe.
 
@@ -72,7 +74,9 @@ Ceci dit, en réalité, comme les signaux RGB qui arrivent à l'écran sont gén
 
 On a dit plus haut que l'œil et le cerveau cassent le contraste de façon logarithmique, c'est à dire rapprochent la luminosité des tons sombres de celle des tons clairs (le vrai contraste). Qualitativement, ça veut dire que pour voir un gris deux fois plus foncé qu'un gris de référence, on ne peut pas simplement multiplier la concentration de pigments noir par deux, il faut réaliser une [correction du gamma](https://en.wikipedia.org/wiki/Gamma_correction) avant, et probablement multiplier la concentration par 4. Le problème, c'est que cette correction gamma, si elle fait gagner en lisibilité (puisqu'elle renforce le contraste), fait perdre en plage dynamique. Jugez vous-même :
 
-[![](images/320px-GammaCorrection_demo.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/GammaCorrection_demo.jpg/320px-GammaCorrection_demo.jpg) https://en.wikipedia.org/wiki/Gamma_correction#/media/File:GammaCorrection_demo.jpg
+![](images/320px-GammaCorrection_demo.jpg)
+
+![](https://en.wikipedia.org/wiki/Gamma_correction#/media/File:GammaCorrection_demo.jpg)
 
 Plus on casse le contraste, plus on fait apparaître de détails, mais plus on perd en clarté. Plus on rajoute de contraste, plus on gagne en clarté, mais plus on bouche les ombres.
 
@@ -98,11 +102,13 @@ La plage dynamique, c'est votre marge de manœuvre, en tant qu'utilisateur : c'e
 
 Le contraste, c'est l'écart relatif entre les hautes et les basses lumières. Ça dépend de la lumière sur la scène initiale (à la prise de vue), et de votre retouche. La façon classique de rajouter du contraste, c'est avec une courbe en S :
 
-[![](images/Capture-du-2018-09-29-16-16-25.png)](http://darktable.fr/wp-content/uploads/2018/09/Capture-du-2018-09-29-16-16-25.png)On amplifie les hautes lumières, on atténue les basses lumières : on a rajouté du contraste.
+![](images/Capture-du-2018-09-29-16-16-25.png)
+
+On amplifie les hautes lumières, on atténue les basses lumières : on a rajouté du contraste.
 
 À l'inverse, pour retirer du contraste, on inverse le S :finir
 
-## [![](images/Capture-du-2018-09-29-16-18-51.png)](http://darktable.fr/wp-content/uploads/2018/09/Capture-du-2018-09-29-16-18-51.png)
+![](images/Capture-du-2018-09-29-16-18-51.png)
 
 Un contraste idéalement ajusté fait en sorte que :
 
@@ -139,9 +145,11 @@ La physique vous dit ce qu'il se passe, les maths vous donnent un langage pour l
 
 Même s'il ne faut pas le prendre comme une vérité absolue, c'est l'histogramme qui peut généralement vous aider. Habituellement, il devrait ressembler à une gaussienne centrée en 50 %.
 
-[![](images/Capture-du-2018-09-29-16-26-38.png)](http://darktable.fr/wp-content/uploads/2018/09/Capture-du-2018-09-29-16-26-38.png)Évidemment, si vous faites du [low-key](https://www.lesnumeriques.com/photo/realiser-une-photo-low-key-pu101061.html) ou [high-key](https://www.lesnumeriques.com/photo/la-photographie-high-key-avec-les-moyens-du-bord-pu101051.html), ça ne s'applique plus. Mais, ça peut encore vous alerter que quelque-chose va mal si vous voyez des pics aux bords :
+![](images/Capture-du-2018-09-29-16-26-38.png)
 
-[gallery size="medium" columns="2" link="file" ids="6057,6056"]
+Évidemment, si vous faites du [low-key](https://www.lesnumeriques.com/photo/realiser-une-photo-low-key-pu101061.html) ou [high-key](https://www.lesnumeriques.com/photo/la-photographie-high-key-avec-les-moyens-du-bord-pu101051.html), ça ne s'applique plus. Mais, ça peut encore vous alerter que quelque-chose va mal si vous voyez des pics aux bords :
+
+{{< gallery images="Capture-du-2018-09-29-16-39-47.png,Capture-du-2018-09-29-16-38-38.png" >}}
 
 ### De l'importance de l'étalonnage
 

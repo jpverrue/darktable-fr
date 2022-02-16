@@ -34,7 +34,7 @@ Je vous en avais déjà touché un mot [sur le forum](https://darktable.fr/forum
 
 Mais avant ça, darktable.fr en chiffre, ça donne quoi?
 
-[gallery type="slideshow" size="large" ids="6137,6138,6139"]
+{{< gallery images="darktable-stat-jour.png,darktable-stat-mois.png,darktable-stat-annee.png" >}}
 
 - C'est 30.000 à 40.000 visites par mois avec un pic en janvier à chaque nouvelle version de darktable
 - C'est plus de 1.000 membres sur le forum

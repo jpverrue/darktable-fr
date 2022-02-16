@@ -10,7 +10,7 @@ tags:
   - "tutoriel"
 ---
 
-Pour ce nouveau tuto vidéo, Harry Durgin montre comment redonner de la couleur à vos images ternes. Pour cela, **il a crée une carte de référence de couleurs (Lab Color Chart) disponible** [**ici**](http://weeklyedit.com/wp-content/uploads/2016/11/lab_color_reference.png). Avec le module pipette et cette carte, il vérifie si les couleurs sont justes. La vidéo est en anglais, vivement qu'un utilisateur francophone nous fasse un tuto en français :-)
+Pour ce nouveau tuto vidéo, Harry Durgin montre comment redonner de la couleur à vos images ternes. Pour cela, **il a crée une carte de référence de couleurs (Lab Color Chart) disponible** [ici](http://weeklyedit.com/wp-content/uploads/2016/11/lab_color_reference.png). Avec le module pipette et cette carte, il vérifie si les couleurs sont justes. La vidéo est en anglais, vivement qu'un utilisateur francophone nous fasse un tuto en français :-)
 
 {{< youtube dII4pX-ylIk >}}
 

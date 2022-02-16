@@ -23,7 +23,7 @@ Je l'ai placé dans $HOME/.config/darktable/lua/ puis j'ai rajouté au fichier l
 
 Le script a l'air de fonctionner plus ou moins bien avec la version stable 2.0.5 de darktable. Il a apparaît sur le panneau de gauche de la table lumineuse:
 
-[![script-manager_lua](images/script-manager_lua-119x300.jpg)](https://darktable.fr/wp-content/uploads/2016/09/script-manager_lua.jpg)
+![script-manager_lua](images/script-manager_lua-119x300.jpg)
 
 Le script affiche la liste de tout les scripts lua installés avec pour certain la possibilité de les activer.
 

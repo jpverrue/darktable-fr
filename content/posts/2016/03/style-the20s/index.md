@@ -9,9 +9,7 @@ tags:
 
 Voici un style pour darktable avec un coté twenties, c'est le premier (surement d'une longue série) style téléchargeable depuis le site darktable-fr ;)
 
-![](images/original.jpeg)
-
-![](images/the20s.jpeg)
+{{< gallery images="original.jpeg,the20s.jpeg" >}}
 
 [Télécharger](/download/Styles/The20s.dtstyle)
 

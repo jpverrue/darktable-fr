@@ -78,7 +78,9 @@ Quelques préréglages de film N&B sont fournis dans le module pour émuler les 
 
 Un nouveau flux de traitement "moderne", désactivé par défaut, permet d'utiliser la "_calibration des couleurs_" pour effectuer la _balance des blancs_ à la place du module de "_balance des blancs_" pour les nouvelles retouches. Vous pouvez l'activer manuellement dans les _préférences_ (onglet _traitement_).
 
-[![](images/Screenshot_20201223_034200.png)](https://darktable.fr/wp-content/uploads/2020/12/Screenshot_20201223_034200.png) En dehors de cela, le module "_calibration des couleurs_ vous permettra d'assombrir ou d'éclaircir l'image en préservant les couleurs, en utilisant les valeurs des pixels, dans le même esprit que _filmique_, par exemple pour assombrir rapidement le ciel. Enfin, il peut affecter la saturation en fonction du canal, là encore en utilisant la science des couleurs de "_Filmique RVB v4_" (qui n'est pas linéaire pour la teinte).
+![](images/Screenshot_20201223_034200.png)
+
+En dehors de cela, le module "_calibration des couleurs_ vous permettra d'assombrir ou d'éclaircir l'image en préservant les couleurs, en utilisant les valeurs des pixels, dans le même esprit que _filmique_, par exemple pour assombrir rapidement le ciel. Enfin, il peut affecter la saturation en fonction du canal, là encore en utilisant la science des couleurs de "_Filmique RVB v4_" (qui n'est pas linéaire pour la teinte).
 
 La documentation complète du nouveau module est disponible ici : [https://www.darktable.org/usermanual/en/module-reference/processing-modules/color-calibration/](https://www.darktable.org/usermanual/en/module-reference/processing-modules/color-calibration/)
 
@@ -114,7 +116,7 @@ Actuellement, la plupart des modes de fusion écrêtent les valeurs des pixels �
 
 De plus, le masquage paramétrique RVB utilise un modèle de couleur HSL, dans lequel les pixels supérieurs à 100 % produisent une saturation négative. Ainsi, même avec des modes de fusion  sans écrêtage, cela ne fonctionne toujours pas en mode relatif à la scène.
 
-[![](images/Screenshot_20201223_034629.png)](https://darktable.fr/wp-content/uploads/2020/12/Screenshot_20201223_034629.png)
+![](images/Screenshot_20201223_034629.png)
 
  
 
@@ -142,7 +144,7 @@ Actuellement, la prévisualisation de la sur et sous-exposition de la chambre no
 
 darktable 3.4 remplace l'aperçu de la surexposition par une nouvelle "_alerte d'écrêtage_" qui combine les indicateurs de luminance et d'écrêtage du gamut en un seul utilitaire.
 
-[![](images/Screenshot_20201223_035045.png)](https://darktable.fr/wp-content/uploads/2020/12/Screenshot_20201223_035045.png)
+![](images/Screenshot_20201223_035045.png)
 
  
 

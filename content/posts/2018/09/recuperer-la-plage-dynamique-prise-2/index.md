@@ -20,15 +20,23 @@ Vous vous souvenez comme on a superposé les modules « correction du profil d'e
 
 Dans le module « correction du profil d'entrée », j'ai ajouté un nouveau mode : logarithmique. Ce que fait cet algorithme est mathématiquement équivalent aux profils neutres N-Log et S-Log qui sont utilisés dans les encodeurs vidéo des réflexs modernes afin de préserver tous les détails dans les basses lumières. Ici, on va s'en servir comme de compression de la plage dynamique :
 
-[![](images/Capture-du-2018-09-24-23-15-39.png)](http://darktable.fr/wp-content/uploads/2018/09/Capture-du-2018-09-24-23-15-39.png)Notez que l'interface n'est pas encore traduite et que, n'en déplaise à certains, on programme en anglais. La première étape consiste à régler le gris moyen de la scène (input middle grey). Vous êtes feignant ? Moi aussi, c'est pouquoi vous pouvez simplement utiliser la pipette pour sélectionner la tonalité correspondante. Celle-ce sera ensuite redirigée vers le milieu de l'histogramme par l'algorithme. Si vous sélectionnez toute l'image, c'est la luminosité moyenne qui est retenue.
+![](images/Capture-du-2018-09-24-23-15-39.png)
+
+Notez que l'interface n'est pas encore traduite et que, n'en déplaise à certains, on programme en anglais. La première étape consiste à régler le gris moyen de la scène (input middle grey). Vous êtes feignant ? Moi aussi, c'est pouquoi vous pouvez simplement utiliser la pipette pour sélectionner la tonalité correspondante. Celle-ce sera ensuite redirigée vers le milieu de l'histogramme par l'algorithme. Si vous sélectionnez toute l'image, c'est la luminosité moyenne qui est retenue.
 
 Ensuite, il faut régler l'intensité du noir (output black exposure), en indice de lumination (EV en anglais) à partir du point gris (qui est considéré à 0 EV). Idem, ça se fait en 2 secondes grâce à la pipette, en allant choisir la zone la plus sombre de l'image. Ici, je mets le noir à 4.18 EV à gauche du gris.
 
-[![](images/Capture-du-2018-09-24-23-22-52.png)](http://darktable.fr/wp-content/uploads/2018/09/Capture-du-2018-09-24-23-22-52.png)Dernière étape, la plage dynamique (dynamic range). Si vous sélectionnez toute l'image avec la pipette, il va simplement pendre la luminosité maximale et considérer que ce sera l'extrémité droite de la plage dynamique.
+![](images/Capture-du-2018-09-24-23-22-52.png)
 
-[![](images/Capture-du-2018-09-24-23-28-05.png)](http://darktable.fr/wp-content/uploads/2018/09/Capture-du-2018-09-24-23-28-05.png)Et paf ! L'histogramme est à peu près centré, rien n'est brûlé. Il reste le buisson, derrière, qui est un peu bouché. Il suffit de le déboucher en diminuant le point noir dans le module exposition :
+Dernière étape, la plage dynamique (dynamic range). Si vous sélectionnez toute l'image avec la pipette, il va simplement pendre la luminosité maximale et considérer que ce sera l'extrémité droite de la plage dynamique.
 
-[![](images/Capture-du-2018-09-24-23-30-56.png)](http://darktable.fr/wp-content/uploads/2018/09/Capture-du-2018-09-24-23-30-56.png)Là, vous allez me dire « c'est fade et désaturé ». Oui, mais c'est une base de travail. Et c'est là qu'entre en jeu mon deuxième module.
+![](images/Capture-du-2018-09-24-23-28-05.png)
+
+Et paf ! L'histogramme est à peu près centré, rien n'est brûlé. Il reste le buisson, derrière, qui est un peu bouché. Il suffit de le déboucher en diminuant le point noir dans le module exposition :
+
+![](images/Capture-du-2018-09-24-23-30-56.png)
+
+Là, vous allez me dire « c'est fade et désaturé ». Oui, mais c'est une base de travail. Et c'est là qu'entre en jeu mon deuxième module.
 
 ## 2. La couleur
 
@@ -36,19 +44,27 @@ La balance couleur a un nouveau mode, « slope - offset - power ». Ce mode est 
 
 On commence par ajouter un peu de saturation sur le master :
 
-[![](images/Capture-du-2018-09-24-23-39-07.png)](http://darktable.fr/wp-content/uploads/2018/09/Capture-du-2018-09-24-23-39-07.png)Ensuite, on va rajouter du contraste. D'abord, on va choisir le pivot (fulcrum) qui est la tonalité de gris qui n'est pas affectée par l'addition de contraste. Au dessus de cette tonalité, on ajoute plus de lumière, en dessous, on en retire. Encore une fois, il y a une pipette. On va choisir la tonalité du visage, puisque c'est le sujet de la photo :
+![](images/Capture-du-2018-09-24-23-39-07.png)
 
-[![](images/Capture-du-2018-09-24-23-43-42.png)](http://darktable.fr/wp-content/uploads/2018/09/Capture-du-2018-09-24-23-43-42.png)Pas mal, non ? Beaucoup de gens s'arrêteront là. Mais on peut aller plus loin, et se pencher sur la gradation de teinte. La gradation, en anglais _color-grading_, est une opération qui consiste à ajuster les couleurs séparément pour, soit supprimer sélectivement les dominantes, soit en rajouter pour donner une ambiance à la photo (au cinéma, on met le méchant en vert, la pinup en magenta, la maman en orangé, et le psychopathe en bleu). Ici, je trouve qu'on manque de magenta et que le visage est trop vert.
+Ensuite, on va rajouter du contraste. D'abord, on va choisir le pivot (fulcrum) qui est la tonalité de gris qui n'est pas affectée par l'addition de contraste. Au dessus de cette tonalité, on ajoute plus de lumière, en dessous, on en retire. Encore une fois, il y a une pipette. On va choisir la tonalité du visage, puisque c'est le sujet de la photo :
+
+![](images/Capture-du-2018-09-24-23-43-42.png)
+
+Pas mal, non ? Beaucoup de gens s'arrêteront là. Mais on peut aller plus loin, et se pencher sur la gradation de teinte. La gradation, en anglais _color-grading_, est une opération qui consiste à ajuster les couleurs séparément pour, soit supprimer sélectivement les dominantes, soit en rajouter pour donner une ambiance à la photo (au cinéma, on met le méchant en vert, la pinup en magenta, la maman en orangé, et le psychopathe en bleu). Ici, je trouve qu'on manque de magenta et que le visage est trop vert.
 
 Attention, les niveaux doivent se régler dans un ordre précis pour avoir un bon résultat : on règle d'abord le slope, ensuite l'offset, puis en dernier, le power (qui est l'équivalent du gamma). J'ai été sympa, si vous ne vous souvenez plus de l'ordre, il est rappelé dans le nom du mode (slope / offset / power) :
 
-[![](images/Capture-du-2018-09-24-23-53-44.png)](http://darktable.fr/wp-content/uploads/2018/09/Capture-du-2018-09-24-23-53-44.png)Là dessus, un petit coup de courbes des tonalités, pour remettre un petit boost de contraste dans l'espace Lab, zones de couleurs pour la teinte, contraste local, (similaire à ce que j'ai montré dans mon précédent article), et voilà :
+![](images/Capture-du-2018-09-24-23-53-44.png)
 
-[![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-ASCCDL_02.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Minh-Ly-Toronto-0043-_DSC0251-ASCCDL_02.jpg)Pour comparaison, la version avec la méthode précédente :
+Là dessus, un petit coup de courbes des tonalités, pour remettre un petit boost de contraste dans l'espace Lab, zones de couleurs pour la teinte, contraste local, (similaire à ce que j'ai montré dans mon précédent article), et voilà :
+
+![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-ASCCDL_02.jpg)
+
+Pour comparaison, la version avec la méthode précédente :
 
 ## 3. Bénéfices :
 
-[![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-zones.jpg)](http://darktable.fr/wp-content/uploads/2018/08/Shoot-Minh-Ly-Toronto-0043-_DSC0251-zones.jpg)
+![](images/Shoot-Minh-Ly-Toronto-0043-_DSC0251-zones.jpg)
 
 Premièrement, en terme de _workflow_, c'est très rapide, tout est automatisé au maximum avec des pipettes qui mesurent ce que vous avez besoin sans avoir à gratter les curseurs pendant des heures. C'est rapide, à condition de suivre la méthode dans laquelle ça a été pensé. Le module de correction du profil d'entrée se voit ajouter les modes de fusion classiques des autres modules, ce qui permet aussi d'utiliser la fusion paramétrique pour plus de souplesse.
 
@@ -70,14 +86,26 @@ Mais tous les tests et les retours sont les bienvenus.
 
 ## Mise à jour : j'ai commencé à rééditer des photos de cet été avec ces modules
 
-[![](images/Shoot-Ivona-0120-_DSC0926-PHOTOSHOP-WEB.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Ivona-0120-_DSC0926-PHOTOSHOP-WEB.jpg) Sortie de darktable (ancienne version ) + retouche Photoshop
+![](images/Shoot-Ivona-0120-_DSC0926-PHOTOSHOP-WEB.jpg)
 
-[![](images/Shoot-Ivona-0120-_DSC0926-WEB_04.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Ivona-0120-_DSC0926-WEB_04.jpg) Sortie directe de darktable (nouvelle version avec nouveaux modules)
+Sortie de darktable (ancienne version ) + retouche Photoshop
 
-[![](images/Shoot-Des-0073-_DSC0762-WEB.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Des-0073-_DSC0762-WEB.jpg) sortie de darktable (ancienne version)
+![](images/Shoot-Ivona-0120-_DSC0926-WEB_04.jpg)
 
-[![](images/Shoot-Des-0073-_DSC0762-WEB_02.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Des-0073-_DSC0762-WEB_02.jpg) sortie de darktable (nouvelle version avec nouveaux modules)
+sortie directe de darktable (nouvelle version avec nouveaux modules)
 
-][![](images/Shoot-Des-0100-_DSC0793-WEB.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Des-0100-_DSC0793-WEB.jpg) sortie de darktable (version précédente)
+![](images/Shoot-Des-0073-_DSC0762-WEB.jpg) 
 
-][![](images/Shoot-Des-0100-_DSC0793-WEB_02.jpg)](http://darktable.fr/wp-content/uploads/2018/09/Shoot-Des-0100-_DSC0793-WEB_02.jpg) sortie de darktable (nouvelle version avec nouveaux modules)
+sortie de darktable (ancienne version)
+
+![](images/Shoot-Des-0073-_DSC0762-WEB_02.jpg)
+
+sortie de darktable (nouvelle version avec nouveaux modules)
+
+![](images/Shoot-Des-0100-_DSC0793-WEB.jpg)
+
+sortie de darktable (version précédente)
+
+![](images/Shoot-Des-0100-_DSC0793-WEB_02.jpg)
+
+Sortie de darktable (nouvelle version avec nouveaux modules)

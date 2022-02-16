@@ -15,32 +15,32 @@ Pour vous donner une idée, [jpg](https://www.flickr.com/photos/113336874@N07/),
 
 Photo originale:
 
-[![Original](images/Original-225x300.jpg)](https://darktable.fr/wp-content/uploads/2016/07/Original.jpg)
+![Original](images/Original-225x300.jpg)
 
 Voici le résultat en appliquant les différents styles:
 
 - Astia
 
-[![Astia](images/Astia-225x300.jpg)](https://darktable.fr/wp-content/uploads/2016/07/Astia.jpg)
+![Astia](images/Astia-225x300.jpg)
 
 - MonoChrome
 
-[![MonoChrome](images/MonoChrome-225x300.jpg)](https://darktable.fr/wp-content/uploads/2016/07/MonoChrome.jpg)
+![MonoChrome](images/MonoChrome-225x300.jpg)
 
 - Provia
 
-[![Provia](images/Provia-225x300.jpg)](https://darktable.fr/wp-content/uploads/2016/07/Provia.jpg)
+![Provia](images/Provia-225x300.jpg)
 
 - Velvia
 
-[![Velvia](images/Velvia-225x300.jpg)](https://darktable.fr/wp-content/uploads/2016/07/Velvia.jpg)
+![Velvia](images/Velvia-225x300.jpg)
 
 - X100T
 
-[![X100T](images/X100T-225x300.jpg)](https://darktable.fr/wp-content/uploads/2016/07/X100T.jpg)
+![X100T](images/X100T-225x300.jpg)
 
 - Classic_Chrome
 
-[![Classic_Chrome](images/Classic_Chrome-225x300.jpg)](https://darktable.fr/wp-content/uploads/2016/07/Classic_Chrome.jpg)
+![Classic_Chrome](images/Classic_Chrome-225x300.jpg)
 
 N'hésitez pas à donner votre avis en commentaire :)

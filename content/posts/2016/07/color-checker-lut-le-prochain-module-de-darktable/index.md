@@ -13,7 +13,7 @@ Je vais vous épargner la théorie et les explications, tout est sur [cet articl
 
 Si vous utilisez darktable dans sa version développement, voici à quoi ressemble le module que vous trouverez dans la chambre noire:
 
-[![clut-iop](images/clut-iop-265x300.png)](https://darktable.fr/wp-content/uploads/2016/07/clut-iop.png)
+![clut-iop](images/clut-iop-265x300.png)
 
 Vous avez le choix entre 24 patchs de couleurs (il est aussi possible de choisir une couleur bien précise via la pipette). Les autres paramètres sont la luminosité (L), vert-rouge (a), bleu-jaune (b) et la saturation (C). Une fois de plus, le module peut utiliser les modes de fusion.
 

@@ -26,23 +26,31 @@ La balance des blancs, c'est une compensation des couleurs qui suppose une lumi�
 
 On rentre dans la physique ? La lumière est un rayonnement, et donc une forme de transfert d'énergie (électro-magnétique). À la source de ce rayonnement se trouve un corps, qui émet du rayonnement parce qu'il est chaud (sans chaleur, il n'aurait aucune énergie à transmettre, donc pas de rayonnement). Les physiciens ont trouvé un lien entre la température du corps et le spectre lumineux qu'il émet (en clair : l'ensemble des couleurs contenues dans ce spectre).
 
-[![](images/1280px-Sz%C3%ADnsz%C3%B3r%C3%B3d%C3%A1s_prizm%C3%A1n1.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sz%C3%ADnsz%C3%B3r%C3%B3d%C3%A1s_prizm%C3%A1n1.jpg/1280px-Sz%C3%ADnsz%C3%B3r%C3%B3d%C3%A1s_prizm%C3%A1n1.jpg) Décomposition du spectre de la lumière blanche par un prisme transparent. CC Wikimédia / Zátonyi Sándor
+![](images/1280px-Sz%C3%ADnsz%C3%B3r%C3%B3d%C3%A1s_prizm%C3%A1n1.jpg)
+
+Décomposition du spectre de la lumière blanche par un prisme transparent. CC Wikimédia / Zátonyi Sándor
 
 Ce lien ne fonctionne que si le corps est « parfait », c'est à dire qu'il émet rigoureusement toutes les longueurs d'onde (on n'a pas de trou dans le spectre). On appelle ça un [corps noir](https://fr.wikipedia.org/wiki/Corps_noir) (paradoxalement, mais il y a une explication). Pour un corps noir, on est capable de sortir une équation qui relie assez précisément sa température et son spectre, et donc de simuler son spectre à une autre température, et donc finalement de corriger une photo. C'est pour ça qu'on exprime la température couleur en kelvin (K) : tout ça se ramène à la température du corps noir dont le rayonnemment est équivalent.
 
 Le soleil est assez proche d'un corps noir, puisqu'il émet toutes les longueurs d'onde :
 
-[![](images/Spectre-de-la-lumiere-naturelle-en-milieu-de-journee.png)](https://darktable.fr/wp-content/uploads/2019/02/Spectre-de-la-lumiere-naturelle-en-milieu-de-journee.png) Spectre de la lumière naturelle en mi-journée (6500 K). © Erik Peper - https://www.researchgate.net/publication/305082857_Are_LED_screens_causing_harm_to_the_vision_of_computer_users
+![](images/Spectre-de-la-lumiere-naturelle-en-milieu-de-journee.png)
+
+Spectre de la lumière naturelle en mi-journée (6500 K). © Erik Peper - https://www.researchgate.net/publication/305082857_Are_LED_screens_causing_harm_to_the_vision_of_computer_users
 
 Même si le spectre est complet, on voit que les intensités sont réparties inégalement, mais globablement assez lisses. Qu'en est-il en fin de journée ?
 
-[![](images/Spectre-de-la-lumiere-naturelle-au-coucher-du-soleil.png)](https://darktable.fr/wp-content/uploads/2019/02/Spectre-de-la-lumiere-naturelle-au-coucher-du-soleil.png) Spectre de la lumière naturelle en fin de journée (4500 K). © Erik Peper - https://www.researchgate.net/publication/305082857_Are_LED_screens_causing_harm_to_the_vision_of_computer_users
+![](images/Spectre-de-la-lumiere-naturelle-au-coucher-du-soleil.png)
+
+Spectre de la lumière naturelle en fin de journée (4500 K). © Erik Peper - https://www.researchgate.net/publication/305082857_Are_LED_screens_causing_harm_to_the_vision_of_computer_users
 
 On voit donc un maximum dans le rouge en fin de journée (à 4500 K), et un maximum dans le bleu en milieu de journée (6500 K). Comme ces deux distributions suivent (à peu près) la même loi physique, il est possible de passer de l'une à l'autre par une simple correction mathématique.
 
 Là où ça se gâte, c'est pour les éclairages artificiels :
 
-[![](images/Spectre-lumineux-dune-lampe-fluo-compacte.png)](https://darktable.fr/wp-content/uploads/2019/02/Spectre-lumineux-dune-lampe-fluo-compacte.png) Spectre d'une lampe fluo-compacte. © Erik Peper - https://www.researchgate.net/publication/305082857_Are_LED_screens_causing_harm_to_the_vision_of_computer_users
+![](images/Spectre-lumineux-dune-lampe-fluo-compacte.png)
+
+Spectre d'une lampe fluo-compacte. © Erik Peper - https://www.researchgate.net/publication/305082857_Are_LED_screens_causing_harm_to_the_vision_of_computer_users
 
 Ici, on a un pic dans le bleu, dans le vert, et dans le orange, et presque rien au milieu. Un tel éclairage est impossible à compenser mathématiquement, parce que sa physique est erratique et qu'il n'est pas assimilable à un corps noir. Pour cette raison, on dispose d'un curseur de teinte, en plus de la température, afin d'appliquer une correction additionnelle, mais n'attendez pas de miracle. C'est ici qu'il est important de savoir sur quelle hypothèse se basent les algorithmes de correction de la balance des blancs : ils sont conçus avant tout pour la lumière blanche. Si l'hypothèse n'est pas valide dans votre photo, alors l'algorithme échoue, et c'est tout à fait normal.
 

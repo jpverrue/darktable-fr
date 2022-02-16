@@ -24,7 +24,7 @@ Cette fois ci, nous lançons aussi une nouvelle version de la documentation lua 
 
 ### Panneau d'accès rapide
 
-[![](images/Screenshot_20210629_192331-scaled.jpg)](https://darktable.fr/wp-content/uploads/2021/06/Screenshot_20210629_192331-scaled.jpg)
+![](images/Screenshot_20210629_192331-scaled.jpg)
 
 Le [_panneau d'accès rapide_](https://darktable.org/usermanual/stable/en/darkroom/organization/quick-access-panel/) est un remplaçant du module _ajustements de base_ et bien plus. Cette fonctionnalité fournit une nouvelle interface aux modules de traitement existants, à un emplacement unique et dans une disposition unifiée. Les utilisateurs peuvent ajouter n'importe quel contrôle de n'importe quel module au panneau d'accès rapide, pour une productivité accrue et une ergonomie améliorée.
 
@@ -32,9 +32,13 @@ Cette nouvelle implémentation ne concerne que l'interface graphique côté util
 
 ### Groupes de modules (onglets)
 
-### [![](images/Screenshot_20210629_192856.jpg)](https://darktable.fr/wp-content/uploads/2021/06/Screenshot_20210629_192856.jpg)
+![](images/Screenshot_20210629_192856.jpg)
 
-Les modules peuvent à présent être rapidement ajoutés ou retirés des groupes de modules par un clic-droit sur les onglets des groupes. Ceci évite d'avoir à modifier le groupe dans la fenêtre de maintenance, mais gardez à l'esprit que ces changements rapides ne mettent pas à jour vos pré-réglages personnels. Vous pouvez aussi accéder rapidement à la fenêtre _gérer les dispositions de modules_ par un Ctrl +clic sur l'icône des pré-réglages. [![](images/Screenshot_20210629_192650-scaled.jpg)](https://darktable.fr/wp-content/uploads/2021/06/Screenshot_20210629_192650-scaled.jpg) La fenêtre [_gérer les dispositions de modules_](https://darktable.org/usermanual/stable/en/darkroom/organization/manage-module-layouts/) a également été améliorée pour inclure le réglage du panneau d'accès rapide. À présent, vous pouvez aussi appliquer automatiquement un pré-réglage de groupes de modules en fonction du type d'image que vous retouchez/développez.
+Les modules peuvent à présent être rapidement ajoutés ou retirés des groupes de modules par un clic-droit sur les onglets des groupes. Ceci évite d'avoir à modifier le groupe dans la fenêtre de maintenance, mais gardez à l'esprit que ces changements rapides ne mettent pas à jour vos pré-réglages personnels. Vous pouvez aussi accéder rapidement à la fenêtre _gérer les dispositions de modules_ par un Ctrl +clic sur l'icône des pré-réglages. 
+
+![](images/Screenshot_20210629_192650-scaled.jpg)
+
+La fenêtre [_gérer les dispositions de modules_](https://darktable.org/usermanual/stable/en/darkroom/organization/manage-module-layouts/) a également été améliorée pour inclure le réglage du panneau d'accès rapide. À présent, vous pouvez aussi appliquer automatiquement un pré-réglage de groupes de modules en fonction du type d'image que vous retouchez/développez.
 
 ## Modules de science de la couleur
 
@@ -48,7 +52,7 @@ Le compromis est que cette méthode donne un contraste atténué proche du blanc
 
 ### Balance couleur RGB
 
-[gallery size="medium" link="file" ids="7601,7602,7603"]
+{{< gallery images="Screenshot_20210629_193141.jpg,Screenshot_20210629_193202.jpg,Screenshot_20210629_193212.jpg" >}}
 
 La [_balance couleur RGB_](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/color-balance-rgb/) apporte plusieurs innovations uniques pour aider les coloristes à développer des images de façon cinématographique et avec un niveau de contrôle raffiné, dans un flux de travail relatif à la scène et prêt pour le HDR.
 
@@ -64,19 +68,21 @@ Les réglages de vibrance et de contraste ont été portés d'autres modules pou
 
 Le module balance couleur RGB est fourni avec un kernel OpenCL pour externaliser le calcul sur la carte graphique, 6× à 22× plus rapide que l'implémentation pour processeur standard, selon le matériel. Quelques exemples de ce que la balance couleur peut faire pour vous (avant/après) :
 
-[gallery columns="2" size="large" link="file" ids="7607,7614"]
+{{< gallery images="Shoot-Minh-Ly-fashion-mauve-0178-DSC_0301_07.jpg,Shoot-Minh-Ly-fashion-mauve-0178-DSC_0301_09.jpg" >}}
 
-[gallery columns="2" size="medium" link="file" ids="7609,7608"]
+{{< gallery images="DSC_4707.jpg,DSC_4707_01.jpg" >}}
 
-[gallery size="medium" columns="2" link="file" ids="7611,7610"]
+{{< gallery images="20b88b646b8d5d408a461e8c5a253a0178966065.jpeg,c31e6e812e456bf83726746c4be427490a1cdb90.jpeg" >}}
 
-[gallery link="file" columns="2" size="medium" ids="7632,7631"]
+{{< gallery images="DSC_8864.jpg,DSC_8864_03.jpg" >}}
 
-[gallery link="file" columns="2" size="medium" ids="7634,7635"]
+{{< gallery images="DSC_6098.jpg,DSC_6098_03.jpg" >}}
 
 ### Calibration des couleurs : ajout du support pour color checker
 
-Les _color checkers_ sont des outils bien connus de l'industrie, qui consistent en une charte de patchs de couleurs de référence, à photographier sur le lieu de prise de vue, pour assurer la constance et la précision des couleurs sur une série d'images, peu importent les conditions d'éclairage et l'appareil photo utilisé. [![](images/Screenshot_20210629_205230-scaled.jpg)](https://darktable.fr/wp-content/uploads/2021/06/Screenshot_20210629_205230-scaled.jpg)
+Les _color checkers_ sont des outils bien connus de l'industrie, qui consistent en une charte de patchs de couleurs de référence, à photographier sur le lieu de prise de vue, pour assurer la constance et la précision des couleurs sur une série d'images, peu importent les conditions d'éclairage et l'appareil photo utilisé. 
+
+![](images/Screenshot_20210629_205230-scaled.jpg)
 
 Une nouvelle interface a été ajoutée au module [_calibration des couleurs_](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/color-calibration/#extracting-settings-using-a-color-checker) qui vous permet d'extraire rapidement la meilleure balance des blancs et les meilleurs réglages de mixage des canaux, à partir de la photo d'un color checker, afin de minimiser la déviation de couleur. Un solveur interne calcule les réglages optimaux en suivant différentes stratégies définies par l'utilisateur, par exemple pour minimiser la déviation colorimétrique en priorité sur certaines teintes ou en moyenne.
 
@@ -94,13 +100,15 @@ darktable 3.6 également introduit un kernel OpenCL pour la calibration des coul
 
 Un exemple de ce que la calibration des couleurs peut faire pour vous : à gauche, on se contente de faire la balance des blancs sur la rampe de gris (delta E moyen de 2,23), à droite on fait une calibration complète (delta E moyen de 1,60). On voit que les bleus apparaissent délavés sur la version non calibrée.
 
-[gallery size="full" columns="2" link="file" ids="7620,7621"]
+{{< gallery images="20181021_ColorChart_071_01.jpg,20181021_ColorChart_071.jpg" >}}
 
 ## Module censurer
 
 Le module [_censurer_](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/censorize/) vous permet de flouter et de pixéliser rapidement des parties de l'image, d'une façon esthétique, pour des fins d'anonymisation et pour respecter les conditions d'utilisation des réseaux sociaux relatives à l'anatomie. Il applique un flou gaussien et un bruit gaussien physiquement réalistes en RGB linéaire. En tant que tel, il peut aussi être utilisé pour différents effets créatifs, tels que l'effet Orton (_bloom_).
 
-[![](images/Shoot-Minh-Ly-La-Guyonniere-0198-DSC_0653.jpg)](https://darktable.fr/wp-content/uploads/2021/06/Shoot-Minh-Ly-La-Guyonniere-0198-DSC_0653.jpg) © Aurélien Pierre
+![](images/Shoot-Minh-Ly-La-Guyonniere-0198-DSC_0653.jpg)
+
+© Aurélien Pierre
 
 Notez que le module _censurer_ n'empêche pas une reconstruction scientifique des parties censurées (en utilisant l'apprentissage machine et l'intelligence artificielle, notamment). Pour une réelle anonymisation, résistante à la reconstruction scientifique, vous devez peindre une couleur solide par dessus les parties sensibles de l'image.
 
@@ -124,7 +132,7 @@ Pour tirer parti des avantages de différentes méthodes de dématriçage, de no
 
 ### Amélioration du masque basé sur les détails
 
-[gallery columns="2" link="file" size="medium" ids="7626,7627"]
+{{< gallery images="Screenshot_20210629_230532-scaled.jpg,Screenshot_20210629_230716-scaled.jpg" >}}
 
 Une nouvelle option de masquage paramétrique a été ajoutée pour vous permettre d'inclure ou d'exclure les contours nets et les détails des masques paramétriques. Ceci est spécialement utile pour appliquer des flous et des améliorations de netteté qui ignorent les régions hors focus (bokeh), ou au contraire ne s'appliquent que sur les régions hors focus, pour éviter de sur-accentuer les détails déjà nets. Cette option n'est disponible que pour les fichiers RAW, car elle dépend des détails calculés à l'étape du dématriçage.
 
@@ -132,11 +140,11 @@ Une nouvelle option de masquage paramétrique a été ajoutée pour vous permett
 
 L'interface graphique des masques a été améliorée. Les modes de fusion “inverses” sont à présent accessibles à partir d'une icône “inverser” et les étapes d'amélioration des masques par floutage (utilisant un flou gaussien) et par raffinement (utilisant un filtre guidé sensible aux bords) peuvent être appliqués dans un ordre défini par l'utilisateur.
 
-[![](images/Screenshot_20210629_230036.jpg)](https://darktable.fr/wp-content/uploads/2021/06/Screenshot_20210629_230036.jpg)
+![](images/Screenshot_20210629_230036.jpg)
 
 Le réglage par défaut des modes de fusion est d'appliquer la sortie du module par dessus son entrée avec une transparence optionnelle (utilisant la classique [composition alpha](https://en.wikipedia.org/wiki/Alpha_compositing) et supposant une entrée complètement opaque). Les modes inverses appliquent l'entrée par dessus la sortie.
 
-[![](images/Screenshot_20210629_230302.jpg)](https://darktable.fr/wp-content/uploads/2021/06/Screenshot_20210629_230302.jpg)
+![](images/Screenshot_20210629_230302.jpg)
 
 Jusqu'à darktable 3.4, le raffinement de masque (utilisant le filtre guidé) était toujours appliqué avant le floutage du masque (utilisant un flou gaussien). Les deux techniques ont pour but d'assurer que des régions contiguës de l'image soient masquées de façon également contiguë, sans trous, notamment en présence de bruit ou lorsque des masques de chromaticité sont utilisés. Cependant, le flou gaussien n'est pas sensible aux bords et peut fuir hors des limites des régions masquées, produisant des halos autour des bords dans certains cas, alors que le filtre guidé est explicitement forcé à suivre les bords de près. Bien que le flou gaussien soit plus efficace pour gérer le bruit, l'utiliser après le filtre guidé annule la sensibilité aux bords de ce dernier. Les appliquer dans l'ordre inverse peut aider à corriger le bruit de façon plus agressive tout en gardant les propriétés du filtre guidé aux bords (utilisez des petits rayons de floutage).
 
@@ -150,7 +158,9 @@ Le module _aberrations chromatiques_ existant a été renommé [_aberratons chro
 
 Un nouveau module [_aberrations chromatiques_](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/chromatic-aberrations/) a été ajouté. Il opère en RGB après le dématriçage et est donc disponible pour toute image et tout type de capteur. Il amène une nouvelle technique de filtrage (inspirée par les [manifolds adaptatifs](https://www.inf.ufrgs.br/~eslgastal/AdaptiveManifolds/), publiés en 2012) qui permet de guider, de façon plus ou moins proche, deux des canaux RGB avec le troisième, pour assurer que les gradients des 3 canaux soient corrélés.
 
-[![](images/aberrations-chromatiques.jpg)](https://darktable.fr/wp-content/uploads/2021/07/aberrations-chromatiques.jpg) © Rawfiner – Correction des aberrations chromatiques avec le nouveau module
+![](images/aberrations-chromatiques.jpg)
+
+© Rawfiner – Correction des aberrations chromatiques avec le nouveau module
 
 Notez que les aberrations chromatiques se produisent soit lorsque les gradients des 3 canaux sont légèrement décalés dans le plan, les uns par rapport aux autres, soit parce que les gradients sont plus flous sur un canal que sur les autres. Le rayon du voisinage utilisé pour corriger les gradients et la force de la correction sont définis par l'utilisateur. Ceci fonctionne beaucoup mieux pour les aberrations chromatiques larges (au dessus de f/2.8) que l'ancien module et régularise une partie du bruit par effet secondaire. Il peut aussi être utilisé sur plusieurs instances en utilisant différentes stratégies de guidage pour venir à bout des cas les plus difficiles sans produire de franges grises sur les contours.
 
@@ -160,7 +170,7 @@ La correction des aberrations chromatique du module _correction des objectifs_ p
 
 ## Vectorscope
 
-[gallery columns="2" link="file" size="large" ids="7637,7638"]
+{{< gallery images="Screenshot_20210629_235951.jpg,Screenshot_20210629_235936.jpg" >}}
 
 Une vue [vectorscope](https://darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/histogram/#vectorscope) a été ajoutée en complément de l'histogramme et de la forme d'onde. Le vectorscope est un diagramme teinte/chroma qui montre la [chromaticité](https://fr.wikipedia.org/wiki/Diagramme_de_chromaticit%C3%A9) isolée des informations de luminosité ou de spatialité.
 
@@ -257,7 +267,7 @@ La prochaine version est déjà prévue pour décembre. Voici quelques élément
 - D'avantages d'améliorations de la gestion de la couleur à l'intérieur du pipeline de pixels,
 - Un nouvel algorithme de dématriçage LMMSE, particulièrement adapté aux images à haut ISO.
 
-[gallery size="medium" columns="2" link="file" ids="7657,7658"]
+{{< gallery images="P2100834_01.jpg,P2100834.jpg" >}}
 
 _Traduit depuis l'article original en anglais. Images © leurs auteurs respectifs, réutilisation non permise sans autorisation expresse. Image d'en-tête sous licence CC-BY-NC 4.0 par Mica._
 

@@ -9,7 +9,7 @@ tags:
 
 Aurélien Pierre, membre de la communauté, développe un algorithme de défloutage, particulièrement impressionnant au passage, qui pourrait de devenir un module de darktable.
 
-[![](images/before-after-v6.jpg)](http://darktable.fr/wp-content/uploads/2017/10/before-after-v6.jpg)
+![](images/before-after-v6.jpg)
 
 Vous trouverez plus de détails [sur son site](https://photo.aurelienpierre.com/maths-appliquees/) et [le code sur github](https://github.com/aurelienpierre/Image-Cases-Studies).
 

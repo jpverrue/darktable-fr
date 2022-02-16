@@ -11,7 +11,7 @@ Une nouvelle fonctionnalité (oui encore une autre!) est actuellement en cours d
 
 Il s'agit de la fusion d'exposition. Concrètement cette fonctionnalité apparaîtra dans le module de **courbe de base** au niveau des modes de fusion.
 
-[![exposure-fusion](images/exposure-fusion.png)](https://darktable.fr/wp-content/uploads/2016/08/exposure-fusion.png)
+![exposure-fusion](images/exposure-fusion.png)
 
 Le principe est de fusionner des images prises à différentes expositions. Pour en savoir plus sur la fusion d'exposition, vous pouvez consulter [ce lien](http://web.stanford.edu/class/cs231m/project-1/exposure-fusion.pdf). Cela peut s'apparenter à la technique du HDR mais cet outil est plus proche de ce que peut faire [enfuse](http://wiki.panotools.org/Enfuse), c'est à dire du tonemapping sans passer par la création d'une image HDR (qui nécessite plusieurs prises de vue).
 

@@ -46,17 +46,23 @@ Quand quelque chose se passe mal, on peut, soit blâmer l'outil, soit blâmer l'
 
 Pour se rendre compte des possibilités d'un logiciel, la première chose serait peut-être de voir ce que les utilisateurs expérimentés sont capables d'en faire, non ?
 
-[gallery size="medium" columns="2" link="file" ids="5923,5919"]
+{{< gallery images="DSC_0012-aurelien-WEB-1.jpg,5707034020_151dd759be_b.jpg" >}}
 
 J'ai repris ce [concours RAW](https://froknowsphoto.com/raw-edit-of-the-week-25/) par Jared Polin, daté de 2011, qui avait déjà fait l'objet d'un [test comparatif](http://www.tutorialgeek.net/2011/07/lightroom-vs-darktable-raw-photo.html) avec darktable. J'y ai passé 25 min, essentiellement parce que l'appareil photo n'a pas de profil dans darktable : j'ai donc dû ajuster les couleurs à l'œil, par rapport à l'image de référence, et ça prend pas mal d'aller-retours. Ce qui est intéressant ici, c'est que l'appareil photo utilisé est un vieux Nikon D100, avec une plage dynamique franchement en-dessous de ce qu'on fait aujourd'hui, donc le traitement fait beaucoup dans la récupération du contraste et des détails. Voici l'historique :
 
-[![](images/historique.png)](http://darktable.fr/wp-content/uploads/2018/08/historique.png)Une des critiques habituelles de darktable est la moins bonne conservation des détails en haute lumière.
+![](images/historique.png) 
 
-[![](images/aurelien-jared.png)](http://darktable.fr/wp-content/uploads/2018/08/aurelien-jared.png) Gauche : retouche Aurélien/darktable | Droite : retouche Jared/Lightroom
+Une des critiques habituelles de darktable est la moins bonne conservation des détails en haute lumière.
+
+![](images/aurelien-jared.png) 
+
+Gauche : retouche Aurélien/darktable | Droite : retouche Jared/Lightroom
 
 Observez ce détail de la robe à 100 % et dites-moi si on a perdu des détails dans la texture. En fait, j'ai fait exprès d'atténuer les hautes lumières pour augmenter les détails dans la texture et le drapé. Donc darktable « sait » récupérer les hautes lumières, sous réserve que l'utilisateur sache le faire fonctionner.
 
-[![](images/aurelien-jared-2.png)](http://darktable.fr/wp-content/uploads/2018/08/aurelien-jared-2.png) Gauche : retouche Aurélien/darktable | Droite : retouche Jared/Lightroom
+![](images/aurelien-jared-2.png)
+
+Gauche : retouche Aurélien/darktable | Droite : retouche Jared/Lightroom
 
 Donc, est-ce le logiciel qui est en cause, ou la maîtrise de celui qui prétend le tester ? Je vous laisse juge.
 
@@ -68,7 +74,7 @@ Souvent, les critiques qui reviennent sont :
 
 Moi j'ai envie de vous dire :
 
-[gallery size="medium" columns="2" link="file" ids="5928,5927"]
+{{< gallery images="P997_carrera_s_armaturen.jpg,1024px-Cockpit_of_Air_France_A380_F-HPJC_4943144092.jpg" >}}
 
 Le véhicule de gauche se déplace en 2D sur route balisée à vitesse inférieure à 295 km/h. En cas d'urgence, le pilote met un coup de frein et s'arrête au bord de la route. Le véhicule de droite se déplace en 3D sur itinéraire non balisé à une vitesse maximale de 1020 km/h et à une altitude maximale de 13 100 m. En cas d'urgence, le pilote ne peut pas s'arrêter car c'est sa vitesse qui fait voler l'avion (portance, décrochage, etc.).
 
@@ -76,7 +82,9 @@ Le véhicule de gauche requiert 30 h de formation pratique. Le véhicule de droi
 
 Dans un registre plus proche de l'image, vous avez entendu parler du modeleur/animateur 3D [Blender](https://www.blender.org/) ?
 
-![](images/06.jpg)](https://www.blender.org/wp-content/uploads/2013/05/06.jpg) Tracker VFX de Blender
+![](images/06.jpg)
+
+Tracker VFX de Blender
 
 Je suis désolé, mais on ne peut pas faire des opérations avancées avec des outils simples. À un moment donné, tout se paie. On ne peut pas avoir un logiciel puissant, riche, qui laisse une totale liberté d'action à l'utilisateur, et qui soit en même temps simple, intuitif, rapide à prendre en main. Tout ce qui est intuitif cache des chose à l'utilisateur. La facilité va se payer plus tard, en terme de limites dans les fonctionnalités.
 
@@ -124,8 +132,14 @@ Reste que beaucoup de chose sont perfectibles. Mais beaucoup de choses fonctionn
 
 De grâce, restez stupide et paresseux, continuez à utiliser Lightroom, et arrêtez de croire qu'on cherche à vous convertir : on se portait très bien avant que darktable ne s'ouvre à Windows. Vous voulez apprendre : on veut bien vous aider. Vous avez la flemme : restez dans votre indigence crasse, shootez en JPEG, on n'a pas besoin de vous. Au fond, c'est simple.
 
-[![](images/Autoportraits-0038-_DSC0208-WEB.jpg)](https://d1ehq6mh87pjr.cloudfront.net/wp-content/uploads/sites/3/2018/01/Autoportraits-0038-_DSC0208-WEB.jpg) moi par moi, retouche 100 % darktable.
+![](images/Autoportraits-0038-_DSC0208-WEB.jpg)
 
-![](images/Shoot-Fredau-0051-_DSC0096-Majest%C3%A9-WEB.jpg)](https://photo.aurelienpierre.com/wp-content/uploads/sites/3/2017/04/Shoot-Fredau-0051-_DSC0096-Majest%C3%A9-WEB.jpg) Fredau. retouche 100 % darktable.
+moi par moi, retouche 100 % darktable.
 
-[![](images/Minh-Ly-intime-0029-_DSC0063-En-attendant-l%C3%A9t%C3%A9-WEB.jpg)](https://d1ehq6mh87pjr.cloudfront.net/wp-content/uploads/sites/3/2018/03/Minh-Ly-intime-0029-_DSC0063-En-attendant-l%C3%A9t%C3%A9-WEB.jpg) Minh-Ly. retouche 100 % darktable.
+![](images/Shoot-Fredau-0051-_DSC0096-Majest%C3%A9-WEB.jpg)
+
+Fredau. retouche 100 % darktable.
+
+![](images/Minh-Ly-intime-0029-_DSC0063-En-attendant-l%C3%A9t%C3%A9-WEB.jpg)
+
+Minh-Ly. retouche 100 % darktable.

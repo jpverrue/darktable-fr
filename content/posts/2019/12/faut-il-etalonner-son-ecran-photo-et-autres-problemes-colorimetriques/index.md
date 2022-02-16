@@ -40,11 +40,11 @@ D'abord, il faut faire le distinction entre profilage, calibration, étalonnage 
 
 1. la calibration (en anglais) ou l'étalonnage (en français rigoureux), qui règle la luminosité du blanc, du noir, la balance des blancs et le gamma. Elle est totalement optionnelle et produit une LUT (_look-up table_) qui sera habituellement chargée ensuite dans la table de gamma de la carte graphique (_VCGT : Video Card Gamma Table_) :
 
-[![](images/Capture-décran-du-2019-12-07-22-03-58-scaled.png)](https://darktable.fr/wp-content/uploads/2019/12/Capture-d'écran-du-2019-12-07-22-03-58-scaled.png)
+![](images/Capture-décran-du-2019-12-07-22-03-58-scaled.png)
 
 2. le profilage (en anglais), ou la caractérisation (en français rigoureux), qui enregistre le décalage entre la couleur produite par l'écran et la couleur attendue, pour des numéros RGB connus. Cette étape produit le profil ICC :
 
-[![](images/Capture-décran-du-2019-12-07-22-06-30-scaled.png)](https://darktable.fr/wp-content/uploads/2019/12/Capture-d'écran-du-2019-12-07-22-06-30-scaled.png)
+![](images/Capture-décran-du-2019-12-07-22-06-30-scaled.png)
 
 Quelques précision s'imposent :
 

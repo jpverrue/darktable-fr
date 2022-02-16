@@ -19,7 +19,7 @@ Voici la liste des changements:
 - Nouveau script d'installation, désinstallation et de mise à jour.
 - Correction: Velvia 50 n'activait pas le module.
 
-### [Téléchargement ici](http://joaoalmeidaphotography.us4.list-manage.com/track/click?u=2b0466daf4273dc35a2bc58cd&id=e91d6cd571&e=8ce02638d3)
+[Téléchargement ici](http://joaoalmeidaphotography.us4.list-manage.com/track/click?u=2b0466daf4273dc35a2bc58cd&id=e91d6cd571&e=8ce02638d3)
 
 Vous pouvez trouver des exmples de photos utilisant ces styles sur  [_Flickr_](http://joaoalmeidaphotography.us4.list-manage1.com/track/click?u=2b0466daf4273dc35a2bc58cd&id=f57bf94297&e=8ce02638d3) ou [_Instagram_](http://joaoalmeidaphotography.us4.list-manage.com/track/click?u=2b0466daf4273dc35a2bc58cd&id=ac0fba9727&e=8ce02638d3).  
   
