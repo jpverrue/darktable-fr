@@ -9,8 +9,6 @@ tags:
   - "feedback"
   - "formation"
   - "Luc Viatour"
-images:
-  - "images/DSF6159.jpg"
 ---
 
 Petit compte rendu de la formation darktable organisé par [Luc Viatour](https://lucnix.be/)  au centre culturel [La Spirale de Natoye.](https://laspirale.be/)

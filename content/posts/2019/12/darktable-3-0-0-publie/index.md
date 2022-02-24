@@ -7,8 +7,6 @@ categories:
 tags: 
   - "darktable"
   - "news"
-images:
-  - "images/darktable3.jpg"
 ---
 
 Chaque année, l'équipe darktable nous offre une nouvelle version comme cadeau de Noël. Cette année, l'équipe s'est surpassée et nous offre une version plus que majeure.

@@ -4,8 +4,6 @@ date: "2021-07-03"
 categories: 
   - "actualites"
   - "featured"
-images:
-  - "images/trona-pinacles-ir.jpg"
 ---
 
 Article original : [anglais](https://www.darktable.org/2021/07/darktable-3-6/). Traductions : [allemand](https://www.bilddateien.de/blog/d2021-07-03-darktable-3-6-weiteres-update.html)

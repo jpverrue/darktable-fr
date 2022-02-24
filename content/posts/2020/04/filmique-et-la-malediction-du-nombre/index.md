@@ -8,8 +8,6 @@ categories:
 tags:
   - "Aurélien Pierre"
   - "tutoriel"
-images:
-  - "images/mappage-filmique.png"
 ---
 
 ## Introduction

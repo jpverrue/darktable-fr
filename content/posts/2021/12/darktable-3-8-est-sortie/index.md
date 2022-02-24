@@ -1,17 +1,12 @@
 ---
 title: "darktable 3.8 est sortie"
 date: "2021-12-26"
-featured: true
-pinned: true
 categories: 
   - "actualites"
-  - "featured"
 tags: 
   - "darktable"
   - "jpg"
   - "note-de-version"
-images:
-  - "images/chartres_hu149bf1b2e889ca72934ff96c2502ff19_586279_960x0_resize_q75_box.jpg"
 ---
 
 **Pascal Obry** a publié : [https://github.com/darktable-org/darktable/releases/tag/release-3.8.0](https://github.com/darktable-org/darktable/releases/tag/release-3.8.0)

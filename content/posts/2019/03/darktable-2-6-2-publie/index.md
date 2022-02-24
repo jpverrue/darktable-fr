@@ -3,8 +3,6 @@ title: "darktable 2.6.2 publié"
 date: "2019-03-20"
 categories: 
   - "actualites"
-images:
-  - "images/Screenshot_20190320_111516.png"
 ---
 
 ## Nouvelles fonctionnalités

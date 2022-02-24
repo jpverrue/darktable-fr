@@ -11,8 +11,6 @@ tags:
   - "liberapay"
   - "patreon"
   - "tipeee"
-images:
-  - "images/liberapay.jpg"
 ---
 
 ## 2021

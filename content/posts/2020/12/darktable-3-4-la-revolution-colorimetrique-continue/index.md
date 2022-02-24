@@ -3,8 +3,6 @@ title: "darktable 3.4 : la révolution colorimétrique continue"
 date: "2020-12-24"
 categories: 
   - "actualites"
-images:
-  - "images/lua-scripts-installer.png"
 ---
 
 **Annonce, darktable-release 3.4**  _(Traduction faite avec DeepL et corrigée par Aurélien, JMM40, jpg54, Jipivy, olliwa, vithom et 2 auteurs anonymes)_

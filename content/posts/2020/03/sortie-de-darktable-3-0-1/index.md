@@ -7,8 +7,6 @@ categories:
 tags: 
   - "darktable"
   - "news"
-images:
-  - "images/darktable3.jpg"
 ---
 
 La première mise à jour de maintenance de darktable 3.0, numérotée 3.0.1 a été publiée aujourd'hui par Pascal Obry. [Lire les notes de version officielles (en anglais)](https://github.com/darktable-org/darktable/releases/tag/release-3.0.1).

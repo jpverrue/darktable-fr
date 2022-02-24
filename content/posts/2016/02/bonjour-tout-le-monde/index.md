@@ -8,8 +8,6 @@ tags:
   - "tutoriel"
 series:
   - "Tutoriels de carafife"
-images:
-  - "images/tuto-carafife1.jpeg"
 ---
 
 Dans sa première vidéo, Carafife nous présente l'interface de Darktable. 

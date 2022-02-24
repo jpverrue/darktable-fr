@@ -9,8 +9,6 @@ tags:
   - "news"
   - "reseau-social"
   - "twitter"
-images:
-  - "images/dt-fb-g-tw.png"
 ---
 
 Comme vous l'avez sans doute remarqué, le site internet a changé d'adresse et il a maintenant son propre nom de domaine.

@@ -5,8 +5,6 @@ categories:
   - "actualites"
 tags: 
   - "news"
-images:
-  - "images/darktable-logo-name-1520w-1.png"
 ---
 
 La version 2.6.1 de darktable est disponible !

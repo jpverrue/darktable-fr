@@ -5,8 +5,6 @@ categories:
   - "non-classe"
 tags: 
   - "news"
-images:
-  - "images/darktable26.jpeg"
 ---
 
 À la veille de Noël, nous somme heureux de vous annoncer que la nouvelle version majeure de darktable est enfin disponible.

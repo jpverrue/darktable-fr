@@ -6,8 +6,6 @@ categories:
   - "featured"
 tags: 
   - "darktable"
-images: 
-  - "images/darktable3.jpg"
 ---
 
 Nous sommes fiers d'annoncer la nouvelle version des fonctionnalités de darktable, 3.0.2 ! Les liens de téléchargement sont en bas le lien github ci-dessous. Pour les distribution Linux, il faut attendre la sortie des paquets pour les différentes distributions.

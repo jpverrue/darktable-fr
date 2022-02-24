@@ -6,8 +6,6 @@ categories:
   - "featured"
 tags: 
   - "utiliser-darktable"
-images:
-  - "images/lighttable-mode6-fr.jpg"
 ---
 
 Elle est annoncée : [https://github.com/darktable-org/darktable/releases/tag/release-3.2.1](https://github.com/darktable-org/darktable/releases/tag/release-3.2.1)
