@@ -1,7 +1,6 @@
 +++
-title = "Tutoriels"
+title = "Séries"
 [menu.main]
-  weight = 5
+  weight = 1
   pre = '<i class="fas fa-fw fa-columns"></i>'
-  parent = "blog"
 +++

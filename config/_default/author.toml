@@ -1,13 +1,13 @@
 name = ""
 avatar = "images/logo.png" # Avatar image. Default to "images/profile.webp".
 bio = "Aidez-nous à supporter les coûts d'hébergement et à l'amélioration continue du logiciel en nous faisant un don via : "
-#company = 'Company'
+# company = 'Company'
 # company = '<a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a>'
-#location = "Earth"
+# location = "Earth"
 # alternatives:
 # location = "<a href='https://www.openstreetmap.org/search?query=Earth'>Earth</a>"
 # location = "<a href='https://www.google.com/maps/search/Earth'>Earth</a>"
-#about = "" # The external about page. The internal about page will be used if not set.
+# about = "https://domain.tld" # The external about page. The internal about page will be used if not set.
 
 [params]
   layout = "compact"

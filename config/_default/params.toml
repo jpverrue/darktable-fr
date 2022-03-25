@@ -46,7 +46,10 @@ googleAdsense = ""
 # tagCount = 10 # The number of tags shown in sidebar. Turn off by setting it to false.
 # seriesCount = 20 # The number of series shown in sidebar. Turn off by setting it to false.
 # taxonomyPaginate = 5 # Default to 10.
-taxonomyPostCount = 20 # The number of posts of taxonomy. Turn off by setting it to false.
+taxonomyPostCount = 20 # The number of taxonomy's posts. Turn off by setting it to false.
+countTaxonomyPosts = true # Count posts of taxonomy.
+
+# sidebarTaxonomies = ["categories", "tags", "series"] # The order of taxonomies on the sidebar.
 
 # pinnedPost = false # Turn on/off pinned posts.
 pinnedPostCount = 3 # The number of pinned posts.
@@ -63,6 +66,9 @@ titleCase = true # Capitalized title.
 
 viewer = true # Image Viewer
 
+# backgroundImage = ['/images/bg-light.png', '/images/bg-dark.png']
+# rss = "home" # link the RSS button to homepage all the times.
+
 [codeBlock]
   # maxLines = 8
   lineNos = false # true/false represents that show/hide the line numbers by default.
@@ -70,6 +76,9 @@ viewer = true # Image Viewer
 [post]
   # excerpt = "description"
   # excerptMaxLength = 120
+  # copyright = false # Whether to display copyright section on each post.
+  # plainifyExcerpt = false # Format excerpt in HTML if false.
+  featuredImage = true # Show the featured image above the content.
 
 [archive]
   paginate = 20 # Archive pagination. Default to 100.
@@ -153,3 +162,9 @@ viewer = true # Image Viewer
   #endpoint = "https://getform.io/f/56041c81-9e03-4c24-b9c5-61238854d4cd" # Backend endpoint, remove this line if you're using Netlify.
   # file = true # Enable file upload
   # fileField = "image" # The name of file field.
+
+[repo]
+  url = "https://github.com/razonyang/hugo-theme-bootstrap"
+  # branch = "main"
+  subPath = "exampleSite"
+  # dateFormat = "02/01/2006, 15:04:05 PM"
