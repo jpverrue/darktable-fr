@@ -1,23 +1,23 @@
 +++
+# type = "docs"
 title = "{{ replace .Name "-" " " | title }}"
-description = ""
 date = {{ .Date }}
+# description = "" # Used by description meta tag, summary will be used instead if not set or empty.
 featured = false
 draft = true
 comment = true
 toc = true
 reward = true
 pinned = false
-categories = [
-  ""
-]
-tags = [
-  ""
-]
-series = [
-  ""
-]
+carousel = false
+categories = []
+tags = []
+series = []
 images = []
 +++
 
+Summary.
+
 <!--more-->
+
+Content Body.

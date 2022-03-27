@@ -2,5 +2,6 @@
 title = "Tags"
 [menu.main]
   weight = 30
-  pre = '<i class="fas fa-fw fa-tags"></i>'
+  parent = "blog"
+  pre = '<i class="fas fa-fw fa-tags"></i> '
 +++
