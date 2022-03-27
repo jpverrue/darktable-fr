@@ -1,6 +1,7 @@
 ---
 title: "darktable 3.6 : sortie de la version été 2021"
 date: "2021-07-03"
+masonry: true
 categories: 
   - "actualites"
   - "featured"
@@ -50,7 +51,7 @@ Le compromis est que cette méthode donne un contraste atténué proche du blanc
 
 ### Balance couleur RGB
 
-{{< gallery images="Screenshot_20210629_193141.jpg,Screenshot_20210629_193202.jpg,Screenshot_20210629_193212.jpg" >}}
+{{< gallery images="images/Screenshot_20210629_193141.jpg,images/Screenshot_20210629_193202.jpg,images/Screenshot_20210629_193212.jpg" >}}
 
 La [_balance couleur RGB_](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/color-balance-rgb/) apporte plusieurs innovations uniques pour aider les coloristes à développer des images de façon cinématographique et avec un niveau de contrôle raffiné, dans un flux de travail relatif à la scène et prêt pour le HDR.
 
@@ -66,15 +67,15 @@ Les réglages de vibrance et de contraste ont été portés d'autres modules pou
 
 Le module balance couleur RGB est fourni avec un kernel OpenCL pour externaliser le calcul sur la carte graphique, 6× à 22× plus rapide que l'implémentation pour processeur standard, selon le matériel. Quelques exemples de ce que la balance couleur peut faire pour vous (avant/après) :
 
-{{< gallery images="Shoot-Minh-Ly-fashion-mauve-0178-DSC_0301_07.jpg,Shoot-Minh-Ly-fashion-mauve-0178-DSC_0301_09.jpg" >}}
+{{< gallery images="images/Shoot-Minh-Ly-fashion-mauve-0178-DSC_0301_07.jpg,images/Shoot-Minh-Ly-fashion-mauve-0178-DSC_0301_09.jpg" >}}
 
-{{< gallery images="DSC_4707.jpg,DSC_4707_01.jpg" >}}
+{{< gallery images="images/DSC_4707.jpg,images/DSC_4707_01.jpg" >}}
 
-{{< gallery images="20b88b646b8d5d408a461e8c5a253a0178966065.jpeg,c31e6e812e456bf83726746c4be427490a1cdb90.jpeg" >}}
+{{< gallery images="images/20b88b646b8d5d408a461e8c5a253a0178966065.jpeg,images/c31e6e812e456bf83726746c4be427490a1cdb90.jpeg" >}}
 
-{{< gallery images="DSC_8864.jpg,DSC_8864_03.jpg" >}}
+{{< gallery images="images/DSC_8864.jpg,images/DSC_8864_03.jpg" >}}
 
-{{< gallery images="DSC_6098.jpg,DSC_6098_03.jpg" >}}
+{{< gallery images="images/DSC_6098.jpg,images/DSC_6098_03.jpg" >}}
 
 ### Calibration des couleurs : ajout du support pour color checker
 
@@ -98,7 +99,7 @@ darktable 3.6 également introduit un kernel OpenCL pour la calibration des coul
 
 Un exemple de ce que la calibration des couleurs peut faire pour vous : à gauche, on se contente de faire la balance des blancs sur la rampe de gris (delta E moyen de 2,23), à droite on fait une calibration complète (delta E moyen de 1,60). On voit que les bleus apparaissent délavés sur la version non calibrée.
 
-{{< gallery images="20181021_ColorChart_071_01.jpg,20181021_ColorChart_071.jpg" >}}
+{{< gallery images="images/20181021_ColorChart_071_01.jpg,images/20181021_ColorChart_071.jpg" >}}
 
 ## Module censurer
 
@@ -130,7 +131,7 @@ Pour tirer parti des avantages de différentes méthodes de dématriçage, de no
 
 ### Amélioration du masque basé sur les détails
 
-{{< gallery images="Screenshot_20210629_230532-scaled.jpg,Screenshot_20210629_230716-scaled.jpg" >}}
+{{< gallery images="images/Screenshot_20210629_230532-scaled.jpg,images/Screenshot_20210629_230716-scaled.jpg" >}}
 
 Une nouvelle option de masquage paramétrique a été ajoutée pour vous permettre d'inclure ou d'exclure les contours nets et les détails des masques paramétriques. Ceci est spécialement utile pour appliquer des flous et des améliorations de netteté qui ignorent les régions hors focus (bokeh), ou au contraire ne s'appliquent que sur les régions hors focus, pour éviter de sur-accentuer les détails déjà nets. Cette option n'est disponible que pour les fichiers RAW, car elle dépend des détails calculés à l'étape du dématriçage.
 
@@ -168,7 +169,7 @@ La correction des aberrations chromatique du module _correction des objectifs_ p
 
 ## Vectorscope
 
-{{< gallery images="Screenshot_20210629_235951.jpg,Screenshot_20210629_235936.jpg" >}}
+{{< gallery images="images/Screenshot_20210629_235951.jpg,images/Screenshot_20210629_235936.jpg" >}}
 
 Une vue [vectorscope](https://darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/histogram/#vectorscope) a été ajoutée en complément de l'histogramme et de la forme d'onde. Le vectorscope est un diagramme teinte/chroma qui montre la [chromaticité](https://fr.wikipedia.org/wiki/Diagramme_de_chromaticit%C3%A9) isolée des informations de luminosité ou de spatialité.
 
@@ -265,7 +266,7 @@ La prochaine version est déjà prévue pour décembre. Voici quelques élément
 - D'avantages d'améliorations de la gestion de la couleur à l'intérieur du pipeline de pixels,
 - Un nouvel algorithme de dématriçage LMMSE, particulièrement adapté aux images à haut ISO.
 
-{{< gallery images="P2100834_01.jpg,P2100834.jpg" >}}
+{{< gallery images="images/P2100834_01.jpg" >}}
 
 _Traduit depuis l'article original en anglais. Images © leurs auteurs respectifs, réutilisation non permise sans autorisation expresse. Image d'en-tête sous licence CC-BY-NC 4.0 par Mica._
 

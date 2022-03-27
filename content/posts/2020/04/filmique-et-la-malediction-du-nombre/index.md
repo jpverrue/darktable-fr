@@ -1,6 +1,7 @@
 ---
 title: "Filmique et la malédiction du nombre"
 date: "2020-04-30"
+masonry: true
 series:
   - "Tutoriels d'Aurélien Pierre"
 categories: 
@@ -109,7 +110,7 @@ Si le gris de la scène utilisé par filmique est loin de 18 %, la courbe est d�
 
 Les deux sets de réglages ci-dessous donnent les mêmes résultats pour les tons moyens et les hautes lumières, mais la variante gris 18 % donne des noirs un peu plus denses, car le pied de la courbe est un peu plus bas (et ce, même en réduisant la latitude pour éviter l'écrêtage en bas). À 18 %, la plage dynamique est presque symétrique (blanc ≃ − noir), ce qui est désirable pour des raison purement ergonomiques de contrôle de la courbe (sans lien avec le traitement d'image à proprement parler).
 
-{{< gallery images="filmique-18.png,filmic-9.png" >}}
+{{< gallery images="images/filmique-18.png,images/filmic-9.png" >}}
 
 Autre argument en faveur de l'ajustement de l'exposition le plus tôt possible dans le pipeline : le profil de couleur d'entrée. Les matrices utilisées comme profil de couleur d'entrée ne sont pas parfaitement précises sur toute la plage dynamique, et la méthode de profilage par matrice 3×3 est en elle-même relativement grossière. Les matrices sont donc optimisées pour donner une meilleure précision en priorité pour les tons moyens autour des teintes de peau (caucasienne…). Le module exposition, dans darktable, est appliqué par défaut avant le profil d'entrée et permet donc de pousser les tons moyens dans la zone de confort de la matrice, bénéficiant d'un petit supplément de précision à l'application du profil.
 

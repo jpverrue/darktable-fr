@@ -1,6 +1,7 @@
 ---
 title: "Qu'est-ce qu'une photo bien exposée ?"
 date: "2018-09-29"
+masonry: true
 series:
   - "Tutoriels d'Aurélien Pierre"
 categories: 
@@ -149,7 +150,7 @@ Même s'il ne faut pas le prendre comme une vérité absolue, c'est l'histogramm
 
 Évidemment, si vous faites du [low-key](https://www.lesnumeriques.com/photo/realiser-une-photo-low-key-pu101061.html) ou [high-key](https://www.lesnumeriques.com/photo/la-photographie-high-key-avec-les-moyens-du-bord-pu101051.html), ça ne s'applique plus. Mais, ça peut encore vous alerter que quelque-chose va mal si vous voyez des pics aux bords :
 
-{{< gallery images="Capture-du-2018-09-29-16-39-47.png,Capture-du-2018-09-29-16-38-38.png" >}}
+{{< gallery images="images/Capture-du-2018-09-29-16-39-47.png,images/Capture-du-2018-09-29-16-38-38.png" >}}
 
 ### De l'importance de l'étalonnage
 

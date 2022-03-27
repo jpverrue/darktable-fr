@@ -1,6 +1,7 @@
 ---
 title: "Compte rendu de la formation darktable donnée par Luc Viatour"
 date: "2018-01-16"
+masonry: true
 categories: 
   - "actualites"
 tags: 
@@ -29,6 +30,6 @@ Pour conclure, [Luc](https://lucnix.be/) nous a fait faire le tour du propriéta
 
 Vivement la prochaine
 
-{{< gallery images="DSF6153.jpg,DSF6156.jpg,DSF6159.jpg,DSF6163.jpg,DSF6170.jpg" >}}
+{{< gallery images="images/DSF6153.jpg,images/DSF6156.jpg,images/DSF6159.jpg,images/DSF6163.jpg,images/DSF6170.jpg" >}}
 
 Ps: J'ai appliqué sur les photos [le style Fujifilm Acros](https://darktable.fr/2018/01/tous-les-modes-de-simulation-de-film-fujifilm-sont-disponibles-sur-darktable/) que vous pouvez télécharger [ici](/download/Fuji_XTrans_III_dtstyles.zip)

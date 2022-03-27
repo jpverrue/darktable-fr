@@ -1,6 +1,7 @@
 ---
 title: "darktable, logiciel gratuit pour non-professionnel ?"
 date: "2018-08-24"
+masonry: true
 categories: 
   - "actualites"
 ---
@@ -46,7 +47,7 @@ Quand quelque chose se passe mal, on peut, soit blâmer l'outil, soit blâmer l'
 
 Pour se rendre compte des possibilités d'un logiciel, la première chose serait peut-être de voir ce que les utilisateurs expérimentés sont capables d'en faire, non ?
 
-{{< gallery images="DSC_0012-aurelien-WEB-1.jpg,5707034020_151dd759be_b.jpg" >}}
+{{< gallery images="images/DSC_0012-aurelien-WEB-1.jpg,images/5707034020_151dd759be_b.jpg" >}}
 
 J'ai repris ce [concours RAW](https://froknowsphoto.com/raw-edit-of-the-week-25/) par Jared Polin, daté de 2011, qui avait déjà fait l'objet d'un [test comparatif](http://www.tutorialgeek.net/2011/07/lightroom-vs-darktable-raw-photo.html) avec darktable. J'y ai passé 25 min, essentiellement parce que l'appareil photo n'a pas de profil dans darktable : j'ai donc dû ajuster les couleurs à l'œil, par rapport à l'image de référence, et ça prend pas mal d'aller-retours. Ce qui est intéressant ici, c'est que l'appareil photo utilisé est un vieux Nikon D100, avec une plage dynamique franchement en-dessous de ce qu'on fait aujourd'hui, donc le traitement fait beaucoup dans la récupération du contraste et des détails. Voici l'historique :
 
@@ -74,7 +75,7 @@ Souvent, les critiques qui reviennent sont :
 
 Moi j'ai envie de vous dire :
 
-{{< gallery images="P997_carrera_s_armaturen.jpg,1024px-Cockpit_of_Air_France_A380_F-HPJC_4943144092.jpg" >}}
+{{< gallery images="images/P997_carrera_s_armaturen.jpg,images/1024px-Cockpit_of_Air_France_A380_F-HPJC_4943144092.jpg" >}}
 
 Le véhicule de gauche se déplace en 2D sur route balisée à vitesse inférieure à 295 km/h. En cas d'urgence, le pilote met un coup de frein et s'arrête au bord de la route. Le véhicule de droite se déplace en 3D sur itinéraire non balisé à une vitesse maximale de 1020 km/h et à une altitude maximale de 13 100 m. En cas d'urgence, le pilote ne peut pas s'arrêter car c'est sa vitesse qui fait voler l'avion (portance, décrochage, etc.).
 

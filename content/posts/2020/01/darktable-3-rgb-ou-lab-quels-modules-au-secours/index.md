@@ -1,6 +1,7 @@
 ---
 title: "darktable 3 : RGB ou Lab ? Quels modules ? Au secours !"
 date: "2020-01-08"
+masonry: true
 series:
   - "Tutoriels d'Aurélien Pierre"
 categories: 
@@ -73,7 +74,7 @@ Du point de vue de la perception humaine, ces intensités proportionnelles au ni
 
 Cependant, toutes les opérations optiques qui sont réalisées lors de la prise d'image, comme le flou d'objectif, la création de bruit, ou l'effet d'un filtre coloré ajouté sur l'objectif, sont appliquées directement sur les photons. Par conséquent, pour retirer le flou d'objectif, ou pour le simuler, nous avons besoin de travailler sur les informations RGB linéaires qui sont l'information la plus proche du photon dont on dispose. Voyez vous-même, lequel de ces deux bokeh générés par ordinateur (original en bas) vous semble le plus naturel ? (Voir aussi un [exemple plus spectaculaire chez Chris Bejon](https://chrisbrejon.com/cg-cinematography/chapter-9-compositing/#exposure-control-by-dof))
 
-{{< gallery images="hanny-naibaho-oTP4xd9SAkc-unsplash-bad-blur-scaled.jpg,hanny-naibaho-oTP4xd9SAkc-unsplash-correct-blur-1-scaled.jpg" >}}
+{{< gallery images="images/hanny-naibaho-oTP4xd9SAkc-unsplash-bad-blur-scaled.jpg,images/hanny-naibaho-oTP4xd9SAkc-unsplash-correct-blur-1-scaled.jpg" >}}
 
 ![](https://images.unsplash.com/photo-1496307307731-a75e2e6b0959?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2048&q=80) Photo d'origine : [Hanny Naibaho](https://unsplash.com/@hannynaibaho?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge "Download free do whatever you want high-resolution photos from Hanny Naibaho")
 

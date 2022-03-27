@@ -1,6 +1,7 @@
 ---
 title: "Style 'The20s'"
 date: "2016-03-14"
+masonry: true
 categories: 
   - "styles"
 tags: 
@@ -9,7 +10,7 @@ tags:
 
 Voici un style pour darktable avec un coté twenties, c'est le premier (surement d'une longue série) style téléchargeable depuis le site darktable-fr ;)
 
-{{< gallery images="original.jpeg,the20s.jpeg" >}}
+{{< gallery images="images/original.jpeg,images/the20s.jpeg" >}}
 
 [Télécharger](/download/Styles/The20s.dtstyle)
 

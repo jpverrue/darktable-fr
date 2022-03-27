@@ -3,6 +3,7 @@ title: "Comment vous pouvez aider darktable et darktable.fr"
 date: "2021-01-06"
 featured: true
 pinned: true
+masonry: true
 categories: 
   - "actualites"
   - "featured"
@@ -32,7 +33,7 @@ Je vous en avais déjà touché un mot [sur le forum](https://darktable.fr/forum
 
 Mais avant ça, darktable.fr en chiffre, ça donne quoi?
 
-{{< gallery images="darktable-stat-jour.png,darktable-stat-mois.png,darktable-stat-annee.png" >}}
+{{< gallery images="images/darktable-stat-jour.png,images/darktable-stat-mois.png,images/darktable-stat-annee.png" >}}
 
 - C'est 30.000 à 40.000 visites par mois avec un pic en janvier à chaque nouvelle version de darktable
 - C'est plus de 1.000 membres sur le forum

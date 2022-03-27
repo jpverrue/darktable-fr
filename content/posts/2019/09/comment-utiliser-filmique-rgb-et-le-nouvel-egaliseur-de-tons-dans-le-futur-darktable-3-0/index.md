@@ -1,6 +1,7 @@
 ---
 title: "Comment utiliser filmique RGB et le nouvel égaliseur de tons dans le futur darktable 3.0 ?"
 date: "2019-09-25"
+masonry: true
 series:
   - "Tutoriels d'Aurélien Pierre"
 categories: 
@@ -34,4 +35,4 @@ Souvenez-vous, il y a exactement 13 mois, [je publiais ici un article expliquant
 
 Et voici les résultats :
 
-{{< gallery images="DSC_0012-aurelien-WEB-1.jpg,DSC_0012_02.jpg" >}}
+{{< gallery images="images/DSC_0012-aurelien-WEB-1.jpg,images/DSC_0012_02.jpg" >}}
