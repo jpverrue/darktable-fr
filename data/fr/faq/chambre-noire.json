@@ -1,0 +1,42 @@
+{
+  "title": "Chambre noire",
+  "weight": 3,
+  "questions": [
+    {
+      "question": "La courbe de base de mon boîtier n’est pas bonne. Y-a-t-il une solution ?",
+      "answer": "[Prise en charge des nouveaux boîtiers](https://forums.darktable.fr/showthread.php?tid=2582)"
+    },
+    {
+      "question": "correction d’objectifs est prise en charge dans un librairie externe : lensfun",
+      "answer": "[Mise à jour de la base de données de lensfun](https://forums.darktable.fr/showthread.php?tid=4212&pid=36339#pid36339)"
+    },
+    {
+      "question": "Correction d’un débordement de gamut",
+      "answer": "Solution de mmoy résolu dans [cette discussion](https://forums.darktable.fr/showthread.php?tid=2128&pid=18540#pid18540)"
+    },
+    {
+      "question": "Débruitage – traitement du bruit (plusieurs tutos dans “Ressources”)",
+      "answer": "* [Aurélien Pierre revient sur la théorie et propose un style](https://forums.darktable.fr/showthread.php?tid=2151)\n* [Les différentes propositions pour débruiter une photo à 64500 ISO proposée, les différentes propositions de RawFinger et comparaison avec le traitement de DxO Prime](https://forums.darktable.fr/showthread.php?tid=2014&highlight=bruit)"
+    },
+    {
+      "question": "Filtre Pass bas ou contraste local ?",
+      "answer": "[Différence entre filtre pass bas et contraste local](https://forums.darktable.fr/showthread.php?tid=2244)"
+    },
+    {
+      "question": "Filtre pass bas ou égaliseur pour le contraste ?",
+      "answer": "[Aurélien explique comme agissent le fitre pass bas et l’égaliseur](https://forums.darktable.fr/showthread.php?tid=2244&pid=20159#pid20159)"
+    },
+    {
+      "question": "Quelle est la différence entre Contraste local, Renforcer la netteté et Égaliseur ?",
+      "answer": "[Réponse d’Aurélien Pierre](https://forums.darktable.fr/showthread.php?tid=2184&pid=19251#pid19251)"
+    },
+    {
+      "question": "Masques paramétriques > Réglettes entrée et sortie",
+      "answer": "* [Masques paramétriques](https://forums.darktable.fr/showthread.php?tid=1606&pid=13322#pid13322) et [Réponse de Pascal](https://forums.darktable.fr/showthread.php?tid=1606&pid=13323#pid13323)\n* [Vidéo de Carafife](https://youtu.be/EEZ-Chf8dWc?t=3m38s) : Tuto Darktable 7 : Options avancées des réglages conditionnels [ancien nom des masques paramétriques] et des diagrammes.\n* [JC-TUTOS](/series/tutoriels-de-jc-tutos/) aborde tous les aspects des masques dessinés et paramètriques ainsi que toutes leurs combinaisons possibles avec 13 tutos."
+    },
+    {
+      "question": "Une astuce pour repérer facilement les tâches à retirer d’une image ?",
+      "answer": "[Thomas propose un style pour mieux visualiser les tâches](/download/Astuce-Correction-poussières.zip) ; il nous explique plus en détails comment l’utiliser : [suppression des tâches et poussières](https://forums.darktable.fr/showthread.php?tid=3690)"
+    }
+  ]
+}

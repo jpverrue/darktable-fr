@@ -1,0 +1,10 @@
+{
+  "title": "Autres modules (capture, carte, diaporama, impression)",
+  "weight": 4,
+  "questions": [
+    {
+      "question": "Impression",
+      "answer": "* Sous Linux [avec Cups](https://forums.darktable.fr/showthread.php?tid=2186&pid=19272#pid19272)\n* Sous Linux [avec Turbo-Print](https://forums.darktable.fr/showthread.php?tid=2035&highlight=cups) (driver payant)\n* Sous Mac [avec QTR-Print-Tool](https://forums.darktable.fr/showthread.php?tid=2242&pid=19993#pid19993)\n* Pour l’instant pas de module impression sous Windows"
+    }
+  ]
+}

@@ -3,8 +3,24 @@
     "weight": 2,
     "questions": [
         {
-            "question": "What is Hugo?",
-            "answer": "Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again."
+            "question": "Comment comparer plusieurs photos ?",
+            "answer": "[Réponse de Carafife](https://forums.darktable.fr/showthread.php?tid=2082&pid=18040#pid18040) dans [Comparaison de photos](https://forums.darktable.fr/showthread.php?tid=2082)"
+        },
+        {
+            "question": "Comment récuper le traitement (.xmp) dans une photo exportée avec darktable ?",
+            "answer": "Si vous avez le fichier RAW et le fichier exporté avec darktable, vous pouvez récupérer [l’historique du traitement fait sur cette photo](https://forums.darktable.fr/showthread.php?tid=2532&pid=22718#pid22718).\n@rawfiner explique comment récupérer [l’historique de traitement dans un fichier Jpeg](https://peertube.mastodon.host/videos/watch/7e1f3b0f-c08c-4f0e-a9dc-9c8fbc7bd38a) en vidéo vers 3’30, il a aussi écrit [une explication sur le forum](https://forums.darktable.fr/showthread.php?tid=2805&pid=25223#pid25223)."
+        },
+        {
+            "question": "Gestion des mots-clés",
+            "answer": "* [Comprendre les mots-clés par Jean-Pierre](https://forums.darktable.fr/showthread.php?tid=2295&pid=20375#pid20375)\n* [Copier mots-clés](https://forums.darktable.fr/showthread.php?tid=2254)"
+        },
+        {
+            "question": "Gestion des vignettes et miniatures",
+            "answer": "* [Afficher les miniatures](https://forums.darktable.fr/showthread.php?tid=2257)\n* [Vignette ne reflète pas la photo traitée](https://forums.darktable.fr/showthread.php?tid=2255)"
+        },
+        {
+            "question": "Têtes de mort dans la table lumineuse ?",
+            "answer": "Renommer, déplacer ou supprimer les photos en dehors de darktable fait apparaître ces têtes de mort.\n[Plus d'information ici](https://forums.darktable.fr/showthread.php?tid=2258)."
         }
     ]
 }

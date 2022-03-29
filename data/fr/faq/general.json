@@ -3,24 +3,22 @@
     "weight": 1,
     "questions": [
         {
-            "question": "Carte de raccourcis clavier à imprimer",
-            "answer": "Téléchargez la [ici](/carte-de-reference)."
+            "question": "Qu’est-ce qu’est darktable et qu’est-ce qu’il n’est pas ?",
+            "answer": "La réponse est donné par Aurélien PIERRE sur [ce post](/quest-ce-que-darktable). Avant tout, pour tous nouveaux utilisateurs de darktable, veuillez lire le fil d’Aurélien."
         },
         {
-            "question": "Does FAQ page support Markdown syntax?",
-            "answer": "Sure. You can type any valid Markdown syntax, such as `code`, *italic*, **bold text** etc.\n#### Table\n| Foo |\n|:---|\n| Bar |\n#### List\n- One\n- Two\n"
+            "question": "J’ai une question?",
+            "answer": "Il y a sûrement une personne qu’il l’a déjà sur notre [forum](https://forums.darktable.fr/) ou nous l’avons expliqué dans les actualités de [notre blog](/posts). Si pas, alors vient nous en parler sur notre [salon de discussion](https://app.element.io/#/room/#darktable.fr:matrix.org)."
         },
         {
-            "question": "How to add more icons?",
-            "answer": "See also [Look and Feel](/en/posts/look-and-feel#icons)."
+            "question": "Liens utiles pour l'utilisation de darktable quelques soit le système d’exploitation",
+            "answer": "* [Carte de raccourcis clavier à imprimer](/carte-de-reference).\n* [Correspondance LR => DT](https://forums.darktable.fr/showthread.php?tid=2725&pid=24446#pid24446) , avec tutos à dispo proposé par @PB2N\n* [Les fichiers de configuration de darktable](/les-fichiers-de-configuration/) pour tous les sytèmes d’exploitation\n* [Manuel de darktable](https://docs.darktable.org/usermanual/3.8/fr/) en français.\n* [OpenCl et quelques réponses concernant certaines cartes graphiques](https://forums.darktable.fr/showthread.php?tid=2292)\n* [Problème de taille d’écran sous Mac 13″](https://forums.darktable.fr/showthread.php?tid=1351&highlight=mac)"
+
+
         },
         {
-            "question": "How to remove a language?",
-            "answer": "Let's take `zh-cn` as example.\n- Remove the language from `config/_default/languages.toml`.\n- Remove the content by command `find . -type f -name \"*.zh-cn.*\" -delete`."
-        },
-        {
-            "question": "How to add new language?",
-            "answer": "- Put your new language into `config/_default/languages.toml`.\n- [Write Articles](/en/posts/getting-started/#write-articles)."
+            "question": "Changer la couleur de l’interface (versions 2.6.x et antérieures) ?",
+            "answer": "* [Le fichier darktable.css et comment le modifier](https://forums.darktable.fr/showthread.php?tid=1219)\n* [Quelques propositions de fichiers datktable.css](https://forums.darktable.fr/showthread.php?tid=2297)\n* Un nouveau fil propose [des interfaces genre LR ou Luminar](https://forums.darktable.fr/showthread.php?tid=3106)\n* [Comment avoir tous les scripts Lua activables dans les préférences](https://forums.darktable.fr/showthread.php?tid=4300&pid=36988#pid36988)"
         }
     ]
 }
