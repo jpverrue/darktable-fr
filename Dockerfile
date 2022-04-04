@@ -12,4 +12,4 @@ RUN hugo --minify -b ${HUGO_BASEURL}
 # Final stage
 FROM nginx
 COPY --from=builder /src/public /app
-COPY ./themes/hugo-theme-bootstrap/docker/nginx/nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./docker/nginx/nginx.conf /etc/nginx/conf.d/default.conf
