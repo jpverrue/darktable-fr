@@ -1,5 +1,5 @@
 ---
-title: "darktable 3.6.1 publié"
+title: "Sortie de darktable 3.6.1"
 date: "2021-09-16"
 categories: 
   - "actualites"
