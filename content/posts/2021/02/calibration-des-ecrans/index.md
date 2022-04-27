@@ -17,7 +17,7 @@ Voici donc les ressources qui vous seront utiles :
 
 L'article a été publié sur le site de [Rawtherapee](http://rawtherapee.com/mirror/dcamprof/argyll-display.html "Article Rawtherapee") en 2015. Je l'ai traduit en français (merci à Deepl.com qui m'a beaucoup aidé) :
 
-[gview file="https://darktable.fr/wp-content/uploads/2021/02/Calibration-avec-Argyll.pdf"]
+[Téléchargez le fichier Calibration-avec-Argyll.pdf](/download/Calibration-avec-Argyll.pdf)
 
 L'article est très complet et explique bien le processus. Il fait parfois référence à des équipements de 2015, ce qui peut être un peu daté, cependant c'est une excellente source pour qui veut comprendre le processus en détail.
 
