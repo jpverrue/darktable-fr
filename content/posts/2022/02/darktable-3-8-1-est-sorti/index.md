@@ -2,7 +2,6 @@
 title: "Sortie de darktable 3.8.1"
 date: "2022-02-11"
 featured: true
-pinned: true
 categories: 
   - "actualites"
   - "featured"
