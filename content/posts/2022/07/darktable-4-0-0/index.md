@@ -22,11 +22,11 @@ Annoncé par [Pascal Obry](https://forums.darktable.fr/showthread.php?tid=6181&p
 * Speed-ups and Optimizations
 * ...
 
-
-Sur la chaine, A dabble in photography, on nous explique rapidement chaque nouvelle fonctionnalité
-
+Sur les chaine "A dabble in photography" et "Pixovert", on nous explique rapidement chaque nouvelle fonctionnalité
 
 {{< youtube _EOGBmksHDw >}}
+
+{{< youtube ncP9vWjFM4I >}}
 
 Pour plus d'informations sur cette mise à jour :
 * https://www.darktable.org/2022/07/darktable-4.0/
