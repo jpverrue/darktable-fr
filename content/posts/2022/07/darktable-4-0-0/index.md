@@ -1,5 +1,7 @@
 ---
 title: "darktable 4.0.0"
+aliases:
+  - "Darktable-4-0-0"
 date: "2022-07-03"
 featured: true
 pinned: true
