@@ -10,7 +10,6 @@ tags:
   - "featured"
 coverImage: "darktable-4-0-0.png"
 ---
-# darktable 4.0.0 est sorti
 
 [TurboGit a](https://github.com/TurboGit) publié ceci Il y a 3 jours
 
@@ -20,7 +19,7 @@ La version de github est ici : [https://github.com/darktable-org/darktable/relea
 
 Lors de la mise à jour à partir de la série stable 3.8.x, veuillez garder à l'esprit que vos modifications seront conservées pendant ce processus, mais la nouvelle bibliothèque et la nouvelle configuration ne seront plus utilisables avec 3.8.x. Il est fortement conseillé de faire d'abord une sauvegarde.
 
-#### Remarque importante : pour vous assurer que darktable peut continuer à prendre en charge le format de fichier brut pour votre appareil photo, veuillez lire [cet article](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) sur comment / quels échantillons bruts vous pouvez contribuer pour vous assurer que nous avons l'ensemble complet d'échantillons bruts pour votre appareil photo sous licence CC0 !
+> Remarque importante : pour vous assurer que darktable peut continuer à prendre en charge le format de fichier brut pour votre appareil photo, veuillez lire [cet article](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) sur comment / quels échantillons bruts vous pouvez contribuer pour vous assurer que nous avons l'ensemble complet d'échantillons bruts pour votre appareil photo sous licence CC0 !
 
 Depuis la version 3.8 de darktable :
 
