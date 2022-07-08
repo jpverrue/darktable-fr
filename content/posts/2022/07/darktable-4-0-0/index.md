@@ -4,7 +4,6 @@ aliases:
   - "Darktable-4-0-0"
 date: "2022-07-03"
 featured: true
-pinned: true
 categories:
   - "actualites"
   - "featured"
@@ -30,7 +29,9 @@ Sur les chaînes "A dabble in photography" et "Pixovert", on nous explique rapid
 
 {{< youtube ncP9vWjFM4I >}}
 
-Pour plus d'informations sur cette mise à jour :
+Pour plus d'informations sur cette mise à jour vous pouvez lire [l'article complet sur toutes les nouveautés](/posts/2022/07/notes-de-version-v4/)
+
+Ou encore sur :
 * https://www.darktable.org/2022/07/darktable-4.0/
 * https://github.com/darktable-org/darktable/releases/tag/release-4.0.0
 * https://discuss.pixls.us/t/darktable-4-0-3763-days-later/31478
