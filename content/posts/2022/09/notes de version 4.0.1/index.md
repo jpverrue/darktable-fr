@@ -22,9 +22,11 @@ Il est fortement conseillé de faire une sauvegarde au préalable.
 
 Note importante : pour s'assurer que darktable continuera à supporter le format de fichier brut de votre appareil photo, veuillez lire la liste en fin de ce post pour vous assurer que nous avons le jeu complet d'échantillons bruts pour votre appareil photo. Pour contribuer, lisez ce post : https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri
 ##### Depuis darktable 4.0.0:
-Près de 180 commits pour darktable + rawspeed
-103 pull requests traités
-19 issues fermées   
+Près de 180 commits pour darktable + rawspeed.
+
+103 pull requests traités,
+
+19 issues fermées.
 ## Les Nouveautés
 N/A
 ## Autres changements
