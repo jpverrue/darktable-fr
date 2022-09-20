@@ -1,5 +1,18 @@
-La version 4.0.1 est sortie ce W.E. Voici la traduction des notes de version
 ---
+title: "Version corrective 4.0.1"
+aliases:
+  - "Darktable-4-0-1"
+date: "2022-09-20"
+featured: true
+categories:
+  - "actualites"
+  - "featured"
+tags:
+  - "featured"
+  
+coverImage: "darktable-4-0-1.png"
+---
+La version 4.0.1 est sortie ce W.E. Voici la traduction des notes de version
 
 Nous sommes fiers d'annoncer la nouvelle version de darktable, 4.0.1 !
 
