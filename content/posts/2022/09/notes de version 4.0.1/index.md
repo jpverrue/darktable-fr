@@ -1,4 +1,4 @@
-La version 4.1 est sortie ce W.E. Voici la traduction des notes de version
+La version 4.0.1 est sortie ce W.E. Voici la traduction des notes de version
 ---
 
 Nous sommes fiers d'annoncer la nouvelle version de darktable, 4.0.1 !
