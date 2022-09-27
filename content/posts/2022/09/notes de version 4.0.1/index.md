@@ -21,6 +21,7 @@ La version Github est ici : https://github.com/darktable-org/darktable/releases/
 Comme toujours, veuillez ne pas utiliser le tarball autogénéré par Github, mais uniquement notre fichier tar.xz
 
 Les sommes de contrôle sont les suivantes :
+```bash 
 $ sha256sum darktable-4.0.1.tar.xz
 5fef81e0c0079977a3cdc3627eed777280c2346d023c5d176c1f4a62cbe51d68 darktable-4.0.1.tar.xz
 $ sha256sum darktable-4.0.1.1_x86_64.dmg
@@ -29,7 +30,7 @@ $ sha256sum darktable-4.0.1.1_arm64.dmg
 961af68e76fb274b0451bf287a9eb243f917ef68b933d48963534bfe328a955f darktable-4.0.1.1_arm64.dmg
 $ sha256sum darktable-4.0.1.exe
 96b584edbc7d65f26b76dc7c57b9dce6fe33792b839f0ac4c712cd6834051dad  darktable-4.0.1-win64.exe
-
+```
 Lors de la mise à jour depuis la série stable 3.8.x, gardez à l'esprit que vos modifications seront préservées durant ce processus, mais que la nouvelle bibliothèque et la configuration ne seront plus utilisables avec la version 3.8.x.
 Il est fortement conseillé de faire une sauvegarde au préalable.
 
