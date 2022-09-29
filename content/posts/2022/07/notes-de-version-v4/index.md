@@ -2,7 +2,6 @@
 title: "Notes de version darktable 4.0.0"
 date: "2022-07-05"
 featured: true
-pinned: true
 categories:
   - "actualites"
   - "featured"
