@@ -13697,7 +13697,9 @@ body {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
+  --hbs-link-hover-color-rgb: var(--hbs-primary-rgb);
 }
 
 .btn-actions-panel {
@@ -14208,6 +14210,10 @@ pre code {
   font-size: 2em;
 }
 
+.mermaid .svg-inline--fa > path {
+  fill: var(--hbs-primary) !important;
+}
+
 img {
   max-width: 100%;
 }
@@ -14230,6 +14236,11 @@ main {
 .nav-tabs {
   --hbs-nav-tabs-link-active-bg: var(--hbs-primary);
   --hbs-nav-tabs-link-active-color: var(--hbs-on-primary);
+}
+
+.nav-pills {
+  --hbs-nav-pills-link-active-bg: var(--hbs-primary);
+  --hbs-nav-pills-link-active-color: var(--hbs-on-primary);
 }
 
 .offcanvas {
