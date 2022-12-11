@@ -43,7 +43,13 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Les modules restent entièrement visibles lors de l'ouverture ou de l'extension et se déplacent avec un effet de transition en douceur. Cet effet peut être accéléré ou désactivé dans les préférences --> divers --> temps en ms des transitions de l'interface utilisateur.
 
-- Grande refonte du cache de pixelpipe.
+- Grande révision du cache pixelpipe. Augmentation du nombre de lignes de cache avec avec un taux de réussite amélioré tout en contrôlant la mémoire globale utilisée, ce qui a conduit à une interface utilisateur beaucoup plus rapide.
+
+- Réécriture d'une bonne partie de la vue diaporama pour une meilleure expérience l'utilisateur. Un petit aperçu est d'abord affiché pendant le calcul de l'image l'image complète, ce qui indique que quelque chose est en train de se passer.
+
+- Un menu avec une nouvelle icône a été ajouté pour ajouter/supprimer des filtres directement dans la barre supérieure. Certains critères de tri sont absents de la liste car ils ne sont pas lisibles sur la barre supérieure.
+
+- Nous avons retravaillé l'interface du menu filtrer pour une meilleure lisibilité. Ce nouveau widget devrait être plus facile à utiliser et plus efficace.
 
 ## Autres changements
 
@@ -170,6 +176,16 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Correction de l'état de l'interface de certains boutons à bascule qui n'étaient pas correctement mis à jour.
 
+- Correction de la vérification des coefficients de température pour l'affichage des présélections. Cela permet d'éviter certaines erreurs.
+
+- Correction du support du pixelpipe rapide dans certains modules pour la deuxième fenêtre.
+
+- Dans le panneau d'accès rapide, les widgets sont cachés s'ils sont également cachés dans le module complet (à cause d'une combinaison d'options sélectionnées). Cette Cela fonctionne même si ces options sont modifiées à partir d'un autre widget dans le qap.
+
+- Amélioration de l'étiquette de couleur bleue pour une meilleure visibilité dans le thème sombre.
+
+- Correction de l'étiquette de l'indicateur de zoom dans la fenêtre de navigation. Il était parfois coupé à droite ou en bas comme mal placé sur la fenêtre.
+- 
 ## Lua
 
 - La version de l'API est passée à 9.0.0
