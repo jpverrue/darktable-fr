@@ -6,11 +6,11 @@ Comme toujours, n'utilisez pas le fichier tarball autogénéré fourni par githu
 
 ```
 $ sha256sum darktable-4.2.0.tar.xz
-XXXX darktable-4.2.0.tar.xz
+1408 darktable-4.2.0.tar.xz
 $ sha256sum darktable-4.2.0.dmg
-XXXX darktable-4.2.0.dmg
+408 darktable-4.2.0.dmg
 $ sha256sum darktable-4.2.0.exe
-XXXX darktable-4.2.0.exe
+59 darktable-4.2.0.exe
 ```
 
 Lors de la mise à jour à partir de la série stable 4.0.x, gardez à l'esprit que vos modifications seront préservées pendant ce processus, mais que la nouvelle bibliothèque et la configuration ne seront plus utilisables avec les versions antérieures (4.0.x, 3.x.x, etc).
@@ -29,35 +29,42 @@ Depuis darktable 4.0 :
 
 Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. Ces fonctionnalités sont décrites plus en détail dans le manuel d'utilisation et dans l'article de blog qui l'accompagne.
 
-- Nouveau module de transformation de l'affichage : "sigmoïde".
+- Nouveau module de transformation de l'affichage : "sigmoïde" qui peut être utilisé en remplacement des modules "filmique" et "ourbe de base.
 
-- "récupération des hautes lumières" : deux nouveaux algorithmes - "peinture opposée" et "segmentation" - sont proposés. L'algorithme "peinture opposée" s'est avéré très stable et bon dans de nombreuses images. Il a donc été choisi par défaut.
+- Deux nouveaux algorithmes sont fournis dans le module de "reconstruction des hautes lumières" : "peinture opposée" et "segmentation". L'algorithme "peinture opposée" s'est avéré très stable et fournit de bons résultats dans de nombreuses images, il remplace donc "tronquer les hautes lumières" comme nouvel algorithme par défaut.
 
-- Une refonte complète de l'affichage des images a été effectuée. Un premier travail a été de créer un affichage d'image facile à utiliser sur la zone centrale. Cette routine prend en charge tous les modes d'affichage : aide à la mise au point et évaluation des couleurs. Cette routine est maintenant utilisée pour la zone de la chambre noire, pour la deuxième fenêtre et les duplicata. Ainsi, la deuxième fenêtre obtient l'affichage de l'aide à la mise au point et, plus important encore, le mode d'évaluation des couleurs qui est une fonctionnalité très utile. Pour réaliser cela correctement, une nouvelle routine a été créée. Elle exécute un pixelpipe séparé qui est entièrement équivalent à celui de la chambre noire. Cela donne un affichage correctement aligné. En utilisant les nouvelles routines pixelpipe et d'affichage, la routine snapshot a été retravaillée. Cette nouvelle version dispose d'instantanés entièrement dynamiques. Les instantanés peuvent être panoramisés et zoomés tout en restant parfaitement alignés avec l'affichage de la chambre noire, ce qui permet une comparaison correcte.
+- Le pixelpipe utilisé pour l'affichage de l'image dans la vue de la chambre noire a été retravaillé afin de pouvoir être utilisé ailleurs (vue de la chambre noire, deuxième fenêtre d'affichage, gestionnaire de doublons, aperçu du style, routine d'instantané). Cela a permis de dé-dupliquer le code ainsi que d'améliorer plusieurs de ces fonctionnalités (voir ci-dessous).
 
-- Ajout d'un aperçu du style dans le module de style de la table lumineuse et dans le style de la chambre noire. L'aperçu est affiché dans l'infobulle lors du survol des entrées de style. L'interface utilisateur de l'infobulle a été remaniée en même temps.
+- La deuxième fenêtre d'image de la chambre noire a été améliorée pour prendre en charge les modes d'évaluation des couleurs ISO-12646 et de focus peaking.
 
-- Le module "correction des objectifs" gagne un support intégré. Certains appareils photo enregistrent  les valeurs de correction de l'objectif dans le fichier EXIF. Ces données sont maintenant récupérées et utilisées par le module afin d'effectuer les corrections correspondantes.
+- Le module d'instantané a été entièrement retravaillé de sorte qu'au lieu d'utiliser une capture d'écran fixe, il utilise désormais une vue générée dynamiquement à l'aide de la nouvelle fonctionnalité pixelpipe. Cela signifie qu'il est désormais possible de zoomer et de faire des panoramiques avec le clavier et la souris.
 
-- Ajout du support du format JPEG XL (lecture / écriture).
+Le gestionnaire de clones utilisait auparavant une routine pipe différente pour calculer ses aperçus (c'est-à-dire lors d'un appui long sur la vignette d'une image dupliquée), ce qui signifiait souvent que les clones affichés différaient de la vue principale de la chambre noire de manière subtile. L'utilisation de la nouvelle routine pipe signifie maintenant que ces aperçus seront identiques à ceux produits pendant l'édition en chambre noire.
 
-- Les modules restent entièrement visibles lors de l'ouverture ou de l'extension et se déplacent avec un effet de transition en douceur. Cet effet peut être accéléré ou désactivé dans les préférences --> divers --> temps en ms des transitions de l'interface utilisateur.
+- Il est désormais possible de prévisualiser l'effet d'un style généré par l'utilisateur sur une image avant de l'appliquer. Il suffit de passer la souris sur le nom du style dans le module des styles de la table lumineuse ou dans le menu d'accès rapide de la chambre noire et une nouvelle infobulle apparaîtra, montrant l'image avec le style appliqué ainsi que les détails des modules inclus.
 
-- Grande révision du cache pixelpipe. Augmentation du nombre de lignes de cache avec avec un taux de réussite amélioré tout en contrôlant la mémoire globale utilisée, ce qui a conduit à une interface utilisateur beaucoup plus rapide.
+- Certains appareils photo enregistrent les informations de correction de l'objectif dans les métadonnées EXIF de l'image. Le module de correction de l'objectif a été amélioré de manière à pouvoir extraire ces données et les utiliser pour corriger les distorsions de l'objectif.
 
-- Réécriture d'une bonne partie de la vue diaporama pour une meilleure expérience l'utilisateur. Un petit aperçu est d'abord affiché pendant le calcul de l'image l'image complète, ce qui indique que quelque chose est en train de se passer.
+- darktable est maintenant capable de lire et d'écrire des images JPEG XL.
 
-- Un menu avec une nouvelle icône a été ajouté pour ajouter/supprimer des filtres directement dans la barre supérieure. Certains critères de tri sont absents de la liste car ils ne sont pas lisibles sur la barre supérieure.
+- Les modules de traitement et les modules utilitaires ont été modifiés de sorte que si un module n'est pas entièrement visible lorsqu'il est développé, il sera automatiquement défilé. jusqu'à ce que l'ensemble de l'interface utilisateur soit visible à l'écran.
 
-- Nous avons retravaillé l'interface du menu filtrer pour une meilleure lisibilité. Ce nouveau widget devrait être plus facile à utiliser et plus efficace.
+- Dans le cadre de ce changement, un nouvel effet d'animation a été ajouté lors de l'expansion/réduction des modules. La vitesse de l'animation d'expansion/réduction peut être contrôlée via un paramètre de préférence ("préférences > divers > temps en millisecondes de transition de l'interface"). Mettez-le à zéro pour désactiver l'animation.
+
+- La fonctionnalité de mise en cache de pixelpipe a été complètement remaniée. Davantage de lignes de cache sont utilisées avec un taux de réussite amélioré tout en contrôlant la quantité totale de mémoire utilisée, ce qui permet d'obtenir une interface nettement plus rapide.
+
+- Le diaporama a été réécrit pour une meilleure expérience utilisateur. Un petit aperçu s'affiche pendant que l'image complète est calculée pour indiquer à l'utilisateur que quelque chose est en train de se faire en arrière-plan.
+
+- Un nouveau menu déroulant a été ajouté à la barre de filtres supérieure pour permettre d'ajouter et de supprimer facilement des filtres. Certains critères de tri ont été supprimés de cette liste car ils n'étaient pas facilement lisibles sur la barre supérieure.
+
+- L'interface utilisateur du widget de filtre de classement par gamme a été retravaillée pour une meilleure lisibilité. Ce nouveau widget devrait être plus facile à utiliser et plus efficace.
 
 ## Autres changements
 
 - Masques
-  - Ajout d'un support pour la manipulation des masques sans utiliser le défilement (pour les utilisateurs de tablettes).
-  - Le gestionnaire de masques a été amélioré avec une nouvelle section repliable contenant des contrôles pour modifier les propriétés des masques.
-  - Il est également possible de modifier un masque correctement partagé par un groupe de masques.
-  - Parallèlement, les masques de cercle et d'ellipse ont été améliorés avec de nouvelles commandes pour modifier la taille et l'adoucissement.
+  - Ajout d'un support pour la manipulation des masques dessinés sans utiliser la molette de la souris (pour les utilisateurs de tablettes). Le gestionnaire de masques a été amélioré avec une nouvelle section repliable contenant des contrôles pour modifier les propriétés des masques.
+  - Il est également possible de modifier une propriété qui est partagée par un groupe de formes.
+  - Les formes de cercle et d'ellipse ont également été améliorées grâce à de nouvelles commandes directement sur la fenêtre permettant de modifier la taille du masque et l'adoucissement.
   - L'affichage sur le bandeau supérieur a été également amélioré et complété.
 
 - Ajout du support du format WebP en lecture.
@@ -66,35 +73,35 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Pour les modules contenant plusieurs onglets (filmique RVB, balance couleur RVB, calibration des couleurs, égaliseur de ton, ...), un double clic sur un des onglets réinitialise tous les réglages de l'onglet sans toucher à ceux des autres.
 
-- Prise en charge des formats locaaux pour les données, les dates et les heures dans les infobulles des vignettes.
+- Prise en charge des formats locaux pour les données, les dates et les heures dans les infobulles des vignettes.
 
 - Si, sur une action, une commande de script LUA a été définie, elle s'affichera dans l'infobulle de cete action.
 
-- Suppression du support de code SSE des modules "balance des blancs" et "profil de couleurs de sortie", car le code optimisé du compilateur donne une vitesse comparable.
+- Le code SSE a été supprimé des modules de balance des blancs et de profil de couleur de sortie, car les valeurs par défaut du compilateur offrent désormais une vitesse similaire.
 
-- Ajout de la prise en charge de l'extension de fichier JFIF (JPEG File Interchange Format) qui est un JPEG standard.
+- Ajout de la prise en charge de l'extension de fichier JFIF (JPEG File Interchange Format), qui est une extension de la norme JPEG.
 
-- La préférence pour l'application automatique d'une accentuation a été supprimée. On peut ajouter un preset appliqué automatiquement dans le module d'accentuation de la netteté et obtenir le même effet.
+- La préférence pour l'application automatique de l'accentuation a été supprimée. Pour les utilisateurs qui ont encore besoin de cette fonctionnalité, elle peut être facilement réalisée avec un préréglage d'application automatique généré par l'utilisateur.
 
 - Ajout du support pour la mise à jour des images existantes dans l'exportation Piwigo.
 
-- Les pré-réglages de balance des blancs ont été migrées vers un fichier JSON externe.
+- Tous les préréglages de balance des blancs ont été migrés vers un fichier JSON externe. Cela ne devrait pas affecter le fonctionnement du module.
 
-- Suppression de la préférence "couleur d'arrière-plan du contrôle de la balance des couleurs et de la balance des blancs" puisque cela peut être fait directement dans le module lui-même.
+- Les préférences permettant de définir la disposition du module "balance des couleurs" et les couleurs du module "balance des blancs" ont été supprimées de la boîte de dialogue des préférences globales, car ces commandes sont déjà disponibles directement dans les modules respectifs.
 
 - Amélioration de la prise en charge des profils pour les formats AVIF et EXR. Assouplit également le lecteur AVIF en n'exigeant pas une conformité totale.
 
-- Le nombre d'images de la collection actuelle est maintenant affiché dans la boîte à outils. Ces informations sont ainsi disponibles même si la zone supérieure est cachée.
+- Le nombre d'images de la collection en cours est désormais affiché dans la barre supérieure, à côté des filtres d'image, ce qui signifie qu'il est disponible même lorsque la zone arrière supérieure est masquée.
 
-- Essaye d'obtenir l'espace couleur pour le fichier PNG à partir du chunk cICP. Ceci a été ajouté lors d'une révision récente de la spécification PNG, nous en tirons donc avantage s'il est présent.
+- Tenter d'obtenir l'espace couleur pour les fichiers PNG à partir du chunk cICP. Cela a été ajouté lors d'une révision récente de la spécification PNG, nous en tirons donc avantage, s'il est présent.
 
 - La lecture des demi-flottants 16 bits pour le format TIFF se fait maintenant en utilisant la bibliothèque Imath.
 
 - Il est maintenant possible de mapper des raccourcis sur les différents controles du module exportation.
 
-- Introduction de l'équilibrage entre OpenCL et CPU lors du tuilage. Cela permet d'utiliser le tuilage CPU si la carte graphique ne dispose pas de suffisamment de mémoire et qu'il faudrait donc gérer un grand nombre de tuiles sur la carte. En fin de compte, le grand nombre de tuiles plus la zone de chevauchement des tuiles rendront l'utilisation d'OpenCL plus lente (voire beaucoup plus lente) que le traitement de l'image sans tuiles sur le CPU.
-
-- En mode aperçu plein écran, le bloc d'affichage des méta données (superposition) n'est pas affiché par défaut. Déplacer le curseur sur la moitié supérieure de l'image l'affichera. Le bloc est toujours caché automatiquement après un certain délai.
+- Introduction du tuilage équilibré "OpenCL vs CPU". Cela permet d'utiliser le tuilage CPU si la mémoire de la carte OpenCL est insuffisante (ce qui nécessiterait de gérer un grand nombre de tuiles sur la carte). En fin de compte, le grand nombre de tuiles et la zone de chevauchement rendraient l'utilisation du code OpenCL plus lente (voire beaucoup plus lente) que la manipulation de l'image sans tuilage sur le CPU.
+- 
+-En mode aperçu plein écran (en appuyant sur <kbd>Ctrl+w</kbd>), le bloc d'affichage des méta-données sur l'image n'est plus affiché par défaut. En déplaçant le curseur dans la moitié supérieure, la bloc apparaît, puis disparaît à nouveau après une brève période.
 
 - Régler les motifs lumineux des rotateurs midi Behringer b-control (BCR2000/BCF2000)
 
@@ -102,33 +109,35 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Ajout de la prise en charge du défilement des préréglages à l'aide de raccourcis.
 
-- La taille du panneau utilise maintenant la taille de définition de l'écran, ce qui fait que l'affichage initial s'ajuste à la définition de l'écran.
+-Les panneaux utilisent désormais des "tailles naturelles" par défaut, ce qui signifie que leur taille initiale s'adapte à la résolution de l'écran.
 
-- Permettre un module de géolocalisation étroit. Si le panneau devient petit, il s'enroulera correctement au lieu d'effectuer une ellipse de textes.
+- Le module de géolocalisation prend désormais mieux en charge les panneaux latéraux étroits en enveloppant le texte au lieu d'effectuer une ellipse de textes.
 
-- Ajouter quelques actions supplémentaires dans l'écran d'aide principal (affiché avec la touche <kbd>h</kbd>).
+- Des actions supplémentaires ont été ajoutées à l'écran d'aide principal (affiché en appuyant sur la touche <kbd>h</kbd>).
 
-- Le module lensfun est maintenant une dépendance obligatoire. Cela garantira que toutes les constructions de darktable auront le module de correction d'objectifs. Aussi, une édition avec ce module ne sera pas perdue parce que le module est manquant suite à une mauvaise compilation. de plus, cela simplifie le code, ce qui est aussi une bonne chose.
+- Le module lensfun est maintenant une dépendance obligatoire. Cela garantira que toutes les compilations de darktable auront le module de correction d'objectifs. Cela signifie également qu'une édition avec ce module ne sera pas perdue parce que le module est manquant suite à une mauvaise compilation.
 
-- Un nouveau module virtuel "focused" est introduit. Ce module peut contenir des raccourcis clavier qui peuvent être appliqués au module actif. Par exemple, un raccourci clavier concernant le 1er curseur sera utilisable pour modifier l'exposition dans le module "exposition ou la rotation dans le module "rotation et perspective". Il peut être configuré pour les curseurs, les comboboxes, les boutons, les onglets et le module ciblé lui-même.
+- Il est désormais possible d'attribuer des raccourcis au module de traitement "actuellement ciblé". Cela permet de créer un ensemble commun de raccourcis et de les réutiliser dans plusieurs modules, simplement en mettant l'accent sur ce module. Par exemple, un raccourci clavier unique appliqué au "premier curseur" affectera le curseur "exposition" lorsque le module exposition est focalisé, et le curseur "rotation" lorsque le module "rotation et perspective" est focalisé. Une fonctionnalité similaire peut être utilisée pour affecter le "nième" curseur, la combobox, le bouton ou l'onglet, ainsi que le module ciblé lui-même.
+
+- Un clic droit sur l'en-tête d'un module dans le panneau d'accès rapide permet désormais d'ajouter rapidement d'autres widgets du même module. L'infobulle et l'icône indiquent si ces widgets sont actuellement masqués dans le module complet.
 
 ## Correction de bogues
 
-- Utiliser correctement le profil de couleur d'affichage dans le diaporama. Ceci n'était pas fait, donc les images ignoraient le profil de couleur et étaient affichées (très différemment) que sur la table lumineuse ou la chambre noire.
+- Utiliser correctement le profil de couleur d'affichage dans la vue diaporama. Cette fonction était absente, ce qui signifie que les images ignoraient le profil de couleur et étaient affichées (très) différemment de ce qu'elles étaient dans les vues table lumineuse ou chambre noire.
 
-- Honorer correctement le statut "off" des modules dans un style. L'utilisation d'un style dans le module d'exportation peut maintenant être utilisé pour désactiver un module activé dans la pile d'historique.
+- Honorer correctement l'état d'activation ou de désactivation d'un module dans un style. Cela signifie que les styles peuvent maintenant être utilisés dans le module d'exportation pour désactiver un module autrement activé dans la pile d'historique.
 
 - Corriger la taille et la position du popup bauhaus.
 
 - Fixe le nom de l'ordre des modules lors d'une réinitialisation.
 
-- Ne pas afficher les actions de module dépréciées dans la section des raccourcis des préférences.
+- Ne pas afficher les actions de module dépréciées dans la section des raccourcis de la boîte de dialogue des préférences globales.
 
 - Correction de certains positionnements de popup de widgets bauhaus sur Wayland.
 
-- Correction d'un problème de vitesse lors de l'importation de grands dossiers avec des fichiers XMP contenant de nombreuses métadonnées.
+- Correction d'un problème de performance lors de l'importation de grands dossiers où les XMPs contiennent beaucoup de métadonnées.
 
-- Correction de certaines mises à jour manquantes de l'interface graphique dans le module "liquéfier". Dans certains cas, la modification de la force d'un nœud dans une courbe ou une ligne ne mettait pas correctement à jour les valeurs de déplacement.
+- Correction de certaines mises à jour manquantes de l'interface graphique dans le module "liquéfier". Dans certains cas, la modification de la force d'un nœud dans une courbe ou une ligne ne mettait pas correctement à jour les valeurs de déplacement. correctement les valeurs de déplacement.
 
 - Correction d'une mauvaise interaction entre le mode évaluation des couleurs (icône ampoule en C.N.) et les panneaux.
 
@@ -136,7 +145,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Correction de la traduction des messages du module de retouche affichés dans le bandeau.
 
-- Lors de l'importation, nous conservons la propriété dossier ou pellicule si elle est active. Si un autre mode de collecte a été sélectionné, nous utilisons le mode péliculle par défaut.
+- Lors de l'importation d'images, conservez le mode dossier ou pellicule actuellement sélectionné dans le module des collections si l'un de ces modes est actuellement actif. Si un autre mode de collecte était actif, l'importation repasse en mode pellicule (comme auparavant).
 
 - Correction de la conversion L*a*b* dans l'importation TIFF.
 
@@ -152,11 +161,11 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Correction de la sélection du masque après la création d'un masque continu.
 
-- Corriger le nom et l'info-bulle dans les préférences du module "dématriçage" pour qu'ils soient corrects pour tous les types de capteurs.
+- Correction du nom et de l'info-bulle dans les préférences du module "dématriçage" afin qu'ils soient corrects pour tous les types de capteurs.
 
 - Suppression de la vérification automatique de la marge de manœuvre d'OpenCL, car elle causait plus de problèmes qu'elle n'en résolvait.
 
-- Correction du curseur non clignotant dans le dialogue de recherche du module de traitement. Ce  donnait l'impression que le module n'était pas actif.
+- Correction du curseur non clignotant dans la zone de recherche de module. Cela donnait l'impression que la barre de recherche était inactive.
 
 - Enregistrer correctement le niveau de noir de la librairie "libraw".
 
@@ -164,7 +173,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Correction de la sélection des images non modifiées.
 
-- Les widgets de la section réduite ne sont plus désactivés, ce qui les rend actionnables via un raccourci.
+- Correction des raccourcis clavier afin qu'ils puissent être appliqués aux widgets d'une une section réduite d'un module.
 
 - Correction d'une coquille empêchant l'expansion correcte de la variable $(FOLDER.PICTURES).
 
@@ -172,20 +181,20 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Correction du dessin de la zone de la "pipette de couleur" lorsque la zone est au bord de l'image. Lorsque la souris sort des bords de l'image, nous ne perdons plus l'action d'édition.
 
-- Un ancien bogue dans la gestion du cache a été corrigé. Cela pouvait avoir différents effets comme l'absence d'un recalcul de l'affichage après une paramètres ou un simple crash dans la chambre noire.
+- Un ancien bogue dans la gestion du cache a été corrigé. Cela pouvait avoir différents effets comme l'absence d'un recalcul de l'affichage après une paramètres ou même un crash dans la chambre noire.
 
 - Correction de l'état de l'interface de certains boutons à bascule qui n'étaient pas correctement mis à jour.
 
-- Correction de la vérification des coefficients de température pour l'affichage des présélections. Cela permet d'éviter certaines erreurs.
+- Correction de la vérification des coefficients de température pour l'affichage des présélections.
 
 - Correction du support du pixelpipe rapide dans certains modules pour la deuxième fenêtre.
 
-- Dans le panneau d'accès rapide, les widgets sont cachés s'ils sont également cachés dans le module complet (à cause d'une combinaison d'options sélectionnées). Cette Cela fonctionne même si ces options sont modifiées à partir d'un autre widget dans le qap.
+- Dans le panneau d'accès rapide, les paramètres sont désormais masqués s'ils sont également masqués dans le module complet (pour les paramètres qui s'affichent de manière conditionnelle en fonction de l'état d'autres paramètres). Cela fonctionne même si ces paramètres sont modifiés à partir d'un autre widget du panneau d'accès rapide.
 
 - Amélioration de l'étiquette de couleur bleue pour une meilleure visibilité dans le thème sombre.
 
-- Correction de l'étiquette de l'indicateur de zoom dans la fenêtre de navigation. Il était parfois coupé à droite ou en bas comme mal placé sur la fenêtre.
-- 
+- Correction de l'affichage de l'étiquette de l'indicateur de zoom de la fenêtre de navigation. Il était parfois coupé à droite ou en bas ou déplacé à l'intérieur de la fenêtre.
+ 
 ## Lua
 
 - La version de l'API est passée à 9.0.0
@@ -212,14 +221,52 @@ N/A
 
 ### Support de base
 
+- Canon EOS M2
+- Fujifilm FinePix HS50EXR
+- Fujifilm FinePix S6000fd
+- Fujifilm X-H2 (compressed)
+- Fujifilm X-H2S (compressed)
+- Fujifilm X-T30 II (compressed)
+- Fujifilm X-T5 (compressed)
+- Leica D-LUX 6 (4:3, 3:2, 16:9, 1:1)
+- Leica M Monochrom (Typ 246) (dng)
+- Nikon 1 J4 (12bit-compressed)
+- Nikon 1 S1 (12bit-compressed)
+- Nikon Coolpix P7700 (12bit-compressed)
+- Nikon D1H (12bit-uncompressed)
+- Nikon D2H (12bit-compressed, 12bit-uncompressed)
+- Nikon D3S (14bit-compressed, 14bit-uncompressed, 12bit-compressed, 12bit-uncompressed)
+- Nikon Z 9 (14bit-compressed)
+- Olympus E-10
+- Olympus E-M10 Mark IIIs
+- Olympus E-P7
+- Olympus SP570UZ
+- Panasonic DMC-G2 (4:3, 3:2, 16:9, 1:1)
+- Pentax K2000
+- Pentax K200D
+- Ricoh GR II
+- Samsung NX mini
+- Samsung NX10
+- Samsung NX11
+- Samsung NX20
+- Samsung NX2000
+- Samsung NX5
+- Sony DSLR-A380
+- Sony DSLR-A560
+- Sony ILCE-7RM5
 
 ### Préréglages de la balance des blancs
 
+- Pas de changement dans cette version
 
 ### Profils de bruit
 
-
-### Matrices de couleurs personnalisées
+- Fujifilm X-E4
+- Fujifilm X-T5
+- Leica M (Typ 240)
+- Nikon Z 9
+- Olympus E-500
+- Panasonic DMC-FZ330
 
 ### Soutien suspendu
 
