@@ -102,7 +102,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Introduction du tuilage équilibré "OpenCL vs CPU". Cela permet d'utiliser le tuilage CPU si la mémoire de la carte OpenCL est insuffisante (ce qui nécessiterait de gérer un grand nombre de tuiles sur la carte). En fin de compte, le grand nombre de tuiles et la zone de chevauchement rendraient l'utilisation du code OpenCL plus lente (voire beaucoup plus lente) que la manipulation de l'image sans tuilage sur le CPU.
 
--En mode aperçu plein écran (en appuyant sur <kbd>Ctrl+w</kbd>), le bloc d'affichage des méta-données sur l'image n'est plus affiché par défaut. En déplaçant le curseur dans la moitié supérieure, la bloc apparaît, puis disparaît à nouveau après une brève période.
+- En mode aperçu plein écran (en appuyant sur <kbd>Ctrl+w</kbd>), le bloc d'affichage des méta-données sur l'image n'est plus affiché par défaut. En déplaçant le curseur dans la moitié supérieure, la bloc apparaît, puis disparaît à nouveau après une brève période.
 
 - Régler les motifs lumineux des rotateurs midi Behringer b-control (BCR2000/BCF2000)
 
