@@ -110,7 +110,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Ajout de la prise en charge du défilement des préréglages à l'aide de raccourcis.
 
--Les panneaux utilisent désormais des "tailles naturelles" par défaut, ce qui signifie que leur taille initiale s'adapte à la résolution de l'écran.
+- Les panneaux utilisent désormais des "tailles naturelles" par défaut, ce qui signifie que leur taille initiale s'adapte à la résolution de l'écran.
 
 - Le module de géolocalisation prend désormais mieux en charge les panneaux latéraux étroits en enveloppant le texte au lieu d'effectuer une ellipse de textes.
 
