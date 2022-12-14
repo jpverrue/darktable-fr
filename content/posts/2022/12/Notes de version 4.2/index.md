@@ -6,11 +6,11 @@ Comme toujours, n'utilisez pas le fichier tarball autogénéré fourni par githu
 
 ```
 $ sha256sum darktable-4.2.0.tar.xz
-1408 darktable-4.2.0.tar.xz
+XXXX darktable-4.2.0.tar.xz
 $ sha256sum darktable-4.2.0.dmg
-408 darktable-4.2.0.dmg
+XXXX darktable-4.2.0.dmg
 $ sha256sum darktable-4.2.0.exe
-59 darktable-4.2.0.exe
+XXXX darktable-4.2.0.exe
 ```
 
 Lors de la mise à jour à partir de la série stable 4.0.x, gardez à l'esprit que vos modifications seront préservées pendant ce processus, mais que la nouvelle bibliothèque et la configuration ne seront plus utilisables avec les versions antérieures (4.0.x, 3.x.x, etc).
@@ -21,15 +21,15 @@ Il est fortement conseillé de faire d'abord une sauvegarde.
 
 Depuis darktable 4.0 :
 
-- XXXX commits à darktable+rawspeed
-- XXXX demandes de pull traitées
-- XXXX problèmes fermés
+- 1408 commits à darktable+rawspeed
+- 408 demandes de pull traitées
+- 59 problèmes fermés
 
 ## Les grandes nouveautés
 
 Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. Ces fonctionnalités sont décrites plus en détail dans le manuel d'utilisation et dans l'article de blog qui l'accompagne.
 
-- Nouveau module de transformation de l'affichage : "sigmoïde" qui peut être utilisé en remplacement des modules "filmique" et "ourbe de base.
+- Nouveau module de transformation de l'affichage : "sigmoïde" qui peut être utilisé en remplacement des modules "filmique" et "courbe de base".
 
 - Deux nouveaux algorithmes sont fournis dans le module de "reconstruction des hautes lumières" : "peinture opposée" et "segmentation". L'algorithme "peinture opposée" s'est avéré très stable et fournit de bons résultats dans de nombreuses images, il remplace donc "tronquer les hautes lumières" comme nouvel algorithme par défaut.
 
@@ -37,9 +37,9 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - La deuxième fenêtre d'image de la chambre noire a été améliorée pour prendre en charge les modes d'évaluation des couleurs ISO-12646 et de focus peaking.
 
-- Le module d'instantané a été entièrement retravaillé de sorte qu'au lieu d'utiliser une capture d'écran fixe, il utilise désormais une vue générée dynamiquement à l'aide de la nouvelle fonctionnalité pixelpipe. Cela signifie qu'il est désormais possible de zoomer et de faire des panoramiques avec le clavier et la souris.
+- Le module d'instantané a été entièrement retravaillé de sorte qu'au lieu d'utiliser une capture d'écran fixe, il utilise désormais une vue générée dynamiquement à l'aide de la nouvelle fonctionnalité pixelpipe (voir ci dessus). Cela signifie qu'il est désormais possible de zoomer et de se déplacer avec le clavier et la souris.
 
-Le gestionnaire de clones utilisait auparavant une routine pipe différente pour calculer ses aperçus (c'est-à-dire lors d'un appui long sur la vignette d'une image dupliquée), ce qui signifiait souvent que les clones affichés différaient de la vue principale de la chambre noire de manière subtile. L'utilisation de la nouvelle routine pipe signifie maintenant que ces aperçus seront identiques à ceux produits pendant l'édition en chambre noire.
+- Le gestionnaire de clones utilisait auparavant une routine pipe différente pour calculer ses aperçus (c'est-à-dire lors d'un appui long sur la vignette d'une image dupliquée), ce qui signifiait souvent que les clones affichés différaient de la vue principale de la chambre noire de manière subtile. L'utilisation de la nouvelle routine du pixelpipe signifie maintenant que ces aperçus seront identiques à ceux produits pendant l'édition en chambre noire.
 
 - Il est désormais possible de prévisualiser l'effet d'un style généré par l'utilisateur sur une image avant de l'appliquer. Il suffit de passer la souris sur le nom du style dans le module des styles de la table lumineuse ou dans le menu d'accès rapide de la chambre noire et une nouvelle infobulle apparaîtra, montrant l'image avec le style appliqué ainsi que les détails des modules inclus.
 
@@ -47,7 +47,7 @@ Le gestionnaire de clones utilisait auparavant une routine pipe différente pour
 
 - darktable est maintenant capable de lire et d'écrire des images JPEG XL.
 
-- Les modules de traitement et les modules utilitaires ont été modifiés de sorte que si un module n'est pas entièrement visible lorsqu'il est développé, il sera automatiquement défilé. jusqu'à ce que l'ensemble de l'interface utilisateur soit visible à l'écran.
+- Les modules de traitement et les modules utilitaires ont été modifiés de sorte que si un module n'est pas entièrement visible lorsqu'il est développé, il sera automatiquement scrollé jusqu'à ce que l'ensemble de son interface utilisateur soit visible à l'écran.
 
 - Dans le cadre de ce changement, un nouvel effet d'animation a été ajouté lors de l'expansion/réduction des modules. La vitesse de l'animation d'expansion/réduction peut être contrôlée via un paramètre de préférence ("préférences > divers > temps en millisecondes de transition de l'interface"). Mettez-le à zéro pour désactiver l'animation.
 
@@ -57,12 +57,13 @@ Le gestionnaire de clones utilisait auparavant une routine pipe différente pour
 
 - Un nouveau menu déroulant a été ajouté à la barre de filtres supérieure pour permettre d'ajouter et de supprimer facilement des filtres. Certains critères de tri ont été supprimés de cette liste car ils n'étaient pas facilement lisibles sur la barre supérieure.
 
-- L'interface utilisateur du widget de filtre de classement par gamme a été retravaillée pour une meilleure lisibilité. Ce nouveau widget devrait être plus facile à utiliser et plus efficace.
+- L'interface utilisateur du widget de filtre de classement par score (étoiles) a été retravaillée pour une meilleure lisibilité. Ce nouveau widget devrait être plus facile à utiliser et plus efficace.
 
 ## Autres changements
 
 - Masques
-  - Ajout d'un support pour la manipulation des masques dessinés sans utiliser la molette de la souris (pour les utilisateurs de tablettes). Le gestionnaire de masques a été amélioré avec une nouvelle section repliable contenant des contrôles pour modifier les propriétés des masques.
+  - Ajout d'un support pour la manipulation des masques dessinés sans utiliser la molette de la souris (pour les utilisateurs de tablettes).
+  - Le gestionnaire de masques a été amélioré avec une nouvelle section repliable contenant des contrôles pour modifier les propriétés des masques.
   - Il est également possible de modifier une propriété qui est partagée par un groupe de formes.
   - Les formes de cercle et d'ellipse ont également été améliorées grâce à de nouvelles commandes directement sur la fenêtre permettant de modifier la taille du masque et l'adoucissement.
   - L'affichage sur le bandeau supérieur a été également amélioré et complété.
@@ -77,11 +78,11 @@ Le gestionnaire de clones utilisait auparavant une routine pipe différente pour
 
 - Si, sur une action, une commande de script LUA a été définie, elle s'affichera dans l'infobulle de cete action.
 
-- Le code SSE a été supprimé des modules de balance des blancs et de profil de couleur de sortie, car les valeurs par défaut du compilateur offrent désormais une vitesse similaire.
+- Le code SSE a été supprimé des modules "balance des blancs" et "profil de couleur de sortie", car les valeurs par défaut du compilateur offrent désormais une vitesse similaire.
 
 - Ajout de la prise en charge de l'extension de fichier JFIF (JPEG File Interchange Format), qui est une extension de la norme JPEG.
 
-- La préférence pour l'application automatique de l'accentuation a été supprimée. Pour les utilisateurs qui ont encore besoin de cette fonctionnalité, elle peut être facilement réalisée avec un préréglage d'application automatique généré par l'utilisateur.
+- La préférence pour l'application automatique de netteté a été supprimée. Pour les utilisateurs qui ont encore besoin de cette fonctionnalité, elle peut être facilement remplacée par un préréglage avec application automatique généré par l'utilisateur.
 
 - Ajout du support pour la mise à jour des images existantes dans l'exportation Piwigo.
 
@@ -100,7 +101,7 @@ Le gestionnaire de clones utilisait auparavant une routine pipe différente pour
 - Il est maintenant possible de mapper des raccourcis sur les différents controles du module exportation.
 
 - Introduction du tuilage équilibré "OpenCL vs CPU". Cela permet d'utiliser le tuilage CPU si la mémoire de la carte OpenCL est insuffisante (ce qui nécessiterait de gérer un grand nombre de tuiles sur la carte). En fin de compte, le grand nombre de tuiles et la zone de chevauchement rendraient l'utilisation du code OpenCL plus lente (voire beaucoup plus lente) que la manipulation de l'image sans tuilage sur le CPU.
-- 
+
 -En mode aperçu plein écran (en appuyant sur <kbd>Ctrl+w</kbd>), le bloc d'affichage des méta-données sur l'image n'est plus affiché par défaut. En déplaçant le curseur dans la moitié supérieure, la bloc apparaît, puis disparaît à nouveau après une brève période.
 
 - Régler les motifs lumineux des rotateurs midi Behringer b-control (BCR2000/BCF2000)
@@ -125,7 +126,7 @@ Le gestionnaire de clones utilisait auparavant une routine pipe différente pour
 
 - Utiliser correctement le profil de couleur d'affichage dans la vue diaporama. Cette fonction était absente, ce qui signifie que les images ignoraient le profil de couleur et étaient affichées (très) différemment de ce qu'elles étaient dans les vues table lumineuse ou chambre noire.
 
-- Honorer correctement l'état d'activation ou de désactivation d'un module dans un style. Cela signifie que les styles peuvent maintenant être utilisés dans le module d'exportation pour désactiver un module autrement activé dans la pile d'historique.
+- Honorer correctement l'état d'activation ou de désactivation d'un module dans un style. Cela signifie que les styles peuvent maintenant être utilisés dans le module "exportation" pour désactiver un module autrement activé dans la pile d'historique.
 
 - Corriger la taille et la position du popup bauhaus.
 
@@ -137,15 +138,15 @@ Le gestionnaire de clones utilisait auparavant une routine pipe différente pour
 
 - Correction d'un problème de performance lors de l'importation de grands dossiers où les XMPs contiennent beaucoup de métadonnées.
 
-- Correction de certaines mises à jour manquantes de l'interface graphique dans le module "liquéfier". Dans certains cas, la modification de la force d'un nœud dans une courbe ou une ligne ne mettait pas correctement à jour les valeurs de déplacement. correctement les valeurs de déplacement.
+- Correction de certaines mises à jour manquantes de l'interface graphique dans le module "liquéfier". Dans certains cas, la modification de la force d'un nœud dans une courbe ou une ligne ne mettait pas correctement à jour les valeurs de déplacement.
 
-- Correction d'une mauvaise interaction entre le mode évaluation des couleurs (icône ampoule en C.N.) et les panneaux.
+- Correction d'une mauvaise interaction entre le mode "évaluation des couleurs" (icône ampoule en C.N.) et les panneaux.
 
 - Correction l'affichage de la mise au point à l'infini dans les informations sur l'image.
 
 - Correction de la traduction des messages du module de retouche affichés dans le bandeau.
 
-- Lors de l'importation d'images, conservez le mode dossier ou pellicule actuellement sélectionné dans le module des collections si l'un de ces modes est actuellement actif. Si un autre mode de collecte était actif, l'importation repasse en mode pellicule (comme auparavant).
+- Lors de l'importation d'images, conserver le mode dossier ou pellicule actuellement sélectionné dans le module des collections si l'un de ces modes est actuellement actif. Si un autre mode de collecte était actif, l'importation repasse en mode pellicule (comme auparavant).
 
 - Correction de la conversion L*a*b* dans l'importation TIFF.
 
@@ -181,7 +182,7 @@ Le gestionnaire de clones utilisait auparavant une routine pipe différente pour
 
 - Correction du dessin de la zone de la "pipette de couleur" lorsque la zone est au bord de l'image. Lorsque la souris sort des bords de l'image, nous ne perdons plus l'action d'édition.
 
-- Un ancien bogue dans la gestion du cache a été corrigé. Cela pouvait avoir différents effets comme l'absence d'un recalcul de l'affichage après une paramètres ou même un crash dans la chambre noire.
+- Un ancien bogue dans la gestion du cache a été corrigé. Cela pouvait avoir différents effets comme l'absence d'un recalcul de l'affichage ou même un crash dans la chambre noire.
 
 - Correction de l'état de l'interface de certains boutons à bascule qui n'étaient pas correctement mis à jour.
 
@@ -209,13 +210,13 @@ Le gestionnaire de clones utilisait auparavant une routine pipe différente pour
 
 ## Notes
 
+- Avec la prise en charge des formats JXL, AVIF et EXR pour l'exportation, la sélection de métadonnées spécifiques (ex. balise géographique, créateur) n'est actuellement pas possible. Pour les formats JXL, AVIF et EXR, darktable n'inclura pas les champs de métadonnées à moins que l'utilisateur ne sélectionne toutes les cases à cocher dans les options de référence d'exportation.
 
 ## Dépendances modifiées
 
 N/A
 
 ## Changements RawSpeed
-
 
 ## Prise en charge des appareils, par rapport à la version 4.0
 
@@ -268,7 +269,13 @@ N/A
 - Olympus E-500
 - Panasonic DMC-FZ330
 
-### Soutien suspendu
+### Support du mode de compression manquant
+
+- Fujifilm "non-lossless"/lossy
+- Nikon HE
+- Sony lossless
+
+### Support suspendu
 
 Aucun échantillon sur raw.pixls.us
 
