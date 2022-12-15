@@ -17,41 +17,41 @@ Lors de la mise à jour à partir de la série stable 4.0.x, gardez à l'esprit 
 
 Il est fortement conseillé de faire d'abord une sauvegarde.
 
-#### Note importante : pour s'assurer que darktable puisse continuer à supporter le format de fichier brut pour votre appareil photo, *s'il vous plaît* lisez [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) pour savoir comment et avec quels fichiers raw sous licence CC0, vous pouvez contribuer afin de vous assurer que nous ayons l'ensemble *complet* d'échantillons bruts pour votre appareil photo !
+#### Note importante : pour s'assurer que darktable puisse continuer à supporter le format de fichier brut pour votre appareil photo, *s'il vous plaît* lisez [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) pour savoir comment et avec quels fichiers raw sous licence CC0 vous pouvez contribuer, afin de vous assurer que nous ayons l'ensemble *complet* d'échantillons bruts pour votre appareil photo !
 
-Depuis darktable 4.0 :
+Depuis la précédente version darktable 4.0 :
 
-- 1408 commits à darktable+rawspeed
+- 1408 commits à darktable + rawspeed
 - 408 demandes de pull traitées
 - 59 problèmes fermés
 
 ## Les grandes nouveautés
 
-Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. Ces fonctionnalités sont décrites plus en détail dans le manuel d'utilisation et dans l'article de blog qui l'accompagne.
+Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. Ces fonctionnalités sont décrites plus en détail dans le manuel d'utilisation et dans l'article de blog qui l'accompagne (en anglais sur le site [darktable.org](https://darktable.org/blog).
 
 - Nouveau module de transformation de l'affichage : "sigmoïde" qui peut être utilisé en remplacement des modules "filmique" et "courbe de base".
 
 - Deux nouveaux algorithmes sont fournis dans le module de "reconstruction des hautes lumières" : "peinture opposée" et "segmentation". L'algorithme "peinture opposée" s'est avéré très stable et fournit de bons résultats dans de nombreuses images, il remplace donc "tronquer les hautes lumières" comme nouvel algorithme par défaut.
 
-- Le pixelpipe utilisé pour l'affichage de l'image dans la vue de la chambre noire a été retravaillé afin de pouvoir être utilisé ailleurs (vue de la chambre noire, deuxième fenêtre d'affichage, gestionnaire de doublons, aperçu du style, routine d'instantané). Cela a permis de dé-dupliquer le code ainsi que d'améliorer plusieurs de ces fonctionnalités (voir ci-dessous).
+- Le pixelpipe utilisé pour l'affichage de l'image dans la vue de la chambre noire a été retravaillé afin de pouvoir être utilisé ailleurs (vue de la chambre noire, deuxième fenêtre d'affichage de la cahmbre noire, gestionnaire de clônes, aperçu du style, routine d'instantané). Cela a permis de dé-dupliquer le code ainsi que d'améliorer plusieurs de ces fonctionnalités (voir ci-dessous).
 
 - La deuxième fenêtre d'image de la chambre noire a été améliorée pour prendre en charge les modes d'évaluation des couleurs ISO-12646 et de focus peaking.
 
-- Le module d'instantané a été entièrement retravaillé de sorte qu'au lieu d'utiliser une capture d'écran fixe, il utilise désormais une vue générée dynamiquement à l'aide de la nouvelle fonctionnalité pixelpipe (voir ci dessus). Cela signifie qu'il est désormais possible de zoomer et de se déplacer avec le clavier et la souris.
+- Le module d'instantané a été entièrement retravaillé de sorte qu'au lieu d'utiliser une capture d'écran fixe, il utilise désormais une vue générée dynamiquement à l'aide de la nouvelle fonctionnalité du pixelpipe (voir ci dessus). Cela signifie qu'il est désormais possible de zoomer et de se déplacer avec le clavier et la souris dans les instantanés.
 
-- Le gestionnaire de clones utilisait auparavant une routine pipe différente pour calculer ses aperçus (c'est-à-dire lors d'un appui long sur la vignette d'une image dupliquée), ce qui signifiait souvent que les clones affichés différaient de la vue principale de la chambre noire de manière subtile. L'utilisation de la nouvelle routine du pixelpipe signifie maintenant que ces aperçus seront identiques à ceux produits pendant l'édition en chambre noire.
+- Le gestionnaire de clones utilisait auparavant un pipe différent pour calculer ses aperçus (c'est-à-dire lors d'un appui long sur la vignette d'une image dupliquée), ce qui signifiait souvent que les clones affichés différaient de la vue principale de la chambre noire de manière subtile. L'utilisation de la nouvelle routine du pixelpipe signifie maintenant que ces aperçus seront identiques à ceux produits pendant l'édition en chambre noire.
 
 - Il est désormais possible de prévisualiser l'effet d'un style généré par l'utilisateur sur une image avant de l'appliquer. Il suffit de passer la souris sur le nom du style dans le module des styles de la table lumineuse ou dans le menu d'accès rapide de la chambre noire et une nouvelle infobulle apparaîtra, montrant l'image avec le style appliqué ainsi que les détails des modules inclus.
 
 - Certains appareils photo enregistrent les informations de correction de l'objectif dans les métadonnées EXIF de l'image. Le module de correction de l'objectif a été amélioré de manière à pouvoir extraire ces données et les utiliser pour corriger les distorsions de l'objectif.
 
-- darktable est maintenant capable de lire et d'écrire des images JPEG XL.
+- darktable est maintenant capable de lire et d'écrire les images JPEG XL.
 
 - Les modules de traitement et les modules utilitaires ont été modifiés de sorte que si un module n'est pas entièrement visible lorsqu'il est développé, il sera automatiquement scrollé jusqu'à ce que l'ensemble de son interface utilisateur soit visible à l'écran.
 
 - Dans le cadre de ce changement, un nouvel effet d'animation a été ajouté lors de l'expansion/réduction des modules. La vitesse de l'animation d'expansion/réduction peut être contrôlée via un paramètre de préférence ("préférences > divers > temps en millisecondes de transition de l'interface"). Mettez-le à zéro pour désactiver l'animation.
 
-- La fonctionnalité de mise en cache de pixelpipe a été complètement remaniée. Davantage de lignes de cache sont utilisées avec un taux de réussite amélioré tout en contrôlant la quantité totale de mémoire utilisée, ce qui permet d'obtenir une interface nettement plus rapide.
+- La fonctionnalité de mise en cache du pixelpipe a été complètement remaniée. Davantage de lignes de cache sont utilisées avec un taux de réussite amélioré tout en contrôlant la quantité totale de mémoire utilisée, ce qui permet d'obtenir une interface nettement plus rapide.
 
 - Le diaporama a été réécrit pour une meilleure expérience utilisateur. Un petit aperçu s'affiche pendant que l'image complète est calculée pour indiquer à l'utilisateur que quelque chose est en train de se faire en arrière-plan.
 
@@ -86,7 +86,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Ajout du support pour la mise à jour des images existantes dans l'exportation Piwigo.
 
-- Tous les préréglages de balance des blancs ont été migrés vers un fichier JSON externe. Cela ne devrait pas affecter le fonctionnement du module.
+- Tous les préréglages de balance des blancs qui étaient précédemment dans le code, ont été migrés vers un fichier JSON externe. Cela ne devrait pas affecter le fonctionnement du module.
 
 - Les préférences permettant de définir la disposition du module "balance des couleurs" et les couleurs du module "balance des blancs" ont été supprimées de la boîte de dialogue des préférences globales, car ces commandes sont déjà disponibles directement dans les modules respectifs.
 
@@ -140,7 +140,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Correction de certaines mises à jour manquantes de l'interface graphique dans le module "liquéfier". Dans certains cas, la modification de la force d'un nœud dans une courbe ou une ligne ne mettait pas correctement à jour les valeurs de déplacement.
 
-- Correction d'une mauvaise interaction entre le mode "évaluation des couleurs" (icône ampoule en C.N.) et les panneaux.
+- Correction d'une mauvaise interaction entre le mode "évaluation des couleurs" (icône ampoule en chambre noire) et les panneaux.
 
 - Correction l'affichage de la mise au point à l'infini dans les informations sur l'image.
 
@@ -148,13 +148,13 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 - Lors de l'importation d'images, conserver le mode dossier ou pellicule actuellement sélectionné dans le module des collections si l'un de ces modes est actuellement actif. Si un autre mode de collecte était actif, l'importation repasse en mode pellicule (comme auparavant).
 
-- Correction de la conversion L*a*b* dans l'importation TIFF.
+- Correction de la conversion L\*a\*b\* dans l'importation TIFF.
 
 - Correction de l'indicaton de surbrillance dans tous les modes de "reconstruction des hautes lumières".
 
 - Correction de l'indicateur visuel de reconstruction de la lumière pour les fichier raw X-Trans.
 
-- Correction de l'annulation/rétablissement après un appliquation d'un style  via un raccourci.
+- Correction de l'annulation/rétablissement après un appliquation d'un style via un raccourci.
 
 - Ne pas reconstruire toute l'arborescence lorsque vous supprimez ou modifiez un préréglage dans les préférences. Cela donne une meilleure stabilité à l'interface utilisateur.
 
@@ -210,7 +210,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 ## Notes
 
-- Avec la prise en charge des formats JXL, AVIF et EXR pour l'exportation, la sélection de métadonnées spécifiques (ex. balise géographique, créateur) n'est actuellement pas possible. Pour les formats JXL, AVIF et EXR, darktable n'inclura pas les champs de métadonnées à moins que l'utilisateur ne sélectionne toutes les cases à cocher dans les options de référence d'exportation.
+- Avec la prise en charge des formats JXL, AVIF et EXR pour l'exportation, la sélection de métadonnées spécifiques (exemple : balise géographique, créateur, ...) n'est actuellement pas possible. Pour les formats JXL, AVIF et EXR, darktable n'inclura pas les champs de métadonnées à moins que l'utilisateur ne sélectionne toutes les cases à cocher dans les options de référence d'exportation.
 
 ## Dépendances modifiées
 
@@ -277,7 +277,7 @@ N/A
 
 ### Support suspendu
 
-Aucun échantillon sur raw.pixls.us
+Aucun échantillon n'est disponible sur raw.pixls.us
 
 - Canon EOS M2
 - Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
