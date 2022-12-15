@@ -1,3 +1,17 @@
+---
+title: "La version 4.2 arrive !"
+aliases:
+  - "Darktable-4-2-0"
+date: "2022-12-15"
+featured: true
+categories:
+  - "actualites"
+  - "featured"
+tags:
+  - "release"
+  - "remerciements"
+---
+
 Ce 15 décembre Pascal a publié sur les listes de diffusion de darktable, ce message dont je vous propose ici la traduction (non autorisée :-))
 ___
 La version 4.2 arrive...
