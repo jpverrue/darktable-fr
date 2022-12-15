@@ -1,3 +1,23 @@
+---
+title: "Version 4.2.0"
+aliases:
+  - "Darktable-4-2-0"
+date: "2022-09-20"
+featured: true
+pinned: true
+categories:
+  - "actualites"
+  - "featured"
+tags:
+  - "featured"
+  
+coverImage: "darktable-4-2.0.png"
+---
+La version 4.2.0 est sortie aujourd'hui.
+Voici la traduction des notes de version
+
+___
+
 Nous sommes fiers d'annoncer la nouvelle version de darktable, 4.2.0 !
 
 La version github est disponible ici : [https://github.com/darktable-org/darktable/releases/tag/release-4.2.0](https://github.com/darktable-org/darktable/releases/tag/release-4.2.0).
