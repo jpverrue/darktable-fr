@@ -236,7 +236,19 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 ## Dépendances modifiées
 
-La version minimale de Gtk passe de 3.22 à 3.24.15
+### Obligatoire
+
+- La version minimale de Gtk passe de 3.22 à 3.24.15
+
+- lensfun est maintenant une dépendance obligatoire et non plus optionnelle.
+  Les versions supportées sont les versions stables (par exemple 0.3.3),
+  pas la pré-version alpha 0.3.95 ou la branche master.
+
+### Optionnel
+
+- La version minimale requise de libavif passe de 0.8.2 à 0.9.1.
+
+- Nouvelle dépendance optionnelle : libjxl, version minimale requise 0.7.0.
 
 ## Changements RawSpeed
 
