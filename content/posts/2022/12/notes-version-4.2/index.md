@@ -14,7 +14,8 @@ tags:
 coverImage: "darktable-4-2.0.png"
 ---
 La version 4.2.0 est sortie aujourd'hui.
-En voici la version francçaise des "notes de version" traduite avec l'aide de Deepl translator.
+
+En voici la version française traduite avec l'aide de Deepl translator.
 Les liens pour le téléchargement sont disponibles sur le site : [darktable.org](https://www.darktable.org/install/)
 ___
 
@@ -236,7 +237,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 ## Dépendances modifiées
 
-### Obligatoire
+### Obligatoires
 
 - La version minimale de Gtk passe de 3.22 à 3.24.15
 
@@ -244,7 +245,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
   Les versions supportées sont les versions stables (par exemple 0.3.3),
   pas la pré-version alpha 0.3.95 ou la branche master.
 
-### Optionnel
+### Optionnelles
 
 - La version minimale requise de libavif passe de 0.8.2 à 0.9.1.
 
@@ -311,7 +312,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 ### Support suspendu
 
-Aucun échantillon n'est disponible sur raw.pixls.us
+Car aucun échantillon n'est disponible sur raw.pixls.us
 
 - Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
 - Fujifilm FinePix S9600fd
