@@ -28,11 +28,13 @@ Comme toujours, n'utilisez pas le fichier tarball autogénéré fourni par githu
 
 ```
 $ sha256sum darktable-4.2.0.tar.xz
-???? darktable-4.2.0.tar.xz
-$ sha256sum darktable-4.2.0.dmg
-???? darktable-4.2.0.dmg
-$ sha256sum darktable-4.2.0.exe
-???? darktable-4.2.0.exe
+18b0917fdfe9b09f66c279a681cc3bd52894a566852bbf04b2e179ecfdb11af9  darktable-4.2.0.tar.xz
+$ sha256sum darktable-4.2.0_x86_64.dmg
+89308cb7222ec0d0b539771dd90284e98b35bae4b53c8f3aa1b2feb861536b82  darktable-4.2.0_x86_64.dmg
+$ sha256sum darktable-4.2.0_arm64.dmg
+7cbc03cc0e9a4a1769e4321815ed99384de8c063990eb5d746ffbd7599e32193  darktable-4.2.0_arm64.dmg
+$ sha256sum darktable-4.2.0-win64.exe
+748e617d36f810890fcc7829fdf0e9999da2906b20293a2ac919808f80709e27  darktable-4.2.0-win64.exe
 ```
 
 Lors de la mise à jour à partir de la série stable 4.0.x, gardez à l'esprit que vos modifications seront préservées pendant ce processus, mais que la nouvelle bibliothèque et la configuration ne seront plus utilisables avec les versions antérieures (4.0.x, 3.x.x, etc).
