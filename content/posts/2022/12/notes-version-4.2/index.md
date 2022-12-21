@@ -14,8 +14,10 @@ tags:
 coverImage: "darktable-4-2.0.png"
 ---
 La version 4.2.0 est sortie aujourd'hui.
-En voici la version francçaise des "notes de version" traduite avec l'aide de Deepl translator.
-Les liens pour le téléchargement sont disponibles sur le site : [darktable.org](https://www.darktable.org/install/)
+
+En voici la version française traduite avec l'aide de Deepl translator.
+
+Les liens pour le téléchargement sont disponibles sur [darktable.org/install/](https://www.darktable.org/install/)
 ___
 
 Nous sommes fiers d'annoncer la nouvelle version de darktable, 4.2.0 !
@@ -37,7 +39,7 @@ Lors de la mise à jour à partir de la série stable 4.0.x, gardez à l'esprit 
 
 Il est fortement conseillé de faire d'abord une sauvegarde.
 
-#### Note importante : pour s'assurer que darktable puisse continuer à supporter le format de fichier brut pour votre appareil photo, *s'il vous plaît* lisez [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) pour savoir comment et avec quels fichiers raw sous licence CC0 vous pouvez contribuer, afin de vous assurer que nous ayons l'ensemble *complet* d'échantillons bruts pour votre appareil photo !
+**Note importante : pour s'assurer que darktable puisse continuer à supporter le format de fichier brut pour votre appareil photo, *s'il vous plaît* lisez [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) pour savoir comment et avec quels fichiers raw sous licence CC0 vous pouvez contribuer, afin de vous assurer que nous ayons l'ensemble *complet* d'échantillons bruts pour votre appareil photo !**
 
 Depuis la précédente version darktable 4.0 :
 
@@ -236,7 +238,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 ## Dépendances modifiées
 
-### Obligatoire
+### Obligatoires
 
 - La version minimale de Gtk passe de 3.22 à 3.24.15
 
@@ -244,7 +246,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
   Les versions supportées sont les versions stables (par exemple 0.3.3),
   pas la pré-version alpha 0.3.95 ou la branche master.
 
-### Optionnel
+### Optionnelles
 
 - La version minimale requise de libavif passe de 0.8.2 à 0.9.1.
 
@@ -311,7 +313,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.2. C
 
 ### Support suspendu
 
-Aucun échantillon n'est disponible sur raw.pixls.us
+Car aucun échantillon n'est disponible sur raw.pixls.us
 
 - Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
 - Fujifilm FinePix S9600fd
