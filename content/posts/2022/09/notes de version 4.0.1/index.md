@@ -4,7 +4,6 @@ aliases:
   - "Darktable-4-0-1"
 date: "2022-09-20"
 featured: true
-pinned: true
 categories:
   - "actualites"
   - "featured"
