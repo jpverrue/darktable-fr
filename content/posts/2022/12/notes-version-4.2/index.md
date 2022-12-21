@@ -38,7 +38,7 @@ Lors de la mise à jour à partir de la série stable 4.0.x, gardez à l'esprit 
 
 Il est fortement conseillé de faire d'abord une sauvegarde.
 
-#### Note importante : pour s'assurer que darktable puisse continuer à supporter le format de fichier brut pour votre appareil photo, *s'il vous plaît* lisez [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) pour savoir comment et avec quels fichiers raw sous licence CC0 vous pouvez contribuer, afin de vous assurer que nous ayons l'ensemble *complet* d'échantillons bruts pour votre appareil photo !
+**Note importante : pour s'assurer que darktable puisse continuer à supporter le format de fichier brut pour votre appareil photo, *s'il vous plaît* lisez [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) pour savoir comment et avec quels fichiers raw sous licence CC0 vous pouvez contribuer, afin de vous assurer que nous ayons l'ensemble *complet* d'échantillons bruts pour votre appareil photo !**
 
 Depuis la précédente version darktable 4.0 :
 
