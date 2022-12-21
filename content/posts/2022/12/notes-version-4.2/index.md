@@ -16,7 +16,8 @@ coverImage: "darktable-4-2.0.png"
 La version 4.2.0 est sortie aujourd'hui.
 
 En voici la version française traduite avec l'aide de Deepl translator.
-Les liens pour le téléchargement sont disponibles sur le site : [darktable.org](https://www.darktable.org/install/)
+
+Les liens pour le téléchargement sont disponibles sur [darktable.org/install/](https://www.darktable.org/install/)
 ___
 
 Nous sommes fiers d'annoncer la nouvelle version de darktable, 4.2.0 !
