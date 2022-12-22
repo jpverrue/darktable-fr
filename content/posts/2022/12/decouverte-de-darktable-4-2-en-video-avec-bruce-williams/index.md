@@ -1,5 +1,5 @@
 ---
-title: "[EN] Décourverte des nouvelles fonctionnalités de darktable 4.2.0 avec Bruce Williams"
+title: "[EN] Découverte des nouvelles fonctionnalités de darktable 4.2.0 avec Bruce Williams"
 date: "2022-12-22"
 series:
   - "Tutoriels de Bruce Williams"
