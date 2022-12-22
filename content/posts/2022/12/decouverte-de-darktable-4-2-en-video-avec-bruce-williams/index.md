@@ -1,5 +1,5 @@
 ---
-title: "[EN] Décourverte des nouvelles fonctionnalitées de darktable 4.2.0 avec Bruce Williams"
+title: "[EN] Découverte des nouvelles fonctionnalités de darktable 4.2.0 avec Bruce Williams"
 date: "2022-12-22"
 series:
   - "Tutoriels de Bruce Williams"
@@ -9,7 +9,7 @@ tags:
   - "Bruce Williams"
   - "tutoriel"
 ---
-Sur la chaine Youtube de Bruce Williams, il décortique en 4 épisodes toutes les nouvelles fonctionnalités de darltable 4.2.0
+Sur la chaine Youtube de Bruce Williams, il décortique en 4 épisodes toutes les nouvelles fonctionnalités de darktable 4.2.0
 
 <!-- more -->
 
