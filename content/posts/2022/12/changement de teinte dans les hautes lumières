@@ -1,0 +1,27 @@
+---
+title: "Changement de teinte dans les hautes lumières (En anglais)"
+date: "2022-12-23"
+series:
+  - "Tutoriels Boris Hajdukovic"
+categories: 
+  - "tutoriels"
+tags: 
+  - "Boris Hajdukovic"
+  - "tutoriel"
+---
+
+"[Boris Hajdukovic]" a publié sur sa chaîne "(https://www.youtube.com/@s7habo)" ce nouvel épisode 62 (en anglais avec traduction des sous-titres en français) : Changement de la teinte dans les hautes lumières :
+- 0:00  Introduction 
+- 1:08  Pourquoi changement de teinte ?
+- 2:07  Démonstration du changement de teinte dans darktable et GIMP
+- 11:00 Démonstration de la préservation de la teinte dans darktable
+- 12:55 Montage photo avec filmique
+- 14:17 Décalage du pont Bezold 
+- 14:59 Etalonnage des couleurs pour compenser le décalage de Bezold-Brücke 
+- 20:16 Retouche photo avec Sigmoid Fixation d'une photographie numérique cassée avec "Filmic". Partie 1. : {{< youtube bTQMKvpDTYU >}}
+
+Bonne visualisation.
+
+P.S. : explication Bezold-Brücke shift : (https://www.hisour.com/fr/bezold-brucke-shift-27132/)
+
+{{< youtube yRhUEWvOW6g&t=1s >}}
