@@ -4,7 +4,7 @@ FROM klakegg/hugo:ext-ubuntu as builder
 # Build site
 WORKDIR /src
 COPY . /src
-ARG HUGO_BASEURL=/
+ARG HUGO_BASEURL=https://darktable.fr
 ENV HUGO_BASEURL=${HUGO_BASEURL}
 RUN npm install
 RUN npm install -g @fullhuman/postcss-purgecss rtlcss
