@@ -1,15 +1,17 @@
----
++++
 title = "Les fichiers de configuration"
+date = "2023-01-08"
 reward = false
 postDate = false
 readingTime = false
 [menu.main]
 weight = 5
 parent = "documentation"
++++
 
 ---
 *Ce document est également disponible en format PDF ici : [https://darktable.fr/Fichiers-de-configuration-de-darktable-6.pdf](/Fichiers-de-configuration-de-darktable-6.pdf)*
-___
+---
 
 # Référence des fichiers de configuration et de fonctionnement de darktable
 
