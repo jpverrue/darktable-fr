@@ -28,46 +28,50 @@ Indépendamment de vos propres fichiers d’images, darktable utilise un certain
 - On distinguera enfin les fichiers de type “texte” qui n’ont besoin que d’un éditeur de texte pour être consultés ou modifiés, des fichiers de type “binaire” qui nécessitent des outils spécialisés pour être consultés ou modifiés. Je les référencerai également comme <u>texte</u> ou <u>binaire</u>.
 
 ## Emplacement des fichiers.
+
 Tous ces fichiers sont stockés à plusieurs endroits sur votre machine. Un endroit destiné
-essentiellement à vos propres fichiers que j’appellerai bien sûr le dossier Utilisateur ; un deuxième qui contient les vignettes de vos photos ainsi que quelques données d’exécution de darktable que j’appellerai dossier Cache ; un troisième qui sera utilisé pour les instantanés et pour les enregistrements de débogage que j’appellerai dossier Temporaire ; un quatrième destiné aux fichiers système que j’appellerai dossier Système cela va de soi ! Et enfin tous les dossiers qui contiennent des images que vous avez importées. Ces dossiers sont situés différemment selon le système que vous utilisez. Voici ces lieux décrits système par système. Vous pouvez aussi définir vous-même l’emplacement de ces dossiers grâce aux options de lancement de darktable.
+essentiellement à vos propres fichiers que j’appellerai bien sûr le dossier **Utilisateur** ; un deuxième qui contient les vignettes de vos photos ainsi que quelques données d’exécution de darktable que j’appellerai dossier **Cache** ; un troisième qui sera utilisé ~~pour les instantanés et~~ (supprimé en 4.2) pour les enregistrements de débogage que j’appellerai dossier **Temporaire** ; un quatrième destiné aux fichiers système que j’appellerai dossier **Système** cela va de soi ! Et enfin tous les dossiers qui contiennent des images que vous avez importées. Ces dossiers sont situés différemment selon le système que vous utilisez. Voici ces lieux décrits système par système. Vous pouvez aussi définir vous-même l’emplacement de ces dossiers grâce aux options de lancement de darktable.
 
 ### Sous Linux.
 
+Remarque préliminaire : La variable `$HOME` contient le chemin absolu (à partir de la racine du système), du dossier personnel de l'utilisateur. C'est-à-dire, en général, `/home/<login de l'utilisateur>`. Cette variable est utilisée couramment dans les scripts et en mode ligne de commande. Elle n’est pas universellement utilisable dans les gestionnaires de fichiers graphiques ; par exemple, Nautilus ne la reconnait pas alors que Dolphin la reconnaît. Je l’ai employée dans cette description, car c’est une façon assez élégante de décrire cette partie du chemin d’accès à des fichiers. Nota bene : le caractère `~` remplace avantagement la variable `$HOME` en saisie ; de plus il est utilsable partout.
+
 - Dossier Utilisateur :
-`$HOME/.config/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement --configdir
+`$HOME/.config/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--configdir`.
 
 - Dossier Cache :
 `$HOME/.cache/darktable` par défaut. Cet emplacement peut être modifié avec
-l’option de lancement --cachedir
+l’option de lancement `--cachedir`.
 
 - Dossier Temporaire :
-`/tmp` par défaut. Cet emplacement peut être modifié avec l’option de lancement --tmpdir
+`/tmp` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--tmpdir`.
 
 - Dossier Système :
-`/usr/share/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement –datadir.
-Si cous compilez vous-même la version la plus récente de darktable, le dossier temporaire devrait se trouver dans `/opt`
+`/usr/share/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--datadir`.
 
-La variable `$HOME` contient le chemin absolu (à partir de la racine du système), du dossier personnel de l'utilisateur. C'est-à-dire, en général, `/home/<login de l'utilisateur>`. Cette variable est utilisée couramment dans les scripts et en mode ligne de commande. Elle n’est pas utilisable dans les gestionnaires de fichiers graphiques. Je l’ai employée dans cette description, car c’est une façon assez élégante de décrire cette partie du chemin d’accès à des fichiers.
+Si vous compilez vous-même la version la plus récente de darktable, le dossier système se trouve par défaut dans `/opt`.
 
 Le dossier `.config` est un dossier caché (un '.' au début du nom). Pour y accéder, il suffit de taper son nom. Voici les moyens pour le visualiser
 - Dans un terminal : `ls -a`
-- Avec les outils graphiques, cela dépend de l'outil.
+- Avec les outils graphiques, cela dépend de l'outil, mais le raccourci `Ctrl+h` permet le plus souvent de le voir.
 
 ### Sous Mac os.
 
+Remarque préliminaire : Mac os et Linux partagent le même ancêtre commun, Unix. La remarque préliminaire concernant la variable `$HOME`, héritée d'Unix, s'applique donc également ici.
+
 - Dossier Utilisateur :
-`$HOME/.config/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement --configdir
+`$HOME/.config/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--configdir`.
 
 - Dossier Cache :
-`$HOME/.cache/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement --cachedir
+`$HOME/.cache/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--cachedir`.
 
 - Dossier Temporaire :
-`/private/var/folders/h_/<hashcode>/T` par défaut. Cet emplacement peut être modifié avec l’option de lancement --tmpdir
+`/private/var/folders/h_/<hashcode>/T` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--tmpdir`.
 
 - Dossier Système :
-`/Applications/darktable.app/Contents/Resources/share/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement –datadir
+`/Applications/darktable.app/Contents/Resources/share/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement `–-datadir`.
 
-La variable $HOME contient le chemin absolu (à partir de la racine du système), du dossier personnel de l'utilisateur. C'est-à-dire, en général, /home/<login de l'utilisateur>. Voir ci-dessus pour une explication plus détaillée de son utilisation. Le dossier `.config` est un dossier caché (un '.' au début du nom). Pour y accéder, il y a plusieurs méthodes selon qu'on utilise un terminal ou avec le finder. Plusieurs de ces méthodes sont décrites dans ce [fil de discussion](https://darktable.fr/forum/showthread.php?tid=1972)
+Le dossier `.config` est un dossier caché (un '.' au début du nom). Pour y accéder, il y a plusieurs méthodes selon qu'on utilise un terminal ou le finder. Plusieurs de ces méthodes sont décrites dans ce [fil de discussion](https://darktable.fr/forum/showthread.php?tid=1972)
 
 ### Sous Windows.
 
@@ -76,19 +80,18 @@ La variable $HOME contient le chemin absolu (à partir de la racine du système)
 
 - Dossier Cache :
 L'emplacement par défaut est (était ? Changement de version de Windows ?) `%LOCALAPPDATA%\Microsoft\Windows\Temporary Internet Files\darktable\` Je l'ai vu aussi ici (version de Windows ?) : `%LOCALAPPDATA%\Microsoft\Windows\NetCache\darktable\`
- Cet emplacement peut être modifié avec l’option de lancement --cachedir.
+ Cet emplacement peut être modifié avec l’option de lancement `--cachedir`.
 
 - Dossier Temporaire :
-`%LOCALAPPDATA%\Temp\` par défaut. Cet emplacement peut être modifié avec l’option de lancement --tempdir.
+`%LOCALAPPDATA%\Temp\` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--tempdir`.
 
 - Dossier Système :
-`C:\Program Files\darktable\share\darktable\` par défaut. Cet emplacement peut être modifié avec l’option de lancement –datadir
+`C:\Program Files\darktable\share\darktable\` par défaut. Cet emplacement peut être modifié avec l’option de lancement `–datadir`.
 
 La variable `%LOCALAPPDATA%` correspond au chemin des fichiers de configuration des applications propres à chaque l'utilisateur. C'est-à-dire, en général, `C:\Users\<login de l'utilisateur>\AppData\Local\`.
 
 Comme pour Linux et Mac os, j’ai utilisé la notation visible dans un terminal. Donc `“Users”` et `“Program Files”`. Ces noms apparaîtront sous une forme francisée dans l’explorateur de fichier : “Utilisateurs” et “Programmes”.
-Le dossier `AppData` est un dossier caché. Pour l'afficher, passer par les options de l'explorateur : organiser → options des dossiers et de recherche → affichage → afficher les fichiers, dossiers et
-lecteurs cachés.
+Le dossier `AppData` est un dossier caché. Pour l'afficher, passer par les options de l'explorateur : organiser → options des dossiers et de recherche → affichage → afficher les fichiers, dossiers et lecteurs cachés.
 
 ## Description des fichiers.
 ### Fichiers du dossier Utilisateur.
