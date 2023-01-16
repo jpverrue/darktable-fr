@@ -8,6 +8,8 @@ series:
 tags:
   - "tutoriel"
   - "Brand Artery"
+authors:
+  - "Andy"  
 ---
 Aujourd'hui, c'est sur la chaine de Brand Artery, qu'on nous apprend comment gérer la surexposition avec le module Sigmoid dans [darktable 4.2.0](/posts/2022/12/notes-version-4.2/)
 

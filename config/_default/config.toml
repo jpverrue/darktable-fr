@@ -47,6 +47,7 @@ pygmentsUseClasses = true
   category = "categories"
   series = "series"
   tag = "tags"
+  author= "authors"
 
 [build]
   writeStats = true

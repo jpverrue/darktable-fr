@@ -6,6 +6,8 @@ categories:
 tags:
   - "tutoriel"
   - "Raw Photography Tutorials"
+authors:
+  - "Andy"   
 ---
 Une nouvelle vidéo, en anglais, qui nous explique comment utiliser le module Sigmoid dans [darktable 4.2.0](/posts/2022/12/notes-version-4.2/)
 
