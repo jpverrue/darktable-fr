@@ -12,8 +12,6 @@ tags:
 "[Boris Hajdukovic](https://www.youtube.com/@s7habo)" continue à comparer le traitement de plusieurs photos avec les modules de mappage de tonalité : filmique et sigmoid (en anglais avec 
 traduction des sous-titres française), et voilà le plan de cette vidéo :
 
-{{< youtube yRhUEWvOW6g >}}
-
 - 0:00 Introduction 
 - 0:46 Fonction du Tone Mapper dans darktable - filmique
 - 7:06 Fonction du Tone Mapper dans darktable - sigmoïde
@@ -26,4 +24,3 @@ traduction des sous-titres française), et voilà le plan de cette vidéo :
 Bon visionage et bonne découverte.
 
 {{< youtube XC_xv_LtAQo >}}
-
