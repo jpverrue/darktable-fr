@@ -6,6 +6,8 @@ categories:
 tags:
   - "tutoriel"
   - "Raw Photography Tutorials"
+series:
+  - "Tutoriels de Raw Photography Tutorials"    
 authors:
   - "Andy"   
 ---

@@ -8,6 +8,8 @@ authors:
 tags:
   - "tutoriel"
   - "Raw Photography Tutorials"
+series:
+  - "Tutoriels de Raw Photography Tutorials"  
 ---
 Dans son article précédent, [Andy](/authors/andy/) nous a fait découvrir un YouTubeur anglais et en regardant sa chaîne "[Raw Photography Tutorials](https://www.youtube.com/@RawPhotographyTutorials)"
 j'ai vu qu'il avait publié un nouveau tuto où il comparerait le traitement de 4 photos ("[qui peuvent être téléchagées sur ce lien](https://www.signatureedits.com/free-raw-photos/)")
