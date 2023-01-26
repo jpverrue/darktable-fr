@@ -1,5 +1,5 @@
 ---
-title: "[EN] Comparaison du traitement de 4 photos avec filmique et sigmoid"
+title: "[EN] Comparaison du traitementavec filmique V5 et sigmoid"
 date: "2023-01-25"
 categories:
   - "tutoriels"
@@ -9,14 +9,8 @@ tags:
   - "tutoriel"
   - "Raw Photography Tutorials"
 ---
-"[Raw Photography Tutorials](https://www.youtube.com/@RawPhotographyTutorials)"
-j'ai vu qu'il avait publié un nouveau tuto où il comparerait le traitement de 4 photos ("[qui peuvent être téléchagées sur ce lien](https://www.signatureedits.com/free-raw-photos/)")
-avec filmique et sigmoid.
+"[Raw Photography Tutorials](https://www.youtube.com/@RawPhotographyTutorials)" continue à "[comparer filmique et sigmoid](https://darktable.fr/posts/2023/01/comparaison-traitement-photos-filmique-sigmoid/)" en utilisant la version 5 de filmique.
 
 Les sous-titres peuvent être traduit automatiquement en français.
 
-Vous pouvez retrouver sa liste de publication "[de A à Z](https://www.youtube.com/playlist?list=PLEZ74wS6EMTygiT4nHq2gKwU5ZZa9Edlg)".
-
-Bon visionage et bonne découverte.
-
-{{< youtube qEGRRKbNOGE >}}
+{{< youtube pWXchFJpt8Y >}}
