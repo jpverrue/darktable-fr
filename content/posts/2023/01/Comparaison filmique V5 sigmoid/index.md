@@ -1,5 +1,5 @@
 ---
-title: "[EN] Comparaison du traitementavec filmique V5 et sigmoid"
+title: "[EN] Comparaison du traitement avec filmique V5 et sigmoid"
 date: "2023-01-25"
 categories:
   - "tutoriels"
