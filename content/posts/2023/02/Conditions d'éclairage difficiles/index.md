@@ -12,6 +12,8 @@ tags:
 "[Boris Hajdukovic](https://www.youtube.com/@s7habo)" montre comment gérer des éclairages difficiles dans cette épisode 66 en anglais avec 
 traduction des sous-titres française).
 
+Il répond à une demande de Michel Schenker pour traiter 3 photos.
+
 Bon visionage et bonne découverte.
  
 {{< youtube YYyHaGRaoQg >}}
