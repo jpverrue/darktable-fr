@@ -1,4 +1,18 @@
+---
+title: "Têtes de mort et compagnie"
+aliases:
+  - "Têtes-de-mort-et-compagnie"
+date: "2023-02-16"
+featured: true
+pinned: false
+categories:
+  - "actualites"
+  - "featured"
+tags:
+  - "featured"
 
+coverImage: "skull.png"
+---
 Ça nous est tous arrivés un jour.
 
 Une ou plusieurs vilaines "tête de mort" sont apparues au milieu des vignettes de nos photos sur la table lumineuse. Ou, plus sournois, tout a l'air correct, toutes les vignettes sont bien affichées, mais quand vous cliquez sur l'une d'elle pour l'ouvrir en table lumineuse, vous obtenez le message : `image « mon_fichier.raw » non disponible actuellement` Ces deux alertes n'ont qu'une même origine : il y a discordance entre le nom ou l'emplacement du ou des fichier(s) et la connaissance qu'en a darktable.
