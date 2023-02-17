@@ -2,14 +2,15 @@
 title: "Têtes de mort et compagnie"
 aliases:
   - "Têtes-de-mort-et-compagnie"
-date: "2023-02-16"
+date: "2023-02-17"
 featured: true
 pinned: false
 categories:
-  - "actualites"
-  - "featured"
+  - "tutoriels"
 tags:
-  - "featured"
+  - "tutoriel"
+authors:
+  - "jpv"
 coverImage: "skull.png"
 ---
 Ça nous est tous arrivé un jour.
@@ -62,7 +63,7 @@ do
 [ -e "${FilePath}" ] || echo "${FilePath}"  
 done
 ```
-Il vous suffit de le copier/coller sur votre système et éventuellement, d'ajuster le chemin par défaut. Assurez vous avant de le lancer que le paquet sqlite3 soit installé sur votre machine.
+Il vous suffit de le copier/coller sur votre système et éventuellement, d'ajuster le chemin par défaut. Assurez vous avant de le lancer que le paquet `sqlite3` soit installé sur votre machine.
 
 Quand vous le lancez, le script va lire l'intégralité de la base de données et vérifier, pour chaque fichier inscrit dans celle-ci, s'il existe dans votre ordinateur.
 Les fichiers introuvables seront listés avec le chemin que darktable connait. Avec cette liste, il devient alors plus facile de remettre de l'ordre dans votre stockage de photos.
