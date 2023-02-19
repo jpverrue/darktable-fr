@@ -13,7 +13,7 @@ authors:
   - "jpv"
 coverImage: "skull.png"
 ---
-Ça nous est tous arrivé un jour.
+Ça nous est tous arrivés un jour.
 
 Une ou plusieurs vilaines "tête de mort" sont apparues au milieu des vignettes de nos photos sur la table lumineuse. Ou, plus sournois, tout a l'air correct, toutes les vignettes sont bien affichées, mais quand vous cliquez sur l'une d'elle pour l'ouvrir en table lumineuse, vous obtenez le message : `image « mon_fichier.raw » non disponible actuellement` Ces deux alertes n'ont qu'une même origine : il y a discordance entre le nom ou l'emplacement du ou des fichier(s) et la connaissance qu'en a darktable.
 
@@ -44,28 +44,33 @@ Faire prendre en compte des modifications par darktable peut se faire de deux fa
 - Si ce sont uniquement des chemins d'accès qui ont été modifiés, en plus du message ou des têtes de mort, le ou les chemins introuvables apparaitront barrés dans la liste (par pellicule ou par dossier) du module collections. En faisant un clic droit sur un chemin barré, il sera alors possible de rechercher le bon chemin dans l'arborescence et de l'enregistrer dans la base de données.
 - Si les noms de fichiers ont été modifiés, il faudra dans ce cas enlever et réimporter les fichiers dans darktable. Enlever se fait avec le module "images sélectionnées" et importer avec le module... importer !
 
-Mais comment identifier toutes les photos concernées ? Il n'existe pas de script "Lua" pour le faire, ni de script de maintenance fourni par l'équipe de développement. Comme je suis sympa, si, si !, je vous en propose un ci-dessous :
+Mais comment identifier toutes les photos concernées ? Il n'existe pas de script "Lua" pour le faire. Par contre, il existe un script de maintenance fourni par l'équipe de développement. Vous pouvez le trouver dans le dossier `système` (Pour trouver où se trouve le dossier `système` sur votre machine, lisez ceci : [Les fichiers de configuration](https://darktable.fr/les-fichiers-de-configuration)), dans le sous dossier `tools` vous trouverez le script `purge_non_existing_images.sh`. Pas de panique, malgré son nom, il ne va pas supprimer tous les fichiers mal nommés. Si vous le lancez simplement, sans option, il listera simplement les photos concernées, et avec l'option `-h`, il listera toutes les options disponibles pour ce script.
+Sur certaines distributions les outils du dossier `tools` ne sont pas installés systématiquement, il faut installer un paquet spécifique pour en disposer.
+
+Mais, comme je suis sympa, si, si !, je vous en propose un autre, tout simple ; je n'ai codé aucun contrôle (on ne peut pas tout faire en une quinzaine de lignes), mais comme il ne fait que lire la base de données, il n'y a pas de risque casse. Le voici :
 ```
-#! /bin/bash  
-#  
-# Usage : $0 [<LibPath>]  
-# If not <LibPath> provided, use $Default LibPath below  
-  
-LibPath=${1:-"/home/jpv/.config/darktable-prod/library.db"}  
-  
-sqlite3 -separator '/' ${LibPath} \  
-'SELECT film_rolls.folder, images.filename  
-FROM images  
-INNER JOIN film_rolls  
-ON film_rolls.id = images.film_id;' |  
-while read FilePath  
-do  
-[ -e "${FilePath}" ] || echo "${FilePath}"  
+#! /bin/bash
+#
+# Usage : $0 [<LibPath>]
+# If not <LibPath> provided, use Default LibPath below
+
+LibPath=${1:-"~/.config/darktable/library.db"}
+
+sqlite3 -separator '/' ${LibPath} \
+  'SELECT film_rolls.folder, images.filename
+   FROM images
+   INNER JOIN film_rolls
+   ON film_rolls.id = images.film_id;' |
+while read FilePath
+do
+[ -e "${FilePath}" ] || echo "${FilePath}"
 done
 ```
-Il vous suffit de le copier/coller sur votre système et éventuellement, d'ajuster le chemin par défaut. Assurez vous avant de le lancer que le paquet `sqlite3` soit installé sur votre machine.
+Il vous suffit de le copier/coller sur votre système et éventuellement, d'ajuster le chemin par défaut. Assurez-vous avant de le lancer que le paquet `sqlite3` soit installé sur votre machine.
 
-Quand vous le lancez, le script va lire l'intégralité de la base de données et vérifier, pour chaque fichier inscrit dans celle-ci, s'il existe dans votre ordinateur.
+Comme `purge_non_existing_images.sh`, quand vous le lancez, ce script va lire l'intégralité de la base de données et vérifier, pour chaque fichier inscrit dans celle-ci, s'il existe dans votre ordinateur.
 Les fichiers introuvables seront listés avec le chemin que darktable connait. Avec cette liste, il devient alors plus facile de remettre de l'ordre dans votre stockage de photos.
 
 Finies les têtes de mort ! 
+
+<div align="right">Jean-Pierre Verrue</div>
