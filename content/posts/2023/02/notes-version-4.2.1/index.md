@@ -211,3 +211,5 @@ Le support est suspendu, car les échantillons nécessaires à la caractérisati
 - Turc (nouveau)
 - Ukrainien
 - Chinois - Taiwan
+
+<div align="right">Jean-Pierre Verrue</div>
