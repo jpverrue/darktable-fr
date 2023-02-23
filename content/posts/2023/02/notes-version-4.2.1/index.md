@@ -46,8 +46,7 @@ $ sha256sum darktable-4.2.1-win64.exe
 31c4d6c522818eda87e48df44f267afd531339ef9d374fa02d44891e3755f7b5 darktable-4.2.1-win64.exe
 ```
 Lors de la mise à jour à partir de la série stable 4.0.x, veuillez garder à l'esprit que vos modifications seront préservées pendant ce processus, mais que la nouvelle bibliothèque et la configuration ne seront plus utilisables avec la version 4.0.x.
-
-Il vous est fortement conseillé de faire une sauvegarde au préalable.
+Il vous est fortement conseillé de faire une sauvegarde au préalable. (N.d.T. : Avant les montées de version, des sauvegardes de la base de données sont  effectuées automatiquement, mais par contre le fichier de configuration n'est pas concerné par ces sauvegardes. Pour tout savoir à ce propos, lisez [CECI](https://darktable.fr/les-fichiers-de-configuration)).
 
 #### Note importante : pour s'assurer que darktable puisse continuer à supporter le format de fichier brut pour votre appareil photo, *s'il vous plaît* lisez [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) sur comment et avec quels échantillons bruts vous pouvez contribuer pour vous assurer que nous ayons l'ensemble *complet* d'échantillons bruts pour votre appareil photo sous licence CC0 !
 
@@ -150,8 +149,8 @@ Pour les systèmes fournissant LibRaw 0.21.1 ou plus récent, il est maintenant 
 - Nikon Z 30 (12 bits compressé, 14 bits compressé)
 - OM System OM-1
 - OM System OM-5
-- Panasonic DC-G95D (4:3)
-- Panasonic DC-G99D (4:3)
+- Panasonic DC-G95D (4/3)
+- Panasonic DC-G99D (4/3)
 - Ricoh GR IIIx (dng)
 
 ### Support des modes de compression manquants
