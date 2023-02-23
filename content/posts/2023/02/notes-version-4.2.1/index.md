@@ -14,7 +14,7 @@ tags:
 author:
   - "jpv"
 
-coverImage: "darktable-4-2.1.png"
+coverImage: "dt_logo-4.2.1.png"
 ---
 
 La version 4.2.1 est sortie aujourd'hui.
