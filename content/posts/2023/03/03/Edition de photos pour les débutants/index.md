@@ -20,4 +20,3 @@ Vous pouvez retrouver sa liste de publication "[de A à Z](https://www.youtube.c
 Bon visionage et bonne découverte.
 
 {{< youtube TwrUnjbDZtA >}}
-
