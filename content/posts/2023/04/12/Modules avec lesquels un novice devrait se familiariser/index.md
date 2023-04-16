@@ -28,7 +28,7 @@ convetis en français).
 07:25 accentuation 
 07:51 conclusion
 
-https://www.youtube.com/watch?v=RqTMAmf0r80&t=29s
+https://www.youtube.com/watch?v=RqTMAmf0r80
 
 ### Deuxième partie,...
 00:00 début
@@ -44,5 +44,5 @@ https://www.youtube.com/watch?v=RqTMAmf0r80&t=29s
 14:23 monochrome 
 15:39 conclusion
 
-https://www.youtube.com/watch?v=EhHz3_5b2zo&t=1s
+https://www.youtube.com/watch?v=EhHz3_5b2zos
 
