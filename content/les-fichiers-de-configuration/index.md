@@ -71,7 +71,7 @@ Remarque préliminaire : Mac os et Linux partagent le même ancêtre commun, Uni
 - Dossier Système :
 `/Applications/darktable.app/Contents/Resources/share/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement `–-datadir`.
 
-Le dossier `.config` est un dossier caché (un '.' au début du nom). Pour y accéder, il y a plusieurs méthodes selon qu'on utilise un terminal ou le finder. Plusieurs de ces méthodes sont décrites dans ce [fil de discussion](https://darktable.fr/forum/showthread.php?tid=1972)
+Le dossier `.config` est un dossier caché (un '.' au début du nom). Pour y accéder, il y a plusieurs méthodes selon qu'on utilise un terminal ou le finder. Plusieurs de ces méthodes sont décrites dans ce [fil de discussion](https://forums.darktable.fr/showthread.php?tid=1972)
 
 ### Sous Windows.
 
