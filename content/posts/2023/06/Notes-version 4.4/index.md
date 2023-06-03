@@ -213,7 +213,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - Le mode de récupération des hautes lumières "laplaciens guidés" est moins gourmand en mémoire (économie d'environ 40 %) et permet une augmentation importante de la vitesse. Cela rend ce mode de récupération beaucoup plus utilisable et permet plus d'itérations de récupération.
 
-- Ajout de la prise en charge des métadonnées de correction d'objectif  intégrées aux DNG. En lisant les métadonnées rectilinear et vignette_radial, il est maintenant possible de corriger l'objectif.
+- Ajout de la prise en charge des métadonnées de correction d'objectif  intégrées aux DNG. En lisant les métadonnées 'rectilinear' et 'vignette_radial', il est maintenant possible de corriger l'objectif.
 
 - Ajout de la prise en charge des métadonnées MaxApertureValue en complément de la métadonnée déjà supportée ApertureValue. Il s'agit de la seule métadonnée disponible en Leica M Monochrom, M8, M9 & M10 DNG.
 
@@ -283,10 +283,10 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 - Nouvelle version de la science des couleurs Fimic v7 (2023) qui a été définie par défaut. Le mode de préservation des couleurs a été supprimé et un nouveau curseur est proposé pour contrôler la saturation des hautes lumières. Ce curseur donne un mélange entre le mode de préservation maximale de la chroma RVB et le mode sans préservation.
 
 - Ajout d'un support pour l'importation de clés de métadonnées supplémentaires :
-   - Iptc.Application2.Byline
-   - Iptc.Application2.DateCreated
-   - Iptc.Application2.TimeCreated
-   - Exif.Image.ImageDescription
+   - `Iptc.Application2.Byline`
+   - `Iptc.Application2.DateCreated`
+   - `Iptc.Application2.TimeCreated`
+   - `Exif.Image.ImageDescription`
 
 - Le module "Ombres et hautes lumières" utilise maintenant le filtre Bilatéral par défaut cela évitera la plupart des halos, ce qui en fait un meilleur filtre par défaut.
 
@@ -305,7 +305,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - Amélioration de la clarté et de la convivialité de la boîte de dialogue permettant de confirmer la poursuite de l'action en cas d'échec de la suppression physique d'un fichier ou de son déplacement vers la corbeille.
 
-- Les menus déroulants permettant de sélectionner le degré de lissage du pinceau et de déterminer si la pression du stylo affecte la taille, la dureté ou l'opacité du pinceau ont été déplacés des préférences vers la section repliable "Paramètres" du gestionnaire de masques, de sorte qu'ils peuvent être modifiés pendant le dessin ou même affectés à des raccourcis.
+- Les menus déroulants permettant de sélectionner le degré de lissage du pinceau et de déterminer si la pression du stylo affecte la taille, la dureté ou l'opacité du pinceau, ont été déplacés des préférences vers la section repliable "Paramètres" du gestionnaire de masques. Ainsi ils peuvent être modifiés pendant le dessin ou même affectés à des raccourcis.
 
 - Ajout de l'affichage des métadonnées du profil ICC de l'image courante dans l'infobulle du widget de profil d'entrée.
 
