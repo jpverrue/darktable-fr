@@ -220,7 +220,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 - Le filtre de recherche a été amélioré pour rechercher également la marque et le modèle de l'appareil photo.
 
 - Un copier-coller complet est toujours effectué en mode écrasement. Dans la plupart des cas, l'utilisation du mode "append" n'est pas la bonne solution. Lorsque l'historique complet est copié et collé dans une autre image, nous voulons utiliser le nouvel historique en remplacement du précédent. Cela n'a pas de sens d'ajouter des multi-instances pour certains modules par exemple. Cette nouvelle valeur par défaut devrait donc mieux s'intégrer dans le flux de travail.
-- 
+
 - Le chemin du pinceau est maintenant un peu plus transparent pour mieux voir ce qui est réellement peint.
 
 - L'infobulle du style affiche immédiatement les détails du module en attendant que l'image de prévisualisation soit calculée.
@@ -229,7 +229,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - Rend l'infobulle des outils de masques dessinés du module "Liquéfier" cohérente avec les autres outils de masque, comme c'est le cas pour les masques dessinés de fusion.
 
--Suppression de l'option de configuration "Dématriçage pour le mode chambre noire zoomé". Cette option n'est plus utile maintenant que le cache du pixelpipe a été amélioré. Elle peut également entraîner de légères différences. 
+- Suppression de l'option de configuration "Dématriçage pour le mode chambre noire zoomé". Cette option n'est plus utile maintenant que le cache du pixelpipe a été amélioré. Elle peut également entraîner de légères différences. 
 
 - Dans le "Gestionnaire de masques", certaines actions du menu pouvaient être activées même si elles étaient inopérantes compte tenu du contexte. Ainsi, les actions de déplacement vers le haut et vers le bas sont désormais désactivées pour le premier et le dernier élément d'un groupe respectivement.
   Le réglage de l'opérateur de masque est désactivé pour le premier élément d'un groupe. Il s'agit essentiellement de petites améliorations de l'interface utilisateur.
