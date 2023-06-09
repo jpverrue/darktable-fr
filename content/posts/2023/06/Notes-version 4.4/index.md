@@ -17,8 +17,8 @@ Lors de la mise à jour à partir de la série stable 4.0.x, gardez à l'esprit 
 
 Il est fortement conseillé de faire d'abord une sauvegarde.  
 
-#### Note importante : pour s'assurer que darktable puisse continuer à supporter le format de fichier brut pour votre appareil photo, *s'il vous plaît* lisez [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri). Vous apprendrez comment vous pouvez contribuer pour vous assurer que nous ayons l'ensemble *complet* d'échantillons bruts (sous licence CC0) pour votre appareil photo !  
-  
+#### note importante : Pour s’assurer que darktable supporte le format de fichier RAW de votre appareil photo, veuillez lire [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri). Vous y apprendrez comment contribuer à la constitution de l’ensemble d’échantillons d’images (sous licence CC0) pour votre boîtier.
+
 
 Depuis darktable 4.0 :  
   
@@ -33,11 +33,11 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - Permettre de définir plusieurs préréglages et de les appliquer automatiquement aux images correspondantes. Chaque préréglage après le premier créera une nouvelle instance de module juste au-dessus du module actuel (de sorte qu'il s'applique après).
 
- - Pour mieux voir quelle instance de module correspond à quel préréglage, l'étiquette du module est définie sur l'étiquette du préréglage. Cette étiquette de module sera modifiée si certains paramètres du module sont modifiés. L'étiquette du module sera effacée si aucun préréglage ne correspond ou sera remplacée par la nouvelle étiquette du préréglage dans le cas contraire. Si l'étiquette du module a été éditée à la main, elle sera conservée telle quelle et ne sera jamais mise à jour automatiquement.
+ - Pour mieux voir quelle instance de module correspond à quel préréglage, l'étiquette du module est définie à partir l'étiquette du préréglage. Cette étiquette de module sera modifiée si certains paramètres du module sont modifiés. L'étiquette du module sera effacée si aucun préréglage ne correspond ou sera remplacée par la nouvelle étiquette du préréglage dans le cas contraire. Si l'étiquette du module a été éditée à la main, elle sera conservée telle quelle et ne sera jamais mise à jour automatiquement.
 
  - Une nouvelle option nommée "Mettre à jour automatiquement le nom du module" (activée par défaut) a été introduite pour permettre de désactiver complètement la mise à jour automatique de l'étiquette du module.
 
- - les paramètres par défaut des modules ont été retravaillés pou les rendre utilisables dans les copier/coller, les préréglages et les styles.
+ - Les paramètres par défaut des modules ont été retravaillés pou les rendre utilisables dans les copier/coller, les préréglages et les styles.
 
 - De nombreux modules ont des paramètres par défaut basés sur les métadonnées de l'image ou le flux de travail actuel :
   - "Exposition" : utilise un paramètre par défaut spécifique dans le flux de travail référencé par la scène,
@@ -64,7 +64,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - Enfin, en combinant le flux de travail "Aucun" et les deux nouvelles fonctionnalités ci-dessus ("Prise en charge de préréglages multiples" et "Réinitialisation des paramètres par défaut basée sur les métadonnées"), il est possible de créer n'importe quel autre type de flux de travail. Par exemple, il est possible d'utiliser Sigmoïde avec le module de balance des blancs.
 
-- Ajout de la prise en charge des lignes du Color Harmony Guide dans le vectorscope RVB.
+- Ajout de la prise en charge des Color Harmony Guide dans le vectorscope RVB.
 
   Il y a 9 guides d'harmonie des couleurs proposés :
   - Monochromatique
@@ -113,16 +113,34 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
    - "Grain"
    - "Monochrome"
    - "Reconstruction des hautes lumières" (peinture opposées)
+
+
    - Les algorithmes d'interpolation (Bicubique, Bilinéaire, Lanczos2, Lanczos3) utilisés par les modules effectuant la déformation ou la mise à l'échelle des pixels. L'ancien module de recadrage et de rotation et le nouveau module de correction de la perspective fonctionnent désormais plus rapidement.
+
    - Le générateur gaussien utilisé par de nombreux modules : "Censure", "Réduction du bruit (profil)", "Filtre passe-bas", "Diffusion et netteté", "Suppression de franges", "Aberrations chromatiques RAW", "Courbe de base", "Correction de la perspective", "Filmique RVB", "Retouche", "Égaliseur de tons" et "Zone Système" (obsolète). Cela signifie que tous ces modules ont des parties qui fonctionnent dorénavant plus rapidement.
-   - Le filtre de flou de boîte utilisé par le focus peaking, le filtre guidé des masques paramétriques, les nouveaux algorithmes de récupération des hautes lumières. Ainsi que les modules "Lumière d'arrière-plan", "Filtre passe-haut", "Suppression de la brume" et "Effet Orton (adoucir)". Cela signifie que tous ces modules et fonctionnalités ont des parties qui fonctionnent à présent plus rapidement.
+ 
+   - Le filtre box blur (flou de boîte) utilisé par :
+     - le focus peaking (Mode zones nettes),
+     - le filtre guidé des masques paramétriques,
+     - les nouveaux algorithmes de récupération des hautes lumières,
+     - ainsi que les modules "Lumière d'arrière-plan", "Filtre passe-haut", "Suppression de la brume" et "Effet Orton (adoucir)".
+     
+     Cela signifie que tous ces modules et fonctionnalités ont des parties qui fonctionnent à présent plus rapidement.
+
    - L'agorithme "ondelette à trous évitant les bords" est utilisée par les modules "Égaliseur de contraste" et "Réduction du bruit (profil)". Ce qui signifie que ces modules ont des parties qui fonctionnent maintenant plus rapidement.
+
    - Certaines parties du filtre bilatéral ont été améliorées pour de meilleures performances. Ce filtre est utilisé dans de nombreux modules tels que "Monochrome", "Filtre passe-bas", "Ombres et hautes lumières", "Censure", "Retouche", "Mappage des couleurs", "Rotation et perspective" et "Contraste local". Cela signifie que tous ces modules ont des parties qui fonctionnent désormais plus rapidement.
+
    - Tous les modes de mélange en Lab et RVB pour les flux de travail "relatif à l'affichage" et "relatif à la scène" ont été optimisés.
+
    - Les matrices d'adaptation des couleurs ont été transposées pour permettre la vectorisation.
+
    - Le calcul du masque de luminance pour le module "Égaliseur de tons".
+
    - le Chargeur pour le format des fichiers JPEG 2000.
-   - L'opération "acquérir des grappes" dans le module "Mappage des couleurs" a été accélérée d'un facteur de 30 à 200, ce qui rend les résultats quasi instantanés dès que l'on clique sur le bouton.
+
+   - L'opération "Acquérir des grappes" dans le module "Mappage des couleurs" a été accélérée d'un facteur de 30 à 200, ce qui rend les résultats quasi instantanés dès que l'on clique sur le bouton.
+
 - Ajout d'un raccourci global <kbd>right-click</kbd> et d'un glisser-déposer pour fixer la rotation de l'image. Ce raccourci peut désormais être utilisé à tout moment dans la chambre noire, à condition que le module en cours d'utilisation n'utilise pas ce raccourci. Cela permet de corriger rapidement la rotation sans avoir à ouvrir le module Rotation et Perspective.
 
 ## Autres changements
@@ -154,8 +172,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - Retravailler le filtre de la boîte de dialogue de création / modification des préréglages pour mieux montrer la relation entre les formats RAW, non RAW et les trois formats HDR, monochrome et couleur. Cela permet d'éviter les confusions et la création de préréglages qui ne sont en fait pas appliqués.
 
-- Le groupe de modules par défaut a été supprimé. Il est préférable d'utiliser un
-  d'un des groupes relatifs à la scène.
+- Le groupe de modules par défaut a été supprimé. Il est préférable d'utiliser l'un des groupes relatifs à la scène.
 
 - Ajout d'un support pour le chargement des images QOI et FITS.
 
@@ -195,7 +212,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - Un clic gauche prolongé sur un préréglage gardera le menu ouvert afin que vous puissiez rapidement passer d'un préréglage à l'autre pour voir l'effet sans avoir à cliquer à plusieurs reprises sur le bouton du préréglage pour rouvrir le menu. Vous pouvez également faire défiler le bouton de préréglage pour passer aux préréglages précédents/suivants (comme vous pouvez déjà le faire à l'aide des raccourcis).
 
-- Lorsque le module "Recadrer" reçoit le focust et passe à une vue non recadrée de l'image, les zones de recadrage autour des bords de l'image s'allument brièvement pour indiquer qu'elles peuvent maintenant être déplacées.
+- Lorsque le module "Recadrer" reçoit le focus et passe à une vue non recadrée de l'image, les zones de recadrage autour des bords de l'image s'allument brièvement pour indiquer qu'elles peuvent maintenant être déplacées.
 
 - Le module "Recadrer", affiche l'image complète pour faciliter les ajustements, ne déclenche pas de recalcul inutile jusqu'à ce que le module perde le focus (par exemple en passant à un autre module ou en réduisant le module de recadrage lui-même), auquel cas le nouveau recadrage est utilisé pour redimensionner. Si des raccourcis sont utilisés pour apporter des modifications au recadrage sans donner le focus au module, ils seront tout de même mis en œuvre immédiatement.
 
@@ -219,7 +236,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - Le filtre de recherche a été amélioré pour rechercher également la marque et le modèle de l'appareil photo.
 
-- Un copier-coller complet est toujours effectué en mode écrasement. Dans la plupart des cas, l'utilisation du mode "append" n'est pas la bonne solution. Lorsque l'historique complet est copié et collé dans une autre image, nous voulons utiliser le nouvel historique en remplacement du précédent. Cela n'a pas de sens d'ajouter des multi-instances pour certains modules par exemple. Cette nouvelle valeur par défaut devrait donc mieux s'intégrer dans le flux de travail.
+- Un copier-coller complet est toujours effectué en mode écrasement. Dans la plupart des cas, l'utilisation du mode empiler n'est pas la bonne solution. Lorsque l'historique complet est copié et collé dans une autre image, nous voulons utiliser le nouvel historique en remplacement du précédent. Cela n'a pas de sens d'ajouter des multi-instances pour certains modules par exemple. Cette nouvelle sémantique par défaut devrait donc mieux s'intégrer dans le flux de travail.
 
 - Le chemin du pinceau est maintenant un peu plus transparent pour mieux voir ce qui est réellement peint.
 
@@ -234,7 +251,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 - Dans le "Gestionnaire de masques", certaines actions du menu pouvaient être activées même si elles étaient inopérantes compte tenu du contexte. Ainsi, les actions de déplacement vers le haut et vers le bas sont désormais désactivées pour le premier et le dernier élément d'un groupe respectivement.
   Le réglage de l'opérateur de masque est désactivé pour le premier élément d'un groupe. Il s'agit essentiellement de petites améliorations de l'interface utilisateur.
 
-- Deux nouveaux préréglages de "netteté" sur le module "Diffusion ou netteté" ont été ajoutés. Un "netteté standard" et un autre avec un effet plus prononcé.
+- Deux nouveaux préréglages de "netteté" sur le module "Diffusion ou netteté" ont été ajoutés. Un "Netteté" et un autre "Netteté : Forte" avec un effet plus prononcé viennent compléter "Netteté : rapide"
 
 - Les boutons d'instantanés ont été redessinés pour avoir une meilleure apparence. L'affichage est désormais plus proche du module d'historique. En même temps, l'étiquette du module est affichée et peut être modifiée à l'aide de la touche <kbd>ctrl+clic</kbd>.
 
@@ -272,7 +289,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - La réinitialisation d'un combo (en double-cliquant ou via un raccourci) qui a des sous-en-têtes sélectionnera désormais le premier élément sélectionnable.
 
-- Les demandes de changement d'image dans la chambre noire (espace/retour/clic dans la bande de film) étaient auparavant ignorées si un nouveau calcul était en cours. Désormais, elles seront traitées dès que le tuyau sera prêt. Toutes les modifications apportées à l'image précédente pendant cette attente seront ignorées.
+- Les demandes de changement d'image dans la chambre noire (espace/retour/clic dans la bande de film) étaient auparavant ignorées si un nouveau calcul était en cours. Désormais, elles seront traitées dès que possible. Toutes les modifications apportées à l'image précédente pendant cette attente seront ignorées.
 
 - Activation de l'ajustement manuel du point noir par couleur pour les images RAW non CFA (c'est-à-dire linéaires). Notez que les niveaux incorporés dans les fichiers peuvent ne pas être réglés automatiquement lors de l'importation.
 
@@ -441,7 +458,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - Correction de l'enregistrement de la position dans l'historique du module "Collections" et dans le module "Collections récentes". Cela permet de s'assurer que l'activation d'une entrée dans l'historique rétablit le décalage de la vignette tel qu'il était lorsque l'entrée a été sauvegardée.
 
-- Éviter un cas possible (et rare) de retournement des images dans la vue d'impression en raison de la mise à jour de certains aperçus.
+- Éviter un cas possible (et rare) de retournement indésirable de l'image sélectionnée dans la vue d'impression, en raison de la mise à jour des vignettes du bandeau.
 
 ## Lua
 
@@ -451,7 +468,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 ### Ajout  ou modification de la prise en charge des actions par Lua
 
-- L'appel lua à dt.gui.action est devenu plus flexible, avec la plupart des paramètres optionnels, de sorte que vous pouvez lire l'état focalisé d'un module en faisant simplement `dt.gui.action("iop/filmicrgb", "focus")`.
+- L'appel Lua à dt.gui.action est devenu plus flexible, avec la plupart des paramètres optionnels, de sorte que vous pouvez lire l'état focalisé d'un module en faisant simplement `dt.gui.action("iop/filmicrgb", "focus")`.
 
 - Les infobulles affichent les commandes Lua compactes en mode mapping (en ajoutant uniquement le dernier paramètre, instance, si le module supporte le multi-instance) et ont été ajoutées aux menus préréglages et styles.
 
@@ -459,7 +476,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - La commande lua affichée/copiée pour un curseur ou un combobox fixera la valeur qu'il a actuellement.
 
-- Un raccourci peut maintenant être dirigé vers un script lua qui imite un slider, un dropdown ou un bouton standard, mais qui sélectionne dynamiquement le(s) vrai(s) widget(s) qui le reçoit(vent), en se basant par exemple sur le module qui est focalisé ou activé. L'avantage est que tous les fallbacks fonctionnent normalement, vous pouvez donc lui assigner un bouton midi et le tourner (en maintenant <kbd>shift</kbd> / <kbd>ctrl</kbd> pour accélérer/diminuer) ou le presser pour réinitialiser fonctionne quel que soit le widget qui le reçoit. En fait, il s'agit d'une alternative beaucoup plus flexible aux faux widgets qui se trouvent sous processing modules. Cela permet aux propriétaires d'un x-touch mini, par exemple, d'utiliser leurs scarce rotors de différentes manières, entièrement configurables, tout en travaillant dans différents modules (qui peuvent également être focalisés à l'aide de boutons midi qui s'allumeront alors). Ces configurations pourraient être partagées à l'aide de https://github.com/darktable-org/lua-scripts.
+- Un raccourci peut maintenant être dirigé vers un script Lua qui imite un slider, un dropdown ou un bouton standard, mais qui sélectionne dynamiquement le(s) vrai(s) widget(s) qui le reçoit(vent), en se basant par exemple sur le module qui est focalisé ou activé. L'avantage est que tous les fallbacks fonctionnent normalement, vous pouvez donc lui assigner un bouton midi et le tourner (en maintenant <kbd>shift</kbd> / <kbd>ctrl</kbd> pour accélérer/diminuer) ou le presser pour réinitialiser. Fonctionne quel que soit le widget qui le reçoit. En fait, il s'agit d'une alternative beaucoup plus flexible aux faux widgets qui se trouvent sous processing modules. Cela permet aux propriétaires d'un x-touch mini, par exemple, d'utiliser leurs rotors (peu nombreux) de différentes manières, entièrement configurables, tout en travaillant dans différents modules (qui peuvent également être focalisés à l'aide de boutons midi qui s'allument alors). De telles configurations pourraient être partagées à l'aide de https://github.com/darktable-org/lua-scripts.
 
 - Prise en charge des raccourcis vers les curseurs/combos créés en Lua, soit via le mode de mapping visuel, soit dans la boîte de dialogue des raccourcis sous la catégorie Lua. Les éléments et les effets ne sont pas pris en charge.
 
@@ -477,11 +494,11 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 ## Notes
 
--   When exporting to AVIF, EXR, JPEG XL, or XCF, selecting specific metadata (e.g. geo tag or creator) is not currently possible. For AVIF, EXR, JPEG XL, and XCF formats, darktable will not include any metadata fields unless the user selects all of the checkboxes in the export preference options.
+- Lors de l'exportation vers les formats AVIF, EXR, JPEG XL ou XCF, la sélection de métadonnées spécifiques (par exemple, l'étiquette géographique ou le créateur) n'est actuellement pas possible. Pour les formats AVIF, EXR, JPEG XL et XCF, darktable n'inclura aucun champ de métadonnées à moins que l'utilisateur ne sélectionne toutes les cases à cocher dans les options de préférences d'exportation.
+
+- Afin de supporter l'affichage correct des nombres dans darktable, la version minimale supportée de Gtk a dû être augmentée à 3.24.15. Pour les personnes qui ont besoin de construire darktable avec une version plus ancienne, ceci peut être supporté en inversant le changement suivant : supprimez la ligne 241 du fichier darktable.css sur votre système. Voir : [#13166](https://github.com/darktable-org/darktable/issues/13166)
     
--   In order to support the correct display of numbers in darktable, the minimum supported Gtk version has had to be increased to 3.24.15. For people who need to build darktable with an older version, this can be supported by reverting the following change: remove line 241 of darktable.css file on your system. See: [#13166](https://github.com/darktable-org/darktable/issues/13166)
-    
--   Beginning with this release a new support policy regarding macOS versions will be in place. darktable releases will just support macOS versions that are also supported by Apple. So release 4.4 drops support for macOS versions older than 11.3.
+- À partir de cette version, une nouvelle politique de support des versions de macOS sera mise en place. Les versions de darktable ne prendront en charge que les versions de macOS qui sont également prises en charge par Apple. Ainsi, la version 4.4 ne prend plus en charge les versions de macOS antérieures à la 11.3.
     
 
 ## Changement de dépendences
@@ -502,9 +519,12 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 ### Absence de prise en charge du mode de compression
 
-Fujifilm lossy
-Nikon high efficiency
-Sony lossless
+- Apple ProRAW DNGs
+- Blackmagic lossless CinemaDNGs
+- Fujifilm lossy RAFs
+- Nikon high efficiency NEFs
+- Samsung Expert RAW DNGs
+- Sony lossless
 
 ### Préréglages de la balance des blancs
 
