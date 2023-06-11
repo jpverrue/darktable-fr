@@ -115,7 +115,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
    - "Reconstruction des hautes lumières" (peinture opposées)
 
 
-   - Les algorithmes d'interpolation (Bicubique, Bilinéaire, Lanczos2, Lanczos3) utilisés par les modules effectuant la déformation ou la mise à l'échelle des pixels. L'ancien module de recadrage et de rotation et le nouveau module de correction de la perspective fonctionnent désormais plus rapidement.
+   - Les algorithmes d'interpolation (Bicubique, Bilinéaire, Lanczos2, Lanczos3) utilisés par les modules effectuant la déformation ou la mise à l'échelle des pixels. L'ancien module "Recadrer et pivoter" (déprécié) et le nouveau module "Rotation et perspective" fonctionnent désormais plus rapidement.
 
    - Le générateur gaussien utilisé par de nombreux modules : "Censure", "Réduction du bruit (profil)", "Filtre passe-bas", "Diffusion et netteté", "Suppression de franges", "Aberrations chromatiques RAW", "Courbe de base", "Correction de la perspective", "Filmique RVB", "Retouche", "Égaliseur de tons" et "Zone Système" (obsolète). Cela signifie que tous ces modules ont des parties qui fonctionnent dorénavant plus rapidement.
  
@@ -244,7 +244,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - Dans les dialogues de style et de copier/coller, une nouvelle colonne affiche l'état de masquage du module. Si un masque (dessin, paramétrique ou raster) est utilisé, la colonne contient une icône de masque.
 
-- Rend l'infobulle des outils de masques dessinés du module "Liquéfier" cohérente avec les autres outils de masque, comme c'est le cas pour les masques dessinés de fusion.
+- Les infobulle des outils de forme du module "Liquéfier" sont désormais cohérentes avec les autres outils de masque.
 
 - Suppression de l'option de configuration "Dématriçage pour le mode chambre noire zoomé". Cette option n'est plus utile maintenant que le cache du pixelpipe a été amélioré. Elle peut également entraîner de légères différences. 
 
