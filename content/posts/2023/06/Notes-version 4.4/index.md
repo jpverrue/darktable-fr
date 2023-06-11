@@ -115,7 +115,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
    - "Reconstruction des hautes lumières" (peinture opposées)
 
 
-   - Les algorithmes d'interpolation (Bicubique, Bilinéaire, Lanczos2, Lanczos3) utilisés par les modules effectuant la déformation ou la mise à l'échelle des pixels. L'ancien module "Recadrer et pivoter" (déprécié) et le nouveau module "Rotation et perspective" fonctionnent désormais plus rapidement.
+   - Les algorithmes d'interpolation (Bicubique, Bilinéaire, Lanczos2, Lanczos3) utilisés par les modules effectuant la déformation ou la mise à l'échelle des pixels : l'ancien module "Recadrer et pivoter" (déprécié) et le nouveau module "Rotation et perspective" fonctionnent désormais plus rapidement.
 
    - Le générateur gaussien utilisé par de nombreux modules : "Censure", "Réduction du bruit (profil)", "Filtre passe-bas", "Diffusion et netteté", "Suppression de franges", "Aberrations chromatiques RAW", "Courbe de base", "Correction de la perspective", "Filmique RVB", "Retouche", "Égaliseur de tons" et "Zone Système" (obsolète). Cela signifie que tous ces modules ont des parties qui fonctionnent dorénavant plus rapidement.
  
