@@ -20,7 +20,7 @@ Il est fortement conseillé de faire d'abord une sauvegarde.
 #### note importante : Pour s’assurer que darktable supporte le format de fichier RAW de votre appareil photo, veuillez lire [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri). Vous y apprendrez comment contribuer à la constitution de l’ensemble d’échantillons d’images (sous licence CC0) pour votre boîtier.
 
 
-Depuis darktable 4.0 :  
+Depuis darktable 4.2 :  
   
 
 - Presque XXXX commits à darktable+rawspeed  
@@ -31,40 +31,41 @@ Depuis darktable 4.0 :
 ## Les grandes nouveautés
 Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. La plupart de ces fonctionnalités sont décrites plus en détail dans le manuel de l'utilisateur.
 
-- Permettre de définir plusieurs préréglages et de les appliquer automatiquement aux images correspondantes. Chaque préréglage après le premier créera une nouvelle instance de module juste au-dessus du module actuel (de sorte qu'il s'applique après).
+- Permettre de définir plusieurs préréglages automatiques pour un module et de les appliquer automatiquement aux images correspondantes. Chaque préréglage après le premier créera une nouvelle instance de module juste au-dessus du module actuel (de sorte qu'il s'applique après).
 
  - Pour mieux voir quelle instance de module correspond à quel préréglage, l'étiquette du module est définie à partir l'étiquette du préréglage. Cette étiquette de module sera modifiée si certains paramètres du module sont modifiés. L'étiquette du module sera effacée si aucun préréglage ne correspond ou sera remplacée par la nouvelle étiquette du préréglage dans le cas contraire. Si l'étiquette du module a été éditée à la main, elle sera conservée telle quelle et ne sera jamais mise à jour automatiquement.
 
- - Une nouvelle option nommée "Mettre à jour automatiquement le nom du module" (activée par défaut) a été introduite pour permettre de désactiver complètement la mise à jour automatique de l'étiquette du module.
+ - Une nouvelle option nommée "Préférences --> Chambre noire --> mise à jour automatique du nom du module" (activée par défaut) a été introduite pour permettre de désactiver complètement la mise à jour automatique de l'étiquette du module.
 
- - Les paramètres par défaut des modules ont été retravaillés pou les rendre utilisables dans les copier/coller, les préréglages et les styles.
+ - Les paramètres par défaut de certains modules ont été retravaillés pour les rendre plus facilement utilisables dans les copier/coller, les préréglages et les styles.
 
 - De nombreux modules ont des paramètres par défaut basés sur les métadonnées de l'image ou le flux de travail actuel :
-  - "Exposition" : utilise un paramètre par défaut spécifique dans le flux de travail référencé par la scène,
-  - "Réduction du bruit (Profil) : spécifique à l'appareil photo et à la sensibilité ISO,
-  - "Correction des objectifs" : spécifique à l'appareil photo et à l'objectif,
+  - "Exposition" : dans le flux de travail relatif à la scène, l'exposition est ajustée à l'aide de la valeur de compensation d'exposition EXIF,
+  - "Réduction du bruit (Profil)" : spécifique à l'appareil photo et à la sensibilité ISO,
+  - "Correction des objectifs" : spécifique à l'appareil photo, l'objectif, la focale et la distance,
   - "Courbe de base" : spécifique au capteur de l'appareil photo,
-  - "Balance des blancs" : spécifique aux métadonnées,
-  - "Orientation" : spécifique aux métadonnées,
-  - "Calibration des couleurs" : spécifique aux métadonnées.
+  - "Balance des blancs" : spécifique aux métadonnées EXIF,
+  - "Orientation" : spécifique aux métadonnées EXIF,
+  - "Calibration des couleurs" : spécifique aux métadonnées EXIF.
   
-   Pour tous ces modules, il est désormais possible de coller des paramètres et de s'assurer que les métadonnées par défaut appropriées seront utilisées. Pour ce faire, il suffit de sélectionner la colonne correspondante "Réinitialiser" dans la boîte de dialogue des préréglages et des styles.
+   Pour tous ces modules, il est désormais possible de coller des paramètres tout en s'assurant que les métadonnées d'image appropriées sont utilisées pour définir les paramètres du module. Pour ce faire, il suffit de sélectionner la colonne "Réinitialiser" dans les boîtes de dialogue des préréglages et des styles, ce qui fait que le module se comporte comme si l'on avait cliqué sur son bouton de réinitialisation.
 
-- Pour les préréglages, une nouvelle option peut être sélectionnée dans la boîte de dialogue pour que le préréglage utilise les paramètres par défaut du module sur lequel il est appliqué. L'option s'appelle "Réinitialiser tous les paramètres du module à leurs valeurs par défaut".
+- Pour la création des préréglages, une nouvelle option peut être sélectionnée dans la boîte de dialogue pour que le préréglage utilise les paramètres par défaut du module sur lequel il est appliqué. L'option s'appelle "Réinitialiser tous les paramètres du module à leurs valeurs par défaut".
 
-  Cette nouvelle fonctionnalité générique a permis d'éliminer certaines tentatives de faire le même type de support au niveau du module, ce qui était de toute façon limité.
+  Cette fonctionnalité nous a permis de nettoyer un certain nombre de hacks spécifiques à certains modules qui permettaient auparavant d'obtenir des fonctionnalités similaires ((même si c'est de manière plus limitée).
 
-- Redéfinition des paramètres du flux de travail, nous avons maintenant le choix entre :
-  - Référence à la scène (Filmique RVB).
-  - Référence à la scène (Sigmoïde)
-  - Référence à l'affichage (Ancien)
+- L'option de configuration du flux de travail par défaut (préférences --> traitement)
+  > l'option a été ajustée pour incorporer l'ancien flux de travail relatif à l'affichage et pour inclure le nouveau module sigmoïde. Les options sont désormais les suivantes :
+  - Relatif à la scène (Filmique RVB).
+  - Relatif à la scène (Sigmoïde)
+  - Relatif à l'affichage (Ancien)
   - Aucun
 
--  La préférence pour l'adaptation chromatique a été supprimée et est implicite dans le flux de travail. Le module d'étalonnage des couleurs est utilisé lorsqu'il s'agit d'une préférence de scène et d'une balance des couleurs dans le cas contraire.
+  Avec ces nouvelles options, le module Calibration des couleurs et l'ordre des modules relatifs à la scène seront automatiquement appliqués pour tous les flux de travail, à l'exception de "Relatif à l'affichage (Ancien)", qui continuera à utiliser uniquement le module de balance des blancs pour l'adaptation chromatique. La valeur entre parenthèses représente le module par défaut utilisé pour le mappage des tons (filmique/sigmoïde). En mode "Ancien", la courbe de base sera utilisée pour le mappage des tons et en mode "Aucun", aucun module de mappage des tons ne sera appliqué.
+  
+  Enfin, en combinant le flux de travail "Aucun" et les deux nouvelles fonctionnalités ci-dessus ("Prise en charge de préréglages multiples" et "Réinitialisation des paramètres par défaut basée sur les métadonnées"), il est possible de créer n'importe quel autre type de flux de travail. Par exemple, il est possible d'utiliser Sigmoïde avec le module de balance des blancs.
 
-- Enfin, en combinant le flux de travail "Aucun" et les deux nouvelles fonctionnalités ci-dessus ("Prise en charge de préréglages multiples" et "Réinitialisation des paramètres par défaut basée sur les métadonnées"), il est possible de créer n'importe quel autre type de flux de travail. Par exemple, il est possible d'utiliser Sigmoïde avec le module de balance des blancs.
-
-- Ajout de la prise en charge des Color Harmony Guide dans le vectorscope RVB.
+- Ajout de la prise en charge des "Color Harmony Guide" dans le vectorscope RVB.
 
   Il y a 9 guides d'harmonie des couleurs proposés :
   - Monochromatique
@@ -79,7 +80,51 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
     Ces guides peuvent être utilisés pour modifier les couleurs des zones clés d'une image afin qu'elles correspondent à l'une des harmonies de couleurs. On peut voir les guides d'harmonie des couleurs un peu comme les guides de composition, mais liés aux couleurs et non à la composition.
 
-- Divers nettoyages de code et amélioration des performances. Tout le code spécifique SSE2 des modules suivants a été supprimé (car le code parallèle optimisé généré par le compilateur est plus rapide) ou le code optimisé dans les modules suivants. Cela conduit à un gain de vitesse de 5% à 25% :
+- Une opération globale <kbd>clic droit et glisser</kbd> a été ajoutée pour  permettre de corriger la rotation de l'image sans ouvrir au préalable le  module Rotation et perspective. Cette opération peut être utilisée à condition que le module en cours d'utilisation n'utilise pas déjà ce raccourci à d'autres fins.
+
+- La fonctionnalité de masque dessiné a été entièrement revue avec un grand nombre de modifications et de corrections :
+
+  - Les options "lissage du pinceau" et "pression du stylo" ont été déplacées de la boîte de dialogue des préférences globales vers une nouvelle section dans le gestionnaire de masques, afin qu'elles puissent être modifiées pendant le dessin et que des raccourcis puissent leur être attribués.
+
+  - Les curseurs de taille, de plume et de dureté de la forme du masque dessiné dans le gestionnaire de masques utilisent désormais une échelle logarithmique et le défilement sur ces curseurs permet d'effectuer des ajustements relatifs, tout comme <kbd>Shift+scroll</kbd> sur la forme elle-même. Comme pour les autres curseurs, <kdb>Ctrl</kbd> ou <kdb>Shift</kbd> peuvent être utilisés pour effectuer des ajustements fins ou grossiers (de la même manière avec les raccourcis activés). Les raccourcis assignés aux curseurs peuvent être utilisés pour ajuster la taille/dureté du pinceau pendant le dessin.
+
+  - Un cinquième opérateur a été ajouté au gestionnaire de masques pour permettre de combiner des formes dessinées en mode "somme". Cela permet de répéter des coups de pinceau répétés de coups de pinceau avec une faible opacité d'être superposés les uns sur les autres afin d'augmenter la force du masque. Ce mode est désormais le mode par défaut pour les formes de pinceau.
+
+  - Il est désormais possible de modifier l'opérateur de réglage (mode) pour toutes les formes d'un groupe à partir du menu contextuel du gestionnaire de masques.
+ 
+  - Certaines actions du menu du gestionnaire de masques pouvaient auparavant être activées alors qu'elles n'avaient aucun impact dans l'image dans certains contextes. Les actions de déplacement vers le haut et vers le bas sont donc désormais désactivées pour le premier et le dernier élément d'un groupe respectivement, et il n'est n'est plus possible de choisir un opérateur (mode) pour le premier élément d'un groupe.
+
+  - L'ordre de tri des formes dans les groupes de gestionnaires de masques a été inversé, de sorte que la forme la moins bien classée se trouve au bas du groupe. L'ordre de tri des formes en dehors d'un groupe a également été également été modifié pour des raisons de cohérence.
+
+  - Il est désormais possible d'ajouter tous les types de masques en continu dans le gestionnaire de masques.
+
+  - Correction d'un problème où la brosse n'était pas correctement affichée après avoir été créée à partir du gestionnaire de masques.
+
+  -  Un crash lors de la création de dégradés à partir du gestionnaire de masques a également été corrigé.
+ 
+  - Pour toutes les formes, l'état modifiable est désormais correctement défini après la création, ce qui permet de déplacer et de redimensionner les différentes parties des formes.
+
+  - Correction d'un problème d'affichage lors de l'édition d'un nom de forme dans le gestionnaire de masques.
+
+  - Correction de l'état des opérateurs d'édition dans le gestionnaire de masques. Lorsque l'on déplace un masque vers le haut ou vers le bas, nous nous assurons maintenant que le premier masque n'a pas d'opérateur et que le second a toujours un opérateur assigné. Si aucun opérateur n'a encore été défini, l'opérateur par défaut (union) est utilisé.
+
+  - Lorsque vous utilisez un raccourci pour ajouter des formes à un masque dessiné (mélange), le mode de mélange passe automatiquement à "masque dessiné" ou "masque dessiné et paramétrique", en fonction de ce qu'il était auparavant, de sorte que toute forme nouvellement créée affecte réellement l'image.
+
+  - Dans le mode de mélange "masque dessiné", il existait auparavant une option "inverser le masque" qui avait la même fonctionnalité que l'option "inverser la polarité". Comme les deux faisaient la même chose, l'option "inverser le masque" a été supprimée.
+
+  - Le dessin des masques a été retravaillé pour s'assurer que tous les types de masques sont dessinés de la même manière - la zone centrale, la bordure et les segments en surbrillance sont désormais affichés de manière cohérente. Le segment en surbrillance est désormais plus visible, en particulier pour le masque de pinceau, où le segment en surbrillance était à peine distinguable en raison d'un bogue.
+
+  - Dans les dialogues de style et de copier/coller, une nouvelle colonne a été ajoutée pour indiquer si un module utilise un masque (dessiné/paramétrique/rastérisé) à l'aide de l'icône de masque standard.
+
+  - L'édition des masques dessinés a été améliorée - il est maintenant plus facile de sélectionner les points de contrôle des masques et les segments de chemin (dans certains cas, il était facile de sélectionner accidentellement l'ensemble du masque de chemin plutôt qu'un seul segment). Le rendu des masques sur le canevas a également été amélioré pour une meilleure cohérence entre les types de formes.
+
+  - Le tracé du pinceau est désormais légèrement plus transparent afin de mieux voir l'image sous-jacente.
+
+## Amélioration des performances
+
+L'un des points forts de cette version est le nombre d'améliorations des performances :
+
+- Tout le code spécifique SSE2 des modules suivants a été supprimé (car le code parallèle optimisé généré par le compilateur est plus rapide) ou le code optimisé dans les modules suivants. Cela conduit à un gain de vitesse de 5% à 25% :
    - "Homogénéiser ou postériser"
    - "Filtre dégradé"
    - "Profil de couleur d'entrée"
@@ -238,8 +283,6 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - Un copier-coller complet est toujours effectué en mode écrasement. Dans la plupart des cas, l'utilisation du mode empiler n'est pas la bonne solution. Lorsque l'historique complet est copié et collé dans une autre image, nous voulons utiliser le nouvel historique en remplacement du précédent. Cela n'a pas de sens d'ajouter des multi-instances pour certains modules par exemple. Cette nouvelle sémantique par défaut devrait donc mieux s'intégrer dans le flux de travail.
 
-- Le chemin du pinceau est maintenant un peu plus transparent pour mieux voir ce qui est réellement peint.
-
 - L'infobulle du style affiche immédiatement les détails du module en attendant que l'image de prévisualisation soit calculée.
 
 - Dans les dialogues de style et de copier/coller, une nouvelle colonne affiche l'état de masquage du module. Si un masque (dessin, paramétrique ou raster) est utilisé, la colonne contient une icône de masque.
@@ -262,16 +305,6 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 - Le dessin de la flèche entre la zone source et la zone de destination dans le module "Retouche" a été retravaillé. Nous avons une flèche pour toutes les formes (au lieu d'une simple ligne pour les formes Pinceau et Chemin). De plus, la flèche est toujours la plus courte possible entre les deux zones, ce qui évite de croiser les formes. Enfin, pour les cercles et les ellipses, la flèche ne part plus de la zone centrale mais, comme pour les autres formes, de la bordure.
 
 - Ajout d'une option permettant de modifier le comportement du zoom pour le bouton central de la souris dans la chambre noire. Le paramètre peut être activé dans le dialogue des préférences sous la catégorie "Chambre noire". Le nouveau comportement ne permet de zoomer qu'entre l'ajustement et 100 %. Pour obtenir un zoom de 200 %, il faut faire <kbd>ctrl+clic</kbd>.
-
-- Les curseurs de taille, de plume et de dureté de la forme du masque dans le module de gestion des masques s'affichent désormais à l'échelle logarithmique et le défilement sur ces curseurs permet d'effectuer des ajustements relatifs, tout comme le défilement de la forme elle-même avec la touche <kbd>Shift</kbd>. Les touches <kbd>Ctrl</kbd> ou <kbd>Shift</kbd> permettent d'effectuer des ajustements fins ou grossiers, également à l'aide de raccourcis si les fonctions de repli sont activées. Les raccourcis assignés aux curseurs peuvent être utilisés pour ajuster la taille/dureté du pinceau pendant le dessin.
-
-- Amélioration de l'édition des masques en facilitant la sélection des points de contrôle des masques et plus particulièrement des segments du chemin. Dans certains cas, il était difficile de sélectionner un segment et, au lieu de cela, c'est l'ensemble du masque du chemin qui était sélectionné et donc déplacé. Le dessin des masques sur le canevas a également été amélioré afin d'être plus cohérent pour tous les types de formes.
-
- - Ajout d'un 5ème mode de combinaison des formes de masque : "somme". Ce mode permet de superposer des coups de pinceau répétés de faible opacité afin d'augmenter la force du masque. C'est désormais le mode par défaut pour les formes de pinceau.
-
-- Le mode de toutes les formes sélectionnées peut être modifié en une seule fois à partir du menu contextuel du gestionnaire de masques.
-
-- Lors de l'utilisation d'un raccourci pour ajouter des formes dans la section de mélange d'un module, le mode de mélange passe à "masque dessiné" ou "masque dessiné et paramétrique", en fonction de ce qu'il était auparavant, de sorte que toute forme nouvellement créée aura réellement un effet.
 
 - Affichage de la longueur focale équivalente plein cadre et du facteur de recadrage dans le module d'information sur l'image.
 
