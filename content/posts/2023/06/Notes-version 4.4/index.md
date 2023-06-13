@@ -180,11 +180,11 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
 - Lire les métadonnées Exif des images AVIF, HEIC et JPEG XL à l'aide des bibliothèques natives si Exiv2 ne le supporte pas.
 
-- Écrire les données Exif dans le bloc PNG d'EXIF, si vous utilisez une version d'Exiv2 plus récente que la version 0.27.x. Il s'agit de la nouvelle méthode standard pour stocker les données Exif dans les PNG.
+- Écrire les données Exif dans le bloc PNG d'EXIF, si vous utilisez une version d'Exiv2 plus récente que la version 0.28.x. Il s'agit de la nouvelle méthode standard pour stocker les données Exif dans les PNG.
 
 - Exportation des masques pour les EXR en tant que canaux supplémentaires.
 
-- Réactivation du chargement des images BigTIFF en essayant d'abord le lecteur natif basé sur libtiff.
+- Réactivation du chargement des images BigTIFF en essayant d'abord le lecteur natif basé sur libTIFF.
 
 - Refonte de l'exportation et de la génération des vignettes.
   Quelques astuces ont été accumulées pour essayer d'avoir la taille exacte des images exportées. Tout cela a été repensé et simplifié pour obtenir une meilleure taille d'exportation.
@@ -522,11 +522,10 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 ### Absence de prise en charge du mode de compression
 
 - Apple ProRAW DNGs
-- Blackmagic lossless CinemaDNGs
+- CinemaDNG lossless (Blackmagic, DJI, etc.)
 - Fujifilm lossy RAFs
 - Nikon high efficiency NEFs
 - Samsung Expert RAW DNGs
-- Sony lossless
 
 ### Préréglages de la balance des blancs
 
