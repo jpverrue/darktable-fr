@@ -21,12 +21,13 @@ Il est fortement conseillé de faire d'abord une sauvegarde.
 
 
 Depuis darktable 4.2 :  
-  
 
-- Presque XXXX commits à darktable+rawspeed  
-- XXXX demandes de pull traitées  
-- XXXX problèmes fermés  
+
+- 2700 commits à darktable+rawspeed  
+- 813 demandes de pull traitées  
+- 97 problèmes fermés  
   
+_Veuillez noter que la documentation de darktable n'est pas encore complète pour la version 4.4 et que les contributions sont très appréciées. Veuillez consulter [le projet documentation](https://github.com/darktable-org/dtdocs#contributing) pour plus d'informations sur la manière de contribuer._
 
 ## Les grandes nouveautés
 Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. La plupart de ces fonctionnalités sont décrites plus en détail dans le manuel de l'utilisateur.
@@ -552,13 +553,30 @@ L'un des points forts de cette version est le nombre d'améliorations des perfor
 
 ### Support de base
 
-### Absence de prise en charge du mode de compression
-
-- Apple ProRAW DNGs
-- CinemaDNG lossless (Blackmagic, DJI, etc.)
-- Fujifilm lossy RAFs
-- Nikon high efficiency NEFs
-- Samsung Expert RAW DNGs
+- Canon PowerShot SX10 IS (dng)
+- Canon PowerShot SX160 IS (dng)
+- Canon PowerShot SX20 IS (dng)
+- Canon PowerShot SX220 HS (dng)
+- Canon PowerShot SX230 HS (dng)
+- Canon PowerShot SX240 HS (dng)
+- Canon PowerShot SX30 IS (dng)
+- Canon PowerShot SX530 HS (dng)
+- Canon PowerShot SX710 HS (dng)
+- Fujifilm FinePix F550EXR
+- Fujifilm X-A7
+- Hasselblad X1D
+- Hasselblad X2D 100C
+- Leica M10 Monochrom (dng)
+- Leica M11 (dng)
+- Leica M11 Monochrom (dng)
+- Leica Q3 (dng)
+- Nikon Z 8 (14bit-compressed)
+- Panasonic DC-GH5M2 (4:3)
+- Panasonic DMC-FZ100 (1:1, 3:2, 16:9)
+- Panasonic DMC-GF8 (4:3, 1:1, 3:2, 16:9)
+- Phase One IQ180
+- Phase One P45
+- Sony ILME-FX30
 
 ### Préréglages de la balance des blancs
 
@@ -567,33 +585,63 @@ Canon EOS R10
 
 ### Profils de bruit
 
-Pas de données pour cette version
+- Canon PowerShot SX160 IS
+- Fujifilm X-H1
+- Fujifilm X-H2S
+- Fujifilm X-T200
+- Nikon Z 6_2
+- OM System OM-1
+- Pentax K-1 Mark II
+- Ricoh GR IIIx
+- Sony DSC-RX100M7
+- Sony ILCE-7C
+- Sony ILME-FX30
+- Canon EOS R7
+- Canon EOS R10
 
-### Suspended Support
+### Noise Profiles
 
-Aucun échantillon disponible sur [raw.pixls.us](https://raw.pixl.us)
+- Canon PowerShot SX160 IS
+- Nikon Z 6_2
+- Ricoh GR IIIx
+- Sony ILCE-6100
+- Sony ILCE-7M4
+- Sony ILCE-7RM5
+- Sony ZV-E10
 
-Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
-Fujifilm FinePix S9600fd
-Fujifilm IS-1
-GoPro FUSION
-Kodak EasyShare Z980
-Leaf Aptus-II 5(LI300059)/Mamiya 645 AFD
-Leaf Credo 60
-Leaf Credo 80
-Minolta DiMAGE 5
-Olympus SP320
-Panasonic DMC-FX150
-Pentax Q10
-Phase One IQ250
-Samsung GX10
-Samsung GX20
-Samsung EK-GN120
-Samsung SM-G920F
-Samsung SM-G935F
-Sinar Hy6/ Sinarback eXact
- ST Micro STV680
+### Absence de prise en charge du mode de compression
+
+- Apple ProRAW DNGs
+- CinemaDNG lossless (Blackmagic, DJI, etc.)
+- Fujifilm lossy RAFs
+- Nikon high efficiency NEFs
+- Samsung Expert RAW DNGs
+
+### Support suspendu 
+
+La prise en charge des appareils suivants est suspendue car aucun échantillon n'est disponible sur [raw.pixls.us](https://raw.pixl.us) :
+
+- Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
+- Fujifilm FinePix S9600fd
+- Fujifilm IS-1
+- GoPro FUSION
+- Kodak EasyShare Z980
+- Leaf Aptus-II 5(LI300059)/Mamiya 645 AFD
+- Leaf Credo 60
+- Leaf Credo 80
+- Minolta DiMAGE 5
+- Olympus SP320
+- Panasonic DMC-FX150
+- Pentax Q10
+- Phase One IQ250
+- Samsung GX10
+- Samsung GX20
+- Samsung EK-GN120
+- Samsung SM-G920F
+- Samsung SM-G935F
+- Sinar Hy6/ Sinarback eXact
+- ST Micro STV680
 
 ### Traductions
-nouvelle traduction anglaise avec les majuscules
- ???
+- nouvelle traduction anglaise avec les majuscules
+
