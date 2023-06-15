@@ -537,7 +537,7 @@ L'un des points forts de cette version est le nombre d'améliorations des perfor
 - À partir de cette version, une nouvelle politique de support des versions de macOS sera mise en place. Les versions de darktable ne prendront en charge que les versions de macOS qui sont également prises en charge par Apple. Ainsi, la version 4.4 ne prend plus en charge les versions de macOS antérieures à la 11.3.
     
 
-## Changement de dépendences
+## Changement de dépendances
 
 ### Obligatoires
 
@@ -643,5 +643,6 @@ La prise en charge des appareils suivants est suspendue car aucun échantillon n
 - ST Micro STV680
 
 ### Traductions
-- nouvelle traduction anglaise avec les majuscules
 
+- nouvelle traduction anglaise avec les majuscules
+???
