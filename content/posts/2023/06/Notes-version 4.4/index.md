@@ -53,7 +53,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
    Pour la création des préréglages, une nouvelle option peut être sélectionnée dans la boîte de dialogue pour que le préréglage utilise les paramètres par défaut du module sur lequel il est appliqué. L'option s'appelle "Réinitialiser tous les paramètres du module à leurs valeurs par défaut".
 
-  Cette fonctionnalité nous a permis de nettoyer un certain nombre de hacks spécifiques à certains modules qui permettaient auparavant d'obtenir des fonctionnalités similaires ((même si c'est de manière plus limitée).
+  Cette fonctionnalité nous a permis de nettoyer un certain nombre de hacks spécifiques à certains modules qui permettaient auparavant d'obtenir des fonctionnalités similaires (même si c'est de manière plus limitée).
 
 - L'option de configuration du flux de travail par défaut (préférences --> traitement)
   > l'option a été ajustée pour incorporer l'ancien flux de travail relatif à l'affichage et pour inclure le nouveau module sigmoïde. Les options sont désormais les suivantes :
