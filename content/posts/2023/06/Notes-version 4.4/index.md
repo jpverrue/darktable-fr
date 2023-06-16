@@ -13,7 +13,7 @@ $ sha256sum darktable-4.2.0.dmg
 $ sha256sum darktable-4.2.0.exe  
 ??? darktable-4.2.0.exe  
 ```  
-Lors de la mise à jour à partir de la série stable 4.0.x, gardez à l'esprit que vos modifications seront préservées pendant ce processus, mais que la nouvelle bibliothèque et la configuration ne seront plus utilisables avec la version 4.2.x.
+Lors de la mise à jour à partir de la série stable 4.2.x, gardez à l'esprit que vos modifications seront préservées pendant ce processus, mais que la nouvelle bibliothèque et la configuration ne seront plus utilisables avec la version 4.2.x.
 
 Il est fortement conseillé de faire d'abord une sauvegarde.  
 
@@ -51,13 +51,13 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
   
    Pour tous ces modules, il est désormais possible de coller des paramètres tout en s'assurant que les métadonnées d'image appropriées sont utilisées pour définir les paramètres du module. Pour ce faire, il suffit de cocher+ la colonne "Réinitialiser" dans les boîtes de dialogue des préréglages et des styles, ce qui fait que le module se comporte comme si l'on avait cliqué sur son bouton de réinitialisation.
 
-- Pour la création des préréglages, une nouvelle option peut être sélectionnée dans la boîte de dialogue pour que le préréglage utilise les paramètres par défaut du module sur lequel il est appliqué. L'option s'appelle "Réinitialiser tous les paramètres du module à leurs valeurs par défaut".
+   Pour la création des préréglages, une nouvelle option peut être sélectionnée dans la boîte de dialogue pour que le préréglage utilise les paramètres par défaut du module sur lequel il est appliqué. L'option s'appelle "Réinitialiser tous les paramètres du module à leurs valeurs par défaut".
 
   Cette fonctionnalité nous a permis de nettoyer un certain nombre de hacks spécifiques à certains modules qui permettaient auparavant d'obtenir des fonctionnalités similaires ((même si c'est de manière plus limitée).
 
 - L'option de configuration du flux de travail par défaut (préférences --> traitement)
   > l'option a été ajustée pour incorporer l'ancien flux de travail relatif à l'affichage et pour inclure le nouveau module sigmoïde. Les options sont désormais les suivantes :
-  - Relatif à la scène (Filmique RVB).
+  - Relatif à la scène (Filmique RVB) -- par défaut
   - Relatif à la scène (Sigmoïde)
   - Relatif à l'affichage (Ancien)
   - Aucun
@@ -87,7 +87,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
   - Les options "lissage du pinceau" et "pression du stylo" ont été déplacées de la boîte de dialogue des préférences globales vers une nouvelle section dans le gestionnaire de masques, afin qu'elles puissent être modifiées pendant le dessin et que des raccourcis puissent leur être attribués.
 
-  - Les curseurs de opacité, taille et de dureté de la forme du masque dessiné dans le gestionnaire de masques utilisent désormais une échelle logarithmique et le défilement sur ces curseurs permet d'effectuer des ajustements relatifs, tout comme <kbd>Shift+scroll</kbd> sur la forme elle-même. Comme pour les autres curseurs, <kdb>Ctrl</kbd> ou <kdb>Shift</kbd> peuvent être utilisés pour effectuer des ajustements fins ou grossiers (de la même manière avec les raccourcis activés). Les raccourcis assignés aux curseurs peuvent être utilisés pour ajuster la taille/dureté du pinceau pendant le dessin.
+  - Les curseurs d'opacité, taille et de dureté de la forme du masque dessiné dans le gestionnaire de masques utilisent désormais une échelle logarithmique et le défilement sur ces curseurs permet d'effectuer des ajustements relatifs, tout comme <kbd>Shift+scroll</kbd> sur la forme elle-même. Comme pour les autres curseurs, <kdb>Ctrl</kbd> ou <kdb>Shift</kbd> peuvent être utilisés pour effectuer des ajustements fins ou grossiers (de la même manière avec les raccourcis activés). Les raccourcis assignés aux curseurs peuvent être utilisés pour ajuster la taille/dureté du pinceau pendant le dessin.
 
   - Un cinquième opérateur a été ajouté au gestionnaire de masques pour permettre de combiner des formes dessinées en mode "addition". Cela permet de répéter des coups de pinceau avec une faible opacité pour les superposer les uns sur les autres afin d'augmenter la force du masque. Ce mode est désormais le mode par défaut pour les formes de pinceau.
 
@@ -107,7 +107,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 
   - Correction d'un problème d'affichage lors de l'édition d'un nom de forme dans le gestionnaire de masques.
 
-  - Correction de l'état des opérateurs d'édition dans le gestionnaire de masques. Lorsque l'on déplace un masque vers le haut ou vers le bas, nous nous assurons maintenant que le premier masque n'a pas d'opérateur et que le second a toujours un opérateur assigné. Si aucun opérateur n'a encore été défini, l'opérateur par défaut (union) est utilisé.
+  - Correction de l'état des opérateurs d'édition dans le gestionnaire de masques -- Lorsque l'on déplace un masque vers le haut ou vers le bas, nous nous assurons maintenant que le premier masque n'a pas d'opérateur et que le second a toujours un opérateur assigné. Si aucun opérateur n'a encore été défini, l'opérateur par défaut (union) est utilisé.
 
   - Lorsque vous utilisez un raccourci pour ajouter des formes à un masque dessiné (mélange), le mode de mélange passe automatiquement à "masque dessiné" ou "masque dessiné et paramétrique", en fonction de ce qu'il était auparavant, de sorte que toute forme nouvellement créée affecte réellement l'image.
 
@@ -126,7 +126,7 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable 4.4. L
 L'un des points forts de cette version est le nombre d'améliorations des performances :
 
 - Tout le code spécifique SSE2 des modules suivants a été supprimé (car le code parallèle optimisé généré par le compilateur est plus rapide) ou le code optimisé dans les modules suivants. Cela conduit à un gain de vitesse de 5 % à 40 % :
-   - "Homogénéiser ou postériser"
+   - "Homogénéiser" (Maintenant appelé "Homogénéiser ou postériser" voir plus bas)
    - "Filtre dégradé"
    - "Profil de couleur d'entrée"
    - "Table correspondance couleurs"
@@ -176,26 +176,31 @@ Les améliorations apportées à un certain nombre de routines de base ont égal
 
    - Certaines parties du filtre bilatéral ont été améliorées pour de meilleures performances. Ce filtre est utilisé dans de nombreux modules tels que "Monochrome", "Filtre passe-bas", "Ombres et hautes lumières", "Censure", "Retouche", "Mappage des couleurs", "Rotation et perspective" et "Contraste local". 
 
-   - Tous les modes de mélange en Lab et RVB pour les flux de travail "relatif à l'affichage" et "relatif à la scène" ont été optimisés.
+   - Tous les modes de fusion en Lab et RVB pour les flux de travail "relatif à l'affichage" et "relatif à la scène" ont été optimisés.
 
    - Le calcul du masque de luminance pour le module "Égaliseur de tons".
 
-   - le Chargeur pour le format des fichiers JPEG 2000.
+   - le chargeur pour le format des fichiers JPEG 2000.
 
    - Les matrices d'adaptation des couleurs ont été transposées pour permettre la vectorisation.
 
    - L'opération "Acquérir des grappes" dans le module "Mappage des couleurs" a été accélérée d'un facteur de 30 à 200, ce qui rend les résultats quasi instantanés dès que l'on clique sur le bouton.
 
-   - Le code du Pixelpipe et les stratégies de mise en cache ont été réécrits, ce qui a permis d'améliorer considérablement les performances lors du développement dans la chambre noire.
+- Le code du Pixelpipe et les stratégies de mise en cache ont été réécrits, ce qui a permis d'améliorer considérablement les performances lors du développement dans la chambre noire.
 
-   - Ajout du support OpenCL au module Sigmoïde.
+- Ajout du support OpenCL au module Sigmoïde.
 
-   - Ajout du support OpenMP à l'export XCF ainsi qu'au chargeur RGBE.
-   - Amélioration des performances de la "Reconstruction des hautes lumières" dans le mode "peinture opposée" en fournissant une implémentation OpenCL et en utilisant la mise en cache interne dans la chambre noire.
+- Ajout du support OpenMP à l'export XCF ainsi qu'au chargeur RGBE.
+
+- Amélioration des performances de la "Reconstruction des hautes lumières" dans le mode "peinture opposée" en fournissant une implémentation OpenCL et en utilisant la mise en cache interne dans la chambre noire.
+
+- Le mode Laplacien guidé du module "Reconstruire les hautes lumières" est désormais moins gourmand en mémoire (avec une économie d'environ 40 %) et ses performances sont nettement améliorées, ce qui permet d'appliquer par défaut un plus grand nombre d'itérations de récupération.
+
+- Les modifications successives apportées aux curseurs et autres widgets (par exemple en les faisant glisser, en les faisant défiler ou en utilisant des raccourcis) ont été rendues plus réactives en créant moins d'enregistrements d'annulation. Cela rend également l'utilisation de la fonction annuler/refaire plus efficace, car vous n'êtes plus obligé de passer en revue chaque micro-modification.
 
 ## Autres changements
 
-- La section filtres de  la boîte de dialogue pour la de création / modification des préréglages a été retravaillée  pour mieux montrer la relation entre les formats RAW, non RAW et les formats HDR / monochrome  / couleur. Cela permet d'éviter les confusions et la création de préréglages qui ne sont en fait jamais appliqués.
+- La section filtres de  la boîte de dialogue pour la création / modification des préréglages a été retravaillée  pour mieux montrer la relation entre les formats RAW, non RAW et les formats HDR / monochrome  / couleur. Cela permet d'éviter les confusions et la création de préréglages qui ne sont en fait jamais appliqués.
 
 - Amélioration du widget de sélection de la plage ISO pour la boîte de dialogue d'application automatique des préréglages.
 
@@ -231,6 +236,8 @@ Une nouvelle option (préférences --> chambre noire --> bouton du milieu de la 
   - contraste luminosité saturation (utiliser la balance des couleurs RVB à la place)
 
 - La taille de la bordure ISO 12646 a été réduite tout en restant dans la taille recommandée.
+
+- Le groupe de modules "par défaut" a été supprimé et il est désormais conseillé d'utiliser l'un des groupes de modules référencés par la scène.
 
 - Ajout du support pour le chargement des images QOI et FITS et pour l'écriture des métadonnées au format XCF (voir les notes ci-dessous).
 
@@ -295,7 +302,6 @@ Le filtre de recherche dans le module des filtres de collection et le panneau su
 
 - Ajout d'options dans le module "Filigrane" pour un contrôle plus fin de l'échelle du filigrane. En association avec le nouveau modèle "texte à taille fixe", il est désormais possible d'insérer du texte avec une taille de police constante.
 
-
 - Prise en charge de l'anneau de l'encodeur et des lumières des boutons du Behringer X-Touch Compact via midi. Les pressions sur les encodeurs non mappés retombent pour réinitialiser l'encodeur.
 
 - Les boutons midi mappés à l'effet de réinitialisation d'un curseur ou d'un combo (soit directement, soit via fallback, comme la rangée sous les faders du X-Touch Compact) s'allument si la valeur actuelle n'est pas la valeur par défaut.
@@ -318,7 +324,7 @@ Le filtre de recherche dans le module des filtres de collection et le panneau su
    - `Iptc.Application2.TimeCreated`
    - `Exif.Image.ImageDescription`
 
-- Le module "Ombres et des hautes lumières" utilise désormais le filtre bilatéral par défaut, ce qui permet d'éviter les halos communs à l'ancienne valeur par défaut (gaussienne).
+- Le module "Ombres et hautes lumières" utilise désormais le filtre bilatéral par défaut, ce qui permet d'éviter les halos communs à l'ancienne valeur par défaut (gaussienne).
 
 - Ajout de nouveaux rapports d'aspect dans le module "Cadre décoratif" :
     - CinemaScope
@@ -326,41 +332,11 @@ Le filtre de recherche dans le module des filtres de collection et le panneau su
     - US Legal
     - Tailles d'impression standard (5×7", 8×&0", 11×14")
 
-- Ajout d'une infobulle sur les bords des curseurs avec des limites souples Pour expliquer la façon de définir des valeurs en dehors de ces limites.
-
-
-
-
-- Le mode de récupération des hautes lumières "laplaciens guidés" est moins gourmand en mémoire (économie d'environ 40 %) et permet une augmentation importante de la vitesse. Cela rend ce mode de récupération beaucoup plus utilisable et permet plus d'itérations de récupération.
-
-- Ajout de la prise en charge des métadonnées de correction d'objectif  intégrées aux DNG. En lisant les métadonnées 'rectilinear' et 'vignette_radial', il est maintenant possible de corriger l'objectif.
-
-- Ajout de la prise en charge des métadonnées MaxApertureValue en complément de la métadonnée déjà supportée ApertureValue. Il s'agit de la seule métadonnée disponible en Leica M Monochrom, M8, M9 & M10 DNG.
-
-- Le filtre de recherche a été amélioré pour rechercher également la marque et le modèle de l'appareil photo.
-
-- Dans les dialogues de style et de copier/coller, une nouvelle colonne affiche l'état de masquage du module. Si un masque (dessin, paramétrique ou raster) est utilisé, la colonne contient une icône de masque.
-
-- Dans le "Gestionnaire de masques", certaines actions du menu pouvaient être activées même si elles étaient inopérantes compte tenu du contexte. Ainsi, les actions de déplacement vers le haut et vers le bas sont désormais désactivées pour le premier et le dernier élément d'un groupe respectivement.
-  Le réglage de l'opérateur de masque est désactivé pour le premier élément d'un groupe. Il s'agit essentiellement de petites améliorations de l'interface utilisateur.
-
-
-
-- Révision du code du Pixelpipe et de sa stratégie de mise en cache avec des gains de performance significatifs lors du développement en chambre noire.
-
-- Le groupe de modules par défaut a été supprimé. Il est préférable d'utiliser l'un des groupes relatifs à la scène.
-
-- Les modifications successives apportées aux curseurs (par exemple en les faisant glisser, en les faisant défiler ou en les raccourcissant) et à d'autres widgets sont plus réactives car elles créent moins d'enregistrements d'annulation. Cela rend également l'utilisation de l'annulation plus efficace, car elle ne passe pas par toutes les micro-modifications.
-
-- Dans le mode de mélange du masque dessiné, il y avait, en plus du bouton "basculer la polarité" - que l'on trouve dans tous les modes de mélange - la case "inverser le masque". Les deux faisant la même chose, la dernière a été supprimée.
+- Ajout d'une infobulle sur les bords des curseurs avec des limites souples Pour expliquer la façon de définir des valeurs en dehors de ces limites
 
 - Amélioration de la clarté et de la convivialité de la boîte de dialogue permettant de confirmer la poursuite de l'action en cas d'échec de la suppression physique d'un fichier ou de son déplacement vers la corbeille.
 
-- Il est désormais possible d'afficher le profil ICC intégré de l'image actuelle sous forme d'infobulle dans le module "Profil d'entrée".
-
 - Un message d'avertissement n'est plus affiché lorsque plusieurs instances du module "Calibration couleurs" sont utilisées avec des masques. Cette approche est couramment utilisée pour gérer plusieurs sources lumineuses et est considérée comme une utilisation correcte du module.
-
-- Ajout de la géométrie de Spyder Checkr Photo dans le module "Calibration des couleurs" section "Calibrer avec une charte couleur"
 
 - Il est maintenant possible de calibrer les couleurs en utilisant la sonde "Spyder Checkr Photo" dans le module "Calibration des couleurs".
 
@@ -404,9 +380,9 @@ Correction d'un problème qui faisait que les modules n'étaient pas toujours r�
 
 - Certaines différences entre les sorties CPU et OpenCL ont été corrigées dans les dématriceurs PPG et VNG/VNG4, ainsi que dans les options de correspondance des verts et de lissage des couleurs.
 
-- Le module (caché) "Finalscale" utilise désormais correctement le même mode d'échelle défini par l'utilisateur pour l'image et les masques.
+- Le module (caché) 'Finalscale' utilise désormais correctement le même mode d'échelle défini par l'utilisateur pour l'image et les masques.
 
-- Correction de l'importation de la marque et du modèle Exif de l'appareil photo Nikon de sorte qu'il n'est plus nécessaire d'ouvrir l'image dans la chambre noire.  L'importation fonctionne désormais également pour les fichiers non bruts.
+- Correction de l'importation Exif de la marque et du modèle des boitiers Nikon de sorte qu'il n'est plus nécessaire d'ouvrir l'image dans la chambre noire.  L'importation fonctionne désormais également pour les fichiers non bruts.
 
 - Correction d'un problème où le recadrage des métadonnées Canon CR3 n'était pas ignoré. La totalité de la zone visible du capteur (telle que déterminée par LibRaw) est désormais toujours utilisée pour les nouvelles importations.
 
@@ -430,13 +406,13 @@ Correction d'un problème dans l'algorithme de reconstruction des hautes lumièr
 
 - Correction du chargement des images monochromes.
 
-- Correction de l'affichage des masques 'petits cercles' pour 'assurer que ces masques soint toujours visible.
+- Correction de l'affichage des masques 'petits cercles' pour assurer que ces masques soient toujours visible.
 
 - Correction du chargement de la bibliothèque OpenCL dans le cas où les symboles requis ne sont pas entièrement implémentés.
 
 - Définir la taille de l'image EXR importée à l'étendue de la fenêtre de données valide uniquement.
 
-- Traduction correcte des noms de tri dans la fenêtre contextuelle de l'historique des tris du module "Collections".
+- Traduction correcte des noms de tri dans la fenêtre popup de l'historique des tris du module "Collections".
 
 - Correction des options de dématriçage double pour les caméras à capteur Bayer 4 couleurs où seuls VNG4 et PassThrough sont pris en charge.
 
@@ -479,6 +455,8 @@ Correction d'un problème dans l'algorithme de reconstruction des hautes lumièr
 - Correction de la sauvegarde de la position dans l'historique du module "Collections" et dans le module "Collections récentes". Cette correction permet de s'assurer que l'activation d'une entrée dans l'historique rétablit correctement le décalage de la vignette au point où l'entrée a été sauvegardée.
 
 - Éviter un cas possible (et rare) de retournement indésirable de l'image sélectionnée dans la vue d'impression, en raison de la mise à jour des vignettes du bandeau.
+
+- Correction d'un problème dans le module "Recadrer", où <kbd<Shift+glisser</kbd> sur un bord ne permettait que d'agrandir la zone de recadrage (tout en conservant le rapport hauteur/largeur) et ne pouvait pas la réduire. Auparavant, cette fonction ne fonctionnait correctement que si l'on tirait sur un coin.
 
 ## Lua
 
