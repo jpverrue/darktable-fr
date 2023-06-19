@@ -11,7 +11,7 @@ categories:
 tags:
   - "featured"
 
-coverImage: "darktable-4-4.0.png"
+coverImage: "dt_logo-4.4.0.png"
 ---
 
 La version 4.4.0 de darktable est sortie aujourd'hui.
