@@ -1,3 +1,29 @@
+---
+title: "Version 4.4.0"
+aliases:
+  - "darktable-4-4-0"
+date: "2023-06-21"
+featured: true
+pinned: true
+categories:
+  - "actualites"
+  - "featured"
+tags:
+  - "featured"
+
+coverImage: "darktable-4-4.0.png"
+---
+
+La version 4.4.0 de darktable est sortie aujourd'hui.
+
+Voici la traduction française des notes de version.
+
+Merci à [Deepl](https://deepl.com/) pour l'aide précieuse.
+
+<div align="right">Jean-Pierre Verrue</div>
+
+___
+
 Nous sommes fiers d'annoncer la nouvelle version de darktable, 4.4.0 !
 
 La version github est disponible ici : [https://github.com/darktable-org/darktable/releases/tag/release-4.4.0](https://github.com/darktable-org/darktable/releases/tag/release-4.4.0).
