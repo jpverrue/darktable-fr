@@ -32,13 +32,19 @@ Comme toujours, n'utilisez pas le fichier tarball autogénéré fourni par
 github, mais uniquement notre fichier tar.xz. Les sommes de contrôle sont :
 
 ```  
-$ sha256sum darktable-4.2.0.tar.xz  
-??? darktable-4.2.0.tar.xz  
-$ sha256sum darktable-4.2.0.dmg  
-??? darktable-4.2.0.dmg  
-$ sha256sum darktable-4.2.0.exe  
-??? darktable-4.2.0.exe  
-```  
+$ sha256sum darktable-4.4.0.tar.xz
+8887fc34abd97c4998b0888c3197e0c509d63bdeab2238906915319811f3b080  darktable-4.4.0.tar.xz
+
+$ sha256sum darktable-4.4.0-x86_64.dmg
+64af00c1ae160a6e95c459260c7789a431bb050f23afc62f87d6f23f3f06ced1  darktable-4.4.0-x86_64.dmg
+
+$ sha256sum darktable-4.4.0-arm64.dmg
+40e41dcf508398fc67b2bce3441ac80b5dc5886e86cad15cf214530f42bf730d  darktable-4.4.0-arm64.dmg
+
+$ sha256sum darktable-4.4.0-win64.exe
+23a4831ca52c707984b64cc6b9122526e96606ce86b04a0906fe32fd8327d956  darktable-4.4.0-win64.exe
+```
+
 Lors de la mise à jour à partir de la série stable 4.2.x, gardez à l'esprit que vos modifications seront préservées pendant ce processus, mais que la nouvelle bibliothèque et la configuration ne seront plus utilisables avec la version 4.2.x.
 
 Il est fortement conseillé de faire d'abord une sauvegarde.  
@@ -533,13 +539,15 @@ Correction d'un problème dans l'algorithme de reconstruction des hautes lumièr
 
 ### Obligatoires
 
--   ???
+- Sans changement
 
 ### Optionelles
 
--   ???
+- Sans changement
 
 ## Changements RawSpeed
+
+- Sans changement
 
 ## Prise en charge des appareils, par rapport à la version 4.2
 
@@ -649,4 +657,16 @@ La prise en charge des appareils suivants est suspendue car aucun échantillon n
 ### Traductions
 
 - nouvelle traduction anglaise avec les majuscules
-???
+- Allemeand
+- Espagnol - Europe
+- Français
+- Hébreu
+- Hongrois
+- Japonais
+- Polonais
+- Portuguais - Brésil
+- Slovénien
+- Albanais
+- Ukrainien
+- Chinois - Chine
+- Chinois - Taiwan
