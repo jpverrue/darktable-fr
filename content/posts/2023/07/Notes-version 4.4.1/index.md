@@ -38,7 +38,7 @@ bibliothèque et la configuration ne seront plus utilisables avec 4.2.x.
 
 Il est fortement conseillé de faire une sauvegarde au préalable.
 
-#### Note importante : pour s'assurer que darktable puisse continuer à prendre en charge le format de fichier brut de votre appareil photo, *vous êtes priés* de lire [cet article] (https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) sur comment/quels échantillons bruts vous pouvez contribuer pour vous assurer que nous avons l'ensemble *complet* d'échantillons bruts pour votre appareil photo sous licence CC0 !
+#### Note importante : pour s'assurer que darktable puisse continuer à prendre en charge le format de fichier brut de votre appareil photo, vous êtes priés de lire [cet article] (https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) sur comment/quels échantillons bruts vous pouvez contribuer pour vous assurer que nous avons l'ensemble complet d'échantillons bruts pour votre appareil photo sous licence CC0 !
 
 Depuis darktable 4.4.0 :
 
@@ -48,46 +48,42 @@ Depuis darktable 4.4.0 :
 
 
 Veuillez noter que la documentation de darktable n'est pas encore complète pour la version 4.4.
-et les contributions sont grandement appréciées. Veuillez consulter la page
+Les contributions sont grandement appréciées. Veuillez consulter la page
 [documentation du projet](https://github.com/darktable-org/dtdocs#contributing)
 pour plus d'informations sur la façon de contribuer.
 
 ## Corrections de bugs
 
-- Correction d'une croissance/rétrécissement inversée et corrompue dans le module Liquify.
+- Correction d'une grossissement/réduction inversés et corrompu dans le module Liquify.
 
-- Correction du chemin de code CPU FilmicRGB V7 pour désactiver le gamut mapping.
+- Correction du code dédié CPU dans Filmique RVB V7 pour désactiver le gamut mapping.
 
-- Correction du chemin de code CPU Negadoctor où l'écrêtage n'était pas correctement calculé.
+- Correction du code dédié CPU dans docteur néga ; l'écrêtage n'était pas correctement calculé.
 
-- Correction de l'étiquette de l'instantané lorsqu'elle contient des caractères non échappés.
+- Correction du libellé de l'instantané lorsqu'elle contient des caractères non échappés.
 
 - Correction d'un crash possible sous Windows lors de l'utilisation d'un masque dans le module Balance des couleurs RVB
-  dans le module Balance des couleurs RVB.
 
 - Correction de la valeur par défaut lors de l'édition du nom de la première instance du module.
 
-- Correction de la réinitialisation des valeurs par défaut du module "top history" lorsqu'on n'utilise pas la fonction de dénomination automatique des modules.
-  le nommage automatique des modules.
+- Correction de la réinitialisation des valeurs par défaut du module le plus haut dans l'historique lorsqu'on n'utilise pas la fonction de dénomination automatique des modules.
 
 - S'assurer que les périphériques OpenCL signalent au moins la prise en charge de la version 1.2.
 
 - Ajout d'un support manquant pour la distorsion de masque aux modules changeant de ROI
   (région d'intérêt) en cours de traitement.
 
-- Correction d'un problème d'espacement avec les boîtes de texte dans l'éditeur de métadonnées lorsque
+- Correction d'un problème d'espacement avec les zones de texte dans l'éditeur de métadonnées lorsque
   lorsqu'un ou plusieurs champs ont été masqués par l'utilisateur.
 
-- Correction d'un bogue dans le code OpenCL de transformation de l'espace colorimétrique entraînant un repli du CPU
-  de l'unité centrale.
+- Correction d'un bogue dans le code OpenCL de transformation de l'espace colorimétrique entraînant un retour vers le code CPU
 
-- Permet d'entrer dans le mode de prévisualisation complète lorsqu'aucune image n'est survolée ou sélectionnée.
+- Ne plus permettre d'entrer dans le mode de prévisualisation complète lorsqu'aucune image n'est survolée ou sélectionnée.
 
 - Correction d'un cas où aucun préréglage automatique par défaut n'était appliqué à l'image.
-  image. Si un préréglage automatique de l'utilisateur est créé pour un module, nous voulons
-  désactiver le préréglage automatique par défaut uniquement si le préréglage de l'utilisateur est effectivement appliqué (c'est-à-dire le filtre sur l'appareil photo).
-  est effectivement appliqué (c'est-à-dire que le filtre de l'appareil photo, l'objectif, l'iso, l'ouverture
-  ou l'exposition correspondent).
+  Si un préréglage automatique de l'utilisateur est créé pour un module, nous voulons
+  désactiver le préréglage automatique par défaut uniquement si le préréglage de l'utilisateur est effectivement appliqué
+  (c'est-à-dire que l'un des critères du filtre : type d'appareil photo, objectif, iso, ouverture ou temps de pose, correspondent).
 
 ## Lua
 
@@ -101,18 +97,15 @@ pour plus d'informations sur la façon de contribuer.
 
 ## Notes
 
-- Lors de l'exportation vers AVIF, EXR, JPEG XL ou XCF, il n'est pas possible de sélectionner des
-  métadonnées spécifiques (par exemple, étiquette géographique ou créateur) n'est pas possible actuellement. Pour les formats
-  AVIF, EXR, JPEG XL et XCF, darktable n'inclura aucun champ de
-  champs de métadonnées à moins que l'utilisateur ne sélectionne toutes les cases à cocher dans les options de préférences d'exportation.
-  options de préférence d'exportation.
+- Lors de l'exportation vers AVIF, EXR, JPEG XL ou XCF, il n'est pas possible actuellement de sélectionner des
+  métadonnées spécifiques (par exemple, étiquette géographique ou créateur). Pour les formats
+  AVIF, EXR, JPEG XL et XCF, darktable n'inclura aucun champ de métadonnées à moins que l'utilisateur ne
+  sélectionne toutes les cases à cocher dans les options de préférences d'exportation.
 
-- Afin de permettre l'affichage correct des nombres dans darktable, la version Gtk minimale supportée a dû être modifiée.
-  la version minimale supportée de Gtk a dû être augmentée à
-  3.24.15. Pour les personnes qui ont besoin de construire darktable avec une version plus ancienne, cela peut être réalisé en supprimant la version 3.24.15 de Gtk.
-  plus ancienne, cela peut être réalisé en supprimant la ligne 241 du fichier
-  `darktable.css` sur votre système. Voir
-  https://github.com/darktable-org/darktable/issues/13166.
+- Afin de permettre l'affichage correct des nombres dans darktable, la version Gtk minimale supportée a dû être avancée à
+  3.24.15. Pour les personnes qui ont besoin de construire darktable avec une version plus ancienne,
+  cela peut être réalisé en supprimant la ligne 241 du fichier
+  `darktable.css` sur votre système. Voir (https://github.com/darktable-org/darktable/issues/13166).
 
 - À partir de cette version, une nouvelle politique de support concernant les versions de macOS
   en place -- les versions de darktable ne prendront désormais en charge que les
