@@ -105,7 +105,7 @@ pour plus d'informations sur la façon de contribuer.
 - Afin de supporter l'affichage correct des nombres dans darktable, la version minimale supportée de Gtk
   a dû être augmentée à 3.24.15. Pour les personnes qui ont besoin de construire darktable avec une version
   plus ancienne, ceci peut être supporté en inversant le changement suivant : supprimez la ligne 241
-  du fichier darktable.css sur votre système. Voir : [#13166](https://github.com/darktable-org/darktable/issues/13166)
+  du fichier `darktable.css` sur votre système. Voir : [#13166](https://github.com/darktable-org/darktable/issues/13166)
 
 - À partir de cette version, une nouvelle politique de support des versions de macOS sera mise en place.
   Les versions de darktable ne prendront en charge que les versions de macOS qui sont également prises en charge par Apple.
@@ -124,9 +124,9 @@ pour plus d'informations sur la façon de contribuer.
 ## RawSpeed change
 
 
-## Prise en charge de l'appareil photo, par rapport à la version 4.2
+## Prise en charge des appareils par rapport à la version 4.4.0
 
-### Prise en charge de la base
+### Support de base
 
 - N/A
 
