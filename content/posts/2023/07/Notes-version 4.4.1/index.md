@@ -1,5 +1,5 @@
 ---
-title: "Version 4.4.1"
+title: "Version corrective 4.4.1"
 aliases:
   - "darktable-4-4-1"
 date: "2023-07-01"
@@ -54,17 +54,17 @@ pour plus d'informations sur la façon de contribuer.
 
 ## Corrections de bugs
 
-- Correction d'une grossissement/réduction inversés et corrompu dans le module Liquify.
+- Correction d'un grossissement/réduction inversés et corrompu dans le module Liquéfier.
 
 - Correction du code dédié CPU dans Filmique RVB V7 pour désactiver le gamut mapping.
 
 - Correction du code dédié CPU dans docteur néga ; l'écrêtage n'était pas correctement calculé.
 
-- Correction du libellé de l'instantané lorsqu'elle contient des caractères non échappés.
+- Correction du libellé de l'instantané lorsqu'il contient des caractères non échappés.
 
-- Correction d'un crash possible sous Windows lors de l'utilisation d'un masque dans le module Balance des couleurs RVB
+- Correction d'un crash possible sous Windows lors de l'utilisation d'un masque dans le module Balance des couleurs RVB.
 
-- Correction de la valeur par défaut lors de l'édition du nom de la première instance du module.
+- Correction de la valeur par défaut lors de l'édition du nom de la première instance d'un module.
 
 - Correction de la réinitialisation des valeurs par défaut du module le plus haut dans l'historique lorsqu'on n'utilise pas la fonction de dénomination automatique des modules.
 
@@ -97,21 +97,19 @@ pour plus d'informations sur la façon de contribuer.
 
 ## Notes
 
-- Lors de l'exportation vers AVIF, EXR, JPEG XL ou XCF, il n'est pas possible actuellement de sélectionner des
-  métadonnées spécifiques (par exemple, étiquette géographique ou créateur). Pour les formats
-  AVIF, EXR, JPEG XL et XCF, darktable n'inclura aucun champ de métadonnées à moins que l'utilisateur ne
-  sélectionne toutes les cases à cocher dans les options de préférences d'exportation.
+- Lors de l'exportation vers les formats AVIF, EXR, JPEG XL ou XCF, la sélection de métadonnées spécifiques
+  (par exemple, l'étiquette géographique ou le créateur) n'est actuellement pas possible.
+  Pour les formats AVIF, EXR, JPEG XL et XCF, darktable n'inclura aucun champ de métadonnées à moins que
+  l'utilisateur ne sélectionne toutes les cases à cocher dans les options de préférences d'exportation.
 
-- Afin de permettre l'affichage correct des nombres dans darktable, la version Gtk minimale supportée a dû être avancée à
-  3.24.15. Pour les personnes qui ont besoin de construire darktable avec une version plus ancienne,
-  cela peut être réalisé en supprimant la ligne 241 du fichier
-  `darktable.css` sur votre système. Voir (https://github.com/darktable-org/darktable/issues/13166).
+- Afin de supporter l'affichage correct des nombres dans darktable, la version minimale supportée de Gtk
+  a dû être augmentée à 3.24.15. Pour les personnes qui ont besoin de construire darktable avec une version
+  plus ancienne, ceci peut être supporté en inversant le changement suivant : supprimez la ligne 241
+  du fichier darktable.css sur votre système. Voir : [#13166](https://github.com/darktable-org/darktable/issues/13166)
 
-- À partir de cette version, une nouvelle politique de support concernant les versions de macOS
-  en place -- les versions de darktable ne prendront désormais en charge que les
-  ne prendront en charge que les versions de macOS qui sont également prises en charge par Apple.
-  La version 4.4 ne prend donc plus en charge les versions de macOS antérieures à
-  11.3.
+- À partir de cette version, une nouvelle politique de support des versions de macOS sera mise en place.
+  Les versions de darktable ne prendront en charge que les versions de macOS qui sont également prises en charge par Apple.
+  Ainsi, la version 4.4 ne prend plus en charge les versions de macOS antérieures à la 11.3.
 
 ## Dépendances modifiées
 
@@ -146,8 +144,7 @@ pour plus d'informations sur la façon de contribuer.
 
 ### Prise en charge suspendue
 
-La prise en charge des caméras suivantes est suspendue car aucun échantillon n'est disponible sur raw.pixls.com.
-n'est disponible sur raw.pixls.us :
+La prise en charge des caméras suivantes est suspendue car aucun échantillon n'est disponible sur raw.pixls.com :
 
 - Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
 - Fujifilm FinePix S9600fd
