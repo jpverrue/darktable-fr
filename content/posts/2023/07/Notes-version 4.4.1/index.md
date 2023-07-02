@@ -32,9 +32,7 @@ $ sha256sum darktable-4.4.1-win64.exe
 70dca4f5f3c4fec897a6561484fb14f81709aca3185373d9118b630d24ae2098  darktable-4.4.1-win64.exe
 ```
 
-Lors de la mise à jour à partir de la série stable 4.2.x, veuillez garder à l'esprit que vos modifications seront préservées.
-que vos éditions seront préservées pendant ce processus, mais que la nouvelle bibliothèque et la
-bibliothèque et la configuration ne seront plus utilisables avec 4.2.x.
+Lors de la mise à jour à partir de la série stable 4.2.x, gardez à l'esprit que vos modifications seront préservées pendant ce processus, mais que la nouvelle bibliothèque et la configuration ne seront plus utilisables avec la version 4.2.x.
 
 Il est fortement conseillé de faire une sauvegarde au préalable.
 
