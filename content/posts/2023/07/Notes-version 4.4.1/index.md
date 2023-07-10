@@ -11,7 +11,7 @@ categories:
 tags:
   - "featured"
 
-coverImage: "dt_logo-4.4.1.png"
+coverImage: "images/dt_logo-4.4.1.png"
 ---
 
 Nous sommes fiers d'annoncer la nouvelle version corrective de darktable, 4.4.1 !
