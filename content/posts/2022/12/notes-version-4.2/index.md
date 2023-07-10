@@ -2,7 +2,7 @@
 title: "Version 4.2.0"
 aliases:
   - "Darktable-4-2-0"
-date: "2022-09-20"
+date: "2022-12-21"
 featured: true
 categories:
   - "actualites"
