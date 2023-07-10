@@ -8,6 +8,7 @@ tags:
   - "darktable"
   - "jpg"
   - "note-de-version"
+coverImage: "images/dt-logo-3.8.0.png"
 ---
 
 **Pascal Obry** a publié : [https://github.com/darktable-org/darktable/releases/tag/release-3.8.0](https://github.com/darktable-org/darktable/releases/tag/release-3.8.0)

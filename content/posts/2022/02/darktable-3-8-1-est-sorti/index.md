@@ -7,7 +7,7 @@ categories:
   - "featured"
 tags: 
   - "featured"
-coverImage: "chartres_hu149bf1b2e889ca72934ff96c2502ff19_586279_960x0_resize_q75_box.jpg"
+coverImage: "images/dt-logo-3.8.1.png"
 ---
 
 Posté le ven. 11 février 2022 par [Pascal Obry](https://www.darktable.org/author/pascal-obry/)
