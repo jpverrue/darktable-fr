@@ -12,7 +12,7 @@ tags:
   - "featured"
 authors:
   - "jipivy"
-coverImage: "dt_logo-4.4.0.png"
+coverImage: "images/dt_logo-4.4.0.png"
 ---
 
 La version 4.4.0 de darktable est sortie aujourd'hui.
