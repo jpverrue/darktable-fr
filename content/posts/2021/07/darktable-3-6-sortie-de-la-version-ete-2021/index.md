@@ -1,10 +1,17 @@
 ---
-title: "darktable 3.6 : sortie de la version été 2021"
+title: "darktable 3.6.0 : sortie de la version été 2021"
+aliases:
+  - "Darktable-3-6-0"
 date: "2021-07-03"
 masonry: true
-categories: 
+featured: true
+categories:
   - "actualites"
   - "featured"
+tags:
+  - "featured"
+  - "3-6-0-release"
+coverImage: "images/dt_logo-3.6.0.png"
 ---
 
 Article original : [anglais](https://www.darktable.org/2021/07/darktable-3-6/). Traductions : [allemand](https://www.bilddateien.de/blog/d2021-07-03-darktable-3-6-weiteres-update.html)

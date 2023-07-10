@@ -10,7 +10,7 @@ categories:
 tags:
   - "featured"
   
-coverImage: "darktable-4-0-1.png"
+coverImage: "images/dt_logo-4.0.1.png"
 ---
 La version 4.0.1 est sortie ce W.E. Voici la traduction des notes de version
 

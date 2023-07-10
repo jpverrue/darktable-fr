@@ -2,15 +2,14 @@
 title: "Version 4.2.0"
 aliases:
   - "Darktable-4-2-0"
-date: "2022-09-20"
+date: "2022-12-21"
 featured: true
 categories:
   - "actualites"
   - "featured"
 tags:
   - "featured"
-
-coverImage: "darktable-4-2.0.png"
+coverImage: "darktable-4.2.0.png"
 ---
 La version 4.2.0 est sortie aujourd'hui.
 

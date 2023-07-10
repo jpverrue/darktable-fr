@@ -9,7 +9,7 @@ tags:
 authors:
   - "jpg54"  
 ---
-"[Olivier](https://www.youtube.com/@olivierparlephoto)" présente 6 mises à jour qui l'intèresse et ce qu'il a compris que leur utilisation.
+"[Olivier](https://www.youtube.com/@olivierparlephoto)" présente six mises à jour qui l'intéressent et ce qu'il a compris que leur utilisation.
 Bonne visualisation.
 
 {{< youtube Xpk2j_YQ9gk >}}
