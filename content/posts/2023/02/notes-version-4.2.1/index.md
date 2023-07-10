@@ -13,7 +13,7 @@ tags:
 author:
   - "jpv"
 
-coverImage: "dt_logo-4.2.1.png"
+coverImage: "images/dt_logo-4.2.1.png"
 ---
 
 La version 4.2.1 est sortie aujourd'hui.
