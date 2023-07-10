@@ -9,8 +9,7 @@ categories:
   - "featured"
 tags:
   - "featured"
-
-coverImage: "darktable-4-2.0.png"
+coverImage: "darktable-4.2.0.png"
 ---
 La version 4.2.0 est sortie aujourd'hui.
 
