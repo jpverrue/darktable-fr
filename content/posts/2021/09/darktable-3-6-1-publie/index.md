@@ -1,10 +1,16 @@
 ---
-title: "Sortie de darktable 3.6.1"
+title: "Sortie de la version corrective 3.6.1"
+aliases:
+  - "Darktable-3-6-1"
 date: "2021-09-16"
-categories: 
+featured: true
+categories:
   - "actualites"
-tags: 
+  - "featured"
+tags:
+  - "featured"
   - "3-6-1-release"
+coverImage: "images/dt_logo-3.6.1.png"
 ---
 
 Pascal Obry vient de mettre en ligne cette mise à jour :
