@@ -9,7 +9,7 @@ tags:
 authors:
   - "jpg54"  
 ---
-"[Tuto Photo (https://www.youtube.com/@Tuto-Photo-Fr)" présente les nouveautés de la nouvelle version.
+"[Tuto Photo](https://www.youtube.com/@Tuto-Photo-Fr)" présente les nouveautés de la nouvelle version.
 Bonne visualisation.
 
 {{< youtube sQFtriZN6Xc >}}
