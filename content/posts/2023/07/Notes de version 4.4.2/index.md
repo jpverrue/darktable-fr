@@ -16,7 +16,7 @@ coverImage: "images/dt_logo-4.4.2.png"
 
 Nous sommes fiers d'annoncer la nouvelle version corrective de darktable, 4.4.2 !
 
-La version github est ici : [https://github.com/darktable-org/darktable/releases/tag/release-4.4.1](https://github.com/darktable-org/darktable/releases/tag/release-4.4.2).
+La version github est ici : [https://github.com/darktable-org/darktable/releases/tag/release-4.4.2](https://github.com/darktable-org/darktable/releases/tag/release-4.4.2).
 
 Comme toujours, n'utilisez pas l'archive autogénérée fournie par
 github, mais uniquement notre fichier tar.xz. Les sommes de contrôle sont :
