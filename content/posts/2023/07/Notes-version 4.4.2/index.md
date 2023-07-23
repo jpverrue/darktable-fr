@@ -38,7 +38,7 @@ Il est fortement conseillé de faire une sauvegarde au préalable.
 
 #### Note importante : pour s'assurer que darktable puisse continuer à prendre en charge le format de fichier brut de votre appareil photo, vous êtes priés de lire [cet article] (https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) sur comment/quels échantillons bruts vous pouvez contribuer pour vous assurer que nous avons l'ensemble complet d'échantillons bruts pour votre appareil photo sous licence CC0 !
 
-Depuis darktable 4.4.0 :
+Depuis darktable 4.4.1 :
 
 - 53 commits pour darktable+rawspeed
 - 19 demandes d'extension traitées
@@ -55,19 +55,21 @@ pour plus d'informations sur la façon de contribuer.
 
 - Correction de la mauvaise allocation des tampons d'image OpenCL pour le mélange dans DEVELOP_BLEND_CS_RAW.
 
-- Correction du calcul du roi_in dans les modules reconstruction des hautes lumières et aberrations chromatiques RAW.
+- Correction du calcul du roi_in* dans les modules reconstruction des hautes lumières et aberrations chromatiques RAW.
 
 - Correction de l'accrochage à la grille pour les unités cm/pouces dans la vue d'impression. Seuls les mm étaient correctement gérés.
 
-- Correction d'un problème où la méthode de reconstruction des hautes lumières était réinitialisée en tronquées lors de l'application d'un style à partir de la table lumineuse.
+- Correction d'un problème où la méthode de reconstruction des hautes lumières était réinitialisée en *tronquées* lors de l'application d'un style à partir de la table lumineuse.
 
 - Correction du chargement de certains formats d'image à l'aide de GraphicMagick sous Windows.
 
 - Correction de certains pixels erronés possibles dans le bord inférieur droit des images en raison d'une erreur de calcul dans le profil de couleur d'entrée et la balance des couleurs.
 
-- Correction du calcul du ROI du module de retouche lorsqu'un recadrage est actif, rendant certaines zones de clonage inactives alors que la source se trouvait en dehors de la zone recadrée. Ce bogue n'était visible que dans la vue principale de la chambre noire.
+- Correction du calcul du ROI* du module de retouche lorsqu'un recadrage est actif, rendant certaines zones de clonage inactives alors que la source se trouvait en dehors de la zone recadrée. Ce bogue n'était visible que dans la vue principale de la chambre noire.
 
-Correction du positionnement du Roi du dématriceur en fonction de l'algorithme et du capteur. Éviter quelques (petits) artefacts noirs sur les bords de l'image.
+Correction du positionnement du ROI* du dématriceur en fonction de l'algorithme et du capteur. Éviter quelques (petits) artefacts noirs sur les bords de l'image.
+
+*ROI : Region of interest (Région d'intérêt)
 
 ## Lua
 
