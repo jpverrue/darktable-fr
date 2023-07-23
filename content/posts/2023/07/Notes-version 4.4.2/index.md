@@ -67,7 +67,7 @@ pour plus d'informations sur la façon de contribuer.
 
 - Correction du calcul du ROI* du module de retouche lorsqu'un recadrage est actif, rendant certaines zones de clonage inactives alors que la source se trouvait en dehors de la zone recadrée. Ce bogue n'était visible que dans la vue principale de la chambre noire.
 
-Correction du positionnement du ROI* du dématriceur en fonction de l'algorithme et du capteur. Éviter quelques (petits) artefacts noirs sur les bords de l'image.
+- Correction du positionnement du ROI* du dématriceur en fonction de l'algorithme et du capteur. Éviter quelques (petits) artefacts noirs sur les bords de l'image.
 
 *ROI : Region of interest (Région d'intérêt)
 
