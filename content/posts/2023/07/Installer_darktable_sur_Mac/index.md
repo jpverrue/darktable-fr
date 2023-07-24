@@ -1,5 +1,5 @@
 ---
-title: "darktable 4.4, 6 mises à jours qui m'intèresse"
+title: "Installer darktable sur Mac"
 date: "2023-07-16"
 categories:
   - "tutoriels"
