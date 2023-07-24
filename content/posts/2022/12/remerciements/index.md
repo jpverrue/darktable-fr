@@ -3,7 +3,6 @@ title: "La version 4.2 arrive !"
 aliases:
   - "Darktable-4-2-0"
 date: "2022-12-15"
-featured: true
 categories:
   - "actualites"
   - "featured"

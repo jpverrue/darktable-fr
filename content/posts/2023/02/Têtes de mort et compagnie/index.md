@@ -3,7 +3,6 @@ title: "Têtes de mort et compagnie"
 aliases:
   - "Têtes-de-mort-et-compagnie"
 date: "2023-02-17"
-featured: true
 pinned: false
 categories:
   - "tutoriels"
