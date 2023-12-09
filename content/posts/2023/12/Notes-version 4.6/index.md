@@ -104,3 +104,21 @@ changements individuels (le cas échéant).
   de basse résolution par des données d'image recalculées, ou lors du passage de la vue complète à la vue recadrée
   (lorsque les modules Recadrer, Retouche ou Liquéfier perdent le focus).
   
+## Amélioraation des performances
+
+- OpenCL est désormais initialisé en arrière-plan immédiatement après le lancement de l'interface utilisateur de darktable,
+  la progression étant indiquée par une série de messages popup.
+  Auparavant, cette opération était effectuée avant le lancement de l'interface principale,
+  ce qui pouvait entraîner des délais importants (parfois plus d'une minute)
+  entre l'ouverture de darktable par l'utilisateur et l'apparition de quoi que ce soit à l'écran,
+  donnant l'impression que darktable n'avait pas démarré. Notez que le traitement sera plus lent
+  (puisque darktable n'utilisera que le CPU) jusqu'à ce qu'OpenCL soit complètement initialisé.
+
+ - Un section de code openCL a été mis en œuvre pour la correction des objectifs à l'aide des métadonnées de correction intégrées.
+ 
+ - La vitesse d'affichage des images dans la vue Carte a été augmentée de 25 %.
+ 
+ - La vitesse d'exportation a été améliorée pour les images JPEG 2000 et TIFF noir et blanc.
+ 
+ - Le module Aberrations chromatiques est maintenant environ 10% plus rapide lorsqu'il est exécuté sur le CPU.
+  
