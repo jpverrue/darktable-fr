@@ -347,3 +347,92 @@ changements individuels (le cas échéant).
   métadonnées Exif.
 
 - Correction de plusieurs bogues liés aux masques de adoucis.
+
+## Lua
+
+### Version de l'API
+
+-   La version de l'API est maintenant la 9.2.0
+
+### Correction de bogues
+
+- Correction du Scripts_installer pour gérer les noms d'utilisateurs avec des espaces sous Windows.
+
+### Autres changements Lua
+
+- Autoriser l'accès à l'horodatage de l'image (change_timestamp).
+
+## Notes
+
+- Lors de l'exportation vers les formats AVIF, EXR, JPEG XL ou XCF, la sélection de métadonnées spécifiques (par exemple, géomarquage ou créateur)
+  n'est actuellement pas possible. Pour les formats AVIF, EXR, JPEG XL et XCF, darktable n'inclura aucun champ de métadonnées à moins que l'utilisateur
+  ne sélectionne toutes les cases à cocher dans les options de préférence du module d'exportation.
+
+- Afin de supporter l'affichage correct des nombres dans darktable, la version minimale supportée de Gtk a dû être augmentée à 3.24.15. Pour les
+  personnes qui ont besoin de construire darktable avec une version plus ancienne, cela peut être réalisé en supprimant la ligne 241 du fichier
+  darktable.css sur votre système. Voir : [#13166](https://github.com/darktable-org/darktable/issues/13166)
+
+- À partir de la version 4.4, une nouvelle politique de prise en charge des versions de macOS a été mise en place - les versions de darktable
+  ne prendront désormais en charge que les versions de macOS qui sont également prises en charge par Apple. La version 4.6 ne prend donc plus
+  en charge les versions de macOS antérieures à la version 12.5.
+
+## Changement de dépendances
+
+### Obligatoires
+
+- Sans changement
+
+### Optionelles
+
+- Bump libavif to 0.9.2
+
+## Changements RawSpeed
+
+- Sans changement
+
+## Prise en charge des appareils, par rapport à la version 4.4
+
+### Support de base
+
+???
+
+### Préréglages de la balance des blancs
+
+???
+
+### Profils de bruit
+
+???
+
+### Absence de prise en charge du mode de compression
+
+- Apple ProRAW DNGs
+- CinemaDNG lossless (Blackmagic, DJI, etc.)
+- Fujifilm lossy RAFs
+- Nikon high efficiency NEFs
+- Samsung Expert RAW DNGs
+- Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
+
+### Support suspendu
+
+La prise en charge des caméras suivantes est suspendue car aucun échantillon n'est disponible sur raw.pixls.us :
+
+- Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
+- Fujifilm FinePix S9600fd
+- Fujifilm IS-1
+- GoPro FUSION
+- Kodak EasyShare Z980
+- Leaf Aptus-II 5(LI300059)/Mamiya 645 AFD
+- Leaf Credo 60
+- Leaf Credo 80
+- Minolta DiMAGE 5
+- Olympus SP320
+- Panasonic DMC-FX150
+- Pentax Q10
+- Phase One IQ250
+- Sinar Hy6/ Sinarback eXact
+- ST Micro STV680
+
+### Traductions
+
+???
