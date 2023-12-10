@@ -433,6 +433,6 @@ La prise en charge des caméras suivantes est suspendue car aucun échantillon n
 - Sinar Hy6/ Sinarback eXact
 - ST Micro STV680
 
-### Traductions
+## Traductions
 
 ???
