@@ -214,3 +214,71 @@ changements individuels (le cas échéant).
   (en plaçant la plus ancienne  ou la plus récente  en premier). L'ordre des pellicules peut également être inversé lorsqu'elles sont classées
   par identifiant (ce qui équivaut à la date de première importation de la pellicule). La préférence "trier les pellicules par" a été renommée
   de "id" à "date d'importation" pour plus de clarté.
+
+  Le filtrage des collections basé sur le score (étoile) utilise désormais un texte correct (comme "rejeté" au lieu de -1)
+  et les nombres sont remplacés par des étoiles.
+
+  Le module Collections affiche désormais les étiquettes de couleur dans le même ordre que dans le reste de l'interface utilisateur.
+
+- L'ajout d'un mot-clé à une image est désormais considéré comme une "modification" et entraîne la création/mise à jour des fichiers XMP
+  associés (sauf si la création des XMP est désactivée).
+
+- Une nouvelle fonctionnalité a été ajoutée pour générer automatiquement des vignettes en arrière-plan pendant que l'utilisateur est inactif
+  dans la vue de la table lumineuse. Actuellement, cette fonctionnalité n'est disponible qu'en lançant `darktable-generate-cache` depuis
+  la ligne de commande. La nouvelle fonctionnalité est contrôlée par un paramètre de préférence qui définit les tailles de vignettes
+  à générer en arrière-plan (par défaut "jamais").
+
+- Deux nouvelles variables ont été introduites pour permettre l'affichage du facteur de recadrage de l'appareil ("EXIF.CROP_FACTOR") et de la
+  longueur focale équivalente à 35 mm ("EXIF.FOCAL.LENGTH.EQUIV").
+
+- Les guides d'harmonie des couleurs dans le module scopes sont désormais sauvegardés et restaurés pour chaque image. Il n'est donc plus
+  nécessaire de réinitialiser les guides lorsque l'on revient à une édition précédente. Ces informations sont également stockées dans
+  le fichier XMP et peuvent donc être consultées lors du partage des modifications ou de la réimportation d'une collection.
+
+- Il est désormais possible de contrôler le sous-échantillonnage de la chroma dans les exportations JPEG.
+
+  Cela permet à l'utilisateur de réduire la résolution des couleurs, ce qui se traduit souvent par des fichiers beaucoup plus petits qui
+  sont pratiquement impossibles à distinguer des images contenant plus d'informations sur les couleurs.
+
+  D'un autre côté, certaines images seront plus belles lorsque la résolution chromatique est maximisée. Il s'agit notamment des images
+  comportant de petits détails colorés entourés d'un fond uni (comme les captures d'écran avec du texte coloré).
+
+- L'option permettant d'ignorer les fichiers JPEG lors de l'importation est désormais obsolète, étant donné que de nombreux appareils
+  photo peuvent également produire des images HEIF. Cette option a donc été modifiée pour ignorer tous les fichiers non bruts.
+
+- Le module Correction des objectifs prend désormais en charge les métadonnées intégrées des fichiers .ORF d'Olympus pour la correction
+  de la distorsion et de l'aberration chromatique.
+
+  Cette correction est équivalente à celle appliquée par l'appareil photo aux JPEG de l'appareil. Pour les appareils plus anciens
+  qui n'appliquent pas de correction de l'aberration chromatique aux JPEG, les informations requises sont également exclues des métadonnées
+  intégrées, de sorte que darktable ne pourra pas appliquer de corrections.
+
+  La correction du vignettage basée sur les métadonnées intégrées n'est pas prise en charge. Cependant, si l'option "Shading Compensation"
+  de l'appareil photo est activée, la correction du vignettage aura déjà été appliquée aux données du fichier brut.
+
+- Le système de raccourcis a fait l'objet de plusieurs améliorations :
+  
+  - La suppression ou l'écrasement d'un raccourci par défaut le place désormais dans la catégorie des "raccourcis par défaut désactivés",
+    d'où il peut être restauré en appuyant sur la touche <kbd>Delete</kbd>. Il n'est plus nécessaire de décocher la case "charger les raccourcis par
+    défaut au démarrage" (dans prefs/misc/interface) pour le garder désactivé.
+
+  - Le mode de mappage visuel dispose à présent de curseurs de souris améliorés qui indiquent si le widget situé sous le curseur peut se voir
+    attribuer un raccourci ou être ajouté au panneau d'accès rapide (ou en être retiré).
+
+  - L'onglet Raccourcis de la boîte de dialogue des préférences explique dorénavant qu'il peut être plus pratique d'utiliser le mode de mappage visuel.
+
+  - Lorsque l'on combine un raccourci avec un mouvement de souris (par exemple <kbd>b+scroll</kbd>)), des actions distinctes peuvent être déclenchées
+    par les mouvements vers le haut et vers le bas. Par exemple, <kbd>b+scroll-up</kbd>) pourrait faire défiler les options du panneau supérieur
+    et <kbd>b+scroll-down</kbd>) les combinaisons du panneau inférieur.
+
+  - Un problème concernant les fenêtres déroulantes et les fenêtres coulissantes ouvertes via un raccourci, qui se remplissaient immédiatement avec
+    le caractère de la touche de raccourci, a été résolu. Ces fenêtres sont désormais intégrées au système de raccourcis, de sorte que la plupart
+    des raccourcis non alphanumériques continueront de fonctionner. Si une valeur de liste déroulante est modifiée alors que la fenêtre popup
+    est ouverte (par exemple via un calcul automatique dans l'étalonnage des couleurs, un script Lua ou un raccourci midi), la fenêtre popup
+    est correctement mise à jour/repositionnée. Après la fermeture d'une fenêtre contextuelle, il est possible de la rouvrir rapidement pour
+    saisir une autre valeur en appuyant sur Entrée (à condition que le widget correspondant soit toujours au centre de l'attention).
+
+  - Sur macOS, les raccourcis système, par exemple pour copier et coller, fonctionnent dorénavant selon les paramètres par défaut du clavier
+    macOS, c'est-à-dire en utilisant la touche <kbd>commande</kbd> au lieu de la touche <kbd>controle</kbd> originale de style Linux.
+    
+- Le mode d'évaluation des couleurs ISO 12464 pour la fenêtre de prévisualisation secondaire est désormais activé indépendamment de la fenêtre principale (et sauvegardé entre les sessions). Il est actionné avec une case à cocher dans le fenêtre de configuration affichée lors d'un <kbd>right-click</kbd> sur le bouton bouton "Afficher la deuxième fenêtre" (ou en utilisant le raccourci <kbd>alt+b</kbd> par défaut).
