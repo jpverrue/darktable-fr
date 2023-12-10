@@ -267,9 +267,9 @@ changements individuels (le cas échéant).
 
   - L'onglet Raccourcis de la boîte de dialogue des préférences explique dorénavant qu'il peut être plus pratique d'utiliser le mode de mappage visuel.
 
-  - Lorsque l'on combine un raccourci avec un mouvement de souris (par exemple <kbd>b+scroll</kbd>)), des actions distinctes peuvent être déclenchées
-    par les mouvements vers le haut et vers le bas. Par exemple, <kbd>b+scroll-up</kbd>) pourrait faire défiler les options du panneau supérieur
-    et <kbd>b+scroll-down</kbd>) les combinaisons du panneau inférieur.
+  - Lorsque l'on combine un raccourci avec un mouvement de souris (par exemple <kbd>b+scroll</kbd>), des actions distinctes peuvent être déclenchées
+    par les mouvements vers le haut et vers le bas. Par exemple, (<kbd>b+scroll-up</kbd>) pourrait faire défiler les options du panneau supérieur
+    et (<kbd>b+scroll-down</kbd>) les combinaisons du panneau inférieur.
 
   - Un problème concernant les fenêtres déroulantes et les fenêtres coulissantes ouvertes via un raccourci, qui se remplissaient immédiatement avec
     le caractère de la touche de raccourci, a été résolu. Ces fenêtres sont désormais intégrées au système de raccourcis, de sorte que la plupart
@@ -282,3 +282,68 @@ changements individuels (le cas échéant).
     macOS, c'est-à-dire en utilisant la touche <kbd>commande</kbd> au lieu de la touche <kbd>controle</kbd> originale de style Linux.
     
 - Le mode d'évaluation des couleurs ISO 12464 pour la fenêtre de prévisualisation secondaire est désormais activé indépendamment de la fenêtre principale (et sauvegardé entre les sessions). Il est actionné avec une case à cocher dans le fenêtre de configuration affichée lors d'un <kbd>right-click</kbd> sur le bouton bouton "Afficher la deuxième fenêtre" (ou en utilisant le raccourci <kbd>alt+b</kbd> par défaut).
+
+## Correction de bogues
+
+- Correction de problèmes avec les vérifications de la plateforme OpenCL qui provoquaient des blocages.
+
+- Correction du calcul de la taille des widgets redimensionnables en fonction de la taille des lignes de leur contenu.
+
+- Correction d'un bogue dans le module filtres de collection où la conjonction de plusieurs filtres n'était pas gérée correctement.
+
+- Correction de la détection de la distance de mise au point pour les corrections d'objectifs à monture Nikon Z.
+
+- Correction d'un recadrage incorrect des données du capteur pour les fichiers SRaw dng.
+
+- Application de la matrice de couleurs LightRoom uniquement lors de l'importation d'un fichier XMP LightRoom authentique.
+
+- Correction d'un dysfonctionnement lors de l'augmentation du nombre de collections récentes.
+
+- Correction d'un dysfonctionnement lors du clic et du déplacement de la ligne d'adoucissement sur un masque "chemin".
+
+- Correction d'un crash lors de l'application du profil ICC CMYK soft-proof.
+
+- Les bordures blanches pour l'évaluation des couleurs ISO 12464 (activées avec Ctrl+b) sont maintenant correctement dimensionnées et placées
+  à tous les niveaux de zoom. Elles ne clignotent plus lorsque l'on passe de l'aperçu de basse qualité à l'aperçu de haute qualité, à la fois
+  dans la vue centrale et dans la fenêtre d'aperçu secondaire.
+
+- Correction d'un problème de téléchargement vers Piwigo lorsque l'option "Sur conflit" était réglée sur "Ne pas vérifier".
+
+- Correction de plusieurs problèmes liés à la molette de défilement de la souris sous macOS lorsqu'elle est utilisée en combinaison avec la
+  touche de modification <kbd>Maj</kbd> (largeur des harmonies de couleurs, hauteur du module, date/heure de géolocalisation, ...).
+
+- Lors du chargement d'un fichier XMP sidecar depuis le disque, résolution d'un problème avec lequel le "numéro de clone" assigné était
+  déjà présent dans la base de données. Ce problème a été résolu en recalculant le "numéro de clone" au moment de l'importation
+  pour tous les clones.
+
+- Pour les grandes collections sur la table lumineuse et lors de l'utilisation de petites vignettes (plus de 15 par ligne), l'utilisation de la
+  barre de défilement ou du défilement de la souris pour se déplacer vers le haut ou vers le bas pouvait être lente. La réactivité de la table
+  lumineuse dans ce scénario a été considérablement améliorée et est maintenant rapide et réactive même avec ~50k images et 20 vignettes par ligne.
+
+- Correction des erreurs de pixels dans le modue Aberration chromatique RAW et le module Dématriçage avec la méthode LMMSE, ce qui a permis
+  de réduire le bruit.
+
+- Correction du mode "évite le décalage des couleurs" dans le module Aberrations chromatiques RAW.
+
+- Correction du module d'instantané afin que les instantanés des images supprimées ne soient plus accessibles - cela provoquait auparavant
+  des plantages lors de la tentative d'affichage d'un instantané d'une image supprimée.
+
+- Correction d'un plantage potentiel lors de l'utilisation d'un profil ICC non pris en charge pour l'épreuvage écran.
+
+- Correction de plusieurs problèmes lors du calcul des bordures dans le module Recadrer. Pour une bordure de 0 % en bas ou à droite,
+  une bordure d'un seul pixel était parfois affichée, en fonction de la taille de l'exportation ou du niveau de zoom.
+
+  Notez qu'une bordure de 0 % ne signifie pas nécessairement qu'il n'y a pas de bordure du tout, si le rapport d'aspect choisi ne correspond pas
+  au rapport d'aspect de l'image.
+
+- Le masque de luminance interne de l'égaliseur de tons a été rendu plus résistant aux changements de distorsion effectués avec des modules
+  tels que Correction des objectifs, Recadrer, etc. Après avoir activé un recadrage, le curseur de l'égaliseur de tons affichera désormais
+  les valeurs de luminance correctes du masque lorsqu'il survolera l'image dans la chambre noire.
+
+- Correction du calcul de la mémoire graphique requise pour les modules effectuant des opérations de fusion, ce qui permet d'éviter
+  les plantages liés à OpenCL.
+
+- Ajout de la possibilité de calculer le facteur de recadrage pour les appareils photo qui n'incluent pas cette information dans leurs
+  métadonnées Exif.
+
+- Correction de plusieurs bogues liés aux masques de adoucis.
