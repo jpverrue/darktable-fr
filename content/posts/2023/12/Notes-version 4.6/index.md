@@ -138,7 +138,7 @@ changements individuels (le cas échéant).
  - Il est désormais possible de visualiser les masques matriciels (raster) de la même manière que les autres
    types de masques en cliquant sur l'icône de visualisation des masques.
 
- - La visualisation et la performance du masque de dématriçage double ont été améliorées.
+ - Dans le module dématriçage et en cas de dématriçage double (par exemple AMaZE + VNG4), la visualisation et la performance du masque ont été améliorées.
 
  - Dans le module de Correction des objectifs, il est désormais possible de définir manuellement une correction supplémentaire du vignettage.
 
@@ -202,7 +202,7 @@ changements individuels (le cas échéant).
 - Les exportations AVIF ont été modifiées de manière à ce qu'il n'y ait plus de conversion en YUV pour le "lossless". La logique de sélection
   du quantificateur a été mise à jour et "lossy" est maintenant la valeur par défaut.
 
-- Le contenu du de la fenêtre principale des préférences est maintenant (presque) entièrement tiré d'un seul fichier de définition
+- Le contenu de la fenêtre principale des préférences est maintenant (presque) entièrement tiré d'un seul fichier de définition
   (`darktable.xml.in`), ce qui rend sa mise en page beaucoup plus facile à modifier.
 
 - Les menus déroulants de la boîte de dialogue des préférences utilisent désormais les mêmes widgets (bauhaus) que les menus déroulants
