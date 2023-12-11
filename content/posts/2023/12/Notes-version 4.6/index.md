@@ -43,7 +43,7 @@ $ sha256sum darktable-4.6.0-win64.exe
 ```
 
 Lors de la mise à jour à partir de la série stable 4.4.x, gardez à l'esprit que vos modifications seront préservées pendant ce processus,
-mais que la nouvelle bibliothèque et la configuration ne seront plus utilisables avec la version 4.2.x.
+mais que la nouvelle bibliothèque et la configuration ne seront plus utilisables avec la version 4.4.x.
 
 Il est fortement conseillé de faire d'abord une sauvegarde.  
 
@@ -71,19 +71,19 @@ changements individuels (le cas échéant).
 
 - L'historique d'édition est maintenant sauvegardé automatiquement de façon périodique (toutes les 10 secondes),
   lors de l'édition d'images dans la vue chambre noire. L'intervalle d'enregistrement automatique peut
-  être modifié (via une préférence) ou l'enregistrement automatique peut être entièrement désactivé (en réglant l'intervalle sur 0).
+  être modifié (via une Préférence) ou l'enregistrement automatique peut être entièrement désactivé (en réglant l'intervalle sur 0).
 
-- Un nouveau module de traitement _rgb primaries_ a été ajouté. Ce module peut être utilisé pour des corrections
+- Un nouveau module de traitement _primaraires RVB_ a été ajouté. Ce module peut être utilisé pour des corrections
   de couleurs délicates ainsi que pour l'étalonnage créatif. Il permet de déplacer les couleurs primaires rouges,
   vertes et bleues en utilisant les paramètres "teinte" et "pureté".
 
   L'opération sous-jacente sur les pixels est essentiellement la même que le mélange des canaux.
 
-- En outre, le module _sigmoïd_ comprend désormais une nouvelle section _primaires_,
+- En outre, le module Sigmoïde comprend désormais une nouvelle section _primaires_,
   qui peut être utilisée pour gérer avec élégance les situations d'éclairage difficiles
   (par exemple, les LED) et ajuster l'aspect général de l'image. La modification de ces
   paramètres permet d'obtenir des couchers de soleil agréables, des tons de peau améliorés, etc.
-  Cette fonctionnalité ne peut être utilisée qu'avec le mode par canal de Sigmoïd et est
+  Cette fonctionnalité ne peut être utilisée qu'avec le mode par canal de Sigmoïde et est
   librement basée sur les idées de Troy Sobotka [AgX](https://github.com/sobotka/AgX-S2O3)
   et de travaux connexes dans la [communauté Blender](https://blenderartists.org/t/feedback-development-filmic-baby-step-to-a-v2/1361663).
   Le preset "smooth" inclus devrait fournir un bon point de départ
@@ -94,10 +94,10 @@ changements individuels (le cas échéant).
   Cela permet d'utiliser des parties recadrées de l'image sans avoir à désactiver
   le module de recadrage et à le réactiver une fois l'opération terminée.
 
-- Lors d'un panoramique ou d'un zoom dans la vue darkrom, un espace réservé en basse résolution était affiché
+- Lors d'un panoramique ou d'un zoom dans la vue chambre noire, un espace réservé en basse résolution était affiché
   jusqu'à ce que l'image soit entièrement recalculée pour la région nouvellement visible.
   Désormais, si une partie de la vue précédente est encore visible, cette partie sera immédiatement affichée en haute qualité,
-  le reste de l'image étant temporairement affiché en basse qualité jusqu'à ce que la Le traitement du pixelpipe soit terminée.
+  le reste de l'image étant temporairement affiché en basse qualité jusqu'à ce que le traitement du pixelpipe soit terminée.
 
   Ceci a été réalisé dans le cadre d'une refonte complète de l'affichage des images de la chambre noire,
   qui a également permis de supprimer certains sauts gênants lors du remplacement de l'espace réservé
@@ -114,7 +114,7 @@ changements individuels (le cas échéant).
   donnant l'impression que darktable n'avait pas démarré. Notez que le traitement sera plus lent
   (puisque darktable n'utilisera que le CPU) jusqu'à ce qu'OpenCL soit complètement initialisé.
 
- - Un section de code openCL a été mis en œuvre pour la correction des objectifs à l'aide des métadonnées de correction intégrées.
+ - Un bloc de code openCL a été écrit pour accélérer la correction des objectifs à l'aide des métadonnées de correction intégrées.
  
  - La vitesse d'affichage des images dans la vue Carte a été augmentée de 25 %.
  
@@ -138,7 +138,7 @@ changements individuels (le cas échéant).
  - Il est désormais possible de visualiser les masques matriciels (raster) de la même manière que les autres
    types de masques en cliquant sur l'icône de visualisation des masques.
 
- - Dans le module dématriçage et en cas de dématriçage double (par exemple AMaZE + VNG4), la visualisation et la performance du masque ont été améliorées.
+ - Dans le module Dématriçage et en cas de dématriçage double (par exemple AMaZE + VNG4), la visualisation et la performance du masque ont été améliorées.
 
  - Dans le module de Correction des objectifs, il est désormais possible de définir manuellement une correction supplémentaire du vignettage.
 
@@ -147,16 +147,16 @@ changements individuels (le cas échéant).
  - Les changements suivants ont été apportés à l'implémentation d'OpenCL :
    - Le code de benchmarking a été supprimé, car il ne produit plus de résultats valables sur les ordinateurs d'aujourd'hui.
   
-   - L'option "pinned memory transfer" (transfert de mémoire épinglée) a été supprimée de la boîte de dialogue des préférences,
+   - L'option "pinned memory transfer" (transfert de mémoire épinglée) a été supprimée de la boîte de dialogue des Préférences,
      mais elle peut toujours être définie périphérique par périphérique.
 
-   - Une nouvelle option "utiliser toute la mémoire du périphérique" a été ajoutée à la boîte de dialogue des préférences.
+   - Une nouvelle option "utiliser toute la mémoire du périphérique" a été ajoutée à la boîte de dialogue des Préférences.
      Sélectionnez cette option pour utiliser toute la mémoire du GPU, à l'exception d'une "marge" de 600 Mo qui est laissée
      libre pour l'utilisation par d'autres applications. Une option similaire était disponible dans les versions antérieures
      de darktable, mais la marge de manœuvre est maintenant augmentée à 600 Mo pour tenir compte de l'utilisation accrue
      de l'accélération GPU sur les systèmes modernes.
 
-   - Un nouvel ensemble d'options a été ajouté dans les préférences onglet traitement, afin de permettre la sélection des pilotes OpenCL souhaités.
+   - Un nouvel ensemble d'options a été ajouté dans les Préférences onglet traitement, afin de permettre la sélection des pilotes OpenCL souhaités.
   
 - Un profil de couleur intégré "P3 affichage RVB" a été ajouté pour une utilisation dans les profils d'entrée, de sortie,
   d'affichage, de travail et d'épreuvage écran.
@@ -165,7 +165,7 @@ changements individuels (le cas échéant).
   
 - La vitesse de défilement dans la pellicule peut désormais être augmentée en maintenant <kbd>Shift</kbd> pendant le défilement
   (la pellicule se déplace de la moitié des images visibles à la fois). Le fait de maintenir <kbd>Ctrl</kbd> durant le défilement
-  produit un zoom sur la pellicule et par conséquent modifie le nombre d'images affichées De ce fait, cela modifie également
+  produit un zoom sur la pellicule et par conséquent modifie le nombre d'images affichées. De ce fait, cela modifie également
   la vitesse obtenue en maintenant <kbd>Maj</kbd>.
   
 - Les fichiers PNG exportés intègrent désormais un profil de couleur codé CICP (Coding-Independent Code Points)
@@ -177,7 +177,7 @@ changements individuels (le cas échéant).
   utiliser l'espace disponible sur l'écran.
 
 - Lorsque l'on survole les échantillons dans le module Pipette de couleurs, ces zones sont affichées sur l'image centrale et sur
-  l'histogramme (si l'option correspondante est sélectionnée). Il n'est plus nécessaire d'activer le Module pipette de couleur pour ce faire.
+  l'histogramme (si l'option correspondante est sélectionnée). Il n'est plus nécessaire d'activer le module Pipette de couleur pour ce faire.
   Ce comportement amélioré est utile, par exemple, lors de l'étalonnage.
 
 - Il est désormais possible d'afficher une info-bulle pour un curseur ou une liste déroulante et une info-bulle distincte
@@ -202,17 +202,17 @@ changements individuels (le cas échéant).
 - Les exportations AVIF ont été modifiées de manière à ce qu'il n'y ait plus de conversion en YUV pour le "lossless". La logique de sélection
   du quantificateur a été mise à jour et "lossy" est maintenant la valeur par défaut.
 
-- Le contenu de la fenêtre principale des préférences est maintenant (presque) entièrement tiré d'un seul fichier de définition
+- Le contenu de la fenêtre principale des Préférences est maintenant (presque) entièrement tiré d'un seul fichier de définition
   (`darktable.xml.in`), ce qui rend sa mise en page beaucoup plus facile à modifier.
 
-- Les menus déroulants de la boîte de dialogue des préférences utilisent désormais les mêmes widgets (bauhaus) que les menus déroulants
+- Les menus déroulants de la boîte de dialogue des Préférences utilisent désormais les mêmes widgets (bauhaus) que les menus déroulants
   du reste de l'application, offrant ainsi un comportement plus cohérent.
 
 - Le système de configuration dispose désormais d'une meilleure précision des nombres.
 
-- Le module des collections a été retravaillé pour un tri plus cohérent. Tous les ordres de tri par date/heure peuvent désormais être inversés
+- Le module Collections a été retravaillé pour un tri plus cohérent. Tous les ordres de tri par date/heure peuvent désormais être inversés
   (en plaçant la plus ancienne  ou la plus récente  en premier). L'ordre des pellicules peut également être inversé lorsqu'elles sont classées
-  par identifiant (ce qui équivaut à la date de première importation de la pellicule). La préférence "trier les pellicules par" a été renommée
+  par identifiant (ce qui équivaut à la date de première importation de la pellicule). La Préférence "trier les pellicules par" a été renommée
   de "id" à "date d'importation" pour plus de clarté.
 
   Le filtrage des collections basé sur le score (étoile) utilise désormais un texte correct (comme "rejeté" au lieu de -1)
@@ -225,7 +225,7 @@ changements individuels (le cas échéant).
 
 - Une nouvelle fonctionnalité a été ajoutée pour générer automatiquement des vignettes en arrière-plan pendant que l'utilisateur est inactif
   dans la vue de la table lumineuse. Actuellement, cette fonctionnalité n'est disponible qu'en lançant `darktable-generate-cache` depuis
-  la ligne de commande. La nouvelle fonctionnalité est contrôlée par un paramètre de préférence qui définit les tailles de vignettes
+  la ligne de commande. La nouvelle fonctionnalité est contrôlée par un paramètre des Préférences qui définit les tailles de vignettes
   à générer en arrière-plan (par défaut "jamais").
 
 - Deux nouvelles variables ont été introduites pour permettre l'affichage du facteur de recadrage de l'appareil ("EXIF.CROP_FACTOR") et de la
@@ -260,16 +260,16 @@ changements individuels (le cas échéant).
   
   - La suppression ou l'écrasement d'un raccourci par défaut le place désormais dans la catégorie des "raccourcis par défaut désactivés",
     d'où il peut être restauré en appuyant sur la touche <kbd>Delete</kbd>. Il n'est plus nécessaire de décocher la case "charger les raccourcis par
-    défaut au démarrage" (dans prefs/misc/interface) pour le garder désactivé.
+    défaut au démarrage" (dans Préférences -> Divers -> Interface) pour le garder désactivé.
 
   - Le mode de mappage visuel dispose à présent de curseurs de souris améliorés qui indiquent si le widget situé sous le curseur peut se voir
     attribuer un raccourci ou être ajouté au panneau d'accès rapide (ou en être retiré).
 
-  - L'onglet Raccourcis de la boîte de dialogue des préférences explique dorénavant qu'il peut être plus pratique d'utiliser le mode de mappage visuel.
+  - L'onglet Raccourcis de la boîte de dialogue des Préférences explique dorénavant qu'il peut être plus pratique d'utiliser le mode de mappage visuel.
 
-  - Lorsque l'on combine un raccourci avec un mouvement de souris (par exemple <kbd>b+scroll</kbd>), des actions distinctes peuvent être déclenchées
-    par les mouvements vers le haut et vers le bas. Par exemple, (<kbd>b+scroll-up</kbd>) pourrait faire défiler les options du panneau supérieur
-    et (<kbd>b+scroll-down</kbd>) les combinaisons du panneau inférieur.
+  - Lorsque l'on combine un raccourci avec un mouvement de souris (par exemple <kbd>b+molette</kbd>), des actions distinctes peuvent être déclenchées
+    par les mouvements vers le haut et vers le bas. Par exemple, (<kbd>b+molette-haut</kbd>) pourrait faire défiler les options du panneau supérieur
+    et (<kbd>b+molette-bas</kbd>) les combinaisons du panneau inférieur.
 
   - Un problème concernant les fenêtres déroulantes et les fenêtres coulissantes ouvertes via un raccourci, qui se remplissaient immédiatement avec
     le caractère de la touche de raccourci, a été résolu. Ces fenêtres sont désormais intégrées au système de raccourcis, de sorte que la plupart
@@ -281,7 +281,7 @@ changements individuels (le cas échéant).
   - Sur macOS, les raccourcis système, par exemple pour copier et coller, fonctionnent dorénavant selon les paramètres par défaut du clavier
     macOS, c'est-à-dire en utilisant la touche <kbd>commande</kbd> au lieu de la touche <kbd>controle</kbd> originale de style Linux.
     
-- Le mode d'évaluation des couleurs ISO 12464 pour la fenêtre de prévisualisation secondaire est désormais activé indépendamment de la fenêtre principale (et sauvegardé entre les sessions). Il est actionné avec une case à cocher dans le fenêtre de configuration affichée lors d'un <kbd>right-click</kbd> sur le bouton bouton "Afficher la deuxième fenêtre" (ou en utilisant le raccourci <kbd>alt+b</kbd> par défaut).
+- Le mode d'évaluation des couleurs ISO 12464 pour la fenêtre de prévisualisation secondaire est désormais activé indépendamment de la fenêtre principale (et sauvegardé entre les sessions). Il est actionné avec une case à cocher dans le fenêtre de configuration affichée lors d'un <kbd>clic-droit</kbd> sur le bouton bouton "Afficher la deuxième fenêtre" (ou en utilisant le raccourci <kbd>alt+b</kbd> par défaut).
 
 ## Correction de bogues
 
@@ -346,7 +346,7 @@ changements individuels (le cas échéant).
 - Ajout de la possibilité de calculer le facteur de recadrage pour les appareils photo qui n'incluent pas cette information dans leurs
   métadonnées Exif.
 
-- Correction de plusieurs bogues liés aux masques de adoucis.
+- Correction de plusieurs bogues liés aux masques adoucis.
 
 ## Lua
 
@@ -366,7 +366,7 @@ changements individuels (le cas échéant).
 
 - Lors de l'exportation vers les formats AVIF, EXR, JPEG XL ou XCF, la sélection de métadonnées spécifiques (par exemple, géomarquage ou créateur)
   n'est actuellement pas possible. Pour les formats AVIF, EXR, JPEG XL et XCF, darktable n'inclura aucun champ de métadonnées à moins que l'utilisateur
-  ne sélectionne toutes les cases à cocher dans les options de préférence du module d'exportation.
+  ne sélectionne toutes les cases à cocher dans les options de Préférence du module d'exportation.
 
 - Afin de supporter l'affichage correct des nombres dans darktable, la version minimale supportée de Gtk a dû être augmentée à 3.24.15. Pour les
   personnes qui ont besoin de construire darktable avec une version plus ancienne, cela peut être réalisé en supprimant la ligne 241 du fichier
