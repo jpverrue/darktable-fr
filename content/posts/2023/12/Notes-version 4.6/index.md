@@ -348,6 +348,8 @@ changements individuels (le cas échéant).
 
 - Correction de plusieurs bogues liés aux masques adoucis.
 
+- Correction d'un problème de mise à l'échelle du DPI sur macOS qui faisait que certains éléments de l'interface graphique étaient rendus trop petits.
+
 ## Lua
 
 ### Version de l'API
