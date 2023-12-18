@@ -55,9 +55,9 @@ veuillez lire [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=leb
 Depuis darktable 4.4 :  
 
 
-- ??? commits à darktable+rawspeed  
-- ??? demandes de pull traitées  
-- ??? problèmes fermés  
+- 1648 commits à darktable+rawspeed  
+- 553 demandes de pull traitées  
+- 49 problèmes fermés  
   
 _Veuillez noter que la documentation de darktable n'est pas encore complète pour la version 4.6 et que les contributions
 sont très appréciées. Veuillez consulter [le projet documentation](https://github.com/darktable-org/dtdocs#contributing)
@@ -396,15 +396,65 @@ changements individuels (le cas échéant).
 
 ### Support de base
 
-???
+- Canon EOS Kiss F
+- Canon EOS Kiss X50
+- Canon EOS Kiss X90
+- Canon IXY 220F (dng, chdk)
+- Canon PowerShot SX220 HS (chdk)
+- Fujifilm FinePix SL1000
+- Fujifilm X-S20 (compressed)
+- ImBack ImB35mm (chdk)
+- Leica M10-D (dng)
+- Leica M10-P (dng)
+- Leica M10-R (dng)
+- Leica M11-P (dng)
+- Leica Q2 Monochrom (dng)
+- Leica SL2 (dng)
+- Leica SL2-S (dng)
+- Nikon Coolpix A1000 (12bit-uncompressed)
+- Nikon Z f (14bit-compressed)
+- OM System TG-7
+- Panasonic DC-TZ200D (3:2)
+- Panasonic DC-TZ202D (3:2)
+- Panasonic DC-TZ220 (3:2)
+- Panasonic DC-TZ220D (3:2)
+- Panasonic DC-ZS200D (3:2)
+- Panasonic DC-ZS220 (3:2)
+- Panasonic DC-ZS220D (3:2)
+- Panasonic DMC-G10 (3:2, 16:9, 1:1)
+- Panasonic DMC-GM1S (4:3, 3:2, 16:9, 1:1)
+- Pentax K-3 Mark III Monochrome
+- Pentax KF
+- Samsung EK-GN120
+- Samsung G920F (dng)
+- Samsung G935F (dng)
+- Samsung GX10 (dng)
+- Samsung GX20 (dng)
+- Sigma fp (dng)
+- Sigma fp L (dng)
+- Sigma sd Quattro (dng)
+- Sigma sd Quattro H (dng)
+- Sinar eVolution 75
+- Sony ILCE-6700
+- Sony ILCE-7CM2
+- Sony ILCE-7CR
+- Sony ILME-FX3
+- Sony ZV-E1
 
 ### Préréglages de la balance des blancs
 
-???
+- Leica M (Typ 240)
+- Olympus E-P7
+- Olympus TG-6
+- Sony ILCE-7CM2
 
 ### Profils de bruit
 
-???
+- Canon IXY 220F
+- Nikon Z f
+- Olympus E-P7
+- Pentax *ist DS
+- Sony ILCE-6700
 
 ### Absence de prise en charge du mode de compression
 
