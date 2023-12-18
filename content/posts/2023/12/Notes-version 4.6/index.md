@@ -73,7 +73,7 @@ changements individuels (le cas échéant).
   lors de l'édition d'images dans la vue chambre noire. L'intervalle d'enregistrement automatique peut
   être modifié (via une Préférence) ou l'enregistrement automatique peut être entièrement désactivé (en réglant l'intervalle sur 0).
 
-- Un nouveau module de traitement _primaraires RVB_ a été ajouté. Ce module peut être utilisé pour des corrections
+- Un nouveau module de traitement _primaires RVB_ a été ajouté. Ce module peut être utilisé pour des corrections
   de couleurs délicates ainsi que pour l'étalonnage créatif. Il permet de déplacer les couleurs primaires rouges,
   vertes et bleues en utilisant les paramètres "teinte" et "pureté".
 
