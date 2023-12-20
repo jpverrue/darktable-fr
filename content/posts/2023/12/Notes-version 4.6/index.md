@@ -114,7 +114,7 @@ changements individuels (le cas échéant).
   donnant l'impression que darktable n'avait pas démarré. Notez que le traitement sera plus lent
   (puisque darktable n'utilisera que le CPU) jusqu'à ce qu'OpenCL soit complètement initialisé.
 
- - Un bloc de code openCL a été écrit pour accélérer la correction des objectifs à l'aide des métadonnées de correction intégrées.
+ - Un bloc de code OpenCL a été écrit pour accélérer la correction des objectifs à l'aide des métadonnées de correction intégrées.
  
  - La vitesse d'affichage des images dans la vue Carte a été augmentée de 25 %.
  
@@ -203,7 +203,7 @@ changements individuels (le cas échéant).
   du quantificateur a été mise à jour et "lossy" est maintenant la valeur par défaut.
 
 - Le contenu de la fenêtre principale des Préférences est maintenant (presque) entièrement tiré d'un seul fichier de définition
-  (`darktable.xml.in`), ce qui rend sa mise en page beaucoup plus facile à modifier.
+  (`darktableconfig.xml.in`), ce qui rend sa mise en page beaucoup plus facile à modifier.
 
 - Les menus déroulants de la boîte de dialogue des Préférences utilisent désormais les mêmes widgets (bauhaus) que les menus déroulants
   du reste de l'application, offrant ainsi un comportement plus cohérent.
@@ -293,7 +293,7 @@ changements individuels (le cas échéant).
 
 - Correction de la détection de la distance de mise au point pour les corrections d'objectifs à monture Nikon Z.
 
-- Correction d'un recadrage incorrect des données du capteur pour les fichiers SRaw dng.
+- Correction d'un recadrage incorrect des données du capteur pour les fichiers sRaw dng.
 
 - Application de la matrice de couleurs LightRoom uniquement lors de l'importation d'un fichier XMP LightRoom authentique.
 
