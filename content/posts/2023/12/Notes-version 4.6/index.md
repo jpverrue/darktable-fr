@@ -274,9 +274,9 @@ changements individuels (le cas échéant).
   - Un problème concernant les fenêtres déroulantes et les fenêtres coulissantes ouvertes via un raccourci, qui se remplissaient immédiatement avec
     le caractère de la touche de raccourci, a été résolu. Ces fenêtres sont désormais intégrées au système de raccourcis, de sorte que la plupart
     des raccourcis non alphanumériques continueront de fonctionner. Si une valeur de liste déroulante est modifiée alors que la fenêtre popup
-    est ouverte (par exemple via un calcul automatique dans l'étalonnage des couleurs, un script Lua ou un raccourci midi), la fenêtre popup
+    est ouverte (par exemple via un calcul automatique dans l'étalonnage des couleurs, un script Lua ou un raccourci MIDI), la fenêtre popup
     est correctement mise à jour/repositionnée. Après la fermeture d'une fenêtre contextuelle, il est possible de la rouvrir rapidement pour
-    saisir une autre valeur en appuyant sur Entrée (à condition que le widget correspondant soit toujours au centre de l'attention).
+    saisir une autre valeur en appuyant sur <kbd>Entrée</kbd> (à condition que le widget correspondant ait toujours le focus).
 
   - Sur macOS, les raccourcis système, par exemple pour copier et coller, fonctionnent dorénavant selon les paramètres par défaut du clavier
     macOS, c'est-à-dire en utilisant la touche <kbd>commande</kbd> au lieu de la touche <kbd>controle</kbd> originale de style Linux.
