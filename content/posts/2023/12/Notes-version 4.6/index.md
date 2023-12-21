@@ -33,13 +33,14 @@ github, mais uniquement notre fichier tar.xz. Les sommes de contrôle sont :
 
 ```
 $ sha256sum darktable-4.6.0.tar.xz
-??? darktable-4.6.0.tar.xz
+724b27e3204d1822de6dc53ea090a6b1ce55f7c32226d34642689775c68aacc2  darktable-4.6.0.tar.xz
 $ sha256sum darktable-4.6.0-x86_64.dmg
-??? darktable-4.6.0-x86_64.dmg
+e4e53cc1ec6a5800029f39728c024882a0357458f5c8d8e0ff16dfe034e701ed  darktable-4.6.0-x86_64.dmg
 $ sha256sum darktable-4.6.0-arm64.dmg
-??? darktable-4.6.0-arm64.dmg
+c2649a07410d70f5da57f9c3583f24c6a97adb994924af88f132a2232ddf7ab4  darktable-4.6.0-arm64.dmg
 $ sha256sum darktable-4.6.0-win64.exe
-??? darktable-4.6.0.exe
+765fc4d9e67937663253f7cc4d20d4ba829e910ff92626c06dc0846e2ddc77de  darktable-4.6.0.exe
+
 ```
 
 Lors de la mise à jour à partir de la série stable 4.4.x, gardez à l'esprit que vos modifications seront préservées pendant ce processus,
@@ -487,4 +488,21 @@ La prise en charge des caméras suivantes est suspendue car aucun échantillon n
 
 ## Traductions
 
-???
+- Albanais
+- Portugais (Brésilien)
+- Chinois (Simplifié)
+- Chinois (Traditionel)
+- Tchèque
+- Néerlandais
+- Espagnol Européen
+- Finlandais
+- Français
+- Allemand
+- Hongrois
+- Italien
+- Japonais
+- Polonais
+- Russe
+- Slovénien
+- Ukrainien
+
