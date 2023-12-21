@@ -3,6 +3,7 @@ title: "Version 4.6.0"
 aliases:
   - "darktable-4-6-0"
 date: "2023-12-21"
+pinned: true
 featured: true
 categories:
   - "actualites"
