@@ -1,6 +1,6 @@
 ---
 title: "Nouveautés darktable 4.6 (FR)"
-date: "2023-1-24"
+date: "2023-12-24"
 categories:
   - "tutoriels"
 tags:
