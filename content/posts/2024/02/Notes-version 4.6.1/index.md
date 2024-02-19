@@ -66,49 +66,49 @@ Depuis darktable 4.6.0 :
 
 ## Amélioration des performances
 
-- Fixed some OpenCL code paths that could produce garbled or unprocessed
-  output without reporting the issue back to the pixel-pipe.
+- Correction de certains passages du code OpenCL qui pouvaient produire une sortie détériorée
+  ou non traitée sans signaler le problème au pixel-pipe.
 
-## Other Changes
+## Autres changements
 
-- Image discovery from the import dialog is now performed
-  asynchronously. This means that a long parsing (due to using recursive
-  mode in a directory with a huge number of sub-directories and
-  files) can be interrupted by selecting another place/directory
-  or un-checking recursive mode.
+- La recherche d'images dans la boîte de dialogue d'importation est désormais effectuée
+  de manière asynchrone. Cela signifie qu'une longue analyse (due à l'utilisation du mode
+  récursif dans un répertoire contenant un grand nombre de sous-répertoires et de fichiers),
+  peut être interrompue en sélectionnant un autre endroit /répertoire ou en décochant le mode récursif.
 
-## Bug Fixes
+## Correction de bogues
 
-- Fixed an issue with importing images in recursive mode. Using this
-  mode without having first selected a directory could freeze darktable due
-  to it having to parse the whole disk (though it would recover eventually).
+- Correction d'un problème avec l'importation d'images en mode récursif. L'utilisation de ce mode
+  sans avoir préalablement sélectionné un répertoire pouvait geler darktable (bien qu'il finisse par
+  s'en remettre) car il devait analyser l'ensemble du disque.
 
-- When importing images in recursive mode, the thumbs for
-  images discovered in sub-directories are now properly displayed.
+- Lors de l'importation d'images en mode récursif, les vignettes des images découvertes
+  dans les sous-répertoires sont désormais correctement affichées.
 
-- Fixed memory and resource leaks in the QOI image loader.
+- Correction de fuites de mémoire et de ressources dans le chargeur d'images QOI.
 
-- Fixed RGBE image loader.
+- Correction du chargeur d'images RGBE.
 
-- Fixed possible issue with guide lines not being displayed in the
-  Rotate and Perspective module.
+- Correction d'un éventuel problème d'affichage des lignes de guidage dans le module
+  Rotation et Perspective
 
-- Fixed non-persistent zoom level in culling mode when switching images.
+- Correction de la non persitence du niveau de zoom dans la vue sélection lorsque l'on passe
+  d'une image à l'autre
 
-- Fixed crashes related to details mask when running low on GPU or
-  system memory.
+- Correction des plantages liés au masque de détails lorsque la mémoire du GPU
+  ou du système est faible..
 
-- Fixed incorrect rendering of an initial snapshot after creating a
-  second snapshot.
+- Correction de l'affichage incorrect d'un premier instantané
+  après la création d'un deuxième instantané.
 
-- Keep selected styles in the style dialog after editing them.
+- Conserver les styles sélectionnés dans la boîte de dialogue des styles après les avoir modifiés.
 
-- Fixed collection selection for ISO, aperture and aspect ratio to work
-  in all locales (independent of any locale-specific decimal separator).
+- Correction de la sélection de la collection pour : la sensibilité ISO, l'ouverture ou le ratio d'aspect
+  pour fonctionner dans toutes les langues (indépendamment de tout séparateur décimal spécifique à la langue).
 
-- Fixed RAW Chromatic Aberrations module, which could crash due to a
-  rounding issue while computing an internal buffer size. This could
-  cause a buffer overflow and possibly crash darktable.
+- Correction du module Aberrations chromatiques RAW, qui pouvait se bloquer en raison d'un problème d'arrondi
+  lors du calcul de la taille de la mémoire tampon interne. Cela pouvait provoquer un débordement
+  de la mémoire tampon et éventuellement faire planter darktable..
 
 - Avoid undershoots while interpolating in Lens Correction, Rotate and
   Perspective, Retouch and Liquify modules.
