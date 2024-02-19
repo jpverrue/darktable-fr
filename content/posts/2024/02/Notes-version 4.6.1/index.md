@@ -110,95 +110,92 @@ Depuis darktable 4.6.0 :
   lors du calcul de la taille de la mémoire tampon interne. Cela pouvait provoquer un débordement
   de la mémoire tampon et éventuellement faire planter darktable..
 
-- Avoid undershoots while interpolating in Lens Correction, Rotate and
-  Perspective, Retouch and Liquify modules.
+- Évitez les sous-dépassements lors de l'interpolation dans les modules Correction des objectifs,
+  Rotation et Perspective, Retouche et Liquéfer.
 
-- Include LibRaw fix for artifacts when decoding high-ISO Canon CR3 files.
+- Inclusion des correction LibRaw pour éliminer les les artefacts
+  lors du décodage des fichiers Canon CR3 à hauts ISO.
 
-- Fixed possible incorrect module name when applying styles, whereby the
-  module name was showing garbled text.
+- Correction de la possibilité d'un nom de module incorrect lors de l'application de styles,
+  le nom du module apparaissait en texte incompréhensible.
 
-- Fixed possible incorrect default value initialized in Lens Correction legacy
-  parameter migration from version 2.
+- Correction d'une éventuelle valeur par défaut incorrecte initialisée dans la migration
+  des paramètres de correction de l'objectif depuis la version 2.
+  
+- Correction de la sortie altérée et des erreurs OpenCL possibles pour les régions très sombres dans le module Balance couleurs RVB.
 
-- Fixed garbled output and possible OpenCL errors for very dark regions
-  in Color Balance RGB.
+- Correction du démarrage d'OpenCL pour diverses cartes.
 
-- Fixed OpenCL startup for various cards.
+- Correction d'un problème dans lequel la ligne de rotation du clic droit et du déplacement ne s'affichait
+  pas sur l'image lorsqu'un module de la chambre noire était agrandi.
 
-- Fixed issue where the right-click-and-drag rotation line was not being
-  displayed on the image when a darkroom module was expanded.
+- Correction du gel du défilement de la table lumineuse lors de l'utilisation d'un track-pad.
 
-- Fixed lighttable scrolling freeze when using a track-pad.
+- Correction des problèmes de compatibilité avec les fichiers DNG créés en HDR.
 
-- Fix compatibility issues with HDR created DNG files.
+- Correction d'un éventuel plantage lors de l'utilisation du mode "live view" de la vue Capture.
 
-- Fix possible crash when using the capture's live view mode.
+- Correction d'un bug de zoom dans le mode sélection de la table lumineuse où la zone de certaines
+  images pouvait être grise ou avoir une très petite vignette.
 
-- Fixed a zooming bug in lighttable culling mode where some images' area
-  could be plain grey or having a very small thumb.
+- Ajout de certains recalculs manquants dans le pixel pipe  qui faisaient que le graphique des modules
+  de traitement (Tone Equalizer par exemple) n'était pas correctement mis à jour.
 
-- Fixed some missing pipe recomputing making processing modules' graph
-  (Tone Equalizer for example) not properly updated.
-
-- Fixed several mouse scroll-wheel issues on macOS when used in
-  combination with the <kbd>Shift</kbd> modifier key (color harmonies
-  width, module height, geotagging date/time, ...).
+- Correction de plusieurs problèmes liés à la molette de défilement de la souris sous macOS lorsqu'elle
+  est utilisée en combinaison avec la touche modificatrice <kbd>Maj</kbd>
+  (largeur des harmonies de couleurs (scopes), hauteur du module, date/heure de géolocalisation, ...).
 
 ## Lua
 
 ### API Version
 
-- API version is now 9.2.0
+- La version de l'API est maintenant la 9.2.0
 
-### Bug Fixes
+### Correction de bogues
 
-- Fixed `scripts_installer` to handle user names with spaces on Windows.
+- correction de `scripts_installer` pour gérer les noms d'utilisateurs contenant des espaces sous Windows.
 
 ### Add action support for Lua
 
 
-### Other Lua changes
+### Autres changements Lua
 
 - n/a
 
 ## Notes
 
-- When exporting to AVIF, EXR, JPEG XL, or XCF, selecting specific
-  metadata (e.g. geo-tag or creator) is not currently possible. For
-  AVIF, EXR, JPEG XL, and XCF formats, darktable will not include any
-  metadata fields unless the user selects all of the checkboxes in the
-  export module's preference options.
+- Lors de l'exportation vers les formats AVIF, EXR, JPEG XL ou XCF, la sélection de métadonnées spécifiques
+  (par exemple, géomarquage ou créateur) n'est actuellement pas possible. Pour les formats
+  AVIF, EXR, JPEG XL et XCF, darktable n'inclura aucun champ de métadonnées à moins que l'utilisateur
+  ne sélectionne toutes les cases à cocher dans les options de Préférence du module d'exportation.
 
-- In order to support the correct display of numbers in darktable, the
-  minimum supported Gtk version has had to be increased to
-  3.24.15. For people who need to build darktable with an older
-  version, this can be achieved by removing line 241 of the
-  `darktable.css` file on your system. See
-  https://github.com/darktable-org/darktable/issues/13166.
+- Afin de supporter l'affichage correct des nombres dans darktable, la version minimale supportée
+  de Gtk a dû être augmentée à 3.24.15. Pour les personnes qui ont besoin de construire darktable avec une
+  version plus ancienne, cela peut être réalisé en supprimant la ligne 241 du fichier
+  darktable.css sur votre système.
+  Voir : [#13166](https://github.com/darktable-org/darktable/issues/13166)
 
-- Starting with release 4.4 a new support policy regarding macOS
-  versions has been put in place – darktable releases will now only
-  support those macOS versions that are also supported by Apple.
-  Release 4.6 therefore drops support for macOS versions older than
-  12.5.
+- À partir de la version 4.4, une nouvelle politique de prise en charge des versions de macOS
+  a été mise en place - les versions de darktable ne prendront désormais en charge que les versions de macOS
+  qui sont également prises en charge par Apple.
+  La version 4.6 ne prend donc plus en charge les versions de macOS antérieures à la version 12.5.
 
-## Changed Dependencies
+## Changement de dépendances
 
-### Mandatory
+### Obligatoires
 
 - n/a
 
-### Optional
+### Optionnelle(s)
 
-- Bump libavif to 0.9.3
+- Augmenter libavif to 0.9.3
 
-## RawSpeed changes
+## Changements RawSpeed
 
 
-## Camera support, compared to 4.4
+## Supports d'appareils, comparés à la version 4.4
 
-### Base Support
+### Support de base
 
 - Canon EOS Kiss F
 - Canon EOS Kiss X50
@@ -206,8 +203,8 @@ Depuis darktable 4.6.0 :
 - Canon IXY 220F (dng, chdk)
 - Canon PowerShot SX220 HS (chdk)
 - Fujifilm FinePix SL1000
-- Fujifilm GFX100 II (compressed)
-- Fujifilm X-S20 (compressed)
+- Fujifilm GFX100 II (compressé)
+- Fujifilm X-S20 (compressé)
 - Hasselblad CFV-50c
 - Hasselblad CFV-50c
 - Hasselblad CFV-50c
@@ -245,8 +242,8 @@ Depuis darktable 4.6.0 :
 - Leica X Vario (Typ 107) (dng)
 - Leica X-U (Typ 113) (dng)
 - Leica X1 (dng)
-- Nikon Coolpix A1000 (12bit-uncompressed)
-- Nikon Z f (14bit-compressed)
+- Nikon Coolpix A1000 (12bit-non-compressé)
+- Nikon Z f (14bit-compresseé)
 - OM System TG-7
 - Panasonic DC-TZ200D (3:2)
 - Panasonic DC-TZ202D (3:2)
@@ -278,7 +275,7 @@ Depuis darktable 4.6.0 :
 - Sony ILME-FX3
 - Sony ZV-E1
 
-### White Balance Presets
+### Préréglages de la balance des blancs
 
 - Leica M (Typ 240)
 - Olympus E-P7
@@ -286,7 +283,7 @@ Depuis darktable 4.6.0 :
 - Phase One IQ180
 - Sony ILCE-7CM2
 
-### Noise Profiles
+### Profils de bruit
 
 - Canon IXY 220F
 - Nikon Z 8
@@ -296,7 +293,7 @@ Depuis darktable 4.6.0 :
 - Sony ILCE-6700
 - Sony ILCE-7CM2
 
-### Missing Compression Mode Support
+### Absence de prise en charge du mode de compression
 
 - Adobe enhanced DNGs (JPEG XL flavor)
 - Apple ProRAW DNGs
@@ -306,10 +303,9 @@ Depuis darktable 4.6.0 :
 - Samsung Expert RAW DNGs (JPEG XL flavor)
 - Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
-### Suspended Support
+### Support Suspendu
 
-Support for the following cameras is suspended because no samples
-are available on raw.pixls.us:
+La prise en charge des appareils suivants est suspendue car aucun échantillon n'est disponible sur raw.pixls.us :
 
 - Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
 - Fujifilm FinePix S9600fd
@@ -322,13 +318,14 @@ are available on raw.pixls.us:
 - Minolta DiMAGE 5
 - Olympus SP320
 - Panasonic DMC-FX150
+- Pentax Q10
 - Phase One IQ250
 - Sinar Hy6/ Sinarback eXact
 - ST Micro STV680
 
-## Translations
+## Traductions
 
-- Add support for Dutch online help which is now fully complete.
+- Ajout du support pour l'aide en ligne en Néerlandais qui est maintenant complète.
 
 - Albanian
 - Brazilian Portuguese
