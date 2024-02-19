@@ -52,29 +52,28 @@ Il est fortement conseillé de faire d'abord une sauvegarde.
 
 Depuis darktable 4.6.0 :  
 
-
-- 606 commits à darktable+rawspeed  
+- 606 commits à darktable + rawspeed  
 - 57 demandes de pull traitées  
 - 12 problèmes fermés
 
 ## Les grandes nouveautés
 
-- La documentation est maintenant complète pour darktable 4.6 et inclue les traductions en
+- La documentation est maintenant complète pour darktable 4.6 Elle inclue les traductions en
   Ukrainien, Polonais et Néerlandais.
   Voir [https://www.darktable.org/resources](https://www.darktable.org/resources)
   pour plus d'informations.
 
 ## Amélioration des performances
 
-- Correction de certains passages du code OpenCL qui pouvaient produire une sortie détériorée
+- Correction de certains passages du code OpenCL qui pouvaient produire une sortie altérée
   ou non traitée sans signaler le problème au pixel-pipe.
 
 ## Autres changements
 
 - La recherche d'images dans la boîte de dialogue d'importation est désormais effectuée
   de manière asynchrone. Cela signifie qu'une longue analyse (due à l'utilisation du mode
-  récursif dans un répertoire contenant un grand nombre de sous-répertoires et de fichiers),
-  peut être interrompue en sélectionnant un autre endroit /répertoire ou en décochant le mode récursif.
+  récursif dans un répertoire contenant un grand nombre de sous-répertoires et de fichiers par esemple),
+  peut être interrompue en sélectionnant un autre endroit ou répertoire, ou en décochant le mode récursif.
 
 ## Correction de bogues
 
@@ -96,7 +95,7 @@ Depuis darktable 4.6.0 :
   d'une image à l'autre
 
 - Correction des plantages liés au masque de détails lorsque la mémoire du GPU
-  ou du système est faible..
+  ou du système est faible.
 
 - Correction de l'affichage incorrect d'un premier instantané
   après la création d'un deuxième instantané.
@@ -104,16 +103,16 @@ Depuis darktable 4.6.0 :
 - Conserver les styles sélectionnés dans la boîte de dialogue des styles après les avoir modifiés.
 
 - Correction de la sélection de la collection pour : la sensibilité ISO, l'ouverture ou le ratio d'aspect
-  pour fonctionner dans toutes les langues (indépendamment de tout séparateur décimal spécifique à la langue).
+  afin de fonctionner dans toutes les langues (indépendamment de tout séparateur décimal spécifique à la langue).
 
 - Correction du module Aberrations chromatiques RAW, qui pouvait se bloquer en raison d'un problème d'arrondi
   lors du calcul de la taille de la mémoire tampon interne. Cela pouvait provoquer un débordement
-  de la mémoire tampon et éventuellement faire planter darktable..
+  de la mémoire tampon et éventuellement faire planter darktable.
 
 - Évitez les sous-dépassements lors de l'interpolation dans les modules Correction des objectifs,
-  Rotation et Perspective, Retouche et Liquéfer.
+  Rotation et Perspective, Retouche ou Liquéfer.
 
-- Inclusion des correction LibRaw pour éliminer les les artefacts
+- Inclusion de correction LibRaw pour éliminer les artefacts
   lors du décodage des fichiers Canon CR3 à hauts ISO.
 
 - Correction de la possibilité d'un nom de module incorrect lors de l'application de styles,
@@ -122,23 +121,24 @@ Depuis darktable 4.6.0 :
 - Correction d'une éventuelle valeur par défaut incorrecte initialisée dans la migration
   des paramètres de correction de l'objectif depuis la version 2.
   
-- Correction de la sortie altérée et des erreurs OpenCL possibles pour les régions très sombres dans le module Balance couleurs RVB.
+- Correction de la sortie altérée et des erreurs OpenCL possibles pour les régions très
+  sombres dans le module Balance couleurs RVB.
 
-- Correction du démarrage d'OpenCL pour diverses cartes.
+- Correction du démarrage d'OpenCL pour diverses cartes graphiques.
 
-- Correction d'un problème dans lequel la ligne de rotation du clic droit et du déplacement ne s'affichait
+- Correction d'un problème dans lequel la ligne de rotation du 'clic droit + déplacement' ne s'affichait
   pas sur l'image lorsqu'un module de la chambre noire était agrandi.
 
 - Correction du gel du défilement de la table lumineuse lors de l'utilisation d'un track-pad.
 
 - Correction des problèmes de compatibilité avec les fichiers DNG créés en HDR.
 
-- Correction d'un éventuel plantage lors de l'utilisation du mode "live view" de la vue Capture.
+- Correction d'un éventuel plantage lors de l'utilisation du mode 'live view' de la vue Capture.
 
 - Correction d'un bug de zoom dans le mode sélection de la table lumineuse où la zone de certaines
   images pouvait être grise ou avoir une très petite vignette.
 
-- Ajout de certains recalculs manquants dans le pixel pipe  qui faisaient que le graphique des modules
+- Ajout de certains recalculs manquants dans le pixel pipe qui faisaient que le graphique des modules
   de traitement (Tone Equalizer par exemple) n'était pas correctement mis à jour.
 
 - Correction de plusieurs problèmes liés à la molette de défilement de la souris sous macOS lorsqu'elle
@@ -147,20 +147,21 @@ Depuis darktable 4.6.0 :
 
 ## Lua
 
-### API Version
+### Version de l'API 
 
-- La version de l'API est maintenant la 9.2.0
+La version de l'API est maintenant la 9.2.0
 
 ### Correction de bogues
 
-- correction de `scripts_installer` pour gérer les noms d'utilisateurs contenant des espaces sous Windows.
+correction de `scripts_installer` pour gérer les noms d'utilisateurs contenant des espaces sous Windows.
 
 ### Add action support for Lua
 
+n/a
 
 ### Autres changements Lua
 
-- n/a
+n/a
 
 ## Notes
 
@@ -184,14 +185,15 @@ Depuis darktable 4.6.0 :
 
 ### Obligatoires
 
-- n/a
+n/a
 
 ### Optionnelle(s)
 
-- Augmenter libavif to 0.9.3
+Augmenter libavif to 0.9.3
 
 ## Changements RawSpeed
 
+n/a
 
 ## Supports d'appareils, comparés à la version 4.4
 
