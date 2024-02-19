@@ -325,7 +325,7 @@ La prise en charge des appareils suivants est suspendue car aucun échantillon n
 
 ## Traductions
 
-- Ajout du support pour l'aide en ligne en Néerlandais qui est maintenant complète.
+Ajout du support pour l'aide en ligne en Néerlandais qui est maintenant complète.
 
 - Albanian
 - Brazilian Portuguese
