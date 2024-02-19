@@ -29,7 +29,7 @@ Nous sommes fiers d'annoncer la nouvelle version de darktable, 4.6.1 !
 La version github est disponible ici : [https://github.com/darktable-org/darktable/releases/tag/release-4.6.1](https://github.com/darktable-org/darktable/releases/tag/release-4.6.1).
 
 Comme toujours, n'utilisez pas le fichier tarball autogénéré fourni par
-github, mais uniquement notre fichier tar.xz. Les sommes de contrôle sont :We're proud to announce the new feature release of darktable, 4.6.1!
+github, mais uniquement notre fichier tar.xz. Les sommes de contrôle sont :
 
 ```
 $ sha256sum darktable-4.6.1.tar.xz
