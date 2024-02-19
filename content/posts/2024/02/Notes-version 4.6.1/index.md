@@ -14,7 +14,7 @@ authors:
 coverImage: "images/dt_logo-4.6.1.png"
 ---
 
-La version 4.6.1 de darktable est sortie aujourd'hui.
+La version 4.6.1 de darktable est sortie saedi dernier.
 
 Voici la traduction française des notes de version.
 
@@ -58,7 +58,7 @@ Depuis darktable 4.6.0 :
 
 ## Les grandes nouveautés
 
-- La documentation est maintenant complète pour darktable 4.6 Elle inclue les traductions en
+- La documentation est maintenant complète pour darktable 4.6 Elle inclut les traductions en
   Ukrainien, Polonais et Néerlandais.
   Voir [https://www.darktable.org/resources](https://www.darktable.org/resources)
   pour plus d'informations.
@@ -347,4 +347,3 @@ Ajout du support pour l'aide en ligne en Néerlandais qui est maintenant complè
 - Slovenian
 - Turkish
 - Ukrainian
-
