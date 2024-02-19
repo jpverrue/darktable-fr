@@ -14,7 +14,7 @@ authors:
 coverImage: "images/dt_logo-4.6.1.png"
 ---
 
-La version 4.6.1 de darktable est sortie saedi dernier.
+La version 4.6.1 de darktable est sortie samedi dernier.
 
 Voici la traduction française des notes de version.
 
