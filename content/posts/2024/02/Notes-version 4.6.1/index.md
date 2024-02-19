@@ -57,14 +57,14 @@ Depuis darktable 4.6.0 :
 - 57 demandes de pull traitées  
 - 12 problèmes fermés
 
-## The Big Ones
+## Les grandes nouveautés
 
-- Documentation is now complete for darktable 4.6 including translation
-  into Ukrainian, Polish and Dutch.
-  See [https://www.darktable.org/resources](https://www.darktable.org/resources)
-  for details.
+- La documentation est maintenant complète pour darktable 4.6 et inclue les traductions en
+  Ukrainien, Polonais et Néerlandais.
+  Voir [https://www.darktable.org/resources](https://www.darktable.org/resources)
+  pour plus d'informations.
 
-## Performance Improvements
+## Amélioration des performances
 
 - Fixed some OpenCL code paths that could produce garbled or unprocessed
   output without reporting the issue back to the pixel-pipe.
