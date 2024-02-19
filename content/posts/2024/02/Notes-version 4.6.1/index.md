@@ -47,7 +47,7 @@ mais que la nouvelle bibliothèque et la configuration ne seront plus utilisable
 
 Il est fortement conseillé de faire d'abord une sauvegarde.  
 
-#### note importante : Pour s’assurer que darktable supporte le format de fichier RAW de votre appareil photo, veuillez lire [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri). Vous y apprendrez comment contribuer à la constitution de l’ensemble d’échantillons d’images (sous licence CC0) pour votre boîtier.
+#### Note importante : Pour s’assurer que darktable supporte le format de fichier RAW de votre appareil photo, veuillez lire [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri). Vous y apprendrez comment contribuer à la constitution de l’ensemble d’échantillons d’images (sous licence CC0) pour votre boîtier.
 
 
 Depuis darktable 4.6.0 :  
@@ -59,7 +59,7 @@ Depuis darktable 4.6.0 :
 ## Les grandes nouveautés
 
 - La documentation est maintenant complète pour darktable 4.6 Elle inclut les traductions en
-  Ukrainien, Polonais et Néerlandais.
+  ukrainien, polonais et néerlandais.
   Voir [https://www.darktable.org/resources](https://www.darktable.org/resources)
   pour plus d'informations.
 
@@ -71,8 +71,8 @@ Depuis darktable 4.6.0 :
 ## Autres changements
 
 - La recherche d'images dans la boîte de dialogue d'importation est désormais effectuée
-  de manière asynchrone. Cela signifie qu'une longue analyse (due à l'utilisation du mode
-  récursif dans un répertoire contenant un grand nombre de sous-répertoires et de fichiers par esemple),
+  de manière asynchrone. Cela signifie qu'une longue analyse (dûe à l'utilisation du mode
+  récursif dans un répertoire contenant un grand nombre de sous-répertoires et de fichiers par exemple),
   peut être interrompue en sélectionnant un autre endroit ou répertoire, ou en décochant le mode récursif.
 
 ## Correction de bogues
@@ -91,7 +91,7 @@ Depuis darktable 4.6.0 :
 - Correction d'un éventuel problème d'affichage des lignes de guidage dans le module
   Rotation et Perspective
 
-- Correction de la non persitence du niveau de zoom dans la vue sélection lorsque l'on passe
+- Correction de la non persistence du niveau de zoom dans la vue sélection lorsque l'on passe
   d'une image à l'autre
 
 - Correction des plantages liés au masque de détails lorsque la mémoire du GPU
@@ -109,8 +109,8 @@ Depuis darktable 4.6.0 :
   lors du calcul de la taille de la mémoire tampon interne. Cela pouvait provoquer un débordement
   de la mémoire tampon et éventuellement faire planter darktable.
 
-- Évitez les sous-dépassements lors de l'interpolation dans les modules Correction des objectifs,
-  Rotation et Perspective, Retouche ou Liquéfer.
+- Éviter les sous-dépassements (undershoots) lors de l'interpolation dans les modules Correction des objectifs,
+  Rotation et Perspective, Retouche ou Liquéfier.
 
 - Inclusion de correction LibRaw pour éliminer les artefacts
   lors du décodage des fichiers Canon CR3 à hauts ISO.
@@ -189,7 +189,7 @@ n/a
 
 ### Optionnelle(s)
 
-Augmenter libavif to 0.9.3
+Augmenter libavif à 0.9.3
 
 ## Changements RawSpeed
 
@@ -245,7 +245,7 @@ n/a
 - Leica X-U (Typ 113) (dng)
 - Leica X1 (dng)
 - Nikon Coolpix A1000 (12bit-non-compressé)
-- Nikon Z f (14bit-compresseé)
+- Nikon Z f (14bit-compressé)
 - OM System TG-7
 - Panasonic DC-TZ200D (3:2)
 - Panasonic DC-TZ202D (3:2)
@@ -327,23 +327,23 @@ La prise en charge des appareils suivants est suspendue car aucun échantillon n
 
 ## Traductions
 
-Ajout du support pour l'aide en ligne en Néerlandais qui est maintenant complète.
+Ajout du support pour l'aide en ligne en néerlandais qui est maintenant complète.
 
-- Albanian
-- Brazilian Portuguese
-- Chinese (Simplified)
-- Chinese (Traditional)
-- Czech
-- Dutch
-- European Spanish
-- Finnish
-- French
-- German
-- Hungarian
-- Italian
-- Japanese
-- Polish
-- Russian
-- Slovenian
-- Turkish
-- Ukrainian
+  Albanais
+- Portugais (Brésilien)
+- Chinois (Simplifié)
+- Chinois (Traditionel)
+- Tchèque
+- Néerlandais
+- Espagnol Européen
+- Finlandais
+- Français
+- Allemand
+- Hongrois
+- Italien
+- Japonais
+- Polonais
+- Russe
+- Slovénien
+- Turc
+- Ukrainien
