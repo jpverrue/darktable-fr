@@ -17,7 +17,7 @@ les combiner.
 
 Il utilise les "[les fichiers RAW](https://www.signatureedits.com/free-raw-photos/)" disponibles gratuitement.
 
-Bon visionage et bonne découverte.
+Bon visionnage et bonne découverte.
 
 {{< youtube Hfw-GWowH9M >}}
 

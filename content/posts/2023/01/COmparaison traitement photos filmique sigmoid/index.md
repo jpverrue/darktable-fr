@@ -19,7 +19,7 @@ Les sous-titres peuvent être en français.
 
 Vous pouvez retrouver sa liste de publication "[de A à Z](https://www.youtube.com/playlist?list=PLEZ74wS6EMTygiT4nHq2gKwU5ZZa9Edlg)".
 
-Bon visionage et bonne découverte.
+Bon visionnage et bonne découverte.
 
 {{< youtube qEGRRKbNOGE >}}
 

@@ -14,6 +14,6 @@ traduction des sous-titres française).
 
 Il répond à une demande de Michel Schenker pour traiter 3 photos.
 
-Bon visionage et bonne découverte.
+Bon visionnage et bonne découverte.
  
 {{< youtube YYyHaGRaoQg >}}

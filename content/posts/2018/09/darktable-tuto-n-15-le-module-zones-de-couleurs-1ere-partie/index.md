@@ -14,4 +14,4 @@ tags:
 
 {{< youtube cNsZ0j9zyPA >}}
 
-Bon visionage.
+Bon visionnage.

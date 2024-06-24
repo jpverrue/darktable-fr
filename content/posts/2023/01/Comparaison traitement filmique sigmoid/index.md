@@ -21,6 +21,6 @@ traduction des sous-titres française), et voilà le plan de cette vidéo :
 - 23:30 Comparaison entre les deux modules - quatrième exemple 
 - 29:12 Conclusion
 
-Bon visionage et bonne découverte.
+Bon visionnage et bonne découverte.
 
 {{< youtube XC_xv_LtAQo >}}
