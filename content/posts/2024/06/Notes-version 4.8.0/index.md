@@ -106,79 +106,89 @@ sur les changements individuels (le cas échéant).
 
 ## Amélioration des performances
 
-- Rewrote the clustering code in map view for dramatically faster
-  performance on large collections (mapping should now be usable with
-  more than one million geotagged images selected).
+- Réécriture du code de regroupement dans l'affichage des cartes afin
+  d'accélérer considérablement les performances sur les grandes collections
+  (la cartographie devrait désormais être utilisable avec plus d'un million
+  d'images géolocalisées sélectionnées).
 
-## Other Changes
+## Autres changements
 
-- Changed the sort order of tags to a natural and case insensitive order.
+- Modification de l'ordre de tri des mots-clés. en un ordre naturel et
+  insensible à la casse.
 
-- Added Apple Keychain password storage backend for macOS devices.
+- Ajout d'un backend pour le stockage de mots de passe Apple Keychain pour
+  les appareils macOS.
 
-- Collect module sorting has been integrated into the module's header
-  instead of a preference. All collections can now be sorted easily by
-  a single click on the sort button.
+- Dans le module Collections, le tri a été intégré dans l'en-tête du
+  module au lieu d'une préférence. Toutes les collections peuvent désormais
+  être triées facilement par un simple clic sur le bouton de tri.
 
-- Removed "unrestricted" mode from darktable preferences resources
-  for safety. This setting has been proved to be unsafe in many
-  cases. It can still be enabled via the resource file if needed.
+- Suppression du mode Sans restriction dans les préférences de darktable
+  pour des raisons de sécurité. Il a été prouvé que ce paramètre n'était pas
+  sûr dans de nombreux cas. Il peut toujours être activé via le fichier de
+  ressources si nécessaire.
 
-- Added buttons next to the snapshots to allow restoring it as the new
-  history. Also the snapshots are now supporting drawn masks. It is
-  possible to visualize the difference between the main darkroom view
-  and a snapshot with different masking for example.
+- Ajout de boutons à côté des instantanés pour permettre de les restaurer
+  en tant que nouvel historique. Les instantanés prennent également en charge
+  les masques dessinés. Il est possible de visualiser la différence entre la
+  vue principale de la chambre noire et un instantané avec des masques
+  différents par exemple.
 
-- Using <kbd>Right-Click</kbd> on color label icons (bottom toolbar of
-  lighttable) it is possible to add a description to color
-  labels. This is a handy way of remembering the color label usage in
-  the workflow.
+- En utilisant <kbd>Clic droit</kbd> sur les icônes des étiquettes de couleur
+  (barre d'outils inférieure de la table lumineuse), il est possible d'ajouter
+  une description aux étiquettes de couleur. C'est un moyen pratique de se
+  souvenir de l'utilisation de l'étiquette de couleur dans le flux de travail.
+  
+- Suppression des options AI dans le module Calibration des couleurs en raison
+  de leur qualité médiocre.
+  
+- Il est désormais possible d'importer des images sur place dans un montage GVfs
+- avec l'environnement Gnome sous GNU/Linux.
 
-- Removed the AI options in color calibration module because of
-  mediocre quality.
+- Ajout d'un contour en pointillé pour la zone sélectionnée dans la vue
+  d'impression.
 
-- It is now possible to import images in-place in a GVfs mount on
-  GNU/Linux.
+- Ajout de quelques champs EXIF supplémentaires dans le module d'information sur
+  l'image : balance des blancs, programme d'exposition, flash et mode de mesure.
+  Ces champs sont remplis automatiquement pour les nouvelles importations. Pour
+  les photos existantes, veuillez effectuer une "actualisation EXIF" (module Action
+  sur la sélection, onglet méta-données), sur les images sélectionnées.
+  
+- Ajout d'un backend pour le stockage des mots de passe du gestionnaire
+  d'identifiants Windows.
 
-- Added a dashed outline of the currently selected area in the print view.
-
-- Added a few more EXIF fields to the image information module: white
-  balance, exposure program, flash and metering mode.  These get
-  filled automatically for new imports. For existing photos please
-  perform a "refresh EXIF" on the selected images.
-
-- Added Windows credential manager password storage backend.
-
-- Added mask blending to the highlights reconstruction module.
-  The generated raster mask holds the amount of reconstructed data and
-  can be used with all algorithms.
+- Ajout de la fusion par masques au module de reconstruction des hautes lumières.
+  Le masque matriciel généré contient la quantité de données reconstruites et
+  peut être utilisé avec tous les algorithmes.
 
 - Color picker positions are defined by image coordinates instead of output.
   They will stay at the same location whatever distorting modules are used.
 
-- The history autosaving might be disabled because of slow drives, this is
-  now done per image instead of globally.
+- La sauvegarde automatique de l'historique peut être désactivée en raison de la
+  lenteur des disques ; cette opération est désormais effectuée image par image au lieu
+  d'être globale.
 
-- Added support for DNG files requiring the CameraCalibration tags for
-  correct white balancing (for example, some Google Pixel cameras).
-  Requires re-reading EXIF metadata.
+- Ajout de la prise en charge des fichiers DNG nécessitant les balises d'étalonnage de
+  l'appareil photo pour une balance des blancs correcte (par exemple, certains appareils
+  Google Pixel). Nécessite la relecture des métadonnées EXIF.
 
-- Improved efficiency of the quick access panel by allowing modules to
-  be reset and presets to be applied without opening the full module.
-  Added more controls by default to further reduce the need to leave
-  the panel while editing.
+- Amélioration de l'efficacité du panneau d'accès rapide en permettant de réinitialiser
+  les modules et d'appliquer les préréglages sans ouvrir le module complet.
+  Ajout d'un plus grand nombre de contrôles par défaut afin de réduire
+  davantage la nécessité de quitter le panneau pendant l'édition.
 
-- Added more collection types and filters for flash, white balance,
-  exposure program, metering mode and image grouping.
+- Ajout de nouveaux types de collection et de filtres pour le flash,
+  la balance des blancs, le programme d'exposition, le mode de mesure
+  et le regroupement d'images.
 
-  Removed the old image grouping collection type and filter which gave
-  confusing results.
+- Suppression de l'ancien type de regroupement d'images dans les collections
+  et du filtre qui donnaient des résultats confus.
 
-- Added support for CMYK profiled histogram.
+- Ajout du support pour le profil dans l'histograme.
 
-- The map view can now be scrolled with the arrow keys
-  (left/right/up/down) in small steps and in combination with
-  <kbd>Ctrl</kbd> in bigger steps.
+- La carte peut désormais être parcourue par petites étapes à l'aide
+  des touches fléchées (gauche/droite/haut/bas) et, en combinaison
+  avec <kbd>Ctrl</kbd>, par plus grandes étapes.
 
 ## Bug Fixes
 
