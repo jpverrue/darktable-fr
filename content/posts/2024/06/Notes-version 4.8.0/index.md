@@ -190,116 +190,136 @@ sur les changements individuels (le cas échéant).
   des touches fléchées (gauche/droite/haut/bas) et, en combinaison
   avec <kbd>Ctrl</kbd>, par plus grandes étapes.
 
-## Bug Fixes
+## Correction de bogues
 
-- Fixed copying of multiple instances to ensure the proper order is applied
-  when pasting to a new image.
+- Correction de la copie de plusieurs instances afin de garantir que
+  l'ordre correct est appliqué lors du collage dans une nouvelle image.
 
-- Fixed raw chromatic aberration on Clang based systems.
+- Correction du module Aberration chromatique raw sur les systèmes basés sur Clang.
 
-- Fixed backthumb crawler for deleted history. We make sure that the
-  crawler is aware of a deleted history and so will regenerate the
-  thumbs as expected.
+- Correction de l'outil de recherche des miniatures en cas d'historique
+  supprimé. Nous nous assurons que le crawler est conscient de l'existence
+  d'un historique supprimé et qu'il régénère les miniatures comme prévu.
 
-- Fixed drawn masks visualizing in darkroom after pixelpipe module have
-  changed. The drawn masks will now be properly adjusted if there is
-  new distortion on the pipe for example. This was not the case until
-  one was editing the mask.
 
-- Fixed memleak while importing AVIF images.
+- Correction de la visualisation des masques dessinés dans la chambre
+  noire dès que le pixelpipe a été modifié. Les masques dessinés
+  seront maintenant correctement ajustés s'il y a une nouvelle distorsion
+  sur le pipe par exemple. Ce n'était pas le cas jusqu'à ce que l'on édite
+  le masque.
+  
+- Correction des fuites de mémoire lors de l'importation d'images AVIF.
 
-- Fixed mask blending for sRAW images while in IOP_CS_RAW colorspace.
+- Correction du mélange des masques pour les images sRAW dans l'espace
+  colorimétrique IOP_CS_RAW.
 
-- Fixed OpenCL device locking for modules calling dt_dev_pixelpipe_process().
+- Correction du verrouillage des périphériques OpenCL pour les modules
+  appelant dt_dev_pixelpipe_process().
+  
+- Correction de l'interface utilisateur qui ne répondait plus en raison
+  d'un historique très important.
 
-- Fixed the UI becoming unresponsive due to very large history.
+- Correction des calculs de l'espace colorimétrique UCS afin d'éviter
+  les erreurs div-by-zero et out-of-gamut.
 
-- Fixed UCS colorspace maths avoiding div-by-zero and out-of-gamut errors.
+- Correction d'un certain nombre de problèmes liés à la fusion de
+  filtres guidés et aux distorsions des masques internes.
 
-- Fixed a number of issues with guided filter blending and internal mask
-  distortions.
+- Correction de quelques problèmes liés au module de recadrage et
+  aux dimensions de sortie/exportation.
 
-- Fixed some issues related to cropping module and output/export
-  dimensions.
+- Correction du traitement de l'exportation lorsque la haute qualité
+  est désactivée et que l'agrandissement est activé.
 
-- Fixed export processing when high quality is disabled and upscale is
-  set.
+- Correction du montage de l'appareil photo lorsque GPhoto2 signale
+  en interne un seul appareil photo connecté plusieurs fois.
 
-- Fixed camera mounting when GPhoto2 internally reports a single
-  attached camera multiple times.
+- Correction du problème empêchant l'exportation vers une version
+  récente de Piwigo.
 
-- Fixed the issue preventing export to recent Piwigo version.
-
-- Fixed many stability issues for better overall robustness.
+- Correction de nombreux problèmes de stabilité pour une meilleure
+  robustesse générale.
 
 ## Lua
 
+n/a
+
 ### API Version
 
-- API version is now 9.3.0
+- La version de l'API est maintenant la 9.3.0
 
-### Bug Fixes
+### Correction de bogues
+
+n/a
 
 ### Add action support for Lua
 
-### Other Lua changes
+n/a
 
-- Upgraded internal Lua to 5.4.6
+### Autres changements Lua
 
-- Added duplicate_image_with_history function to darktable.database
+- Mise à jour du Lua interne vers la version 5.4.6.
 
-- button widget - added halign member to horizontally position the label
+- Ajout de la fonction duplicate_image_with_history à darktable.database.
 
-- button widget - added image member to use an image as the button label
+- Widget bouton - ajout d'un membre halign pour positionner horizontalement
+  l'étiquette.
 
-- button widget - added image_align to horizontally position the image
+- Widget bouton - ajout d'un membre image pour utiliser une image comme libellé du bouton.
 
-- box widget - added expand member to control cells being expanded to fill the with of the box
+- Widget bouton - ajout de image_align pour positionner horizontalement l'image.
 
-- box widget - added fill member to control if the widgets fill the cell
+- Widget box - ajout d'un membre expand pour contrôler les cellules qui se
+  développent pour remplir l'intérieur de la boîte.
 
-- box widget - added padding member to control padding size of the cells
+- Widget box - ajout d'un membre fill pour contrôler si les widgets remplissent la cellule.
 
-- added active_preset member to darktable.gui.libs to get the lib's active preset name
+- Widget box - ajout d'un membre padding pour contrôler la taille du padding des cellules.
+
+- Ajout d'un membre active_preset à darktable.gui.libs pour obtenir le nom du preset
+  actif de la librairie.
 
 ## Notes
 
-- When exporting to AVIF, EXR, JPEG XL, or XCF, selecting specific
-  metadata (e.g. geo-tag or creator) is not currently possible. For
-  AVIF, EXR, JPEG XL, and XCF formats, darktable will not include any
-  metadata fields unless the user selects all of the checkboxes in the
-  export module's preference options.
+- Lors de l'exportation vers les formats AVIF, EXR, JPEG XL ou XCF, la
+  sélection de métadonnées spécifiques (par exemple, géomarquage ou
+  créateur) n'est actuellement pas possible. Pour les formats AVIF,
+  EXR, JPEG XL et XCF, darktable n'inclura aucun champ de métadonnées
+  à moins que l'utilisateur ne sélectionne toutes les cases à cocher
+  dans les options de Préférence du module d'exportation.
 
-- Release 4.8 drops support for macOS versions older than 13.5.
+- La version 4.8 ne prend plus en charge les versions de macOS antérieures
+  à 13.5.
 
-## Changed Dependencies
+## Changement de dépendances
 
-### Mandatory
+### Obligatoires
 
-- Minimum libpng version 1.5.x is now required
-- Bump Exiv2 requirement to 0.27.2
-- Minimum pugixml version 1.5 is now required
-- Minimum libcurl version 7.56 is now required
+- La version minimale de libpng 1.5.x est désormais requise.
+- La version 0.27.2 d'Exiv2 est désormais requise.
+- La version minimale de pugixml 1.5.x est désormais requise.
+- La version minimale de libcurl 1.5.x est désormais requise.
 
-### Optional
+### Optionnelle(s)
 
 - n/a
 
-## RawSpeed changes
+## Changements RawSpeed
 
-- Fujifilm X-Trans 4 based and newer cameras now use the vendor supplied crop
+- Les appareils Fujifilm équipés du capteur X-Trans 4 et les appareils
+  plus récents utilisent désormais le recadrage fourni par le fournisseur.
 
-## Camera support, compared to 4.6
+## Supports d'appareils, comparés à la version 4.6
 
-### Base Support
+### Support de base
 
-- Canon EOS R100 (requires LibRaw 202403 and later)
-- Canon EOS R50 (requires LibRaw 202403 and later)
-- Canon EOS R6 Mark II (requires LibRaw 202403 and later)
-- Canon EOS R8 (requires LibRaw 202403 and later)
-- Canon EOS Ra (requires LibRaw 202403 and later)
+- Canon EOS R100 (Nécessite LibRaw 202403 ou une version ultérieure)
+- Canon EOS R50 (Nécessite LibRaw 202403 ou une version ultérieure)
+- Canon EOS R6 Mark II (Nécessite LibRaw 202403 ou une version ultérieure)
+- Canon EOS R8 (Nécessite LibRaw 202403 ou une version ultérieure)
+- Canon EOS Ra (Nécessite LibRaw 202403 ou une version ultérieure)
 - Fujifilm FinePix S9600fd
-- Fujifilm X100VI (compressed)
+- Fujifilm X100VI (compressé)
 - GoPro FUSION (DNG)
 - Leica SL3 (DNG)
 - OM System OM-1 Mark II
@@ -313,16 +333,16 @@ sur les changements individuels (le cas échéant).
 - Sony ILCE-9M3
 - Sony UMC-R10C
 
-### White Balance Presets
+### Préréglages de la balance des blancs
 
-- Canon EOS R6 Mark II (requires LibRaw 202403 and later)
+- Canon EOS R6 Mark II (Nécessite LibRaw 202403 ou une version ultérieure)
 - Fujifilm X-H2
 - OM System OM-1 Mark II
 - OM System OM-5
 
-### Noise Profiles
+### Profils de bruit
 
-- Canon EOS R6 Mark II (requires LibRaw 202403 and later)
+- Canon EOS R6 Mark II (Nécessite LibRaw 202403 ou une version ultérieure)
 - Fujifilm GFX 50R
 - OM System OM-1 Mark II
 - OM System OM-5
@@ -330,7 +350,7 @@ sur les changements individuels (le cas échéant).
 - Sony ILCE-9M3
 - Sony ZV-1
 
-### Missing Compression Mode Support
+### Absence de prise en charge du mode de compression
 
 - Apple ProRAW DNGs
 - CinemaDNG lossless (Blackmagic, some DJI, etc.) and lossy (Blackmagic)
@@ -340,9 +360,10 @@ sur les changements individuels (le cas échéant).
 - OM System 14-bit high resolution ORFs
 - Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
-### Suspended Support
+### Support Suspendu
 
-Support for the following cameras is suspended because no samples are available on https://raw.pixls.us:
+La prise en charge des appareils suivants est suspendue car aucun
+échantillon n'est disponible sur raw.pixls.us :
 
 - Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
 - Fujifilm IS-1
@@ -356,22 +377,22 @@ Support for the following cameras is suspended because no samples are available 
 - Sinar Hy6/ Sinarback eXact
 - ST Micro STV680
 
-## Translations
+## Traductions
 
-- Czech
-- German
-- European Spanish
-- Finnish
-- French
-- Hungarian
-- Italian
-- Japanese
-- Dutch
-- Polish
-- Brazilian Portuguese
-- Russian
-- Slovenian
-- Albanian
-- Ukrainian
-- Chinese (Simplified)
-- Chinese (Traditional)
+- Tchèque
+- Allemand
+- Espagnol Européen
+- Finlandais
+- Français
+- Hongrois
+- Italien
+- Japonais
+- Néerlandais
+- Polonais
+- Portuguais Brésilien 
+- Russz
+- Slovène
+- Albanais
+- Ukrainien
+- Chinois (Simplifié)
+- Chinois (Traditionel)
