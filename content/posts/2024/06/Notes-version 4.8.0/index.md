@@ -148,7 +148,7 @@ sur les changements individuels (le cas échéant).
 - Ajout d'un contour en pointillé pour la zone sélectionnée dans la vue
   d'impression.
 
-- Ajout de quelques champs EXIF supplémentaires dans le module d'information sur
+- Ajout de quelques champs EXIF supplémentaires dans le module Informations de
   l'image : balance des blancs, programme d'exposition, flash et mode de mesure.
   Ces champs sont remplis automatiquement pour les nouvelles importations. Pour
   les photos existantes, veuillez effectuer une "actualisation EXIF" (module Action
@@ -161,8 +161,9 @@ sur les changements individuels (le cas échéant).
   Le masque matriciel généré contient la quantité de données reconstruites et
   peut être utilisé avec tous les algorithmes.
 
-- Color picker positions are defined by image coordinates instead of output.
-  They will stay at the same location whatever distorting modules are used.
+- Les positions du sélecteur de couleurs sont définies par les coordonnées de
+  l'image au lieu de celles de sortie. Il restera au même endroit quels que
+  soient les modules de distorsion utilisés.
 
 - La sauvegarde automatique de l'historique peut être désactivée en raison de la
   lenteur des disques ; cette opération est désormais effectuée image par image au lieu
