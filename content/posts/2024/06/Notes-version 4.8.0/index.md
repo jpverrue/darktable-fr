@@ -46,8 +46,9 @@ Lors de la mise à jour à partir de la série stable 4.6.x, gardez à l'esprit 
 vos modifications seront préservées pendant ce processus, mais que la nouvelle
 bibliothèque et la configuration ne seront plus utilisables avec la version 4.6.x.
 
-#### Note importante : Pour s’assurer que darktable supporte le format de fichier
-RAW de votre appareil photo, veuillez lire [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri).
+#### Note importante :
+Pour s’assurer que darktable supporte le format de fichier RAW de votre appareil
+photo, veuillez lire [ce post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri).
 Vous y apprendrez comment contribuer à la constitution de l’ensemble d’échantillons
 d’images (sous licence CC0) pour votre boîtier.
 
@@ -60,7 +61,7 @@ Depuis darktable 4.6 :
 
 _Veuillez noter que la documentation de darktable n'est pas encore complète
 pour la version 4.8 et que les contributions sont très appréciées.
-Veuillez consulter la [documentation du projet] (https://github.com/darktable-org/dtdocs#contributing)
+Veuillez consulter la [documentation du projet](https://github.com/darktable-org/dtdocs#contributing)
 pour plus d'informations sur la manière de contribuer._
 
 
@@ -114,7 +115,7 @@ sur les changements individuels (le cas échéant).
 ## Autres changements
 
 - Modification de l'ordre de tri des mots-clés. en un ordre naturel et
-  insensible à la casse.
+  insensible à la casse des caractères.
 
 - Ajout d'un backend pour le stockage de mots de passe Apple Keychain pour
   les appareils macOS.
@@ -143,7 +144,7 @@ sur les changements individuels (le cas échéant).
   de leur qualité médiocre.
   
 - Il est désormais possible d'importer des images sur place dans un montage GVfs
-- avec l'environnement Gnome sous GNU/Linux.
+  avec l'environnement Gnome sous GNU/Linux.
 
 - Ajout d'un contour en pointillé pour la zone sélectionnée dans la vue
   d'impression.
@@ -189,7 +190,7 @@ sur les changements individuels (le cas échéant).
 
 - La carte peut désormais être parcourue par petites étapes à l'aide
   des touches fléchées (gauche/droite/haut/bas) et, en combinaison
-  avec <kbd>Ctrl</kbd>, par plus grandes étapes.
+  avec <kbd>Ctrl</kbd>, par un pas plus important.
 
 ## Correction de bogues
 
@@ -211,7 +212,7 @@ sur les changements individuels (le cas échéant).
   
 - Correction des fuites de mémoire lors de l'importation d'images AVIF.
 
-- Correction du mélange des masques pour les images sRAW dans l'espace
+- Correction de la fusion des masques pour les images sRAW dans l'espace
   colorimétrique IOP_CS_RAW.
 
 - Correction du verrouillage des périphériques OpenCL pour les modules
@@ -308,7 +309,7 @@ n/a
 ## Changements RawSpeed
 
 - Les appareils Fujifilm équipés du capteur X-Trans 4 et les appareils
-  plus récents utilisent désormais le recadrage fourni par le fournisseur.
+  plus récents utilisent désormais le recadrage fourni par le boîtier.
 
 ## Supports d'appareils, comparés à la version 4.6
 
@@ -361,7 +362,7 @@ n/a
 - OM System 14-bit high resolution ORFs
 - Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
-### Support Suspendu
+### Fin de support
 
 La prise en charge des appareils suivants est suspendue car aucun
 échantillon n'est disponible sur raw.pixls.us :
