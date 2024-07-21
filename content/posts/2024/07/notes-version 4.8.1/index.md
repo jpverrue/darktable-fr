@@ -26,7 +26,7 @@ ___
 
 Nous sommes fiers d'annoncer la nouvelle version de darktable, 4.8.1 !
 
-La version github est disponible ici : [https://github.com/darktable-org/darktable/releases/tag/release-4.8.0](https://github.com/darktable-org/darktable/releases/tag/release-4.8.0).
+La version github est disponible ici : [https://github.com/darktable-org/darktable/releases/tag/release-4.8.1](https://github.com/darktable-org/darktable/releases/tag/release-4.8.1).
 
 Comme toujours, n'utilisez pas le fichier tarball autogénéré fourni par
 github, mais uniquement notre fichier tar.xz. Les sommes de contrôle sont :
