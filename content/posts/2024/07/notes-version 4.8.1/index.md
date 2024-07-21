@@ -91,7 +91,7 @@ Depuis darktable 4.8.0 :
 - Corrigé : impossibilité de charger des fichiers JPEG2000
   valides avec un espace colorimétrique non spécifié.
 - Corrigé : saut d'image si la collection est vide.
-
+### Texte anglais d'origine
 - Fixed export without high quality sampling but with up-scaling activated.
 - Fixed support for all vectorscope modes when using CMYK profiles as for softproofing.
 - Fixed empty lighttable when importing from command-line. Now darktable opens lighttable on first filmroll when importing from command-line.
