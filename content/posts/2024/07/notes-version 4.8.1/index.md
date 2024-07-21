@@ -96,8 +96,9 @@ n/a
 ## Notes
 
 
-- Exporting with up-scaling and whithout using the high quality option will result in corrupt images.
-
+- L'exportation avec agrandissement et sans utiliser l'option de haute
+  qualité entraînera des images corrompues.
+  
 - Lors de l'exportation vers les formats AVIF, EXR, JPEG XL ou XCF, la
   sélection de métadonnées spécifiques (par exemple, géomarquage ou
   créateur) n'est actuellement pas possible. Pour les formats AVIF,
@@ -105,9 +106,14 @@ n/a
   à moins que l'utilisateur ne sélectionne toutes les cases à cocher
   dans les options de Préférence du module d'exportation.
 
-- In order to support the correct display of numbers in darktable, the minimum supported Gtk version has had to be increased to 3.24.15. For people who need to build darktable with an older version, this can be achieved by removing line 241 of the darktable.css file on your system. See https://github.com/darktable-org/darktable/issues/13166.
+- Afin de supporter l'affichage correct des nombres dans darktable,
+  la version minimale supportée de Gtk a dû être augmentée à 3.24.15.
+  Pour les personnes qui ont besoin de construire darktable avec une
+  version plus ancienne, cela peut être réalisé en supprimant la ligne 241
+  du fichier darktable.css sur votre système.
+  Voir https://github.com/darktable-org/darktable/issues/13166.
   
--  La version 4.8 ne prend plus en charge les versions de macOS antérieures
+- La version 4.8 ne prend plus en charge les versions de macOS antérieures
   à 13.5.
 
 ## Changement de dépendances
@@ -132,86 +138,86 @@ n/a
 
 ### Support de base
 
-Canon EOS R100 (requires LibRaw 202403 and later)
-Canon EOS R50 (requires LibRaw 202403 and later)
-Canon EOS R6 Mark II (requires LibRaw 202403 and later)
-Canon EOS R8 (requires LibRaw 202403 and later)
-Canon EOS Ra (requires LibRaw 202403 and later)
-Fujifilm FinePix S9600fd
-Fujifilm X100VI (compressed)
-GoPro FUSION (DNG)
-Leica SL3 (DNG)
-OM System OM-1 Mark II
-Panasonic DC-TZ95D (4:3)
-Panasonic DMC-FX150 (4:3, 3:2, 16:9)
-Panasonic DMC-FZ28 (3:2)
-Phase One P25+
-Phase One P45+
-Ricoh GR III HDF (DNG)
-Ricoh GR IIIx HDF (DNG)
-Sony ILCE-9M3
-Sony UMC-R10C
+- Canon EOS R100 (Nécessite LibRaw 202403 ou une version ultérieure)
+- Canon EOS R50 (Nécessite LibRaw 202403 ou une version ultérieure)
+- Canon EOS R6 Mark II (Nécessite LibRaw 202403 ou une version ultérieure)
+- Canon EOS R8 (Nécessite LibRaw 202403 ou une version ultérieure)
+- Canon EOS Ra (Nécessite LibRaw 202403 ou une version ultérieure)
+- Fujifilm FinePix S9600fd
+- Fujifilm X100VI (compressé)
+- GoPro FUSION (DNG)
+- Leica SL3 (DNG)
+- OM System OM-1 Mark II
+- Panasonic DC-TZ95D (4:3)
+- Panasonic DMC-FX150 (4:3, 3:2, 16:9)
+- Panasonic DMC-FZ28 (3:2)
+- Phase One P25+
+- Phase One P45+
+- Ricoh GR III HDF (DNG)
+- Ricoh GR IIIx HDF (DNG)
+- Sony ILCE-9M3
+- Sony UMC-R10C
 
 ### Préréglages de la balance des blancs
 
-Canon EOS R6 Mark II (requires LibRaw 202403 and later)
-Fujifilm X-H2
-OM System OM-1 Mark II
-OM System OM-5
+- Canon EOS R6 Mark II (Nécessite LibRaw 202403 ou une version ultérieure)
+- Fujifilm X-H2
+- OM System OM-1 Mark II
+- OM System OM-5
 
 ### Profils de bruit
 
-Canon EOS R6 Mark II (requires LibRaw 202403 and later)
-Fujifilm GFX 50R
-OM System OM-1 Mark II
-OM System OM-5
-Phase One IQ180
-Sony ILCE-9M3
-Sony ZV-1
+- Canon EOS R6 Mark II (Nécessite LibRaw 202403 ou une version ultérieure)
+- Fujifilm GFX 50R
+- OM System OM-1 Mark II
+- OM System OM-5
+- Phase One IQ180
+- Sony ILCE-9M3
+- Sony ZV-1
 
 ### Absence de prise en charge du mode de compression
 
-Apple ProRAW DNGs
-CinemaDNG lossless (Blackmagic, some DJI, etc.) and lossy (Blackmagic)
-DNG 1.7 using JPEG XL (Adobe enhanced, Samsung Expert RAW)
-Fujifilm lossy RAFs
-Nikon high efficiency NEFs
-OM System 14-bit high resolution ORFs
-Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
+- Apple ProRAW DNGs
+- CinemaDNG lossless (Blackmagic, some DJI, etc.) and lossy (Blackmagic)
+- DNG 1.7 using JPEG XL (Adobe enhanced, Samsung Expert RAW)
+- Fujifilm lossy RAFs
+- Nikon high efficiency NEFs
+- OM System 14-bit high resolution ORFs
+- Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
 ### Fin de support
 
 La prise en charge des appareils suivants est suspendue car aucun
 échantillon n'est disponible sur raw.pixls.us :
 
-Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
-Fujifilm IS-1
-Kodak EasyShare Z980
-Leaf Aptus-II 5(LI300059)/Mamiya 645 AFD
-Leaf Credo 60
-Leaf Credo 80
-Minolta DiMAGE 5
-Olympus SP320
-Phase One IQ250
-Sinar Hy6/ Sinarback eXact
-ST Micro STV680
+- Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
+- Fujifilm IS-1
+- Kodak EasyShare Z980
+- Leaf Aptus-II 5(LI300059)/Mamiya 645 AFD
+- Leaf Credo 60
+- Leaf Credo 80
+- Minolta DiMAGE 5
+- Olympus SP320
+- Phase One IQ250
+- Sinar Hy6/ Sinarback eXact
+- ST Micro STV680
 
 ## Traductions
 
-Czech
-German
-European Spanish
-Finnish
-French
-Hungarian
-Italian
-Japanese
-Dutch
-Polish
-Brazilian Portuguese
-Russian
-Slovenian
-Albanian
-Ukrainian
-Chinese (Simplified)
-Chinese (Traditional)
+- Tchèque
+- Allemand
+- Espagnol Européen
+- Finlandais
+- Français
+- Hongrois
+- Italien
+- Japonais
+- Néerlandais
+- Polonais
+- Portuguais Brésilien 
+- Russe
+- Slovène
+- Albanais
+- Ukrainien
+- Chinois (Simplifié)
+- Chinois (Traditionel)
