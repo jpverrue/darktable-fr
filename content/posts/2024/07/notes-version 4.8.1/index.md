@@ -100,7 +100,7 @@ Depuis darktable 4.8.0 :
 - Corrigé : impossibilité de charger des fichiers JPEG2000
   valides avec un espace colorimétrique non spécifié.
 
-- Corrigé : Lors du rejet d'images, si la collection devient vide,
+- Corrigé : lors du rejet d'images, si la collection devient vide,
   il peut se produire un saut vers une autre image.
 
 ## Lua
