@@ -67,42 +67,40 @@ Depuis darktable 4.8.0 :
 
 ## Correction de bogues
 
-- Corrigé : exportation sans échantillonnage de haute qualité,
-  mais avec mise à l'échelle activée.
+- exportation sans échantillonnage de haute qualité, mais avec
+  Autoriser l'agrandissement activé.
+
 - Corrigé : prise en charge de tous les modes de vectorscope
   lors de l'utilisation de profils CMJN pour l'épreuvage à l'écran.
-- Corrigé : table lumineuse vide lors de l'importation à partir
-  de la ligne de commande. Désormais, darktable ouvre la table lumineuse
-  lors du premier déroulé de film lors de l'importation à partir
-  de la ligne de commande.
+
+- Corrigé : table lumineuse vide lors de l'importation à partir de
+  la ligne de commande. Désormais, darktable ouvre la table lumineuse
+  sur la première pellicule lors de l'importation à partir de la ligne
+  de commande.
+  
 - Corrigé : redimensionnement de la zone de pipette des couleurs
   à l'aide des coins lorsque l'image est fortement déformée.
+
 - Corrigé : recadrage erroné dans le module de Rotation et
   perspective lors d'une rotation importante et que Recadrage
   automatique réglé sur Format d'origine est activé
+
 - Corrigé : possible changement de couleur (rose) lors de
   l'utilisation du module Retouche avec le module de Correction
   des objectifs réglé sur  Métadonnées intégrées.
+
 - Corrigé : affichage de l'histogramme lors de l'utilisation
   d'une zone pipette des couleurs sur une image tournée ou retournée.
+
 - Corrigé : crash lors de l'utilisation de l'option -d imageio.
+
 - Corrigé : exportations d'images volumineuses dues à un bogue
   dans le module finalscale.
+
 - Corrigé : impossibilité de charger des fichiers JPEG2000
   valides avec un espace colorimétrique non spécifié.
+
 - Corrigé : saut d'image si la collection est vide.
-### Texte anglais d'origine
-- Fixed export without high quality sampling but with up-scaling activated.
-- Fixed support for all vectorscope modes when using CMYK profiles as for softproofing.
-- Fixed empty lighttable when importing from command-line. Now darktable opens lighttable on first filmroll when importing from command-line.
-- Fixed color picker area resizing using corners when heavy distorting is applied into image.
-- Fixed wrong cropping in rotate and perspective module with strong rotation and automatic cropping set to "original format".
-- Fixed possible color shift (pink) when using the Retouch module with the embedded lens correction module.
-- Fixed histogram display when using a color picker area on a rotated or flipped image.
-- Fixed a crash while using the -d imageio option.
-- Fixed large image exports due to a bug in finalscale module.
-- Fixed failure to load valid JPEG2000 files with unspecified color space.
-- Fixed image jump if collection is empty.
 
 ## Lua
 
