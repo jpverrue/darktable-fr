@@ -70,7 +70,7 @@ Depuis darktable 4.8.0 :
 - Corrigé : exportation sans échantillonnage de haute qualité, mais avec
   Autoriser l'agrandissement activé.
 
-- Corrigé : prise en charge de tous les modes de vectorscope
+- Corrigé : prise en charge de tous les modes du vectorscope
   lors de l'utilisation de profils CMJN pour l'épreuvage à l'écran.
 
 - Corrigé : table lumineuse vide lors de l'importation à partir de
@@ -81,18 +81,18 @@ Depuis darktable 4.8.0 :
 - Corrigé : redimensionnement de la zone de pipette des couleurs
   à l'aide des coins lorsque l'image est fortement déformée.
 
-- Corrigé : recadrage erroné dans le module de Rotation et
+- Corrigé : recadrage erroné dans le module Rotation et
   perspective lors d'une rotation importante et que Recadrage
-  automatique réglé sur Format d'origine est activé
+  automatique est activé et réglé sur Format d'origine.
 
 - Corrigé : possible changement de couleur (rose) lors de
-  l'utilisation du module Retouche avec le module de Correction
-  des objectifs réglé sur  Métadonnées intégrées.
+  l'utilisation du module Retouche avec le module Correction
+  des objectifs réglé sur Métadonnées intégrées.
 
 - Corrigé : affichage de l'histogramme lors de l'utilisation
   d'une zone pipette des couleurs sur une image tournée ou retournée.
 
-- Corrigé : crash lors de l'utilisation de l'option -d imageio.
+- Corrigé : crash lors de l'utilisation de l'option `-d imageio`.
 
 - Corrigé : exportations d'images volumineuses dues à un bogue
   dans le module finalscale.
