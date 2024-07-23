@@ -67,7 +67,7 @@ Depuis darktable 4.8.0 :
 
 ## Correction de bogues
 
-- exportation sans échantillonnage de haute qualité, mais avec
+- Corrigé : exportation sans échantillonnage de haute qualité, mais avec
   Autoriser l'agrandissement activé.
 
 - Corrigé : prise en charge de tous les modes de vectorscope
