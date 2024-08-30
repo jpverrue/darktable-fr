@@ -162,9 +162,9 @@ parfois même, leur création nécessite une intervention manuelle.
 
 - `data.db`
   | Utilisateur | Développement | Binaire |<br/>Fichier qui contient la seconde partie de la Base de Données
-  (BdD). Contient les mots-clés, les styles, les pré-réglages, la géolocalisation. Fichier au format sqlite.
-  L’emplacement de ce fichier peut être modifié avec l’option de lancement `–library`. L’utilisation de cette
-  option modifiera simultanément l’emplacement de `data.db` et de `library.db.`. Fichier au format sqlite.
+  (BdD). Contient les mots-clés, les styles, les pré-réglages, la géolocalisation. L’emplacement de ce fichier
+  peut être modifié avec l’option de lancement `–-library`. L’utilisation de cette option modifiera
+  simultanément l’emplacement de `data.db` et de `library.db.`. Fichier au format sqlite.
 
 - `data.db.lock`
   | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la seconde partie de la BdD.
@@ -173,7 +173,7 @@ parfois même, leur création nécessite une intervention manuelle.
   darktable avortera puisque celui-ci considérera que la BdD est déjà ouverte par un autre logiciel.
   Dans ce cas, sa suppression réglera le problème. Il contient le “Process Id” du processus qui a ouvert
   la BdD. Ce fichier suit le fichier data.db. Si l’emplacement de data.db a été modifié avec l’option
-  `–library`, l’emplacement du fichier de verrouillage le sera également.
+  `–-library`, l’emplacement du fichier de verrouillage le sera également.
 
 - `data.db-pre-<version>`
 - | Utilisateur | Développement | Binaire |<br/>L’installation d’une nouvelle version majeure de darktable
@@ -203,14 +203,14 @@ parfois même, leur création nécessite une intervention manuelle.
 
 - `library.db`
   Utilisateur | Développement | Binaire |<br/>Fichier qui contient la première partie de la BdD. Contient toutes
-  les données de développement. Fichier au format sqlite. L’emplacement de ce fichier peut être modifié avec
-  l’option de lancement `–library`. L’utilisation de cette option modifiera simultanément l’emplacement de
-  `data.db` et de `library.db`. Fichier au format sqlite.
+  les données de développement. L’emplacement de ce fichier peut être modifié avec l’option de lancement
+  `–-library`. L’utilisation de cette option modifiera simultanément l’emplacement de `data.db` et de
+  `library.db`. Fichier au format sqlite.
 
 - `library.db.lock`
   | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la première partie de la BdD. Voir
-  `data.db.lock` ci-dessus. Si l’emplacement de `library.db` a été modifié avec l’option `–library`, l’emplacement
-  du fichier de verrouillage le sera également.
+  `data.db.lock` ci-dessus. Si l’emplacement de `library.db` a été modifié avec l’option `–-library`,
+  l’emplacement du fichier de verrouillage le sera également.
 
 - `library.db-pre-<version>` | Utilisateur | Développement | Binaire |<br/>L’installation d’une nouvelle version
   majeure de darktable nécessite souvent une modification du schéma de la base de donnée rendant incompatible
@@ -230,18 +230,20 @@ parfois même, leur création nécessite une intervention manuelle.
 - `lua`
   Dossier utilisateur contenant les éventuels scripts additionnels, ceux que vous avez importés comme ceux que
   vous avez éventuellement créés. Les scripts sont écrits en langage Lua. Pour découvrir Lua, outre le site
-  lua.org, vous disposez d’un chapitre dans le manuel de darktable ainsi qu’un manuel de référence dédié sur
-  le site darktable.org. Le dossier `lua` n’est pas créé automatiquement lors de la configuration initiale
-  de darktable. « Le script manager » Le créera pour vous si vous importez les scripts proposés et packagés
-  par la communauté. Si vous avez besoin de ce dossier pour y déposer vos propres scripts, vous devez le créer.
+  [lua.org](https://lua.org/), vous disposez sur le site [darktable.org](https://www.darktable.org/resources/)
+  d’un chapitre dans le manuel de darktable ainsi que d'un manuel dédié . Le dossier `lua` n’est pas
+  créé automatiquement lors de la configuration initiale de darktable. « Le script manager » Le créera pour vous
+  si vous importez les scripts proposés et packagés par la communauté. Si vous avez besoin pour y déposer vos
+  propres scripts et qu'il n'a pas été créé par le script manager, vous devez le créer.
 
 - `luarc`
   | Utilisateur | Configuration | Texte |<br/>Fichier qui contient la liste des scripts Lua à charger lors
   du lancement de darktable.  « Le script manager » créera et modifiera ce fichier pour vous si vous importez
-  les scripts proposés et packagés par la communauté. Sinon pour intégrer vos propres scripts, il faudra le
-  modifier vous-même avec un éditeur de texte, en respectant bien la syntaxe du langage Lua. Pour créer des
-  scripts, voir des exemples dans le manuel de référence Lua disponible ainsi que le manuel général sur le site
-  darktable.org
+  les scripts proposés et packagés par la communauté. Sinon pour intégrer vos propres scripts, il faudra le créer
+  ou le modifier vous-même avec un éditeur de texte, en respectant bien la syntaxe du langage Lua. Pour créer des
+  scripts, voir des exemples dans le manuel de référence Lua disponible sur [lua.org](https://lua.org/) ainsi que
+  le dans le manuel de darktable et le manuel dédié aux scripts Lua sur le site
+  [darktable.org](https://www.darktable.org/resources/).
    
 - `presets.json`
   | Utilisateur | Configuration | Texte |<br/>Fichier contenant les profils de bruits calculés par l’utilisateur
@@ -276,7 +278,7 @@ parfois même, leur création nécessite une intervention manuelle.
     Ces fichiers sont suffixés avec l’extension “`.dtstyle`”.
 
 - `themes`
-  Dossier utilisateur contenant les fichiers éventuels de configuration personnalisés de l'aspect de l'interface
+  Dossier utilisateur contenant les éventuels fichiers de configuration personnalisés de l'aspect de l'interface
   de darktable. Ces fichiers sont au format Cascading Style Sheet (CSS) tel que décrit par le W3C. Cependant,
   toutes les fonctionnalités CSS ne sont pas prises en charge par l’interface graphique Gtk utilisée par darktable.
   Si vous avez besoin de ce dossier pour y déposer vos propres feuilles de styles, vous devez le créer.
@@ -307,11 +309,13 @@ au format sqlite sont :
 - `data.db` : qui contient tout le reste, les mots-clés, les styles, les pré-réglages, la géolocalisation.
 
 La scission en deux fichiers de la BdD a été faite pour pouvoir la régénérer à partir des fichiers XMP sans perdre
-les mots clés, les styles et les pré-réglages. Comme vous pouvez le constater, la plupart de ces fichiers
-contiennent des données qui vous sont propres. Et même, si la plupart d’entre eux peuvent être reconstitués
-facilement, il est certainement plus facile d'avoir une sauvegarde du tout. Donc sauvegarder le dossier complet
-n'est pas une mauvaise idée. D'autant plus que les fichiers qu'il contient ne représentent qu'un tout petit volume
-d'informations. L'essentiel en volume ce sont les deux fichiers de la BdD.
+les mots clés, les styles et les pré-réglages.
+
+Comme vous pouvez le constater, la plupart de ces fichiers contiennent des données qui vous sont propres.
+Et même, si la plupart d’entre eux peuvent être reconstitués facilement, il est certainement plus facile d'avoir
+une sauvegarde du tout. Donc sauvegarder le dossier complet n'est pas une mauvaise idée. D'autant plus que les
+fichiers qu'il contient ne représentent qu'un tout petit volume d'informations. L'essentiel en volume ce sont les
+deux fichiers de la BdD.
 
 À la lecture de ce qui précède, vous pouvez imaginer qu’une réinitialisation partielle ou complète de la
 configuration peut se faire en supprimant une partie ou la totalité des fichiers utilisateur. Attention cependant,
