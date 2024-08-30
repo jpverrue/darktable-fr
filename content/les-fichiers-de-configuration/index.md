@@ -120,7 +120,7 @@ ce [fil de discussion](https://forums.darktable.fr/showthread.php?tid=1972)
 
 - Dossier Système :
   `C:\Program Files\darktable\share\darktable\` par défaut. Cet emplacement peut être modifié avec l’option de
-  lancement `–datadir`.
+  lancement `–-datadir`.
 
 La variable `%LOCALAPPDATA%` correspond au chemin des fichiers de configuration des applications propres à chaque
 utilisateur. C'est-à-dire, en général, `C:\Users\<login de l'utilisateur>\AppData\Local\`.
