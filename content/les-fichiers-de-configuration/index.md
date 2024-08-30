@@ -18,7 +18,7 @@ parent = "documentation"
 
 Ce document décrit les fichiers et dossiers conformes à la version 4.2 de darktable. La précédente édition
 mentionnait la conformité avec la version 3.8. Il n'y a pas eu de modification des fichiers de
-configuration pour la version 4.0, donc pas d'édition intermédiaire.
+configuration pour les versions 4.0, 4.2, 4.4, 4.6, et 4.8, donc pas d'édition intermédiaire.
 
 Les nouveautés  de cette édition - ajouts ou suppressions - sont ==surlignées==. De plus les suppressions
 sont ~~barrées~~. Elles subsistent ensuite dans le texte avec mention de la version de suppression.
