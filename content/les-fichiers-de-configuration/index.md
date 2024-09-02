@@ -1,6 +1,6 @@
 +++
 title = "Les fichiers de configuration"
-date = "2023-01-08"
+date = "2024-09-02"
 reward = false
 postDate = false
 readingTime = false
@@ -10,32 +10,36 @@ parent = "documentation"
 +++
 
 > Ce document est également disponible en format PDF ici : 
-> * [https://darktable.fr/Fichiers-de-configuration-de-darktable-6.pdf](/Fichiers-de-configuration-de-darktable-6.pdf)
+> * [https://darktable.fr/Fichiers-de-configuration-de-darktable-6.pdf](/Fichiers-de-configuration-de-darktable-7.pdf)
 
 ---
 
 # Référence des fichiers de configuration et de fonctionnement de darktable
 
-Ce document décrit les fichiers et dossiers conformes à la version 4.2 de darktable. La précédente édition
-mentionnait la conformité avec la version 3.8. Il n'y a pas eu de modification des fichiers de
-configuration pour les versions 4.0, 4.2, 4.4, 4.6, et 4.8, donc pas d'édition intermédiaire.
+Ce document décrit les fichiers et dossiers conformes à la version 4.8 de darktable. 
 
-Les nouveautés  de cette édition - ajouts ou suppressions - sont ==surlignées==. De plus les suppressions
-sont ~~barrées~~. Elles subsistent ensuite dans le texte avec mention de la version de suppression.
+La précédente édition mentionnait la conformité avec la version 3.8. Il y a eu très peu de modifications
+des fichiers de configuration pour les versions parues entre la 3.8 et la 4.8. Il n'y a donc pas eu de
+parutions intermédiaires.
+
+Dans cette édition, les descriptions des fichiers obsolètes ont été supprimées, car suffisamment anciennes.
+
+
+## Préambule
 
 Indépendamment de vos propres fichiers d’images, darktable utilise un certain nombre de fichiers pour
 fonctionner : ces fichiers sont de plusieurs ordres.
 
-- On distinguera d’abord les fichiers qui sont propres à chaque utilisateur de darktable et ceux qui sont
-   communs à tous les utilisateurs. Ces derniers sont fournis systématiquement avec chaque nouvelle version
-   de darktable. Les modifications que vous feriez sur ces derniers seront donc perdues lors de chaque mise
-   à jour. Je les référencerai comme fichier <u>utilisateur</u> ou <u>système</u>.
+- On distinguera d’abord les fichiers qui sont propres à chaque utilisateur de darktable de ceux qui sont
+  communs à tous les utilisateurs. Ces derniers sont fournis systématiquement avec chaque nouvelle version
+  de darktable. Les modifications que vous feriez sur ces derniers seront donc perdues lors de chaque mise
+  à jour. Je les référencerai comme fichier <u>utilisateur</u> ou <u>système</u>.
 - On distinguera ensuite les fichiers de configuration qui régissent le fonctionnement du logiciel, des
   fichiers de traitement qui matérialisent toutes les modifications que vous faites sur vos photos. En effet,
   darktable ne modifie JAMAIS vos fichiers d’images. Toutes vos modifications sont enregistrées dans ces
   fichiers de traitement. Je les référencerai comme fichier de <u>configuration</u>, ou de <u>développement</u>.
-- On distinguera enfin les fichiers de type “texte” qui n’ont besoin que d’un éditeur de texte pour être consultés
-  ou modifiés, des fichiers de type “binaire” qui nécessitent des outils spécialisés pour être consultés ou
+- On distinguera enfin les fichiers de type “ texte ” qui n’ont besoin que d’un éditeur de texte pour être consultés
+  ou modifiés, des fichiers de type “ binaire ” qui nécessitent des outils spécialisés pour être consultés ou
   modifiés. Je les référencerai également comme <u>texte</u> ou <u>binaire</u>.
 
 ## Emplacement des fichiers.
@@ -43,22 +47,21 @@ fonctionner : ces fichiers sont de plusieurs ordres.
 Tous ces fichiers sont stockés à plusieurs endroits sur votre machine. Un endroit destiné
 essentiellement à vos propres fichiers que j’appellerai bien sûr le dossier **Utilisateur** ; un deuxième
 qui contient les vignettes de vos photos ainsi que quelques données d’exécution de darktable que j’appellerai
-dossier **Cache** ; un troisième qui sera utilisé ~~pour les instantanés et~~ (supprimé en 4.2) pour les
-enregistrements de débogage que j’appellerai dossier **Temporaire** ; un quatrième destiné aux fichiers système
-que j’appellerai dossier **Système** cela va de soi ! Et enfin tous les dossiers qui contiennent des images que
-vous avez importées. Ces dossiers sont situés différemment selon le système que vous utilisez. Voici ces lieux
-décrits système par système. Vous pouvez aussi définir vous-même l’emplacement de ces dossiers grâce aux options
-de lancement de darktable.
+dossier **Cache** ; un troisième qui sera utilisé pour les enregistrements de débogage que j’appellerai dossier
+**Temporaire** ; un quatrième destiné aux fichiers système que j’appellerai dossier **Système** cela va de soi !
+Et enfin, tous les dossiers qui contiennent des images que vous avez importées. Ces dossiers sont situés
+différemment selon le système que vous utilisez. Voici ces lieux décrits système par système. Vous pouvez aussi
+définir vous-même l’emplacement de ces dossiers grâce aux options de lancement de darktable.
 
 ### Sous Linux.
 
-Remarque préliminaire : La variable `$HOME` contient le chemin absolu (à partir de la racine du système),
+Remarque préliminaire : la variable `$HOME` contient le chemin absolu (à partir de la racine du système),
 du dossier personnel de l'utilisateur. C'est-à-dire, en général, `/home/<login de l'utilisateur>`. Cette
-variable est utilisée couramment dans les scripts et en mode ligne de commande. Elle n’est pas universellement
+variable est couramment utilisée dans les scripts et en mode ligne de commande. Elle n’est pas universellement
 utilisable dans les gestionnaires de fichiers graphiques ; par exemple, Nautilus ne la reconnait pas alors
 que Dolphin la reconnaît. Je l’ai employée dans cette description, car c’est une façon assez élégante de
-décrire cette partie du chemin d’accès à des fichiers. Nota bene : le caractère `~` remplace avantagement
-la variable `$HOME` en saisie ; de plus il est utilisable partout.
+décrire cette partie du chemin d’accès à des fichiers. Nota bene : le caractère `~` remplace avantageusement
+la variable `$HOME` en saisie ; de plus, il est utilisable partout.
 
 - Dossier Utilisateur :
   `$HOME/.config/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--configdir`.
@@ -75,8 +78,8 @@ la variable `$HOME` en saisie ; de plus il est utilisable partout.
 Si vous compilez vous-même la version la plus récente de darktable, le dossier système se trouve par
 défaut dans `/opt`.
 
-Le dossier `.config` est un dossier caché (un '.' au début du nom). Pour y accéder, il suffit de taper
-son nom. Voici les moyens pour le visualiser
+Le dossier `.config` est un dossier caché (le '.' au début du nom). Pour y accéder, il suffit de taper
+son nom. Voici les moyens pour le visualiser :
 - Dans un terminal : `ls -a`
 - Avec les outils graphiques, cela dépend de l'outil, mais le raccourci `Ctrl+h` permet le plus souvent de
   le voir.
@@ -100,8 +103,8 @@ concernant la variable `$HOME`, héritée d'Unix, s'applique donc également ici
   `/Applications/darktable.app/Contents/Resources/share/darktable` par défaut. Cet emplacement peut être
   modifié avec l’option de lancement `–-datadir`.
 
-Le dossier `.config` est un dossier caché (un '.' au début du nom). Pour y accéder, il y a plusieurs
-méthodes selon qu'on utilise un terminal ou le finder. Plusieurs de ces méthodes sont décrites dans
+Le dossier `.config` est un dossier caché (le '.' au début du nom). Pour y accéder, il y a plusieurs
+méthodes selon qu'on utilise un terminal ou le “ Finder ”. Plusieurs de ces méthodes sont décrites dans
 ce [fil de discussion](https://forums.darktable.fr/showthread.php?tid=1972)
 
 ### Sous Windows.
@@ -125,13 +128,14 @@ ce [fil de discussion](https://forums.darktable.fr/showthread.php?tid=1972)
 La variable `%LOCALAPPDATA%` correspond au chemin des fichiers de configuration des applications propres à chaque
 utilisateur. C'est-à-dire, en général, `C:\Users\<login de l'utilisateur>\AppData\Local\`.
 
-Comme pour Linux et Mac os, j’ai utilisé la notation visible dans une fenêtre de commande (terminal).
-Donc `“Users”` et `“Program Files”`. Ces noms apparaîtront sous une forme francisée dans l’explorateur de fichier
-: “Utilisateurs” et “Programmes”. Le dossier `AppData` est un dossier caché. Pour l'afficher, passer par les
-options de l'explorateur : organiser → options des dossiers et de recherche → affichage → afficher les fichiers,
-dossiers et lecteurs cachés.
+Comme pour Linux et Mac os, j’ai utilisé la notation lisible dans une fenêtre de commande (terminal).
+Donc `“Users”` et `“Program Files”`. Ces noms apparaîtront cependant sous une forme francisée dans l’explorateur
+de fichier : “ Utilisateurs ” et “ Programmes ”. Le dossier `AppData` est un dossier caché. Pour l'afficher,
+passer par les options de l'explorateur : organiser → options des dossiers et de recherche → affichage → afficher
+les fichiers, dossiers et lecteurs cachés.
 
 ## Description des fichiers.
+
 ### Fichiers du dossier Utilisateur.
 Voici la liste des fichiers contenus dans ce dossier avec la description de leur rôle. Ils ne sont pas
 obligatoirement tous présents sur votre installation, car ils se créent au fil du temps et des besoins ;
@@ -147,28 +151,23 @@ parfois même, leur création nécessite une intervention manuelle.
   - `color/out`
     Dossier utilisateur contenant les profils de couleur de sortie. Ces fichiers de profil sont au format ICC.
 
-- ~~`darktable.css`
-  | Utilisateur | Configuration | Texte |<br/>Fichier contenant les modifications personnelles de l'aspect
-  de l'interface de darktable~~. Ce fichier est supprimé à partir de la version 3.0 et remplacé par les
-  fichiers du dossier `themes`.
-
 - `darktablerc`
   | Utilisateur | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel
   lui-même. La plupart des données de configuration contenues  dans ce fichier peuvent être modifiées via
-  les différents onglets de la fenêtre “préférences” de darktable. Il existe cependant quelques valeurs
+  les différents onglets de la fenêtre “ préférences ” de darktable. Il existe cependant quelques valeurs
   très peu utilisées ou « un peu trop sensibles » qui ne sont manipulables que par la modification de ce
   fichier. Darktable enregistre ce fichier chaque fois que l'on quitte le logiciel. Les éventuelles
   personnalisations doivent donc se faire quand darktable n’est pas actif.
 
 - `data.db`
   | Utilisateur | Développement | Binaire |<br/>Fichier qui contient la seconde partie de la Base de Données
-  (BdD). Contient les mots-clés, les styles, les pré-réglages, la géolocalisation. L’emplacement de ce fichier
+  (BdD). Contient les mots-clés, les styles, les préréglages, la géolocalisation. L’emplacement de ce fichier
   peut être modifié avec l’option de lancement `–-library`. L’utilisation de cette option modifiera
-  simultanément l’emplacement de `data.db` et de `library.db.`. Fichier au format sqlite.
+  simultanément l’emplacement de `data.db` et de `library.db`. Fichier au format sqlite.
 
 - `data.db.lock`
   | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la seconde partie de la BdD.
-  Il est créé au moment de l’ouverture de celle-ci, et supprimé lors de sa fermeture. Dans de rares cas,
+  Il est créé au moment de l’ouverture de celle-ci et supprimé lors de sa fermeture. Dans de rares cas,
   darktable ne peut pas supprimer ce fichier avant de s’arrêter. S’il subsiste, le prochain lancement de
   darktable avortera puisque celui-ci considérera que la BdD est déjà ouverte par un autre logiciel.
   Dans ce cas, sa suppression réglera le problème. Il contient le “Process Id” du processus qui a ouvert
@@ -176,30 +175,20 @@ parfois même, leur création nécessite une intervention manuelle.
   `–-library`, l’emplacement du fichier de verrouillage le sera également.
 
 - `data.db-pre-<version>`
-- | Utilisateur | Développement | Binaire |<br/>L’installation d’une nouvelle version majeure de darktable
+  | Utilisateur | Développement | Binaire |<br/>L’installation d’une nouvelle version majeure de darktable
   nécessite parfois (souvent) une modification du schéma de la base de données rendant incompatible la BdD
   avec la version antérieure. Avant cette modification, une sauvegarde est créée automatiquement par copie
-  du fichier data.db. Ce fichier peut être supprimé s’il n’est pas envisagé de retour vers une version
-  antérieure. Dans le nom, <version> correspond au numéro de la nouvelle version de darktable en
+  du fichier `data.db`. Ce fichier peut être supprimé s’il n’est pas envisagé de retour vers une version
+  antérieure. Dans le nom de ce fichier, <version> correspond au numéro de la nouvelle version de darktable en
   cours d’installation. Fichier au format sqlite.
 
 - `data.db-snp-<date>`
   | Utilisateur | Développement | Binaire |<br/>Ces fichiers contiennent des instantanés (snapshots en anglais,
-  d’où l’abréviation snp), de la BdD. C'est-à-dire, une sauvegarde de la BdD faite automatiquement et à
+  d’où l’abréviation snp) de la BdD. C'est-à-dire, une sauvegarde de la BdD faite automatiquement et à
   cadence régulière, afin de pouvoir revenir à une situation correspondant à la date mentionnée dans le nom du
   fichier. La date est enregistrée sous forme compacte - sans séparateurs -, selon la séquence suivante
   AAAAMMJJhhmmss. Vous pouvez régler les paramètres de maintenance de la BdD dans la fenêtre des préférences
   de darktable → onglet stockage → paragraphe base de données. Fichier au format sqlite.
-
-- ~~`keyboardrc`
-  | Utilisateur | Configuration | Texte |<br/>Fichier qui contient les raccourcis, éventuellement personnalisés.
-  Les raccourcis peuvent tous être modifiés via l’onglet “raccourcis” de la fenêtre “préférences” de darktable~~.
-  Ce fichier est supprimé à partir de la version 3.8 et remplacé par le fichier shortcutsrc.
-
-- ~~`keyboardrc_default`
-  | Utilisateur | Configuration | Texte |<br/>Fichier qui contient les valeurs par défaut des raccourcis.
-  C’est le seul fichier système qui est stocké dans le dossier utilisateur~~. Ce fichier est supprimé à partir
-  de la version 3.8 et remplacé par le fichier shortcutsrc.default.
 
 - `library.db`
   Utilisateur | Développement | Binaire |<br/>Fichier qui contient la première partie de la BdD. Contient toutes
@@ -221,7 +210,7 @@ parfois même, leur création nécessite une intervention manuelle.
 
 - `library.db-snp-<date>`
   | Utilisateur | Développement | Binaire |<br/>Ces fichiers contiennent des instantanés (snapshots en anglais,
-  d’où l’abréviation snp), de la BdD. C’est-à-dire, une sauvegarde de la BdD faite automatiquement et à cadence
+  d’où l’abréviation “ snp ”), de la BdD. C’est-à-dire, une sauvegarde de la BdD faite automatiquement et à cadence
   régulière, afin de pouvoir revenir à une situation correspondant à la date mentionnée dans le nom du fichier.
   La date est enregistrée sous forme compacte - sans séparateurs -, selon la séquence suivante AAAAMMJJhhmmss.
   Vous pouvez régler les paramètres de maintenance de la BdD dans la fenêtre des préférences de darktable → onglet
@@ -239,7 +228,7 @@ parfois même, leur création nécessite une intervention manuelle.
 - `luarc`
   | Utilisateur | Configuration | Texte |<br/>Fichier qui contient la liste des scripts Lua à charger lors
   du lancement de darktable.  « Le script manager » créera et modifiera ce fichier pour vous si vous importez
-  les scripts proposés et packagés par la communauté. Sinon pour intégrer vos propres scripts, il faudra le créer
+  les scripts proposés et packagés par la communauté. Sinon, pour intégrer vos propres scripts, il faudra le créer
   ou le modifier vous-même avec un éditeur de texte, en respectant bien la syntaxe du langage Lua. Pour créer des
   scripts, voir des exemples dans le manuel de référence Lua disponible sur [lua.org](https://lua.org/) ainsi que
   le dans le manuel de darktable et le manuel dédié aux scripts Lua sur le site
@@ -273,8 +262,8 @@ parfois même, leur création nécessite une intervention manuelle.
   Il n’est pas nécessaire d’y déposer les styles que vous importez.
 
   - `<vos styles>.dtstyle`
-    | Utilisateur | Developpement | Texte |<br/>Les fichiers du dossier styles sont des fichiers au format xml,
-    mais le contenu, bien que de format texte, est plutôt un BLOB (Binary Large Object), donc non modifiable.
+    | Utilisateur | Développement | Texte |<br/>Les fichiers du dossier styles sont des fichiers au format xml,
+    mais le contenu, bien que de format texte, est plutôt un BLOB (Binary Large OBject), donc non modifiable.
     Ces fichiers sont suffixés avec l’extension “`.dtstyle`”.
 
 - `themes`
@@ -300,7 +289,7 @@ parfois même, leur création nécessite une intervention manuelle.
   pas créé automatiquement lors de la configuration initiale de darktable. Si vous avez besoin de ce dossier pour y
   déposer des fichiers de filigranes, vous devez le créer.
 
-Parmi ces fichiers, deux fichiers constituent la BdD ; ce qu’ailleurs on appelle le catalogue. Ces deux fichiers
+Parmi ces fichiers, deux fichiers constituent la BdD ; ce qu’ailleurs, on appelle le catalogue. Ces deux fichiers
 au format sqlite sont :
 
 - `library.db` : qui contient toutes les données de développement. En fait, tout ce que l'on retrouve dans les
@@ -354,11 +343,6 @@ contiennent
 ### Fichiers du dossier Temporaire.
 Voici la description des fichiers qu’il peut contenir.
 
-- ~~==`dt_snapshot_<numéro>.png`==
-| Utilisateur | Développement | Binaire |<br/>Fichier PNG, qui contient l’état d’une photo en cours de développement et permet d’afficher les instantanés dans la chambre noire. Le numéro permet de différencier les différents instantanés. Il ne correspond pas à la pile d’historique. Par défaut, il démarre à trois et décroît jusqu’à zéro. Il n’est de ce fait pas possible de disposer de plus de quatre instantanés simultanément. Si vous en créez un cinquième, le plus ancien sera perdu. Quand vous quittez darktable, ces fichiers ne sont pas supprimés ; ils subsistent dans le dossier temporaire. 
-Contrairement au dossier du cache des vignettes (voir ci-dessus dans la description du dossier temporaire), qui est composé du nom mipmaps et d’un hashcode, aucun élément des noms de fichiers d’instantanés ne permet d’associer un de ces fichiers à une occurrence de darktable. Il y a donc risque de conflit, en particulier, si les occurrences appartiennent à deux utilisateurs différents.~~. Ces fichiers ne sont plus produits à partir de la version 4.2 Les instantanés sont uniquement conservés en mémoire.
-
-
 - `darktable_bt_<numéro>.txt`
   | Utilisateur | Developpement | Texte |<br/>Fichier de débogage. Ce fichier peut être produit par darktable
   en cas de plantage. Il pourra être utile aux développeurs pour identifier la partie du code à l’origine du
@@ -372,9 +356,6 @@ Voici la liste des fichiers de ce dossier avec la description de leur contenu.
 
 - `darktable.bash`
   | Système | Configuration | Texte |<br/>Fichier de lancement de darktable. [à compléter !]
-
-- ~~`darktable.css`
-| Système | Configuration | Texte |<br/>Fichier de configuration de l'aspect de l'interface de darktable~~. Ce fichier est supprimé à partir de la version 3.0 et remplacé par un fichier équivalent dans le dossier `themes`.
 
 - `darktablerc`
   | Système | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel
@@ -481,7 +462,7 @@ des scripts en langage bash qui nécessitent l’interpréteur bash, non disponi
   Vous pouvez copier ces fichiers dans votre propre dossier de configuration afin de les utiliser comme
   base de travail et créer vos propres filigranes.
 
-- ==`wb_presets.json`==
+- `wb_presets.json`
   | Système | Configuration | Texte |<br/>Fichier contenant tous les préréglages de balance des blancs
   des appareils photos connus de darktable. Fichier au format json.
 
