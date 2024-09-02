@@ -318,7 +318,7 @@ contiennent
 
 - `cached_kernels_for_<référence de votre carte graphique>`
   Dossier contenant les versions compilées à la volée par darktable des kernels openCL (Voir dans la section
-  Système ci dessous, le dossier `kernels`). Si vous avez plusieurs cartes graphiques, vous aurez plusieurs
+  Système ci-dessous, le dossier `kernels`). Si vous avez plusieurs cartes graphiques, vous aurez plusieurs
   dossiers de ce type, un par carte graphique.
 
 - `mipmaps-<mipmaps Id>.d`
@@ -334,7 +334,7 @@ contiennent
   créé lors de l’importation, de manière totalement automatique et désigne univoquement la photo dans la BdD
   de darktable. Il est visible dans le module informations de l’image, à la ligne “numéro”.
 
-  Attention ! comme cela a déjà été évoqué à la fin du chapitre traitantdes fichiers du dossier utilisateur,
+  Attention ! comme cela a déjà été évoqué à la fin du chapitre traitant des fichiers du dossier utilisateur,
   si vous réinitialisez la BdD de darktable, il faudra également réinitialiser le cache des vignettes, car
   comme dit ci-dessus, celles-ci sont nommées avec le numéro de la photo. Après réinitialisation de la BdD,
   il sera donc certain que les numéros des anciennes vignettes ne correspondront plus avec les numéros des
@@ -344,11 +344,11 @@ contiennent
 Voici la description des fichiers qu’il peut contenir.
 
 - `darktable_bt_<numéro>.txt`
-  | Utilisateur | Developpement | Texte |<br/>Fichier de débogage. Ce fichier peut être produit par darktable
+  | Utilisateur | Développement | Texte |<br/>Fichier de débogage. Ce fichier peut être produit par darktable
   en cas de plantage. Il pourra être utile aux développeurs pour identifier la partie du code à l’origine du
   plantage. Dans ce cas, cependant, il sera nécessaire de reproduire le plantage avec une version de darktable
   compilée afin que les “symboles” soient inclus dans ce fichier. Le numéro est variable à chaque lancement
-  de darktable (probablement le numéro de processus, mais je n’ai pas pu le vérifier car je n’ai
+  de darktable (probablement le numéro de processus, mais je n’ai pas pu le vérifier, car je n’ai
   pas de plantages ;-)).
 
 ### Fichiers du dossier système.
@@ -364,7 +364,7 @@ Voici la liste des fichiers de ce dossier avec la description de leur contenu.
 
 - `gdb_commands`
   | Système | Configuration | Texte |<br/>Fichier contenant quelques commandes utilisées lors d’un
-  lancement de darktable via la commande gdb à des fins de debug.
+  lancement de darktable via la commande gdb à des fins de déboguage.
 
 - `kernels`
   | Système | Configuration | Texte |<br/>Dossier contenant les codes support OpenCL des modules
@@ -382,7 +382,7 @@ Voici la liste des fichiers de ce dossier avec la description de leur contenu.
 
 - `noiseprofiles.json`
   | Système | Configuration | Texte |<br/>Fichier contenant tous les profils de bruits connus
-  de darktable. Ce ficier peut être masqué en totalité ou en partie par un fichier de même nom créé
+  de darktable. Ce fichier peut être masqué en totalité ou en partie par un fichier de même nom créé
   dans le dossier Utilisateur Fichier au format json.
 
 - `pixmaps`
