@@ -324,17 +324,32 @@ le dossier `cache` (voir paragraphe ci-dessous). Si vous supprimez la BdD, il vo
 le cache des vignettes.
 
 ### Fichiers du dossier Cache.
-Voici la liste des dossiers et sous dossiers du dossier cache, ainsi que la description des fichiers qu’ils contiennent
+Voici la liste des dossiers et sous dossiers du dossier cache, ainsi que la description des fichiers qu’ils
+contiennent
 
- - `cached_kernels_for_<référence de votre carte graphique>`
-Dossier contenant les versions compilées à la volée par darktable des kernels openCL (Voir dans la section Système ci dessous, le dossier `kernels`). Si vous avez plusieurs cartes graphiques, vous aurez plusieurs dossiers de ce type, un par carte graphique.
+- `cached_kernels_for_<référence de votre carte graphique>`
+  Dossier contenant les versions compilées à la volée par darktable des kernels openCL (Voir dans la section
+  Système ci dessous, le dossier `kernels`). Si vous avez plusieurs cartes graphiques, vous aurez plusieurs
+  dossiers de ce type, un par carte graphique.
 
- - `mipmaps-<mipmaps Id>.d`
-Dossier contenant le cache des vignettes utilisées en table lumineuse et dans les bandeaux. Le mipmaps Id est un hashcode calculé lors de l’initialisation d’une instance de darktable. Ce dossier contient lui-même plusieurs sous dossiers nommés de `0` à `8`. Lors d’une première utilisation, seuls les dossiers `0`, `1` et `2` sont créés. Les autres dossiers seront créés à la demande et de façon transparente par darktable ou explicitement lors de l’utilisation de l’outil darktable-generate-cache. Chaque dossier correspond à une taille de vignette ; de la plus petite taille dans le dossier `0`, à la plus grande dans le dossier `8`. Les tailles des vignettes sont de 110, 225 et 450 pixels sur le plus grand coté pour les dossiers `0`, `1` et `2`.
+- `mipmaps-<mipmaps Id>.d`
+  Dossier contenant le cache des vignettes utilisées en table lumineuse et dans les bandeaux. Le mipmaps Id
+  est un hashcode calculé lors de l’initialisation d’une instance de darktable. Ce dossier contient lui-même
+  plusieurs sous dossiers nommés de `0` à `8`. Lors d’une première utilisation, seuls les dossiers `0`, `1` et
+  `2` sont créés. Les autres dossiers seront créés à la demande et de façon transparente par darktable ou
+  explicitement lors de l’utilisation de l’outil darktable-generate-cache. Chaque dossier correspond à une
+  taille de vignette ; de la plus petite taille dans le dossier `0`, à la plus grande dans le dossier `8`.
+  Les tailles des vignettes sont de 110, 225 et 450 pixels sur le plus grand coté pour les dossiers `0`, `1` et `2`.
 
-Les vignettes elles-mêmes sont des fichiers JPEGs qui sont nommés selon le numéro de photo. Ce numéro est créé lors de l’importation, de manière totalement automatique et désigne univoquement la photo dans la BdD de darktable. Il est visible dans le module informations de l’image, à la ligne “numéro”.
+  Les vignettes elles-mêmes sont des fichiers JPEGs qui sont nommés selon le numéro de photo. Ce numéro est
+  créé lors de l’importation, de manière totalement automatique et désigne univoquement la photo dans la BdD
+  de darktable. Il est visible dans le module informations de l’image, à la ligne “numéro”.
 
-Attention ! Si vous réinitialisez la BdD de darktable, il faudra également réinitialiser le cache des vignettes, car comme dit ci-dessus, celles-ci sont nommées avec le numéro de la photo. Après réinitialisation de la BdD, il sera donc certain que les numéros des anciennes vignettes ne correspondront plus avec les numéros des nouvelles photos importées. L’affichage en table lumineuse sera très étrange !
+  Attention ! comme cela a déjà été évoqué à la fin du chapitre traitantdes fichiers du dossier utilisateur,
+  si vous réinitialisez la BdD de darktable, il faudra également réinitialiser le cache des vignettes, car
+  comme dit ci-dessus, celles-ci sont nommées avec le numéro de la photo. Après réinitialisation de la BdD,
+  il sera donc certain que les numéros des anciennes vignettes ne correspondront plus avec les numéros des
+  nouvelles photos importées. L’affichage en table lumineuse sera très étrange !
 
 ### Fichiers du dossier Temporaire.
 Voici la description des fichiers qu’il peut contenir.
@@ -345,112 +360,153 @@ Contrairement au dossier du cache des vignettes (voir ci-dessus dans la descript
 
 
 - `darktable_bt_<numéro>.txt`
-| Utilisateur | Developpement | Texte |<br/>Fichier de débogage. Ce fichier peut être produit par darktable en cas de plantage. Il pourra être utile aux développeurs pour identifier la partie du code à l’origine du plantage. Dans ce cas, cependant, il sera nécessaire de reproduire le plantage avec une version de darktable compilée afin que les “symboles” soient inclus dans ce fichier. Le numéro est variable à chaque lancement de darktable (probablement le numéro de processus, mais je n’ai pas pu le vérifier car je n’ai pas de plantages ;-)).
+  | Utilisateur | Developpement | Texte |<br/>Fichier de débogage. Ce fichier peut être produit par darktable
+  en cas de plantage. Il pourra être utile aux développeurs pour identifier la partie du code à l’origine du
+  plantage. Dans ce cas, cependant, il sera nécessaire de reproduire le plantage avec une version de darktable
+  compilée afin que les “symboles” soient inclus dans ce fichier. Le numéro est variable à chaque lancement
+  de darktable (probablement le numéro de processus, mais je n’ai pas pu le vérifier car je n’ai
+  pas de plantages ;-)).
 
 ### Fichiers du dossier système.
 Voici la liste des fichiers de ce dossier avec la description de leur contenu.
 
 - `darktable.bash`
-| Système | Configuration | Texte |<br/>Fichier de lancement de darktable. [à compléter !]
+  | Système | Configuration | Texte |<br/>Fichier de lancement de darktable. [à compléter !]
 
 - ~~`darktable.css`
 | Système | Configuration | Texte |<br/>Fichier de configuration de l'aspect de l'interface de darktable~~. Ce fichier est supprimé à partir de la version 3.0 et remplacé par un fichier équivalent dans le dossier `themes`.
 
 - `darktablerc`
-| Système | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel lui-même. Il s’agit du fichier par défaut qui est copié lors du premier démarrage d’une nouvelle instance de darktable.
+  | Système | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel
+  lui-même. Il s’agit du fichier par défaut qui est copié lors du premier démarrage d’une nouvelle
+  instance de darktable.
 
 - `gdb_commands`
-| Système | Configuration | Texte |<br/>Fichier contenant quelques commandes utilisées lors d’un lancement de darktable via la commande gdb à des fins de debug.
+  | Système | Configuration | Texte |<br/>Fichier contenant quelques commandes utilisées lors d’un
+  lancement de darktable via la commande gdb à des fins de debug.
 
 - `kernels`
-| Système | Configuration | Texte |<br/>Dossier contenant les codes support OpenCL des modules correspondants. Ces fichiers sont au format langage “c”.
-- `latex`
-Dossier contenant un fichier de configuration utilisé lors de l’exportation sous forme de “modèle de livre LaTex” (langage LaTex)
+  | Système | Configuration | Texte |<br/>Dossier contenant les codes support OpenCL des modules
+  correspondants. Ces fichiers sont au format langage “c”.
 
- - `lua`
-Dossier contenant un fichier utilisé pour le debug des scripts Lua (langage Lua) 
+- `latex`
+  Dossier contenant un fichier de configuration utilisé lors de l’exportation sous forme de
+  “modèle de livre LaTex” (langage LaTex)
+
+- `lua`
+  Dossier contenant un fichier utilisé pour le debug des scripts Lua (langage Lua) 
 
 - `luarc`
-| Système | Configuration | Texte |<br/>Fichier initial de Lua.
+  | Système | Configuration | Texte |<br/>Fichier initial de Lua.
 
 - `noiseprofiles.json`
-| Système | Configuration | Texte |<br/>Fichier contenant tous les profils de bruits connus de darktable Fichier au format json.
+  | Système | Configuration | Texte |<br/>Fichier contenant tous les profils de bruits connus
+  de darktable. Ce ficier peut être masqué en totalité ou en partie par un fichier de même nom créé
+  dans le dossier Utilisateur Fichier au format json.
 
 - `pixmaps`
-Dossier contenant les icônes utilisées en interne par darktable.
+  Dossier contenant les icônes utilisées en interne par darktable.
 
 - `pswp`
-Dossier contenant les fichiers nécessaires pour l’exportation sous forme de “galerie web”. Voir également le dossier `style`.
+  Dossier contenant les fichiers nécessaires pour l’exportation sous forme de “galerie web”. Voir également
+  le dossier `style`.
 
 - `rawspeed`
-Dossier contenant les fichiers de configuration de Rawspeed.
-Rawspeed est la librairie sous-jacente de darktable qui décode les fichiers raw. Ce dossier contient deux fichiers :
-	- `cameras.xml`
-| Système | Développement | Texte |<br/>Ce fichier XML décrit tous les boîtiers pris en charge par rawspeed et donc par
-darktable. Il contient sa propre DTD. Chaque entrée décrit toutes les caractéristiques du capteur du boîtier.
-	- `showcameras.xsl`
-| Système | Développement | Texte |<br/>Ce second fichier est la feuille de style nécessaire pour imprimer le fichier cameras.xml, le cas échéant,
+  Dossier contenant les fichiers de configuration de Rawspeed. Rawspeed est la librairie sous-jacente de
+  darktable qui décode les fichiers raw. Ce dossier contient deux fichiers :
+  - `cameras.xml`
+    | Système | Développement | Texte |<br/>Ce fichier XML décrit tous les boîtiers pris en charge par
+    rawspeed et donc par darktable. Il contient sa propre DTD. Chaque entrée décrit toutes les caractéristiques
+    du capteur du boîtier.
+  - `showcameras.xsl`
+    | Système | Développement | Texte |<br/>Ce second fichier est la feuille de style nécessaire pour imprimer
+    le fichier cameras.xml, le cas échéant,
 
 - `style`
-Dossier contenant les feuilles de style (css), ainsi que quelques fichiers jpeg, gif et ico, nécessaires pour l’exportation sous forme de “galerie web”. Voir aussi le dossier `pswp`.
+  Dossier contenant les feuilles de style (css), ainsi que quelques fichiers jpeg, gif et ico, nécessaires à
+  l’exportation sous forme de “galerie web”. Voir aussi le dossier `pswp`.
 
 - `themes`
-Dossier contenant les fichiers de configuration de l'aspect de l'interface de darktable. Ces fichiers sont au format Cascading Style Sheet (CSS) tel que décrit par le W3C. Cependant, toutes les fonctionnalités CSS ne sont pas prises en charge par l’interface graphique Gtk utilisée par darktable. Ce dossier contient les fichiers suivants. Tous sont classifiés <br/>| Système | Configuration | Texte |
-	- `darktable.css`
-Feuille de style d’origine de darktable.
+  Dossier contenant les fichiers de configuration de l'aspect de l'interface de darktable. Ces fichiers sont au
+  format Cascading Style Sheet (CSS) tel que décrit par le W3C. Cependant, toutes les fonctionnalités CSS ne sont
+  pas prises en charge par l’interface graphique Gtk utilisée par darktable. Ce dossier contient les fichiers
+  suivants. Tous sont classifiés <br/>| Système | Configuration | Texte |
+  
+  - `darktable.css`
+    Feuille de style d’origine de darktable.
 
-	- `darktable-elegant-dark.css`
-Nouvelle feuille de style sombre.
+  - `darktable-elegant-dark.css`
+    Nouvelle feuille de style sombre.
 
-	- `darktable-elegant-darker.css`
-Nouvelle feuille de style plus sombre.
+  - `darktable-elegant-darker.css`
+    Nouvelle feuille de style plus sombre.
 
-	- `darktable-elegant-grey.css`
-Nouvelle feuille de style claire.
+  - `darktable-elegant-grey.css`
+    Nouvelle feuille de style claire.
 
-	- `darktable-icons.css`
-Nouvelle feuille de style sombre avec icônes.
+  - `darktable-icons.css`
+    Nouvelle feuille de style sombre avec icônes.
 
-	- `darktable-icons-dark.css`
-Nouvelle feuille de style sombre avec icônes.
+  - `darktable-icons-dark.css`
+    Nouvelle feuille de style sombre avec icônes.
 
-	- `darktable-icons-darker.css`
-Nouvelle feuille de style plus sombre avec icônes.
+  - `darktable-icons-darker.css`
+    Nouvelle feuille de style plus sombre avec icônes.
 
-	- `darktable-icons-grey.css`
-Nouvelle feuille de style claire avec icônes.
+  - `darktable-icons-grey.css`
+    Nouvelle feuille de style claire avec icônes.
 
 - `tools`
-Dossier qui contient quelques programmes utilitaires d’administration de darktable. Actuellement ce sont des scripts bash. En voici la liste :
-	- `common.sh`
-	- `extract_wb_from_images.sh`
-	- `purge_from_cache.sh`
-	- ` purge_non_existing_images.sh`
-	- `purge_unused_tags.sh`
-Attention ! Ces scripts sont disponibles dans la version Windows, mais pas utilisables tels quels. Ce sont des scripts en langage bash qui nécessitent l’interpréteur bash, non disponible nativement sous windows.
+  Dossier qui contient quelques programmes utilitaires d’administration de darktable. Actuellement ce sont
+  des scripts bash. En voici la liste :
+  - `common.sh`
+  - `extract_wb_from_images.sh`
+  - `purge_from_cache.sh`
+  - `purge_non_existing_images.sh`
+  - `purge_unused_tags.sh`
+Attention ! Ces scripts sont disponibles dans la version Windows, mais pas utilisables tels quels. Ce sont
+des scripts en langage bash qui nécessitent l’interpréteur bash, non disponible nativement sous windows.
 
 - `watermarks`
-Dossier contenant les quelques fichiers de filigrane disponibles par défaut avec darktable. Ces fichiers sont au format SVG (sur une base xml). En voici la liste. Tous sont classifiés <br/> | Système | Développement | Texte |
-	- `darktable.svg`
-	- `hasselblad.svg`
-	- `promo.svg`
-	- `simple-text.svg`
-Vous pouvez copier ces fichiers dans votre propre dossier de configuration afin de les utiliser comme base de travail et créer vos propres filigranes.
+  Dossier contenant les quelques fichiers de filigrane disponibles par défaut avec darktable. Ces fichiers
+  sont au format SVG (sur une base xml). En voici la liste. Tous sont classifiés <br/>
+  | Système | Développement | Texte |
+  - `darktable.svg`
+  - `fixed-size-text.svg`
+  - `hasselblad.svg`
+  - `metadata-template.svg`
+  - `promo.svg`
+  - `simple-text-shadow.svg`
+  - `simple-text.svg`
+  Vous pouvez copier ces fichiers dans votre propre dossier de configuration afin de les utiliser comme
+  base de travail et créer vos propres filigranes.
 
 - ==`wb_presets.json`==
-| Système | Configuration | Texte |<br/>Fichier contenant tous les préréglages de balance des blancs des appareils photos connus de de darktable Fichier au format json.
+  | Système | Configuration | Texte |<br/>Fichier contenant tous les préréglages de balance des blancs
+  des appareils photos connus de darktable. Fichier au format json.
 
-Vous avez peut-être remarqué que je n’ai pas parlé des fichiers de caractérisation des objectifs. Il y a plusieurs raisons à cela :
+Vous avez peut-être remarqué que je n’ai pas parlé des fichiers de caractérisation des objectifs.
+Il y a plusieurs raisons à cela :
 - Ces fichiers n’appartiennent pas à darktable. Ils dépendent d’une librairie tierce : Lensfun.
 - Puisqu’ils appartiennent à Lensfun, ils sont fournis par cette librairie ; pas par darktable.
 - darktable utilise plusieurs versions différentes de Lensfun, selon les distributions et / ou les packages.
-- L’emplacement des fichiers dépend de la version de Lensfun, et du mode de mise à jour de ces fichiers ; parfois aussi de la distribution.
+- L’emplacement des fichiers dépend de la version de Lensfun, et du mode de mise à jour de ces fichiers
+; parfois aussi de la distribution.
 - L’entête des fichiers de Lensfun change légèrement selon la version.
 
-Bref tout cela fait beaucoup de variables et il faudrait probablement un document aussi volumineux que celui-ci pour faire l’inventaire exhaustif de toutes les hypothèses. Ce sujet a déjà été traité abondamment sur le forum darktable.fr, sans que quelques règles simples puissent être établies. Donc, pour l’instant, je n’en parle pas.
+Bref tout cela fait beaucoup de variables et il faudrait probablement un document aussi volumineux que
+celui-ci pour faire l’inventaire exhaustif de toutes les hypothèses. Ce sujet a déjà été traité
+abondamment sur le forum darktable.fr, sans que quelques règles simples puissent être établies.
+Donc, pour l’instant, je n’en parle pas.
 
 ### Fichiers dans vos dossiers de photos.
-| Utilisateur | Développement | Texte |<br/>En plus de tous ces fichiers de configuration ou de fonctionnement, darktable produit des fichiers XMP qui sont associés à chaque fichier image que vous avez importé dans darktable. Ces fichiers sont nommés en ajoutant l’extension “.xmp” au nom complet de vos fichiers images (nom + extension). Ces fichiers contiennent toutes les données nécessaires pour pouvoir reproduire le traitement de vos images, même si vous avez supprimé l’intégralité des fichiers que j’ai listés ci-dessus. Tant que vous avez ces fichiers, vous n’avez rien perdu. Ces fichiers sont au format XMP (sur une base xml). La norme XMP est maintenant une norme ISO sous le numéro ISO-16684-1:2012
+| Utilisateur | Développement | Texte |<br/>En plus de tous ces fichiers de configuration ou de fonctionnement,
+darktable produit des fichiers XMP qui sont associés à chaque fichier image que vous avez importé dans
+darktable. Ces fichiers sont nommés en ajoutant l’extension “.xmp” au nom complet de vos fichiers images
+(nom + extension). Ces fichiers contiennent toutes les données nécessaires pour pouvoir reproduire le traitement
+de vos images, même si vous avez supprimé l’intégralité des fichiers que j’ai listés ci-dessus. Tant que vous
+avez ces fichiers, vous n’avez rien perdu. Ces fichiers sont au format XMP (sur une base xml). La norme XMP
+est maintenant une norme ISO sous le numéro ISO-16684-1:2012
 
 Voilà, j'espère ne pas en avoir oublié. N’hésitez pas à me signaler toute erreur ou omission !
 
