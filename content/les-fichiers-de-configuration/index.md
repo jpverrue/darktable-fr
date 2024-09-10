@@ -40,7 +40,8 @@ fonctionner. Ces fichiers sont de plusieurs ordres.
 - On distinguera ensuite les fichiers de configuration qui régissent le fonctionnement du logiciel, des
   fichiers de traitement qui matérialisent toutes les modifications que vous faites sur vos photos. En effet,
   darktable ne modifie JAMAIS vos fichiers d’images. Toutes vos modifications sont enregistrées dans ces
-  fichiers de traitement. Je les référencerai comme fichier de <u>configuration</u>, ou de <u>développement</u>.
+  fichiers de traitement. Je les référencerai respectivement comme fichier de <u>configuration</u>, ou de
+  <u>développement</u>.
 - On distinguera enfin les fichiers de type “ texte ” qui n’ont besoin que d’un éditeur de texte pour être consultés
   ou modifiés, des fichiers de type “ binaire ” qui nécessitent des outils spécialisés pour être consultés ou
   modifiés. Je les référencerai également comme <u>texte</u> ou <u>binaire</u>.
@@ -61,7 +62,7 @@ définir vous-même l’emplacement de ces dossiers grâce aux options de lancem
 Remarque préliminaire : la variable `$HOME` contient le chemin absolu (à partir de la racine du système),
 du dossier personnel de l'utilisateur. C'est-à-dire, en général, `/home/<login de l'utilisateur>`. Cette
 variable est couramment utilisée dans les scripts et en mode ligne de commande. Elle n’est pas universellement
-utilisable dans les gestionnaires de fichiers graphiques ; par exemple, Nautilus ne la reconnait pas alors
+utilisable dans les gestionnaires de fichiers graphiques ; par exemple, Nautilus ne la reconnaît pas alors
 que Dolphin la reconnaît. Je l’ai employée dans cette description, car c’est une façon assez élégante de
 décrire cette partie du chemin d’accès à des fichiers. Nota bene : le caractère `~` remplace avantageusement
 la variable `$HOME` en saisie ; de plus, il est utilisable partout.
@@ -87,10 +88,10 @@ son nom. Voici les moyens pour le visualiser :
 - Avec les outils graphiques, cela dépend de l'outil, mais le raccourci `Ctrl+h` permet le plus souvent de
   le voir.
 
-### Sous Mac os.
+### Sous MacOS.
 
-Remarque préliminaire : Mac os et Linux partagent le même ancêtre commun, Unix. La remarque préliminaire
-concernant la variable `$HOME`, héritée d'Unix, s'applique donc également ici.
+Remarque préliminaire : MacOS et Linux partagent le même ancêtre commun, UNIX. La remarque préliminaire
+concernant la variable `$HOME`, héritée d'UNIX, s'applique donc également ici.
 
 - Dossier Utilisateur :
   `$HOME/.config/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--configdir`.
@@ -131,7 +132,7 @@ ce [fil de discussion](https://forums.darktable.fr/showthread.php?tid=1972)
 La variable `%LOCALAPPDATA%` correspond au chemin des fichiers de configuration des applications propres à chaque
 utilisateur. C'est-à-dire, en général, `C:\Users\<login de l'utilisateur>\AppData\Local\`.
 
-Comme pour Linux et Mac os, j’ai utilisé la notation lisible dans une fenêtre de commande (terminal).
+Comme pour Linux et MacOS, j’ai utilisé la notation lisible dans une fenêtre de commande (terminal ou cmd).
 Donc `“Users”` et `“Program Files”`. Ces noms apparaîtront cependant sous une forme francisée dans l’explorateur
 de fichier : “ Utilisateurs ” et “ Programmes ”. Le dossier `AppData` est un dossier caché. Pour l'afficher,
 passer par les options de l'explorateur : organiser → options des dossiers et de recherche → affichage → afficher
@@ -166,24 +167,24 @@ parfois même, leur création nécessite une intervention manuelle.
   | Utilisateur | Développement | Binaire |<br/>Fichier qui contient la seconde partie de la Base de Données
   (BdD). Contient les mots-clés, les styles, les préréglages, la géolocalisation. L’emplacement de ce fichier
   peut être modifié avec l’option de lancement `–-library`. L’utilisation de cette option modifiera
-  simultanément l’emplacement de `data.db` et de `library.db`. Fichier au format Sqlite.
+  simultanément l’emplacement de `data.db` et de `library.db`. Fichier au format SQLite.
 
 - `data.db.lock`
   | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la seconde partie de la BdD.
   Il est créé au moment de l’ouverture de celle-ci et supprimé lors de sa fermeture. Dans de rares cas,
   darktable ne peut pas supprimer ce fichier avant de s’arrêter. S’il subsiste, le prochain lancement de
   darktable avortera puisque celui-ci considérera que la BdD est déjà ouverte par un autre logiciel.
-  Dans ce cas, sa suppression réglera le problème. Il contient le “Process Id” du processus qui a ouvert
-  la BdD. Ce fichier suit le fichier data.db. Si l’emplacement de data.db a été modifié avec l’option
-  `–-library`, l’emplacement du fichier de verrouillage le sera également.
+  Dans ce cas, la suppression de ce fichier .lock réglera le problème. Il contient le “Process Id” du
+  processus qui a ouvert la BdD. Ce fichier suit le fichier data.db. Si l’emplacement de data.db a été
+  modifié avec l’option `–-library`, l’emplacement du fichier de verrouillage le sera également.
 
 - `data.db-pre-<version>`
   | Utilisateur | Développement | Binaire |<br/>L’installation d’une nouvelle version majeure de darktable
   nécessite parfois (souvent) une modification du schéma de la base de données rendant incompatible la BdD
   avec la version antérieure. Avant cette modification, une sauvegarde est créée automatiquement par copie
   du fichier `data.db`. Ce fichier peut être supprimé s’il n’est pas envisagé de retour vers une version
-  antérieure. Dans le nom de ce fichier, <version> correspond au numéro de la nouvelle version de darktable en
-  cours d’installation. Fichier au format Sqlite.
+  antérieure. Dans le nom de ce fichier, <version> correspond au numéro de la nouvelle version de darktable
+  en cours d’installation. Fichier au format SQLite.
 
 - `data.db-snp-<date>`
   | Utilisateur | Développement | Binaire |<br/>Ces fichiers contiennent des instantanés (snapshots en anglais,
@@ -191,13 +192,13 @@ parfois même, leur création nécessite une intervention manuelle.
   cadence régulière, afin de pouvoir revenir à une situation correspondant à la date mentionnée dans le nom du
   fichier. La date est enregistrée sous forme compacte - sans séparateurs -, selon la séquence suivante
   AAAAMMJJhhmmss. Vous pouvez régler les paramètres de maintenance de la BdD dans la fenêtre des préférences
-  de darktable → onglet stockage → paragraphe base de données. Fichier au format Sqlite.
+  de darktable → onglet stockage → paragraphe base de données. Fichier au format SQLite.
 
 - `library.db`
   Utilisateur | Développement | Binaire |<br/>Fichier qui contient la première partie de la BdD. Contient toutes
   les données de développement. L’emplacement de ce fichier peut être modifié avec l’option de lancement
   `–-library`. L’utilisation de cette option modifiera simultanément l’emplacement de `data.db` et de
-  `library.db`. Fichier au format Sqlite.
+  `library.db`. Fichier au format SQLite.
 
 - `library.db.lock`
   | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la première partie de la BdD. Voir
@@ -209,7 +210,7 @@ parfois même, leur création nécessite une intervention manuelle.
   la BdD avec la version antérieure. Avant cette modification, une sauvegarde est créée automatiquement par copie
   du fichier `library.db`. Ce fichier peut être supprimé s’il n’est pas envisagé de retour vers une version
   antérieure. Dans le nom, `<version>` correspond au numéro de la nouvelle version de darktable en cours
-  d’installation. Fichier au format Sqlite.
+  d’installation. Fichier au format SQLite.
 
 - `library.db-snp-<date>`
   | Utilisateur | Développement | Binaire |<br/>Ces fichiers contiennent des instantanés (snapshots en anglais,
@@ -217,24 +218,24 @@ parfois même, leur création nécessite une intervention manuelle.
   régulière, afin de pouvoir revenir à une situation correspondant à la date mentionnée dans le nom du fichier.
   La date est enregistrée sous forme compacte - sans séparateurs -, selon la séquence suivante AAAAMMJJhhmmss.
   Vous pouvez régler les paramètres de maintenance de la BdD dans la fenêtre des préférences de darktable → onglet
-  stockage → paragraphe base de données. Fichier au format Sqlite.
+  stockage → paragraphe base de données. Fichier au format SQLite.
 
 - `lua`
   Dossier utilisateur contenant les éventuels scripts additionnels, ceux que vous avez importés comme ceux que
   vous avez éventuellement créés. Les scripts sont écrits en langage Lua. Pour découvrir Lua, outre le site
   [lua.org](https://lua.org/), vous disposez sur le site [darktable.org](https://www.darktable.org/resources/)
   d’un chapitre dans le manuel de darktable ainsi que d'un manuel dédié . Le dossier `lua` n’est pas
-  créé automatiquement lors de la configuration initiale de darktable. « Le script manager » Le créera pour vous
-  si vous importez les scripts proposés et packagés par la communauté. Si vous avez besoin pour y déposer vos
+  créé automatiquement lors de la configuration initiale de darktable. « Le script manager » le créera pour vous
+  si vous importez les scripts proposés et packagés par la communauté. Si vous avez besoin d'y déposer vos
   propres scripts et qu'il n'a pas été créé par le script manager, vous devez le créer.
 
 - `luarc`
   | Utilisateur | Configuration | Texte |<br/>Fichier qui contient la liste des scripts Lua à charger lors
   du lancement de darktable.  « Le script manager » créera et modifiera ce fichier pour vous si vous importez
   les scripts proposés et packagés par la communauté. Sinon, pour intégrer vos propres scripts, il faudra le créer
-  ou le modifier vous-même avec un éditeur de texte, en respectant bien la syntaxe du langage Lua. Pour créer des
-  scripts, voir des exemples dans le manuel de référence Lua disponible sur [lua.org](https://lua.org/) ainsi que
-  le dans le manuel de darktable et le manuel dédié aux scripts Lua sur le site
+  ou le modifier vous-même avec un éditeur de texte, en respectant strictement la syntaxe du langage Lua. Pour créer
+  des scripts, voir des exemples dans le manuel de référence Lua disponible sur [lua.org](https://lua.org/) ainsi
+  que le dans le manuel de darktable et le manuel dédié aux scripts Lua sur le site
   [darktable.org](https://www.darktable.org/resources/).
    
 - `presets.json`
@@ -243,9 +244,9 @@ parfois même, leur création nécessite une intervention manuelle.
   résultat du calcul du profil de bruit d’un boîtier. Ce fichier est au format json.
 
 - `shortcutsrc`
-  | Utilisateur | Configuration | Texte |<br/>Fichier qui contient les raccourcis, éventuellement personnalisés.
-  Les raccourcis peuvent tous être modifiés via l’onglet “raccourcis” de la fenêtre “préférences” de darktable
-  ou via la fenêtre dédiée accessible via l’icône représentant un clavier.
+  | Utilisateur | Configuration | Texte |<br/>Fichier qui contient les raccourcis clavier, éventuellement
+  personnalisés. Les raccourcis peuvent tous être modifiés via l’onglet “raccourcis” de la fenêtre “préférences”
+  de darktable ou via la fenêtre dédiée accessible via l’icône représentant un clavier.
 
 - `shortcutsrc.backup`
   | Utilisateur | Configuration | Texte |<br/>Fichier qui contient les valeurs sauvegardées des raccourcis, lors
@@ -271,13 +272,13 @@ parfois même, leur création nécessite une intervention manuelle.
 
 - `themes`
   Dossier utilisateur contenant les éventuels fichiers de configuration personnalisés de l'aspect de l'interface
-  de darktable. Ces fichiers sont au format Cascading Style Sheet (CSS) tel que décrit par le W3C. Cependant,
+  de darktable. Ces fichiers sont au format CSS (Cascading Style Sheet) tel que décrit par le W3C. Cependant,
   toutes les fonctionnalités CSS ne sont pas prises en charge par l’interface graphique Gtk utilisée par darktable.
   Si vous avez besoin de ce dossier pour y déposer vos propres feuilles de styles, vous devez le créer.
   - `<vos thèmes>.css`
     | Utilisateur | Configuration | Texte |<br/>Fichier(s) CSS. Le nommage est libre, mais il est recommandé
     d'utiliser un nom de fichier différent des fichiers de style fournis par défaut (voir ci-dessous le dossier
-    thèmes dans le paragraphe ‘Fichiers du dossier S’). Si vous complétez ou modifiez un de ces fichiers, ne le
+    thèmes dans le paragraphe ‘Fichiers du dossier système’). Si vous complétez ou modifiez un de ces fichiers, ne le
     copiez pas en totalité. Créez votre fichier, commencez-le par une instruction d’importation telle que décrite
     dans la norme CSS, puis ajoutez simplement vos modifications.
 
@@ -295,7 +296,7 @@ parfois même, leur création nécessite une intervention manuelle.
 #### Précisions sur le contenu de la base de donnée
 
 Parmi ces fichiers, deux fichiers constituent la BdD ; ce qu’ailleurs, on appelle le catalogue. Ces fichiers
-sont au format Sqlite. Il est possible de les consutler àvec un utilitaire dédié à Sqlite. Sqlitebrowser, par exemple.
+sont au format SQLite. Il est possible de les consutler àvec un utilitaire dédié à SQLite. Sqlitebrowser, par exemple.
 
 - `library.db` : qui contient toutes les données de développement. En fait, tout ce que l'on retrouve dans les
   fichiers “sidecar“ associés à chaque fichier de photo et portant l'extension `.xmp`.
@@ -303,7 +304,7 @@ sont au format Sqlite. Il est possible de les consutler àvec un utilitaire déd
 - `data.db` : qui contient tout le reste, les mots-clés, les styles, les pré-réglages, la géolocalisation, ...
 
 La scission en deux fichiers de la BdD a été faite pour pouvoir la régénérer à partir des fichiers XMP sans perdre
-les mots clés, les styles et les pré-réglages. Pour faire cela, il suffit de réinitaliser uniquement library.db.
+les mots clés, les styles et les pré-réglages. Pour faire cela, il suffit de réinitialiser uniquement library.db.
 
 L'option de lancement `--library` avec le nom d'emplacement `:memory:` permet de faire fonctionner darktable avec
 une base de donnée créée uniquement en mémoire, qui sera effacée lors de la fermeture du logiciel.
@@ -314,7 +315,7 @@ Comme vous pouvez le constater, la plupart de ces fichiers contiennent des donn�
 Et même, si la plupart d’entre eux peuvent être reconstitués facilement, il est certainement plus facile d'avoir
 une sauvegarde du tout. Donc sauvegarder le dossier complet n'est pas une mauvaise idée. D'autant plus que les
 fichiers qu'il contient ne représentent qu'un tout petit volume d'informations. L'essentiel en terme de volume,
-ce sont les deux fichiers de la BdD.
+ce sont les deux fichiers de la BdD. La sauvegarde du dossier devra être réalisée lors darktable n’est pas actif.
 
 #### Réinitialisation / restauration
 
@@ -376,7 +377,7 @@ Voici la liste des fichiers de ce dossier avec la description de leur contenu.
 
 - `gdb_commands`
   | Système | Configuration | Texte |<br/>Fichier contenant quelques commandes utilisées lors d’un
-  lancement de darktable via la commande gdb à des fins de déboguage.
+  lancement de darktable via la commande gdb à des fins de débogage.
 
 - `kernels`
   | Système | Configuration | Texte |<br/>Dossier contenant les codes support OpenCL des modules
@@ -445,7 +446,7 @@ Voici la liste des fichiers de ce dossier avec la description de leur contenu.
     Feuille de style élégante plus sombre.
 
   - `darktable-elegant-grey.css`
-    Feuille de style élégante claire.
+    Feuille de style élégante gris clair.
 
   - `darktable-elegant-highcontrast.css`
     Feuille de style élégante contrastée.  
@@ -460,14 +461,14 @@ Voici la liste des fichiers de ce dossier avec la description de leur contenu.
     Feuille de style plus sombre avec icônes.
 
   - `darktable-icons-grey.css`
-    Feuille de style claire avec icônes.
+    Feuille de style gris clair avec icônes.
 
   - `darktable-icons-highcontrast.css`
     Feuille de style contrastée avec icônes.
     
 - `tools`
   Dossier qui contient quelques programmes utilitaires d’administration de darktable. Actuellement ce sont
-  des scripts bash. En voici la liste :
+  des scripts bash (Linux, MacOS). En voici la liste :
   - `common.sh`
   - `extract_wb_from_images.sh`
   - `purge_from_cache.sh`
@@ -477,8 +478,9 @@ Attention ! Ces scripts ne sont pas disponibles dans la version Windows, car ce 
 langage Bash qui nécessitent donc l’interpréteur bash, non disponible nativement sous windows. Le seul script
 disponible dans la version Windows est :
   - `purge_nonexistent_images.bat`
-Néanmoins si vous avez besoins d'utiiser les scritps des versions Linux et MacOS, il est tout à fait possible
-de les télécharger à partir du dépot [Github de darktable](https://github.com/darktable-org/darktable)
+Néanmoins si vous avez besoins d'utiiser les scritps Disponibles dans les versions Linux et MacOS,
+il est tout à fait possible de les télécharger à partir du dépot
+[Github de darktable](https://github.com/darktable-org/darktable)
 et de les exécuter dans le sous-système Linux (WSL) disponible dans Windows.
 
 - `watermarks`
