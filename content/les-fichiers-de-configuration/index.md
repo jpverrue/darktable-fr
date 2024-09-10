@@ -15,19 +15,23 @@ parent = "documentation"
 
 # Référence des fichiers de configuration et de fonctionnement de darktable
 
-Ce document décrit les fichiers et dossiers conformes à la version 4.8 de darktable. 
+## À propos
 
-La précédente édition mentionnait la conformité avec la version 3.8. Il y a eu très peu de modifications
-des fichiers de configuration pour les versions parues entre la 3.8 et la 4.8. Il n'y a donc pas eu de
-parutions intermédiaires.
+Ce document décrit les fichiers et dossiers conformes à la version 5.0 de darktable. 
 
-Dans cette édition, les descriptions des fichiers obsolètes ont été supprimées, car suffisamment anciennes.
-
+- La précédente édition mentionnait la conformité avec la version 3.8. Il y a eu très peu de modifications
+  des fichiers de configuration pour les versions parues entre la 3.8 et la 4.8. Il n'y a donc pas eu de
+  parutions intermédiaires. Hormis les ajouts mentionnés dans le point suivant, ce document reste tout à fait
+  utilisable pour les versions de darktable depuis la 3.8.
+- La version 5.0 de darktable apporte essentiellement des nouveaux fichiers dans les dossiers système `styles`
+  et `themes`.
+- Dans cette édition, les descriptions des fichiers obsolètes ont été supprimées, car suffisamment anciennes.
+  (avant 3.8)
 
 ## Préambule
 
 Indépendamment de vos propres fichiers d’images, darktable utilise un certain nombre de fichiers pour
-fonctionner : ces fichiers sont de plusieurs ordres.
+fonctionner. Ces fichiers sont de plusieurs ordres.
 
 - On distinguera d’abord les fichiers qui sont propres à chaque utilisateur de darktable de ceux qui sont
   communs à tous les utilisateurs. Ces derniers sont fournis systématiquement avec chaque nouvelle version
@@ -302,7 +306,7 @@ La scission en deux fichiers de la BdD a été faite pour pouvoir la régénére
 les mots clés, les styles et les pré-réglages. Pour faire cela, il suffit de réinitaliser uniquement library.db.
 
 L'option de lancement `--library` avec le nom d'emplacement `:memory:` permet de faire fonctionner darktable avec
-une base de donnée créée uniquement en mémoire et qui sera effacée lors de la fermeture du logiciel.
+une base de donnée créée uniquement en mémoire, qui sera effacée lors de la fermeture du logiciel.
 
 #### Sauvegarde 
 
@@ -420,8 +424,8 @@ Voici la liste des fichiers de ce dossier avec la description de leur contenu.
   L'utilisation de ces styles permet d'obtenir rapidement un rendu plus proche de celui des fichiers JPEG
   fournis par l'appareil photo.
   
-  - `darktable_marque_modèle.dtstyle`
-    | Système | Développement | Texte |<br/>Fichier de style fourni par darktable. Pour obtenir le nom réel
+  - `darktable_<marque>_<modèle>.dtstyle`
+    | Système | Développement | Texte |<br/>Fichiers de style fournis par darktable. Pour obtenir le nom réel
     du fichier, il faut bien sûr remplacer “marque” et “modèle” par le nom de la marque et le nom du modèle.
     Par exemple : 'darktable_Fujifilm_X100F.dtsyle'
 
