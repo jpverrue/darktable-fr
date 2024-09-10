@@ -404,8 +404,11 @@ Voici la liste des fichiers de ce dossier avec la description de leur contenu.
     le fichier cameras.xml, le cas échéant,
 
 - `style`
-  Dossier contenant les feuilles de style (css), ainsi que quelques fichiers jpeg, gif et ico, nécessaires à
+  Dossier contenant les feuilles de style (css), ainsi que quelques fichiers JPEG, GIF et ICO, nécessaires à
   l’exportation sous forme de “galerie web”. Voir aussi le dossier `pswp`.
+
+- `styles`
+  À venir dans la prochaine version (5.0)
 
 - `themes`
   Dossier contenant les fichiers de configuration de l'aspect de l'interface de darktable. Ces fichiers sont au
@@ -417,26 +420,32 @@ Voici la liste des fichiers de ce dossier avec la description de leur contenu.
     Feuille de style d’origine de darktable.
 
   - `darktable-elegant-dark.css`
-    Nouvelle feuille de style sombre.
+    Feuille de style élégante sombre.
 
   - `darktable-elegant-darker.css`
-    Nouvelle feuille de style plus sombre.
+    Feuille de style élégante plus sombre.
 
   - `darktable-elegant-grey.css`
-    Nouvelle feuille de style claire.
+    Feuille de style élégante claire.
+
+  - `darktable-elegant-highcontrast.css`
+    Feuille de style élégante contrastée.  
 
   - `darktable-icons.css`
-    Nouvelle feuille de style sombre avec icônes.
+    Feuille de style sombre avec icônes.
 
   - `darktable-icons-dark.css`
-    Nouvelle feuille de style sombre avec icônes.
+    Feuille de style sombre avec icônes.
 
   - `darktable-icons-darker.css`
-    Nouvelle feuille de style plus sombre avec icônes.
+    Feuille de style plus sombre avec icônes.
 
   - `darktable-icons-grey.css`
-    Nouvelle feuille de style claire avec icônes.
+    Feuille de style claire avec icônes.
 
+  - `darktable-icons-highcontrast.css`
+    Feuille de style contrastée avec icônes.
+    
 - `tools`
   Dossier qui contient quelques programmes utilitaires d’administration de darktable. Actuellement ce sont
   des scripts bash. En voici la liste :
@@ -445,12 +454,17 @@ Voici la liste des fichiers de ce dossier avec la description de leur contenu.
   - `purge_from_cache.sh`
   - `purge_non_existing_images.sh`
   - `purge_unused_tags.sh`
-Attention ! Ces scripts sont disponibles dans la version Windows, mais pas utilisables tels quels. Ce sont
-des scripts en langage bash qui nécessitent l’interpréteur bash, non disponible nativement sous windows.
+Attention ! Ces scripts ne sont pas disponibles dans la version Windows, car ce sont des scripts écrits en
+langage Bash qui nécessitent donc l’interpréteur bash, non disponible nativement sous windows. Le seul script
+disponible dans la version Windows est :
+  - `purge_nonexistent_images.bat`
+Néanmoins si vous avez besoins d'utiiser les scritps des versions Linux et MacOS, il est tout à fait possible
+de les télécharger à partir du dépot [Github de darktable](https://github.com/darktable-org/darktable)
+et de les exécuter dans le sous-système Linux (WSL) disponible dans Windows.
 
 - `watermarks`
   Dossier contenant les quelques fichiers de filigrane disponibles par défaut avec darktable. Ces fichiers
-  sont au format SVG (sur une base xml). En voici la liste. Tous sont classifiés <br/>
+  sont au format SVG. En voici la liste. Tous sont classifiés <br/>
   | Système | Développement | Texte |
   - `darktable.svg`
   - `fixed-size-text.svg`
@@ -477,8 +491,8 @@ Il y a plusieurs raisons à cela :
 
 Bref tout cela fait beaucoup de variables et il faudrait probablement un document aussi volumineux que
 celui-ci pour faire l’inventaire exhaustif de toutes les hypothèses. Ce sujet a déjà été traité
-abondamment sur le forum darktable.fr, sans que quelques règles simples puissent être établies.
-Donc, pour l’instant, je n’en parle pas.
+abondamment sur le [forum darktable.fr](https://forums.darktable.fr/index.php), sans que quelques
+règles simples puissent être établies. Donc, pour l’instant, je n’en parle pas.
 
 ### Fichiers dans vos dossiers de photos.
 | Utilisateur | Développement | Texte |<br/>En plus de tous ces fichiers de configuration ou de fonctionnement,
@@ -487,7 +501,7 @@ darktable. Ces fichiers sont nommés en ajoutant l’extension “.xmp” au nom
 (nom + extension). Ces fichiers contiennent toutes les données nécessaires pour pouvoir reproduire le traitement
 de vos images, même si vous avez supprimé l’intégralité des fichiers que j’ai listés ci-dessus. Tant que vous
 avez ces fichiers, vous n’avez rien perdu. Ces fichiers sont au format XMP (sur une base xml). La norme XMP
-est maintenant une norme ISO sous le numéro ISO-16684-1:2012
+est maintenant une norme ISO sous le numéro ISO-16684-1:2012.
 
 Voilà, j'espère ne pas en avoir oublié. N’hésitez pas à me signaler toute erreur ou omission !
 
