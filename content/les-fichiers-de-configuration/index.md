@@ -162,7 +162,7 @@ parfois même, leur création nécessite une intervention manuelle.
   | Utilisateur | Développement | Binaire |<br/>Fichier qui contient la seconde partie de la Base de Données
   (BdD). Contient les mots-clés, les styles, les préréglages, la géolocalisation. L’emplacement de ce fichier
   peut être modifié avec l’option de lancement `–-library`. L’utilisation de cette option modifiera
-  simultanément l’emplacement de `data.db` et de `library.db`. Fichier au format sqlite.
+  simultanément l’emplacement de `data.db` et de `library.db`. Fichier au format Sqlite.
 
 - `data.db.lock`
   | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la seconde partie de la BdD.
@@ -179,7 +179,7 @@ parfois même, leur création nécessite une intervention manuelle.
   avec la version antérieure. Avant cette modification, une sauvegarde est créée automatiquement par copie
   du fichier `data.db`. Ce fichier peut être supprimé s’il n’est pas envisagé de retour vers une version
   antérieure. Dans le nom de ce fichier, <version> correspond au numéro de la nouvelle version de darktable en
-  cours d’installation. Fichier au format sqlite.
+  cours d’installation. Fichier au format Sqlite.
 
 - `data.db-snp-<date>`
   | Utilisateur | Développement | Binaire |<br/>Ces fichiers contiennent des instantanés (snapshots en anglais,
@@ -187,13 +187,13 @@ parfois même, leur création nécessite une intervention manuelle.
   cadence régulière, afin de pouvoir revenir à une situation correspondant à la date mentionnée dans le nom du
   fichier. La date est enregistrée sous forme compacte - sans séparateurs -, selon la séquence suivante
   AAAAMMJJhhmmss. Vous pouvez régler les paramètres de maintenance de la BdD dans la fenêtre des préférences
-  de darktable → onglet stockage → paragraphe base de données. Fichier au format sqlite.
+  de darktable → onglet stockage → paragraphe base de données. Fichier au format Sqlite.
 
 - `library.db`
   Utilisateur | Développement | Binaire |<br/>Fichier qui contient la première partie de la BdD. Contient toutes
   les données de développement. L’emplacement de ce fichier peut être modifié avec l’option de lancement
   `–-library`. L’utilisation de cette option modifiera simultanément l’emplacement de `data.db` et de
-  `library.db`. Fichier au format sqlite.
+  `library.db`. Fichier au format Sqlite.
 
 - `library.db.lock`
   | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la première partie de la BdD. Voir
@@ -205,7 +205,7 @@ parfois même, leur création nécessite une intervention manuelle.
   la BdD avec la version antérieure. Avant cette modification, une sauvegarde est créée automatiquement par copie
   du fichier `library.db`. Ce fichier peut être supprimé s’il n’est pas envisagé de retour vers une version
   antérieure. Dans le nom, `<version>` correspond au numéro de la nouvelle version de darktable en cours
-  d’installation. Fichier au format sqlite.
+  d’installation. Fichier au format Sqlite.
 
 - `library.db-snp-<date>`
   | Utilisateur | Développement | Binaire |<br/>Ces fichiers contiennent des instantanés (snapshots en anglais,
@@ -213,7 +213,7 @@ parfois même, leur création nécessite une intervention manuelle.
   régulière, afin de pouvoir revenir à une situation correspondant à la date mentionnée dans le nom du fichier.
   La date est enregistrée sous forme compacte - sans séparateurs -, selon la séquence suivante AAAAMMJJhhmmss.
   Vous pouvez régler les paramètres de maintenance de la BdD dans la fenêtre des préférences de darktable → onglet
-  stockage → paragraphe base de données. Fichier au format sqlite.
+  stockage → paragraphe base de données. Fichier au format Sqlite.
 
 - `lua`
   Dossier utilisateur contenant les éventuels scripts additionnels, ceux que vous avez importés comme ceux que
@@ -288,28 +288,37 @@ parfois même, leur création nécessite une intervention manuelle.
   pas créé automatiquement lors de la configuration initiale de darktable. Si vous avez besoin de ce dossier pour y
   déposer des fichiers de filigranes, vous devez le créer.
 
-Parmi ces fichiers, deux fichiers constituent la BdD ; ce qu’ailleurs, on appelle le catalogue. Ces deux fichiers
-au format sqlite sont :
+#### Précisions sur le contenu de la base de donnée
+
+Parmi ces fichiers, deux fichiers constituent la BdD ; ce qu’ailleurs, on appelle le catalogue. Ces fichiers
+sont au format Sqlite. Il est possible de les consutler àvec un utilitaire dédié à Sqlite. Sqlitebrowser, par exemple.
 
 - `library.db` : qui contient toutes les données de développement. En fait, tout ce que l'on retrouve dans les
   fichiers “sidecar“ associés à chaque fichier de photo et portant l'extension `.xmp`.
 
-- `data.db` : qui contient tout le reste, les mots-clés, les styles, les pré-réglages, la géolocalisation.
+- `data.db` : qui contient tout le reste, les mots-clés, les styles, les pré-réglages, la géolocalisation, ...
 
 La scission en deux fichiers de la BdD a été faite pour pouvoir la régénérer à partir des fichiers XMP sans perdre
-les mots clés, les styles et les pré-réglages.
+les mots clés, les styles et les pré-réglages. Pour faire cela, il suffit de réinitaliser uniquement library.db.
+
+L'option de lancement `--library` avec le nom d'emplacement `:memory:` permet de faire fonctionner darktable avec
+une base de donnée créée uniquement en mémoire et qui sera effacée lors de la fermeture du logiciel.
+
+#### Sauvegarde 
 
 Comme vous pouvez le constater, la plupart de ces fichiers contiennent des données qui vous sont propres.
 Et même, si la plupart d’entre eux peuvent être reconstitués facilement, il est certainement plus facile d'avoir
 une sauvegarde du tout. Donc sauvegarder le dossier complet n'est pas une mauvaise idée. D'autant plus que les
-fichiers qu'il contient ne représentent qu'un tout petit volume d'informations. L'essentiel en volume ce sont les
-deux fichiers de la BdD.
+fichiers qu'il contient ne représentent qu'un tout petit volume d'informations. L'essentiel en terme de volume,
+ce sont les deux fichiers de la BdD.
+
+#### Réinitialisation / restauration
 
 À la lecture de ce qui précède, vous pouvez imaginer qu’une réinitialisation partielle ou complète de la
-configuration peut se faire en supprimant une partie ou la totalité des fichiers utilisateur. Attention cependant,
-car il existe un lien entre certaines informations contenues dans la base de donnée et les vignettes stockées dans
-le dossier `cache` (voir paragraphe ci-dessous). Si vous supprimez la BdD, il vous faudra également réinitialiser
-le cache des vignettes.
+configuration peut se faire en supprimant une partie ou la totalité des fichiers de configuration utilisateur.
+Attention cependant, car il existe un lien entre certaines informations contenues dans la base de donnée et les
+vignettes stockées dans le dossier `cache` (voir paragraphe ci-dessous). Si vous supprimez la BdD, il vous faudra
+également réinitialiser le cache des vignettes.
 
 ### Fichiers du dossier Cache.
 Voici la liste des dossiers et sous dossiers du dossier cache, ainsi que la description des fichiers qu’ils
@@ -407,7 +416,14 @@ Voici la liste des fichiers de ce dossier avec la description de leur contenu.
   l’exportation sous forme de “galerie web”. Voir aussi le dossier `pswp`.
 
 - `styles`
-  À venir dans la prochaine version (5.0)
+  Dossier contenant les styles spécifiques aux appareils photo pris en charge par darktable (plus de 500)
+  L'utilisation de ces styles permet d'obtenir rapidement un rendu plus proche de celui des fichiers JPEG
+  fournis par l'appareil photo.
+  
+  - `darktable_marque_modèle.dtstyle`
+    | Système | Développement | Texte |<br/>Fichier de style fourni par darktable. Pour obtenir le nom réel
+    du fichier, il faut bien sûr remplacer “marque” et “modèle” par le nom de la marque et le nom du modèle.
+    Par exemple : 'darktable_Fujifilm_X100F.dtsyle'
 
 - `themes`
   Dossier contenant les fichiers de configuration de l'aspect de l'interface de darktable. Ces fichiers sont au
