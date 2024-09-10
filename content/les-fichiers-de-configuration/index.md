@@ -9,8 +9,7 @@ weight = 5
 parent = "documentation"
 +++
 
-> Ce document est également disponible en format PDF ici : 
-> * [https://darktable.fr/Fichiers-de-configuration-de-darktable-6.pdf](/Fichiers-de-configuration-de-darktable-7.pdf)
+> Ce document est également disponible en format [PDF](/Fichiers-de-configuration-de-darktable-7.pdf)
 
 ---
 
