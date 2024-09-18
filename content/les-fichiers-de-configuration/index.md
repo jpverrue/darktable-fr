@@ -51,9 +51,9 @@ fonctionner. Ces fichiers sont de plusieurs ordres.
 Tous ces fichiers sont stockés à plusieurs endroits sur votre machine. Un endroit destiné
 essentiellement à vos propres fichiers que j’appellerai bien sûr le dossier **Utilisateur** ; un deuxième
 qui contient les vignettes de vos photos ainsi que quelques données d’exécution de darktable que j’appellerai
-dossier **Cache** ; un troisième qui sera utilisé pour les enregistrements de débogage que j’appellerai dossier
-**Temporaire** ; un quatrième destiné aux fichiers système que j’appellerai dossier **Système** cela va de soi !
-Et enfin, tous les dossiers qui contiennent des images que vous avez importées. Ces dossiers sont situés
+dossier **Cache** ; un troisième qui sera utilisé pour les enregistrements des journaux de débogage que j’appellerai
+dossier **Temporaire** ; un quatrième destiné aux fichiers système que j’appellerai dossier **Système** cela va de
+soi ! Et enfin, tous les dossiers qui contiennent des images que vous avez importées. Ces dossiers sont situés
 différemment selon le système que vous utilisez. Voici ces lieux décrits système par système. Vous pouvez aussi
 définir vous-même l’emplacement de ces dossiers grâce aux options de lancement de darktable.
 
@@ -74,13 +74,13 @@ la variable `$HOME` en saisie ; de plus, il est utilisable partout.
   `$HOME/.cache/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--cachedir`.
 
 - Dossier Temporaire :
-  `/tmp` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--tmpdir`.
+  `/tmp` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--tmpdir`. L'emplacement des
+  journaux de débogage peut aussi être modifié avec l'option `--dumpdir`.
 
 - Dossier Système :
   `/usr/share/darktable` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--datadir`.
-
-Si vous compilez vous-même la version la plus récente de darktable, le dossier système se trouve par
-défaut dans `/opt`.
+  Si vous compilez vous-même la version la plus récente de darktable, le dossier système se trouve par
+  défaut dans `/opt`.
 
 Le dossier `.config` est un dossier caché (le '.' au début du nom). Pour y accéder, il suffit de taper
 son nom. Voici les moyens pour le visualiser :
@@ -101,7 +101,7 @@ concernant la variable `$HOME`, héritée d'UNIX, s'applique donc également ici
 
 - Dossier Temporaire :
   `/private/var/folders/h_/<hashcode>/T` par défaut. Cet emplacement peut être modifié avec l’option de
-  lancement `--tmpdir`.
+  lancement `--tmpdir`. L'emplacement des journaux de débogage peut aussi être modifié avec l'option `--dumpdir`.
 
 - Dossier Système :
   `/Applications/darktable.app/Contents/Resources/share/darktable` par défaut. Cet emplacement peut être
@@ -124,6 +124,11 @@ ce [fil de discussion](https://forums.darktable.fr/showthread.php?tid=1972)
 
 - Dossier Temporaire :
   `%LOCALAPPDATA%\Temp\` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--tempdir`.
+  Cependant, par defaut Windows utilise un autre dossier pour l'enregistrement des journaux de débogage :<BR/>
+  pour Windows 10 : `C:\Users\[username]\AppData\Local\Microsoft\Windows\INetCache\darktable\darktable-log.txt`,<BR/>
+  pour Windows 7 : `C:\Users\[username]\AppData\Local\Microsoft\Windows\Temporary Internet Files\darktable\darktable-log.txt`.<BR/>
+  Ces dossiers sont des dossiers cachés, copiez /collez les liens ci-dessus dans l'explorateur pour y accéder.
+  L'emplacement des journaux de débogage peut aussi être modifié avec l'option `--dumpdir`.
 
 - Dossier Système :
   `C:\Program Files\darktable\share\darktable\` par défaut. Cet emplacement peut être modifié avec l’option de
