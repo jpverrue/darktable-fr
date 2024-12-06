@@ -1,7 +1,8 @@
 ---
 title: "Comment vous pouvez aider darktable et darktable.fr"
 date: "2021-01-06"
-featured: true
+featured: false
+draft: true
 masonry: true
 categories: 
   - "actualites"

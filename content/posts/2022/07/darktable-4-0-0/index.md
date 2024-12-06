@@ -38,5 +38,3 @@ Ou encore sur :
 * https://9to5linux.com/darktable-4-0-released-to-celebrate-10-years-of-open-source-raw-image-editing
 
 Encore merci à toutes les personnes qui ont contribuées de près ou de loin à l'élaboration de cette version
-
-Et n'oubliez pas que vous pouvez soutenir directement les développements en faisant un don sur Liberapay et Paypal (les liens se trouvent sur votre droite ou en cliquant sur l'icône en forme de tasse de café/thé)
