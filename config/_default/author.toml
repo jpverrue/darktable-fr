@@ -1,6 +1,6 @@
 name = ""
 avatar = "images/logo.png" # Avatar image. Default to "images/profile.webp".
-bio = "Aidez-nous à supporter les coûts d'hébergement et à l'amélioration continue du logiciel en nous faisant un don via : "
+bio = "Site de la communauté francophone des utilisateurs du logiciel darktable"
 # company = 'Company'
 # company = '<a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a>'
 # location = "Earth"
