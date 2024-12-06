@@ -12,13 +12,13 @@ bio = "Aidez-nous à supporter les coûts d'hébergement et à l'amélioration c
 [params]
   layout = "compact"
 
-[social]
+#[social]
   #email = "admin@darktable.fr"
   #facebook = "yourfacebookusername"
   #github = "darktable-fr"
   #twitter = "darktable_fr"
   #linkedin = "yourlinkedinusername"
-  liberapay = "darktable.fr"
-  paypal="andycostanza"
-  patreon="darktablefr"
-  tipeee="darktable-fr"
+  #liberapay = "darktable.fr"
+  #paypal="andycostanza"
+  #patreon="darktablefr"
+  #tipeee="darktable-fr"

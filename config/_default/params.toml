@@ -124,13 +124,13 @@ viewer = true # Image Viewer
     # distance = 100
     # useExtendedSearch = true
 
-[reward]
+#[reward]
   #alipay = "images/reward/alipay.png"
   #wechat = "images/reward/wechat.png"
-  paypal = "images/reward/paypal.png"
-  patreon = "images/reward/patreon.png"
-  liberapay = "images/reward/liberapay.png"
-  tipeee = "images/reward/tipeee.png"
+  #paypal = "images/reward/paypal.png"
+  #patreon = "images/reward/patreon.png"
+  #liberapay = "images/reward/liberapay.png"
+  #tipeee = "images/reward/tipeee.png"
 
 #[share]
   #addThis = "" # AddThis pubid.
