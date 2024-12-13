@@ -80,32 +80,38 @@ sur les changements individuels (le cas échéant).
   
 ## Améliorations de l'interface utilisateur (UI/UX)
 
-- Added camera-specific styles for more than 500 camera models to more
-  closely approximate the out-of-camera JPEG rendition.  These styles
-  only affect contrast, brightness, and saturation and do not attempt
-  to match sharpening, denoising, or hue shifts.  Also added a Lua
-  script to auto-apply the appropriate style on import and manually
-  apply styles to a collection of previously-imported images.
+- Ajout de styles spécifiques à l'appareil photo pour plus de 500 modèles
+  d'appareils photo afin d'obtenir un rendu JPEG plus proche de la réalité,
+  plus proche du rendu des images JPEG produites par  l'appareil photo.
+  Ces styles n'affectent que le contraste, la luminosité et la saturation et
+  n'essaient pas de correspondre à l'accentuation, au débruitage ou aux
+  changements de teinte. Nous avons également ajouté un script Lua pour
+  appliquer automatiquement le style approprié lors de l'importation et pour
+  appliquer manuellement des styles à une collection d'images précédemment
+  importées.
 
-- Added an optional splash screen showing startup progress (including
-  estimated time remaining during the scan for updated sidecar files) to
-  dramatically reduce the time between invoking darktable and something
-  appearing on screen when the user has a large library.
+- Afin de réduire considérablement le temps entre l'invocation de darktable et
+  l'apparition de quelque chose à l'écran particulèrement lorsque l'utilisateur
+  a une grande bibliothèque, ajout d'un écran d'accueil optionnel montrant
+  la progression du démarrage (incluant le temps estimé restant pendant
+  l'analyse des fichiers sidecar mis à jour)
 
-- The user interface now gives feedback while processing bulk image
-  operations such as rating, tagging, applying styles, and edit
-  history management (and undoing those operations), rather than
-  silently freezing until the operation completes.  While the
-  operation is in progress, darktable will now show either a busy
-  cursor (such as a stopwatch or spinner) or a progress bar with
-  option to cancel the remainder of the operation.
+- L'interface utilisateur fournit désormais un retour d'information lors du
+  traitement d'opérations de masse sur les images telles que le classement,
+  l'étiquetage, l'application de styles et la gestion de l'historique des
+  modifications (et l'annulation de ces opérations), au lieu de se figer
+  silencieusement jusqu'à ce que l'opération soit terminée. Lorsque
+  l'opération est en cours, darktable affiche désormais soit un curseur
+  occupé (tel qu'un chronomètre ou un tourniquet), soit une barre de
+  progression avec la possibilité d'annuler le reste de l'opération.
 
-- Paths for drawn masks now display two Bézier handles per control point,
-  which can be moved individually. This allows for more precise control
-  of the paths.
+- Les tracés des masques dessinés affichent désormais deux poignées de Bézier
+  par point de contrôle, qui peuvent être déplacées individuellement.
+  Cela permet un contrôle plus précis des contours.
 
-- Added a high-contrast theme with bright white text on a dark gray
-  background.
+- Ajout d'un thème à fort contraste avec un texte blanc vif sur un fond gris foncé.
+
+----------------------------------------------------------------
 
 - Enhanced tooltips for utility module headers to provide more
   information about the module.
