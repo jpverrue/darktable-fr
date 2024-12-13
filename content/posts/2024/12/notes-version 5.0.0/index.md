@@ -142,34 +142,35 @@ sur les changements individuels (le cas échéant).
 
   - Le menu contient également une option « Restaurer défaut » qui réinitialise la
     sélection et la position des modules dans la vue courante. Dans la boîte de dialogue
-    des préférences, sur l'onglet général, il y a un bouton « réinitialiser les panneaux
+    des préférences, sur l'onglet Général, il y a un bouton « réinitialiser les panneaux
     des vues » qui réinitialise toutes les vues, y compris la visibilité et la largeur
     des panneaux eux-mêmes.
 
+- Dans la boîte de dialogue des préférences, sur l'onglet Chambre noire, ajout d'une option
+  pour échanger les panneaux latéraux droi et gauche.
+
+- La première fois qu'un nouvel utilisateur appuiera sur la touche <kbd>Tab</kbd>, il sera
+  averti que cette action a pour effet de masquer tous les panneaux et comment les faire
+  réapparaître. Nous espérons que cela évitera toute confusion ou frustration.
+
+- Il est maintenant possible de faire glisser les modules utilitaires en les prenant
+  par leur entête, pour les repositionner sur les panneaux gauche et droit (table
+  lumineuse) ainsi que verticalement (toutes les vues). Maintenez <kbd>Ctrl+Shift</kbd>
+  pour éviter de les développer/replier avant de les faire glisser. Chaque vue peut
+  ainsi avoir une disposition différente.
+
+- Le glisser-déposer des modules de traitement dans le panneau droit de la chambre
+  noire a été amélioré pour permettre un défilement automatique lorsqu'on atteint
+  le haut ou le bas de la page et pour ne pas être perturbé lorsque des images sont
+  glissées dans la zone.
+
+- Amélioration du message affiché au démarrage lorsque la base de données est
+  verrouillée par une autre instance de darktable.
+  
+- Amélioration de l'icône du bouton Filtrer par label de couleur qui affiche dorénavant
+  l'acion souhaitée (union/intersection).
+
 ----------------------------------------------------------------
-
-- Added a global preference to swap the left and right side panels in
-  the darkroom view.
-
-- The first time a new user presses Tab, they will be warned that this
-  will hide all panels and how to get them back. Hopefully this
-  prevents some confusion or frustration.
-
-- Drag&drop utility module headers to reposition them across the left
-  and right panels (lighttable) as well as vertically (all
-  views). Hold <kbd>Ctrl+Shift</kbd> to avoid expanding/collapsing
-  them before dragging. Each view can have a different layout.
-
-- Drag&drop of processing modules in the darkroom right panel has been
-  improved to auto-scroll when reaching the top or bottom and to not
-  get confused when images get dragged into the area.
-
-- Improved the message displayed at startup when the database is
-  locked by another instance of darktable.
-
-- Replaced the icon of the operator button in the color label filter
-  for working with multiple selected color labels
-  (union/intersection).
 
 ## Améliorations des performances
 
