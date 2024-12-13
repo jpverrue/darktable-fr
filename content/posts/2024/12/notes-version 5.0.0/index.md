@@ -111,42 +111,42 @@ sur les changements individuels (le cas échéant).
 
 - Ajout d'un thème à fort contraste avec un texte blanc vif sur un fond gris foncé.
 
+- Amélioration des infobulles pour les en-têtes des modules utilitaires afin
+  de fournir plus d'informations sur ces modules.
+  
+- Ajout de conseils pour les nouveaux utilisateurs sur la table lumineuse
+  lorsqu'elle est vide.
+
+- Ajout de deux nouvelles images de remplacement pour mieux identifier les images
+  manquantes, non prises en charge ou corrompues. Lorsque l'on tente de modifier une
+  de ces images, un message d'erreur approprié et plus spécifique s'affiche.
+
+- Lors de la sélection d'un style dans le module d'exportation, le survol du nom du
+  style dans le menu contextuel affiche une vignette de prévisualisation de l'effet de
+  l'ajout du style à l'image active (première image sélectionnée dans la table lumineuse,
+  image centrale dans la chambre noire).
+  
+- Possibilité de sélectionner les modules utilitaires à afficher sur les panneaux latéraux
+  dans les différentes vues.
+
+  - Cliquez avec le bouton droit de la souris sur la zone de panneau vide située sous les
+    modules pour accéder à un menu permettant de les masquer ou de les afficher. Cela permet
+    entre autres, d'ajouter des modules supplémentaires à la chambre noire, comme l'Éditeur
+    de métadonnées ou les Styles.
+
+  - Cela remplace les options dans les préférences des modules « Collections » et
+    « Collections récentes » pour afficher ou masquer ces dernières et afficher un
+    bouton « Historique » dans le premier à la place. Les utilisateurs qui veulent le
+    module  « Collections récentes » séparé devront le réactiver via le nouveau menu
+    <kbd>Clic droit</kbd>.
+
+  - Le menu contient également une option « Restaurer défaut » qui réinitialise la
+    sélection et la position des modules dans la vue courante. Dans la boîte de dialogue
+    des préférences, sur l'onglet général, il y a un bouton « réinitialiser les panneaux
+    des vues » qui réinitialise toutes les vues, y compris la visibilité et la largeur
+    des panneaux eux-mêmes.
+
 ----------------------------------------------------------------
-
-- Enhanced tooltips for utility module headers to provide more
-  information about the module.
-
-- Added more new-user hints on an empty lighttable.
-
-- Added two new error placeholder images to distinguish between
-  missing, unsupported, and corrupted images.  When attempting to edit
-  such an image, an appropriate, more specific error message is
-  displayed.
-
-- When selecting a style in the export module, hovering on the style
-  name in the popup menu displays a thumbnail previewing the effect of
-  appending the style to the active image's edit (first selected image
-  in lighttable, center-view image in darkroom).
-
-- Allow for selecting the utility modules to be displayed on the
-  panels in the different views.
-
-  - Right-click on the empty panel area below the modules to get a
-    menu where they can be hidden or shown. This allows additional
-    modules to be added to the darkroom, like metadata editor and
-    styles.
-
-  - This replaces the options in the "collections" and "recently used
-    collections" modules' preferences to show or hide the latter and
-    show a "history" button in the former instead. Users that want the
-    separate module will need to reenable it once via the new
-    <kbd>Right-click</kbd> menu.
-
-  - The menu also contains an option "restore defaults" that resets
-    the selection and position of modules in the current view. In the
-    preferences dialog, on the general tab, there's a "reset view
-    panels" button that resets all views, including visibility and
-    width of the panels themselves.
 
 - Added a global preference to swap the left and right side panels in
   the darkroom view.
