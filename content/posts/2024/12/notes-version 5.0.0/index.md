@@ -170,75 +170,75 @@ sur les changements individuels (le cas échéant).
 - Amélioration de l'icône du bouton Filtrer par label de couleur qui affiche dorénavant
   l'acion souhaitée (union/intersection).
 
-----------------------------------------------------------------
-
 ## Améliorations des performances
 
-- Added OpenCL implementation of color equalizer.
+- Ajout de l'implémentation OpenCL de l'égaliseur couleur.
 
-- Improved the speed of bulk image operations by improving the speed
-  of sidecar writes, and by moving sidecar updates for many operations
-  into a background task, allowing the user to proceed before the
-  writes complete.
+- Amélioration de la vitesse des opérations d'images en masse par amélioration de la
+  vitesse d'écriture des sidecars et en déplaçant les mises à jour des sidecars pour de
+  nombreuses opérations dans une tâche d'arrière-plan, ce qui permet à l'utilisateur de
+  continuer avant que les écritures ne soient terminées.
 
-- Significantly accelerated loading of PFM files due to loops
-  parallelization and optimization that eliminated additional
-  processing.
+- Accélération significative du chargement des fichiers PFM grâce à la parallélisation
+  et à l'optimisation des boucles qui ont permis d'éliminer les traitements supplémentaires.
 
 ## Autres changements
 
-- Switched default scope for new installations from histogram to
-  waveform to display more detailed information about image color and
-  tonality.
+- Pour les nouvelles installations, l'histogramme a été remplacé par la forme d'onde afin
+  d'afficher des informations plus détaillées sur la couleur et la tonalité de l'image.
 
-- The ISO 12646 color assessment condition is kept until unset by user
-  action.
+- La fonction d'évaluation de la couleur ISO 12646 est conservée jusqu'à ce qu'elle soit
+  désactivée par l'utilisateur.
 
-- Exposure bias can now be used to form collections and as a display filter.
+- Le biais d'exposition peut maintenant être utilisé pour former des collections et comme
+  filtre d'affichage.-
 
-- Improved visualization of the color equalizer's effect.
+- Amélioration de la visualisation de l'effet de l'égaliseur de couleurs.
 
-- Improved debugging support for verifying CPU vs. GPU results.
+- Amélioration du support de débogage pour la vérification des résultats CPU vs. GPU.
 
-- Add Calibrite alias for X-Rite ColorChecker in color calibration.
+- Ajout de l'alias Calibrite pour X-Rite ColorChecker dans l'étalonnage des couleurs.
 
-- The scan for updated sidecar files now ignores timestamp differences
-  of two seconds or less.
+- L'analyse des fichiers sidecar mis à jour ignore désormais les différences d'horodatage
+  de deux secondes ou moins.
 
-- The macOS installation package now has a background image to direct
-  the user on installing darktable.app.
+- Le paquet d'installation pour macOS dispose désormais d'une image de fond pour guider
+  l'utilisateur lors de l'installation de darktable.app.
 
-- Changed the user interface of the import dialog to make it easier to
-  delete custom places.
+- Modification de l'interface utilisateur de la boîte de dialogue d'importation pour
+  faciliter la suppression des emplacements personnalisés.
 
-- Numerous rounds of code cleanup.
+- Nombreux cycles de nettoyage du code.
 
-- The copy-parts dialog does not select any module by default now.
+- La boîte de dialogue de copie sélective ne sélectionne plus aucun module par défaut.
 
-- Add support for undo/redo for actions done on the filmstrip while in
-  darkroom.
+- Ajout de la prise en charge de défaire/rétablir pour les actions effectuées sur le
+  panneau pellicule dans la chambre noire.
+  
+              - Dans la chambre noire, ajouter une action (liée à <kbd>Ctrl+x</kbd> par défaut)
+                pour synchroniser le dernier module édité sur le module édité actuel avec la sélection.hh
+              - In darkroom, add action (binding to <kbd>Ctrl+x</kbd> by default) for
+                synchronizing the last edited module on current edited module to the
+                selection.
 
-- In darkroom, add action (binding to <kbd>Ctrl+x</kbd> by default) for
-  synchronizing the last edited module on current edited module to the
-  selection.
+- Ajustement des paramètres internes de l'encodeur AVIF afin d'augmenter considérablement
+  la vitesse d'encodage sans compromettre la qualité de sortie.
 
-- Adjusted the internal AVIF encoder parameter to significantly boost
-  encoding speed without compromising the output quality.
 
-- Tag names can now easily be copied to the clipboard via popup
-  context menu in the tagging module.
 
-- The Piwigo export storage now supports to specify a file name
-  pattern for the exported file.
+- Les mots-clés peuvent désormais être facilement copiés dans le presse-papiers via le
+  menu contextuel du module Mots-clés
+  
+- Le Stockage cible du module Exporter Piwigo, permet maintenant de spécifier un modèle
+  de nom de fichier pour le fichier exporté.
 
-- The directory where darktable will write the log file under Windows
-  has been changed to %USERPROFILE%\Documents\Darktable. This allows
-  the user to easily see where the log file is located without even
-  having to search for it in the documentation or FAQ. The previous
-  location was deep in the system subdirectories of the user profile,
-  and also under a hidden directory (so it was impossible to click to
-  it in File Explorer with default system settings).
-
+- Le répertoire dans lequel darktable écrira le fichier journal sous Windows a été modifié
+  en %USERPROFILE%\Documents\Darktable. Cela permet à l'utilisateur de voir facilement où
+  se trouve le fichier journal sans avoir à le chercher dans la documentation ou la FAQ.
+  L'emplacement précédent se trouvait dans les sous-répertoires système du profil de
+  l'utilisateur, ainsi que dans un répertoire caché (il était donc impossible de cliquer
+  dessus dans l'explorateur de fichiers avec les paramètres système par défaut).
+---------------------------------------------------------------
 - Allow import of JPEG 2000 files with .jpf and .jpx file extensions.
 
 - Add a visible indicator to the color calibration module when its
