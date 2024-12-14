@@ -299,8 +299,11 @@ sur les changements individuels (le cas échéant).
   actuellement dans les balises spécifiques DNG, nous marquons l'image avec le mot-clé
   darktable|issue|no-samples pour une meilleure prise en charge.
 
-- Prise en charge des fichiers HEIF avec compression AVC (H.264) et extension
-  de fichier .avci.
+- Prise en charge en lecture des fichiers HEIF avec compression AVC (H.264) et
+  extension de fichier .avci.
+
+- Ajout d'un support de lecture pour les images encodées en JPEG 2000 dans les
+  conteneurs HEIF avec l'extension de fichier .hej2
 
 ---------------------------------------------------------------
 
