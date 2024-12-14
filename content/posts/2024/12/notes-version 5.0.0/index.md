@@ -216,7 +216,8 @@ sur les changements individuels (le cas échéant).
   panneau pellicule dans la chambre noire.
   
               - Dans la chambre noire, ajouter une action (liée à <kbd>Ctrl+x</kbd> par défaut)
-                pour synchroniser le dernier module édité sur le module édité actuel avec la sélection.hh
+                pour synchroniser le dernier module édité sur le module édité actuel avec la sélection.
+  
               - In darkroom, add action (binding to <kbd>Ctrl+x</kbd> by default) for
                 synchronizing the last edited module on current edited module to the
                 selection.
@@ -386,11 +387,11 @@ sur les changements individuels (le cas échéant).
 
 ## Lua
 
-### API Version
+### Version de l'API
 
-- API version is now 9.4.0
+- La version de l'API est la 9.4.0
 
-### New Features
+### Nouvelles fonctionnalités
 
 - Added new event, inter-script-communication, to permit sending messages
   from one running script to another running script.
@@ -411,58 +412,60 @@ sur les changements individuels (le cas échéant).
 - Added new event, image-group-information-changed, that is raised any time
   an images group information changes.
 
-### Bug Fixes
+### Correction de bogues
 
 - Fixed a bug with dt_imageio_module_format_t.write_image so it returns
   true on success and false on failure.
 
-### Add action support for Lua
+### Ajout d'un support d'action pour Lua
 
-### Other Lua changes
+### Autres changements Lua
 
-- Lua scripts are now better integrated into Darktable and can be
-  fully translated. The design for the scripts manager has been
-  reworked to be more in line with the current Darktable GUI modules.
+- Les scripts Lua sont maintenant mieux intégrés dans Darktable et peuvent
+  être entièrement traduits. Le design du gestionnaire de scripts a été
+  retravaillé pour être plus en ligne avec les modules actuels de
+  l'interface graphique de Darktable.
 
 ## Notes
 
-- When exporting to AVIF, EXR, JPEG XL, or XCF, selecting specific
-  metadata (e.g. geo-tag or creator) is not currently possible. For
-  AVIF, EXR, JPEG XL, and XCF formats, darktable will not include any
-  metadata fields unless the user selects all of the checkboxes in the
-  export module's preference options.
+- Lors de l’exportation vers les formats AVIF, EXR, JPEG XL ou XCF,
+  la sélection de métadonnées spécifiques (par exemple, géomarquage ou
+  créateur) n’est actuellement pas possible. Pour les formats AVIF, EXR,
+  JPEG XL et XCF, darktable n’inclura aucun champ de métadonnées à moins que
+  l’utilisateur ne sélectionne toutes les cases à cocher dans les options
+  de Préférence du module Exporter.
 
-- Release 4.8 drops support for macOS versions older than 13.5.
+- la version 5.0 ne prend plus en charge les versions de macOS antérieures à 13.5.
+- 
+## Changement de dépendences
 
-## Changed Dependencies
+### Obligatoire(s)
 
-### Mandatory
+- Passage à la version 3.26 pour SQLite
 
-- Bump SQLite requirement to 3.26
-
-### Optional
+### Optionelles
 
 - n/a
 
-## RawSpeed changes
+## Changements RawSpeed
 
 - Fujifilm GFX cameras now use the vendor supplied crop
 
-## Camera support, compared to 4.8
+## Nouveaux Support d'appareils depuis la version 4,8
 
-### Base Support
-
-- ???
-
-### White Balance Presets
+### Support de base
 
 - ???
 
-### Noise Profiles
+### Préréglages de la balance des blancs
 
 - ???
 
-### Missing Compression Mode Support
+### Profils de réduction de bruit
+
+- ???
+
+### Absence de prise en charge du mode de compression
 
 - Apple ProRAW DNGs
 - CinemaDNG lossless (Blackmagic, some DJI, etc.) and lossy (Blackmagic)
@@ -472,9 +475,9 @@ sur les changements individuels (le cas échéant).
 - OM System 14-bit high resolution ORFs
 - Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
-### Suspended Support
+### fin de Support
 
-Support for the following cameras is suspended because no samples are available on https://raw.pixls.us:
+La prise en charge des appareils suivants est suspendue car aucun échantillon n’est disponible sur raw.pixls.us :
 
 - Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
 - Fujifilm IS-1
@@ -488,7 +491,7 @@ Support for the following cameras is suspended because no samples are available 
 - Sinar Hy6/ Sinarback eXact
 - ST Micro STV680
 
-## Translations
+## Traductions
 
 - ???
 
