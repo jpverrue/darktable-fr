@@ -123,12 +123,13 @@ ce [fil de discussion](https://forums.darktable.fr/showthread.php?tid=1972)
   Cet emplacement peut être modifié avec l’option de lancement `--cachedir`.
 
 - Dossier Temporaire :
-  `%LOCALAPPDATA%\Temp\` par défaut. Cet emplacement peut être modifié avec l’option de lancement `--tempdir`.
-  Cependant, par defaut Windows utilise un autre dossier pour l'enregistrement des journaux de débogage :<BR/>
-  pour Windows 10 : `C:\Users\[username]\AppData\Local\Microsoft\Windows\INetCache\darktable\darktable-log.txt`,<BR/>
-  pour Windows 7 : `C:\Users\[username]\AppData\Local\Microsoft\Windows\Temporary Internet Files\darktable\darktable-log.txt`.<BR/>
-  Ces dossiers sont des dossiers cachés, copiez /collez les liens ci-dessus dans l'explorateur pour y accéder.
-  L'emplacement des journaux de débogage peut aussi être modifié avec l'option `--dumpdir`.
+  `%LOCALAPPDATA%\Temp\` par défaut.
+  Sous Windows, le dossier dans lequel darktable écrira les fichier journaux est différent du dossier temporaire.
+  Précédemment ces fichiers étaient enregistrés dans les sous-dossiers système du profil de l'utilisateur, ainsi
+  que dans un répertoire caché (il était donc impossible de cliquer dessus dans l'explorateur de fichiers
+  avec les paramètres système par défaut). C'est emplacement a été modifié en `%USERPROFILE%\Documents\Darktable`.<BR/>
+  Cet emplacement peut être modifié avec l’option de lancement `--tempdir`.
+  Il peut aussi être modifié avec l'option de lancement `--dumpdir`.
 
 - Dossier Système :
   `C:\Program Files\darktable\share\darktable\` par défaut. Cet emplacement peut être modifié avec l’option de
