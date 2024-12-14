@@ -238,63 +238,71 @@ sur les changements individuels (le cas échéant).
   L'emplacement précédent se trouvait dans les sous-répertoires système du profil de
   l'utilisateur, ainsi que dans un répertoire caché (il était donc impossible de cliquer
   dessus dans l'explorateur de fichiers avec les paramètres système par défaut).
----------------------------------------------------------------
-- Allow import of JPEG 2000 files with .jpf and .jpx file extensions.
 
-- Add a visible indicator to the color calibration module when its
-  color mapping section has non-neutral settings which will affect
-  color rendition.
+- L'importation de fichiers JPEG 2000 avec les extensions .jpf et .jpx est maintement
+  possible.
 
-- Added new substitution variables `$(IMAGE.TAGS.HIERARCHY)` to insert
-  tags with full hierarchy and `$(IMAGE.ID.NEXT)` to insert the image ID
-  to be assigned to the image being imported, allowing the image ID to
-  be part of the filename generated during a copy&import operation.
+- Ajout d'un indicateur visible dans le module Calibration des couleurs lorsque la section
+  de mappage des couleurs comporte des paramètres non neutres
+  qui affectent le rendu des couleurs.
+  
+- Ajout de nouvelles variables de substitution `$(IMAGE.TAGS.HIERARCHY)` pour insérer des
+  tags avec une hiérarchie complète et `$(IMAGE.ID.NEXT)` pour insérer le numéro (ID) d'image
+  à attribuer à l'image en cours d'importation, ce qui permet àu numéro d'image de faire
+  partie du nom de fichier généré lors d'une opération Copier & importer.
+  
+- L'exportation vers le format JPEG XL à virgule flottante avec une qualité de 100 essaiera
+  de le faire avec le moins de perte possible. Ceci est maintenant cohérent avec le
+  comportement des formats JPEG XL intégraux.
 
-- Exporting to floating-point JPEG XL with a quality of 100 will try
-  to do it as losslessly as possible. That is now consistent with the
-  behavior of integral JPEG XL formats.
+- La visibilité des raccourcis qui peuvent être modifiés par les utilisateurs a
+  été améliorée par l'utilisation du texte en gras
 
-- Improved visibility of shortcuts that can be changed by users by
-  using bold text.
+- Le réglage de l'exposition dans l'histogramme prend désormais en charge toutes les
+  fonctions standard du shéma Bauhaus de darktable (<kbd>Ctrl+clic</kbd>,
+  <kbd>Clic droit</kbd>...).
 
-- The histogram-exposure interface now supports all standard bauhaus
-  features (<kbd>Ctrl+click</kbd>, <kbd>Right-click</kbd>...).
+- Introduction de l'ordre des modules v5.0 pour que, lors de l'exportation, la mise
+  à l'échelle finale soit effectuée avant le module Profil de couleur de sortie.
+  Cela résout certains problèmes de différence de couleur entre la vue de la chambre
+  noire et les fichiers exportés.
 
-- Introduce image module order v5.0 to have the final-scale done before
-  color-out to fix some issues with color difference between darkroom
-  view and exported files.
+- Ajout d'un support pour l'édition de n'importe quel échantillon du sélecteur de
+  couleurs en direct. En utilisant <kbd>Clic droit</kbd> sur un échantillon, il est
+  possible de le modifier (en changeant l'emplacement et/ou la taille de la boîte)
+  et d'ajouter un nouvel échantillon basé sur la modification, ou de stocker la
+  modification dans un échantillon en direct existant.
 
-- Add support for editing any live color-picker samples. Using
-  <kbd>Right-click</kbd> on a sample it is possible to edit it
-  (changing location and/or size of the box) and either add a new
-  sample based on the edit or store the edit into an existing live
-  sample.
-
-- Added more substitution variables for using EXIF data fields,
-  enabled autocompletion of variables in the watermark module.
-
-  The new variables are `$(EXIF.FLASH)`, `$(EXIF.METERING)`,
-  `$(EXIF.EXPOSURE.PROGRAM)`, `$(EXIF.WHITEBALANCE)` and
+- Ajout de nouvelles variables de substitution pour l'utilisation des
+  champs de données EXIF. Les nouvelles variables sont  :<BR>
+  `$(EXIF.FLASH)`,
+  `$(EXIF.METERING)`,
+  `$(EXIF.EXPOSURE.PROGRAM)`,
+  `$(EXIF.WHITEBALANCE)` and
   `$(GPS.LOCATION.ICON)`.
 
-- Increase maximum focal length for filtering auto-applied presets to
-  2000mm.
+- Activation de l'autocomplétion des variables dans le module Filigrane.
 
-- Added an expanded color-checker preset to the Color Look Up Table
-  module with seven-level red/green/blue/gray ramps, IT8/CC24-like
-  skin tones, and miscellaneous color patches for more targeted color
-  adjustments across the full spectrum.
+- Augmenter la longueur focale maximale pour les préréglages de filtrage auto-appliqués
+  à 2000 mm.
 
-- Added support for EXIF tags 'AnalogBalance' used for color
-  calibration and 'LinearResponseLimit' used in highlights
-  reconstruction.
+- Ajout d'un préréglage Table étendue des couleurs au module Table correspondance
+  couleurs avec des Gammes rouge/vert/bleu/gris à sept niveaux, des tons chair de
+  type IT8/CC24 et divers patchs de couleur pour des ajustements de couleur
+  plus ciblés sur l'ensemble du spectre.
+  
+- Ajout de la prise en charge des balises EXIF 'AnalogBalance' utilisée pour
+  l'étalonnage des couleurs et 'LinearResponseLimit' utilisée pour la
+  reconstruction des hautes lumières.
 
-- If we find currently unsupported color calibration data in DNG
-  specific tags, we tag the image by darktable|issue|no-samples for
-  better support.
+- Si nous trouvons des données d'étalonnage des couleurs non prises en charge
+  actuellement dans les balises spécifiques DNG, nous marquons l'image avec le mot-clé
+  darktable|issue|no-samples pour une meilleure prise en charge.
 
-- Added support for HEIF files with AVC (H.264) compression and .avci
-  file extension.
+- Prise en charge des fichiers HEIF avec compression AVC (H.264) et extension
+  de fichier .avci.
+
+---------------------------------------------------------------
 
 ## Correction de bogues
 
