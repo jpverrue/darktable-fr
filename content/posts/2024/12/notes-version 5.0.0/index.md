@@ -47,9 +47,9 @@ $ sha256sum darktable-5.0.0-win64.exe
 ??? darktable-5.0.0-win64.exe
 ```
 
-Lors de la mise à jour à partir de la série stable 4.8, gardez à l'esprit que
+Lors de la mise à jour à partir de la série stable 4.8.x, gardez à l'esprit que
 vos modifications seront préservées pendant ce processus, mais que la nouvelle
-bibliothèque et la configuration ne seront plus utilisables avec la version 5.0.0.
+bibliothèque et la configuration ne seront plus utilisables avec la version 4.8.x.
 Il est fortement conseillé d'effectuer d'abord une sauvegarde.
 
 #### Note importante :
@@ -81,8 +81,8 @@ sur les changements individuels (le cas échéant).
 ## Améliorations de l'interface utilisateur (UI/UX)
 
 - Ajout de styles spécifiques à l'appareil photo pour plus de 500 modèles
-  d'appareils photo afin d'obtenir un rendu JPEG plus proche de la réalité,
-  plus proche du rendu des images JPEG produites par  l'appareil photo.
+  afin d'obtenir un rendu JPEG plus proche de la réalité, plus proche du rendu
+  des images JPEG produites par l'appareil photo.
   Ces styles n'affectent que le contraste, la luminosité et la saturation et
   n'essaient pas de correspondre à l'accentuation, au débruitage ou aux
   changements de teinte. Nous avons également ajouté un script Lua pour
@@ -91,8 +91,8 @@ sur les changements individuels (le cas échéant).
   importées.
 
 - Afin de réduire considérablement le temps entre l'invocation de darktable et
-  l'apparition de quelque chose à l'écran particulèrement lorsque l'utilisateur
-  a une grande bibliothèque, ajout d'un écran d'accueil optionnel montrant
+  l'apparition de quelque chose à l'écran, particulèrement lorsque l'utilisateur
+  a une grande bibliothèque, ajout d'un écran d'accueil optionnel, montrant
   la progression du démarrage (incluant le temps estimé restant pendant
   l'analyse des fichiers sidecar mis à jour)
 
@@ -130,24 +130,24 @@ sur les changements individuels (le cas échéant).
   dans les différentes vues.
 
   - Cliquez avec le bouton droit de la souris sur la zone de panneau vide située sous les
-    modules pour accéder à un menu permettant de les masquer ou de les afficher. Cela permet
+    modules pour accéder à un menu permettant de masquer ou afficher des modules. Cela permet
     entre autres, d'ajouter des modules supplémentaires à la chambre noire, comme l'Éditeur
     de métadonnées ou les Styles.
 
-  - Cela remplace les options dans les préférences des modules « Collections » et
-    « Collections récentes » pour afficher ou masquer ces dernières et afficher un
-    bouton « Historique » dans le premier à la place. Les utilisateurs qui veulent le
-    module  « Collections récentes » séparé devront le réactiver via le nouveau menu
+  - Cela remplace les fenêtres d'options dans les préférences des modules Collections et
+    Collections récentes pour afficher ou masquer ces dernières et afficher un
+    bouton Historique dans le premier à la place. Les utilisateurs qui veulent conserver le
+    module Collections récentes séparé devront le réactiver via le nouveau menu
     <kbd>Clic droit</kbd>.
 
-  - Le menu contient également une option « Restaurer défaut » qui réinitialise la
-    sélection et la position des modules dans la vue courante. Dans la boîte de dialogue
-    des préférences, sur l'onglet Général, il y a un bouton « réinitialiser les panneaux
-    des vues » qui réinitialise toutes les vues, y compris la visibilité et la largeur
+  - Le menu contient également une option Restaurer défaut qui réinitialise la
+    sélection et la position des modules dans la vue courante. D'autre part, dans la boîte de dialogue
+    des préférences, sur l'onglet Général, il y a un bouton Réinitialiser les panneaux
+    des vues qui réinitialise toutes les vues, y compris la visibilité et la largeur
     des panneaux eux-mêmes.
 
 - Dans la boîte de dialogue des préférences, sur l'onglet Chambre noire, ajout d'une option
-  pour échanger les panneaux latéraux droi et gauche.
+  pour échanger les panneaux latéraux droit et gauche.
 
 - La première fois qu'un nouvel utilisateur appuiera sur la touche <kbd>Tab</kbd>, il sera
   averti que cette action a pour effet de masquer tous les panneaux et comment les faire
@@ -156,7 +156,7 @@ sur les changements individuels (le cas échéant).
 - Il est maintenant possible de faire glisser les modules utilitaires en les prenant
   par leur entête, pour les repositionner sur les panneaux gauche et droit (table
   lumineuse) ainsi que verticalement (toutes les vues). Maintenez <kbd>Ctrl+Shift</kbd>
-  pour éviter de les développer/replier avant de les faire glisser. Chaque vue peut
+  pour éviter de déplier/replier les modules, avant de les faire glisser. Chaque vue peut
   ainsi avoir une disposition différente.
 
 - Le glisser-déposer des modules de traitement dans le panneau droit de la chambre
@@ -177,7 +177,7 @@ sur les changements individuels (le cas échéant).
 - Amélioration de la vitesse des opérations d'images en masse par amélioration de la
   vitesse d'écriture des sidecars et en déplaçant les mises à jour des sidecars pour de
   nombreuses opérations dans une tâche d'arrière-plan, ce qui permet à l'utilisateur de
-  continuer avant que les écritures ne soient terminées.
+  continuer avant que l'écriture de sidecars ne soit terminée.
 
 - Accélération significative du chargement des fichiers PFM grâce à la parallélisation
   et à l'optimisation des boucles qui ont permis d'éliminer les traitements supplémentaires.
@@ -187,19 +187,19 @@ sur les changements individuels (le cas échéant).
 - Pour les nouvelles installations, l'histogramme a été remplacé par la forme d'onde afin
   d'afficher des informations plus détaillées sur la couleur et la tonalité de l'image.
 
-- La fonction d'évaluation de la couleur ISO 12646 est conservée jusqu'à ce qu'elle soit
+- La'affichage de la fonction d'évaluation de la couleur ISO 12646 est conservée jusqu'à ce qu'elle soit
   désactivée par l'utilisateur.
 
 - Le biais d'exposition peut maintenant être utilisé pour former des collections et comme
-  filtre d'affichage.-
+  filtre d'affichage.
 
 - Amélioration de la visualisation de l'effet de l'égaliseur de couleurs.
 
-- Amélioration du support de débogage pour la vérification des résultats CPU vs. GPU.
+- Amélioration du support de débogage pour la vérification des résultats CPU versus GPU.
 
-- Ajout de l'alias Calibrite pour X-Rite ColorChecker dans l'étalonnage des couleurs.
+- Ajout de l'alias Calibrite pour X-Rite ColorChecker dans le module Calibration des couleurs.
 
-- L'analyse des fichiers sidecar mis à jour ignore désormais les différences d'horodatage
+- La recherche des fichiers sidecar mis à jour ignore désormais les différences d'horodatage
   de deux secondes ou moins.
 
 - Le paquet d'installation pour macOS dispose désormais d'une image de fond pour guider
@@ -215,12 +215,12 @@ sur les changements individuels (le cas échéant).
 - Ajout de la prise en charge de défaire/rétablir pour les actions effectuées sur le
   panneau pellicule dans la chambre noire.
   
-              - Dans la chambre noire, ajouter une action (liée à <kbd>Ctrl+x</kbd> par défaut)
-                pour synchroniser le dernier module édité sur le module édité actuel avec la sélection.
-  
-              - In darkroom, add action (binding to <kbd>Ctrl+x</kbd> by default) for
-                synchronizing the last edited module on current edited module to the
-                selection.
+- Dans la chambre noire, ajout d'une action (liée à <kbd>Ctrl+x</kbd> par défaut)
+  pour synchroniser le dernier module édité sur le module édité actuel avec la sélection.
+
+- In darkroom, add action (binding to <kbd>Ctrl+x</kbd> by default) for
+  synchronizing the last edited module on current edited module to the
+  selection.
 
 - Ajustement des paramètres internes de l'encodeur AVIF afin d'augmenter considérablement
   la vitesse d'encodage sans compromettre la qualité de sortie.
@@ -234,21 +234,20 @@ sur les changements individuels (le cas échéant).
   de nom de fichier pour le fichier exporté.
 
 - Le répertoire dans lequel darktable écrira le fichier journal sous Windows a été modifié
-  en %USERPROFILE%\Documents\Darktable. Cela permet à l'utilisateur de voir facilement où
-  se trouve le fichier journal sans avoir à le chercher dans la documentation ou la FAQ.
+  en `%USERPROFILE%\Documents\Darktable`. Cela permet à l'utilisateur de localiser et visualiser
+  facilement le fichier journal sans avoir à le chercher dans la documentation ou la FAQ.
   L'emplacement précédent se trouvait dans les sous-répertoires système du profil de
   l'utilisateur, ainsi que dans un répertoire caché (il était donc impossible de cliquer
   dessus dans l'explorateur de fichiers avec les paramètres système par défaut).
 
-- L'importation de fichiers JPEG 2000 avec les extensions .jpf et .jpx est maintement
+- L'importation de fichiers JPEG 2000 avec les extensions `.jpf` et `.jpx` est maintement
   possible.
 
 - Ajout d'un indicateur visible dans le module Calibration des couleurs lorsque la section
-  de mappage des couleurs comporte des paramètres non neutres
-  qui affectent le rendu des couleurs.
+  Mappage des couleurs comporte des paramètres non neutres qui affectent le rendu des couleurs.
   
 - Ajout de nouvelles variables de substitution `$(IMAGE.TAGS.HIERARCHY)` pour insérer des
-  tags avec une hiérarchie complète et `$(IMAGE.ID.NEXT)` pour insérer le numéro (ID) d'image
+  tags avec une hiérarchie complète et `$(IMAGE.ID.NEXT)` pour insérer le numéro d'image (ID)
   à attribuer à l'image en cours d'importation, ce qui permet àu numéro d'image de faire
   partie du nom de fichier généré lors d'une opération Copier & importer.
   
@@ -263,7 +262,7 @@ sur les changements individuels (le cas échéant).
   fonctions standard du shéma Bauhaus de darktable (<kbd>Ctrl+clic</kbd>,
   <kbd>Clic droit</kbd>...).
 
-- Introduction de l'ordre des modules v5.0 pour que, lors de l'exportation, la mise
+- Introduction de l'ordre des modules `v5.0` pour que, lors de l'exportation, la mise
   à l'échelle finale soit effectuée avant le module Profil de couleur de sortie.
   Cela résout certains problèmes de différence de couleur entre la vue de la chambre
   noire et les fichiers exportés.
@@ -279,21 +278,21 @@ sur les changements individuels (le cas échéant).
   `$(EXIF.FLASH)`,
   `$(EXIF.METERING)`,
   `$(EXIF.EXPOSURE.PROGRAM)`,
-  `$(EXIF.WHITEBALANCE)` and
+  `$(EXIF.WHITEBALANCE)` et
   `$(GPS.LOCATION.ICON)`.
 
 - Activation de l'autocomplétion des variables dans le module Filigrane.
 
-- Augmenter la longueur focale maximale pour les préréglages de filtrage auto-appliqués
-  à 2000 mm.
+- Augmentation de la longueur focale maximale pour les préréglages de filtrage
+  auto-appliqués à 2000 mm.
 
 - Ajout d'un préréglage Table étendue des couleurs au module Table correspondance
   couleurs avec des Gammes rouge/vert/bleu/gris à sept niveaux, des tons chair de
-  type IT8/CC24 et divers patchs de couleur pour des ajustements de couleur
+  type IT8/CC24 et divers patchs de couleur, pour des ajustements de couleur
   plus ciblés sur l'ensemble du spectre.
   
-- Ajout de la prise en charge des balises EXIF 'AnalogBalance' utilisée pour
-  l'étalonnage des couleurs et 'LinearResponseLimit' utilisée pour la
+- Ajout de la prise en charge des balises EXIF `AnalogBalance` utilisée pour
+  l'étalonnage des couleurs et `LinearResponseLimit` utilisée pour la
   reconstruction des hautes lumières.
 
 - Si nous trouvons des données d'étalonnage des couleurs non prises en charge
@@ -301,10 +300,10 @@ sur les changements individuels (le cas échéant).
   darktable|issue|no-samples pour une meilleure prise en charge.
 
 - Prise en charge en lecture des fichiers HEIF avec compression AVC (H.264) et
-  extension de fichier .avci.
+  extension de fichier `.avci`.
 
 - Ajout d'un support de lecture pour les images encodées en JPEG 2000 dans les
-  conteneurs HEIF avec l'extension de fichier .hej2
+  conteneurs HEIF avec l'extension de fichier `.hej2`.
 
 ## Correction de bogues
 
@@ -327,7 +326,7 @@ sur les changements individuels (le cas échéant).
 
 - Corrigé : certains cas limites dans le module Recadrer.
 
-- Corrigé : crash lors du chargement d'un fichier .gpx corrompu dans le
+- Corrigé : crash lors du chargement d'un fichier `.gpx` corrompu dans le
   module de géolocalisation.
 
 - Corrigé : la gestion des préréglages dans le module d'exportation qui
@@ -337,13 +336,13 @@ sur les changements individuels (le cas échéant).
   supérieur à la plage maximale autorisée, ce qui entraînait l'échec de la validation
   et la réinitialisation par défaut de l'ensemble des paramètres.
 
-- Corrigé : l'enregistrement du module composite pour qu'il fonctionne dans tous
+- Corrigé : l'enregistrement du module Composite pour qu'il fonctionne dans tous
   les cas (élimination de l'historique ou copier/coller de l'historique par exemple)
   afin qu'une image qui n'est plus référencée en tant qu'incrustation dans le module
   puisse être supprimée.
   
-- Réinitialisation correcte des balises internes darktable|style|<nom> et
-  darktable|changed lors de la réinitialisation de l'historique.
+- Réinitialisation correcte des balises internes `darktable|style|<nom>` et
+  `darktable|changed` lors de la réinitialisation de l'historique.
 
 - Corrigé : crash dans le stockage des exportations Piwigo lorsque l'utilisateur
   n'est pas connecté au serveur Piwigo.
@@ -351,7 +350,7 @@ sur les changements individuels (le cas échéant).
 - Corrigé : un bogue dans le module d'exportation où il était impossible d'exporter
   à nouveau un fichier si l'option « Sur conflit → Écraser si modifié » était sélectionnée.
 
-- Corrigé : problème qui faisait que le double clic sur une étiquette dans
+- Corrigé : problème qui faisait que le double clic sur un libellé dans
   les modules de la chambre noire ne réinitialisait pas le contrôle.
 
 - Le module Composite empêche désormais la sélection d'une image  de composition qui
@@ -374,7 +373,7 @@ sur les changements individuels (le cas échéant).
 - Corrigé : un bogue dans le module historique, la création d'un style
   échouait si un style portant ce nom existait déjà.
 
-- Corrigé : dessin des guides dans le cas où un module est développé et actif.
+- Corrigé : dessin des guides dans le cas où un module est déplié et actif.
 
 - Veiller à ce que la liste des images dans la vue sélection reste à jour
   lorsqu'elle est masquée.
@@ -395,39 +394,39 @@ sur les changements individuels (le cas échéant).
 
 ### Nouvelles fonctionnalités
 
-- Ajout d'un nouvel événement, inter-script-communication, pour permettre
+- Ajout d'un nouvel événement, `inter-script-communication`, pour permettre
   l'envoi de messages d'un script en cours d'exécution à un autre script
   en cours d'exécution.
 
-- Ajout d'une nouvelle fonction darktable.util.message(), pour l'envoi
-  de messages à l'aide de l'événement inter-script-communication.
+- Ajout d'une nouvelle fonction `darktable.util.message()`, pour l'envoi
+  de messages à l'aide de l'événement `inter-script-communication\`.
 
-- Ajout de nouveaux champs de données EXIF dans dt_lua_image_t :
+- Ajout de nouveaux champs de données EXIF dans `dt_lua_image_t` :
 
-  - exif_whitebalance
+  - `exif_whitebalance`
 
-  - exif_flash
+  - `exif_flash`
 
-  - exif_exposure_program
+  - `exif_exposure_program`
 
-  - exif_metering_mode
+  - `exif_metering_mode`
 
-- Ajout d'un nouvel événement, image-group-information-changed, qui est déclenché
+- Ajout d'un nouvel événement, `image-group-information-changed`, qui est déclenché
   chaque fois que les informations d'un groupe d'images sont modifiées.
 
 ### Correction de bogues
 
-- Corrigé : bug avec dt_imageio_module_format_t.write_image pour qu'il renvoie
-  true en cas de succès et false en cas d'échec.
+- Corrigé : bogue avec `dt_imageio_module_format_t.write_image` pour qu'il renvoie
+  `true` en cas de succès et `false` en cas d'échec.
 
 ### Ajout d'un support d'action pour Lua
 
 ### Autres changements Lua
 
-- Les scripts Lua sont maintenant mieux intégrés dans Darktable et peuvent
+- Les scripts Lua sont maintenant mieux intégrés dans darktable et peuvent
   être entièrement traduits. Le design du gestionnaire de scripts a été
   retravaillé pour être plus en ligne avec les modules actuels de
-  l'interface graphique de Darktable.
+  l'interface graphique de darktable.
 
 ## Notes
 
@@ -439,7 +438,7 @@ sur les changements individuels (le cas échéant).
   de Préférence du module Exporter.
 
 - la version 5.0 ne prend plus en charge les versions de macOS antérieures à 13.5.
-- 
+
 ## Changement de dépendences
 
 ### Obligatoire(s)
@@ -452,7 +451,7 @@ sur les changements individuels (le cas échéant).
 
 ## Changements RawSpeed
 
-- Fujifilm GFX cameras now use the vendor supplied crop
+- Les appareils photo Fujifilm GFX utilisent désormais le recadrage fourni par le constructeur.
 
 ## Nouveaux Support d'appareils depuis la version 4,8
 
@@ -468,7 +467,7 @@ sur les changements individuels (le cas échéant).
 
 - ???
 
-### Absence de prise en charge du mode de compression
+### Absence de prise en charge des fichiers raw compressés
 
 - Apple ProRAW DNGs
 - CinemaDNG lossless (Blackmagic, some DJI, etc.) and lossy (Blackmagic)
