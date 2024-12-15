@@ -308,36 +308,36 @@ sur les changements individuels (le cas échéant).
 
 ## Correction de bogues
 
-- Correction d'une régression des performances lors de la régénération des miniatures.
+- Corrigé : régression des performances lors de la régénération des miniatures.
 
-- Correction de la gestion des anciennes versions (2020) utilisant Filmique RGB.
+- Corrigé : gestion des anciennes versions (2020) utilisant Filmique RGB.
 
 - Diverses corrections OpenCL pour réduire les différences entre le traitement par
   le CPU et le GPU : conversion de l'espace colorimétrique, filtre de gradient de
   saturation dans l'égaliseur de couleurs.
   
-- Correction de l'exportation de la galerie qui ne fonctionnait pas sous Windows.
+- Corrigé : l'exportation de la galerie qui ne fonctionnait pas sous Windows.
 
-- Correction de la découverte d'imprimantes dans le module d'impression, qui pouvait
+- Corrigé : la découverte d'imprimantes dans le module d'impression, qui pouvait
   entraîner l'absence d'imprimantes disponibles.
 
 - Contournement du champ de date EXIF hors norme causé par un logiciel bogué.
 
-- Correction de la lecture des profils de couleur intégrés dans les images PNG.
+- Corrigé : la lecture des profils de couleur intégrés dans les images PNG.
 
-- Correction de certains cas limites dans le module Recadrer.
+- Corrigé : certains cas limites dans le module Recadrer.
 
-- Correction d'un crash lors du chargement d'un fichier .gpx corrompu dans le
+- Corrigé : crash lors du chargement d'un fichier .gpx corrompu dans le
   module de géolocalisation.
 
-- Correction de la gestion des préréglages dans le module d'exportation qui
+- Corrigé : la gestion des préréglages dans le module d'exportation qui
   n'enregistrait pas tous les paramètres.
 
-- Correction d'un problème dans Filmique RVB où l'un des paramètres pouvait être
+- Corrigé : un problème dans Filmique RVB où l'un des paramètres pouvait être
   supérieur à la plage maximale autorisée, ce qui entraînait l'échec de la validation
   et la réinitialisation par défaut de l'ensemble des paramètres.
 
-- Correction de l'enregistrement du module composite pour qu'il fonctionne dans tous
+- Corrigé : l'enregistrement du module composite pour qu'il fonctionne dans tous
   les cas (élimination de l'historique ou copier/coller de l'historique par exemple)
   afin qu'une image qui n'est plus référencée en tant qu'incrustation dans le module
   puisse être supprimée.
@@ -345,13 +345,13 @@ sur les changements individuels (le cas échéant).
 - Réinitialisation correcte des balises internes darktable|style|<nom> et
   darktable|changed lors de la réinitialisation de l'historique.
 
-- Correction d'un crash dans le stockage des exportations Piwigo lorsque l'utilisateur
+- Corrigé : crash dans le stockage des exportations Piwigo lorsque l'utilisateur
   n'est pas connecté au serveur Piwigo.
 
-- Correction d'un bogue dans le module d'exportation où il était impossible d'exporter
+- Corrigé : un bogue dans le module d'exportation où il était impossible d'exporter
   à nouveau un fichier si l'option « Sur conflit → Écraser si modifié » était sélectionnée.
 
-- Correction d'un problème qui faisait que le double clic sur une étiquette dans
+- Corrigé : problème qui faisait que le double clic sur une étiquette dans
   les modules de la chambre noire ne réinitialisait pas le contrôle.
 
 - Le module Composite empêche désormais la sélection d'une image  de composition qui
@@ -359,37 +359,34 @@ sur les changements individuels (le cas échéant).
   image #2) étaient vérifiées ; cette vérification a été étendue aux chaînes (image
   #1 → image #2 → image #3 → image #1) de longueur arbitraire.
 
-- Correction d'un bogue dans le module Composite qui appliquait incorrectement un
+- Corrigé : un bogue dans le module Composite qui appliquait incorrectement un
   profil de couleur et créait ainsi une dominante de couleur indésirable et
   erronée. Ce bogue était une régression ajoutée juste avant la sortie de la
   version 4.8.
   
-- Correction d'un bogue dans le module Calibration des couleurs où le passage
+- Corrigé : un bogue dans le module Calibration des couleurs où le passage
   d'un illuminant à l'autre pouvait conduire à des réglages imprévisibles.
 
 - Diverses corrections dans le module Dématriçage. Les options non utilisables
   sont désormais cachées. Correction du double dématricage pour les capteurs
   xtrans et le code OpenCL.
-----------------------------------------------------------------
-- Various fixes In the demosaic module. Non-usable options are hidden
-  now. Fixed dual demosaicing for xtrans sensors and OpenCL code.
 
-- Fixed a bug in the history module where style creation fails if a
-  style with that name already exists.
+- Corrigé : un bogue dans le module historique, la création d'un style
+  échouait si un style portant ce nom existait déjà.
 
-- Fixed guides drawing in case a module is expanded and active.
+- Corrigé : dessin des guides dans le cas où un module est développé et actif.
 
-- Ensure that the list of images in the culling view remains up to
-  date when hidden.
+- Veiller à ce que la liste des images dans la vue sélection reste à jour
+  lorsqu'elle est masquée.
 
-- Fixed minor glitches in color calibration module.
+- Corrigé : problèmes mineurs dans le module Calibration des couleurs.
 
-- Fixed issues with wrong corrections in highlight opposed OpenCL
-  code.
-
-- Fixed surface blur radius calculation possibly resulting in garbled
-  output.
-
+- Corrigé : problèmes liés à des corrections erronées dans le code OpenCL
+  du module Reconstruire les hautes lumières → Peinture opposée
+  
+- Corrigé : calcul du rayon de flou de surface pouvant entraîner une
+  sortie altérée.
+  
 ## Lua
 
 ### Version de l'API
@@ -398,13 +395,14 @@ sur les changements individuels (le cas échéant).
 
 ### Nouvelles fonctionnalités
 
-- Added new event, inter-script-communication, to permit sending messages
-  from one running script to another running script.
+- Ajout d'un nouvel événement, inter-script-communication, pour permettre
+  l'envoi de messages d'un script en cours d'exécution à un autre script
+  en cours d'exécution.
 
-- Added new function darktable.util.message(), for sending messages using
-  the inter-script-communication event.
+- Ajout d'une nouvelle fonction darktable.util.message(), pour l'envoi
+  de messages à l'aide de l'événement inter-script-communication.
 
-- Added new EXIF data fields to dt_lua_image_t:
+- Ajout de nouveaux champs de données EXIF dans dt_lua_image_t :
 
   - exif_whitebalance
 
@@ -414,13 +412,13 @@ sur les changements individuels (le cas échéant).
 
   - exif_metering_mode
 
-- Added new event, image-group-information-changed, that is raised any time
-  an images group information changes.
+- Ajout d'un nouvel événement, image-group-information-changed, qui est déclenché
+  chaque fois que les informations d'un groupe d'images sont modifiées.
 
 ### Correction de bogues
 
-- Fixed a bug with dt_imageio_module_format_t.write_image so it returns
-  true on success and false on failure.
+- Corrigé : bug avec dt_imageio_module_format_t.write_image pour qu'il renvoie
+  true en cas de succès et false en cas d'échec.
 
 ### Ajout d'un support d'action pour Lua
 
