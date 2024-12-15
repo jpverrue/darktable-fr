@@ -114,14 +114,14 @@ sur les changements individuels (le cas échéant).
 - Amélioration des infobulles pour les en-têtes des modules utilitaires afin
   de fournir plus d'informations sur ces modules.
   
-- Ajout de conseils pour les nouveaux utilisateurs sur la table lumineuse
+- Ajout de conseils pour les nouveaux utilisateurs sur la **Table lumineuse**
   lorsqu'elle est vide.
 
 - Ajout de deux nouvelles images de remplacement pour mieux identifier les images
   manquantes, non prises en charge ou corrompues. Lorsque l'on tente de modifier une
   de ces images, un message d'erreur approprié et plus spécifique s'affiche.
 
-- Lors de la sélection d'un style dans le module d'exportation, le survol du nom du
+- Lors de la sélection d'un style dans le module **Exporter**, le survol du nom du
   style dans le menu contextuel affiche une vignette de prévisualisation de l'effet de
   l'ajout du style à l'image active (première image sélectionnée dans la table lumineuse,
   image centrale dans la chambre noire).
@@ -131,22 +131,22 @@ sur les changements individuels (le cas échéant).
 
   - Cliquez avec le bouton droit de la souris sur la zone de panneau vide située sous les
     modules pour accéder à un menu permettant de masquer ou afficher des modules. Cela permet
-    entre autres, d'ajouter des modules supplémentaires à la chambre noire, comme l'Éditeur
-    de métadonnées ou les Styles.
+    entre autres, d'ajouter des modules supplémentaires à la **Chambre noire**, comme l'**Éditeur
+    de métadonnées** ou les **Styles**.
 
-  - Cela remplace les fenêtres d'options dans les préférences des modules Collections et
-    Collections récentes pour afficher ou masquer ces dernières et afficher un
-    bouton Historique dans le premier à la place. Les utilisateurs qui veulent conserver le
-    module Collections récentes séparé devront le réactiver via le nouveau menu
+  - Cela remplace les fenêtres d'options dans les préférences des modules **Collections** et
+    **Collections récentes** pour afficher ou masquer ces dernières et afficher un
+    bouton **Historique** dans le premier à la place. Les utilisateurs qui veulent conserver le
+    module **Collections récentes** séparé devront le réactiver via le nouveau menu
     <kbd>Clic droit</kbd>.
 
-  - Le menu contient également une option Restaurer défaut qui réinitialise la
+  - Le menu contient également une option **Restaurer défaut** qui réinitialise la
     sélection et la position des modules dans la vue courante. D'autre part, dans la boîte de dialogue
-    des préférences, sur l'onglet Général, il y a un bouton Réinitialiser les panneaux
+    des **Préférences**, sur l'onglet **Général**, il y a un bouton **Réinitialiser les panneaux**
     des vues qui réinitialise toutes les vues, y compris la visibilité et la largeur
     des panneaux eux-mêmes.
 
-- Dans la boîte de dialogue des préférences, sur l'onglet Chambre noire, ajout d'une option
+- Dans la boîte de dialogue des **Préférences**, sur l'onglet **Chambre noire**, ajout d'une option
   pour échanger les panneaux latéraux droit et gauche.
 
 - La première fois qu'un nouvel utilisateur appuiera sur la touche <kbd>Tab</kbd>, il sera
@@ -167,7 +167,7 @@ sur les changements individuels (le cas échéant).
 - Amélioration du message affiché au démarrage lorsque la base de données est
   verrouillée par une autre instance de darktable.
   
-- Amélioration de l'icône du bouton Filtrer par label de couleur qui affiche dorénavant
+- Amélioration de l'icône du bouton **Filtrer par label de couleur** qui affiche dorénavant
   l'acion souhaitée (union/intersection).
 
 ## Améliorations des performances
@@ -187,17 +187,17 @@ sur les changements individuels (le cas échéant).
 - Pour les nouvelles installations, l'histogramme a été remplacé par la forme d'onde afin
   d'afficher des informations plus détaillées sur la couleur et la tonalité de l'image.
 
-- La'affichage de la fonction d'évaluation de la couleur ISO 12646 est conservée jusqu'à ce qu'elle soit
+- L'affichage de la fonction d'évaluation de la couleur ISO 12646 est conservé jusqu'à ce qu'il soit
   désactivée par l'utilisateur.
 
 - Le biais d'exposition peut maintenant être utilisé pour former des collections et comme
   filtre d'affichage.
 
-- Amélioration de la visualisation de l'effet de l'égaliseur de couleurs.
+- Amélioration de la visualisation de l'effet de l'**Égaliseur de couleurs**.
 
 - Amélioration du support de débogage pour la vérification des résultats CPU versus GPU.
 
-- Ajout de l'alias Calibrite pour X-Rite ColorChecker dans le module Calibration des couleurs.
+- Ajout de l'alias **Calibrite** pour **X-Rite ColorChecker** dans le module **Calibration des couleurs**.
 
 - La recherche des fichiers sidecar mis à jour ignore désormais les différences d'horodatage
   de deux secondes ou moins.
@@ -213,9 +213,9 @@ sur les changements individuels (le cas échéant).
 - La boîte de dialogue de copie sélective ne sélectionne plus aucun module par défaut.
 
 - Ajout de la prise en charge de défaire/rétablir pour les actions effectuées sur le
-  panneau pellicule dans la chambre noire.
+  **panneau pellicule** dans la **chambre noire**.
   
-- Dans la chambre noire, ajout d'une action (liée à <kbd>Ctrl+x</kbd> par défaut)
+- Dans la **Chambre noire*, ajout d'une action (liée à <kbd>Ctrl+x</kbd> par défaut)
   pour synchroniser le dernier module édité sur le module édité actuel avec la sélection.
 
 - In darkroom, add action (binding to <kbd>Ctrl+x</kbd> by default) for
@@ -225,12 +225,10 @@ sur les changements individuels (le cas échéant).
 - Ajustement des paramètres internes de l'encodeur AVIF afin d'augmenter considérablement
   la vitesse d'encodage sans compromettre la qualité de sortie.
 
-
-
 - Les mots-clés peuvent désormais être facilement copiés dans le presse-papiers via le
-  menu contextuel du module Mots-clés
+  menu contextuel du module **Mots-clés**.
   
-- Le Stockage cible du module Exporter Piwigo, permet maintenant de spécifier un modèle
+- Le **Stockage cible Piwigo** du module **Exporter**, permet maintenant de spécifier un modèle
   de nom de fichier pour le fichier exporté.
 
 - Le répertoire dans lequel darktable écrira le fichier journal sous Windows a été modifié
@@ -243,8 +241,8 @@ sur les changements individuels (le cas échéant).
 - L'importation de fichiers JPEG 2000 avec les extensions `.jpf` et `.jpx` est maintement
   possible.
 
-- Ajout d'un indicateur visible dans le module Calibration des couleurs lorsque la section
-  Mappage des couleurs comporte des paramètres non neutres qui affectent le rendu des couleurs.
+- Ajout d'un indicateur visible dans le module **Calibration des couleurs** lorsque la section
+  **Mappage des couleurs** comporte des paramètres non neutres qui affectent le rendu des couleurs.
   
 - Ajout de nouvelles variables de substitution `$(IMAGE.TAGS.HIERARCHY)` pour insérer des
   tags avec une hiérarchie complète et `$(IMAGE.ID.NEXT)` pour insérer le numéro d'image (ID)
@@ -263,12 +261,12 @@ sur les changements individuels (le cas échéant).
   <kbd>Clic droit</kbd>...).
 
 - Introduction de l'ordre des modules `v5.0` pour que, lors de l'exportation, la mise
-  à l'échelle finale soit effectuée avant le module Profil de couleur de sortie.
+  à l'échelle finale soit effectuée avant le module **Profil de couleur de sortie**.
   Cela résout certains problèmes de différence de couleur entre la vue de la chambre
   noire et les fichiers exportés.
 
-- Ajout d'un support pour l'édition de n'importe quel échantillon du sélecteur de
-  couleurs en direct. En utilisant <kbd>Clic droit</kbd> sur un échantillon, il est
+- Ajout d'un support pour l'édition de n'importe quel échantillon du **Sélecteur de
+  couleurs** en direct. En utilisant <kbd>Clic droit</kbd> sur un échantillon, il est
   possible de le modifier (en changeant l'emplacement et/ou la taille de la boîte)
   et d'ajouter un nouvel échantillon basé sur la modification, ou de stocker la
   modification dans un échantillon en direct existant.
@@ -281,13 +279,13 @@ sur les changements individuels (le cas échéant).
   `$(EXIF.WHITEBALANCE)` et
   `$(GPS.LOCATION.ICON)`.
 
-- Activation de l'autocomplétion des variables dans le module Filigrane.
+- Activation de l'autocomplétion des variables dans le module **Filigrane**.
 
 - Augmentation de la longueur focale maximale pour les préréglages de filtrage
   auto-appliqués à 2000 mm.
 
-- Ajout d'un préréglage Table étendue des couleurs au module Table correspondance
-  couleurs avec des Gammes rouge/vert/bleu/gris à sept niveaux, des tons chair de
+- Ajout d'un préréglage **Table étendue des couleurs** au module **Table correspondance
+  couleurs** avec des gammes rouge/vert/bleu/gris à sept niveaux, des tons chair de
   type IT8/CC24 et divers patchs de couleur, pour des ajustements de couleur
   plus ciblés sur l'ensemble du spectre.
   
@@ -297,7 +295,7 @@ sur les changements individuels (le cas échéant).
 
 - Si nous trouvons des données d'étalonnage des couleurs non prises en charge
   actuellement dans les balises spécifiques DNG, nous marquons l'image avec le mot-clé
-  darktable|issue|no-samples pour une meilleure prise en charge.
+  `darktable|issue|no-samples` pour une meilleure prise en charge.
 
 - Prise en charge en lecture des fichiers HEIF avec compression AVC (H.264) et
   extension de fichier `.avci`.
@@ -309,7 +307,7 @@ sur les changements individuels (le cas échéant).
 
 - Corrigé : régression des performances lors de la régénération des miniatures.
 
-- Corrigé : gestion des anciennes versions (2020) utilisant Filmique RGB.
+- Corrigé : gestion des anciennes versions (2020) utilisant **Filmique RVB**.
 
 - Diverses corrections OpenCL pour réduire les différences entre le traitement par
   le CPU et le GPU : conversion de l'espace colorimétrique, filtre de gradient de
@@ -317,26 +315,26 @@ sur les changements individuels (le cas échéant).
   
 - Corrigé : l'exportation de la galerie qui ne fonctionnait pas sous Windows.
 
-- Corrigé : la découverte d'imprimantes dans le module d'impression, qui pouvait
+- Corrigé : la découverte d'imprimantes dans la vue **impression**, qui pouvait
   entraîner l'absence d'imprimantes disponibles.
 
 - Contournement du champ de date EXIF hors norme causé par un logiciel bogué.
 
 - Corrigé : la lecture des profils de couleur intégrés dans les images PNG.
 
-- Corrigé : certains cas limites dans le module Recadrer.
+- Corrigé : certains cas limites dans le module **Recadrer**.
 
-- Corrigé : crash lors du chargement d'un fichier `.gpx` corrompu dans le
-  module de géolocalisation.
+- Corrigé : crash lors du chargement d'un fichier `.gpx` corrompu dans la
+  vue **Géolocalisation**.
 
-- Corrigé : la gestion des préréglages dans le module d'exportation qui
+- Corrigé : la gestion des préréglages dans le module **Exportater** qui
   n'enregistrait pas tous les paramètres.
 
-- Corrigé : un problème dans Filmique RVB où l'un des paramètres pouvait être
+- Corrigé : un problème dans **Filmique RVB** où l'un des paramètres pouvait être
   supérieur à la plage maximale autorisée, ce qui entraînait l'échec de la validation
   et la réinitialisation par défaut de l'ensemble des paramètres.
 
-- Corrigé : l'enregistrement du module Composite pour qu'il fonctionne dans tous
+- Corrigé : l'enregistrement du module **Composite** pour qu'il fonctionne dans tous
   les cas (élimination de l'historique ou copier/coller de l'historique par exemple)
   afin qu'une image qui n'est plus référencée en tant qu'incrustation dans le module
   puisse être supprimée.
@@ -347,41 +345,41 @@ sur les changements individuels (le cas échéant).
 - Corrigé : crash dans le stockage des exportations Piwigo lorsque l'utilisateur
   n'est pas connecté au serveur Piwigo.
 
-- Corrigé : un bogue dans le module d'exportation où il était impossible d'exporter
-  à nouveau un fichier si l'option « Sur conflit → Écraser si modifié » était sélectionnée.
+- Corrigé : un bogue dans le module **Exporter** où il était impossible d'exporter
+  à nouveau un fichier si l'option **Sur conflit** → **Écraser si modifié** était sélectionnée.
 
 - Corrigé : problème qui faisait que le double clic sur un libellé dans
   les modules de la chambre noire ne réinitialisait pas le contrôle.
 
-- Le module Composite empêche désormais la sélection d'une image  de composition qui
+- Le module **Composite** empêche désormais la sélection d'une image de composition qui
   conduirait à une boucle. Auparavant, seules les références directes (image #1 ↔
   image #2) étaient vérifiées ; cette vérification a été étendue aux chaînes (image
   #1 → image #2 → image #3 → image #1) de longueur arbitraire.
 
-- Corrigé : un bogue dans le module Composite qui appliquait incorrectement un
+- Corrigé : un bogue dans le module **Composite** qui appliquait incorrectement un
   profil de couleur et créait ainsi une dominante de couleur indésirable et
   erronée. Ce bogue était une régression ajoutée juste avant la sortie de la
   version 4.8.
   
-- Corrigé : un bogue dans le module Calibration des couleurs où le passage
+- Corrigé : un bogue dans le module **Calibration des couleurs** où le passage
   d'un illuminant à l'autre pouvait conduire à des réglages imprévisibles.
 
-- Diverses corrections dans le module Dématriçage. Les options non utilisables
+- Diverses corrections dans le module **Dématriçage**. Les options non utilisables
   sont désormais cachées. Correction du double dématricage pour les capteurs
   xtrans et le code OpenCL.
 
-- Corrigé : un bogue dans le module historique, la création d'un style
+- Corrigé : un bogue dans le module **historique**, la création d'un style
   échouait si un style portant ce nom existait déjà.
 
 - Corrigé : dessin des guides dans le cas où un module est déplié et actif.
 
-- Veiller à ce que la liste des images dans la vue sélection reste à jour
+- Veiller à ce que la liste des images dans la vue **Sélection** reste à jour
   lorsqu'elle est masquée.
 
-- Corrigé : problèmes mineurs dans le module Calibration des couleurs.
+- Corrigé : problèmes mineurs dans le module **Calibration des couleurs**.
 
 - Corrigé : problèmes liés à des corrections erronées dans le code OpenCL
-  du module Reconstruire les hautes lumières → Peinture opposée
+  du module **Reconstruire les hautes lumières** → **Peinture opposée**.
   
 - Corrigé : calcul du rayon de flou de surface pouvant entraîner une
   sortie altérée.
