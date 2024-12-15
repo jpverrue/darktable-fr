@@ -306,66 +306,71 @@ sur les changements individuels (le cas échéant).
 - Ajout d'un support de lecture pour les images encodées en JPEG 2000 dans les
   conteneurs HEIF avec l'extension de fichier .hej2
 
----------------------------------------------------------------
-
 ## Correction de bogues
 
-- Fixed a performance regression for redrawing mipmaps.
+- Correction d'une régression des performances lors de la régénération des miniatures.
 
-- Fixed handling of old (2020) edits using Filmic RGB.
+- Correction de la gestion des anciennes versions (2020) utilisant Filmique RGB.
 
-- Various OpenCL fixes to reduce differences between CPU and GPU
-  processing: colorspace conversion, saturation gradient filter in
-  color equalizer.
+- Diverses corrections OpenCL pour réduire les différences entre le traitement par
+  le CPU et le GPU : conversion de l'espace colorimétrique, filtre de gradient de
+  saturation dans l'égaliseur de couleurs.
+  
+- Correction de l'exportation de la galerie qui ne fonctionnait pas sous Windows.
 
-- Fixed gallery export not working on Windows.
+- Correction de la découverte d'imprimantes dans le module d'impression, qui pouvait
+  entraîner l'absence d'imprimantes disponibles.
 
-- Fixed printer discovery in the print module, which could cause
-  available printers to be missed.
+- Contournement du champ de date EXIF hors norme causé par un logiciel bogué.
 
-- Work around out-of-spec EXIF date field caused by buggy software.
+- Correction de la lecture des profils de couleur intégrés dans les images PNG.
 
-- Fixed reading embedded color profiles from PNG images.
+- Correction de certains cas limites dans le module Recadrer.
 
-- Fixed certain boundary cases in the crop module.
+- Correction d'un crash lors du chargement d'un fichier .gpx corrompu dans le
+  module de géolocalisation.
 
-- Fixed crash when loading corrupted .gpx file in the geotagging module
+- Correction de la gestion des préréglages dans le module d'exportation qui
+  n'enregistrait pas tous les paramètres.
 
-- Fix preset handling in the export module not saving all parameters.
+- Correction d'un problème dans Filmique RVB où l'un des paramètres pouvait être
+  supérieur à la plage maximale autorisée, ce qui entraînait l'échec de la validation
+  et la réinitialisation par défaut de l'ensemble des paramètres.
 
-- Fix an issue in FilmicRGB where one of the parameter could be above
-  the maximum allowed range making the validation failing and the
-  whole set of parameters reset to default.
+- Correction de l'enregistrement du module composite pour qu'il fonctionne dans tous
+  les cas (élimination de l'historique ou copier/coller de l'historique par exemple)
+  afin qu'une image qui n'est plus référencée en tant qu'incrustation dans le module
+  puisse être supprimée.
+  
+- Réinitialisation correcte des balises internes darktable|style|<nom> et
+  darktable|changed lors de la réinitialisation de l'historique.
 
-- Fix overlay recording to work in all cases (discarding history or
-  copy/paste history for example) ensuring that an image not
-  referenced anymore as overlay in a composite module can be removed.
+- Correction d'un crash dans le stockage des exportations Piwigo lorsque l'utilisateur
+  n'est pas connecté au serveur Piwigo.
 
-- Properly reset darktable internal tag darktable|style|<name> and
-  darktable|changed when resetting history.
+- Correction d'un bogue dans le module d'exportation où il était impossible d'exporter
+  à nouveau un fichier si l'option « Sur conflit → Écraser si modifié » était sélectionnée.
 
-- Fixed crash in the Piwigo export storage when not logged in to the
-  Piwigo server.
+- Correction d'un problème qui faisait que le double clic sur une étiquette dans
+  les modules de la chambre noire ne réinitialisait pas le contrôle.
 
-- Fixed a bug in the export module where it was impossible to export a
-  file again if "on conflict: overwrite if changed" was selected.
+- Le module Composite empêche désormais la sélection d'une image  de composition qui
+  conduirait à une boucle. Auparavant, seules les références directes (image #1 ↔
+  image #2) étaient vérifiées ; cette vérification a été étendue aux chaînes (image
+  #1 → image #2 → image #3 → image #1) de longueur arbitraire.
 
-- Fixed a bug where double clicking on a label in darkroom modules
-  does not reset the control.
+- Correction d'un bogue dans le module Composite qui appliquait incorrectement un
+  profil de couleur et créait ainsi une dominante de couleur indésirable et
+  erronée. Ce bogue était une régression ajoutée juste avant la sortie de la
+  version 4.8.
+  
+- Correction d'un bogue dans le module Calibration des couleurs où le passage
+  d'un illuminant à l'autre pouvait conduire à des réglages imprévisibles.
 
-- The composite module now prevents assigning an overlay that would
-  lead to a loop. Previously, only direct references
-  (image #1 <-> image #2) were checked; this has now been extended
-  to also cover chains (image #1 -> image #2 -> image #3 -> image #1)
-  of arbitrary length.
-
-- Fix a bug in overlay module which incorrectly apply a color profile
-  and so creating an unwanted and wrong color cast. This bug was a
-  regression added just before the 4.8 release.
-
-- Fixed a bug in color calibration module where switching between
-  various illuminants could lead to unpredictable settings.
-
+- Diverses corrections dans le module Dématriçage. Les options non utilisables
+  sont désormais cachées. Correction du double dématricage pour les capteurs
+  xtrans et le code OpenCL.
+----------------------------------------------------------------
 - Various fixes In the demosaic module. Non-usable options are hidden
   now. Fixed dual demosaicing for xtrans sensors and OpenCL code.
 
