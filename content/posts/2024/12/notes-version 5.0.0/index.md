@@ -378,7 +378,7 @@ sur les changements individuels (le cas échéant).
 
 - Corrigé : dessin des guides dans le cas où un module est déplié et actif.
 
-- Veiller à ce que la liste des images dans la vue **Sélection** reste à jour
+- Corrigé : la liste des images dans la vue **Sélection** reste à jour
   lorsqu'elle est masquée.
 
 - Corrigé : problèmes mineurs dans le module **Calibration des couleurs**.
