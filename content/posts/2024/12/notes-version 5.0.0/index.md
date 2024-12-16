@@ -39,18 +39,27 @@ Les sommes de contrôle sont :
 ```
 $ sha256sum darktable-5.0.0.tar.xz
 ??? darktable-5.0.0.tar.xz
+
 $ sha256sum darktable-5.0.0-x86_64.dmg
 ??? darktable-5.0.0-x86_64.dmg
+
 $ sha256sum darktable-5.0.0-arm64.dmg
 ??? darktable-5.0.0-arm64.dmg
+
+$ sha256sum darktable-5.0.0-arm64-13.5.dmg
+??? darktable-5.0.0-arm64-13.5.dmg
+
 $ sha256sum darktable-5.0.0-win64.exe
 ??? darktable-5.0.0-win64.exe
+
+$ sha256sum darktable-4.8.1-x86_64.AppImage
+???  darktable-5.0.0-x86_64.AppImage
 ```
 
 Lors de la mise à jour à partir de la série stable 4.8.x, gardez à l'esprit que
 vos modifications seront préservées pendant ce processus, mais que la nouvelle
 bibliothèque et la configuration ne seront plus utilisables avec la version 4.8.x.
-Il est fortement conseillé d'effectuer d'abord une sauvegarde.
+<BR>Il est fortement conseillé d'effectuer d'abord une sauvegarde.
 
 #### Note importante :
 Pour s’assurer que darktable supporte le format de fichier RAW de votre appareil
@@ -60,12 +69,12 @@ d’images (sous licence CC0) pour votre boîtier.
 
 Depuis darktable 4.8 :
 
-- ??? commits to darktable+rawspeed
-- ??? pull requests handled
-- ??? issues closed
+- 1198 commits to darktable+rawspeed
+-  505 pull requests handled
+-   45 issues closed
 
 _Veuillez noter que la documentation de darktable n'est pas encore complète pour la version 5.0
-toutes les contributions sont très appréciées. Veuillez consulter la
+et que toutes les contributions sont très appréciées. Veuillez consulter la
 [documentation du projet](https://github.com/darktable-org/dtdocs#contributing)
 pour plus d'informations sur la manière de contribuer._
 
@@ -81,8 +90,7 @@ sur les changements individuels (le cas échéant).
 ## Améliorations de l'interface utilisateur (UI/UX)
 
 - Ajout de styles spécifiques à l'appareil photo pour plus de 500 modèles
-  afin d'obtenir un rendu JPEG plus proche de la réalité, plus proche du rendu
-  des images JPEG produites par l'appareil photo.
+  afin d'obtenir un rendu JPEG plus proche du rendu des images JPEG produites par l'appareil photo.
   Ces styles n'affectent que le contraste, la luminosité et la saturation et
   n'essaient pas de correspondre à l'accentuation, au débruitage ou aux
   changements de teinte. Nous avons également ajouté un script Lua pour
@@ -94,7 +102,7 @@ sur les changements individuels (le cas échéant).
   l'apparition de quelque chose à l'écran, particulèrement lorsque l'utilisateur
   a une grande bibliothèque, ajout d'un écran d'accueil optionnel, montrant
   la progression du démarrage (incluant le temps estimé restant pendant
-  l'analyse des fichiers sidecar mis à jour)
+  l'analyse des fichiers sidecar mis à jour).
 
 - L'interface utilisateur fournit désormais un retour d'information lors du
   traitement d'opérations de masse sur les images telles que le classement,
@@ -147,7 +155,7 @@ sur les changements individuels (le cas échéant).
     des panneaux eux-mêmes.
 
 - Dans la boîte de dialogue des **Préférences**, sur l'onglet **Chambre noire**, ajout d'une option
-  pour échanger les panneaux latéraux droit et gauche.
+  pour permuter les panneaux latéraux droit et gauche.
 
 - La première fois qu'un nouvel utilisateur appuiera sur la touche <kbd>Tab</kbd>, il sera
   averti que cette action a pour effet de masquer tous les panneaux et comment les faire
@@ -155,14 +163,15 @@ sur les changements individuels (le cas échéant).
 
 - Il est maintenant possible de faire glisser les modules utilitaires en les prenant
   par leur entête, pour les repositionner sur les panneaux gauche et droit (table
-  lumineuse) ainsi que verticalement (toutes les vues). Maintenez <kbd>Ctrl+Shift</kbd>
+  lumineuse) ainsi que verticalement (toutes les vues). Maintenez <kbd>Ctrl+Maj</kbd>
   pour éviter de déplier/replier les modules, avant de les faire glisser. Chaque vue peut
   ainsi avoir une disposition différente.
 
 - Le glisser-déposer des modules de traitement dans le panneau droit de la chambre
   noire a été amélioré pour permettre un défilement automatique lorsqu'on atteint
   le haut ou le bas de la page et pour ne pas être perturbé lorsque des images sont
-  glissées dans la zone.
+  glissées dans la zone. Cette fonctionnalité ne nécessite plus de presser
+  <kbd>Ctrl+Maj</kbd> en même temps.
 
 - Amélioration du message affiché au démarrage lorsque la base de données est
   verrouillée par une autre instance de darktable.
@@ -216,7 +225,7 @@ sur les changements individuels (le cas échéant).
   **panneau pellicule** dans la **chambre noire**.
   
 - Dans la **Chambre noire**, ajout d'une action (liée à <kbd>Ctrl+x</kbd> par défaut)
-  pour synchroniser le dernier module édité sur le module édité actuel de la sélection.
+  pour synchroniser le dernier module édité sur le module édité courant de la sélection.
 
 - Ajustement des paramètres internes de l'encodeur AVIF afin d'augmenter considérablement
   la vitesse d'encodage sans compromettre la qualité de sortie.
@@ -224,7 +233,7 @@ sur les changements individuels (le cas échéant).
 - Les mots-clés peuvent désormais être facilement copiés dans le presse-papiers via le
   menu contextuel du module **Mots-clés**.
   
-- Le **Stockage cible Piwigo** du module **Exporter**, permet maintenant de spécifier un modèle
+- Le **Stockage cible Piwigo** du module **Exporter** permet maintenant de spécifier un modèle
   de nom de fichier pour le fichier exporté.
 
 - Le répertoire dans lequel darktable écrira le fichier journal sous Windows a été modifié
@@ -242,7 +251,7 @@ sur les changements individuels (le cas échéant).
   
 - Ajout de nouvelles variables de substitution `$(IMAGE.TAGS.HIERARCHY)` pour insérer des
   tags avec une hiérarchie complète et `$(IMAGE.ID.NEXT)` pour insérer le numéro d'image (ID)
-  à attribuer à l'image en cours d'importation, ce qui permet àu numéro d'image de faire
+  à attribuer à l'image en cours d'importation, ce qui permet au numéro d'image de faire
   partie du nom de fichier généré lors d'une opération Copier & importer.
   
 - L'exportation vers le format JPEG XL à virgule flottante avec une qualité de 100 essaiera
@@ -250,7 +259,7 @@ sur les changements individuels (le cas échéant).
   comportement des formats JPEG XL intégraux.
 
 - La visibilité des raccourcis qui peuvent être modifiés par les utilisateurs a
-  été améliorée par l'utilisation du texte en gras
+  été améliorée par l'utilisation du texte en gras.
 
 - Le réglage de l'exposition dans l'histogramme prend désormais en charge toutes les
   fonctions standard du shéma Bauhaus de darktable (<kbd>Ctrl+clic</kbd>,
@@ -265,7 +274,7 @@ sur les changements individuels (le cas échéant).
   couleurs** en direct. En utilisant <kbd>Clic droit</kbd> sur un échantillon, il est
   possible de le modifier (en changeant l'emplacement et/ou la taille de la boîte)
   et d'ajouter un nouvel échantillon basé sur la modification, ou de stocker la
-  modification dans un échantillon en direct existant.
+  modification dans un échantillon actif existant.
 
 - Ajout de nouvelles variables de substitution pour l'utilisation des
   champs de données EXIF. Les nouvelles variables sont  :<BR>
@@ -323,7 +332,7 @@ sur les changements individuels (le cas échéant).
 - Corrigé : crash lors du chargement d'un fichier `.gpx` corrompu dans la
   vue **Géolocalisation**.
 
-- Corrigé : la gestion des préréglages dans le module **Exportater** qui
+- Corrigé : la gestion des préréglages dans le module **Exporter** qui
   n'enregistrait pas tous les paramètres.
 
 - Corrigé : un problème dans **Filmique RVB** où l'un des paramètres pouvait être
@@ -393,7 +402,7 @@ sur les changements individuels (le cas échéant).
   en cours d'exécution.
 
 - Ajout d'une nouvelle fonction `darktable.util.message()`, pour l'envoi
-  de messages à l'aide de l'événement `inter-script-communication\`.
+  de messages à l'aide de l'événement `inter-script-communication`.
 
 - Ajout de nouveaux champs de données EXIF dans `dt_lua_image_t` :
 
@@ -451,15 +460,33 @@ sur les changements individuels (le cas échéant).
 
 ### Support de base
 
-- ???
+- Fujifilm X-M5 (compressé)
+- Fujifilm X-T50 (compressé)
+- Leica D-Lux 8 (DNG)
+- Leica M11-D (DNG)
+- Leica Q3 43 (DNG)
+- Minolta Alpha Sweet Digital
+- Minolta Alpha-7 Digital
+- Nikon Z50_2 (14bit-compressé)
+- Nikon Z6_3 (14bit-compressé)
+- Panasonic DC-FZ80D (4:3)
+- Panasonic DC-FZ82D (4:3)
+- Panasonic DC-FZ85 (4:3)
+- Panasonic DC-FZ85D (4:3)
+- Panasonic DC-G100D (4:3)
+- Phase One P20+
+- Sony ILCE-1M2
 
 ### Préréglages de la balance des blancs
 
-- ???
+- Nikon Z6_3
+- Sony ILCE-6700
 
 ### Profils de réduction de bruit
 
-- ???
+- Canon PowerShot G1 X
+- Leica M11
+- Nikon Z6_3
 
 ### Absence de prise en charge des fichiers raw compressés
 
