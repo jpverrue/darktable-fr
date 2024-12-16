@@ -215,12 +215,8 @@ sur les changements individuels (le cas échéant).
 - Ajout de la prise en charge de défaire/rétablir pour les actions effectuées sur le
   **panneau pellicule** dans la **chambre noire**.
   
-- Dans la **Chambre noire*, ajout d'une action (liée à <kbd>Ctrl+x</kbd> par défaut)
-  pour synchroniser le dernier module édité sur le module édité actuel avec la sélection.
-
-- In darkroom, add action (binding to <kbd>Ctrl+x</kbd> by default) for
-  synchronizing the last edited module on current edited module to the
-  selection.
+- Dans la **Chambre noire**, ajout d'une action (liée à <kbd>Ctrl+x</kbd> par défaut)
+  pour synchroniser le dernier module édité sur le module édité actuel de la sélection.
 
 - Ajustement des paramètres internes de l'encodeur AVIF afin d'augmenter considérablement
   la vitesse d'encodage sans compromettre la qualité de sortie.
