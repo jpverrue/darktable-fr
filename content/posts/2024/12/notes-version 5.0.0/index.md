@@ -22,9 +22,10 @@ Merci à [Deepl](https://deepl.com/) pour l'aide précieuse.
 
 Les binaires pour macOS, windows et appimage, sont disponibles en bas
 de [cette page Github](https://github.com/darktable-org/darktable/releases/tag/release-5.0.0)
-Ils seront également disponibles sur la page `install` du site `dartable.org` dans quelques jours.
+Ils seront également disponibles sur la page [install du site dartable.org](https://www.darktable.org/install/) dans quelques jours.
 Les versions compilées spécifiquement pour les différentes distributions Linux seront disponibles
-selon la diligence de leurs packageurs. En attendant, vous pouvez utiliser en toute sécurité, la version appimage.
+selon la diligence de leurs packageurs. En attendant, vous pouvez utiliser en toute sécurité,
+la version [appimage](https://github.com/darktable-org/darktable/releases/download/release-5.0.0/Darktable-5.0.0-x86_64.AppImage).
 
 <div align="right">Jean-Pierre Verrue</div>
 
