@@ -14,11 +14,17 @@ authors:
 coverImage: "images/dt_logo-5.0.0.png"
 ---
 
-La version 5.0.0 de darktable est sortie samedi dernier.
+La version 5.0.0 de darktable est sortie ce samedi.
 
 Voici la traduction française des notes de version.
 
 Merci à [Deepl](https://deepl.com/) pour l'aide précieuse.
+
+Les binaires pour macOS, windows et appimage, sont disponibles en bas
+de [cette page Github](https://github.com/darktable-org/darktable/releases/tag/release-5.0.0)
+Ils seront également disponibles sur la page `install` du site dartable.org dans quleques jours.
+Les versions compilées spécifiquement pour les différentes distributions Linux seront disponibles
+selon la diligence de leurs packageurs. En attendant, vous pouvez utiliser en toute sécurité, la version appimage.
 
 <div align="right">Jean-Pierre Verrue</div>
 
@@ -38,22 +44,22 @@ Les sommes de contrôle sont :
 
 ```
 $ sha256sum darktable-5.0.0.tar.xz
-??? darktable-5.0.0.tar.xz
+eaa136e6e624bb53127282e26aafa0441abcc189b55371465e1f5a8a493fa3a1  darktable-5.0.0.tar.xz
 
 $ sha256sum darktable-5.0.0-x86_64.dmg
-??? darktable-5.0.0-x86_64.dmg
+3f49cfb63958269b99065cf6b501678d4e63f2457ee1915bcd7ffa0dfef9dcfd  darktable-5.0.0-x86_64.dmg
 
 $ sha256sum darktable-5.0.0-arm64.dmg
-??? darktable-5.0.0-arm64.dmg
+14feb35ef2b2e8e50cf1855826ad4913e905a5600a56a87dd98382e8d828e9db  darktable-5.0.0-arm64.dmg
 
 $ sha256sum darktable-5.0.0-arm64-13.5.dmg
-??? darktable-5.0.0-arm64-13.5.dmg
+b43011cae5ddc9f19a8f895ba389e9ddb79d01534e9ca0568b7125026ac72145  darktable-5.0.0-arm64-13.5.dmg
 
 $ sha256sum darktable-5.0.0-win64.exe
-??? darktable-5.0.0-win64.exe
+40444d5c7d310b1e1e859bd6b7c5d5e35d538a7bf9ad3e918b0e883c971451ea  darktable-5.0.0-win64.exe
 
-$ sha256sum darktable-4.8.1-x86_64.AppImage
-???  darktable-5.0.0-x86_64.AppImage
+$ sha256sum Darktable-5.0.0-x86_64.AppImage
+d0061ac5a345c473d98f04388197afaee48e61b638db576ae1c88700cb8855cd  Darktable-5.0.0-x86_64.AppImage
 ```
 
 Lors de la mise à jour à partir de la série stable 4.8.x, gardez à l'esprit que
@@ -516,6 +522,19 @@ La prise en charge des appareils suivants est suspendue car aucun échantillon n
 
 ## Traductions
 
-- ???
+- Albanais
+- Allemand
+- Tchèque
+- Chinois (Simplifié)
+- Chinois (Traditionel)
+- Espagnol européen
+- Finlandais
+- Français
+- Japonais
+- Néerlandais
+- Portugais Brézilien
+- Slovène
+- Ukrainien
+
 
 
