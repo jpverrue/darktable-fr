@@ -9,7 +9,7 @@ weight = 5
 parent = "documentation"
 +++
 
-> Ce document est également disponible en format [PDF](https://darktable.fr/Fichiers-de-configuration-de-darktable.pdf)
+> Ce document est également disponible en format [PDF](https://darktable.fr/les-fichiers-de-configuration/les-fichiers-de-configuration-de-darktable.pdf)
 
 ---
 
@@ -84,6 +84,7 @@ la variable `$HOME` en saisie ; de plus, il est utilisable partout.
 
 Le dossier `.config` est un dossier caché (le '.' au début du nom). Pour y accéder, il suffit de taper
 son nom. Voici les moyens pour le visualiser :
+
 - Dans un terminal : `ls -a`
 - Avec les outils graphiques, cela dépend de l'outil, mais le raccourci `Ctrl+h` permet le plus souvent de
   le voir.
@@ -302,7 +303,7 @@ parfois même, leur création nécessite une intervention manuelle.
 #### Précisions sur le contenu de la base de donnée
 
 Parmi ces fichiers, deux fichiers constituent la BdD ; ce qu’ailleurs, on appelle le catalogue. Ces fichiers
-sont au format SQLite. Il est possible de les consutler àvec un utilitaire dédié à SQLite. Sqlitebrowser, par exemple.
+sont au format SQLite. Il est possible de les consutler avec un utilitaire dédié à SQLite. Sqlitebrowser, par exemple.
 
 - `library.db` : qui contient toutes les données de développement. En fait, tout ce que l'on retrouve dans les
   fichiers “sidecar“ associés à chaque fichier de photo et portant l'extension `.xmp`.
@@ -312,8 +313,9 @@ sont au format SQLite. Il est possible de les consutler àvec un utilitaire déd
 La scission en deux fichiers de la BdD a été faite pour pouvoir la régénérer à partir des fichiers XMP sans perdre
 les mots clés, les styles et les pré-réglages. Pour faire cela, il suffit de réinitialiser uniquement library.db.
 
-L'option de lancement `--library` avec le nom d'emplacement `:memory:` permet de faire fonctionner darktable avec
-une base de donnée créée uniquement en mémoire, qui sera effacée lors de la fermeture du logiciel.
+L'option de lancement `--library` permet de faire fonctionner darktable avec une base de donnée située à un autre
+emplacement ; avec le nom d'emplacement `:memory:` une base de donnée sera crée uniquement en mémoire, et sera effacée
+lors de la fermeture du logiciel.
 
 #### Sauvegarde 
 
