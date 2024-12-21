@@ -84,6 +84,7 @@ la variable `$HOME` en saisie ; de plus, il est utilisable partout.
 
 Le dossier `.config` est un dossier caché (le '.' au début du nom). Pour y accéder, il suffit de taper
 son nom. Voici les moyens pour le visualiser :
+
 - Dans un terminal : `ls -a`
 - Avec les outils graphiques, cela dépend de l'outil, mais le raccourci `Ctrl+h` permet le plus souvent de
   le voir.
