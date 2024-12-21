@@ -314,7 +314,7 @@ La scission en deux fichiers de la BdD a été faite pour pouvoir la régénére
 les mots clés, les styles et les pré-réglages. Pour faire cela, il suffit de réinitialiser uniquement library.db.
 
 L'option de lancement `--library` permet de faire fonctionner darktable avec une base de donnée située à un autre
-emplacement. avec le nom d'emplacement `:memory:` une base de donnée sera crée uniquement en mémoire, et sera effacée
+emplacement ; avec le nom d'emplacement `:memory:` une base de donnée sera crée uniquement en mémoire, et sera effacée
 lors de la fermeture du logiciel.
 
 #### Sauvegarde 
