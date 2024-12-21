@@ -2,7 +2,7 @@
 title: "Version 5.0.0"
 aliases:
   - "darktable-5-0-0"
-date: "2024-12-21"
+date: "2024-12-20"
 featured: true
 categories:
   - "actualites"
