@@ -22,7 +22,7 @@
   name = "Manuel d'utilisation"
   identifier = "manuel"
   parent = "documentation"
-  url = "https://docs.darktable.org/usermanual/3.8/fr/"
+  url = "https://docs.darktable.org/usermanual/stable/fr/"
   weight = 1  
 [[main]]
   name = "Télécharger"
