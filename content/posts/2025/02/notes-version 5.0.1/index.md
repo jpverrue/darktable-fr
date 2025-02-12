@@ -107,159 +107,182 @@ pour plus d'informations sur la manière de contribuer._
 
 ## Correction de bogues
 
-- Corrigé : Bug de défilement dans le module des collections où l'arbre des collections ne défilait
-  pas jusqu'à la position précédente lorsque l'on revenait de la chambre noire.
+- Corrigé : Bug de défilement dans le module des collections où l'arbre des collections
+  ne défilait pas jusqu'à la position précédente lorsque l'on revenait de la chambre noire.
 
-++++++++++++++++++++++++++++++++++++
+- Corrigé : Crash lors d'une tentative de déplacement vers le haut de la première ou
+  de la seule forme d'un groupe dans le gestionnaire de masques.
 
-    Fix crash when attempting to move up the top or only shape in a group in the mask manager.
+- Corrigé : Lors de l'utilisation du filtre "module" dans le module collection qui
+  ne listait aucun des modules de traitement.
 
-    Fix collection module when using the "module" filter which was listing none of the processing modules.
+- Correction de l'utilisation des préréglages de l'utilisateur Ordre des modules. Il n'était
+  pas possible d'appliquer le préréglage Ordre des modules d'un utilisateur car les préréglages
+  internes de Darktable étaient toujours pris en compte en premier.
 
-    Fix iop-order user presets use. It was not possible to get a user's iop-order preset to be applied as the Darktable internal presets where always picked up first.
+- Corrigé : Un crash ilors de l'expansion de la variable $(SEQUENCE[n,m]).
 
-    Fixed a crash in variable expansion for $(SEQUENCE[n,m]).
+- Corrigé : Prise en compte du clic depuis le bandeau dans la vue Carte et la vue Impression.
+  Dans a vue Carte, l'image est désormais correctement centrée sur la carte. Dans la vue
+  Impression, nous utilisons l'image sélectionnée comme contenu de la zone d'impression principale.
 
-    Fixed handling on click from filmstrip when in map and print view. On map we now properly center the image on the map. On the print view, we use the selected image as content of the main print area.
+- Corrigé : Une régression introduite dans la version 5.0.0 avec laquelle nous avons perdu la
+  possibilité de lire les fichiers TIFF à 2 canaux et les fichiers à plus de 4 canaux.
+  Cette correction leur permet d'être lus par le chargeur TIFF, alors qu'auparavant le chargeur
+  TIFF rejetait ces fichiers et qu'ils étaient chargés par un chargeur de repli
+  (GraphicsMagick ou ImageMagick).
 
-    Fixed a regression introduced in 5.0.0 where we lost the ability to read 2-channel TIFF files and files with more than 4 channels. This fix allows them to be read by the TIFF loader, whereas previously the TIFF loader rejected such files and they were loaded by a fallback loader (GraphicsMagick or ImageMagick).
+- Corrigé : Impossibilité d'effectuer un panoramique à l'aide de la souris dans la Vue tazble lumineuse zoomable.
 
-    Fixed not being able to pan with a mouse in the zoomable layout.
+- Corrigé : Réduction possible de l'en-tête du module lors du rétablissement des valeurs par défaut.
 
-    Fixed possibly collapsing the module header when restoring defaults.
+- Corrigé : Un cas d'écriture de fichier XMP sans modification de l'image courante.
 
-    Fixed a case of XMP being written without actual image modification.
+- Corrigé : un crash de Darktable lors de la réimportation d'un fichier XMP référençant
+- des images composites.
 
-    Fixed a crash of Darktable when reimporting XMP having overlay images referenced.
+- Corrigé : La prise en charge d'un seul module de librairie ouvert à la fois dans la chambre noire.
 
-    Fixed the support for single lib module opened at a time when in darkroom.
+- Corrigé : Écriture d'un fichier sidecar XMP lors d'un fonctionnement en tant que plugin gimp.
 
-    Fixed xmp sidecar writing while working as a gimp plugin.
+- Corrigé : Problèmes lors de l'application d'un style dans la chambre noire à l'aide du module Styles.
+  
+- Corrigé : Un crash possible en utilisant Ctrl+z. Reproduit sur macOS.
 
-    Fixed issues when applying a style in darkroom using the Styles module.
+- Corrigé : Darktable Plante lors de l'utilisation du module Agrandir le cannevas.
 
-    Fixed a possible crash when using Ctrl+z reproduced on macOS.
+- Corrigé : Darktable plante lurs de l'utilisation du masque détails. Provoqué par un défaut de tuilage.
 
-    Fixed Darktable crashing in enlarge-canvas module.
+- Corrigé : Un bug dans le calcul du hachage entraînant des instabilités au niveau du pixelpipe.
 
-    Fixed Darktable crashing using details mask due to bad tiling.
+- Corrigé : Problème de gestion des préréglages automatiques lorsque la longueur focale
+  est supérieure à 1000.
 
-    Fixed a hash calculation bug leading to pixelpipe instabilities.
+- Corrigé : Plantage sur macOS Lors de la fermeture de la second fenêtre de la chambre noire.
 
-    Fixed issue to handle auto-presets when the focal length is greater then 1000.
+- Corrigé : saut possible dans le bandeau lorsqu'on entre dans la chambre noire à partir
+  de la prévisualisation complète.
 
-    Fixed crash on macOS when closing the darkroom's second window.
+- Corrigé : Une régression de performance dans le module Duppression de la brume.
 
-    Fixed possible jump in filmstrip when entering darkroom from full preview.
+- Corrigé : Lecture d'un PNG basé sur une palette avec transparence.
 
-    Fixed a performance regression in haze removal module.
+- Corrigé : possibilité de plantage dans le module Correction des objectifs lors d'un changement
+  de modèle d'appareil photo et/ou d'objectif.
 
-    Fixed reading palette-based PNG with transparency.
+- Corrigé : possibilité de plantage dans le module Correction des objectifs lors d'un changement
+  de modèle d'appareil photo et/ou d'objectif.
 
-    Fixed possible crash in lens correction module when changing camera and/or lens model.
+- Corrigé : Un crash lorsque l'instance de module actuellement active est supprimée.
+  
+Nous prenons désormais en charge l'orientation correcte pour les fichiers JPEG XL si elle a
+été spécifiée dans les métadonnées du format, mais pas dans les données Exif (ou si les
+données Exif sont manquantes). Nous évitons également la sur transformation si l'orientation
+est spécifiée à la fois dans les données de base et dans les données Exif.
 
-    Fixed crash after deleting style or preset that was selected in shortcuts dialog.
+## Lua
+### Version de l'API
 
-    Fixed a crash when the currently active module instance is being deleted.
+- La version de l'API est la 9.4.0
 
-    We now support the correct orientation for JPEG XL if it was specified in the format's metadata but not in Exif (or Exif is missing). We also avoid over-transformation if it is specified in both the basic data and Exif.
+### Nouvelles fonctionnalités
 
-Lua
-API Version
+N/A
 
-    API version is now 9.4.0
+### Corrections de bugs
 
-New Features
+N/A
 
-    N/A
+### Ajout d'un support d'action pour Lua
 
-Bug Fixes
+### Autres changements LuaAdd action support for Lua
 
-    N/A
+N/A
 
-Add action support for Lua
-Other Lua changes
+## Notes
 
-    N/A
+- Lors de l’exportation vers les formats AVIF, EXR, JPEG XL ou XCF,
+  la sélection de métadonnées spécifiques (par exemple, géomarquage ou
+  créateur) n’est actuellement pas possible. Pour les formats AVIF, EXR,
+  JPEG XL et XCF, darktable n’inclura aucun champ de métadonnées à moins que
+  l’utilisateur ne sélectionne toutes les cases à cocher dans les options
+  de Préférence du module Exporter.
 
-Notes
+Depuis la version 4.8, darktable ne prend plus en charge les versions de macOS antérieures à 13.5.
 
-    When exporting to AVIF, EXR, JPEG XL, or XCF, selecting specific metadata (e.g. geo-tag or creator) is not currently possible. For AVIF, EXR, JPEG XL, and XCF formats, Darktable will not include any metadata fields unless the user selects all of the checkboxes in the export module's preference options.
+## Changement de dépendences
 
-    Starting with release 4.8, macOS versions older than 13.5 are not supported.
+### Obligatoire(s)
 
-Changed Dependencies
-Mandatory
+- Passage à la version 3.26 pour SQLite
 
-    Bump SQLite requirement to 3.26
+### Optionnelle(s)
 
-Optional
+N/A
 
-    N/A
+## Changements RawSpeed
 
-RawSpeed changes
+- Les appareils photo Fujifilm GFX utilisent désormais le recadrage fourni par le constructeur.
 
-    Fujifilm GFX cameras now use the vendor supplied crop
+## Nouveaux Support d'appareils depuis la version 5.0.0
 
-Camera support, compared to 5.0.1
-Base Support
+### Support de base
 
-    Leica SL3-S (DNG)
-    Minolta DiMAGE 5
-    Panasonic DC-S5D (3:2)
+- Leica SL3-S (DNG)
+- Minolta DiMAGE 5
+- Panasonic DC-S5D (3:2)
 
-White Balance Presets
+### Préréglages de la balance des blancs
 
-    N/A
+N/A
 
-Noise Profiles
+### Profils de réduction de bruit
 
-    Fujifilm GFX100 II
-    Fujifilm X-S20
-    Fujifilm X100VI
+- Fujifilm GFX100 II
+- Fujifilm X-S20
+- Fujifilm X100VI
 
-Missing Compression Mode Support
+### Absence de prise en charge des fichiers raw compressés
 
-    Apple ProRAW DNGs
-    CinemaDNG lossless (Blackmagic, some DJI, etc.) and lossy (Blackmagic)
-    DNG 1.7 using JPEG XL (Adobe enhanced, Samsung Expert RAW)
-    Fujifilm lossy RAFs
-    Nikon high efficiency NEFs
-    OM System 14-bit high resolution ORFs
-    Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
+- Apple ProRAW DNGs
+- CinemaDNG lossless (Blackmagic, some DJI, etc.) and lossy (Blackmagic)
+- DNG 1.7 using JPEG XL (Adobe enhanced, Samsung Expert RAW)
+- Fujifilm lossy RAFs
+- Nikon high efficiency NEFs
+- OM System 14-bit high resolution ORFs
+- Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
-Suspended Support
+### fin de Support
 
-Support for the following cameras is suspended because no samples are available on https://raw.pixls.us:
+La prise en charge des appareils suivants est suspendue car aucun échantillon n’est disponible sur raw.pixls.us :
 
-    Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
-    Fujifilm IS-1
-    Kodak EasyShare Z980
-    Leaf Aptus-II 5(LI300059)/Mamiya 645 AFD
-    Leaf Credo 60
-    Leaf Credo 80
-    Olympus SP320
-    Phase One IQ250
-    Sinar Hy6/ Sinarback eXact
-    ST Micro STV680
+- Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
+- Fujifilm IS-1
+- Kodak EasyShare Z980
+- Leaf Aptus-II 5(LI300059)/Mamiya 645 AFD
+- Leaf Credo 60
+- Leaf Credo 80
+- Olympus SP320
+- Phase One IQ250
+- Sinar Hy6/ Sinarback eXact
+- ST Micro STV680
+  
+## Traductions
 
-Translations
-
-    Albanian
-    Brazilian Portuguese
-    Chinese (Simplified)
-    Chinese (Traditional)
-    Czech
-    Dutch
-    European Spanish
-    Finnish
-    French
-    German
-    Hungarian
-    Japanese
-    Polish
-    Slovenian
-    Swedish
-    Ukrainian
-
+- Albanais
+- Allemand
+- Chinois (Simplifié)
+- Chinois (Traditionel)
+- Espagnol européen
+- Finlandais
+- Français
+- Hongrois
+- Japonais
+- Néerlandais
+- Polonais
+- Portugais Brézilien
+- Tchèque
+- Slovène
+- Suédois
+- Ukrainien
 
