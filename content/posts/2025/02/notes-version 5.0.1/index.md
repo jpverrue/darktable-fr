@@ -34,7 +34,7 @@ ___
 Nous sommes fiers d'annoncer la nouvelle version corrective de darktable, 5.0.1 !
 
 La version github est disponible ici :
-[https://github.com/darktable-org/darktable/releases/tag/release-5.0.0](https://github.com/darktable-org/darktable/releases/tag/release-5.0.1).
+[https://github.com/darktable-org/darktable/releases/tag/release-5.0.1](https://github.com/darktable-org/darktable/releases/tag/release-5.0.1).
 
 Comme toujours, n'utilisez pas le fichier tarball autogénéré fourni par
 github, mais uniquement notre fichier tar.xz. Si vous ne construisez que pour vous-même
@@ -76,8 +76,8 @@ d’images (sous licence CC0) pour votre boîtier.
 Depuis darktable 5.0.0 :
 
 - 105 commits to darktable+rawspeed
--  57 pull requests handled
--  15 issues closed
+-  57 pull requests prise en compte
+-  15 issues clôturées
 
 _Veuillez noter que la documentation de darktable n'est pas encore complète pour la version 5.0
 et que toutes les contributions sont très appréciées. Veuillez consulter la
@@ -103,7 +103,7 @@ pour plus d'informations sur la manière de contribuer._
 
 - Darktable inclut désormais la base de données Lensfun dans l'AppImage.
 
-- Centrer les étiquettes de section de module repliables.
+- Centrage des étiquettes de section de module repliables.
 
 ## Correction de bogues
 
@@ -120,7 +120,7 @@ pour plus d'informations sur la manière de contribuer._
   pas possible d'appliquer le préréglage Ordre des modules d'un utilisateur car les préréglages
   internes de Darktable étaient toujours pris en compte en premier.
 
-- Corrigé : Un crash ilors de l'expansion de la variable $(SEQUENCE[n,m]).
+- Corrigé : Un crash lors de l'expansion de la variable $(SEQUENCE[n,m]).
 
 - Corrigé : Prise en compte du clic depuis le bandeau dans la vue Carte et la vue Impression.
   Dans a vue Carte, l'image est désormais correctement centrée sur la carte. Dans la vue
@@ -132,14 +132,14 @@ pour plus d'informations sur la manière de contribuer._
   TIFF rejetait ces fichiers et qu'ils étaient chargés par un chargeur de repli
   (GraphicsMagick ou ImageMagick).
 
-- Corrigé : Impossibilité d'effectuer un panoramique à l'aide de la souris dans la Vue tazble lumineuse zoomable.
+- Corrigé : Impossibilité d'effectuer un panoramique à l'aide de la souris dans la Vue table lumineuse zoomable.
 
 - Corrigé : Réduction possible de l'en-tête du module lors du rétablissement des valeurs par défaut.
 
 - Corrigé : Un cas d'écriture de fichier XMP sans modification de l'image courante.
 
 - Corrigé : un crash de Darktable lors de la réimportation d'un fichier XMP référençant
-- des images composites.
+  des images composites.
 
 - Corrigé : La prise en charge d'un seul module de librairie ouvert à la fois dans la chambre noire.
 
@@ -149,36 +149,36 @@ pour plus d'informations sur la manière de contribuer._
   
 - Corrigé : Un crash possible en utilisant Ctrl+z. Reproduit sur macOS.
 
-- Corrigé : Darktable Plante lors de l'utilisation du module Agrandir le cannevas.
+- Corrigé : Darktable plante lors de l'utilisation du module Agrandir le cannevas.
 
-- Corrigé : Darktable plante lurs de l'utilisation du masque détails. Provoqué par un défaut de tuilage.
+- Corrigé : Darktable plante lors de l'utilisation du masque détails. Provoqué par un défaut de tuilage.
 
 - Corrigé : Un bug dans le calcul du hachage entraînant des instabilités au niveau du pixelpipe.
 
 - Corrigé : Problème de gestion des préréglages automatiques lorsque la longueur focale
   est supérieure à 1000.
 
-- Corrigé : Plantage sur macOS Lors de la fermeture de la second fenêtre de la chambre noire.
+- Corrigé : Plantage sur macOS lors de la fermeture de la second fenêtre de la chambre noire.
 
-- Corrigé : saut possible dans le bandeau lorsqu'on entre dans la chambre noire à partir
+- Corrigé : saut possible dans le bandeau de miniatures lorsqu'on entre dans la chambre noire à partir
   de la prévisualisation complète.
 
-- Corrigé : Une régression de performance dans le module Duppression de la brume.
+- Corrigé : Une régression de performance dans le module Suppression de la brume.
 
 - Corrigé : Lecture d'un PNG basé sur une palette avec transparence.
 
-- Corrigé : possibilité de plantage dans le module Correction des objectifs lors d'un changement
+- Corrigé : Possibilité de plantage dans le module Correction des objectifs lors d'un changement
   de modèle d'appareil photo et/ou d'objectif.
 
-- Corrigé : possibilité de plantage dans le module Correction des objectifs lors d'un changement
-  de modèle d'appareil photo et/ou d'objectif.
+- Corrigé : Crash après la suppression d'un style ou d'un préréglage sélectionné dans la
+  boîte de dialogue des raccourcis.
 
 - Corrigé : Un crash lorsque l'instance de module actuellement active est supprimée.
   
-Nous prenons désormais en charge l'orientation correcte pour les fichiers JPEG XL si elle a
-été spécifiée dans les métadonnées du format, mais pas dans les données Exif (ou si les
-données Exif sont manquantes). Nous évitons également la sur transformation si l'orientation
-est spécifiée à la fois dans les données de base et dans les données Exif.
+- Nous prenons désormais en charge l'orientation correcte pour les fichiers JPEG XL si elle a
+  été spécifiée dans les métadonnées du format, mais pas dans les données Exif (ou si les
+  données Exif sont manquantes). Nous évitons également la sur-transformation si l'orientation
+  est spécifiée à la fois dans les données de base et dans les données Exif.
 
 ## Lua
 ### Version de l'API
@@ -201,14 +201,18 @@ N/A
 
 ## Notes
 
+- Le paquet AppImage est compatible avec les distributions dont la glibc est en version
+  2.35 ou ultérieure. Par exemple, si nous considérons quelques distributions populaires,
+  Ubuntu 22.04, Debian 12, Fedora 36 et les versions plus récentes sont compatibles.
+- Les paquets macOS `*-x86_64.dmg` et `*-arm64-13.5.dmg` nécessitent au moins macOS
+  13.5 (Ventura), le paquet `*-arm64.dmg` nécessite au moins macOS 14.0 (Sonoma).
+
 - Lors de l’exportation vers les formats AVIF, EXR, JPEG XL ou XCF,
   la sélection de métadonnées spécifiques (par exemple, géomarquage ou
   créateur) n’est actuellement pas possible. Pour les formats AVIF, EXR,
   JPEG XL et XCF, darktable n’inclura aucun champ de métadonnées à moins que
   l’utilisateur ne sélectionne toutes les cases à cocher dans les options
   de Préférence du module Exporter.
-
-Depuis la version 4.8, darktable ne prend plus en charge les versions de macOS antérieures à 13.5.
 
 ## Changement de dépendences
 
@@ -252,7 +256,7 @@ N/A
 - OM System 14-bit high resolution ORFs
 - Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
-### fin de Support
+### Support en attente
 
 La prise en charge des appareils suivants est suspendue car aucun échantillon n’est disponible sur raw.pixls.us :
 
