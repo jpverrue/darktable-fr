@@ -115,13 +115,13 @@ sur les changements individuels (le cas échéant).
 - Le module **Sigmoide** est désormais le mappeur de tonalités sélectionné par
   défaut lors des nouvelles installations.
 
-- Le module **Eporter** dispose désormais d'une nouvelle section
+- Le module **Exporter** dispose désormais d'une nouvelle section
   **Exportation multi-préréglages** qui permet d'exporter les images
   sélectionnées avec plusieurs préréglages en une seule opération.
 
 ## Améliorations de l'interface utilisateur (UI/UX)
 
-- Sur la **Table lumineuse*, remplacement du widget réglette de zoom,
+- Sur la **Table lumineuse**, remplacement du widget réglette de zoom,
   qui contrôle le nombre de vignettes affichées dans le tableau des vignettes,
   par un widget +/-. Cela facilite le réglage de la valeur exacte.
 
@@ -216,7 +216,7 @@ sur les changements individuels (le cas échéant).
   sur le niveau au-dessus du niveau de l'écrétage.
 
 - Les changements dans le module **Orientation** respectent les modifications
-- apportées dans le module **Recadrer**.
+  apportées dans le module **Recadrer**.
 
 - La dimension affichée lors du recadrage correspond désormais à la dimension d'exportation
   par défaut et conserve le rapport exact choisi.
