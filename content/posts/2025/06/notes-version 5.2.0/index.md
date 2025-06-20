@@ -260,7 +260,7 @@ sur les changements individuels (le cas échéant).
   pipelines de pixels.
 
 - Correction des préréglages du filtre de collection basés sur l'heure de capture,
-- qui créaient un widget vide.
+  qui créaient un widget vide.
 
 - Prise en charge correcte du dématriçage et du mélange des détails de haute qualité
   pour la deuxième fenêtre.
@@ -360,7 +360,7 @@ N/A
   l’utilisateur ne sélectionne toutes les cases à cocher dans les options
   de Préférence du module Exporter.
 
-- Depuis la version 4.8 ne prend plus en charge les versions de macOS
+- Depuis la version 4.8, Darktable ne prend plus en charge les versions de macOS
   antérieures à 13.5.
 
 ## Changement de dépendences
