@@ -90,50 +90,53 @@ pour plus d'informations sur la manière de contribuer._
 
 ## Les grandes nouveautés
 
-The following is a summary of the main features added to darktable
-5.2. Please see the user manual for more details of the individual
-changes (where available).
+Voici un résumé des principales fonctionnalités ajoutées à darktable
+5.2. Veuillez consulter le manuel de l'utilisateur pour plus de détails
+sur les changements individuels (le cas échéant).
 
-- View snapshots side-by-side with the current image, instead of as a
-  partial overlay, by clicking the button next to "take snapshot". The
-  center viewport is divided in two equal panels and can be zoomed and
-  panned (by dragging while holding the "a" key) as before. The
-  dividing line can not be moved and any click without "a" rotates the
-  layout.
+- Vous pouvez maintenant visualiser les instantanés côte à côte avec l'image
+  actuelle, au lieu d'une superposition partielle. Sélectionnez l'instantané
+  à afficher, puis cliquez sur le bouton situé à côté de « prendre un
+  instantané ». La fenêtre centrale est divisée en deux panneaux égaux. Elle
+  peut être zoomée et panoramisée (en la faisant glisser tout en maintenant
+  la touche « a » enfoncée) comme auparavant. La ligne de séparation ne peut
+  plus être déplacée mais tout clic sans « a » fait pivoter la disposition.
 
-- The metadata module is now fully configurable and allows to add and
-  maintain any tags which are supported by exiv2.
+- Le module Informations de l'images est désormais entièrement configurable
+  et permet d'ajouter et conserver toutes les balises supportées par exiv2.
+  
+- Ajout d'un nouveau module « masque raster externe ». Après avoir configuré
+  un dossier racine contenant les fichiers PFM das les préférences, vous pouvez
+  sélectionner un fichier à utiliser comme masque raster, qui sera mis à
+  l'échelle pour s'adapter à la taille de l'image. Vous pouvez également
+  définir la combinaison des canaux RVB de ce fichier PFM qui sera utilisée
+  pour le masque raster.
 
-- Added a new module "raster mask import". After setting up a root
-  folder containing PFM files, a file can be selected to be used as a
-  raster mask, it is scaled to full image size. You can also define
-  what combination of the RGB channels of that PFM file will be used
-  for the raster mask.
+- Le module Sigmoid est désormais le mappeur de tonalités sélectionné par
+  défaut lors des nouvelles installations.
 
-- Sigmoid module is now the default tone-mapper selected for new
-  installation.
+- Le module d'exportation dispose désormais d'une nouvelle section
+  « Exportation multi-préréglages » qui permet d'exporter les images
+  sélectionnées avec plusieurs préréglages en une seule opération.
 
-- The export module has got a new section multi-preset export which
-  allows to export the selected images with multiple presets in one
-  single export run.
+## Améliorations de l'interface utilisateur (UI/UX)
 
-## UI/UX Improvements
+- Sur la table lumineuse, remplacement du widget réglette de zoom,
+  qui contrôle le nombre de vignettes affichées dans le tableau des vignettes,
+  par un widget +/-. Cela facilite le réglage de la valeur exacte.
 
-- Replaced the zoom range widget, which controls the number of
-  thumbnails displayed on the thumbnail table, with a spin
-  button. This makes it easier to set the exact value.
+- Dans l'onglet « 4 voies » du module « Balance de couleur RVB »,
+  <kbd>ctrl+clic</kbd> sur les pipettes sélectionne désormais la couleur réelle,
+  tandis qu'un clic normal continue de sélectionner la couleur opposée. Cela
+  offre aux utilisateurs plus de flexibilité et de contrôle lors de la sélection
+  des teintes.
 
-- In the 4 ways tab in Color Balance RGB, <kbd>ctrl+click</kbd> now
-  picks the actual color while regular click continues to pick the
-  opposite color. This gives users more flexibility and control when
-  selecting hues.
+## Améliorations des performances
 
+- Élimination des actualisations inutiles de l'interface graphique.
 
-## Performance Improvements
-
-- Eliminated unnecessary GUI refreshes.
-
-- Improved user interface responsiveness for blending operations.
+- Amélioration de la réactivité de l'interface utilisateur pour les opérations
+  de fusion.
 
 ## Other Changes
 
