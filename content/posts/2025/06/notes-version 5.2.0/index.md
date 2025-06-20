@@ -96,36 +96,36 @@ sur les changements individuels (le cas échéant).
 
 - Vous pouvez maintenant visualiser les instantanés côte à côte avec l'image
   actuelle, au lieu d'une superposition partielle. Sélectionnez l'instantané
-  à afficher, puis cliquez sur le bouton situé à côté de « prendre un
-  instantané ». La fenêtre centrale est divisée en deux panneaux égaux. Elle
-  peut être zoomée et panoramisée (en la faisant glisser tout en maintenant
-  la touche « a » enfoncée) comme auparavant. La ligne de séparation ne peut
-  plus être déplacée mais tout clic sans « a » fait pivoter la disposition.
+  à afficher, puis cliquez sur le bouton situé à côté de **Prendre un
+  instantané**. La fenêtre centrale est divisée en deux panneaux égaux. Elle
+  peut être zoomée et panotée (en la faisant glisser tout en maintenant
+  la touche <kbd>a</kbd> enfoncée) comme auparavant. La ligne de séparation ne peut
+  plus être déplacée mais tout clic sans <kbd>a</kbd> fait pivoter la disposition.
 
-- Le module Informations de l'images est désormais entièrement configurable
+- Le module **Informations de l'image** est désormais entièrement configurable
   et permet d'ajouter et conserver toutes les balises supportées par exiv2.
   
-- Ajout d'un nouveau module « masque raster externe ». Après avoir configuré
-  un dossier racine contenant les fichiers PFM das les préférences, vous pouvez
+- Ajout d'un nouveau module **Masque raster externe**. Après avoir configuré
+  un dossier racine contenant les fichiers PFM dans les préférences, vous pouvez
   sélectionner un fichier à utiliser comme masque raster, qui sera mis à
   l'échelle pour s'adapter à la taille de l'image. Vous pouvez également
   définir la combinaison des canaux RVB de ce fichier PFM qui sera utilisée
   pour le masque raster.
 
-- Le module Sigmoide est désormais le mappeur de tonalités sélectionné par
+- Le module **Sigmoide** est désormais le mappeur de tonalités sélectionné par
   défaut lors des nouvelles installations.
 
-- Le module d'exportation dispose désormais d'une nouvelle section
-  « Exportation multi-préréglages » qui permet d'exporter les images
+- Le module **Eporter** dispose désormais d'une nouvelle section
+  **Exportation multi-préréglages** qui permet d'exporter les images
   sélectionnées avec plusieurs préréglages en une seule opération.
 
 ## Améliorations de l'interface utilisateur (UI/UX)
 
-- Sur la table lumineuse, remplacement du widget réglette de zoom,
+- Sur la **Table lumineuse*, remplacement du widget réglette de zoom,
   qui contrôle le nombre de vignettes affichées dans le tableau des vignettes,
   par un widget +/-. Cela facilite le réglage de la valeur exacte.
 
-- Dans l'onglet « 4 voies » du module « Balance de couleur RVB »,
+- Dans l'onglet **4 voies** du module **Balance de couleur RVB**,
   <kbd>ctrl+clic</kbd> sur les pipettes sélectionne désormais la couleur réelle,
   tandis qu'un clic normal continue de sélectionner la couleur opposée. Cela
   offre aux utilisateurs plus de flexibilité et de contrôle lors de la sélection
@@ -140,7 +140,7 @@ sur les changements individuels (le cas échéant).
 
 ## Autres changements
 
-- Suppression des modules Niveaux et Contraste / Luminosité / Saturation
+- Suppression des modules **Niveaux** et **Contraste / Luminosité / Saturation**
   (qui étaient obsolètes depuis 2023) du groupe des modules obsolètes.
   Ce groupe étant désormais vide, il a également été supprimé pour le moment.
   
@@ -151,8 +151,8 @@ sur les changements individuels (le cas échéant).
 - Ajout de la lecture des fichiers au format Cineon (développé par Kodak) et
   DPX (développé par SMPTE) avec les extensions .cin et .dpx.
 
-- Dans les préférences, le paramètre « Privilégier les performances plutôt
-  que la qualité » a été supprimé.
+- Dans les **Préférences**, le paramètre **Privilégier les performances plutôt
+  que la qualité** a été supprimé.
 
 - Une solution de contournement pour les anciens pilotes AMD OpenCL défectueux,
   en place depuis 12 ans, a été désactivée par défaut. Nous espérons que les
@@ -162,8 +162,8 @@ sur les changements individuels (le cas échéant).
   problèmes avec OpenCL qui pourraient être causés par cette modification,
   veuillez procéder comme suit :
   
-    - Ajoutez la ligne opencl_force_c_locale=anything à votre fichier
-      ~/.config/darktable/darktablerc.
+    - Ajoutez la ligne `opencl_force_c_locale=anything` à votre fichier
+      `~/.config/darktable/darktablerc`.
 
     - Si cela résout votre problème, veuillez signaler le problème sur GitHub,
       Pull Request #18342, en incluant des informations sur la marque de votre
@@ -173,28 +173,28 @@ sur les changements individuels (le cas échéant).
       pilotes obsolètes qu'ils doivent les mettre à jour.
 
 - Les préréglages peuvent désormais être organisés dans des sous-menus, comme
-  les styles, en insérant le caractère '|' dans leur nom entre les niveaux.
-  La boîte de dialogue des raccourcis ainsi que l'onglet des préférences
-  afficheent désormais ces hiérarchies repliables pour les styles et les
+  les styles, en insérant le caractère <kbd>|</kbd> dans leur nom entre les niveaux.
+  La boîte de dialogue des raccourcis ainsi que l'onglet **Préréglages** des **Préférences**
+  affichent désormais ces hiérarchies repliables pour les styles et les
   préréglages (et le bug qui empêchait la traduction des raccourcis de
   style a été corrigé).
 
-- affichage d'un indiateur sur les tâches en arrière-plan en cours lorsque
+- Affichage d'un indiateur sur les tâches en arrière-plan en cours lorsque
   darktable se ferme.
 
-- Amélioration du rendu des modules Réduction du bruit(profil), Homogénéiser
-  ou postériser et Réduction du bruit photo astro dans une deuxième fenêtre
+- Amélioration du rendu des modules **Réduction du bruit(profil)**, **Homogénéiser
+  ou postériser** et **Réduction du bruit photo astro** dans une deuxième fenêtre
   ou en mode de traitement haute qualité.
   
-- Le paramètre de préférence « Réduire la résolution de l'image d'aperçu » est
+- Le paramètre de préférence **Réduire la résolution de l'image d'aperçu** est
   masqué. Cette fonctionnalité avait été introduite en 2020 afin d'améliorer la
   réactivité sur les systèmes lents, mais elle rendait le sélecteur de couleurs
   et la prise en charge des masques imprécis (perte de qualité).
 
 - Amélioration de la qualité de l'algorithme de récupération des hautes lumières
-  Peinture opposés pour les images sRAW.
+  **Peinture opposés** pour les images sRAW.
 
-- Dans le module Suppression de la brume, réduction visible des différences entre
+- Dans le module **Suppression de la brume**, réduction visible des différences entre
   les exportations et le traitement en chambre noire HQ.
   Pour certaines images, l'algorithme ne parvient pas à calculer les paramètres
   de correction. Cela est signalé dans le journal de contrôle.
@@ -202,42 +202,42 @@ sur les changements individuels (le cas échéant).
 - Les informations sur l'objectif sont désormais lues à partir des fichiers image
   OM-System/Olympus pris avec des objectifs sans données électroniques, si ces
   informations sont saisies dans la boîte de dialogue des paramètres d'informations
-  sur l'objectif de l'appareil photo. Le module de correction de l'objectif trouvera
+  sur l'objectif de l'appareil photo. Le module de **Correction des objectifs** trouvera
   automatiquement l'objectif s'il est pris en charge par lensfun et si le nom saisi
   correspond au nom lensfun, qui peut être consulté dans la liste déroulante de
   sélection des objectifs.
 
 - Les masques raster ont été améliorés en interne et prennent désormais en charge les
-  mêmes outils de raffinement que tous les autres masques, notamment le seuil de détails,
-  le guide et le rayon de l'adoucissement, le rayon de flou et le contraste.
+  mêmes outils de raffinement que tous les autres masques, notamment le **Seuil de détails**,
+  le **Guide**, le **Rayon de l'adoucissement**, le **Rayon de flou** et le **Contraste**.
   Quelques améliorations ont été apportées à l'interface utilisateur des masques raster.
 
-- Le module Reconstruire les hutes lumières offre un masque raster avec des informations
+- Le module **Reconstruire les hautes lumières** offre un masque raster avec des informations
   sur le niveau au-dessus du niveau de l'écrétage.
 
-- Les changements dans le module Orientation respectent les modifications
-- apportées dans le module Recadrer.
+- Les changements dans le module **Orientation** respectent les modifications
+- apportées dans le module **Recadrer**.
 
 - La dimension affichée lors du recadrage correspond désormais à la dimension d'exportation
   par défaut et conserve le rapport exact choisi.
 
-- Dans le module historique, les informations de formattage et de mise à l'échelle des
+- Dans le module **Historique**, les informations de formattage et de mise à l'échelle des
   info-bulles des items ont été corrigées afin qu'elles correspondent aux valeurs affichées
   dans les modules eux-mêmes.
 
-- Ajout de la connexion automatique au module d'exportation piwigo. Cette option peut
+- Ajout de la connexion automatique au module d'exportation **Piwigo**. Cette option peut
   être activée dans la section sécurité des préférences.
 
-- Ajout du format 45 x 35 au module de recadrage, très utilisé pour les cartes
+- Ajout du format 45 x 35 au module **Recadrer**, très utilisé pour les cartes
   d'identité et les passeports.
 
-- Module Èvaluation des couleurs ISO12464 : modification de la largeur totale de la
+- Module **Évaluation des couleurs ISO12464** : modification de la largeur totale de la
   bordure pour une mise à l'échelle relative qui devrait bien fonctionner sur les petits
   et grands écrans, indépendamment de la résolution physique de l'écran. Ajout d'une
   fenêtre contextuelle pour le paramétrage et suppression.
 
 - Amélioration de la visibilité des masques dans la chambre noire. Cette option est
-  contrôlée par la nouvelle option de configuration cachée « darkroom/ui/develop_mask_mix ».
+  contrôlée par la nouvelle option de configuration cachée `darkroom/ui/develop_mask_mix`.
   
 - Ajout d'un nouveau paramètre pour modifier les images prises en compte pour les actions :
   par défaut, l'image sous le curseur est prioritaire. Lorsque ce paramètre est activé,
@@ -247,7 +247,7 @@ sur les changements individuels (le cas échéant).
 - Ajout d'une icône de mot-clé sur les miniatures pour afficher la liste des mots-clés
   associées lorsque vous passez la souris dessus.
 
-- Dans la vue carte, il est possible de faire un panoramique sur l'ensemble du tracé de
+- Dans la vue **Carte**, il est possible de faire un panoramique sur l'ensemble du tracé de
   l'une des manières suivantes : en double-cliquant sur la liste des segments de tracé,
   en cliquant avec le bouton gauche de la souris sur l'en-tête de la liste ou à l'aide
   d'un raccourci clavier.
