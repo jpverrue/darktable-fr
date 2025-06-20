@@ -112,7 +112,7 @@ sur les changements individuels (le cas échéant).
   définir la combinaison des canaux RVB de ce fichier PFM qui sera utilisée
   pour le masque raster.
 
-- Le module Sigmoid est désormais le mappeur de tonalités sélectionné par
+- Le module Sigmoide est désormais le mappeur de tonalités sélectionné par
   défaut lors des nouvelles installations.
 
 - Le module d'exportation dispose désormais d'une nouvelle section
@@ -138,112 +138,119 @@ sur les changements individuels (le cas échéant).
 - Amélioration de la réactivité de l'interface utilisateur pour les opérations
   de fusion.
 
-## Other Changes
+## Autres changements
 
-- Removed the levels and contrast brightness saturation modules (which
-  were deprecated in 2023) from the deprecated modules group. Since
-  this group would be empty after that, it has also been removed for
-  now.
+- Suppression des modules Niveaux et Contraste / Luminosité / Saturation
+  (qui étaient obsolètes depuis 2023) du groupe des modules obsolètes.
+  Ce groupe étant désormais vide, il a également été supprimé pour le moment.
+  
+- En raison d'un problème en amont, l'exportation au format JPEG XL en 16 bits
+  flottants avec une qualité de 100 n'est actuellement pas mathématiquement
+  sans perte.
 
-- Due to an upstream issue, exporting JPEG XL in 16-bit float at
-  quality 100 is not currently mathematically lossless.
+- Ajout de la lecture des fichiers au format Cineon (développé par Kodak) et
+  DPX (développé par SMPTE) avec les extensions .cin et .dpx.
 
-- Allow reading of files in Cineon format (developed by Kodak) and DPX
-  format (developed by SMPTE) with .cin and .dpx file extensions.
+- Dans les préférences, le paramètre « Privilégier les performances plutôt
+  que la qualité » a été supprimé.
 
-- The "prefer performance over quality" preference setting has been
-  removed.
+- Une solution de contournement pour les anciens pilotes AMD OpenCL défectueux,
+  en place depuis 12 ans, a été désactivée par défaut. Nous espérons que les
+  pilotes plus récents n'en ont plus besoin, car que cela causait des problèmes
+  avec la traduction de l'interface utilisateur au démarrage, provoquant
+  l'affichage d'une partie de celle-ci en anglais. Si vous rencontrez des
+  problèmes avec OpenCL qui pourraient être causés par cette modification,
+  veuillez procéder comme suit :
+  
+    - Ajoutez la ligne opencl_force_c_locale=anything à votre fichier
+      ~/.config/darktable/darktablerc.
 
-- A workaround for old broken AMD OpenCL drivers that has been in
-  place for 12 years has been disabled by default. Hopefully more
-  recent drivers don't need it anymore and it caused problems with the
-  translation of the user interface during startup, causing part of it
-  to appear in English.  If you have problems with OpenCL that you
-  believe may be caused by this change, please do two things:
+    - Si cela résout votre problème, veuillez signaler le problème sur GitHub,
+      Pull Request #18342, en incluant des informations sur la marque de votre
+      GPU et la version de vos pilotes. Nous pourrons alors, pour la prochaine
+      version, soit réactiver par défaut la solution de contournement pour les
+      pilotes qui en ont besoin, soit avertir les utilisateurs disposant de
+      pilotes obsolètes qu'ils doivent les mettre à jour.
 
-    - Add the line opencl_force_c_locale=anything to your
-      ~/.config/darktable/darktablerc file.
+- Les préréglages peuvent désormais être organisés dans des sous-menus, comme
+  les styles, en insérant le caractère '|' dans leur nom entre les niveaux.
+  La boîte de dialogue des raccourcis ainsi que l'onglet des préférences
+  afficheent désormais ces hiérarchies repliables pour les styles et les
+  préréglages (et le bug qui empêchait la traduction des raccourcis de
+  style a été corrigé).
 
-    - If that solves your problem, please report the issue to GiHhub
-      PR #18342, including information on the make of your GPU and the
-      version of your drivers. We can then for the next release either
-      by default re-enable the workaround for drivers that need them,
-      or warn people with antiquated drivers that they need to update.
+- affichage d'un indiateur sur les tâches en arrière-plan en cours lorsque
+  darktable se ferme.
 
-- Presets can now be arranged in sub menus, like styles can, by
-  inserting | in their name between levels. The shortcuts
-  dialog/preferences tab now show these collapsible hierarchies for
-  styles and presets too (and the bug that style shortcuts were not
-  translated is fixed).
+- Amélioration du rendu des modules Réduction du bruit(profil), Homogénéiser
+  ou postériser et Réduction du bruit photo astro dans une deuxième fenêtre
+  ou en mode de traitement haute qualité.
+  
+- Le paramètre de préférence « Réduire la résolution de l'image d'aperçu » est
+  masqué. Cette fonctionnalité avait été introduite en 2020 afin d'améliorer la
+  réactivité sur les systèmes lents, mais elle rendait le sélecteur de couleurs
+  et la prise en charge des masques imprécis (perte de qualité).
 
-- Give a hint for pending background work when darktable is closing.
+- Amélioration de la qualité de l'algorithme de récupération des hautes lumières
+  Peinture opposés pour les images sRAW.
 
-- Improved rendering output of Denoise Profile, Dither and Astrophoto
-  Denoise on second window or in high quality processing mode.
+- Dans le module Suppression de la brume, réduction visible des différences entre
+  les exportations et le traitement en chambre noire HQ.
+  Pour certaines images, l'algorithme ne parvient pas à calculer les paramètres
+  de correction. Cela est signalé dans le journal de contrôle.
 
-- Hide "reduce resolution of preview image" preference setting. This
-  was a way to get better responsiveness on slow systems introduced in
-  2020, but at the same time it was making the color picker and mask
-  support inaccurate (quality loss).
+- Les informations sur l'objectif sont désormais lues à partir des fichiers image
+  OM-System/Olympus pris avec des objectifs sans données électroniques, si ces
+  informations sont saisies dans la boîte de dialogue des paramètres d'informations
+  sur l'objectif de l'appareil photo. Le module de correction de l'objectif trouvera
+  automatiquement l'objectif s'il est pris en charge par lensfun et si le nom saisi
+  correspond au nom lensfun, qui peut être consulté dans la liste déroulante de
+  sélection des objectifs.
 
-- Improved quality of inpaint opposed highlight recovery algorithm for
-  sRAW images.
+- Les masques raster ont été améliorés en interne et prennent désormais en charge les
+  mêmes outils de raffinement que tous les autres masques, notamment le seuil de détails,
+  le guide et le rayon de l'adoucissement, le rayon de flou et le contraste.
+  Quelques améliorations ont été apportées à l'interface utilisateur des masques raster.
 
-- Reduced haze removal visible difference between exports and HQ
-  darkroom processing.
-  For some images the algorithm fails to calculate correction
-  parameters, this is reported via control log.
+- Le module Reconstruire les hutes lumières offre un masque raster avec des informations
+  sur le niveau au-dessus du niveau de l'écrétage.
 
-- Lens info is now read from OM-System/Olympus image files taken with
-  lenses without electronic data if this info is entered in the
-  camera lens info settings dialog. The lens correction module will
-  automatically find the lens, if it is supported by lensfun and the
-  entered name matches the lensfun name, which can be seen in the lens
-  selection drop down list.
+- Les changements dans le module Orientation respectent les modifications
+- apportées dans le module Recadrer.
 
-- Raster masks got internal improvements and now support the same refinement
-  tools as all other masks including details threshold, feathering guide and
-  radius, blurring radius and contrast. Some UI refinements for raster-masks.
+- La dimension affichée lors du recadrage correspond désormais à la dimension d'exportation
+  par défaut et conserve le rapport exact choisi.
 
-- The highlights module offers a raster mask with information about level above
-  clip level.
+- Dans le module historique, les informations de formattage et de mise à l'échelle des
+  info-bulles des items ont été corrigées afin qu'elles correspondent aux valeurs affichées
+  dans les modules eux-mêmes.
 
-- Changing orientation (via the flip module) respects changes done in
-  crop module.
+- Ajout de la connexion automatique au module d'exportation piwigo. Cette option peut
+  être activée dans la section sécurité des préférences.
 
-- The shown dimension while cropping now matches the default export
-  dimension and keeps the exact chosen ratio.
+- Ajout du format 45 x 35 au module de recadrage, très utilisé pour les cartes
+  d'identité et les passeports.
 
-- In the history module item tooltip, fixed the formatting and scaling
-  of the changes to match the values as seen in the modules
-  themselves.
+- Module Èvaluation des couleurs ISO12464 : modification de la largeur totale de la
+  bordure pour une mise à l'échelle relative qui devrait bien fonctionner sur les petits
+  et grands écrans, indépendamment de la résolution physique de l'écran. Ajout d'une
+  fenêtre contextuelle pour le paramétrage et suppression.
 
-- Added auto login to the piwigo export module. This can be enabled in
-  the security section of the preferences.
+- Amélioration de la visibilité des masques dans la chambre noire. Cette option est
+  contrôlée par la nouvelle option de configuration cachée « darkroom/ui/develop_mask_mix ».
+  
+- Ajout d'un nouveau paramètre pour modifier les images prises en compte pour les actions :
+  par défaut, l'image sous le curseur est prioritaire. Lorsque ce paramètre est activé,
+  les images sélectionnées sont prioritaires et l'image sous le curseur est uniquement
+  prise en compte pour alimenter le module Information de l'image.
 
-- Add 45x35 aspect ratio to the crop module, which is popular on IDs
-  and passports.
+- Ajout d'une icône de mot-clé sur les miniatures pour afficher la liste des mots-clés
+  associées lorsque vous passez la souris dessus.
 
-- Color assessment conditions: Changed total border width to relative
-  scaling which should work well on small and big screens, independent
-  of physical screen resolution, added pop-up window for
-  parameterization and removed ISO12464 reference.
-
-- Improved visibility of masks in darkroom. This is controlled by the
-  new hidden "darkroom/ui/develop_mask_mix" configuration option.
-
-- Add a new setting to change which images are taken into account for
-  actions: By default, the image under the cursor takes priority. With
-  this parameter enabled, the selected images will take priority, and
-  the image under the cursor will only be taken into account to feed
-  the information modules.
-
-- Added a tag icon on thumbnails to display the list of attached tags
-  when hovering over it.
-
-- In the map view, it is possible to pan the entire track in one of
-  the following ways: by double-clicking on the track segment list, by
-  left-clicking on the list header, or by shortcut option.
+- Dans la vue carte, il est possible de faire un panoramique sur l'ensemble du tracé de
+  l'une des manières suivantes : en double-cliquant sur la liste des segments de tracé,
+  en cliquant avec le bouton gauche de la souris sur l'en-tête de la liste ou à l'aide
+  d'un raccourci clavier.
 
 ## Bug Fixes
 
