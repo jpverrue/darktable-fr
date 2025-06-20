@@ -252,133 +252,145 @@ sur les changements individuels (le cas échéant).
   en cliquant avec le bouton gauche de la souris sur l'en-tête de la liste ou à l'aide
   d'un raccourci clavier.
 
-## Bug Fixes
+## Correction de bogues
 
-- Fixed sidecar writing if quitting from darkroom.
+- Correction de l'écriture des fichiers sidecar en cas de sortie de la chambre noire.
 
-- Fixed some rare race conditions while processing the pixelpipes.
+- Correction de quelques rares conditions de concurrence lors du traitement des
+  pipelines de pixels.
 
-- Fixed collection filter presets based on capture time creating an
-  empty widget.
+- Correction des préréglages du filtre de collection basés sur l'heure de capture,
+- qui créaient un widget vide.
 
-- Proper high quality demosaicing and details blending support for
-  second window.
+- Prise en charge correcte du dématriçage et du mélange des détails de haute qualité
+  pour la deuxième fenêtre.
 
-- Fixed a bug that allowed NULL pointer dereference in tethering mode
-  under certain conditions, which resulted in a crash.
+- Correction d'un bug qui permettait le déréférencement d'un pointeur NULL en mode **Capture**
+  dans certaines conditions, ce qui entraînait un plantage.
 
-- Fixed darktable shutdown code so pending background jobs are properly finished
-  and give a control log if there is pending work.
+- Correction du code d'arrêt de darktable afin que les tâches en arrière-plan en attente
+  soient correctement terminées et qu'un journal de contrôle soit généré si des tâches
+  sont en attente.
 
-- Fixed a crash in the import dialog when trying to add a new place to
-  an empty places list.
+- Correction d'un plantage dans la boîte de dialogue d'importation lors de l'ajout d'un
+  nouvel emplacement à une liste d'emplacements vide.
 
-- Fixed bit-depth setting not saved in AVIF export presets.
+- Corrigé : le réglage de la profondeur de bits n'etait pas enregistré dans les
+  préréglages d'exportation AVIF.
 
-- Fixed reset button not working in the geotagging module. Also a
-  loaded GPX track in the geotagging module is now properly removed.
+- Corrigé : Le bouton de réinitialisation ne fonctionne pas dans le module de
+  géolocalisation. De plus, une trace GPX chargée dans le module de géolocalisation
+  est désormais correctement supprimée.
 
-- Fixed darktable-cli crashing if the darktable database is locked.
+- Corrigé : plantage de darktable-cli lorsque la base de données darktable est
+  verrouillée.
 
-- Fixed image not properly layout in the print module after being
-  rotated from Lighttable.
+- Corrigé : l'image n'est pas correctement mise en page dans le module d'impression
+  après avoir été pivotée à partir de la table lumineuse.
 
-- Fixed a bug where the changes in various edit fields are not saved
-  correctly when the field loses the input focus.
+- Corrigé : un bug empêchait l'enregistrement correct des modifications apportées
+  dans divers champs d'édition lorsque le champ perdait le focus.
 
-- Fixed incorrect reporting of whether a flash was fired in expansion
-  variables `$(EXIF.FLASH.ICON)` and `$(EXIF.FLASH)` under certain
-  conditions.
+- Correction d'un problème qui empêchait l'affichage correct de l'utilisation
+  du flash dans les variables d'extension `$(EXIF.FLASH.ICON)` et `$(EXIF.FLASH)`
+  dans certaines conditions.
 
-- Fixed the edit style dialog to show all module's duplicates. Also,
-  when creating a new style we don't show the whole history but only
-  the last version of each module.
+- Correction de la boîte de dialogue de modification du style afin d'afficher
+  tous les doublons du module. De plus, lors de la création d'un nouveau style,
+  nous n'affichons plus l'historique complet, mais uniquement la dernière version
+  de chaque module.
 
-- Fixed a bug in xtrans demosaicers that could feed NaNs into the
-  pixelpipe.
+- Correction d'un bug dans les dématriceurs Xtrans qui pouvait introduire des NaN
+  dans le pixelpipe.
 
-- Fixed display of image using a composite module when the modules are
-  reordered.
+- Corrigé : Affichage d'une image utilisant le module **Composite** lorsque
+  les modules sont réorganisés.
 
-- Many TIFF loader fixes and improvements:
+- De nombreuses corrections et améliorations ont été apportées au chargeur TIFF :
 
-    - Fixed crash on files for which libtiff would issue warnings or errors
+    - Correction d'un plantage sur les fichiers pour lesquels libtiff générait
+      des avertissements ou des erreurs.
 
-    - Fixed crash on files with missing SAMPLESPERPIXEL tag
+    - Correction d'un plantage sur les fichiers dont la balise `SAMPLESPERPIXEL`
+      était manquante.
 
-    - Enabled CMYK TIFF support
+    - Prise en charge des TIFF CMYK.
 
-    - Added support for loading TIFF with missing/undefined sample format
+    - Ajout de la prise en charge du chargement des fichiers TIFF avec un format
+    - d'échantillon manquant ou non défini.
 
-    - Fixed reading of grayscale images with min-is-white interpretation
-      (made them not inverted)
+    - Correction de la lecture des images en niveaux de gris avec interprétation
+      « min-is-white » (elles ne sont plus inversées)
 
-    - Fixed regression in support of many more exotic variations
-      of the TIFF format, such as tiled encoding, planar layout,
-      uncommon bit depths (such as 12 or 14 bits, or less than 8)
+    - Correction d'une régression dans la prise en charge de nombreuses variantes
+      exotiques du format TIFF, telles que l'encodage en mosaïque, la disposition
+      plane, les profondeurs de bits inhabituelles (telles que 12 ou 14 bits,
+      ou moins de 8).
 
 ## Lua
 
-### API Version
+### Version de l'API
 
-- API version is now 9.5.0
+- La version de l'API est la 9.5.0
 
-### New Features
+### Nouvelles fonctionnalités
 
-- Added apply_sidecar to dt_lua_image_t so that a sidecar file can be loaded
-  and applied to an image in lighttable.
+- Ajout de `apply_sidecar` à `dt_lua_image_t` afin qu'un fichier sidecar puisse
+  être chargé et appliqué à une image dans la **Table lumineuse**
 
-### Bug Fixes
+### Correction de bogues
 
-- Expanded width of preference boxes Lua Options so that long input is visible.
+- Préférences ➙ Options Lua : largeur des cases augmentée afin que les entrées
+  longues soient visibles.
 
-- N/A
+### Ajout d'un support d'action pour Lua
 
-### Add action support for Lua
+N/A
 
-### Other Lua changes
+### Autres changements Lua
 
-- N/A
+N/A
 
 ## Notes
 
-- When exporting to AVIF, EXR, JPEG XL, or XCF, selecting specific
-  metadata (e.g. geo-tag or creator) is not currently possible. For
-  AVIF, EXR, JPEG XL, and XCF formats, darktable will not include any
-  metadata fields unless the user selects all of the checkboxes in the
-  export module's preference options.
+- Lors de l’exportation vers les formats AVIF, EXR, JPEG XL ou XCF,
+  la sélection de métadonnées spécifiques (par exemple, géomarquage ou
+  créateur) n’est actuellement pas possible. Pour les formats AVIF, EXR,
+  JPEG XL et XCF, darktable n’inclura aucun champ de métadonnées à moins que
+  l’utilisateur ne sélectionne toutes les cases à cocher dans les options
+  de Préférence du module Exporter.
 
-- Starting with release 4.8, macOS versions older than 13.5 are not
-  supported.
+- Depuis la version 4.8 ne prend plus en charge les versions de macOS
+  antérieures à 13.5.
 
-## Changed Dependencies
+## Changement de dépendences
 
-### Mandatory
+### Obligatoire(s)
 
 - N/A
 
-### Optional
+### Optionelles
 
-- n/a
+- N/A
 
-## RawSpeed changes
+## Changements RawSpeed
 
-- OM System 14-bit high-resolution ORFs are now supported.
-- Canon EOS 5D Mark II crop was updated.
-- Fujifilm FinePix X100 crop was updated.
-- Samsung EX1 crop and white level were updated.
-- Sony ILCE-1M2 color matrix was updated.
+- OM System : Les ORF haute résolution 14 bits sont désormais pris en charge.
+- Le recadrage du Canon EOS 5D Mark II a été mis à jour.
+- Le recadrage du Fujifilm FinePix X100 a été mis à jour.
+- Le recadrage et le niveau de blanc du Samsung EX1 ont été mis à jour.
+- La matrice couleur Sony ILCE-1M2 a été mise à jour.
 
-## Camera support, compared to 5.0
+## Nouveaux Support d'appareils depuis la version 5.0
 
-### Base Support
+### Support de base
 
-- Canon EOS R5 C (requires LibRaw 202502 and later)
-- Fujifilm GFX100RF (compressed)
-- Fujifilm GFX100S II (compressed)
+- Canon EOS R5 C (nécessite LibRaw 202502 ou ultérieur)
+- Fujifilm GFX100RF (compressé)
+- Fujifilm GFX100S II (compressé)
 - Nikon 1 J5
 - Nikon 1 V3
-- Nikon COOLPIX P1100 (12bit-uncompressed)
+- Nikon COOLPIX P1100 (12bit-non-compressé)
 - Nikon Coolpix P340
 - Nikon D100
 - Nikon D200
@@ -398,7 +410,7 @@ sur les changements individuels (le cas échéant).
 - Nikon D800
 - Nikon D800E
 - Nikon D90
-- Nikon Z5_2 (14bit-compressed)
+- Nikon Z5_2 (14bit-compressé)
 - OM System OM-3
 - Olympus SP510UZ
 - Panasonic DC-G97 (4:3)
@@ -424,13 +436,13 @@ sur les changements individuels (le cas échéant).
 - Sony ZV-1A
 - Sony ZV-E10M2
 
-### White Balance Presets
+### Préréglages de la balance des blancs
 
 - Fujifilm GFX100 II
 - OM System OM-3
 - Panasonic DC-S9
 
-### Noise Profiles
+### Profils de réduction de bruit
 
 - Fujifilm GFX 100
 - Leica SL2
@@ -439,7 +451,7 @@ sur les changements individuels (le cas échéant).
 - Panasonic DC-S9
 - Sony ILCE-1M2
 
-### Missing Compression Mode Support
+### Absence de prise en charge des fichiers raw compressés
 
 - Apple ProRAW DNGs
 - CinemaDNG lossless (Blackmagic, some DJI, etc.) and lossy (Blackmagic)
@@ -449,9 +461,9 @@ sur les changements individuels (le cas échéant).
 - Phase One other than IIQ L
 - Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
-### Suspended Support
+### fin de Support
 
-Support for the following cameras is suspended because no samples are available on https://raw.pixls.us:
+La prise en charge des appareils suivants est suspendue car aucun échantillon n’est disponible sur raw.pixls.us :
 
 - Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
 - Fujifilm IS-1
@@ -463,6 +475,6 @@ Support for the following cameras is suspended because no samples are available 
 - Phase One IQ250
 - ST Micro STV680
 
-## Translations
+## Traductions
 
 - ???
