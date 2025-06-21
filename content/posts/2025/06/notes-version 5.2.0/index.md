@@ -45,22 +45,22 @@ Les sommes de contrôle sont :
 
 ```
 $ sha256sum darktable-5.2.0.tar.xz
-??? darktable-5.2.0.tar.xz
+53a46cd46ef7118485c4abf4ab407c181639bb8634243ec0ed1f7c1e8299bec6  darktable-5.2.0.tar.xz
 
 $ sha256sum darktable-5.2.0-x86_64.dmg
-??? darktable-5.2.0-x86_64.dmg
+bdffebcf758cd1ec6d4ee26eb031d52b1d7e4fe8fe000e728edb14bec91f3a35  darktable-5.2.0-x86_64.dmg
 
 $ sha256sum darktable-5.2.0-arm64.dmg
-??? darktable-5.2.0-arm64.dmg
+8dabf58b6d76c04800be8ab540d3c2f1e772123279e22629a7396fe3e26273de  darktable-5.2.0-arm64.dmg
 
 $ sha256sum darktable-5.2.0-arm64-13.5.dmg
-??? darktable-5.2.0-arm64-13.5.dmg
+8b35cff9d926bc4ae08ea88a09a2a45082756548c9f641afad0d785371dcf384  darktable-5.2.0-arm64-13.5.dmg
 
 $ sha256sum darktable-5.2.0-win64.exe
-??? darktable-5.2.0-win64.exe
+4c1499e9d137efcd87e8b70fb6a0374f7139f1d0f0c49baeac9923ef7df7bdaa  darktable-5.2.0-win64.exe
 
-$ sha256sum darktable-4.8.1-x86_64.AppImage
-???  darktable-5.2.0-x86_64.AppImage
+$ sha256sum Darktable-5.2.0-x86_64.AppImage
+294eff1d74d322cc5459221361ac7bdcdf0dc41529a02c165d0861e085978d58  Darktable-5.2.0-x86_64.AppImage
 ```
 
 Lors de la mise à jour à partir de la série stable 4.8.x, gardez à l'esprit que
@@ -477,4 +477,20 @@ La prise en charge des appareils suivants est suspendue car aucun échantillon n
 
 ## Traductions
 
-- ???
+- Tchèque
+- Allemand
+- Espagnol Européen
+- Finlandais
+- Français
+- Hongrois
+- Italien
+- Japonais
+- Néérlandais
+- Portugai Bresilien
+- Russe
+- Slovenien
+- Albanais
+- Ukrainien
+- Chinois (Simplifié)
+- Chinois (Traditionel)
+
