@@ -94,8 +94,8 @@ Voici un résumé des principales fonctionnalités ajoutées à darktable
 5.2. Veuillez consulter le manuel de l'utilisateur pour plus de détails
 sur les changements individuels (le cas échéant).
 
-- Vous pouvez maintenant visualiser les instantanés côte à côte avec l'image
-  actuelle, au lieu d'une superposition partielle. Sélectionnez l'instantané
+- Vous pouvez maintenant visualiser les instantanés et l'image actuelle côte à côte,
+  au lieu d'une superposition partielle. Sélectionnez l'instantané
   à afficher, puis cliquez sur le bouton situé à côté de **Prendre un
   instantané**. La fenêtre centrale est divisée en deux panneaux égaux. Elle
   peut être zoomée et panotée (en la faisant glisser tout en maintenant
@@ -156,7 +156,7 @@ sur les changements individuels (le cas échéant).
 
 - Une solution de contournement pour les anciens pilotes AMD OpenCL défectueux,
   en place depuis 12 ans, a été désactivée par défaut. Nous espérons que les
-  pilotes plus récents n'en ont plus besoin, car que cela causait des problèmes
+  pilotes plus récents n'en ont plus besoin, car cela causait des problèmes
   avec la traduction de l'interface utilisateur au démarrage, provoquant
   l'affichage d'une partie de celle-ci en anglais. Si vous rencontrez des
   problèmes avec OpenCL qui pourraient être causés par cette modification,
@@ -179,7 +179,7 @@ sur les changements individuels (le cas échéant).
   préréglages (et le bug qui empêchait la traduction des raccourcis de
   style a été corrigé).
 
-- Affichage d'un indiateur sur les tâches en arrière-plan en cours lorsque
+- Affichage d'un indicateur sur les tâches en arrière-plan en cours lorsque
   darktable se ferme.
 
 - Amélioration du rendu des modules **Réduction du bruit(profil)**, **Homogénéiser
@@ -192,7 +192,7 @@ sur les changements individuels (le cas échéant).
   et la prise en charge des masques imprécis (perte de qualité).
 
 - Amélioration de la qualité de l'algorithme de récupération des hautes lumières
-  **Peinture opposés** pour les images sRAW.
+  **Peinture opposée** pour les images sRAW.
 
 - Dans le module **Suppression de la brume**, réduction visible des différences entre
   les exportations et le traitement en chambre noire HQ.
@@ -203,8 +203,8 @@ sur les changements individuels (le cas échéant).
   OM-System/Olympus pris avec des objectifs sans données électroniques, si ces
   informations sont saisies dans la boîte de dialogue des paramètres d'informations
   sur l'objectif de l'appareil photo. Le module de **Correction des objectifs** trouvera
-  automatiquement l'objectif s'il est pris en charge par lensfun et si le nom saisi
-  correspond au nom lensfun, qui peut être consulté dans la liste déroulante de
+  automatiquement l'objectif s'il est pris en charge par Lensfun et si le nom saisi
+  correspond au nom Lensfun, qui peut être consulté dans la liste déroulante de
   sélection des objectifs.
 
 - Les masques raster ont été améliorés en interne et prennent désormais en charge les
@@ -221,14 +221,14 @@ sur les changements individuels (le cas échéant).
 - La dimension affichée lors du recadrage correspond désormais à la dimension d'exportation
   par défaut et conserve le rapport exact choisi.
 
-- Dans le module **Historique**, les informations de formattage et de mise à l'échelle des
+- Dans le module **Historique**, les informations de formatage et de mise à l'échelle des
   info-bulles des items ont été corrigées afin qu'elles correspondent aux valeurs affichées
   dans les modules eux-mêmes.
 
 - Ajout de la connexion automatique au module d'exportation **Piwigo**. Cette option peut
   être activée dans la section sécurité des préférences.
 
-- Ajout du format 45 x 35 au module **Recadrer**, très utilisé pour les cartes
+- Ajout du ratio 45 x 35 au module **Recadrer**, très utilisé pour les cartes
   d'identité et les passeports.
 
 - Module **Évaluation des couleurs ISO12464** : modification de la largeur totale de la
@@ -303,7 +303,7 @@ sur les changements individuels (le cas échéant).
 - Correction d'un bug dans les dématriceurs Xtrans qui pouvait introduire des NaN
   dans le pixelpipe.
 
-- Corrigé : Affichage d'une image utilisant le module **Composite** lorsque
+- Corrigé : affichage d'une image utilisant le module **Composite** lorsque
   les modules sont réorganisés.
 
 - De nombreuses corrections et améliorations ont été apportées au chargeur TIFF :
@@ -317,10 +317,10 @@ sur les changements individuels (le cas échéant).
     - Prise en charge des TIFF CMYK.
 
     - Ajout de la prise en charge du chargement des fichiers TIFF avec un format
-    - d'échantillon manquant ou non défini.
+      d'échantillon manquant ou non défini.
 
     - Correction de la lecture des images en niveaux de gris avec interprétation
-      « min-is-white » (elles ne sont plus inversées)
+      « min-is-white » (elles ne sont plus inversées).
 
     - Correction d'une régression dans la prise en charge de nombreuses variantes
       exotiques du format TIFF, telles que l'encodage en mosaïque, la disposition
@@ -363,13 +363,13 @@ N/A
 - Depuis la version 4.8, Darktable ne prend plus en charge les versions de macOS
   antérieures à 13.5.
 
-## Changement de dépendences
+## Changement de dépendances
 
 ### Obligatoire(s)
 
 - N/A
 
-### Optionelles
+### Optionnelles
 
 - N/A
 
@@ -381,7 +381,7 @@ N/A
 - Le recadrage et le niveau de blanc du Samsung EX1 ont été mis à jour.
 - La matrice couleur Sony ILCE-1M2 a été mise à jour.
 
-## Nouveaux Support d'appareils depuis la version 5.0
+## Nouveaux Supports d'appareils depuis la version 5.0
 
 ### Support de base
 
@@ -461,7 +461,7 @@ N/A
 - Phase One other than IIQ L
 - Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
-### fin de Support
+### Fin de Support
 
 La prise en charge des appareils suivants est suspendue car aucun échantillon n’est disponible sur raw.pixls.us :
 
