@@ -63,9 +63,9 @@ $ sha256sum Darktable-5.2.0-x86_64.AppImage
 294eff1d74d322cc5459221361ac7bdcdf0dc41529a02c165d0861e085978d58  Darktable-5.2.0-x86_64.AppImage
 ```
 
-Lors de la mise à jour à partir de la série stable 4.8.x, gardez à l'esprit que
+Lors de la mise à jour à partir de la série stable 5.0.x, gardez à l'esprit que
 vos modifications seront préservées pendant ce processus, mais que la nouvelle
-bibliothèque et la configuration ne seront plus utilisables avec la version 5.0.
+bibliothèque et la configuration ne seront plus utilisables avec la version 5.2.0
 
 
 Il est fortement conseillé d'effectuer d'abord une sauvegarde.
@@ -117,11 +117,11 @@ sur les changements individuels (le cas échéant).
 
 - Le module **Exporter** dispose désormais d'une nouvelle section
   **Exportation multi-préréglages** qui permet d'exporter les images
-  sélectionnées avec plusieurs préréglages en une seule opération.
+  sélectionnées en appliquant plusieurs préréglages en une seule opération.
 
 ## Améliorations de l'interface utilisateur (UI/UX)
 
-- Sur la **Table lumineuse**, remplacement du widget réglette de zoom,
+- Dans la vue **Table lumineuse**, remplacement du widget réglette de zoom,
   qui contrôle le nombre de vignettes affichées dans le tableau des vignettes,
   par un widget +/-. Cela facilite le réglage de la valeur exacte.
 
@@ -141,7 +141,7 @@ sur les changements individuels (le cas échéant).
 ## Autres changements
 
 - Suppression des modules **Niveaux** et **Contraste / Luminosité / Saturation**
-  (qui étaient obsolètes depuis 2023) du groupe des modules obsolètes.
+  (qui étaient obsolètes depuis 2023), du groupe des modules obsolètes.
   Ce groupe étant désormais vide, il a également été supprimé pour le moment.
   
 - En raison d'un problème en amont, l'exportation au format JPEG XL en 16 bits
@@ -165,7 +165,7 @@ sur les changements individuels (le cas échéant).
     - Ajoutez la ligne `opencl_force_c_locale=anything` à votre fichier
       `~/.config/darktable/darktablerc`.
 
-    - Si cela résout votre problème, veuillez signaler le problème sur GitHub,
+    - Si cela résout votre problème, veuillez signaler le problème sur GitHub ➙
       Pull Request #18342, en incluant des informations sur la marque de votre
       GPU et la version de vos pilotes. Nous pourrons alors, pour la prochaine
       version, soit réactiver par défaut la solution de contournement pour les
@@ -173,7 +173,7 @@ sur les changements individuels (le cas échéant).
       pilotes obsolètes qu'ils doivent les mettre à jour.
 
 - Les préréglages peuvent désormais être organisés dans des sous-menus, comme
-  les styles, en insérant le caractère <kbd>|</kbd> dans leur nom entre les niveaux.
+  les styles, en insérant le caractère <kbd>|</kbd> dans leur nom, entre les niveaux.
   La boîte de dialogue des raccourcis ainsi que l'onglet **Préréglages** des **Préférences**
   affichent désormais ces hiérarchies repliables pour les styles et les
   préréglages (et le bug qui empêchait la traduction des raccourcis de
@@ -195,12 +195,12 @@ sur les changements individuels (le cas échéant).
   **Peinture opposée** pour les images sRAW.
 
 - Dans le module **Suppression de la brume**, réduction visible des différences entre
-  les exportations et le traitement en chambre noire HQ.
+  les exportations et le traitement HQ dans la vue **Chambre noire**.
   Pour certaines images, l'algorithme ne parvient pas à calculer les paramètres
   de correction. Cela est signalé dans le journal de contrôle.
 
 - Les informations sur l'objectif sont désormais lues à partir des fichiers image
-  OM-System/Olympus pris avec des objectifs sans données électroniques, si ces
+  OM-System/Olympus, pris avec des objectifs sans données électroniques, si ces
   informations sont saisies dans la boîte de dialogue des paramètres d'informations
   sur l'objectif de l'appareil photo. Le module de **Correction des objectifs** trouvera
   automatiquement l'objectif s'il est pris en charge par Lensfun et si le nom saisi
@@ -226,23 +226,24 @@ sur les changements individuels (le cas échéant).
   dans les modules eux-mêmes.
 
 - Ajout de la connexion automatique au module d'exportation **Piwigo**. Cette option peut
-  être activée dans la section sécurité des préférences.
+  être activée dans la section **Sécurité** des **Préférences**.
 
-- Ajout du ratio 45 x 35 au module **Recadrer**, très utilisé pour les cartes
+- Ajout du ratio 45 x 35 au module **Recadrer**, indispensable pour les cartes
   d'identité et les passeports.
 
 - Module **Évaluation des couleurs ISO12464** : modification de la largeur totale de la
   bordure pour une mise à l'échelle relative qui devrait bien fonctionner sur les petits
   et grands écrans, indépendamment de la résolution physique de l'écran. Ajout d'une
-  fenêtre contextuelle pour le paramétrage et suppression.
+  fenêtre contextuelle pour paramétrage et suppression.
 
-- Amélioration de la visibilité des masques dans la chambre noire. Cette option est
-  contrôlée par la nouvelle option de configuration cachée `darkroom/ui/develop_mask_mix`.
+- Amélioration de la visibilité des masques dans la vue **Chambre noire**. Cette option est
+  contrôlée par la nouvelle option de configuration cachée `darkroom/ui/develop_mask_mix`
+  du fichier `~/.config/darktable/darktablerc`.
   
-- Ajout d'un nouveau paramètre pour modifier les images prises en compte pour les actions :
+- Ajout d'un nouveau paramètre pour modifier les images prises en compte lors les actions :
   par défaut, l'image sous le curseur est prioritaire. Lorsque ce paramètre est activé,
-  les images sélectionnées sont prioritaires et l'image sous le curseur est uniquement
-  prise en compte pour alimenter le module Information de l'image.
+  l'ensemble des images sélectionnées sont prioritaires et l'image sous le curseur est
+  uniquement prise en compte pour alimenter le module **Information de l'image**.
 
 - Ajout d'une icône de mot-clé sur les miniatures pour afficher la liste des mots-clés
   associées lorsque vous passez la souris dessus.
@@ -254,7 +255,7 @@ sur les changements individuels (le cas échéant).
 
 ## Correction de bogues
 
-- Correction de l'écriture des fichiers sidecar en cas de sortie de la chambre noire.
+- Correction de l'écriture des fichiers sidecar lors de la sortie de la vue **Chambre noire**.
 
 - Correction de quelques rares conditions de concurrence lors du traitement des
   pipelines de pixels.
@@ -265,17 +266,17 @@ sur les changements individuels (le cas échéant).
 - Prise en charge correcte du dématriçage et du mélange des détails de haute qualité
   pour la deuxième fenêtre.
 
-- Correction d'un bug qui permettait le déréférencement d'un pointeur NULL en mode **Capture**
-  dans certaines conditions, ce qui entraînait un plantage.
+- Correction d'un bug qui permettait le déréférencement d'un pointeur NULL dans la vue
+  **Capture** pour certaines conditions, ce qui entraînait un plantage.
 
-- Correction du code d'arrêt de darktable afin que les tâches en arrière-plan en attente
-  soient correctement terminées et qu'un journal de contrôle soit généré si des tâches
-  sont en attente.
+- Correction de la séquence d'arrêt de darktable afin que les tâches en arrière-plan
+  en attente soient correctement terminées et qu'un journal de contrôle soit généré
+  si des tâches sont en attente.
 
 - Correction d'un plantage dans la boîte de dialogue d'importation lors de l'ajout d'un
   nouvel emplacement à une liste d'emplacements vide.
 
-- Corrigé : le réglage de la profondeur de bits n'etait pas enregistré dans les
+- Corrigé : le réglage de la profondeur de bits n'était pas enregistré dans les
   préréglages d'exportation AVIF.
 
 - Corrigé : Le bouton de réinitialisation ne fonctionne pas dans le module de
@@ -286,7 +287,7 @@ sur les changements individuels (le cas échéant).
   verrouillée.
 
 - Corrigé : l'image n'est pas correctement mise en page dans le module d'impression
-  après avoir été pivotée à partir de la table lumineuse.
+  après avoir été pivotée à partir de vue **table lumineuse**.
 
 - Corrigé : un bug empêchait l'enregistrement correct des modifications apportées
   dans divers champs d'édition lorsque le champ perdait le focus.
@@ -296,11 +297,11 @@ sur les changements individuels (le cas échéant).
   dans certaines conditions.
 
 - Correction de la boîte de dialogue de modification du style afin d'afficher
-  tous les doublons du module. De plus, lors de la création d'un nouveau style,
+  tous les doublons d'un module. De plus, lors de la création d'un nouveau style,
   nous n'affichons plus l'historique complet, mais uniquement la dernière version
   de chaque module.
 
-- Correction d'un bug dans les dématriceurs Xtrans qui pouvait introduire des NaN
+- Correction d'un bug dans les dématriceurs Xtrans qui pouvait introduire des _NaN_
   dans le pixelpipe.
 
 - Corrigé : affichage d'une image utilisant le module **Composite** lorsque
@@ -324,7 +325,7 @@ sur les changements individuels (le cas échéant).
 
     - Correction d'une régression dans la prise en charge de nombreuses variantes
       exotiques du format TIFF, telles que l'encodage en mosaïque, la disposition
-      plane, les profondeurs de bits inhabituelles (telles que 12 ou 14 bits,
+      plane ou les profondeurs de bits inhabituelles (telles que 12 ou 14 bits,
       ou moins de 8).
 
 ## Lua
@@ -336,7 +337,7 @@ sur les changements individuels (le cas échéant).
 ### Nouvelles fonctionnalités
 
 - Ajout de `apply_sidecar` à `dt_lua_image_t` afin qu'un fichier sidecar puisse
-  être chargé et appliqué à une image dans la **Table lumineuse**
+  être chargé et appliqué à une image dans la vue **Table lumineuse**
 
 ### Correction de bogues
 
