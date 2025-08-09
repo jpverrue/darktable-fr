@@ -111,14 +111,14 @@ sur les changements individuels (le cas échéant).
 
 ## Correction de bogues
 
-- Corrigé :la traduction des libellés du module instantanés.
+- Corrigé : la traduction des libellés du module **Instantanés**.
 
-- Agrandissement des zones de saisies dans les préférences Lua afin que les entrées
+- Agrandissement des zones de saisie dans les préférences Lua afin que les entrées
   longues soient visibles.
 
 - Corrigé : la compilation ne fontionne pas lorsque OpenMP est désactivé.
 
-- Corrigé : un bug OpenCL dans le module **Masque raster** pour les images non raw.
+- Corrigé : un bug OpenCL dans le module **Masques raster** pour les images non raw.
 
 - Corrigé : une régression introduite dans darktable 5.0 qui empêchait la lecture des
   fichiers RAW provenant d'anciens appareils photo Canon (datant de plus de vingt ans)
@@ -134,7 +134,7 @@ sur les changements individuels (le cas échéant).
 - Corrigé : Les fichiers TIFF avec palettes étaient lus de manière incorrecte par le chargeur principal
   basé sur libtiff, ce qui entraînait une perte d'informations sur les couleurs. Nous les transférons
   désormais vers le chargeur de secours GraphicsMagick/ImageMagick (généralement disponible dans
-  les versions officielles/distribuées) pour une lecture correcte.
+  les versions officielles/distribuées), pour une lecture correcte.
 
 - Les noms des variables pour les balises de métadonnées ont été modifiés pour correspondre au nom
   complet de la balise, en respectant la casse, afin d'éviter toute ambiguïté.
