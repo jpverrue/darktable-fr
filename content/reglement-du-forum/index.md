@@ -1,6 +1,9 @@
-"Règlement du forum"
-date: "2016-09-05"
----
++++
+title= "Règlement du forum"
+reward = false
+postDate = false
+readingTime = false
++++
 Pour les visiteurs anglophones :
 
 If you're a foreign user, remember that this site and forum are in french. So if you want to participate, please use a translator like [deepl.com](https://www.deepl.com/translator) and accept having answers in french._
