@@ -15,5 +15,5 @@ Sur sa chaine [A dabble in photography](https://www.youtube.com/@adabbleinphotog
 
 Bonne découverte !
 
-La vidéo en français {{< youtube 8QNeJg3JGNY >}}
+La vidéo en français {{< youtube 8QNeJg3JGNY >}}\
 La vidéo en anglais  {{< youtube OF7ZcDPQfeM >}}
