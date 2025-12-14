@@ -101,7 +101,7 @@ modification (lorsqu'elles sont disponibles).
 
 - Ajout d'un nouveau module de mappage de tons **AgX** basé sur la transformation
   d'affichage AgX de Blender. La sortie couleur du nouveau module est similaire à
-  celle de **Sigmoid**, mais l'ensemble de commandes fourni est plus complet. Il
+  celle de **Sigmoide**, mais l'ensemble de commandes fourni est plus complet. Il
   permet de régler explicitement les points blancs et noirs d'exposition, comme dans
   **Filmique RVB**. L'implémentation comprend un point pivot réglable par l'utilisateur
   pour la courbe de tons, avec une valeur par défaut fixée à 18 % de gris moyen. Le
@@ -126,80 +126,81 @@ modification (lorsqu'elles sont disponibles).
 
 ## Améliorations de l'interface utilisateur (UI/UX)
 
-- Many GNU/Linux distributions have dropped support for X11 leaving
-  only Wayland. Darktable has received many fixes to work properly on
-  Wayland including display ICC profiles. This version 5.4 should work
-  on Wayland as good as it was on X11.
+- De nombreuses distributions GNU/Linux ont abandonné la prise en charge de X11
+  pour ne conserver que Wayland. Darktable a bénéficié de nombreuses corrections
+  afin de fonctionner correctement sous Wayland, notamment l'affichage des profils
+  ICC. Cette version 5.4 devrait fonctionner aussi bien sous Wayland que sous X11.
 
-- Show a busy cursor when changing views. This provides immediate
-  feedback when, for example, double-clicking an image in the
-  lighttable instead of simply freezing the UI until the darkroom has
-  finished opening.
+- Afficher un curseur « occupé » lors du changement de vue. Cela permet d'obtenir
+  un retour immédiat lorsque, par exemple, vous double-cliquez sur une image dans
+  la table lumineuse, au lieu de simplement geler l'interface utilisateur jusqu'à
+  ce que la chambre noire ait fini de s'ouvrir.
 
-- Added the standard "Window" menu to the application menu bar on
-  macOS.
+- Ajout du menu standard « Window » à la barre de menus de l'application sous macOS.
 
-- In Tone Equalizer module move controls for mask exposure and
-  contrast compensation to the advanced tab.
+- Dans le module **Égaliseur de ton**, les commandes d'exposition et de
+  compensation du contraste du masque ont été déplacées vers l'onglet **Avancé**.
 
-- In the navigation windows, the zoom is now better behaving. After a
-  free zoom over the darkroom, using the scroll over the zoom level
-  indicator of the navigation window, the selected zoom will be the
-  closest match (above or below depending on the scroll
-  direction). This is better as previous behavior where the zoom level
-  was always set to "small".
+- Dans la **fenêtre de navigation**, le zoom fonctionne désormais mieux. Après un
+  zoom libre dans la **chambre noire**, en utilisant le défilement sur **l'indicateur
+  de niveau de zoom**, le zoom sélectionné sera le plus proche possible (au-dessus ou
+  en dessous selon le sens du défilement). Cela est préférable au comportement
+  précédent où le niveau de zoom était toujours réglé sur « petit ».
 
-- When moving around in a (zoomed) center view in the darkroom, we now
-  pre-calculate a slightly larger area so that it might not always be
-  necessary to immediately recalculate after further moves. The
-  initial 1px mouse move is generally not final, after all. This does
-  mean longer calculation times, so you can switch this off by setting
-  darkroom/ui/anticipate_move in darktablerc to 1.0. If you use cursor
-  keys to move around, you might want to increase it to >1.4 to
-  anticipate at least one further 20% move on either side. When the
-  recalculation is triggered by a module parameter change, say
-  exposure increase, only the exact area shown is calculated as
-  before, for optimal responsiveness.
+- Lorsque vous vous déplacez dans la vue centrale (zoomée) dans la **chambre noire**,
+  nous pré-calculons désormais une zone légèrement plus grande afin qu'il ne soit
+  pas toujours nécessaire de recalculer immédiatement après chaque déplacement.
+  Après tout, le déplacement initial de 1 pixel de la souris n'est généralement
+  pas définitif. Cela implique toutefois des temps de calcul plus longs. Vous
+  pouvez donc désactiver cette fonction en réglant `darkroom/ui/anticipate_move`
+  dans darktablerc sur 1,0. Si vous utilisez les touches du curseur pour vous
+  déplacer, vous pouvez augmenter cette valeur à > 1,4 afin d'anticiper au moins
+  un déplacement supplémentaire de 20 % de chaque côté. Lorsque le recalcul est
+  déclenché par un changement de paramètre du module, par exemple une augmentation
+  de l'exposition, seule la zone exacte affichée est calculée comme auparavant,
+  pour une réactivité optimale.
+  
+- La fenêtre contextuelle (qui s'affiche lorsque vous cliquez avec le bouton droit)
+  pour les curseurs avec une plage de 360° affiche désormais une roue chromatique
+  ou une boussole. Si le curseur est limité à une plage plus petite (par exemple
+  dans **Rotation et perspective**), vous pouvez basculer vers la plage complète
+  en cliquant avec le bouton central. Un autre clic avec le bouton central
+  restaurera la plage limitée (et le mécanisme de réglage fin normal).
 
-- The popup (that you get when right-clicking) for sliders with a 360°
-  range now shows a color wheel or compass. If the slider is
-  soft-limited to a smaller range (for example in rotate&perspective)
-  you can toggle zooming out to the full range by
-  middle-clicking. Another middle click will restore the soft range
-  (and the normal fine-tuning mechanism).
+- Lorsque la plage d'un curseur a été augmentée au-delà des « limites souples »,
+  les zones supplémentaires désormais visibles ont une couleur légèrement différente.
 
-- When the slider range has been zoomed out beyond soft limits, the
-  now visible "extreme" areas have a slightly different color.
+- Pour que la rotation de la molette corresponde à l'effet de rotation de l'image,
+  la plupart des directions des curseurs d'angle ont été inversées. Vous pouvez
+  ajouter une vitesse « -1 » à tous les raccourcis auxquels vous êtes habitué.
+  
+- Ajout de nouveaux raccourcis clavier par défaut. Ceux-ci ne prendront effet que
+  si les touches ne sont pas encore associées à des fonctions définies par
+  l'utilisateur.
 
-- To make the rotation in the wheel match the rotation effect in the
-  image, most slider directions for angles have been reversed. You may
-  want to add a "-1" speed to any shortcuts you have gotten used to.
+  - <kbd>c</kbd> : basculer les **lignes guide**.
 
-- Added new default shortcut keys. These will take effect only if the
-  keys do not yet have user-defined assignments.
+  - <kbd>e</kbd> : définir la compensation d'exposition (équivalent à un clic
+    droit sur le curseur d'exposition).
 
-  - <kbd>c</kbd> - toggle crop box.
+  - <kbd>alt+r</kbd> : définir la rotation de l'image (équivalent à un clic droit
+    sur le curseur de rotation).
 
-  - <kbd>e</kbd> - set exposure compensation (equivalent to
-    right-clicking on the exposure slider).
+  - <kbd>alt+[</kbd> et <kbd>alt+]</kbd> : adjustment fin de la rotation.
 
-  - <kbd>alt-r</kbd> - set image rotation (equivalent to
-    right-clicking on the rotation slider).
+- Différentes formes pour l'indicateur sur les curseurs peuvent désormais être
+  sélectionnées dans **Préférences→Divers→Interface** (triangle, cercle, losange,
+  barre). Nécessite un redémarrage
 
-  - <kbd>alt-[ and alt- ]</kbd> - fine rotation adjustment.
+- Tous les boutons des barres d'outils de la **table lumineuse** et de la
+  **chambre noire** conservent leur état activé d'une session à l'autre.
+  La visibilité des boutons activés a été améliorée afin d'éviter toute
+  confusion lors du redémarrage de Darktable et l'apparition d'artefacts
+  dus à l'activation de certains outils tels que **Vérification de gamut**.
 
-- Different shapes for the indicator on sliders can now be selected in
-  preferences/misc/interface (triangle, circle, diamond, bar).
-
-- All toolbar buttons on the lighttable and darkroom have their
-  enabled state recovered across sessions. The visibility of the
-  enabled buttons has been improved to avoid confusions when
-  restarting Darktable and seeing artifacts due to some tools being
-  activate like Gamut check.
-
-- Make the cursor indicating the selected thumbs more visible. It is
-  now bigger and has a border to ensure better visibility on dark
-  thumbs.
+- Le curseur indiquant les vignettes sélectionnées a été rendu plus visible.
+  Il est désormais plus grand et comporte une bordure afin d'assurer une
+  meilleure visibilité sur les vignettes sombres.
 
 ## Performance Improvements
 
