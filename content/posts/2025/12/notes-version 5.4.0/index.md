@@ -153,7 +153,7 @@ modification (lorsqu'elles sont disponibles).
   Après tout, le déplacement initial de 1 pixel de la souris n'est généralement
   pas définitif. Cela implique toutefois des temps de calcul plus longs. Vous
   pouvez donc désactiver cette fonction en réglant `darkroom/ui/anticipate_move`
-  dans darktablerc sur 1,0. Si vous utilisez les touches du curseur pour vous
+  dans `darktablerc` sur 1,0. Si vous utilisez les touches du curseur pour vous
   déplacer, vous pouvez augmenter cette valeur à > 1,4 afin d'anticiper au moins
   un déplacement supplémentaire de 20 % de chaque côté. Lorsque le recalcul est
   déclenché par un changement de paramètre du module, par exemple une augmentation
