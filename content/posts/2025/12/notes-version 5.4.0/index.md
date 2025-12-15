@@ -284,53 +284,53 @@ modification (lorsqu'elles sont disponibles).
   dans la boîte de dialogue de style met désormais fin à l'ensemble du
   processus au lieu de passer à l'image suivante.
 
-## Bug Fixes
+## Correction de bogues
 
-- Fixed some issues with the hierarchical styles handling in the
-  styles module.
+- Correction de certains problèmes liés à la gestion des styles hiérarchiques dans le
+  module styles.
 
-- Fixed moving additional extra audio or text sidecar files when
-  an image is moved.
+- Correction de la restauration des collections basées sur des modules. Après avoir
+  quitté darktable avec une collection basée sur des modules, la table lumineuse
+  était vide après le redémarrage.
 
-- Fixed module based collection restoring. After quitting darktable with a
-  module based collection, the lighttable was empty after restarting it.
+- Correction de certains problèmes de réinitialisation du module d'exportation.
+  Les sections format et stockage n'étaient pas réinitialisées correctement.
 
-- Fixed some reset issues of the export module. The format and storage
-  sections were not reset properly.
+- Correction d'un problème de corruption des fichiers sidecar lors
+  d'importations volumineuses d'images avec des fichiers sidecar XMP.
 
-- Fixed corruption of sidecars during large imports of images with XMP
-  sidecars.
+- Correction d'un bug où la modification de la mise à l'échelle de l'image
+  dans le module d'exportation influençait le résultat d'une tâche
+  d'exportation en cours d'exécution.
 
-- Fixed a bug where changing the image scaling in the export module
-  influences the result of a running export job.
+- Nous nous assurons de toujours remplir entièrement la zone centrale
+- de la **Chambre noire** lors d'un zoom à grande échelle.
 
-- Make sure we always fill the complete main darkroom canvas while
-  zooming at large scales.
+- Forcer la mise à jour de l'horodatage de l'image **Heure de modification**
+  lorsqu'un fichier sidecar est appliqué.
 
-- Make sure image changed_timestamp is updated when a sidecar file
-  is applied.
+- Corrigé : Le glisser-déposer d'images sur la carte entraîne une attribution
+  erronée de l'emplacement sur macOS.
 
-- Fixed drag and drop of images on the map gives wrong location
-  assignment on macOS.
+- Préréglages automatiquement appliqués pour les images SRAW et les vrais
+  monochromes.
 
-- Fixed auto applied presets for sraws and true monochromes.
+- Correction d'un bug dans le réglage **Seuil des détails** des masques pour
+  les fichiers RAW monochromes qui provoquait des plantages.
 
-- Fixed a bug in details threshold mask for monochrome raw files
-  leading to crashes.
+- Correction d'un problème lié au positionnement de la fenêtre principale
+  de la **Chambre noire** dû à la précision des calculs. La précision est
+  désormais au pixel près, ce qui évite tout déplacement dans certains cas.
 
-- Fixed an issue when positioning the main darkroom windows due to
-  precision in computation. The precision is now to the pixel and
-  avoid a displacement in some cases.
+- Correction d'un problème dans darktable-cli qui empêchait la détection
+  des fichiers en entrée.
 
-- Fixed issue in darktable-cli that prevented input files from being
-  detected.
+- Correction d'un problème de mémoire insuffisante qui pouvait bloquer
+  Darktable sur les petits systèmes lors du traitement d'images volumineuses.
 
-- Fixed out of memory issue which could kill Darktable on small
-  systems when processing large images.
-
-- Fixed toast message translation displayed when scrolling over the
-  module's preset buttons.
-
+- Correction de la traduction du message contextuel affiché lors du survol
+  du bouton préréglages des modules.
+----------------------------------------------------------------------
 - Fixed issue in darktable-cli that prevented input files from being
   detected.
 
