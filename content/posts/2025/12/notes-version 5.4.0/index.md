@@ -209,66 +209,80 @@ modification (lorsqu'elles sont disponibles).
 - Accélération spectaculaire du premier démarrage d'une nouvelle installation lorsque
   la bibliothèque est stockée sur un disque dur ou un NAS plutôt que sur un SSD.
 
-## Other Changes
+## Autres changements
 
-- Allow using <kbd>Shift</kbd> modifier to select only the feather
-  points on blend masks. This is sometime needed when the path point
-  and the feather point are too close to each others.
+- Le modificateur <kbd>Shift</kbd> permet maintenant de sélectionner uniquement
+  les points de contour progressif sur les masques de fusion. Cela est parfois
+  nécessaire lorsque le point de chemin et le point de contour progressif
+  sont trop proches l'un de l'autre.
 
-- Hierarchical presets are now supported for utility modules as well
-  as processing modules.
+- Les préréglages hiérarchiques sont désormais pris en charge pour les modules
+  utilitaires comme pour les modules de traitement.
 
-- Dual demosaicing now works also in tiling mode for possibly better
-  OpenCL performance and smaller CPU memory pressure.
+- Le double dématriçage fonctionne désormais également en mode tuilage pour
+  des performances OpenCL potentiellement meilleures et une pression moindre
+  sur la mémoire du processeur.
+  
+- Ajout d'une compensation automatique de la sous-exposition cachée de l'appareil
+  photo pour les modes Canon _Lighting Optimizer_, Nikon _Active D-Lighting_ et _HLG_,
+  le mode Olympus _Gradation_, le mode Pentax _Dynamic Range Expansion_ et les modes
+  Fujifilm _DR200_ et _DR400_. Cela affecte à la fois les modules **Exposition** et
+  **Réduction du bruit (profil)**.
 
-- Added automatic compensation of camera's hidden underexposure for
-  Canon Lighting Optimizer mode, Nikon Active D-Lighting and HLG tone
-  modes, Olympus Gradation mode, Pentax Dynamic Range Expansion mode,
-  and Fujifilm DR200/DR400 modes. This affects both the "exposure" and
-  "denoise (profiled)" modules.
+- Ajout d'un affichage en pourcentage RVB dans le module de sélection des couleurs.
 
-- Add a RGB percent display in the color picker module.
+- Il est maintenat possible de créer une zone de recadrage beaucoup plus petite
+  (recadrage jusqu'à 99 % de la taille de l'image).
 
-- Allow far smaller crop area to be created (crop up to 99% of the
-  image size).
+- La variable `$(ROLL.NAME)` dispose maintenant de niveaux optionnels
+  `$(ROLL.NAME[n])`, où `n` doit être compris entre 1 et 5, ces niveaux suivent
+  les mêmes règles que le pellicule, la valeur par défaut de `n` est 1, ce qui
+  conserve le comportement précédent de `$(ROLL.NAME)`.
 
-- Allow the variable $(ROLL.NAME) to have optional levels,
-  $(ROLL.NAME[n]), where 1 <= n <= 5, the levels follow the same
-  rules as film roll, the default value `n=1`, this keep the previous
-  behavior of $(ROLL.NAME).
+- Ajout d'une collection optionnelle de raccourcis clavier et souris pour
+  contrôler les modules de traitement d'image. Installez-les en cliquant sur
+  le nouveau bouton **Importer les extras** dans l'onglet **Raccourcis** des
+  **Préférences**.
+  
+- L'option **Écraser** du module **Développement** de la **Table lumineuse**
+  a été supprimée. Cette option était utilisée lors du collage de l'historique
+  pour supprimer l'ancien historique avant de coller le nouveau. Elle est
+  rarement utilisée et prêtait à confusion lors des opérations de
+  copier/coller dans la chambre noire à partir de la pellicule, car cette
+  option n'était visible que sur la table lumineuse. L'option a été déplacée
+  dans la boîte de dialogue **Coller sélectivement**.
 
-- Added optional collection of shortcut assignments using
-  keyboard+mouse combinations to control image processing
-  modules. Install these by clicking on the new "import extras" button
-  on the Shortcuts tab under Preferences.
-
-- Remove the "overwrite" option from the lighttable history stack
-  module. This option is used when pasting history to delete the
-  current history stack before pasting the new one. It is rarely used
-  and was confusing people when working copying/pasting on darkroom
-  from the filmstrip as this option was only visible on
-  lighttable. The option has been moved into the paste parts dialog.
-
-- Added manual chroma subsampling control for AVIF export. Users can now
-  choose between auto, 4:4:4, 4:2:2, and 4:2:0 chroma subsampling modes
-  independently of the quality setting, allowing better optimization of the
-  quality-vs-size tradeoff for AVIF files.
-
-- The processing modules/<focused> shortcuts also work if the quick
-  access panel is "focused", addressing the first 20 sliders or
+- Ajout d'un contrôle manuel du sous-échantillonnage chromatique pour
+  l'exportation AVIF. Les utilisateurs peuvent désormais choisir entre les
+  modes de sous-échantillonnage chromatique _auto_, _4:4:4_, _4:2:2_ et _4:2:0_
+  indépendamment du paramètre de qualité, ce qui permet une meilleure
+  optimisation du compromis qualité/taille pour les fichiers AVIF.
+  
+- Les raccourcis donnant le focus aux modules de traitement fonctionnent
+  également si le panneau d'accès rapide a le focus, en s'adressant aux
+  20 premiers curseurs ou menus déroulants de celui-ci.
+  texte original : The processing modules/<focused> shortcuts also work
+  if the quick access panel is "focused", addressing the first 20 sliders or
   dropdowns.
 
-- If only the first rotor on a midi controller is assigned, the higher
-  numbered ones automatically address increasing elements of the same
-  action or subsequent actions. This allows quick (re) assignment to
-  the <focused> action or to the mimics set up with for example the
-  x-touch Lua script.
+- Si seul le premier rotor d'un contrôleur MIDI est assigné, ceux dont
+  le numéro est plus élevé s'adressent automatiquement aux éléments croissants
+  de la même action ou aux actions suivantes. Cela permet une (ré)assignation
+  rapide à l'action <focused> ou aux mimiques configurées avec, par exemple,
+  le script Lua x-touch.
+  Texte original : If only the first rotor on a midi controller is
+  assigned, the higher umbered ones automatically address increasing
+  elements of the same action or subsequent actions. This allows quick
+  (re) assignment to he <focused> action or to the mimics set up with
+  for example the x-touch Lua script.
 
-- Added the ability to calculate crop factor for Olympus cameras.
+- La possibilité de calculer le facteur de recadrage pour les appareils
+  photo Olympus a été ajoutée.
 
-- When creating styles with multiple images selected, clicking Cancel
-  button or typing <kbd>ESC</kbd> on the style dialog now ends the
-  whole process instead of continuing with the next image.
+- Lorsque vous créez des styles avec plusieurs images sélectionnées,
+  cliquer sur le bouton **Annuler** ou appuyer sur la touche <kbd>ESC</kbd>
+  dans la boîte de dialogue de style met désormais fin à l'ensemble du
+  processus au lieu de passer à l'image suivante.
 
 ## Bug Fixes
 
