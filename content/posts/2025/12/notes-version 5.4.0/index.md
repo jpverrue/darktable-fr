@@ -202,12 +202,12 @@ modification (lorsqu'elles sont disponibles).
   Il est désormais plus grand et comporte une bordure afin d'assurer une
   meilleure visibilité sur les vignettes sombres.
 
-## Performance Improvements
+## Améliorations des performances
 
-- Tune performance for the Lut3D module (5% to 20% speed-up).
+- Optimisation des performances du module **3D LUT** (gain de vitesse de 5 % à 20 %).
 
-- Dramatically speed up first startup of a new installation when the
-  library is stored on a hard drive or NAS rather than SSD.
+- Accélération spectaculaire du premier démarrage d'une nouvelle installation lorsque
+  la bibliothèque est stockée sur un disque dur ou un NAS plutôt que sur un SSD.
 
 ## Other Changes
 
