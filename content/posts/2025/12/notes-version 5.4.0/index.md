@@ -390,26 +390,26 @@ modification (lorsqu'elles sont disponibles).
 
 ## Lua
 
-### API Version
+### Version de l'API
 
-- API version is now 9.6.0
+- La version de l'API est la 9.6.0
 
-### New Features
+### Nouvelles fonctionnalités
 
-- Added darktable.query_event() to check if an event is registered.
+- Ajout de `darktable.query_event()` pour vérifier si un événement est enregistré.
 
-- Added collection-changed event that fires when the collection changes.
+- Ajout d'un événement `collection-changed` qui se déclenche lorsque la collection change.
 
-- Added darktable.configuration.share_dir and darktable.configuration.data_dir
-  to expose the darktable data and share directories.
+- Ajout de `darktable.configuration.share_dir` et `darktable.configuration.data_dir`
+  pour exposer les données Darktable et partager les répertoires.
 
-### Bug Fixes
+### Correction de bogues
 
-- Check added to ensure view has changed before processing GUI events
-  preventing hang on start.
+- Vérification ajoutée pour s'assurer que l'affichage a bien changé avant de
+  traiter les événements GUI, afin d'éviter tout blocage au démarrage.
 
-- return a nil value instead of throwing a Lua error if the indexed element of
-  the following Lua tables does not exist or if the table is empty:
+- renvoie une valeur nulle au lieu de générer une erreur Lua si l'élément
+  indexé des tables Lua suivantes n'existe pas ou si la table est vide :
 
   - `dt_lua_tag_t.#`
 
@@ -425,75 +425,77 @@ modification (lorsqu'elles sont disponibles).
 
   - `darktable.collection.#`
 
-- Ensure `darktable.database.get_image()` returns a nil, in all conditions,
-  for an image that doesn't exist.
+- S'assurer que `darktable.database.get_image()` renvoie une valeur nulle,
+  dans toutes les conditions, pour une image qui n'existe pas.
 
-- Ensure translations are displayed in UTF-8 under Windows
+- S'assurer que les tradutions s'affichent en UTF-8 sous Windows.
 
+### Ajout d'un support d'action pour Lua
 
-### Add action support for Lua
+- N/A
 
-### Other Lua changes
+Autres changements Lua
 
 - N/A
 
 ## Notes
 
-- When exporting to AVIF, EXR, JPEG XL, or XCF, selecting specific
-  metadata (e.g. geo-tag or creator) is not currently possible. For
-  AVIF, EXR, JPEG XL, and XCF formats, darktable will not include any
-  metadata fields unless the user selects all of the checkboxes in the
-  export module's preference options.
+- Lors de l’exportation vers les formats AVIF, EXR, JPEG XL ou XCF,
+  la sélection de métadonnées spécifiques (par exemple, géomarquage ou
+  créateur) n’est actuellement pas possible. Pour les formats AVIF, EXR,
+  JPEG XL et XCF, darktable n’inclura aucun champ de métadonnées à moins
+  que l’utilisateur ne sélectionne toutes les cases à cocher dans les
+  options de Préférence du module Exporter.
 
-- Starting with release 5.4, Intel Macs and macOS versions older than 14.0
-  are no longer supported.
+- À partir de la version 5.4, les Mac Intel et les versions macOS
+  antérieures à la version 14.0 ne sont plus pris en charge.
 
-## Changed Dependencies
+## Changement de dépendances
 
-### Mandatory
-
-- N/A
-
-### Optional
+### Obligatoire(s)
 
 - N/A
 
-## RawSpeed changes
+### Optionelle(s)
 
-- Canon EOS 2000D/1500D/Rebel T7/Kiss X90 color matrix was updated.
-- Nikon Z 7 color matrix was updated.
-- Nikon Z5_2 color matrix was updated.
-- Sony ILCE-1M2 color matrix was updated.
+- N/A
 
-## Camera support, compared to 5.2
+## Changements RawSpeed
 
-### Base Support
+- Canon EOS 2000D/1500D/Rebel T7/Kiss X90 La matrice de couleurs a été mise à jour..
+- Nikon Z 7 La matrice de couleurs a été mise à jour..
+- Nikon Z5_2 La matrice de couleurs a été mise à jour..
+- Sony ILCE-1M2 La matrice de couleurs a été mise à jour..
 
-- Canon EOS R1 (requires LibRaw 0.22-PreRC1 and later)
-- Canon EOS R5 Mark II (requires LibRaw 0.22-PreRC1 and later)
+## Nouveaux Supports d'appareils depuis la version 5.2
+
+### Support de base
+
+- Canon EOS R1 (requiert `LibRaw 0.22-PreRC1` et supérieures)
+- Canon EOS R5 Mark II (requiert `LibRaw 0.22-PreRC1` et supérieures)
 - ???
 
-### White Balance Presets
+### Préréglages de la balance des blancs
 
 - ???
 
-### Noise Profiles
+### Profils de réduction de bruit
 
 - ???
 
-### Missing Compression Mode Support
+### Absence de prise en charge des fichiers raw compressés
 
 - Apple ProRAW DNGs
 - CinemaDNG lossless (Blackmagic, some DJI, etc.) and lossy (Blackmagic)
-- DNG 1.7 using JPEG XL (Adobe enhanced, Samsung Expert RAW)
+- DNG 1.7 utilisant JPEG XL (Adobe enhanced, Samsung Expert RAW)
 - Fujifilm lossy RAFs
 - Nikon high efficiency NEFs
-- Phase One other than IIQ L
+- Phase One autres que IIQ L
 - Sony HQ and downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
-### Suspended Support
+### Fin de  Support
 
-Support for the following cameras is suspended because no samples are available on https://raw.pixls.us:
+La prise en charge des appareils suivants est suspendue car aucun échantillon n’est disponible sur raw.pixls.us :
 
 - Creo/Leaf Aptus 22(LF3779)/Hasselblad H1
 - Fujifilm IS-1
@@ -505,6 +507,6 @@ Support for the following cameras is suspended because no samples are available 
 - Phase One IQ250
 - ST Micro STV680
 
-## Translations
+## Traductions
 
 - ???
