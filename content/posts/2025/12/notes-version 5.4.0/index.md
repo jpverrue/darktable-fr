@@ -330,60 +330,63 @@ modification (lorsqu'elles sont disponibles).
 
 - Correction de la traduction du message contextuel affiché lors du survol
   du bouton préréglages des modules.
-----------------------------------------------------------------------
-- Fixed issue in darktable-cli that prevented input files from being
-  detected.
 
-- Fixed an issue with reading TIFF files that (incorrectly) contain
-  metadata specific to the raw files they were made from.
+- Correction d'un problème dans `darktable-cli` qui empêchait la détection
+  des fichiers d'entrée.
 
-- Fixed an issue where imported styles that didn't have a name could
-  cause darktable to crash when starting.
+- Correction d'un problème lié à la lecture des fichiers TIFF contenant
+  (à tort) des métadonnées spécifiques aux fichiers bruts à partir
+  desquels ils ont été créés.
 
-- Fixed a bug leading to wrong colors in main darkroom window (mostly
-  after using a module picker) due to bad color coeffs in colorin
-  module.
+- Corrigé : les styles importés qui n'avaient pas de nom pouvaient
+  provoquer le plantage de darktable au démarrage.
 
-- Fix support for Wayland. The UI is now working as expected and
-  Darktable will handle ICC profile from colord.
+- Correction d'un bug entraînant des couleurs incorrectes dans la fenêtre
+  principale de la chambre noire (principalement après l'utilisation d'un
+  sélecteur de module) en raison de coefficients de couleur incorrects
+  dans le module **Profil de couleur d'entrée**.
 
-- Fixed processing module naming based on the presets when the used
-  preset is renamed or deleted.
+- Correction du support pour Wayland. L'interface utilisateur fonctionne
+  désormais comme prévu et Darktable gère les profils ICC de `colord`.
 
-- Fixed a bug in darktable-cli where exporting a duplicate version of
-  an image would use the tags attached to the base version instead of
-  the tags attached to it.
+- Correction de la dénomination des modules de traitement basée sur les
+  préréglages lorsque le préréglage utilisé est renommé ou supprimé.
 
-- Fixed a bug in darktable-cli where synonyms for tags attached to an
+- Correction d'un bug dans `darktable-cli` où l'exportation d'une version
+  dupliquée d'une image utilisait les **mots-clés** associés à la version
+  de base au lieu des **mots-clés** qui lui étaient associés.
+
+- Fixed a bug in `darktable-cli` where synonyms for tags attached to an
   image were ignored when exporting it.
 
-- Fixed auto-applied user's presets when <kbd>Ctrl+click</kbd> on a
-  processing module after restarting Dartkable.
+- Correction d'un bug dans `darktable-cli` où les synonymes des
+  **mots-clés** associés à une image étaient ignorés lors de son exportation.
 
-- Fixed a bug where adding an image to a group in lighttable could
-  merge multiple group together.
+- Correction d'un bug dans la table lumineuse qui pouvait fusionner plusieurs
+  groupes lors de l'ajout d'une image à un groupe.
 
-- Fixed a print issue which is probably happening only on macOS. When
-  printing in landscape mode, the rotation of the picture is not done
-  on the printer. So only a part of the image is printed at the bottom
-  of the page. This issue is not fully understood at this stage and
-  has only been reported twice. If you encounter this issue then you
-  can set the following variable in your darktablerc to force the
-  landscape CUPS option to be generated:
+- Correction d'un problème d'impression qui ne se produit probablement que sur
+  macOS. Lors de l'impression en mode paysage, la rotation de l'image n'est pas
+  effectuée sur l'imprimante. Ainsi, seule une partie de l'image est imprimée
+  au bas de la page. Ce problème n'est pas encore tout à fait compris à ce stade
+  et n'a été signalé que deux fois. Si vous rencontrez ce problème, vous pouvez
+  définir la variable suivante dans votre darktablerc pour forcer la génération
+  de l'option CUPS paysage :
 
-     plugins/print/cups/force_landscape=TRUE
+     `plugins/print/cups/force_landscape=TRUE`
 
-- Fixed possible display of double thumbs cursor on filmstrip when in
-  darkroom. Also the thumbs background could look as selected on
-  multiple pictures.
+- Correction de l'affichage éventuel d'un double curseur en forme de pouce sur
+  la **Pellicule** dans la **Chambre noire**. De plus, l'arrière-plan des pouces
+  pouvait apparaître comme sélectionné sur plusieurs images.
 
-- Fixed darkroom processing after changing any of the colour profiles.
+- Correction du traitement en **Chambre noire** après modification d'un profil de couleur.
 
-- For module toggle shortcuts (like enable, show and focus) the "on" and
-  "off" effects are now respected (they dont simply always toggle
-  anymore, like they did before).
+- Pour les raccourcis de basculement des modules (tels que **activer**, **afficher**
+  et **mettre en avant**), les effets **activé** et **désactivé** sont désormais
+  respectés (ils ne basculent plus systématiquement comme auparavant).
 
-- Fix too strict restriction for filename length in watermark module.
+- Correction d'une restriction trop stricte concernant la longueur des noms
+  de fichiers dans le module de filigrane.
 
 ## Lua
 
