@@ -26,6 +26,7 @@ Ils seront également disponibles sur la page [install du site dartable.org](htt
 Les versions compilées spécifiquement pour les différentes distributions Linux seront disponibles
 selon la diligence de leurs packageurs. En attendant, vous pouvez utiliser en toute sécurité,
 la version [appimage](https://github.com/darktable-org/darktable/releases/download/release-5.4.0/Darktable-5.4.0-x86_64.AppImage).
+Notez que cette version utilise directement vos fichiers de donnée déjà existants.
 
 <div align="right">Jean-Pierre Verrue</div>
 
@@ -496,7 +497,7 @@ Autres changements Lua
 - Fujifilm lossy RAFs
 - Nikon high efficiency NEFs
 - Phase One autres que IIQ L
-- Sony HQ and downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
+- Sony ARW 4.0/5.0 downsized lossless ("M" for full-frame, "S" for full-frame & APS-C) and ARW 6.0 lossy
 
 ### Fin de  Support
 
