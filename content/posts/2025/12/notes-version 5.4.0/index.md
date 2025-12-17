@@ -190,7 +190,7 @@ modification (lorsqu'elles sont disponibles).
 
 - Différentes formes pour l'indicateur sur les curseurs peuvent désormais être
   sélectionnées dans **Préférences→Divers→Interface** (triangle, cercle, losange,
-  barre). Nécessite un redémarrage
+  barre). Ndt : nécessite un redémarrage.
 
 - Tous les boutons des barres d'outils de la **table lumineuse** et de la
   **chambre noire** conservent leur état activé d'une session à l'autre.
@@ -261,20 +261,25 @@ modification (lorsqu'elles sont disponibles).
 - Les raccourcis donnant le focus aux modules de traitement fonctionnent
   également si le panneau d'accès rapide a le focus, en s'adressant aux
   20 premiers curseurs ou menus déroulants de celui-ci.
-  texte original : The processing modules/<focused> shortcuts also work
-  if the quick access panel is "focused", addressing the first 20 sliders or
-  dropdowns.
+  
+  Ndt : malgré pas mal de recherches, je n'ai pas pu résoudre l'ambigüité
+  de la formulation en anglais. Je ne suis pas du tout sûr de ma traduction.
+  En conséquence je laisse en plus le texte original : The processing
+  modules/<focused> shortcuts also work if the quick access panel is
+  "focused", addressing the first 20 sliders or dropdowns.
 
 - Si seul le premier rotor d'un contrôleur MIDI est assigné, ceux dont
   le numéro est plus élevé s'adressent automatiquement aux éléments croissants
   de la même action ou aux actions suivantes. Cela permet une (ré)assignation
   rapide à l'action <focused> ou aux mimiques configurées avec, par exemple,
   le script Lua x-touch.
-  Texte original : If only the first rotor on a midi controller is
-  assigned, the higher umbered ones automatically address increasing
-  elements of the same action or subsequent actions. This allows quick
-  (re) assignment to he <focused> action or to the mimics set up with
-  for example the x-touch Lua script.
+
+  Ndt : même chose que pour l'item précédent. Voici le texte original :
+  If only the first rotor on a midi controller is assigned, the higher
+  umbered ones automatically address increasing elements of the same
+  action or subsequent actions. This allows quick (re) assignment to he
+  <focused> action or to the mimics set up with for example the x-touch
+  Lua script.
 
 - La possibilité de calculer le facteur de recadrage pour les appareils
   photo Olympus a été ajoutée.
