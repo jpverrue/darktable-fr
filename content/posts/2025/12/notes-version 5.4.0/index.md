@@ -203,7 +203,7 @@ modification (lorsqu'elles sont disponibles).
 
 ## Autres changements
 
-- Le modificateur <kbd>Majuscule</kbd> (ou <kbd>U+21E7</kbd>) permet maintenant de sélectionner
+- Le modificateur <kbd>Majuscule</kbd> permet maintenant de sélectionner
   uniquement les points de contour progressif sur les masques de fusion. Cela est parfois
   nécessaire lorsque le point de chemin et le point de contour progressif sont trop proches
   l'un de l'autre.
