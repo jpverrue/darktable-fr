@@ -207,7 +207,7 @@ modification (lorsqu'elles sont disponibles).
   bibliothèque est stockée sur un disque dur ou un NAS plutôt que sur un SSD.
 
 - Lorsque vous effectuez un zoom ou un panoramique sur la vue centrale, les
-  transformations dans le module Fluidité sont ignorées. Cela améliore
+  transformations dans le module **Liquéfier** sont ignorées. Cela améliore
   considérablement la réactivité lorsque ce module est actif.
 
 ## Autres changements
