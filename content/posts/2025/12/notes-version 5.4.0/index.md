@@ -26,7 +26,7 @@ Ils seront également disponibles sur la page [install du site dartable.org](htt
 Les versions compilées spécifiquement pour les différentes distributions Linux seront disponibles selon la diligence de leurs packageurs. En attendant, vous pouvez utiliser en toute sécurité, la version [appimage](https://github.com/darktable-org/darktable/releases/download/release-5.4.0/darktable-5.4.0-x86_64.AppImage).
 Notez que cette version utilise directement vos fichiers de donnée déjà existants.
 
-<div align="right">Jean-Pierre Verrue</div>
+<div align="right">Jean-Pierre Verrue et manu'pintor</div>
 
 ___
 
@@ -43,23 +43,23 @@ dans git est un moyen encore plus pratique.
 Les sommes de contrôle sont :
 
 ```
-$ sha256sum darktable-5.2.0.tar.xz
-53a46cd46ef7118485c4abf4ab407c181639bb8634243ec0ed1f7c1e8299bec6  darktable-5.2.0.tar.xz
+$ sha256sum darktable-5.4.0.tar.xz
+??? darktable-5.4.0.tar.xz
 
-$ sha256sum darktable-5.2.0-x86_64.dmg
-bdffebcf758cd1ec6d4ee26eb031d52b1d7e4fe8fe000e728edb14bec91f3a35  darktable-5.2.0-x86_64.dmg
+$ sha256sum darktable-5.4.0-x86_64.dmg
+??? darktable-5.4.0-x86_64.dmg
 
-$ sha256sum darktable-5.2.0-arm64.dmg
-8dabf58b6d76c04800be8ab540d3c2f1e772123279e22629a7396fe3e26273de  darktable-5.2.0-arm64.dmg
+$ sha256sum darktable-5.4.0-arm64.dmg
+??? darktable-5.4.0-arm64.dmg
 
-$ sha256sum darktable-5.2.0-arm64-13.5.dmg
-8b35cff9d926bc4ae08ea88a09a2a45082756548c9f641afad0d785371dcf384  darktable-5.2.0-arm64-13.5.dmg
+$ sha256sum darktable-5.4.0-arm64-13.5.dmg
+??? darktable-5.4.0-arm64-13.5.dmg
 
-$ sha256sum darktable-5.2.0-win64.exe
-4c1499e9d137efcd87e8b70fb6a0374f7139f1d0f0c49baeac9923ef7df7bdaa  darktable-5.2.0-win64.exe
+$ sha256sum darktable-5.4.0-win64.exe
+??? darktable-5.4.0-win64.exe
 
-$ sha256sum darktable-5.2.0-x86_64.AppImage
-294eff1d74d322cc5459221361ac7bdcdf0dc41529a02c165d0861e085978d58  darktable-5.2.0-x86_64.AppImage
+$ sha256sum darktable-5.4.0-x86_64.AppImage
+???  darktable-5.4.0-x86_64.AppImage
 ```
 
 Lors de la mise à jour à partir de la série stable 5.2, gardez à l'esprit que
@@ -77,9 +77,9 @@ Vous y apprendrez comment contribuer à la constitution de l’ensemble complet 
 
 Depuis darktable 5.2:
 
-- ???? _commits_ vers darktable+rawspeed
--  ??? _pull requests_ traitées
--   ?? _issues_ fermées
+- 995 _commits_ vers darktable+rawspeed
+- 385 _pull requests_ traitées
+-  56 _issues_ fermées
   
 _Veuillez noter que la documentation de darktable n'est pas encore complète pour la version 5.4 
 et que toutes les contributions sont très appréciées. Veuillez consulter la
@@ -155,7 +155,12 @@ modification (lorsqu'elles sont disponibles).
   par un changement de paramètre du module, par exemple une augmentation de l'exposition, seule
   la zone exacte affichée est calculée comme auparavant, pour une réactivité optimale.
   
-- La fenêtre contextuelle (qui s'affiche lorsque vous cliquez avec le bouton droit) pour les
+- Lorsque vous appliquez une rotation ou un retournement, la transformation est immédiatement
+  appliquée à la partie de l'image actuellement affichée dans la vue centrale, en attendant un
+  recalcul complet. Auparavant, l'image était uniquement repositionnée, mais pas pivotée, ce qui
+  entraînait des superpositions étranges pendant un bref instant.
+  
+  - La fenêtre contextuelle (qui s'affiche lorsque vous cliquez avec le bouton droit) pour les
   curseurs avec une plage de 360° affiche désormais une roue chromatique ou une boussole. Si le
   curseur est limité à une plage plus petite (par exemple dans **Rotation et perspective**),
   vous pouvez basculer vers la plage complète en cliquant avec le bouton central. Un autre clic
@@ -200,6 +205,10 @@ modification (lorsqu'elles sont disponibles).
 
 - Accélération spectaculaire du premier démarrage d'une nouvelle installation lorsque la
   bibliothèque est stockée sur un disque dur ou un NAS plutôt que sur un SSD.
+
+- Lorsque vous effectuez un zoom ou un panoramique sur la vue centrale, les
+  transformations dans le module Fluidité sont ignorées. Cela améliore
+  considérablement la réactivité lorsque ce module est actif.
 
 ## Autres changements
 
@@ -296,6 +305,9 @@ modification (lorsqu'elles sont disponibles).
 
 - Nous nous assurons de toujours remplir entièrement la zone centrale de la **Chambre noire**
   lors d'un zoom à grande échelle.
+
+- Lorsque le zoom est réglé à 1600 %, ne pas ignorer le panning/dragging des sous-pixels,
+  qui rendait presque impossible tout déplacement.
 
 - Forcer la mise à jour de l'horodatage de l'image **Heure de modification** lorsqu'un fichier
   sidecar est appliqué.
@@ -460,17 +472,44 @@ Autres changements Lua
 
 ### Support de base
 
-- Canon EOS R1 (requiert `LibRaw 0.22-PreRC1` et supérieures)
-- Canon EOS R5 Mark II (requiert `LibRaw 0.22-PreRC1` et supérieures)
-- ???
+- Canon EOS R1 (requires `LibRaw 0.22-PreRC1` and later)
+- Canon EOS R5 Mark II (requires `LibRaw 0.22-PreRC1` and later)
+- Canon PowerShot D10 (DNG)
+- Canon PowerShot S100V
+- Canon PowerShot S2 IS (DNG)
+- Fujifilm FinePix HS33EXR
+- Fujifilm X-E5 (compressed)
+- Kodak DCS Pro SLR/c
+- Kodak P712
+- Leica D-Lux 8
+- Leica M EV1 (DNG)
+- Leica Q3 Monochrom (DNG)
+- Leica X-E (Typ 102) (DNG)
+- Nikon Z fc (14bit-uncompressed, 12bit-uncompressed)
+- OM System OM-5 Mark II
+- Olympus SP550UZ
+- Olympus SP565UZ
+- Panasonic DC-S1M2 (3:2)
+- Panasonic DC-S1M2ES (3:2)
+- Ricoh GR IV (DNG)
+- Ricoh GX200 (DNG)
+- Sony DSC-RX1RM3
+- Sony ZV-1M2
 
 ### Préréglages de la balance des blancs
 
-- ???
+- Canon EOS R5 Mark II
+- Nikon D2H
+- Nikon Z5_2
 
 ### Profils de réduction de bruit
 
-- ???
+- Canon EOS R1
+- Canon EOS R5 Mark II
+- Fujifilm X-E5
+- Fujifilm X-M5
+- Nikon Z fc
+- Sony ILCA-99M2
 
 ### Absence de prise en charge des fichiers raw compressés
 
