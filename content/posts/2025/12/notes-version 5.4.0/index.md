@@ -534,21 +534,21 @@ sur raw.pixls.us :
 
 ## Traductions
 
-    Tchèque
-    Allemand
-    Espagnol européen
-    Finlandais
-    Français
-    Hongrois
-    Italien
-    Japonais
-    Coréen
-    Néerlandais
-    Polonais
-    Brésilien Portugais
-    Slovène
-    Albanais
-    Suédois
-    Ukrainien
-    Chinois (simplifié)
-    Chinois (traditionel)
+- Tchèque
+-    Allemand
+-    Espagnol européen
+-    Finlandais
+-    Français
+-    Hongrois
+-    Italien
+-    Japonais
+-    Coréen
+-    Néerlandais
+-    Polonais
+-    Brésilien Portugais
+-    Slovène
+-    Albanais
+-    Suédois
+-    Ukrainien
+-    Chinois (simplifié)
+-    Chinois (traditionel)
