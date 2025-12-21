@@ -71,8 +71,8 @@ Vous y apprendrez comment contribuer à la constitution de l’ensemble complet 
 
 Depuis darktable 5.2:
 
-- 995 _commits_ vers darktable+rawspeed
-- 385 _pull requests_ traitées
+- 996 _commits_ vers darktable+rawspeed
+- 386 _pull requests_ traitées
 -  56 _issues_ fermées
   
 _Veuillez noter que la documentation de darktable n'est pas encore complète pour la version 5.4 
