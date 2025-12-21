@@ -43,7 +43,6 @@ dans git est un moyen encore plus pratique.
 Les sommes de contrôle sont :
 
 ```
-
 $ sha256sum darktable-5.4.0.tar.xz
 2bf0baea78d27945cf09c33d8804f179e03a83ee19d2e927fd660ea46aca3b16  darktable-5.4.0.tar.xz
 
