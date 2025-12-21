@@ -71,8 +71,8 @@ Vous y apprendrez comment contribuer à la constitution de l’ensemble complet 
 
 Depuis darktable 5.2:
 
-- 995 _commits_ vers darktable+rawspeed
-- 385 _pull requests_ traitées
+- 996 _commits_ vers darktable+rawspeed
+- 386 _pull requests_ traitées
 -  56 _issues_ fermées
   
 _Veuillez noter que la documentation de darktable n'est pas encore complète pour la version 5.4 
@@ -98,8 +98,8 @@ modification (lorsqu'elles sont disponibles).
   un point pivot réglable par l'utilisateur pour la courbe de tons, avec une valeur par défaut
   fixée à 18 % de gris moyen. Le contraste autour de ce pivot est réglable. Des commandes sont
   fournies pour créer une section de contraste constant, et des curseurs indépendants sont
-  disponibles pour contrôler le contraste dans les ombres et les hautes lumières (la « base »
-  et le « sommet » de la courbe). Le résultat se caractérise par une désaturation progressive
+  disponibles pour contrôler le contraste dans les ombres et les hautes lumières (le pied et
+  l'épaule de la courbe). Le résultat se caractérise par une désaturation progressive
   des couleurs dans les hautes lumières, similaire à celle d'un film, et une représentation
   naturelle des couleurs dans les tons moyens et les hautes lumières.
 
