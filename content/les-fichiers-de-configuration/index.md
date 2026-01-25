@@ -17,7 +17,7 @@ parent = "documentation"
 
 ## À propos
 
-Ce document décrit les fichiers et dossiers conformes à la version 5.0 de darktable. 
+Ce document décrit les fichiers et dossiers conformes à la version 5.4 de darktable. 
 
 - La précédente édition mentionnait la conformité avec la version 3.8. Il y a eu très peu de modifications
   des fichiers de configuration pour les versions parues entre la 3.8 et la 4.8. Il n'y a donc pas eu de
@@ -27,6 +27,9 @@ Ce document décrit les fichiers et dossiers conformes à la version 5.0 de dark
   et `themes`.
 - Dans cette édition, les descriptions des fichiers obsolètes ont été supprimées, car suffisamment anciennes.
   (avant 3.8)
+- La version 5.4 ouvre la possibilité de créer de multiples espaces de travail dans Darktable. cela amène
+  la création de fichiers de configuration propres à chaque espace de travail. Ceux-ci sont décrits après chaque
+  fichiers de l'espace de travail par défaut. Ces derniers sont ceux connus dans les versions précédentes.
 
 ## Préambule
 
@@ -163,18 +166,29 @@ parfois même, leur création nécessite une intervention manuelle.
     Dossier utilisateur contenant les profils de couleur de sortie. Ces fichiers de profil sont au format ICC.
 
 - `darktablerc`
-  | Utilisateur | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel
-  lui-même. La plupart des données de configuration contenues  dans ce fichier peuvent être modifiées via
-  les différents onglets de la fenêtre “ préférences ” de darktable. Il existe cependant quelques valeurs
-  très peu utilisées ou « un peu trop sensibles » qui ne sont manipulables que par la modification de ce
+  | Utilisateur | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel pour
+  l'espace de travail par défaut. La plupart des données de configuration contenues dans ce fichier peuvent être
+  modifiées via les différents onglets de la fenêtre “ préférences ” de darktable. Il existe cependant quelques
+  valeurs très peu utilisées ou « un peu trop sensibles » qui ne sont manipulables que par la modification de ce
   fichier. Darktable enregistre ce fichier chaque fois que l'on quitte le logiciel. Les éventuelles
   personnalisations doivent donc se faire quand darktable n’est pas actif.
 
+- `darktablerc-common`
+  | Utilisateur | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel communes
+  à tous les espaces de travail. Toutes les remarques faites, relative à la modification du fichier `darktablerc`
+  s'appliquent également à celui-ci.
+
+- `darktablerc-<nom-de-l-espace>`
+  | Utilisateur | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel pour
+  l'espace de travail `<nom-de-l-espace>`. Toutes les remarques faites, relative à la modification du fichier
+  `darktablerc` s'appliquent également à celui-ci.
+  
 - `data.db`
   | Utilisateur | Développement | Binaire |<br/>Fichier qui contient la seconde partie de la Base de Données
   (BdD). Contient les mots-clés, les styles, les préréglages, la géolocalisation. L’emplacement de ce fichier
   peut être modifié avec l’option de lancement `–-library`. L’utilisation de cette option modifiera
-  simultanément l’emplacement de `data.db` et de `library.db`. Fichier au format SQLite.
+  simultanément l’emplacement de `data.db` et de `library.db`. Fichier au format SQLite. Ce ficier est commun
+  à tous les espaces de travail.
 
 - `data.db.lock`
   | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la seconde partie de la BdD.
@@ -183,15 +197,16 @@ parfois même, leur création nécessite une intervention manuelle.
   darktable avortera puisque celui-ci considérera que la BdD est déjà ouverte par un autre logiciel.
   Dans ce cas, la suppression de ce fichier .lock réglera le problème. Il contient le “Process Id” du
   processus qui a ouvert la BdD. Ce fichier suit le fichier data.db. Si l’emplacement de data.db a été
-  modifié avec l’option `–-library`, l’emplacement du fichier de verrouillage le sera également.
-
+  modifié avec l’option `–-library`, l’emplacement du fichier de verrouillage le sera également. Ce ficier
+  est commun à tous les espaces de travail.
+  
 - `data.db-pre-<version>`
   | Utilisateur | Développement | Binaire |<br/>L’installation d’une nouvelle version majeure de darktable
   nécessite parfois (souvent) une modification du schéma de la base de données rendant incompatible la BdD
   avec la version antérieure. Avant cette modification, une sauvegarde est créée automatiquement par copie
   du fichier `data.db`. Ce fichier peut être supprimé s’il n’est pas envisagé de retour vers une version
   antérieure. Dans le nom de ce fichier, <version> correspond au numéro de la nouvelle version de darktable
-  en cours d’installation. Fichier au format SQLite.
+  en cours d’installation. Fichier au format SQLite. Ce ficier est commun à tous les espaces de travail.
 
 - `data.db-snp-<date>`
   | Utilisateur | Développement | Binaire |<br/>Ces fichiers contiennent des instantanés (snapshots en anglais,
@@ -199,33 +214,57 @@ parfois même, leur création nécessite une intervention manuelle.
   cadence régulière, afin de pouvoir revenir à une situation correspondant à la date mentionnée dans le nom du
   fichier. La date est enregistrée sous forme compacte - sans séparateurs -, selon la séquence suivante
   AAAAMMJJhhmmss. Vous pouvez régler les paramètres de maintenance de la BdD dans la fenêtre des préférences
-  de darktable → onglet stockage → paragraphe base de données. Fichier au format SQLite.
+  de darktable → onglet stockage → paragraphe base de données. Fichier au format SQLite. Ce ficier est commun
+  à tous les espaces de travail.
 
 - `library.db`
-  Utilisateur | Développement | Binaire |<br/>Fichier qui contient la première partie de la BdD. Contient toutes
-  les données de développement. L’emplacement de ce fichier peut être modifié avec l’option de lancement
-  `–-library`. L’utilisation de cette option modifiera simultanément l’emplacement de `data.db` et de
-  `library.db`. Fichier au format SQLite.
+  Utilisateur | Développement | Binaire |<br/>Fichier qui contient la première partie de la BdD pour l'espace
+  de travail par défaut. Contient toutes les données de développement. L’emplacement de ce fichier peut être
+  modifié avec l’option de lancement `–-library`. L’utilisation de cette option modifiera simultanément
+  l’emplacement de `data.db` et de `library.db`. Fichier au format SQLite.
+
+- `library-<nom-de-l-espace>.db`
+  Utilisateur | Développement | Binaire |<br/>Fichier qui contient la première partie de la BdD pour l'espace
+  de travail `<nom-de-l-espace>`. Les caractéristiques de ce fichier sont les mêmes que celles du fichier
+  `library.db` ci-dessus.
 
 - `library.db.lock`
-  | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la première partie de la BdD. Voir
-  `data.db.lock` ci-dessus. Si l’emplacement de `library.db` a été modifié avec l’option `–-library`,
-  l’emplacement du fichier de verrouillage le sera également.
+  | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la première partie de la BdD pour
+  l'espace de travail par défaut. Voir `data.db.lock` ci-dessus. Si l’emplacement de `library.db` a été
+  modifié avec l’option `–-library`, l’emplacement du fichier de verrouillage le sera également.
 
-- `library.db-pre-<version>` | Utilisateur | Développement | Binaire |<br/>L’installation d’une nouvelle version
-  majeure de darktable nécessite souvent une modification du schéma de la base de donnée rendant incompatible
-  la BdD avec la version antérieure. Avant cette modification, une sauvegarde est créée automatiquement par copie
+- `library-<nom-de-l-espace>.db.lock`
+  | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la première partie de la BdD. pour
+  l'espace de travail `<nom-de-l-espace>`. Les caractéristiques de ce fichier sont les mêmes que celles du
+  fichier `library.db.lock` ci-dessus.
+
+- `library.db-pre-<version>`
+  | Utilisateur | Développement | Binaire |<br/>Fichier de reprise de la première partie de la BdD pour
+  l'esapce de travail par défaut. L’installation d’une nouvelle version majeure de darktable
+  nécessite souvent une modification du schéma de la base de donnée rendant incompatible la BdD avec la
+  version antérieure. Avant cette modification, une sauvegarde est créée automatiquement par copie
   du fichier `library.db`. Ce fichier peut être supprimé s’il n’est pas envisagé de retour vers une version
   antérieure. Dans le nom, `<version>` correspond au numéro de la nouvelle version de darktable en cours
   d’installation. Fichier au format SQLite.
 
+- `library-<nom-de-l-espace>.db-pre-<version>`
+  | Utilisateur | Développement | Binaire |<br/>Fichier de reprise de la première partie de la BdD pour
+  l'espace de travail `<nom-de-l-espace>`. Les caractéristiques de ce fichier sont les mêmes que celles du
+  fichier `library.db-pre-<version>` ci-dessus.
+
 - `library.db-snp-<date>`
-  | Utilisateur | Développement | Binaire |<br/>Ces fichiers contiennent des instantanés (snapshots en anglais,
+  | Utilisateur | Développement | Binaire |<br/>Fichiers de sauvegarde de la première partie de la BdD pour
+  l'esapce de travail par défaut. Ces fichiers contiennent des instantanés (snapshots en anglais,
   d’où l’abréviation “ snp ”), de la BdD. C’est-à-dire, une sauvegarde de la BdD faite automatiquement et à cadence
   régulière, afin de pouvoir revenir à une situation correspondant à la date mentionnée dans le nom du fichier.
   La date est enregistrée sous forme compacte - sans séparateurs -, selon la séquence suivante AAAAMMJJhhmmss.
   Vous pouvez régler les paramètres de maintenance de la BdD dans la fenêtre des préférences de darktable → onglet
   stockage → paragraphe base de données. Fichier au format SQLite.
+
+- `library-<nom-de-l-espace>.db-snp-<date>`
+  | Utilisateur | Développement | Binaire |<br/>Fichier de sauvegarde de la première partie de la BdD pour
+  l'espace de travail `<nom-de-l-espace>`. Les caractéristiques de ce fichier sont les mêmes que celles du
+  fichier `library.db-snp-<date>` ci-dessus.
 
 - `lua`
   Dossier utilisateur contenant les éventuels scripts additionnels, ceux que vous avez importés comme ceux que
