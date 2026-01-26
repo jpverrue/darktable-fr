@@ -217,7 +217,7 @@ parfois même, leur création nécessite une intervention manuelle.
   modifié avec l’option de lancement `–-library`. L’utilisation de cette option modifiera simultanément
   l’emplacement des fichiers `data.db` et `library.db`. Fichiers au format SQLite.
   - `library.db`
-    Fichier qui contient la première partie de la BdD pour l'espace de travail par défaut
+    Fichier qui contient la première partie de la BdD pour l'espace de travail par défaut.
   - `library-<nom-de-l-espace>.db`
     Fichier qui contient la première partie de la BdD pour l'espace de travail `<nom-de-l-espace>`.
 
@@ -243,16 +243,11 @@ parfois même, leur création nécessite une intervention manuelle.
   - `library-<nom-de-l-espace>.db-pre-<version>`
     Fichier de reprise de la première partie de la BdD pour l'espace de travail `<nom-de-l-espace>`.
 
-- `library-<nom-de-l-espace>.db-pre-<version>`
-  | Utilisateur | Développement | Binaire |<br/>Fichier de reprise de la première partie de la BdD pour
-  l'espace de travail `<nom-de-l-espace>`. Les caractéristiques de ce fichier sont les mêmes que celles du
-  fichier `library.db-pre-<version>` ci-dessus.
-
 - `library.db-snp-<date>`
   | Utilisateur | Développement | Binaire |<br/>Fichiers de sauvegarde de la première partie de la BdD.
   Ces fichiers contiennent des instantanés (snapshots en anglais, d’où l’abréviation « snp ») de la BdD.
-  C’est-à-dire, une sauvegarde de la BdD faite automatiquement et à cadence régulière, afin de pouvoir
-  revenir à une situation correspondant à la date mentionnée dans le nom du fichier. La date est enregistrée
+  C’est-à-dire, des sauvegardes de la BdD faites automatiquement et à cadence régulière, afin de pouvoir
+  revenir à une situation correspondant à la date mentionnée dans les noms des fichiers. La date est enregistrée
   sous forme compacte – sans séparateurs – selon la séquence suivante AAAAMMJJhhmmss. Vous pouvez régler
   les paramètres de maintenance de la BdD dans la fenêtre des préférences de Darktable → onglet stockage →
   paragraphe base de données. Fichiers au format SQLite.
