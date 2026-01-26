@@ -163,22 +163,19 @@ parfois même, leur création nécessite une intervention manuelle.
     Dossier utilisateur contenant les profils de couleur de sortie. Ces fichiers de profil sont au format ICC.
 
 - `darktablerc`
-  | Utilisateur | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel pour
-  l'espace de travail par défaut. La plupart des données de configuration contenues dans ce fichier peuvent être
-  modifiées via les différents onglets de la fenêtre « préférences » de Darktable. Il existe cependant quelques
-  valeurs très peu utilisées ou « un peu trop sensibles » qui ne sont manipulables que par la modification de ce
-  fichier. Darktable enregistre ce fichier chaque fois que l'on quitte le logiciel. Les éventuelles
-  personnalisations doivent donc se faire quand Darktable n’est pas actif.
+  | Utilisateur | Configuration | Texte |<br/>Fichiers contenant les données de configuration du logiciel. La
+  plupart des données de configuration contenues dans ces fichiers peuvent être modifiées via les différents
+  onglets de la fenêtre « préférences » de Darktable. Il existe cependant quelques valeurs très peu utilisées
+  ou « un peu trop sensibles » qui ne sont manipulables que par la modification de ces fichiers. Darktable réécrit
+  ces fichiers chaque fois que l'on quitte le logiciel. Les éventuelles personnalisations doivent donc se faire
+  quand Darktable n’est pas actif.
 
-- `darktablerc-common`
-  | Utilisateur | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel communes
-  à tous les espaces de travail. Toutes les remarques faites, relatives à la modification du fichier `darktablerc`
-  s'appliquent également à celui-ci.
-
-- `darktablerc-<nom-de-l-espace>`
-  | Utilisateur | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel pour
-  l'espace de travail `<nom-de-l-espace>`. Toutes les remarques faites, relatives à la modification du fichier
-  `darktablerc` s'appliquent également à celui-ci.
+  - `darktablerc-common`
+    Fichier contenant les données de configuration du logiciel communes à tous les espaces de travail.
+  - `darktablerc`
+    Fichier contenant les données de configuration du logiciel pour l'espace de travail par défaut
+  - `darktablerc-<nom-de-l-espace>`
+    Fichier contenant les données de configuration du logiciel pour l'espace de travail `<nom-de-l-espace>`.
   
 - `data.db`
   | Utilisateur | Développement | Binaire |<br/>Fichier qui contient la seconde partie de la Base de Données
