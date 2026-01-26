@@ -21,12 +21,12 @@ Ce document décrit les fichiers et dossiers conformes à la version 5.4 de Dark
 
 - Les précédentes éditions mentionnaient la conformité avec les différentes versions de
   Darktable. Pour une lecture plus fluide, ces informations ont été supprimées, car les
-  modifications entre les versions intervenues ne remettent pas fondamentalement en question
-  le contenu de ce document qui reste tout à fait utilisable pour toutes les versions depuis la 3.8.
+  modifications intervenues ne remettent pas fondamentalement en question le contenu
+  de ce document qui reste tout à fait utilisable pour l'ensemble des versions depuis la 3.8.
 - La version 5.4 ouvre la possibilité de créer de multiples espaces de travail dans Darktable.
-  Cela amène la création de fichiers de configuration propres à chaque espace de travail. Chaque
-  fichier en cause a été dupliqué. Le fichier original subsiste pour l'espace de travail par défaut.
-  La copie est renommée en gardant le nom original augmenté du nom de l'espace de travail.
+  Cela amène la création de fichiers propres à chaque espace de travail. Les fichiers existants
+  sont conservés et dupliqués pour le nouvel espace de travail. La copie est renommée en gardant
+  le nom original augmenté du nom de l’espace de travail.
 
 ## Préambule
 
@@ -163,22 +163,18 @@ parfois même, leur création nécessite une intervention manuelle.
     Dossier utilisateur contenant les profils de couleur de sortie. Ces fichiers de profil sont au format ICC.
 
 - `darktablerc`
-  | Utilisateur | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel pour
-  l'espace de travail par défaut. La plupart des données de configuration contenues dans ce fichier peuvent être
-  modifiées via les différents onglets de la fenêtre « préférences » de Darktable. Il existe cependant quelques
-  valeurs très peu utilisées ou « un peu trop sensibles » qui ne sont manipulables que par la modification de ce
-  fichier. Darktable enregistre ce fichier chaque fois que l'on quitte le logiciel. Les éventuelles
-  personnalisations doivent donc se faire quand Darktable n’est pas actif.
-
-- `darktablerc-common`
-  | Utilisateur | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel communes
-  à tous les espaces de travail. Toutes les remarques faites, relatives à la modification du fichier `darktablerc`
-  s'appliquent également à celui-ci.
-
-- `darktablerc-<nom-de-l-espace>`
-  | Utilisateur | Configuration | Texte |<br/>Fichier contenant les données de configuration du logiciel pour
-  l'espace de travail `<nom-de-l-espace>`. Toutes les remarques faites, relatives à la modification du fichier
-  `darktablerc` s'appliquent également à celui-ci.
+  | Utilisateur | Configuration | Texte |<br/>La plupart des données de configuration contenues dans les
+  fichiers `darltablerc` ci-dessous peuvent être modifiées via les différents onglets de la fenêtre
+  « préférences » de Darktable. Il existe cependant quelques valeurs très peu utilisées ou « un peu trop
+  sensibles » qui ne sont manipulables que par la modification manuelle de ces fichiers. Darktable enregistre ce
+  fichier chaque fois que l'on quitte le logiciel. Les éventuelles personnalisations doivent donc se faire quand
+  Darktable n’est pas actif.
+  - `darktablerc-common`
+  Fichier contenant les données de configuration du logiciel, communes à tous les espaces de travail.
+  - `darktablerc`
+  Fichier contenant les données de configuration du logiciel pour l'espace de travail par défaut.
+  - `darktablerc-<nom-de-l-espace>`
+  Fichier contenant les données de configuration du logiciel pour l'espace de travail `<nom-de-l-espace>`.
   
 - `data.db`
   | Utilisateur | Développement | Binaire |<br/>Fichier qui contient la seconde partie de la Base de Données
@@ -227,8 +223,9 @@ parfois même, leur création nécessite une intervention manuelle.
 
 - `library.db.lock`
   | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la première partie de la BdD pour
-  l'espace de travail par défaut. Voir `data.db.lock` ci-dessus. Si l’emplacement de `library.db` a été
-  modifié avec l’option `–-library`, l’emplacement du fichier de verrouillage le sera également.
+  l'espace de travail par défaut. Lire les précisions concenrnat le fichier `data.db.lock` ci-dessus. Si
+  l’emplacement de `library.db` a été modifié avec l’option `–-library`, l’emplacement du fichier de
+  verrouillage le sera également.
 
 - `library-<nom-de-l-espace>.db.lock`
   | Utilisateur | Configuration | Texte |<br/>Fichier de verrouillage de la première partie de la BdD. pour
