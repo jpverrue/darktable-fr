@@ -164,9 +164,9 @@ parfois même, leur création nécessite une intervention manuelle.
 
 - `darktablerc`
   | Utilisateur | Configuration | Texte |<br/>La plupart des données de configuration contenues dans les
-  fichiers `darltablerc` ci-dessous peuvent être modifiées via les différents onglets de la fenêtre
+  fichiers `darltablerc` ci-dessous, peuvent être modifiées via les différents onglets de la fenêtre
   « préférences » de Darktable. Il existe cependant quelques valeurs très peu utilisées ou « un peu trop
-  sensibles » qui ne sont manipulables que par la modification manuelle de ces fichiers. Darktable enregistre ce
+  sensibles » qui ne sont manipulables que par la modification manuelle de ces fichiers. Darktable réécrit ce
   fichier chaque fois que l'on quitte le logiciel. Les éventuelles personnalisations doivent donc se faire quand
   Darktable n’est pas actif.
   - `darktablerc-common`
