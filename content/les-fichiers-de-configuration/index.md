@@ -170,12 +170,12 @@ parfois même, leur création nécessite une intervention manuelle.
   ces fichiers chaque fois que l'on quitte le logiciel. Les éventuelles personnalisations doivent donc se faire
   quand Darktable n’est pas actif.
 
-- `darktablerc-common`
-  Fichier contenant les données de configuration du logiciel communes à tous les espaces de travail.
-- `darktablerc`
-  Fichier contenant les données de configuration du logiciel pour l'espace de travail par défaut
-- `darktablerc-<nom-de-l-espace>`
-  Fichier contenant les données de configuration du logiciel pour l'espace de travail `<nom-de-l-espace>`.
+  - `darktablerc-common`
+    Fichier contenant les données de configuration du logiciel communes à tous les espaces de travail.
+  - `darktablerc`
+    Fichier contenant les données de configuration du logiciel pour l'espace de travail par défaut
+  - `darktablerc-<nom-de-l-espace>`
+    Fichier contenant les données de configuration du logiciel pour l'espace de travail `<nom-de-l-espace>`.
   
 - `data.db`
   | Utilisateur | Développement | Binaire |<br/>Fichier qui contient la seconde partie de la Base de Données
