@@ -235,7 +235,7 @@ parfois même, leur création nécessite une intervention manuelle.
   | Utilisateur | Développement | Binaire |<br/>Fichiers de reprise de la première partie de la BdD.
   L’installation d’une nouvelle version majeure de Darktable nécessite souvent une modification du schéma
   de la base de donnée rendant incompatible la BdD avec la version antérieure. Avant cette modification,
-  une sauvegarde est créée automatiquement par copie des fichiers `library.db`. Ces fichier peuvent être
+  une sauvegarde est créée automatiquement par copie des fichiers `library.db`. Ces fichiers peuvent être
   supprimés s’il n’est pas envisagé de retour vers une version antérieure. Dans le nom, `<version>` correspond
   au numéro de la nouvelle version de Darktable en cours d’installation. Fichiers au format SQLite.
   - `library.db-pre-<version>`
