@@ -5,7 +5,9 @@ featured: true
 categories:
   - "actualites"
   - "tutoriels"
+  - "featured"
 tags:
+  - "featured"
   - "tutoriel"
   - "darktable.info"
 authors:
